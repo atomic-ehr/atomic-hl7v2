@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "Insured's Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "Insured's Address",
+  "codeName": "insuredsAddress",
+  "hl7Table": ""
 }

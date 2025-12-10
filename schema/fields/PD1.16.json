@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Immunization Registry Status",
-	"hl7Table": "HL70441"
+  "dataType": "IS",
+  "longName": "Immunization Registry Status",
+  "codeName": "immunizationRegistryStatus",
+  "hl7Table": "HL70441"
 }

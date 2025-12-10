@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Future Item Price",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Future Item Price",
+  "codeName": "futureItemPrice",
+  "hl7Table": ""
 }

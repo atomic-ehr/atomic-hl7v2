@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Institution",
-	"hl7Table": "HL70537"
+  "dataType": "CE",
+  "longName": "Institution",
+  "codeName": "institution",
+  "hl7Table": "HL70537"
 }

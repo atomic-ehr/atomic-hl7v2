@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Pharmacy of Most Recent Fill",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Pharmacy of Most Recent Fill",
+  "codeName": "pharmacyOfMostRecentFill",
+  "hl7Table": ""
 }

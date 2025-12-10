@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Insured's Social Security Number",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Insured's Social Security Number",
+  "codeName": "insuredsSocialSecurityNumber",
+  "hl7Table": ""
 }

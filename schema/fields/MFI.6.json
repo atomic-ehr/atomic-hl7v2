@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Response Level Code",
-	"hl7Table": "HL70179"
+  "dataType": "ID",
+  "longName": "Response Level Code",
+  "codeName": "responseLevelCode",
+  "hl7Table": "HL70179"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Coverage Type",
-	"hl7Table": "HL70309"
+  "dataType": "IS",
+  "longName": "Coverage Type",
+  "codeName": "coverageType",
+  "hl7Table": "HL70309"
 }

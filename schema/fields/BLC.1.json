@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Blood Product Code",
-	"hl7Table": "HL70426"
+  "dataType": "CE",
+  "longName": "Blood Product Code",
+  "codeName": "bloodProductCode",
+  "hl7Table": "HL70426"
 }

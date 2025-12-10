@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Subject ID",
-	"hl7Table": ""
+  "dataType": "ID",
+  "longName": "Subject ID",
+  "codeName": "subjectId",
+  "hl7Table": ""
 }

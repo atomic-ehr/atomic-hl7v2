@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Continuation Pointer",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Continuation Pointer",
+  "codeName": "continuationPointer",
+  "hl7Table": ""
 }

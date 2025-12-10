@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Account ID",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Account ID",
+  "codeName": "accountId",
+  "hl7Table": ""
 }

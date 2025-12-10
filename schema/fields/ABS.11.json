@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Gestation Category Code",
-	"hl7Table": "HL70424"
+  "dataType": "CE",
+  "longName": "Gestation Category Code",
+  "codeName": "gestationCategoryCode",
+  "hl7Table": "HL70424"
 }

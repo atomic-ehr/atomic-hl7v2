@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Institution Relationship Type Code",
-	"hl7Table": "HL70538"
+  "dataType": "CWE",
+  "longName": "Institution Relationship Type Code",
+  "codeName": "institutionRelationshipTypeCode",
+  "hl7Table": "HL70538"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Occurrence Number",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Occurrence Number",
+  "codeName": "occurrenceNumber",
+  "hl7Table": ""
 }

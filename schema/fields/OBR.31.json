@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Reason for Study",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Reason for Study",
+  "codeName": "reasonForStudy",
+  "hl7Table": ""
 }

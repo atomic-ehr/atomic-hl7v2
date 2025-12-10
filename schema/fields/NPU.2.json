@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Bed Status",
-	"hl7Table": "HL70116"
+  "dataType": "IS",
+  "longName": "Bed Status",
+  "codeName": "bedStatus",
+  "hl7Table": "HL70116"
 }

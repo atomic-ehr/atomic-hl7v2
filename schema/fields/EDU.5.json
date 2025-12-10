@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Academic Degree Granted Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Academic Degree Granted Date",
+  "codeName": "academicDegreeGrantedDate",
+  "hl7Table": ""
 }

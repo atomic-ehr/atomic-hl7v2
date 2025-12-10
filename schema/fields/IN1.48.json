@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Handicap",
-	"hl7Table": "HL70295"
+  "dataType": "IS",
+  "longName": "Handicap",
+  "codeName": "disability",
+  "hl7Table": "HL70295"
 }

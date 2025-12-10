@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Order Status",
-	"hl7Table": "HL70038"
+  "dataType": "ID",
+  "longName": "Order Status",
+  "codeName": "orderStatus",
+  "hl7Table": "HL70038"
 }

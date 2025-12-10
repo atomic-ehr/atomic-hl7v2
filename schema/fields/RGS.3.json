@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Resource Group ID",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Resource Group ID",
+  "codeName": "resourceGroupId",
+  "hl7Table": ""
 }

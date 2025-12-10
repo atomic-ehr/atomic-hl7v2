@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Living Dependency",
-	"hl7Table": "HL70223"
+  "dataType": "IS",
+  "longName": "Living Dependency",
+  "codeName": "livingDependency",
+  "hl7Table": "HL70223"
 }

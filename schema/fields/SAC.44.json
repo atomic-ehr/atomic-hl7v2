@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Other Environmental Factors",
-	"hl7Table": "HL70377"
+  "dataType": "CE",
+  "longName": "Other Environmental Factors",
+  "codeName": "otherEnvironmentalFactors",
+  "hl7Table": "HL70377"
 }

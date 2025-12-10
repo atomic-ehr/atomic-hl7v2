@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Test/Service Default Duration Units",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Test/Service Default Duration Units",
+  "codeName": "testServiceDefaultDurationUnit",
+  "hl7Table": "HL79999"
 }

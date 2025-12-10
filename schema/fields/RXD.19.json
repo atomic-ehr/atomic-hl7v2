@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Substance Expiration Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Substance Expiration Date",
+  "codeName": "expiration",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Specimen Retention Time",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Specimen Retention Time",
+  "codeName": "specimenRetentionTime",
+  "hl7Table": ""
 }

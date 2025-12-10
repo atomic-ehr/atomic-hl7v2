@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Results Rpt/Status Chng - Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Results Rpt/Status Chng - Date/Time",
+  "codeName": "resultsRptStatusChngDateTime",
+  "hl7Table": ""
 }

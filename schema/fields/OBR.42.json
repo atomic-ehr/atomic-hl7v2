@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Escort Required",
-	"hl7Table": "HL70225"
+  "dataType": "ID",
+  "longName": "Escort Required",
+  "codeName": "escortRequired",
+  "hl7Table": "HL70225"
 }

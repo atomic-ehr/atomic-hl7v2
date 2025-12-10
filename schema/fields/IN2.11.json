@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Dependent Of Military Recipient",
-	"hl7Table": "HL70342"
+  "dataType": "CE",
+  "longName": "Dependent Of Military Recipient",
+  "codeName": "dependentOfMilitaryRecipient",
+  "hl7Table": "HL70342"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "RFR",
-	"longName": "Reference (Normal) Range - Ordinal and Continuous Observations",
-	"hl7Table": ""
+  "dataType": "RFR",
+  "longName": "Reference (Normal) Range - Ordinal and Continuous Observations",
+  "codeName": "referenceRangeOrdinalAndContinuousObservations",
+  "hl7Table": ""
 }

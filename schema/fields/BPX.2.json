@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "BP Dispense Status",
-	"hl7Table": "HL70510"
+  "dataType": "CWE",
+  "longName": "BP Dispense Status",
+  "codeName": "bpDispenseStatus",
+  "hl7Table": "HL70510"
 }

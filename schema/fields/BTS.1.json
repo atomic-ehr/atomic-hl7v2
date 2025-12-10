@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Batch Message Count",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Batch Message Count",
+  "codeName": "batchMessageCount",
+  "hl7Table": ""
 }

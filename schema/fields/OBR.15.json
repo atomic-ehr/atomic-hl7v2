@@ -1,5 +1,6 @@
 {
-	"dataType": "SPS",
-	"longName": "Specimen Source",
-	"hl7Table": ""
+  "dataType": "SPS",
+  "longName": "Specimen Source",
+  "codeName": "specimenSource",
+  "hl7Table": ""
 }

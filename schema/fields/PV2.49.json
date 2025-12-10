@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Notify Clergy Code",
-	"hl7Table": "HL70534"
+  "dataType": "IS",
+  "longName": "Notify Clergy Code",
+  "codeName": "notifyClergyCode",
+  "hl7Table": "HL70534"
 }

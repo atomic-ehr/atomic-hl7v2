@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Component Strength Units",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Component Strength Units",
+  "codeName": "componentStrengthUnit",
+  "hl7Table": ""
 }

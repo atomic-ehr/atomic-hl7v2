@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Provider Location",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Provider Location",
+  "codeName": "providerLocation",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Item Code - Internal",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Item Code - Internal",
+  "codeName": "itemCodeInternal",
+  "hl7Table": ""
 }

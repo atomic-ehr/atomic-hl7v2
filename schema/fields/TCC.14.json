@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Processing Type",
-	"hl7Table": "HL70388"
+  "dataType": "CE",
+  "longName": "Processing Type",
+  "codeName": "processingType",
+  "hl7Table": "HL70388"
 }

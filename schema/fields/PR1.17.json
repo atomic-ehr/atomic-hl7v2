@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Procedure DRG Type",
-	"hl7Table": "HL70416"
+  "dataType": "IS",
+  "longName": "Procedure DRG Type",
+  "codeName": "procedureDrgType",
+  "hl7Table": "HL70416"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Identification Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Identification Date",
+  "codeName": "identificationDate",
+  "hl7Table": ""
 }

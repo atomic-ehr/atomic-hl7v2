@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Assignment Of Benefits",
-	"hl7Table": "HL70135"
+  "dataType": "IS",
+  "longName": "Assignment Of Benefits",
+  "codeName": "assignmentOfBenefits",
+  "hl7Table": "HL70135"
 }

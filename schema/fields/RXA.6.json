@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Administered Amount",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Administered Amount",
+  "codeName": "administeredAmount",
+  "hl7Table": ""
 }

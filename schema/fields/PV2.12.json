@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Visit Description",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Visit Description",
+  "codeName": "visitDescription",
+  "hl7Table": ""
 }

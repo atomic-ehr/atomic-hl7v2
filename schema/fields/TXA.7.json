@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Transcription Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Transcription Date/Time",
+  "codeName": "transcriptionDateTime",
+  "hl7Table": ""
 }

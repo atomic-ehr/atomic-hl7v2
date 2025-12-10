@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Accident Death Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Accident Death Indicator",
+  "codeName": "accidentDeathIndicator",
+  "hl7Table": "HL70136"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "OCD",
-	"longName": "Occurrence Code & Date (32-35)",
-	"hl7Table": ""
+  "dataType": "OCD",
+  "longName": "Occurrence Code & Date (32-35)",
+  "codeName": "occurrenceCodeAndDate",
+  "hl7Table": ""
 }

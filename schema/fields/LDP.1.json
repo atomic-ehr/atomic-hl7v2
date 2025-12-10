@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Primary Key Value - LDP",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Primary Key Value - LDP",
+  "codeName": "primaryKeyValueLdp",
+  "hl7Table": ""
 }

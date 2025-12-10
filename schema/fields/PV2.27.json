@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Expected Discharge Disposition",
-	"hl7Table": "HL70112"
+  "dataType": "IS",
+  "longName": "Expected Discharge Disposition",
+  "codeName": "expectedDischargeDisposition",
+  "hl7Table": "HL70112"
 }

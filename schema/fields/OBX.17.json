@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Observation Method",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Observation Method",
+  "codeName": "observationMethod",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Practitioner Group",
-	"hl7Table": "HL70358"
+  "dataType": "CE",
+  "longName": "Practitioner Group",
+  "codeName": "practitionerGroup",
+  "hl7Table": "HL70358"
 }

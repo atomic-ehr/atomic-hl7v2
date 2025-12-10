@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Product Implantation Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Product Implantation Date",
+  "codeName": "productImplantationDate",
+  "hl7Table": ""
 }

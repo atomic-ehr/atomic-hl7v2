@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Accommodation Type",
-	"hl7Table": "HL70129"
+  "dataType": "CE",
+  "longName": "Accommodation Type",
+  "codeName": "accommodationType",
+  "hl7Table": "HL70129"
 }

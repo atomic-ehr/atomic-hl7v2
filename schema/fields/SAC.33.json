@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Hemolysis Index Units",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Hemolysis Index Units",
+  "codeName": "hemolysisIndexUnit",
+  "hl7Table": ""
 }

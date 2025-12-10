@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Special Handling Requirements",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Special Handling Requirements",
+  "codeName": "specialHandlingRequirements",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Dispense Notes",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Dispense Notes",
+  "codeName": "dispenseNotes",
+  "hl7Table": ""
 }

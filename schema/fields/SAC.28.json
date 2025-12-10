@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Specimen Component",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Specimen Component",
+  "codeName": "specimenComponent",
+  "hl7Table": ""
 }

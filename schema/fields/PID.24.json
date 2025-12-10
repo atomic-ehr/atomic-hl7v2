@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Multiple Birth Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Multiple Birth Indicator",
+  "codeName": "multipleBirthIndicator",
+  "hl7Table": "HL70136"
 }

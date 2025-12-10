@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Employment Illness Related Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Employment Illness Related Indicator",
+  "codeName": "employmentIllnessRelatedIndicator",
+  "hl7Table": "HL70136"
 }

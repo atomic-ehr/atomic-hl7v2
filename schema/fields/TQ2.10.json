@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Special Service Request Relationship",
-	"hl7Table": "HL70506"
+  "dataType": "ID",
+  "longName": "Special Service Request Relationship",
+  "codeName": "specialServiceRequestRelationship",
+  "hl7Table": "HL70506"
 }

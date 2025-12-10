@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Species Code",
-	"hl7Table": "HL70446"
+  "dataType": "CE",
+  "longName": "Species Code",
+  "codeName": "speciesCode",
+  "hl7Table": "HL70446"
 }

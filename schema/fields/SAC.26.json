@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Cap Type",
-	"hl7Table": "HL70381"
+  "dataType": "CE",
+  "longName": "Cap Type",
+  "codeName": "capType",
+  "hl7Table": "HL70381"
 }

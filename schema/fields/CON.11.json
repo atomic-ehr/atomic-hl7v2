@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Consent Status",
-	"hl7Table": "HL70498"
+  "dataType": "CNE",
+  "longName": "Consent Status",
+  "codeName": "consentStatus",
+  "hl7Table": "HL70498"
 }

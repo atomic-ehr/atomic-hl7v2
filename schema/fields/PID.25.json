@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Birth Order",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Birth Order",
+  "codeName": "birthOrder",
+  "hl7Table": ""
 }

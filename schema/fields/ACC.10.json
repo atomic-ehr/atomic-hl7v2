@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Police Notified Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Police Notified Indicator",
+  "codeName": "policeNotifiedIndicator",
+  "hl7Table": "HL70136"
 }

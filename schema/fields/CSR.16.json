@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Reason Ended Study",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Reason Ended Study",
+  "codeName": "reasonEndedStudy",
+  "hl7Table": ""
 }

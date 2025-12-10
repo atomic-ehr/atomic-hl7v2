@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Reusable Item Indicator",
-	"hl7Table": "HL70532"
+  "dataType": "CNE",
+  "longName": "Reusable Item Indicator",
+  "codeName": "reusableItemIndicator",
+  "hl7Table": "HL70532"
 }

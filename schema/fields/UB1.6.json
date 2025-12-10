@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Co-Insurance Days (25)",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Co-Insurance Days (25)",
+  "codeName": "coInsuranceDays",
+  "hl7Table": ""
 }

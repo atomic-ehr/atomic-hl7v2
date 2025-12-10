@@ -1,5 +1,6 @@
 {
-	"dataType": "DDI",
-	"longName": "Daily Deductible",
-	"hl7Table": ""
+  "dataType": "DDI",
+  "longName": "Daily Deductible",
+  "codeName": "dailyDeductible",
+  "hl7Table": ""
 }

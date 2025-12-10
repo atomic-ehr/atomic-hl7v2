@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Length Errors Received",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Length Errors Received",
+  "codeName": "lengthErrorsReceived",
+  "hl7Table": ""
 }

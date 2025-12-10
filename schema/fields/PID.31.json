@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Identity Unknown Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Identity Unknown Indicator",
+  "codeName": "identityUnknownIndicator",
+  "hl7Table": "HL70136"
 }

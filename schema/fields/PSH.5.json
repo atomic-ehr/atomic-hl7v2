@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Report Interval End Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Report Interval End Date",
+  "codeName": "reportIntervalEndDate",
+  "hl7Table": ""
 }

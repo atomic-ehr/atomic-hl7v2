@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Statused by Person",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Statused by Person",
+  "codeName": "statusedByPerson",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Diagnosis Description",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Diagnosis Description",
+  "codeName": "diagnosisDescription",
+  "hl7Table": ""
 }

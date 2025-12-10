@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Preadmit Test Indicator",
-	"hl7Table": "HL70087"
+  "dataType": "IS",
+  "longName": "Preadmit Test Indicator",
+  "codeName": "preadmitTestIndicator",
+  "hl7Table": "HL70087"
 }

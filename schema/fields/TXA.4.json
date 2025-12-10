@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Activity Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Activity Date/Time",
+  "codeName": "activityDateTime",
+  "hl7Table": ""
 }

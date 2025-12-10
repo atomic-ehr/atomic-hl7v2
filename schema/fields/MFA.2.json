@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "MFN Control ID",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "MFN Control ID",
+  "codeName": "mfnControlId",
+  "hl7Table": ""
 }

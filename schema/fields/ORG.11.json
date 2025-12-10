@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Board Approval Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Board Approval Indicator",
+  "codeName": "boardApprovalIndicator",
+  "hl7Table": "HL70136"
 }

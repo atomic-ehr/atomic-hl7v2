@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Container Height",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Container Height",
+  "codeName": "containerHeight",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Provider's Administration Instructions",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Provider's Administration Instructions",
+  "codeName": "administrationInstructions",
+  "hl7Table": ""
 }

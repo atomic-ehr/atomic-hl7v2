@@ -1,5 +1,6 @@
 {
-	"dataType": "HD",
-	"longName": "Batch Sending Application",
-	"hl7Table": ""
+  "dataType": "HD",
+  "longName": "Batch Sending Application",
+  "codeName": "batchSendingApplication",
+  "hl7Table": ""
 }

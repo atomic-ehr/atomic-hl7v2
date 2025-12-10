@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Study Randomization Date/time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Study Randomization Date/time",
+  "codeName": "studyRandomizationDateTime",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Completion Status",
-	"hl7Table": "HL70322"
+  "dataType": "ID",
+  "longName": "Completion Status",
+  "codeName": "completionStatus",
+  "hl7Table": "HL70322"
 }

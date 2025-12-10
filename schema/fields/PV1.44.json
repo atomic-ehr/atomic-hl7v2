@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Admit Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Admit Date/Time",
+  "codeName": "admission",
+  "hl7Table": ""
 }

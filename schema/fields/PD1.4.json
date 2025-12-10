@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Patient Primary Care Provider Name & ID No.",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Patient Primary Care Provider Name & ID No.",
+  "codeName": "primaryCareProvider",
+  "hl7Table": ""
 }

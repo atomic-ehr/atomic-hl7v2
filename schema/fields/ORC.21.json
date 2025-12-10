@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Ordering Facility Name",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Ordering Facility Name",
+  "codeName": "orderingFacilityName",
+  "hl7Table": ""
 }

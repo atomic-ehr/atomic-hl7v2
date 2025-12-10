@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Dispensing Pharmacy",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Dispensing Pharmacy",
+  "codeName": "dispensingPharmacy",
+  "hl7Table": ""
 }

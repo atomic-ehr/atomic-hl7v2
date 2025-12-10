@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Chairman of Study",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Chairman of Study",
+  "codeName": "chairmanOfStudy",
+  "hl7Table": ""
 }

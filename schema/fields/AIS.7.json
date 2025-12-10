@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Duration",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Duration",
+  "codeName": "duration",
+  "hl7Table": ""
 }

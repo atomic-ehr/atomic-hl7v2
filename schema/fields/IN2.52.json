@@ -1,5 +1,6 @@
 {
-	"dataType": "XPN",
-	"longName": "Insured's Contact Person's Name",
-	"hl7Table": ""
+  "dataType": "XPN",
+  "longName": "Insured's Contact Person's Name",
+  "codeName": "insuredsContactPersonsName",
+  "hl7Table": ""
 }

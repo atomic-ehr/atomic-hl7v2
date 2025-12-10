@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Contract Organization",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Contract Organization",
+  "codeName": "contractOrganization",
+  "hl7Table": ""
 }

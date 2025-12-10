@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Lifetime Reserve Days",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Lifetime Reserve Days",
+  "codeName": "lifetimeReserveDays",
+  "hl7Table": ""
 }

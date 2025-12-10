@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Inventory Container Identifier",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Inventory Container Identifier",
+  "codeName": "inventoryContainerIdentifier",
+  "hl7Table": ""
 }

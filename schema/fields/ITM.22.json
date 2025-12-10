@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Taxable Item Indicator",
-	"hl7Table": "HL70532"
+  "dataType": "CNE",
+  "longName": "Taxable Item Indicator",
+  "codeName": "taxableItemIndicator",
+  "hl7Table": "HL70532"
 }

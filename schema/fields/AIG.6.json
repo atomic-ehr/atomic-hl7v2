@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Resource Quantity",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Resource Quantity",
+  "codeName": "resourceQuantity",
+  "hl7Table": ""
 }

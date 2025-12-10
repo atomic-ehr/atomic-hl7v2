@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Transport Logistics of Collected Sample",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Transport Logistics of Collected Sample",
+  "codeName": "transportLogisticsOfCollectedSample",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Prior Alternate Visit ID",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Prior Alternate Visit ID",
+  "codeName": "priorAlternateVisitId",
+  "hl7Table": ""
 }

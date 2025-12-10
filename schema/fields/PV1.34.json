@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Delete Account Indicator",
-	"hl7Table": "HL70111"
+  "dataType": "IS",
+  "longName": "Delete Account Indicator",
+  "codeName": "deleteAccountIndicator",
+  "hl7Table": "HL70111"
 }

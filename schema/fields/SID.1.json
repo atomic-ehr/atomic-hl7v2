@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Application / Method Identifier",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Application / Method Identifier",
+  "codeName": "applicationMethodIdentifier",
+  "hl7Table": ""
 }

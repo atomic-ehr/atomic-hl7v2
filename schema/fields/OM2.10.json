@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Minimum Meaningful Increments",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Minimum Meaningful Increments",
+  "codeName": "minimumMeaningfulIncrements",
+  "hl7Table": ""
 }

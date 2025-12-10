@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Maintenance Type",
-	"hl7Table": "HL70811"
+  "dataType": "CWE",
+  "longName": "Maintenance Type",
+  "codeName": "maintenanceType",
+  "hl7Table": "HL70811"
 }

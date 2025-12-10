@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Precaution Code",
-	"hl7Table": "HL70433"
+  "dataType": "CE",
+  "longName": "Precaution Code",
+  "codeName": "precautionCode",
+  "hl7Table": "HL70433"
 }

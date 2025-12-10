@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Basic Constraint",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Basic Constraint",
+  "codeName": "basicConstraint",
+  "hl7Table": "HL70136"
 }

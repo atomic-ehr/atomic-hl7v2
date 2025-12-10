@@ -1,5 +1,6 @@
 {
-	"dataType": "DR",
-	"longName": "Requested Start Date/Time Range",
-	"hl7Table": ""
+  "dataType": "DR",
+  "longName": "Requested Start Date/Time Range",
+  "codeName": "requestedStartDateTimeRange",
+  "hl7Table": ""
 }

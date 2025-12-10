@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Notification Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Notification Date/Time",
+  "codeName": "notificationDateTime",
+  "hl7Table": ""
 }

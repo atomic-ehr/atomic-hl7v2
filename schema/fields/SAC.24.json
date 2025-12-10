@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Volume Units",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Volume Units",
+  "codeName": "volumeUnit",
+  "hl7Table": ""
 }

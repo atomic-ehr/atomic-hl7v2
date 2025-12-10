@@ -1,5 +1,6 @@
 {
-	"dataType": "DTM",
-	"longName": "Inventory Received Date",
-	"hl7Table": ""
+  "dataType": "DTM",
+  "longName": "Inventory Received Date",
+  "codeName": "inventoryReceivedDate",
+  "hl7Table": ""
 }

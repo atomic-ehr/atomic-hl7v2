@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Preparation",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Preparation",
+  "codeName": "preparation",
+  "hl7Table": ""
 }

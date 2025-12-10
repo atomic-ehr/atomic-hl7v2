@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Business Rule Override Type",
-	"hl7Table": "HL70518"
+  "dataType": "CWE",
+  "longName": "Business Rule Override Type",
+  "codeName": "businessRuleOverrideType",
+  "hl7Table": "HL70518"
 }

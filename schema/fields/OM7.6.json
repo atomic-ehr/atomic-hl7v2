@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Effective Test/Service Start Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Effective Test/Service Start Date/Time",
+  "codeName": "effectiveTestServiceStartDateTime",
+  "hl7Table": ""
 }

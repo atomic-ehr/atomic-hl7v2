@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Visit Number",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Visit Number",
+  "codeName": "visitNumber",
+  "hl7Table": ""
 }

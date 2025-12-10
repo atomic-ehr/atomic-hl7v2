@@ -1,5 +1,6 @@
 {
-	"dataType": "NUL",
-	"longName": "Delayed Acknowledgment Type",
-	"hl7Table": ""
+  "dataType": "NUL",
+  "longName": "Delayed Acknowledgment Type",
+  "codeName": "delayedAcknowledgmentType",
+  "hl7Table": ""
 }

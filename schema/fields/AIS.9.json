@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Allow Substitution Code",
-	"hl7Table": "HL70279"
+  "dataType": "IS",
+  "longName": "Allow Substitution Code",
+  "codeName": "allowSubstitution",
+  "hl7Table": "HL70279"
 }

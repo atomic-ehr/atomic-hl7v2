@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Transport Arrangement Responsibility",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Transport Arrangement Responsibility",
+  "codeName": "transportArrangementResponsibility",
+  "hl7Table": ""
 }

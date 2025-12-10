@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Guarantor Race",
-	"hl7Table": "HL70005"
+  "dataType": "CE",
+  "longName": "Guarantor Race",
+  "codeName": "guarantorRace",
+  "hl7Table": "HL70005"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "BP Requested Dispense To Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "BP Requested Dispense To Address",
+  "codeName": "bpRequestedDispenseToAddress",
+  "hl7Table": ""
 }

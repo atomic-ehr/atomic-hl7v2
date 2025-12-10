@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Filler Status Code",
-	"hl7Table": "HL70278"
+  "dataType": "CE",
+  "longName": "Filler Status Code",
+  "codeName": "fillerStatus",
+  "hl7Table": "HL70278"
 }

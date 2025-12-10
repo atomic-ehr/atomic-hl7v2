@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Contact Relationship",
-	"hl7Table": "HL70063"
+  "dataType": "IS",
+  "longName": "Contact Relationship",
+  "codeName": "contactRelationship",
+  "hl7Table": "HL70063"
 }

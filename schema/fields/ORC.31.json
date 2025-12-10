@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Parent Universal Service Identifier",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Parent Universal Service Identifier",
+  "codeName": "parentUniversalServiceIdentifier",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Certification Number",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Certification Number",
+  "codeName": "certificationNumber",
+  "hl7Table": ""
 }

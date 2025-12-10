@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Formulary Status",
-	"hl7Table": "HL70473"
+  "dataType": "IS",
+  "longName": "Formulary Status",
+  "codeName": "formularyStatus",
+  "hl7Table": "HL70473"
 }

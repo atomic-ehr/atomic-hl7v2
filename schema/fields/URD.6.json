@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "R/U Display/Print Locations",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "R/U Display/Print Locations",
+  "codeName": "rUDisplayPrintLocations",
+  "hl7Table": ""
 }

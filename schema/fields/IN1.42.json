@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Insured's Employment Status",
-	"hl7Table": "HL70066"
+  "dataType": "CE",
+  "longName": "Insured's Employment Status",
+  "codeName": "insuredsEmploymentStatus",
+  "hl7Table": "HL70066"
 }

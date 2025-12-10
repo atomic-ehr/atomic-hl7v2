@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "File Trailer Comment",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "File Trailer Comment",
+  "codeName": "fileTrailerComment",
+  "hl7Table": ""
 }

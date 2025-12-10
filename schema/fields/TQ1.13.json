@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Occurrence duration",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Occurrence duration",
+  "codeName": "occurrenceDuration",
+  "hl7Table": ""
 }

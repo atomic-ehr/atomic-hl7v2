@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Total Payments",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Total Payments",
+  "codeName": "totalPayments",
+  "hl7Table": ""
 }

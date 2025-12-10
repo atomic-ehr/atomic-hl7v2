@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Order Control Code Reason",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Order Control Code Reason",
+  "codeName": "orderControlCodeReason",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NA",
-	"longName": "Position in Carrier",
-	"hl7Table": ""
+  "dataType": "NA",
+  "longName": "Position in Carrier",
+  "codeName": "positionInCarrier",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Item Natural Account Code",
-	"hl7Table": "HL70320"
+  "dataType": "CWE",
+  "longName": "Item Natural Account Code",
+  "codeName": "accountCode",
+  "hl7Table": "HL70320"
 }

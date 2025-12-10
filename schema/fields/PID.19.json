@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "SSN Number - Patient",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "SSN Number - Patient",
+  "codeName": "ssnNumberPatient",
+  "hl7Table": ""
 }

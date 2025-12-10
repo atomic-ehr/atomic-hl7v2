@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Specimen Description",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Specimen Description",
+  "codeName": "specimenDescription",
+  "hl7Table": ""
 }

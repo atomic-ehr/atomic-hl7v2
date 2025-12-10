@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Temporary Location",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Temporary Location",
+  "codeName": "temporaryLocation",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Event Report Timing/Type",
-	"hl7Table": "HL70234"
+  "dataType": "ID",
+  "longName": "Event Report Timing/Type",
+  "codeName": "eventReportTimingType",
+  "hl7Table": "HL70234"
 }

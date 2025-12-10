@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Allergy Severity Code",
-	"hl7Table": "HL70128"
+  "dataType": "CE",
+  "longName": "Allergy Severity Code",
+  "codeName": "allergySeverityCode",
+  "hl7Table": "HL70128"
 }

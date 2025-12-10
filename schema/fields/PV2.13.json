@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Referral Source Code",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Referral Source Code",
+  "codeName": "referralSourceCode",
+  "hl7Table": ""
 }

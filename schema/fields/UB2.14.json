@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "UB92 Locator 56 (State)",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "UB92 Locator 56 (State)",
+  "codeName": "ub92Locator56",
+  "hl7Table": ""
 }

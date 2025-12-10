@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Primary Key Value - PRA",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Primary Key Value - PRA",
+  "codeName": "primaryKeyValuePra",
+  "hl7Table": "HL79999"
 }

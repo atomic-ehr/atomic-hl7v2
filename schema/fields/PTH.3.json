@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Pathway Instance ID",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Pathway Instance ID",
+  "codeName": "pathwayInstanceId",
+  "hl7Table": ""
 }

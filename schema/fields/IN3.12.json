@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Non-Concur Code/Description",
-	"hl7Table": "HL70233"
+  "dataType": "CE",
+  "longName": "Non-Concur Code/Description",
+  "codeName": "nonConcurCodeDescription",
+  "hl7Table": "HL70233"
 }

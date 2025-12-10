@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Blood Deductible",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Blood Deductible",
+  "codeName": "bloodDeductible",
+  "hl7Table": ""
 }

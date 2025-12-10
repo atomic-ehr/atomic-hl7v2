@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Issue Packaging",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Issue Packaging",
+  "codeName": "issuePackaging",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Birth Place",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Birth Place",
+  "codeName": "birthPlace",
+  "hl7Table": ""
 }

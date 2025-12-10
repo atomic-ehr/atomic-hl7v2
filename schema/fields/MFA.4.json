@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "MFN Record Level Error Return",
-	"hl7Table": "HL70181"
+  "dataType": "CE",
+  "longName": "MFN Record Level Error Return",
+  "codeName": "mfnRecordLevelErrorReturn",
+  "hl7Table": "HL70181"
 }

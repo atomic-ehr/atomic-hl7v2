@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Implicated Product",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Implicated Product",
+  "codeName": "implicatedProduct",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Preferred Long Name for the Observation",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Preferred Long Name for the Observation",
+  "codeName": "preferredLongNameForTheObservation",
+  "hl7Table": ""
 }

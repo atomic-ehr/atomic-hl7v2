@@ -1,5 +1,6 @@
 {
-	"dataType": "FT",
-	"longName": "Event Description From Patient",
-	"hl7Table": ""
+  "dataType": "FT",
+  "longName": "Event Description From Patient",
+  "codeName": "eventDescriptionFromPatient",
+  "hl7Table": ""
 }

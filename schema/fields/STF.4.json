@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Staff Type",
-	"hl7Table": "HL70182"
+  "dataType": "IS",
+  "longName": "Staff Type",
+  "codeName": "staffType",
+  "hl7Table": "HL70182"
 }

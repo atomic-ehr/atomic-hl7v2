@@ -1,5 +1,6 @@
 {
-	"dataType": "FT",
-	"longName": "Quantity Distributed Comment",
-	"hl7Table": ""
+  "dataType": "FT",
+  "longName": "Quantity Distributed Comment",
+  "codeName": "quantityDistributedComment",
+  "hl7Table": ""
 }

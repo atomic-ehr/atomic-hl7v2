@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Goal Life Cycle Status",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Goal Life Cycle Status",
+  "codeName": "goalLifeCycleStatus",
+  "hl7Table": ""
 }

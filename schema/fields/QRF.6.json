@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Which Date/Time Qualifier",
-	"hl7Table": "HL70156"
+  "dataType": "ID",
+  "longName": "Which Date/Time Qualifier",
+  "codeName": "whichDateTimeQualifier",
+  "hl7Table": "HL70156"
 }

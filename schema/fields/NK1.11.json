@@ -1,5 +1,6 @@
 {
-	"dataType": "JCC",
-	"longName": "Next of Kin / Associated Parties Job Code/Class",
-	"hl7Table": "HL70327"
+  "dataType": "JCC",
+  "longName": "Next of Kin / Associated Parties Job Code/Class",
+  "codeName": "nextOfKinAssociatedPartiesJobCodeClass",
+  "hl7Table": "HL70327"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Consent Interval Quantity",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Consent Interval Quantity",
+  "codeName": "consentIntervalQuantity",
+  "hl7Table": ""
 }

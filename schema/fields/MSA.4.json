@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Expected Sequence Number",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Expected Sequence Number",
+  "codeName": "expectedSequenceNumber",
+  "hl7Table": ""
 }

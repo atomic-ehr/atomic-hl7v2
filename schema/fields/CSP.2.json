@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Date/time Study Phase Began",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Date/time Study Phase Began",
+  "codeName": "studyPhaseBeganDateTime",
+  "hl7Table": ""
 }

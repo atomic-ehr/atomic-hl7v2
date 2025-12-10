@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Command Response Parameters",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Command Response Parameters",
+  "codeName": "commandResponseParameters",
+  "hl7Table": ""
 }

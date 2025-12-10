@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Transfer to Bad Debt Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Transfer to Bad Debt Date",
+  "codeName": "transferToBadDebtDate",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Actual Length of Inpatient Stay",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Actual Length of Inpatient Stay",
+  "codeName": "actualLengthOfInpatientStay",
+  "hl7Table": ""
 }

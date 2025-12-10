@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Requested Number of Treatments",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Requested Number of Treatments",
+  "codeName": "requestedNumberOfTreatments",
+  "hl7Table": ""
 }

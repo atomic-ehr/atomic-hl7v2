@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Charge Type",
-	"hl7Table": "HL70122"
+  "dataType": "ID",
+  "longName": "Charge Type",
+  "codeName": "chargeType",
+  "hl7Table": "HL70122"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Referral Status",
-	"hl7Table": "HL70283"
+  "dataType": "CE",
+  "longName": "Referral Status",
+  "codeName": "referralStatus",
+  "hl7Table": "HL70283"
 }

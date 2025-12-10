@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Give Sub-ID Counter",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Give Sub-ID Counter",
+  "codeName": "subIdCounter",
+  "hl7Table": ""
 }

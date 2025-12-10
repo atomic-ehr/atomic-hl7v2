@@ -1,5 +1,6 @@
 {
-	"dataType": "MO",
-	"longName": "Cost",
-	"hl7Table": ""
+  "dataType": "MO",
+  "longName": "Cost",
+  "codeName": "cost",
+  "hl7Table": ""
 }

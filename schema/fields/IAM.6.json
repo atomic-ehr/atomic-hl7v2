@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Allergy Action Code",
-	"hl7Table": "HL70323"
+  "dataType": "CNE",
+  "longName": "Allergy Action Code",
+  "codeName": "allergyActionCode",
+  "hl7Table": "HL70323"
 }

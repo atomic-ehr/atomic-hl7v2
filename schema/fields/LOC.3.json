@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Location Type - LOC",
-	"hl7Table": "HL70260"
+  "dataType": "IS",
+  "longName": "Location Type - LOC",
+  "codeName": "locationTypeLoc",
+  "hl7Table": "HL70260"
 }

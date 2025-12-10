@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Formula",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Formula",
+  "codeName": "formula",
+  "hl7Table": ""
 }

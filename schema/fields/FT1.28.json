@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Medically Necessary Duplicate Procedure Reason.",
-	"hl7Table": "HL70476"
+  "dataType": "CWE",
+  "longName": "Medically Necessary Duplicate Procedure Reason.",
+  "codeName": "medicallyNecessaryDuplicateProcedureReason",
+  "hl7Table": "HL70476"
 }

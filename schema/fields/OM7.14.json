@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Consent Effective End Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Consent Effective End Date/Time",
+  "codeName": "consentEffectiveEndDateTime",
+  "hl7Table": ""
 }

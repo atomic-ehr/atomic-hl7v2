@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Transfer Medical Service Code",
-	"hl7Table": "HL70069"
+  "dataType": "CE",
+  "longName": "Transfer Medical Service Code",
+  "codeName": "transferMedicalServiceCode",
+  "hl7Table": "HL70069"
 }

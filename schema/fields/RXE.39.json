@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Initial Dispense Amount",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Initial Dispense Amount",
+  "codeName": "initialDispenseAmount",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Hemolysis Index",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Hemolysis Index",
+  "codeName": "hemolysisIndex",
+  "hl7Table": ""
 }

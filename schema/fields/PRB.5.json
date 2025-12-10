@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Episode of Care ID",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Episode of Care ID",
+  "codeName": "episodeId",
+  "hl7Table": ""
 }

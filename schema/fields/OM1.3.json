@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Permitted Data Types",
-	"hl7Table": "HL70125"
+  "dataType": "ID",
+  "longName": "Permitted Data Types",
+  "codeName": "permittedDataTypes",
+  "hl7Table": "HL70125"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Diagnosis Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Diagnosis Identifier",
+  "codeName": "diagnosisIdentifier",
+  "hl7Table": ""
 }

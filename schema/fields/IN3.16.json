@@ -1,5 +1,6 @@
 {
-	"dataType": "XTN",
-	"longName": "Certification Contact Phone Number",
-	"hl7Table": ""
+  "dataType": "XTN",
+  "longName": "Certification Contact Phone Number",
+  "codeName": "certificationContactPhoneNumber",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Inventory Location Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Inventory Location Identifier",
+  "codeName": "inventoryLocationIdentifier",
+  "hl7Table": ""
 }

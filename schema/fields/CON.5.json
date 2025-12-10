@@ -1,5 +1,6 @@
 {
-	"dataType": "FT",
-	"longName": "Consent Text",
-	"hl7Table": ""
+  "dataType": "FT",
+  "longName": "Consent Text",
+  "codeName": "consentText",
+  "hl7Table": ""
 }

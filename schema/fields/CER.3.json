@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Version",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Version",
+  "codeName": "version",
+  "hl7Table": ""
 }

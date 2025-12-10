@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Container Carrier Identifier",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Container Carrier Identifier",
+  "codeName": "containerCarrierIdentifier",
+  "hl7Table": ""
 }

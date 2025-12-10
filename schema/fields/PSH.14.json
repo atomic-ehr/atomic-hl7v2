@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Number of Product Experience Reports Filed by Distributor",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Number of Product Experience Reports Filed by Distributor",
+  "codeName": "numberOfProductExperienceReportsFiledByDistributor",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "HD",
-	"longName": "New Application",
-	"hl7Table": ""
+  "dataType": "HD",
+  "longName": "New Application",
+  "codeName": "newApplication",
+  "hl7Table": ""
 }

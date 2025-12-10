@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Second Opinion Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Second Opinion Date",
+  "codeName": "secondOpinionDate",
+  "hl7Table": ""
 }

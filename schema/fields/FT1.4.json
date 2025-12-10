@@ -1,5 +1,6 @@
 {
-	"dataType": "DR",
-	"longName": "Transaction Date",
-	"hl7Table": ""
+  "dataType": "DR",
+  "longName": "Transaction Date",
+  "codeName": "transactionDate",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Product Problem",
-	"hl7Table": "HL70245"
+  "dataType": "IS",
+  "longName": "Product Problem",
+  "codeName": "productProblem",
+  "hl7Table": "HL70245"
 }

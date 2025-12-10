@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Retention Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Retention Indicator",
+  "codeName": "retentionIndicator",
+  "hl7Table": "HL70136"
 }

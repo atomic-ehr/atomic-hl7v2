@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "BP Transfusion End Date/Time of Status",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "BP Transfusion End Date/Time of Status",
+  "codeName": "transfusionEnd",
+  "hl7Table": ""
 }

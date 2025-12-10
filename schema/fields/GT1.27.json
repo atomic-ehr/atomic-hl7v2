@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Guarantor Household Annual Income",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Guarantor Household Annual Income",
+  "codeName": "guarantorHouseholdAnnualIncome",
+  "hl7Table": ""
 }

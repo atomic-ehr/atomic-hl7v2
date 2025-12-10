@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Last Accrual Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Last Accrual Date",
+  "codeName": "lastAccrualDate",
+  "hl7Table": ""
 }

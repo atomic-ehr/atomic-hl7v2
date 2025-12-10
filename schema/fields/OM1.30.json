@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Confidentiality Code",
-	"hl7Table": "HL70177"
+  "dataType": "CWE",
+  "longName": "Confidentiality Code",
+  "codeName": "confidentialityCode",
+  "hl7Table": "HL70177"
 }

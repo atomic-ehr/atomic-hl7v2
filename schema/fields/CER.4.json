@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Granting Authority",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Granting Authority",
+  "codeName": "grantingAuthority",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Facility ID-FAC",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Facility ID-FAC",
+  "codeName": "facilityIdFac",
+  "hl7Table": ""
 }

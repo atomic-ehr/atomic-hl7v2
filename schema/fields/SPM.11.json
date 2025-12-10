@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Specimen Role",
-	"hl7Table": "HL70369"
+  "dataType": "CWE",
+  "longName": "Specimen Role",
+  "codeName": "role",
+  "hl7Table": "HL70369"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Individual Awareness of Prognosis",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Individual Awareness of Prognosis",
+  "codeName": "individualAwarenessOfPrognosis",
+  "hl7Table": ""
 }

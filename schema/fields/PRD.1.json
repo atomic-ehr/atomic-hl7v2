@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Provider Role",
-	"hl7Table": "HL70286"
+  "dataType": "CE",
+  "longName": "Provider Role",
+  "codeName": "providerRole",
+  "hl7Table": "HL70286"
 }

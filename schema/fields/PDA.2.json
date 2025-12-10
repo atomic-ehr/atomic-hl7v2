@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Death Location",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Death Location",
+  "codeName": "deathLocation",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "RX Component Type",
-	"hl7Table": "HL70166"
+  "dataType": "ID",
+  "longName": "RX Component Type",
+  "codeName": "rxComponentType",
+  "hl7Table": "HL70166"
 }

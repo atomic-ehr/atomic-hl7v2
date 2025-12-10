@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Date/Time of Attestation",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Date/Time of Attestation",
+  "codeName": "attestationDateTime",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Preferred Method of Contact",
-	"hl7Table": "HL70185"
+  "dataType": "CE",
+  "longName": "Preferred Method of Contact",
+  "codeName": "contactPreference",
+  "hl7Table": "HL70185"
 }

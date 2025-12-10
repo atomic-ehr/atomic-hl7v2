@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "BC Special Testing",
-	"hl7Table": ""
+  "dataType": "CNE",
+  "longName": "BC Special Testing",
+  "codeName": "bcSpecialTesting",
+  "hl7Table": ""
 }

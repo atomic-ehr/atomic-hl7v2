@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Date/Time Completed",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Date/Time Completed",
+  "codeName": "completedDateTime",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Denial or Rejection Code",
-	"hl7Table": "HL70460"
+  "dataType": "IS",
+  "longName": "Denial or Rejection Code",
+  "codeName": "denialOrRejectionCode",
+  "hl7Table": "HL70460"
 }

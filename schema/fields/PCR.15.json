@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Product Evaluation Status",
-	"hl7Table": "HL70247"
+  "dataType": "CE",
+  "longName": "Product Evaluation Status",
+  "codeName": "productEvaluationStatus",
+  "hl7Table": "HL70247"
 }

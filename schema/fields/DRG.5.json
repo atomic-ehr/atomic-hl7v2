@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Outlier Type",
-	"hl7Table": "HL70083"
+  "dataType": "CE",
+  "longName": "Outlier Type",
+  "codeName": "outlierType",
+  "hl7Table": "HL70083"
 }

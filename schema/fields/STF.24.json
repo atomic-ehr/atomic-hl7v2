@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Auto Ins. Expires",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Auto Ins. Expires",
+  "codeName": "autoInsExpires",
+  "hl7Table": ""
 }

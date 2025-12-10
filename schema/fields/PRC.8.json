@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Maximum Quantity",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Maximum Quantity",
+  "codeName": "maximumQuantity",
+  "hl7Table": ""
 }

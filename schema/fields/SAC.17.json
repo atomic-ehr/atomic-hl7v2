@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Container Diameter",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Container Diameter",
+  "codeName": "containerDiameter",
+  "hl7Table": ""
 }

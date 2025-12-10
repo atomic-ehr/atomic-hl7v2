@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Placer Appointment ID",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Placer Appointment ID",
+  "codeName": "placerAppointmentId",
+  "hl7Table": ""
 }

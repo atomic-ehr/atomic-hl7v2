@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Authorizing Payor, Company Name",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Authorizing Payor, Company Name",
+  "codeName": "authorizingPayorCompanyName",
+  "hl7Table": ""
 }

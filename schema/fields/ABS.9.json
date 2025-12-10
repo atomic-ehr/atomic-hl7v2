@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Case Category Code",
-	"hl7Table": "HL70423"
+  "dataType": "CE",
+  "longName": "Case Category Code",
+  "codeName": "caseCategoryCode",
+  "hl7Table": "HL70423"
 }

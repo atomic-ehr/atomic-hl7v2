@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Recommended Maximum Days Inventory",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Recommended Maximum Days Inventory",
+  "codeName": "recommendedMaximumDaysInventory",
+  "hl7Table": ""
 }

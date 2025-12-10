@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Interest Code",
-	"hl7Table": "HL70073"
+  "dataType": "IS",
+  "longName": "Interest Code",
+  "codeName": "interestCode",
+  "hl7Table": "HL70073"
 }

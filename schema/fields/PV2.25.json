@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Visit Priority Code",
-	"hl7Table": "HL70217"
+  "dataType": "IS",
+  "longName": "Visit Priority Code",
+  "codeName": "visitPriorityCode",
+  "hl7Table": "HL70217"
 }

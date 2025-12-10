@@ -1,5 +1,6 @@
 {
-	"dataType": "DR",
-	"longName": "Effective Date Range",
-	"hl7Table": ""
+  "dataType": "DR",
+  "longName": "Effective Date Range",
+  "codeName": "effectiveDateRange",
+  "hl7Table": ""
 }

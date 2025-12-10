@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "File Creation Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "File Creation Date/Time",
+  "codeName": "fileCreationDateTime",
+  "hl7Table": ""
 }

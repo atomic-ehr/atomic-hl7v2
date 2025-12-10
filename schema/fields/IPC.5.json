@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Modality",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Modality",
+  "codeName": "modality",
+  "hl7Table": ""
 }

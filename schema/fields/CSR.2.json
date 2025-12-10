@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Alternate Study ID",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Alternate Study ID",
+  "codeName": "alternateStudyId",
+  "hl7Table": ""
 }

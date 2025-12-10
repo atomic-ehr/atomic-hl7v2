@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Transportation Mode",
-	"hl7Table": "HL70124"
+  "dataType": "ID",
+  "longName": "Transportation Mode",
+  "codeName": "transportationMode",
+  "hl7Table": "HL70124"
 }

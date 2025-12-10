@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Other Service/Test/Observation IDs for the Observation",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Other Service/Test/Observation IDs for the Observation",
+  "codeName": "otherServiceTestObservationIdsForTheObservation",
+  "hl7Table": "HL79999"
 }

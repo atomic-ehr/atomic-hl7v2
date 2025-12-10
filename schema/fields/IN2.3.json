@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Insured's Employer's Name and ID",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Insured's Employer's Name and ID",
+  "codeName": "insuredsEmployersNameAndId",
+  "hl7Table": ""
 }

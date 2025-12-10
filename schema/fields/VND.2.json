@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Vendor Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Vendor Identifier",
+  "codeName": "vendorIdentifier",
+  "hl7Table": ""
 }

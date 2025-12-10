@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Patient Valuables Location",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Patient Valuables Location",
+  "codeName": "valuablesLocation",
+  "hl7Table": ""
 }

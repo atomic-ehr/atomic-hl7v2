@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Specimen Type Modifier",
-	"hl7Table": "HL70541"
+  "dataType": "CWE",
+  "longName": "Specimen Type Modifier",
+  "codeName": "specimenTypeModifier",
+  "hl7Table": "HL70541"
 }

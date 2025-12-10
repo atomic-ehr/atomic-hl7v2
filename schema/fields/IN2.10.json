@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Military ID Number",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Military ID Number",
+  "codeName": "militaryIdNumber",
+  "hl7Table": ""
 }

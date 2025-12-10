@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "BC Donation Type / Intended Use",
-	"hl7Table": ""
+  "dataType": "CNE",
+  "longName": "BC Donation Type / Intended Use",
+  "codeName": "bcDonationTypeIntendedUse",
+  "hl7Table": ""
 }

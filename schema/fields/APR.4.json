@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Slot Spacing Criteria",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Slot Spacing Criteria",
+  "codeName": "slotSpacingCriteria",
+  "hl7Table": ""
 }

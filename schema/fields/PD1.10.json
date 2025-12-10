@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Duplicate Patient",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Duplicate Patient",
+  "codeName": "duplicatePatient",
+  "hl7Table": ""
 }

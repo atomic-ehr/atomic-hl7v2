@@ -1,5 +1,6 @@
 {
-	"dataType": "DTM",
-	"longName": "Future Item Price Effective Date",
-	"hl7Table": ""
+  "dataType": "DTM",
+  "longName": "Future Item Price Effective Date",
+  "codeName": "futureItemPriceEffectiveDate",
+  "hl7Table": ""
 }

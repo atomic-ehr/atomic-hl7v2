@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Expected Shelf Life",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Expected Shelf Life",
+  "codeName": "expectedShelfLife",
+  "hl7Table": ""
 }

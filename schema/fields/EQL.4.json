@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "EQL Query Statement",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "EQL Query Statement",
+  "codeName": "eqlQueryStatement",
+  "hl7Table": ""
 }

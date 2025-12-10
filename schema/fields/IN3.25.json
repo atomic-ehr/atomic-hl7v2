@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Second Opinion Physician",
-	"hl7Table": "HL70010"
+  "dataType": "XCN",
+  "longName": "Second Opinion Physician",
+  "codeName": "secondOpinionPhysician",
+  "hl7Table": "HL70010"
 }

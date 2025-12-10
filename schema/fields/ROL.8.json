@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Role Action Reason",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Role Action Reason",
+  "codeName": "roleActionReason",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Start Date/Time Offset Units",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Start Date/Time Offset Units",
+  "codeName": "startOffsetUnit",
+  "hl7Table": ""
 }

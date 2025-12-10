@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Plan Effective Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Plan Effective Date",
+  "codeName": "planEffectiveDate",
+  "hl7Table": ""
 }

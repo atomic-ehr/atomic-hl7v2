@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Filler Field 2",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Filler Field 2",
+  "codeName": "fillerField2",
+  "hl7Table": ""
 }

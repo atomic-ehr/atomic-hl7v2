@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Tray Type - SAC",
-	"hl7Table": "HL70379"
+  "dataType": "CE",
+  "longName": "Tray Type - SAC",
+  "codeName": "trayTypeSac",
+  "hl7Table": "HL70379"
 }

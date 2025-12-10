@@ -1,5 +1,6 @@
 {
-	"dataType": "XPN",
-	"longName": "Reported By",
-	"hl7Table": ""
+  "dataType": "XPN",
+  "longName": "Reported By",
+  "codeName": "reportedBy",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Mode of Arrival Code",
-	"hl7Table": "HL70430"
+  "dataType": "CE",
+  "longName": "Mode of Arrival Code",
+  "codeName": "modeOfArrivalCode",
+  "hl7Table": "HL70430"
 }

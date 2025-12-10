@@ -1,5 +1,6 @@
 {
-	"dataType": "ELD",
-	"longName": "Error Code and Location",
-	"hl7Table": ""
+  "dataType": "ELD",
+  "longName": "Error Code and Location",
+  "codeName": "errorCodeAndLocation",
+  "hl7Table": ""
 }

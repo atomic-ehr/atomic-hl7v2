@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Command Response",
-	"hl7Table": "HL70387"
+  "dataType": "CE",
+  "longName": "Command Response",
+  "codeName": "commandResponse",
+  "hl7Table": "HL70387"
 }

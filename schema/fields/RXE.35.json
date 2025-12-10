@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Controlled Substance Schedule",
-	"hl7Table": "HL70477"
+  "dataType": "CWE",
+  "longName": "Controlled Substance Schedule",
+  "codeName": "controlledSubstanceSchedule",
+  "hl7Table": "HL70477"
 }

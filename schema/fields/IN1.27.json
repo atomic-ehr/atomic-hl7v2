@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Release Information Code",
-	"hl7Table": "HL70093"
+  "dataType": "IS",
+  "longName": "Release Information Code",
+  "codeName": "releaseInformationCode",
+  "hl7Table": "HL70093"
 }

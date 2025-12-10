@@ -1,5 +1,6 @@
 {
-	"dataType": "OSP",
-	"longName": "Occurrence Span Code/Dates (36)",
-	"hl7Table": ""
+  "dataType": "OSP",
+  "longName": "Occurrence Span Code/Dates (36)",
+  "codeName": "occurrenceSpanCodeDates",
+  "hl7Table": ""
 }

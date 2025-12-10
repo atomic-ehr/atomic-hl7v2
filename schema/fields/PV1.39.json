@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Servicing Facility",
-	"hl7Table": "HL70115"
+  "dataType": "IS",
+  "longName": "Servicing Facility",
+  "codeName": "servicingFacility",
+  "hl7Table": "HL70115"
 }

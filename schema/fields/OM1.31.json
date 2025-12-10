@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Observations Required to Interpret the Observation",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Observations Required to Interpret the Observation",
+  "codeName": "observationsRequiredToInterpretTheObservation",
+  "hl7Table": "HL79999"
 }

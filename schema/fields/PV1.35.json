@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Delete Account Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Delete Account Date",
+  "codeName": "deleteAccountDate",
+  "hl7Table": ""
 }

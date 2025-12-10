@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Procedure Code Modifier",
-	"hl7Table": "HL70340"
+  "dataType": "CE",
+  "longName": "Procedure Code Modifier",
+  "codeName": "procedureCodeModifier",
+  "hl7Table": "HL70340"
 }

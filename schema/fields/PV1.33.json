@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Bad Debt Recovery Amount",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Bad Debt Recovery Amount",
+  "codeName": "badDebtRecoveryAmount",
+  "hl7Table": ""
 }

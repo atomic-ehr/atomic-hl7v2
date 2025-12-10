@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Advance Directive Code",
-	"hl7Table": "HL70435"
+  "dataType": "CE",
+  "longName": "Advance Directive Code",
+  "codeName": "advanceDirectiveCode",
+  "hl7Table": "HL70435"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Special Program Indicator (44)",
-	"hl7Table": "HL70348"
+  "dataType": "CE",
+  "longName": "Special Program Indicator (44)",
+  "codeName": "specialProgramIndicator",
+  "hl7Table": "HL70348"
 }

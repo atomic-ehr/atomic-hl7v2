@@ -1,5 +1,6 @@
 {
-	"dataType": "JCC",
-	"longName": "Job Code/Class",
-	"hl7Table": ""
+  "dataType": "JCC",
+  "longName": "Job Code/Class",
+  "codeName": "jobCodeClass",
+  "hl7Table": ""
 }

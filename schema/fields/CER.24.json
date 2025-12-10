@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Issuing Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Issuing Date",
+  "codeName": "issuingDate",
+  "hl7Table": ""
 }

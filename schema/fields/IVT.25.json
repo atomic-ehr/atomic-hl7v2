@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Recommended Order Amount",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Recommended Order Amount",
+  "codeName": "recommendedOrderAmount",
+  "hl7Table": ""
 }

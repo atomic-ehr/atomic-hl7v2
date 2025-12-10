@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Outlier Reimbursement",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Outlier Reimbursement",
+  "codeName": "outlierReimbursement",
+  "hl7Table": ""
 }

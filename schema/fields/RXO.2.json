@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Requested Give Amount - Minimum",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Requested Give Amount - Minimum",
+  "codeName": "requestedGiveAmountMinimum",
+  "hl7Table": ""
 }

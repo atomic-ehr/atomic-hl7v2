@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Insured's Birth Place",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Insured's Birth Place",
+  "codeName": "insuredsBirthPlace",
+  "hl7Table": ""
 }

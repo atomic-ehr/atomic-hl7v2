@@ -1,5 +1,6 @@
 {
-	"dataType": "HD",
-	"longName": "Receiving Facility",
-	"hl7Table": "HL70362"
+  "dataType": "HD",
+  "longName": "Receiving Facility",
+  "codeName": "receivingFacility",
+  "hl7Table": "HL70362"
 }

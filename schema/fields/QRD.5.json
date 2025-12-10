@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Deferred Response Type",
-	"hl7Table": "HL70107"
+  "dataType": "ID",
+  "longName": "Deferred Response Type",
+  "codeName": "deferredResponseType",
+  "hl7Table": "HL70107"
 }

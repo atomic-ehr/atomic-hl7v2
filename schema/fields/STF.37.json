@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Generic Classification Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Generic Classification Indicator",
+  "codeName": "genericClassificationIndicator",
+  "hl7Table": "HL70136"
 }

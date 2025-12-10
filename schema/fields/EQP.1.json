@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Event type",
-	"hl7Table": "HL70450"
+  "dataType": "CE",
+  "longName": "Event type",
+  "codeName": "eventType",
+  "hl7Table": "HL70450"
 }

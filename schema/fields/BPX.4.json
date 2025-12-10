@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "BP Date/Time of Status",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "BP Date/Time of Status",
+  "codeName": "statusDateTime",
+  "hl7Table": ""
 }

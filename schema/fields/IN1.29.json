@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Verification Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Verification Date/Time",
+  "codeName": "verificationDateTime",
+  "hl7Table": ""
 }

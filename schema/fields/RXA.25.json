@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Administered Barcode Identifier",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Administered Barcode Identifier",
+  "codeName": "administeredBarcodeIdentifier",
+  "hl7Table": ""
 }

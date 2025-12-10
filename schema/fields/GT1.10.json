@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Guarantor Type",
-	"hl7Table": "HL70068"
+  "dataType": "IS",
+  "longName": "Guarantor Type",
+  "codeName": "guarantorType",
+  "hl7Table": "HL70068"
 }

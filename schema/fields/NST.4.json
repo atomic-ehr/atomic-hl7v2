@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Statistics Start",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Statistics Start",
+  "codeName": "statisticsStart",
+  "hl7Table": ""
 }

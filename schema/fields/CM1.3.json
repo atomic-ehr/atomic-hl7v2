@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Description of Study Phase",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Description of Study Phase",
+  "codeName": "descriptionOfStudyPhase",
+  "hl7Table": ""
 }

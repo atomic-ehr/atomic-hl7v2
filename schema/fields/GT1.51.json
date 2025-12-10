@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Guarantor Employer's Organization Name",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Guarantor Employer's Organization Name",
+  "codeName": "guarantorEmployersOrganizationName",
+  "hl7Table": ""
 }

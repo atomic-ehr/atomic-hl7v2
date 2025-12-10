@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "R/U Other Results Subject Definition",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "R/U Other Results Subject Definition",
+  "codeName": "rUOtherResultsSubjectDefinition",
+  "hl7Table": ""
 }

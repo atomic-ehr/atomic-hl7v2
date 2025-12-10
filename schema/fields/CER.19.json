@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Jurisdiction Country",
-	"hl7Table": "HL70399"
+  "dataType": "ID",
+  "longName": "Jurisdiction Country",
+  "codeName": "jurisdictionCountry",
+  "hl7Table": "HL70399"
 }

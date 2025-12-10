@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Indication For Product Use",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Indication For Product Use",
+  "codeName": "indicationForProductUse",
+  "hl7Table": ""
 }

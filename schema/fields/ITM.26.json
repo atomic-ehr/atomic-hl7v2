@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Track Department Usage Indicator",
-	"hl7Table": "HL70532"
+  "dataType": "CNE",
+  "longName": "Track Department Usage Indicator",
+  "codeName": "trackDepartmentUsageIndicator",
+  "hl7Table": "HL70532"
 }

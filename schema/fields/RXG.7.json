@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Give Units",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Give Units",
+  "codeName": "giveUnit",
+  "hl7Table": ""
 }

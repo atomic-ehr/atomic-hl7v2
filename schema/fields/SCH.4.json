@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Placer Group Number",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Placer Group Number",
+  "codeName": "placerGroupNumber",
+  "hl7Table": ""
 }

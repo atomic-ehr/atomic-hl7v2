@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Number of Specimen Containers",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Number of Specimen Containers",
+  "codeName": "numberOfSpecimenContainers",
+  "hl7Table": ""
 }

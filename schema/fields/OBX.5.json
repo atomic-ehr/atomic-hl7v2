@@ -1,5 +1,6 @@
 {
-	"dataType": "varies",
-	"longName": "Observation Value",
-	"hl7Table": ""
+  "dataType": "varies",
+  "longName": "Observation Value",
+  "codeName": "observationValue",
+  "hl7Table": ""
 }

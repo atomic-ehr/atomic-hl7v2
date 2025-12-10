@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Jurisdiction County/Parish",
-	"hl7Table": "HL70289"
+  "dataType": "CWE",
+  "longName": "Jurisdiction County/Parish",
+  "codeName": "jurisdictionCountyParish",
+  "hl7Table": "HL70289"
 }

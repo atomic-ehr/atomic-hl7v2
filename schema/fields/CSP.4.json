@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Study Phase Evaluability",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Study Phase Evaluability",
+  "codeName": "studyPhaseEvaluability",
+  "hl7Table": ""
 }

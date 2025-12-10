@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "BP Message Status",
-	"hl7Table": "HL70511"
+  "dataType": "ID",
+  "longName": "BP Message Status",
+  "codeName": "bpMessageStatus",
+  "hl7Table": "HL70511"
 }

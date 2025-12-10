@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Analyte Repeat Status",
-	"hl7Table": "HL70389"
+  "dataType": "CE",
+  "longName": "Analyte Repeat Status",
+  "codeName": "analyteRepeatStatus",
+  "hl7Table": "HL70389"
 }

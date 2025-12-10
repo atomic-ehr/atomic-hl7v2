@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Reflex Tests/Observations",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Reflex Tests/Observations",
+  "codeName": "reflexTestsObservations",
+  "hl7Table": "HL79999"
 }

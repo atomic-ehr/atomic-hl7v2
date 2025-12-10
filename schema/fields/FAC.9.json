@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Signature Authority",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Signature Authority",
+  "codeName": "signatureAuthority",
+  "hl7Table": ""
 }

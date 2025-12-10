@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Give Strength",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Give Strength",
+  "codeName": "giveStrength",
+  "hl7Table": ""
 }

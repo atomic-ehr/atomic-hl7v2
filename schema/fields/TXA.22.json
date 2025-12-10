@@ -1,5 +1,6 @@
 {
-	"dataType": "PPN",
-	"longName": "Authentication Person, Time Stamp",
-	"hl7Table": ""
+  "dataType": "PPN",
+  "longName": "Authentication Person, Time Stamp",
+  "codeName": "authenticationPersonTimeStamp",
+  "hl7Table": ""
 }

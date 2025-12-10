@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Copay Limit Flag",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Copay Limit Flag",
+  "codeName": "copayLimitFlag",
+  "hl7Table": "HL70136"
 }

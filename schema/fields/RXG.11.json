@@ -1,5 +1,6 @@
 {
-	"dataType": "LA2",
-	"longName": "Dispense-to Location",
-	"hl7Table": ""
+  "dataType": "LA2",
+  "longName": "Dispense-to Location",
+  "codeName": "dispenseToLocation",
+  "hl7Table": ""
 }

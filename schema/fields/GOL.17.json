@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Goal Evaluation Comment",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Goal Evaluation Comment",
+  "codeName": "goalEvaluationComment",
+  "hl7Table": ""
 }

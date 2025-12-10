@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Primary Observer's Qualification",
-	"hl7Table": "HL70242"
+  "dataType": "ID",
+  "longName": "Primary Observer's Qualification",
+  "codeName": "primaryObserversQualification",
+  "hl7Table": "HL70242"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Hospital Item Code",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Hospital Item Code",
+  "codeName": "hospitalItemCode",
+  "hl7Table": ""
 }

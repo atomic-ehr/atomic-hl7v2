@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "Deliver-to Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "Deliver-to Address",
+  "codeName": "deliverToAddress",
+  "hl7Table": ""
 }

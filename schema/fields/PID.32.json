@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Identity Reliability Code",
-	"hl7Table": "HL70445"
+  "dataType": "IS",
+  "longName": "Identity Reliability Code",
+  "codeName": "identityReliabilityCode",
+  "hl7Table": "HL70445"
 }

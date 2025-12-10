@@ -1,5 +1,6 @@
 {
-	"dataType": "XTN",
-	"longName": "Provider Communication Information",
-	"hl7Table": ""
+  "dataType": "XTN",
+  "longName": "Provider Communication Information",
+  "codeName": "providerCommunicationInformation",
+  "hl7Table": ""
 }

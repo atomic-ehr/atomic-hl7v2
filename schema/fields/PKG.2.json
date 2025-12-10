@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Packaging Units",
-	"hl7Table": "HL70818"
+  "dataType": "CWE",
+  "longName": "Packaging Units",
+  "codeName": "packagingUnit",
+  "hl7Table": "HL70818"
 }

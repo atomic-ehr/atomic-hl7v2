@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Marketing Approval ID",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Marketing Approval ID",
+  "codeName": "marketingApprovalId",
+  "hl7Table": ""
 }

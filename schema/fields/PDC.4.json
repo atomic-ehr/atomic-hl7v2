@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Device Family Name",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Device Family Name",
+  "codeName": "deviceFamilyName",
+  "hl7Table": ""
 }

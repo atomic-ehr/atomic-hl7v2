@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Sender Aware Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Sender Aware Date/Time",
+  "codeName": "senderAwareDateTime",
+  "hl7Table": ""
 }

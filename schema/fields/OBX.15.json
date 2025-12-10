@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Producer's Reference",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Producer's Reference",
+  "codeName": "producersReference",
+  "hl7Table": ""
 }

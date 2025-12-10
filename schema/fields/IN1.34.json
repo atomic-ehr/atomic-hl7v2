@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Delay Before L.R. Day",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Delay Before L.R. Day",
+  "codeName": "delayBeforeLRDay",
+  "hl7Table": ""
 }

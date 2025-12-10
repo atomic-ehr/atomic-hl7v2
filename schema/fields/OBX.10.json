@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Nature of Abnormal Test",
-	"hl7Table": "HL70080"
+  "dataType": "ID",
+  "longName": "Nature of Abnormal Test",
+  "codeName": "natureOfAbnormalTest",
+  "hl7Table": "HL70080"
 }

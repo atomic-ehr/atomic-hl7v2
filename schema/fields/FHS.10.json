@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "File Header Comment",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "File Header Comment",
+  "codeName": "fileHeaderComment",
+  "hl7Table": ""
 }

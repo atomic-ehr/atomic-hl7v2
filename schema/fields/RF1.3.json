@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Referral Type",
-	"hl7Table": "HL70281"
+  "dataType": "CE",
+  "longName": "Referral Type",
+  "codeName": "referralType",
+  "hl7Table": "HL70281"
 }

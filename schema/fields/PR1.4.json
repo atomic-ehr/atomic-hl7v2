@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Procedure Description",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Procedure Description",
+  "codeName": "procedureDescription",
+  "hl7Table": ""
 }

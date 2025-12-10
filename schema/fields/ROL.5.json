@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Role Begin Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Role Begin Date/Time",
+  "codeName": "roleBeginDateTime",
+  "hl7Table": ""
 }

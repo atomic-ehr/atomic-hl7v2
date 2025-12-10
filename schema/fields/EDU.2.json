@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Academic Degree",
-	"hl7Table": "HL70360"
+  "dataType": "IS",
+  "longName": "Academic Degree",
+  "codeName": "academicDegree",
+  "hl7Table": "HL70360"
 }

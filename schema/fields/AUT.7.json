@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Reimbursement Limit",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Reimbursement Limit",
+  "codeName": "reimbursementLimit",
+  "hl7Table": ""
 }

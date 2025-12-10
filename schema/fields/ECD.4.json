@@ -1,5 +1,6 @@
 {
-	"dataType": "TQ",
-	"longName": "Requested Completion Time",
-	"hl7Table": ""
+  "dataType": "TQ",
+  "longName": "Requested Completion Time",
+  "codeName": "requestedCompletionTime",
+  "hl7Table": ""
 }

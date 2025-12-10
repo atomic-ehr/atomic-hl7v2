@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Challenge Information",
-	"hl7Table": "HL70256"
+  "dataType": "TX",
+  "longName": "Challenge Information",
+  "codeName": "challengeInformation",
+  "hl7Table": "HL70256"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Subject to Expiration Indicator",
-	"hl7Table": "HL70532"
+  "dataType": "CNE",
+  "longName": "Subject to Expiration Indicator",
+  "codeName": "subjectToExpirationIndicator",
+  "hl7Table": "HL70532"
 }

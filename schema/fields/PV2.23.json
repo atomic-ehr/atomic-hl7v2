@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Clinic Organization Name",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Clinic Organization Name",
+  "codeName": "clinicOrganizationName",
+  "hl7Table": ""
 }

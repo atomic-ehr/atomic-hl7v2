@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Response Modality",
-	"hl7Table": "HL70394"
+  "dataType": "CE",
+  "longName": "Response Modality",
+  "codeName": "responseModality",
+  "hl7Table": "HL70394"
 }

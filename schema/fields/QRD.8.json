@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Who Subject Filter",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Who Subject Filter",
+  "codeName": "whoSubjectFilter",
+  "hl7Table": ""
 }

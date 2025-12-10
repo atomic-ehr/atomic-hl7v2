@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "R/U Who Subject Definition",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "R/U Who Subject Definition",
+  "codeName": "rUWhoSubjectDefinition",
+  "hl7Table": ""
 }

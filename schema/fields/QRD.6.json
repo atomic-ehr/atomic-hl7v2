@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Deferred Response Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Deferred Response Date/Time",
+  "codeName": "deferredResponseDateTime",
+  "hl7Table": ""
 }

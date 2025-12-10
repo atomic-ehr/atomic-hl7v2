@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Specimen Collection Amount",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Specimen Collection Amount",
+  "codeName": "specimenCollectionAmount",
+  "hl7Table": ""
 }

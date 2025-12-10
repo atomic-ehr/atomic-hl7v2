@@ -1,5 +1,6 @@
 {
-	"dataType": "XPN",
-	"longName": "Mother's Maiden Name",
-	"hl7Table": ""
+  "dataType": "XPN",
+  "longName": "Mother's Maiden Name",
+  "codeName": "mothersMaidenName",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Organization Name - LOC",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Organization Name - LOC",
+  "codeName": "organizationNameLoc",
+  "hl7Table": ""
 }

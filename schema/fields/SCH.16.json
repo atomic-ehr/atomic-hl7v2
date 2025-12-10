@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Filler Contact Person",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Filler Contact Person",
+  "codeName": "fillerContactPerson",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "LA2",
-	"longName": "Administered-at Location",
-	"hl7Table": ""
+  "dataType": "LA2",
+  "longName": "Administered-at Location",
+  "codeName": "administeredAtLocation",
+  "hl7Table": ""
 }

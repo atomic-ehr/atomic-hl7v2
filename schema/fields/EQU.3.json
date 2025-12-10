@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Equipment State",
-	"hl7Table": "HL70365"
+  "dataType": "CE",
+  "longName": "Equipment State",
+  "codeName": "equipmentState",
+  "hl7Table": "HL70365"
 }

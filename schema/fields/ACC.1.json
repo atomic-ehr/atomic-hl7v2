@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Accident Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Accident Date/Time",
+  "codeName": "accidentDateTime",
+  "hl7Table": ""
 }

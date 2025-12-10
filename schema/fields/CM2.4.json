@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Events Scheduled This Time Point",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Events Scheduled This Time Point",
+  "codeName": "eventsScheduledThisTimePoint",
+  "hl7Table": ""
 }

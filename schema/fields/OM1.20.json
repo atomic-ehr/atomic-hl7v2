@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Report Display Order",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Report Display Order",
+  "codeName": "reportDisplayOrder",
+  "hl7Table": ""
 }

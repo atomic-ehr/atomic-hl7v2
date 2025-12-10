@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Preadmit Number",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Preadmit Number",
+  "codeName": "preadmitNumber",
+  "hl7Table": ""
 }

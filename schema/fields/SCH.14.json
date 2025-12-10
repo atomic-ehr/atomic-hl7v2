@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "Placer Contact Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "Placer Contact Address",
+  "codeName": "placerContactAddress",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Administration Notes",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Administration Notes",
+  "codeName": "administrationNotes",
+  "hl7Table": ""
 }

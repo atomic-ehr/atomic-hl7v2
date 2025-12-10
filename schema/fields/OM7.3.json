@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Category Identifier",
-	"hl7Table": "HL70412"
+  "dataType": "CE",
+  "longName": "Category Identifier",
+  "codeName": "categoryIdentifier",
+  "hl7Table": "HL70412"
 }

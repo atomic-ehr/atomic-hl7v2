@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Transaction ID",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Transaction ID",
+  "codeName": "transactionId",
+  "hl7Table": ""
 }

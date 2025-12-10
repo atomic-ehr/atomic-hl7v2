@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Relative Time and Units",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Relative Time and Units",
+  "codeName": "relativeTimeAndUnit",
+  "hl7Table": ""
 }

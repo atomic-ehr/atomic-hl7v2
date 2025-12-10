@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "EQL Query Name",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "EQL Query Name",
+  "codeName": "eqlQueryName",
+  "hl7Table": ""
 }

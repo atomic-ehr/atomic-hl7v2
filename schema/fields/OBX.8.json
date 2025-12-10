@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Abnormal Flags",
-	"hl7Table": "HL70078"
+  "dataType": "IS",
+  "longName": "Abnormal Flags",
+  "codeName": "abnormalFlags",
+  "hl7Table": "HL70078"
 }

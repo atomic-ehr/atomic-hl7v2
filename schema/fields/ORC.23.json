@@ -1,5 +1,6 @@
 {
-	"dataType": "XTN",
-	"longName": "Ordering Facility Phone Number",
-	"hl7Table": ""
+  "dataType": "XTN",
+  "longName": "Ordering Facility Phone Number",
+  "codeName": "orderingFacilityPhoneNumber",
+  "hl7Table": ""
 }

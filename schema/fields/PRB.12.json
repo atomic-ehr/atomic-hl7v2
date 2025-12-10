@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Problem Persistence",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Problem Persistence",
+  "codeName": "problemPersistence",
+  "hl7Table": ""
 }

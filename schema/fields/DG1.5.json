@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Diagnosis Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Diagnosis Date/Time",
+  "codeName": "diagnosisDateTime",
+  "hl7Table": ""
 }

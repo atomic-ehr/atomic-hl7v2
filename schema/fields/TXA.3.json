@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Document Content Presentation",
-	"hl7Table": "HL70191"
+  "dataType": "ID",
+  "longName": "Document Content Presentation",
+  "codeName": "documentContentPresentation",
+  "hl7Table": "HL70191"
 }

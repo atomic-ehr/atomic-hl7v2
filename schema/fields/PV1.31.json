@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Bad Debt Agency Code",
-	"hl7Table": "HL70021"
+  "dataType": "IS",
+  "longName": "Bad Debt Agency Code",
+  "codeName": "badDebtAgencyCode",
+  "hl7Table": "HL70021"
 }

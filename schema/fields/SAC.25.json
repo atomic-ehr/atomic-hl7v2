@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Separator Type",
-	"hl7Table": "HL70380"
+  "dataType": "CE",
+  "longName": "Separator Type",
+  "codeName": "separatorType",
+  "hl7Table": "HL70380"
 }

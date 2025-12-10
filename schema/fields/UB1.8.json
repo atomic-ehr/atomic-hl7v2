@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Covered Days - (23)",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Covered Days - (23)",
+  "codeName": "coveredDays",
+  "hl7Table": ""
 }

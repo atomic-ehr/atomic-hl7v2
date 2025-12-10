@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Action Code - RXA",
-	"hl7Table": "HL70323"
+  "dataType": "ID",
+  "longName": "Action Code - RXA",
+  "codeName": "actionCodeRxa",
+  "hl7Table": "HL70323"
 }

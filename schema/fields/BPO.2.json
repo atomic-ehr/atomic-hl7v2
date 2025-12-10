@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "BP Universal Service ID",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "BP Universal Service ID",
+  "codeName": "bpUniversalServiceId",
+  "hl7Table": ""
 }

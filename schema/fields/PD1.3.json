@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Patient Primary Facility",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Patient Primary Facility",
+  "codeName": "primaryFacility",
+  "hl7Table": ""
 }

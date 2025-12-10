@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Case Manager",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Case Manager",
+  "codeName": "caseManager",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "DR",
-	"longName": "Professional Organization Affiliation Date Range",
-	"hl7Table": ""
+  "dataType": "DR",
+  "longName": "Professional Organization Affiliation Date Range",
+  "codeName": "professionalOrganizationAffiliationDateRange",
+  "hl7Table": ""
 }

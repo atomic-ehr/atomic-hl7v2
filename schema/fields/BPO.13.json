@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "BP Indication for Use",
-	"hl7Table": "HL70509"
+  "dataType": "CWE",
+  "longName": "BP Indication for Use",
+  "codeName": "bpIndicationForUse",
+  "hl7Table": "HL70509"
 }

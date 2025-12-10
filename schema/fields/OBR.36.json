@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Scheduled Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Scheduled Date/Time",
+  "codeName": "scheduledDateTime",
+  "hl7Table": ""
 }

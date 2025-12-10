@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Principal Language Of Message",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Principal Language Of Message",
+  "codeName": "principalLanguageOfMessage",
+  "hl7Table": ""
 }

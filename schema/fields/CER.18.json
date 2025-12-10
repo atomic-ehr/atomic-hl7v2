@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "CRL Distribution Point",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "CRL Distribution Point",
+  "codeName": "crlDistributionPoint",
+  "hl7Table": ""
 }

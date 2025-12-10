@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Anticipated Price",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Anticipated Price",
+  "codeName": "anticipatedPrice",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Procedure Functional Type",
-	"hl7Table": "HL70230"
+  "dataType": "IS",
+  "longName": "Procedure Functional Type",
+  "codeName": "procedureFunctionalType",
+  "hl7Table": "HL70230"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Component Code",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Component Code",
+  "codeName": "componentCode",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "MO",
-	"longName": "Maximum Price",
-	"hl7Table": ""
+  "dataType": "MO",
+  "longName": "Maximum Price",
+  "codeName": "maximumPrice",
+  "hl7Table": ""
 }

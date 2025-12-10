@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Re-admission Indicator",
-	"hl7Table": "HL70092"
+  "dataType": "IS",
+  "longName": "Re-admission Indicator",
+  "codeName": "reAdmissionIndicator",
+  "hl7Table": "HL70092"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "User Message",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "User Message",
+  "codeName": "userMessage",
+  "hl7Table": ""
 }

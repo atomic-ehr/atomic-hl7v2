@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Event Causality Observations",
-	"hl7Table": "HL70252"
+  "dataType": "ID",
+  "longName": "Event Causality Observations",
+  "codeName": "eventCausalityObservations",
+  "hl7Table": "HL70252"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Fee Schedule",
-	"hl7Table": "HL70024"
+  "dataType": "IS",
+  "longName": "Fee Schedule",
+  "codeName": "feeSchedule",
+  "hl7Table": "HL70024"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Personnel Resource ID",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Personnel Resource ID",
+  "codeName": "personnelResourceId",
+  "hl7Table": ""
 }

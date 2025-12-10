@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Substance Identifier",
-	"hl7Table": "HL70451"
+  "dataType": "CE",
+  "longName": "Substance Identifier",
+  "codeName": "substanceIdentifier",
+  "hl7Table": "HL70451"
 }

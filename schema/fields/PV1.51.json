@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Visit Indicator",
-	"hl7Table": "HL70326"
+  "dataType": "IS",
+  "longName": "Visit Indicator",
+  "codeName": "visitIndicator",
+  "hl7Table": "HL70326"
 }

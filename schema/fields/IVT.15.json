@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Stocked Item Indicator",
-	"hl7Table": "HL70532"
+  "dataType": "CNE",
+  "longName": "Stocked Item Indicator",
+  "codeName": "stockedItemIndicator",
+  "hl7Table": "HL70532"
 }

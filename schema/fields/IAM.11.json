@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Onset Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Onset Date",
+  "codeName": "onsetDate",
+  "hl7Table": ""
 }

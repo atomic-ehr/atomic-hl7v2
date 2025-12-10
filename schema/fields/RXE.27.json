@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Give Indication",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Give Indication",
+  "codeName": "giveIndication",
+  "hl7Table": ""
 }

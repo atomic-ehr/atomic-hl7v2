@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Batch Totals",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Batch Totals",
+  "codeName": "batchTotals",
+  "hl7Table": ""
 }

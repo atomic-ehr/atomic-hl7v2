@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "File Field Separator",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "File Field Separator",
+  "codeName": "fileFieldSeparator",
+  "hl7Table": ""
 }

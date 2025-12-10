@@ -1,5 +1,6 @@
 {
-	"dataType": "SRT",
-	"longName": "Sort-by Field",
-	"hl7Table": ""
+  "dataType": "SRT",
+  "longName": "Sort-by Field",
+  "codeName": "sortBy",
+  "hl7Table": ""
 }

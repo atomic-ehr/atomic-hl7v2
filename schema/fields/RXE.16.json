@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Number of Refills Remaining",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Number of Refills Remaining",
+  "codeName": "remainingRefills",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Container Description",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Container Description",
+  "codeName": "containerDescription",
+  "hl7Table": ""
 }

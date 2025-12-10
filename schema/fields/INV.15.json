@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Test/Fluid Identifier(s)",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Test/Fluid Identifier(s)",
+  "codeName": "testFluidIdentifier",
+  "hl7Table": ""
 }

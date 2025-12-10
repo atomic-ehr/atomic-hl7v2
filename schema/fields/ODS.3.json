@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Diet, Supplement, or Preference Code",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Diet, Supplement, or Preference Code",
+  "codeName": "dietSupplementOrPreferenceCode",
+  "hl7Table": ""
 }

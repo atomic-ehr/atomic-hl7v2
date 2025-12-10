@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Newborn Code",
-	"hl7Table": "HL70425"
+  "dataType": "CE",
+  "longName": "Newborn Code",
+  "codeName": "newbornCode",
+  "hl7Table": "HL70425"
 }

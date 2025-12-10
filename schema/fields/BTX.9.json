@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "BP Amount",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "BP Amount",
+  "codeName": "amount",
+  "hl7Table": ""
 }

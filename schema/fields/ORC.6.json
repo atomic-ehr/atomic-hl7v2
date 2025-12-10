@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Response Flag",
-	"hl7Table": "HL70121"
+  "dataType": "ID",
+  "longName": "Response Flag",
+  "codeName": "responseFlag",
+  "hl7Table": "HL70121"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Risk Management Incident Code",
-	"hl7Table": "HL70427"
+  "dataType": "CE",
+  "longName": "Risk Management Incident Code",
+  "codeName": "riskManagementIncidentCode",
+  "hl7Table": "HL70427"
 }

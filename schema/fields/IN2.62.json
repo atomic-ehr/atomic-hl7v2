@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Guarantor's Relationship to Insured",
-	"hl7Table": "HL70063"
+  "dataType": "CE",
+  "longName": "Guarantor's Relationship to Insured",
+  "codeName": "guarantorsRelationshipToInsured",
+  "hl7Table": "HL70063"
 }

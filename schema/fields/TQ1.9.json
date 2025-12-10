@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Priority",
-	"hl7Table": "HL70485"
+  "dataType": "CWE",
+  "longName": "Priority",
+  "codeName": "priority",
+  "hl7Table": "HL70485"
 }

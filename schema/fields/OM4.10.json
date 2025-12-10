@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Normal Collection Volume",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Normal Collection Volume",
+  "codeName": "normalCollectionVolume",
+  "hl7Table": ""
 }

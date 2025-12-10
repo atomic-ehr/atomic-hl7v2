@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "BC Component",
-	"hl7Table": ""
+  "dataType": "CNE",
+  "longName": "BC Component",
+  "codeName": "component",
+  "hl7Table": ""
 }

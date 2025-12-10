@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Admission Level of Care Code",
-	"hl7Table": "HL70432"
+  "dataType": "CE",
+  "longName": "Admission Level of Care Code",
+  "codeName": "admissionLevelOfCareCode",
+  "hl7Table": "HL70432"
 }

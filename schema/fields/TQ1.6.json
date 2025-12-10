@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Service Duration",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Service Duration",
+  "codeName": "serviceDuration",
+  "hl7Table": ""
 }

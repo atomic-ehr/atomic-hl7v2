@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Insured's Employment Start Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Insured's Employment Start Date",
+  "codeName": "insuredsEmploymentStartDate",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Actual Drug Strength Volume",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Actual Drug Strength Volume",
+  "codeName": "actualDrugStrengthVolume",
+  "hl7Table": ""
 }

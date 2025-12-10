@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Granting County/Parish",
-	"hl7Table": "HL70289"
+  "dataType": "CWE",
+  "longName": "Granting County/Parish",
+  "codeName": "grantingCountyParish",
+  "hl7Table": "HL70289"
 }

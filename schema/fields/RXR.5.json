@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Routing Instruction",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Routing Instruction",
+  "codeName": "routingInstruction",
+  "hl7Table": ""
 }

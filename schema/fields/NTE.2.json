@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Source of Comment",
-	"hl7Table": "HL70105"
+  "dataType": "ID",
+  "longName": "Source of Comment",
+  "codeName": "sourceOfComment",
+  "hl7Table": "HL70105"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XPN",
-	"longName": "Employer Contact Person Name",
-	"hl7Table": ""
+  "dataType": "XPN",
+  "longName": "Employer Contact Person Name",
+  "codeName": "employerContactPersonName",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Software Product Name",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Software Product Name",
+  "codeName": "softwareProductName",
+  "hl7Table": ""
 }

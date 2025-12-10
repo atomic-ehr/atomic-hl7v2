@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Alternate Patient ID - CSR",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Alternate Patient ID - CSR",
+  "codeName": "alternatePatientIdCsr",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "HD",
-	"longName": "File Receiving Facility",
-	"hl7Table": ""
+  "dataType": "HD",
+  "longName": "File Receiving Facility",
+  "codeName": "fileReceivingFacility",
+  "hl7Table": ""
 }

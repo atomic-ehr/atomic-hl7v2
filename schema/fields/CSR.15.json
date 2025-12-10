@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Date/time Ended Study",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Date/time Ended Study",
+  "codeName": "endedStudyDateTime",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Barrier Delta",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Barrier Delta",
+  "codeName": "barrierDelta",
+  "hl7Table": ""
 }

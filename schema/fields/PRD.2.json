@@ -1,5 +1,6 @@
 {
-	"dataType": "XPN",
-	"longName": "Provider Name",
-	"hl7Table": ""
+  "dataType": "XPN",
+  "longName": "Provider Name",
+  "codeName": "providerName",
+  "hl7Table": ""
 }

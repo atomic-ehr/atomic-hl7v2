@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Problem Management Discipline",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Problem Management Discipline",
+  "codeName": "problemManagementDiscipline",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Allergy Reaction Code",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Allergy Reaction Code",
+  "codeName": "allergyReactionCode",
+  "hl7Table": ""
 }

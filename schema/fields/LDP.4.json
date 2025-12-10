@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Specialty Type",
-	"hl7Table": "HL70265"
+  "dataType": "CE",
+  "longName": "Specialty Type",
+  "codeName": "specialtyType",
+  "hl7Table": "HL70265"
 }

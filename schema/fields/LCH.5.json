@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Location Characteristic Value-LCH",
-	"hl7Table": "HL70136"
+  "dataType": "CE",
+  "longName": "Location Characteristic Value-LCH",
+  "codeName": "locationCharacteristicValueLch",
+  "hl7Table": "HL70136"
 }

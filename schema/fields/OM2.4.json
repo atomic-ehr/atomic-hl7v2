@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Corresponding SI Units of Measure",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Corresponding SI Units of Measure",
+  "codeName": "correspondingSiUnitOfMeasure",
+  "hl7Table": "HL79999"
 }

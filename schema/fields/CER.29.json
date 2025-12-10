@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Revocation Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Revocation Date",
+  "codeName": "revocationDate",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Planned Patient Transport Comment",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Planned Patient Transport Comment",
+  "codeName": "plannedPatientTransportComment",
+  "hl7Table": ""
 }

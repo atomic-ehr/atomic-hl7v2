@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Guarantor Employment Status",
-	"hl7Table": "HL70066"
+  "dataType": "IS",
+  "longName": "Guarantor Employment Status",
+  "codeName": "guarantorEmploymentStatus",
+  "hl7Table": "HL70066"
 }

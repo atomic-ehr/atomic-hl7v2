@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Override Type",
-	"hl7Table": "HL70518"
+  "dataType": "CWE",
+  "longName": "Override Type",
+  "codeName": "overrideType",
+  "hl7Table": "HL70518"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Administered Strength",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Administered Strength",
+  "codeName": "administeredStrength",
+  "hl7Table": ""
 }

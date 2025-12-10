@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Enterer's Location",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Enterer's Location",
+  "codeName": "enterersLocation",
+  "hl7Table": ""
 }

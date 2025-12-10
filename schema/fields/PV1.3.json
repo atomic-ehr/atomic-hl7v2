@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Assigned Patient Location",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Assigned Patient Location",
+  "codeName": "assignedPatientLocation",
+  "hl7Table": ""
 }

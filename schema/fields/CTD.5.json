@@ -1,5 +1,6 @@
 {
-	"dataType": "XTN",
-	"longName": "Contact Communication Information",
-	"hl7Table": ""
+  "dataType": "XTN",
+  "longName": "Contact Communication Information",
+  "codeName": "contactCommunicationInformation",
+  "hl7Table": ""
 }

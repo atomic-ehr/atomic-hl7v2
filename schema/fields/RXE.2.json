@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Give Code",
-	"hl7Table": "HL70292"
+  "dataType": "CE",
+  "longName": "Give Code",
+  "codeName": "giveCode",
+  "hl7Table": "HL70292"
 }

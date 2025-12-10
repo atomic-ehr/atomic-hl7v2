@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Substitution Status",
-	"hl7Table": "HL70167"
+  "dataType": "ID",
+  "longName": "Substitution Status",
+  "codeName": "substitutionStatus",
+  "hl7Table": "HL70167"
 }

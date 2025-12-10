@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Product Serial/Lot Number",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Product Serial/Lot Number",
+  "codeName": "productSerialLotNumber",
+  "hl7Table": ""
 }

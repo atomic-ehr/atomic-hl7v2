@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Tray Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Tray Identifier",
+  "codeName": "trayIdentifier",
+  "hl7Table": ""
 }

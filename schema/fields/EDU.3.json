@@ -1,5 +1,6 @@
 {
-	"dataType": "DR",
-	"longName": "Academic Degree Program Date Range",
-	"hl7Table": ""
+  "dataType": "DR",
+  "longName": "Academic Degree Program Date Range",
+  "codeName": "academicDegreeProgramDateRange",
+  "hl7Table": ""
 }

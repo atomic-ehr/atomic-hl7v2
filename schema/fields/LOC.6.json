@@ -1,5 +1,6 @@
 {
-	"dataType": "XTN",
-	"longName": "Location Phone",
-	"hl7Table": ""
+  "dataType": "XTN",
+  "longName": "Location Phone",
+  "codeName": "locationPhone",
+  "hl7Table": ""
 }

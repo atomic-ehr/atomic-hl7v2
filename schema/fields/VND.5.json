@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Primary Vendor Indicator",
-	"hl7Table": ""
+  "dataType": "CNE",
+  "longName": "Primary Vendor Indicator",
+  "codeName": "primaryVendorIndicator",
+  "hl7Table": ""
 }

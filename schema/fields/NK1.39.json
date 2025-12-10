@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "VIP Indicator",
-	"hl7Table": "HL70099"
+  "dataType": "IS",
+  "longName": "VIP Indicator",
+  "codeName": "vip",
+  "hl7Table": "HL70099"
 }

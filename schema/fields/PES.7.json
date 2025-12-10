@@ -1,5 +1,6 @@
 {
-	"dataType": "FT",
-	"longName": "Sender Event Description",
-	"hl7Table": ""
+  "dataType": "FT",
+  "longName": "Sender Event Description",
+  "codeName": "senderEventDescription",
+  "hl7Table": ""
 }

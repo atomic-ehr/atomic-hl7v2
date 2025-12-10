@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Credit Rating",
-	"hl7Table": "HL70046"
+  "dataType": "IS",
+  "longName": "Credit Rating",
+  "codeName": "creditRating",
+  "hl7Table": "HL70046"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Separate Bill",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Separate Bill",
+  "codeName": "separateBill",
+  "hl7Table": "HL70136"
 }

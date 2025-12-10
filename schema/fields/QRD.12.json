@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Query Results Level",
-	"hl7Table": "HL70108"
+  "dataType": "ID",
+  "longName": "Query Results Level",
+  "codeName": "queryResultsLevel",
+  "hl7Table": "HL70108"
 }

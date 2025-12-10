@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Transaction Type",
-	"hl7Table": "HL70017"
+  "dataType": "IS",
+  "longName": "Transaction Type",
+  "codeName": "transactionType",
+  "hl7Table": "HL70017"
 }

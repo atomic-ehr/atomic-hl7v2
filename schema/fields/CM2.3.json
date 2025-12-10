@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Description of Time Point",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Description of Time Point",
+  "codeName": "descriptionOfTimePoint",
+  "hl7Table": ""
 }

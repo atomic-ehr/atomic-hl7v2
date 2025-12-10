@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Category Description",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Category Description",
+  "codeName": "categoryDescription",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Gestation Period - Weeks",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Gestation Period - Weeks",
+  "codeName": "gestationPeriodWeeks",
+  "hl7Table": ""
 }

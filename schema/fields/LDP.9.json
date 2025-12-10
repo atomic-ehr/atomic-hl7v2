@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Inactivated Reason",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Inactivated Reason",
+  "codeName": "inactivatedReason",
+  "hl7Table": ""
 }

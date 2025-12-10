@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Contact for Study",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Contact for Study",
+  "codeName": "contactForStudy",
+  "hl7Table": ""
 }

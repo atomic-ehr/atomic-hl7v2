@@ -1,5 +1,6 @@
 {
-	"dataType": "XTN",
-	"longName": "Guarantor Ph Num - Home",
-	"hl7Table": ""
+  "dataType": "XTN",
+  "longName": "Guarantor Ph Num - Home",
+  "codeName": "guarantorPhNumHome",
+  "hl7Table": ""
 }

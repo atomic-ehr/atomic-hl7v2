@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Requisition Unit of Measure",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Requisition Unit of Measure",
+  "codeName": "requisitionUnitOfMeasure",
+  "hl7Table": ""
 }

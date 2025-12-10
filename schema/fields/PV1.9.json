@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Consulting Doctor",
-	"hl7Table": "HL70010"
+  "dataType": "XCN",
+  "longName": "Consulting Doctor",
+  "codeName": "consultingDoctor",
+  "hl7Table": "HL70010"
 }

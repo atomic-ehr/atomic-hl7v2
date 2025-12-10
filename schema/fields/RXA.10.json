@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Administering Provider",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Administering Provider",
+  "codeName": "administeringProvider",
+  "hl7Table": ""
 }

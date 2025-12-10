@@ -1,5 +1,6 @@
 {
-	"dataType": "MO",
-	"longName": "Minimum Price",
-	"hl7Table": ""
+  "dataType": "MO",
+  "longName": "Minimum Price",
+  "codeName": "minimumPrice",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Translator Assistance Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Translator Assistance Indicator",
+  "codeName": "translatorAssistanceIndicator",
+  "hl7Table": "HL70136"
 }

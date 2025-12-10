@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Relationship",
-	"hl7Table": "HL70063"
+  "dataType": "CE",
+  "longName": "Relationship",
+  "codeName": "relationship",
+  "hl7Table": "HL70063"
 }

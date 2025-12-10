@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Specimen Requirements",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Specimen Requirements",
+  "codeName": "specimenRequirements",
+  "hl7Table": ""
 }

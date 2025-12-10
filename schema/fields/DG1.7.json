@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Major Diagnostic Category",
-	"hl7Table": "HL70118"
+  "dataType": "CE",
+  "longName": "Major Diagnostic Category",
+  "codeName": "majorDiagnosticCategory",
+  "hl7Table": "HL70118"
 }

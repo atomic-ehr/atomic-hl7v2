@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Next of Kin Birth Place",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Next of Kin Birth Place",
+  "codeName": "nextOfKinBirthPlace",
+  "hl7Table": ""
 }

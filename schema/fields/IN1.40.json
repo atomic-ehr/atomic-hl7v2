@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Room Rate - Semi-Private",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Room Rate - Semi-Private",
+  "codeName": "roomRateSemiPrivate",
+  "hl7Table": ""
 }

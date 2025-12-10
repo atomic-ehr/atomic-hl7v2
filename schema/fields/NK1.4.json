@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "Address",
+  "codeName": "text",
+  "hl7Table": ""
 }

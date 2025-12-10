@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Entered By Code",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Entered By Code",
+  "codeName": "enteredByCode",
+  "hl7Table": ""
 }

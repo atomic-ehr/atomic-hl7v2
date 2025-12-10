@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Primary Observer Aware Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Primary Observer Aware Date/Time",
+  "codeName": "primaryObserverAwareDateTime",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Consent Interval Units",
-	"hl7Table": "HL70414"
+  "dataType": "CE",
+  "longName": "Consent Interval Units",
+  "codeName": "consentIntervalUnit",
+  "hl7Table": "HL70414"
 }

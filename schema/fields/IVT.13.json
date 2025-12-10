@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Transaction amount - unit",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Transaction amount - unit",
+  "codeName": "transactionAmountUnit",
+  "hl7Table": ""
 }

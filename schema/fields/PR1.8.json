@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Anesthesiologist",
-	"hl7Table": "HL70010"
+  "dataType": "XCN",
+  "longName": "Anesthesiologist",
+  "codeName": "anesthesiologist",
+  "hl7Table": "HL70010"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Procedure Medication",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Procedure Medication",
+  "codeName": "procedureMedication",
+  "hl7Table": "HL79999"
 }

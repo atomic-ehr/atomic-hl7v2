@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Icterus Index Units",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Icterus Index Units",
+  "codeName": "icterusIndexUnit",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Derived Specimen",
-	"hl7Table": "HL70170"
+  "dataType": "ID",
+  "longName": "Derived Specimen",
+  "codeName": "derivedSpecimen",
+  "hl7Table": "HL70170"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "SN",
-	"longName": "Dilution Factor",
-	"hl7Table": ""
+  "dataType": "SN",
+  "longName": "Dilution Factor",
+  "codeName": "dilutionFactor",
+  "hl7Table": ""
 }

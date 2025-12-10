@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "BP Dispensing Individual",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "BP Dispensing Individual",
+  "codeName": "bpDispensingIndividual",
+  "hl7Table": ""
 }

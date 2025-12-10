@@ -1,5 +1,6 @@
 {
-	"dataType": "QSC",
-	"longName": "Selection Criteria",
-	"hl7Table": ""
+  "dataType": "QSC",
+  "longName": "Selection Criteria",
+  "codeName": "selectionCriteria",
+  "hl7Table": ""
 }

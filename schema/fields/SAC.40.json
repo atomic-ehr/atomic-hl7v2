@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "System Induced Contaminants",
-	"hl7Table": "HL70374"
+  "dataType": "CE",
+  "longName": "System Induced Contaminants",
+  "codeName": "systemInducedContaminants",
+  "hl7Table": "HL70374"
 }

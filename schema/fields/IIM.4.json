@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Inventory Expiration Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Inventory Expiration Date",
+  "codeName": "inventoryExpirationDate",
+  "hl7Table": ""
 }

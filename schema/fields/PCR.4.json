@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Total Duration Of Therapy",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Total Duration Of Therapy",
+  "codeName": "totalDurationOfTherapy",
+  "hl7Table": ""
 }

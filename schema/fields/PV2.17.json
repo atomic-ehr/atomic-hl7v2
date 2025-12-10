@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Purge Status Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Purge Status Date",
+  "codeName": "purgeStatusDate",
+  "hl7Table": ""
 }

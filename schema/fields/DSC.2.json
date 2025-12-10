@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Continuation Style",
-	"hl7Table": "HL70398"
+  "dataType": "ID",
+  "longName": "Continuation Style",
+  "codeName": "continuationStyle",
+  "hl7Table": "HL70398"
 }

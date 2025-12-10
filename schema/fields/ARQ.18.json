@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Placer Contact Location",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Placer Contact Location",
+  "codeName": "placerContactLocation",
+  "hl7Table": ""
 }

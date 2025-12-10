@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Death Certificate Signed Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Death Certificate Signed Date/Time",
+  "codeName": "deathCertificateSignedDateTime",
+  "hl7Table": ""
 }

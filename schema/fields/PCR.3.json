@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Product Class",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Product Class",
+  "codeName": "productClass",
+  "hl7Table": ""
 }

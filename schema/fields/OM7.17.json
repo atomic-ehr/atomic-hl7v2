@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Consent Waiting Period Quantity",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Consent Waiting Period Quantity",
+  "codeName": "consentWaitingPeriodQuantity",
+  "hl7Table": ""
 }

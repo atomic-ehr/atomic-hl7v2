@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Major Field of Study",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Major Field of Study",
+  "codeName": "majorFieldOfStudy",
+  "hl7Table": ""
 }

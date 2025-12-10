@@ -1,5 +1,6 @@
 {
-	"dataType": "HD",
-	"longName": "Event Facility",
-	"hl7Table": ""
+  "dataType": "HD",
+  "longName": "Event Facility",
+  "codeName": "eventFacility",
+  "hl7Table": ""
 }

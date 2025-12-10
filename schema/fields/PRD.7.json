@@ -1,5 +1,6 @@
 {
-	"dataType": "PLN",
-	"longName": "Provider Identifiers",
-	"hl7Table": ""
+  "dataType": "PLN",
+  "longName": "Provider Identifiers",
+  "codeName": "providerIdentifiers",
+  "hl7Table": ""
 }

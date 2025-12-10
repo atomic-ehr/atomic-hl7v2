@@ -1,5 +1,6 @@
 {
-	"dataType": "HD",
-	"longName": "Receiving Application",
-	"hl7Table": "HL70361"
+  "dataType": "HD",
+  "longName": "Receiving Application",
+  "codeName": "receivingApplication",
+  "hl7Table": "HL70361"
 }

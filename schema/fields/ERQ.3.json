@@ -1,5 +1,6 @@
 {
-	"dataType": "QIP",
-	"longName": "Input Parameter List",
-	"hl7Table": ""
+  "dataType": "QIP",
+  "longName": "Input Parameter List",
+  "codeName": "inputParameters",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Scheduled Station Name",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Scheduled Station Name",
+  "codeName": "scheduledStationName",
+  "hl7Table": ""
 }

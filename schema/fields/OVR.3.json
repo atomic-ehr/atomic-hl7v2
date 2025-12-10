@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Override Comments",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Override Comments",
+  "codeName": "overrideComments",
+  "hl7Table": ""
 }

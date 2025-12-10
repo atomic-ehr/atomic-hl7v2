@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "R/U What Subject Definition",
-	"hl7Table": "HL70048"
+  "dataType": "CE",
+  "longName": "R/U What Subject Definition",
+  "codeName": "rUWhatSubjectDefinition",
+  "hl7Table": "HL70048"
 }

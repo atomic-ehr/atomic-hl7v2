@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Entering Organization",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Entering Organization",
+  "codeName": "enteringOrganization",
+  "hl7Table": ""
 }

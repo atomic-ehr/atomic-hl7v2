@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Item Status",
-	"hl7Table": "HL70776"
+  "dataType": "CWE",
+  "longName": "Item Status",
+  "codeName": "itemStatus",
+  "hl7Table": "HL70776"
 }

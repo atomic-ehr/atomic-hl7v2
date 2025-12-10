@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Insurance Amount",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Insurance Amount",
+  "codeName": "insuranceAmount",
+  "hl7Table": ""
 }

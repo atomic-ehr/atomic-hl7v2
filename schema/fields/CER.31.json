@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Certificate Status",
-	"hl7Table": "HL70536"
+  "dataType": "CWE",
+  "longName": "Certificate Status",
+  "codeName": "certificateStatus",
+  "hl7Table": "HL70536"
 }

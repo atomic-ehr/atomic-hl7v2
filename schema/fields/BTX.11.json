@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "BP Transfusion/Disposition Status",
-	"hl7Table": "HL70513"
+  "dataType": "CWE",
+  "longName": "BP Transfusion/Disposition Status",
+  "codeName": "bpTransfusionDispositionStatus",
+  "hl7Table": "HL70513"
 }

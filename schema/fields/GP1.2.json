@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Revenue Code",
-	"hl7Table": "HL70456"
+  "dataType": "IS",
+  "longName": "Revenue Code",
+  "codeName": "revenueCode",
+  "hl7Table": "HL70456"
 }

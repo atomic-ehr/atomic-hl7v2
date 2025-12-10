@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Application Error Code",
-	"hl7Table": "HL70533"
+  "dataType": "CWE",
+  "longName": "Application Error Code",
+  "codeName": "applicationErrorCode",
+  "hl7Table": "HL70533"
 }

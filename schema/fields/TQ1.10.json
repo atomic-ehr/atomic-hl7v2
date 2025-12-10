@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Condition text",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Condition text",
+  "codeName": "conditionText",
+  "hl7Table": ""
 }

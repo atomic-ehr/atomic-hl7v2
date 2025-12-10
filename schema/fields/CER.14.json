@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Subject Directory Attribute Extension (Health Professional Data)",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Subject Directory Attribute Extension (Health Professional Data)",
+  "codeName": "subjectDirectoryAttributeExtension",
+  "hl7Table": ""
 }

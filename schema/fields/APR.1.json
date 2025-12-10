@@ -1,5 +1,6 @@
 {
-	"dataType": "SCV",
-	"longName": "Time Selection Criteria",
-	"hl7Table": "HL70294"
+  "dataType": "SCV",
+  "longName": "Time Selection Criteria",
+  "codeName": "timeSelectionCriteria",
+  "hl7Table": "HL70294"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Signature Code",
-	"hl7Table": "HL70535"
+  "dataType": "IS",
+  "longName": "Signature Code",
+  "codeName": "signatureCode",
+  "hl7Table": "HL70535"
 }

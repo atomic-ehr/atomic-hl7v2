@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Suspend Flag",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Suspend Flag",
+  "codeName": "suspendFlag",
+  "hl7Table": "HL70136"
 }

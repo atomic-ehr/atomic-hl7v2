@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Room Fee Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Room Fee Indicator",
+  "codeName": "roomFeeIndicator",
+  "hl7Table": "HL70136"
 }

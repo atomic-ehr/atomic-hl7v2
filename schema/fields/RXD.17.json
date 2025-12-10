@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Actual Strength Unit",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Actual Strength Unit",
+  "codeName": "actualStrengthUnit",
+  "hl7Table": ""
 }

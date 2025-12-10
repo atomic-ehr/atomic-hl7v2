@@ -1,5 +1,6 @@
 {
-	"dataType": "UVC",
-	"longName": "Value Amount & Code",
-	"hl7Table": ""
+  "dataType": "UVC",
+  "longName": "Value Amount & Code",
+  "codeName": "valueAmountAndCode",
+  "hl7Table": ""
 }

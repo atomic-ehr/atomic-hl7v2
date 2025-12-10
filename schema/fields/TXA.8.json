@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Edit Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Edit Date/Time",
+  "codeName": "editDateTime",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EIP",
-	"longName": "Specimen ID",
-	"hl7Table": ""
+  "dataType": "EIP",
+  "longName": "Specimen ID",
+  "codeName": "specimenId",
+  "hl7Table": ""
 }

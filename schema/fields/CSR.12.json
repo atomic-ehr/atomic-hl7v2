@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Randomized Study Arm",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Randomized Study Arm",
+  "codeName": "randomizedStudyArm",
+  "hl7Table": ""
 }

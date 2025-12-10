@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Inform Person Indicator",
-	"hl7Table": "HL70517"
+  "dataType": "IS",
+  "longName": "Inform Person Indicator",
+  "codeName": "informPersonIndicator",
+  "hl7Table": "HL70517"
 }

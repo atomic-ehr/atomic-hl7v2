@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "R/U Results Level",
-	"hl7Table": "HL70108"
+  "dataType": "ID",
+  "longName": "R/U Results Level",
+  "codeName": "rUResultsLevel",
+  "hl7Table": "HL70108"
 }

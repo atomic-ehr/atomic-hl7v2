@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "External Referral Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "External Referral Identifier",
+  "codeName": "externalReferralIdentifier",
+  "hl7Table": ""
 }

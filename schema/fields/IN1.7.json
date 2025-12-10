@@ -1,5 +1,6 @@
 {
-	"dataType": "XTN",
-	"longName": "Insurance Co Phone Number",
-	"hl7Table": ""
+  "dataType": "XTN",
+  "longName": "Insurance Co Phone Number",
+  "codeName": "insurancePhone",
+  "hl7Table": ""
 }

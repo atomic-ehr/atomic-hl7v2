@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Expiration Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Expiration Date/Time",
+  "codeName": "expiration",
+  "hl7Table": ""
 }

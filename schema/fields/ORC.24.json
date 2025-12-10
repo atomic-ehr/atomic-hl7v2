@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "Ordering Provider Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "Ordering Provider Address",
+  "codeName": "orderingProviderAddress",
+  "hl7Table": ""
 }

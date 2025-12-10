@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Location",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Location",
+  "codeName": "location",
+  "hl7Table": ""
 }

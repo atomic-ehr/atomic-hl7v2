@@ -1,5 +1,6 @@
 {
-	"dataType": "SCV",
-	"longName": "Location Selection Criteria",
-	"hl7Table": "HL70294"
+  "dataType": "SCV",
+  "longName": "Location Selection Criteria",
+  "codeName": "locationSelectionCriteria",
+  "hl7Table": "HL70294"
 }

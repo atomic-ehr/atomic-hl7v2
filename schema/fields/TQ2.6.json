@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Sequence Condition Code",
-	"hl7Table": "HL70504"
+  "dataType": "ID",
+  "longName": "Sequence Condition Code",
+  "codeName": "sequenceConditionCode",
+  "hl7Table": "HL70504"
 }

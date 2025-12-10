@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Give Rate Amount",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Give Rate Amount",
+  "codeName": "giveRateAmount",
+  "hl7Table": ""
 }

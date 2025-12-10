@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Checksum Errors Received",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Checksum Errors Received",
+  "codeName": "checksumErrorsReceived",
+  "hl7Table": ""
 }

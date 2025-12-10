@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Latex-Free Substitute Item Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Latex-Free Substitute Item Identifier",
+  "codeName": "latexFreeSubstituteItemIdentifier",
+  "hl7Table": ""
 }

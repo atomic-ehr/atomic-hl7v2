@@ -1,5 +1,6 @@
 {
-	"dataType": "LA1",
-	"longName": "Deliver-To Location",
-	"hl7Table": ""
+  "dataType": "LA1",
+  "longName": "Deliver-To Location",
+  "codeName": "deliverToLocation",
+  "hl7Table": ""
 }

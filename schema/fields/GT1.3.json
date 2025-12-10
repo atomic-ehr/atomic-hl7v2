@@ -1,5 +1,6 @@
 {
-	"dataType": "XPN",
-	"longName": "Guarantor Name",
-	"hl7Table": ""
+  "dataType": "XPN",
+  "longName": "Guarantor Name",
+  "codeName": "guarantorName",
+  "hl7Table": ""
 }

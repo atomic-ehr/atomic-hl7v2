@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Result Handling",
-	"hl7Table": "HL70507"
+  "dataType": "IS",
+  "longName": "Result Handling",
+  "codeName": "resultHandling",
+  "hl7Table": "HL70507"
 }

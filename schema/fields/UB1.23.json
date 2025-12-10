@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "UB-82 Locator 45",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "UB-82 Locator 45",
+  "codeName": "ub82Locator45",
+  "hl7Table": ""
 }

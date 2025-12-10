@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Serial Number",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Serial Number",
+  "codeName": "serialNumber",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Insured's Relationship To Patient",
-	"hl7Table": "HL70063"
+  "dataType": "CE",
+  "longName": "Insured's Relationship To Patient",
+  "codeName": "insuredsRelationshipToPatient",
+  "hl7Table": "HL70063"
 }

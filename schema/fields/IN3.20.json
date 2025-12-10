@@ -1,5 +1,6 @@
 {
-	"dataType": "ICD",
-	"longName": "Pre-Certification Requirement",
-	"hl7Table": ""
+  "dataType": "ICD",
+  "longName": "Pre-Certification Requirement",
+  "codeName": "preCertificationRequirement",
+  "hl7Table": ""
 }

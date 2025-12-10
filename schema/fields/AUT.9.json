@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Authorized Number of Treatments",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Authorized Number of Treatments",
+  "codeName": "authorizedNumberOfTreatments",
+  "hl7Table": ""
 }

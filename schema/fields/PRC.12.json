@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Effective End Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Effective End Date",
+  "codeName": "effectiveEndDate",
+  "hl7Table": ""
 }

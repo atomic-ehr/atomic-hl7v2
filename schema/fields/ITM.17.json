@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Latex Indicator",
-	"hl7Table": "HL70532"
+  "dataType": "CNE",
+  "longName": "Latex Indicator",
+  "codeName": "latexIndicator",
+  "hl7Table": "HL70532"
 }

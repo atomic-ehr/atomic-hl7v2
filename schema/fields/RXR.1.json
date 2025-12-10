@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Route",
-	"hl7Table": "HL70162"
+  "dataType": "CE",
+  "longName": "Route",
+  "codeName": "route",
+  "hl7Table": "HL70162"
 }

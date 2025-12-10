@@ -1,5 +1,6 @@
 {
-	"dataType": "XPN",
-	"longName": "Consenter ID",
-	"hl7Table": ""
+  "dataType": "XPN",
+  "longName": "Consenter ID",
+  "codeName": "consenterId",
+  "hl7Table": ""
 }

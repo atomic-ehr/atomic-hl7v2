@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Test Application Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Test Application Identifier",
+  "codeName": "testApplicationIdentifier",
+  "hl7Table": ""
 }

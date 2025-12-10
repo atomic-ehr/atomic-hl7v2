@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Coord Of Ben. Priority",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Coord Of Ben. Priority",
+  "codeName": "coordOfBenPriority",
+  "hl7Table": ""
 }

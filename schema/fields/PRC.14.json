@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Billing Category",
-	"hl7Table": "HL70293"
+  "dataType": "CE",
+  "longName": "Billing Category",
+  "codeName": "billingCategory",
+  "hl7Table": "HL70293"
 }

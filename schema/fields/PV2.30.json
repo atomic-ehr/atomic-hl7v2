@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Patient Charge Adjustment Code",
-	"hl7Table": "HL70218"
+  "dataType": "CE",
+  "longName": "Patient Charge Adjustment Code",
+  "codeName": "chargeAdjustmentCode",
+  "hl7Table": "HL70218"
 }

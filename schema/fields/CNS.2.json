@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Ending Notification Reference Number",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Ending Notification Reference Number",
+  "codeName": "endingNotificationReferenceNumber",
+  "hl7Table": ""
 }

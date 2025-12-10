@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Non-Concur Effective Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Non-Concur Effective Date/Time",
+  "codeName": "nonConcurEffectiveDateTime",
+  "hl7Table": ""
 }

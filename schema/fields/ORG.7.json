@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Health Care Provider Classification Code",
-	"hl7Table": "HL70453"
+  "dataType": "CE",
+  "longName": "Health Care Provider Classification Code",
+  "codeName": "healthCareProviderClassificationCode",
+  "hl7Table": "HL70453"
 }

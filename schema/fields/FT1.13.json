@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Department Code",
-	"hl7Table": "HL70049"
+  "dataType": "CE",
+  "longName": "Department Code",
+  "codeName": "departmentCode",
+  "hl7Table": "HL70049"
 }

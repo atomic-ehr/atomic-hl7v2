@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Filler's Expected Availability Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Filler's Expected Availability Date/Time",
+  "codeName": "fillersExpectedAvailabilityDateTime",
+  "hl7Table": ""
 }

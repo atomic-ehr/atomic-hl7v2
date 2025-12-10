@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Processing Time",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Processing Time",
+  "codeName": "processingTime",
+  "hl7Table": ""
 }

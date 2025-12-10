@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "PSRO/UR Approved Stay-To (89)",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "PSRO/UR Approved Stay-To (89)",
+  "codeName": "psroUrApprovedStayTo",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Policy Limit - Amount",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Policy Limit - Amount",
+  "codeName": "policyLimitAmount",
+  "hl7Table": ""
 }

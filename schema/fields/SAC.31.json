@@ -1,5 +1,6 @@
 {
-	"dataType": "SN",
-	"longName": "Temperature",
-	"hl7Table": ""
+  "dataType": "SN",
+  "longName": "Temperature",
+  "codeName": "temperature",
+  "hl7Table": ""
 }

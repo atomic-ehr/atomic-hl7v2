@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Recommended Reorder Theory",
-	"hl7Table": "HL70642"
+  "dataType": "CWE",
+  "longName": "Recommended Reorder Theory",
+  "codeName": "recommendedReorderTheory",
+  "hl7Table": "HL70642"
 }

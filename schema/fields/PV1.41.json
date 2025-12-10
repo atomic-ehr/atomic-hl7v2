@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Account Status",
-	"hl7Table": "HL70117"
+  "dataType": "IS",
+  "longName": "Account Status",
+  "codeName": "accountStatus",
+  "hl7Table": "HL70117"
 }

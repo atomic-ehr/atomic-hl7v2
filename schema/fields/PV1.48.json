@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Total Adjustments",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Total Adjustments",
+  "codeName": "totalAdjustments",
+  "hl7Table": ""
 }

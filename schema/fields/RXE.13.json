@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Ordering Provider's DEA Number",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Ordering Provider's DEA Number",
+  "codeName": "orderingProvidersDeaNumber",
+  "hl7Table": ""
 }

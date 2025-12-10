@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Special Coverage Approval Title",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Special Coverage Approval Title",
+  "codeName": "specialCoverageApprovalTitle",
+  "hl7Table": ""
 }

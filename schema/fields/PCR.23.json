@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Indirect Exposure Mechanism",
-	"hl7Table": "HL70253"
+  "dataType": "ID",
+  "longName": "Indirect Exposure Mechanism",
+  "codeName": "indirectExposureMechanism",
+  "hl7Table": "HL70253"
 }

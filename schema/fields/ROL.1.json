@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Role Instance ID",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Role Instance ID",
+  "codeName": "roleInstanceId",
+  "hl7Table": ""
 }

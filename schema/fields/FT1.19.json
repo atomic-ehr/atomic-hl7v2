@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Diagnosis Code - FT1",
-	"hl7Table": "HL70051"
+  "dataType": "CE",
+  "longName": "Diagnosis Code - FT1",
+  "codeName": "diagnosisCodeFt1",
+  "hl7Table": "HL70051"
 }

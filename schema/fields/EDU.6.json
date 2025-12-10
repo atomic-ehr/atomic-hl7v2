@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "School",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "School",
+  "codeName": "school",
+  "hl7Table": ""
 }

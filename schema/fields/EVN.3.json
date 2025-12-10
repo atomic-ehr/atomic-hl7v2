@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Date/Time Planned Event",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Date/Time Planned Event",
+  "codeName": "plannedEventDateTime",
+  "hl7Table": ""
 }

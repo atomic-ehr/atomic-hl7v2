@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "File Encoding Characters",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "File Encoding Characters",
+  "codeName": "fileEncodingCharacters",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Certainty of Problem",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Certainty of Problem",
+  "codeName": "certaintyOfProblem",
+  "hl7Table": ""
 }

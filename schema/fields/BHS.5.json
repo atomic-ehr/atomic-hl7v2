@@ -1,5 +1,6 @@
 {
-	"dataType": "HD",
-	"longName": "Batch Receiving Application",
-	"hl7Table": ""
+  "dataType": "HD",
+  "longName": "Batch Receiving Application",
+  "codeName": "batchReceivingApplication",
+  "hl7Table": ""
 }

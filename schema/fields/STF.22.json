@@ -1,5 +1,6 @@
 {
-	"dataType": "DLN",
-	"longName": "Driver's License Number - Staff",
-	"hl7Table": ""
+  "dataType": "DLN",
+  "longName": "Driver's License Number - Staff",
+  "codeName": "driversLicenseNumberStaff",
+  "hl7Table": ""
 }

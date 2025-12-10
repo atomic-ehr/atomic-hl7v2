@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Initial Quantity",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Initial Quantity",
+  "codeName": "initialQuantity",
+  "hl7Table": ""
 }

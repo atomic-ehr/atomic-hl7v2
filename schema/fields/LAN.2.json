@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Language Code",
-	"hl7Table": "HL70296"
+  "dataType": "CE",
+  "longName": "Language Code",
+  "codeName": "languageCode",
+  "hl7Table": "HL70296"
 }

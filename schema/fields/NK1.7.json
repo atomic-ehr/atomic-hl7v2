@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Contact Role",
-	"hl7Table": "HL70131"
+  "dataType": "CE",
+  "longName": "Contact Role",
+  "codeName": "contactRole",
+  "hl7Table": "HL70131"
 }

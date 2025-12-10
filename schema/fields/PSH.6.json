@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Quantity Manufactured",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Quantity Manufactured",
+  "codeName": "quantityManufactured",
+  "hl7Table": ""
 }

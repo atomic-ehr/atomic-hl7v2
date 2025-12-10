@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Security",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Security",
+  "codeName": "security",
+  "hl7Table": ""
 }

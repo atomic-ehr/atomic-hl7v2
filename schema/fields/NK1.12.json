@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Next of Kin / Associated Parties Employee Number",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Next of Kin / Associated Parties Employee Number",
+  "codeName": "nextOfKinAssociatedPartiesEmployeeNumber",
+  "hl7Table": ""
 }

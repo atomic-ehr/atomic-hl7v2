@@ -1,5 +1,6 @@
 {
-	"dataType": "HD",
-	"longName": "File Sending Facility",
-	"hl7Table": ""
+  "dataType": "HD",
+  "longName": "File Sending Facility",
+  "codeName": "fileSendingFacility",
+  "hl7Table": ""
 }

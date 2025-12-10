@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Insured's Contact Person Reason",
-	"hl7Table": "HL70222"
+  "dataType": "IS",
+  "longName": "Insured's Contact Person Reason",
+  "codeName": "insuredsContactPersonReason",
+  "hl7Table": "HL70222"
 }

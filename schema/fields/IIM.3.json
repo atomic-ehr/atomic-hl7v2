@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Inventory Lot Number",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Inventory Lot Number",
+  "codeName": "inventoryLotNumber",
+  "hl7Table": ""
 }

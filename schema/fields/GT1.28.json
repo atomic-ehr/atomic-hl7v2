@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Guarantor Household Size",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Guarantor Household Size",
+  "codeName": "guarantorHouseholdSize",
+  "hl7Table": ""
 }

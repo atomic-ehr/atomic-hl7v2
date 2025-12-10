@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Pharmacist/Treatment Supplier's Verifier ID",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Pharmacist/Treatment Supplier's Verifier ID",
+  "codeName": "pharmacistTreatmentSuppliersVerifierId",
+  "hl7Table": ""
 }

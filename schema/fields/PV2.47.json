@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Expected LOA Return Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Expected LOA Return Date/Time",
+  "codeName": "expectedLoaReturnDateTime",
+  "hl7Table": ""
 }

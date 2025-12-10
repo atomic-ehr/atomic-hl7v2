@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "File Batch Count",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "File Batch Count",
+  "codeName": "fileBatchCount",
+  "hl7Table": ""
 }

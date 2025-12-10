@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Authorizing Payor, Plan ID",
-	"hl7Table": "HL70072"
+  "dataType": "CE",
+  "longName": "Authorizing Payor, Plan ID",
+  "codeName": "authorizingPayorPlanId",
+  "hl7Table": "HL70072"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Grouper Version And Type",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Grouper Version And Type",
+  "codeName": "grouperVersionAndType",
+  "hl7Table": ""
 }

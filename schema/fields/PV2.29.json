@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "First Similar Illness Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "First Similar Illness Date",
+  "codeName": "firstSimilarIllnessDate",
+  "hl7Table": ""
 }

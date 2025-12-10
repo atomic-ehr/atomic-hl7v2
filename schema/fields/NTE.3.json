@@ -1,5 +1,6 @@
 {
-	"dataType": "FT",
-	"longName": "Comment",
-	"hl7Table": ""
+  "dataType": "FT",
+  "longName": "Comment",
+  "codeName": "comment",
+  "hl7Table": ""
 }

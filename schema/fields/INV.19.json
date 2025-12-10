@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "On Board Stability Time",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "On Board Stability Time",
+  "codeName": "onBoardStabilityTime",
+  "hl7Table": ""
 }

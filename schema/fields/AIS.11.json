@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Placer Supplemental Service Information",
-	"hl7Table": "HL70411"
+  "dataType": "CE",
+  "longName": "Placer Supplemental Service Information",
+  "codeName": "placerSupplementalInfo",
+  "hl7Table": "HL70411"
 }

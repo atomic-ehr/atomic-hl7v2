@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Requisition Quantity",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Requisition Quantity",
+  "codeName": "requisitionQuantity",
+  "hl7Table": ""
 }

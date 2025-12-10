@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Charge",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Charge",
+  "codeName": "charge",
+  "hl7Table": ""
 }

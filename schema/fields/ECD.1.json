@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Reference Command Number",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Reference Command Number",
+  "codeName": "referenceCommandNumber",
+  "hl7Table": ""
 }

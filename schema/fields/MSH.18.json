@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Character Set",
-	"hl7Table": "HL70211"
+  "dataType": "ID",
+  "longName": "Character Set",
+  "codeName": "characterSet",
+  "hl7Table": "HL70211"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Strain",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Strain",
+  "codeName": "strain",
+  "hl7Table": ""
 }

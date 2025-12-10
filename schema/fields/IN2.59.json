@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Policy Scope",
-	"hl7Table": "HL70312"
+  "dataType": "IS",
+  "longName": "Policy Scope",
+  "codeName": "policyScope",
+  "hl7Table": "HL70312"
 }

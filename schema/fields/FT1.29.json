@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "NDC Code",
-	"hl7Table": "HL70549"
+  "dataType": "CNE",
+  "longName": "NDC Code",
+  "codeName": "ndcCode",
+  "hl7Table": "HL70549"
 }

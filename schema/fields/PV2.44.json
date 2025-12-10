@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Organ Donor Code",
-	"hl7Table": "HL70316"
+  "dataType": "IS",
+  "longName": "Organ Donor Code",
+  "codeName": "organDonorCode",
+  "hl7Table": "HL70316"
 }

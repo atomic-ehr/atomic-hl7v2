@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "Event Location Occurred Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "Event Location Occurred Address",
+  "codeName": "eventLocationOccurredAddress",
+  "hl7Table": ""
 }

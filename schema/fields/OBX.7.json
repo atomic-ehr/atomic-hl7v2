@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "References Range",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "References Range",
+  "codeName": "referencesRange",
+  "hl7Table": ""
 }

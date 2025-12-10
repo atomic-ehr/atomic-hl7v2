@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Mail Claim Party",
-	"hl7Table": "HL70137"
+  "dataType": "IS",
+  "longName": "Mail Claim Party",
+  "codeName": "mailClaimParty",
+  "hl7Table": "HL70137"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ERL",
-	"longName": "Error Location",
-	"hl7Table": ""
+  "dataType": "ERL",
+  "longName": "Error Location",
+  "codeName": "errorLocation",
+  "hl7Table": ""
 }

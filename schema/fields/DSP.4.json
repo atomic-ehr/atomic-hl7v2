@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Logical Break Point",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Logical Break Point",
+  "codeName": "logicalBreakPoint",
+  "hl7Table": ""
 }

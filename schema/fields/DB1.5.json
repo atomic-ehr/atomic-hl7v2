@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Disability Start Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Disability Start Date",
+  "codeName": "disabilityStartDate",
+  "hl7Table": ""
 }

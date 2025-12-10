@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "VT Query Name",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "VT Query Name",
+  "codeName": "vtQueryName",
+  "hl7Table": ""
 }

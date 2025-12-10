@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Actual Strength",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Actual Strength",
+  "codeName": "actualStrength",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Total Accrual to Date",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Total Accrual to Date",
+  "codeName": "totalAccrualToDate",
+  "hl7Table": ""
 }

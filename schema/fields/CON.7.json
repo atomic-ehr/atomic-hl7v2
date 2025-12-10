@@ -1,5 +1,6 @@
 {
-	"dataType": "FT",
-	"longName": "Consent Background",
-	"hl7Table": ""
+  "dataType": "FT",
+  "longName": "Consent Background",
+  "codeName": "consentBackground",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "DRG Grouper Review Code",
-	"hl7Table": "HL70056"
+  "dataType": "IS",
+  "longName": "DRG Grouper Review Code",
+  "codeName": "drgGrouperReviewCode",
+  "hl7Table": "HL70056"
 }

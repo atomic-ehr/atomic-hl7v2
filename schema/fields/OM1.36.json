@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Fixed Canned Message",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Fixed Canned Message",
+  "codeName": "fixedCannedMessage",
+  "hl7Table": "HL79999"
 }

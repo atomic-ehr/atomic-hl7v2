@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Appointment Duration Units",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Appointment Duration Units",
+  "codeName": "appointmentDurationUnit",
+  "hl7Table": ""
 }

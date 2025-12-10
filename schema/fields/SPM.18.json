@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Specimen Received Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Specimen Received Date/Time",
+  "codeName": "specimenReceived",
+  "hl7Table": ""
 }

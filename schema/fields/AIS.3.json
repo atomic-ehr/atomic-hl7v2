@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Universal Service Identifier",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Universal Service Identifier",
+  "codeName": "service",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Sterilization Cycle",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Sterilization Cycle",
+  "codeName": "sterilizationCycle",
+  "hl7Table": ""
 }

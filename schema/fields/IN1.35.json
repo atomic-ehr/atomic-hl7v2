@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Company Plan Code",
-	"hl7Table": "HL70042"
+  "dataType": "IS",
+  "longName": "Company Plan Code",
+  "codeName": "companyPlanCode",
+  "hl7Table": "HL70042"
 }

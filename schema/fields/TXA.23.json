@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Distributed Copies (Code and Name of Recipients)",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Distributed Copies (Code and Name of Recipients)",
+  "codeName": "distributedCopies",
+  "hl7Table": ""
 }

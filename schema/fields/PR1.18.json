@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Tissue Type Code",
-	"hl7Table": "HL70417"
+  "dataType": "CE",
+  "longName": "Tissue Type Code",
+  "codeName": "tissueTypeCode",
+  "hl7Table": "HL70417"
 }

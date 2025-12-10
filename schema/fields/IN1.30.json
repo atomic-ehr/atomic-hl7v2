@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Verification By",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Verification By",
+  "codeName": "verificationBy",
+  "hl7Table": ""
 }

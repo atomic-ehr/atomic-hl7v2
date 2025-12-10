@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Minimum Collection Volume",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Minimum Collection Volume",
+  "codeName": "minimumCollectionVolume",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "RCD",
-	"longName": "Column Description",
-	"hl7Table": "HL70440"
+  "dataType": "RCD",
+  "longName": "Column Description",
+  "codeName": "columnDescription",
+  "hl7Table": "HL70440"
 }

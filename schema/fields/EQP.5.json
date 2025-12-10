@@ -1,5 +1,6 @@
 {
-	"dataType": "FT",
-	"longName": "Transaction Data",
-	"hl7Table": ""
+  "dataType": "FT",
+  "longName": "Transaction Data",
+  "codeName": "transactionData",
+  "hl7Table": ""
 }

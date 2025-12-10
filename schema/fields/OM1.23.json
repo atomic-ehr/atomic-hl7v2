@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Typical Turn-Around Time",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Typical Turn-Around Time",
+  "codeName": "typicalTurnAroundTime",
+  "hl7Table": ""
 }

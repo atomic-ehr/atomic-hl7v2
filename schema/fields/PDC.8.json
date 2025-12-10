@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Other Identifier",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Other Identifier",
+  "codeName": "otherIdentifier",
+  "hl7Table": ""
 }

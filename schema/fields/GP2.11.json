@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Expected CMS Payment Amount",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Expected CMS Payment Amount",
+  "codeName": "expectedCmsPaymentAmount",
+  "hl7Table": ""
 }

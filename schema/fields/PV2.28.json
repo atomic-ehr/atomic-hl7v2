@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Signature on File Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Signature on File Date",
+  "codeName": "signatureOnFileDate",
+  "hl7Table": ""
 }

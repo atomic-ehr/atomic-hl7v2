@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Dispense Units",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Dispense Units",
+  "codeName": "dispenseUnit",
+  "hl7Table": ""
 }

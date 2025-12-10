@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Contract Effective Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Contract Effective Date",
+  "codeName": "contractEffectiveDate",
+  "hl7Table": ""
 }

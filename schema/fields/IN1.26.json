@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Report Of Eligibility Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Report Of Eligibility Date",
+  "codeName": "reportOfEligibilityDate",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Prior Pending Location",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Prior Pending Location",
+  "codeName": "priorPendingLocation",
+  "hl7Table": ""
 }

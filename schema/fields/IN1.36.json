@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Policy Number",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Policy Number",
+  "codeName": "policyNumber",
+  "hl7Table": ""
 }

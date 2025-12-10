@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Orderable-at Location",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Orderable-at Location",
+  "codeName": "orderableAtLocation",
+  "hl7Table": ""
 }

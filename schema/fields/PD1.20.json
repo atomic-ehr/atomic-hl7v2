@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Military Rank/Grade",
-	"hl7Table": "HL70141"
+  "dataType": "IS",
+  "longName": "Military Rank/Grade",
+  "codeName": "militaryRankGrade",
+  "hl7Table": "HL70141"
 }

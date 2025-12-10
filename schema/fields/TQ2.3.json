@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Related Placer Number",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Related Placer Number",
+  "codeName": "relatedPlacerNumber",
+  "hl7Table": ""
 }

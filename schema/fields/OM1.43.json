@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Point Versus Interval",
-	"hl7Table": "HL70255"
+  "dataType": "CE",
+  "longName": "Point Versus Interval",
+  "codeName": "pointVersusInterval",
+  "hl7Table": "HL70255"
 }

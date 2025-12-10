@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Staff Identifier List",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Staff Identifier List",
+  "codeName": "staffIdentifierList",
+  "hl7Table": ""
 }

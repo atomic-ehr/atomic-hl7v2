@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Religion",
-	"hl7Table": "HL70006"
+  "dataType": "CE",
+  "longName": "Religion",
+  "codeName": "religion",
+  "hl7Table": "HL70006"
 }

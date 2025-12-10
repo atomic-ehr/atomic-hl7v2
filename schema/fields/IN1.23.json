@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Notice Of Admission Flag",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Notice Of Admission Flag",
+  "codeName": "noticeOfAdmissionFlag",
+  "hl7Table": "HL70136"
 }

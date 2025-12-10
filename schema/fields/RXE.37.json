@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Pharmaceutical Substance Alternative",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Pharmaceutical Substance Alternative",
+  "codeName": "pharmaceuticalSubstanceAlternative",
+  "hl7Table": ""
 }

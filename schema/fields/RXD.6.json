@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Actual Dosage Form",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Actual Dosage Form",
+  "codeName": "actualDosageForm",
+  "hl7Table": ""
 }

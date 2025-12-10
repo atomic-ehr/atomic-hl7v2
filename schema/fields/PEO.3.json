@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Event Onset Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Event Onset Date/Time",
+  "codeName": "eventOnsetDateTime",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "HD",
-	"longName": "Last Update Facility",
-	"hl7Table": ""
+  "dataType": "HD",
+  "longName": "Last Update Facility",
+  "codeName": "lastUpdateFacility",
+  "hl7Table": ""
 }

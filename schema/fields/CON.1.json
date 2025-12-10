@@ -1,5 +1,6 @@
 {
-	"dataType": "SI",
-	"longName": "Set ID - CON",
-	"hl7Table": ""
+  "dataType": "SI",
+  "longName": "Set ID - CON",
+  "codeName": "setIdCon",
+  "hl7Table": ""
 }

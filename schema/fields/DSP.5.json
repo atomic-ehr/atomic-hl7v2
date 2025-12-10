@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Result ID",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Result ID",
+  "codeName": "resultId",
+  "hl7Table": ""
 }

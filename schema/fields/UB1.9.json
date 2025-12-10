@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Non Covered Days - (24)",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Non Covered Days - (24)",
+  "codeName": "nonCoveredDays",
+  "hl7Table": ""
 }

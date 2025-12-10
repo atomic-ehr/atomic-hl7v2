@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Component Strength",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Component Strength",
+  "codeName": "componentStrength",
+  "hl7Table": ""
 }

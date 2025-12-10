@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Interpretation of Observations",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Interpretation of Observations",
+  "codeName": "interpretationOfObservations",
+  "hl7Table": ""
 }

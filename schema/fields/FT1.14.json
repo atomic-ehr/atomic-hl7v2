@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Insurance Plan ID",
-	"hl7Table": "HL70072"
+  "dataType": "CE",
+  "longName": "Insurance Plan ID",
+  "codeName": "insurancePlanId",
+  "hl7Table": "HL70072"
 }

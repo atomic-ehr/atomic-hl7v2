@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Recommended Order Point",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Recommended Order Point",
+  "codeName": "recommendedOrderPoint",
+  "hl7Table": ""
 }

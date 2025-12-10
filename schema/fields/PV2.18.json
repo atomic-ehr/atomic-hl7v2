@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Special Program Code",
-	"hl7Table": "HL70214"
+  "dataType": "IS",
+  "longName": "Special Program Code",
+  "codeName": "specialProgramCode",
+  "hl7Table": "HL70214"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Override Reason Code",
-	"hl7Table": "HL70519"
+  "dataType": "CWE",
+  "longName": "Override Reason Code",
+  "codeName": "overrideReasonCode",
+  "hl7Table": "HL70519"
 }

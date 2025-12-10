@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Ambulatory Status",
-	"hl7Table": "HL70009"
+  "dataType": "IS",
+  "longName": "Ambulatory Status",
+  "codeName": "ambulatoryStatus",
+  "hl7Table": "HL70009"
 }

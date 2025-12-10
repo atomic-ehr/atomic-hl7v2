@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Administration Method",
-	"hl7Table": "HL70165"
+  "dataType": "CWE",
+  "longName": "Administration Method",
+  "codeName": "administrationMethod",
+  "hl7Table": "HL70165"
 }

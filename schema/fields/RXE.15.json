@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Prescription Number",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Prescription Number",
+  "codeName": "prescriptionNumber",
+  "hl7Table": ""
 }

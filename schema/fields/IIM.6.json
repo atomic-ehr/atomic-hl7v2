@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Inventory Location",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Inventory Location",
+  "codeName": "inventoryLocation",
+  "hl7Table": ""
 }

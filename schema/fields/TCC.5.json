@@ -1,5 +1,6 @@
 {
-	"dataType": "SN",
-	"longName": "Rerun Dilution Factor Default",
-	"hl7Table": ""
+  "dataType": "SN",
+  "longName": "Rerun Dilution Factor Default",
+  "codeName": "rerunDilutionFactorDefault",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Sequence Condition Time Interval",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Sequence Condition Time Interval",
+  "codeName": "sequenceConditionTimeInterval",
+  "hl7Table": ""
 }

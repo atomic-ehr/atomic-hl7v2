@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Patient Study Eligibility Status",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Patient Study Eligibility Status",
+  "codeName": "eligibilityStatus",
+  "hl7Table": ""
 }

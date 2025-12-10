@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Reflex Allowed",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Reflex Allowed",
+  "codeName": "reflexAllowed",
+  "hl7Table": "HL70136"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Sterilization Type",
-	"hl7Table": "HL70806"
+  "dataType": "CWE",
+  "longName": "Sterilization Type",
+  "codeName": "sterilizationType",
+  "hl7Table": "HL70806"
 }

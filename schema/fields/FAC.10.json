@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Signature Authority Title",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Signature Authority Title",
+  "codeName": "signatureAuthorityTitle",
+  "hl7Table": ""
 }

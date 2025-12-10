@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Requested Give Per (Time Unit)",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Requested Give Per (Time Unit)",
+  "codeName": "requestedGivePer",
+  "hl7Table": ""
 }

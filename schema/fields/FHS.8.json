@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "File Security",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "File Security",
+  "codeName": "fileSecurity",
+  "hl7Table": ""
 }

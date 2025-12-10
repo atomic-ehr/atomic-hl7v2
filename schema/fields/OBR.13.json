@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Relevant Clinical Information",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Relevant Clinical Information",
+  "codeName": "relevantClinicalInformation",
+  "hl7Table": ""
 }

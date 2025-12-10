@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Date Last DMV Review",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Date Last DMV Review",
+  "codeName": "dateLastDmvReview",
+  "hl7Table": ""
 }

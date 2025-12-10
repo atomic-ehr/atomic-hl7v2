@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Patient Location Relationship Value",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Patient Location Relationship Value",
+  "codeName": "locationRelationship",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Diagnostic Related Group",
-	"hl7Table": "HL70055"
+  "dataType": "CE",
+  "longName": "Diagnostic Related Group",
+  "codeName": "diagnosticRelatedGroup",
+  "hl7Table": "HL70055"
 }

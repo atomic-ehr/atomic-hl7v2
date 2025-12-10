@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Action By",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Action By",
+  "codeName": "actionBy",
+  "hl7Table": ""
 }

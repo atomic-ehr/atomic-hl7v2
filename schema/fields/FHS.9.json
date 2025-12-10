@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "File Name/ID",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "File Name/ID",
+  "codeName": "fileNameId",
+  "hl7Table": ""
 }

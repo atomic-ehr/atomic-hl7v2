@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Pharmacy/Treatment Supplier's Special Administration Instructions",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Pharmacy/Treatment Supplier's Special Administration Instructions",
+  "codeName": "pharmacyTreatmentSuppliersSpecialAdministrationInstructions",
+  "hl7Table": ""
 }

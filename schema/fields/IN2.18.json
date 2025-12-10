@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Military Non-Avail Cert On File",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Military Non-Avail Cert On File",
+  "codeName": "militaryNonAvailCertOnFile",
+  "hl7Table": "HL70136"
 }

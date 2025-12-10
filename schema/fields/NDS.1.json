@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Notification Reference Number",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Notification Reference Number",
+  "codeName": "notificationReferenceNumber",
+  "hl7Table": ""
 }

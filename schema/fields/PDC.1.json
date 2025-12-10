@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Manufacturer/Distributor",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Manufacturer/Distributor",
+  "codeName": "manufacturerDistributor",
+  "hl7Table": ""
 }

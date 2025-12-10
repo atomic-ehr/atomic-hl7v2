@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Stratum for Study Randomization",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Stratum for Study Randomization",
+  "codeName": "stratumForStudyRandomization",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "Signature Authority Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "Signature Authority Address",
+  "codeName": "signatureAuthorityAddress",
+  "hl7Table": ""
 }

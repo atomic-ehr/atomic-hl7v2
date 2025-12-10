@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Repeating Interval Duration",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Repeating Interval Duration",
+  "codeName": "repeatingIntervalDuration",
+  "hl7Table": ""
 }

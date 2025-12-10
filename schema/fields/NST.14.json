@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Receive Timeouts",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Receive Timeouts",
+  "codeName": "receiveTimeouts",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Single Use Device",
-	"hl7Table": "HL70244"
+  "dataType": "IS",
+  "longName": "Single Use Device",
+  "codeName": "singleUseDevice",
+  "hl7Table": "HL70244"
 }

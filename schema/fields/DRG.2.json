@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "DRG Assigned Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "DRG Assigned Date/Time",
+  "codeName": "drgAssignedDateTime",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Enterer Authorization Mode",
-	"hl7Table": "HL70483"
+  "dataType": "CNE",
+  "longName": "Enterer Authorization Mode",
+  "codeName": "entererAuthorizationMode",
+  "hl7Table": "HL70483"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Publicity Code",
-	"hl7Table": "HL70215"
+  "dataType": "CE",
+  "longName": "Publicity Code",
+  "codeName": "publicityCode",
+  "hl7Table": "HL70215"
 }

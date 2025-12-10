@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Ruling Act",
-	"hl7Table": "HL70793"
+  "dataType": "CWE",
+  "longName": "Ruling Act",
+  "codeName": "rulingAct",
+  "hl7Table": "HL70793"
 }

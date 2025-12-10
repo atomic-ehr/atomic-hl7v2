@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Document Storage Status",
-	"hl7Table": "HL70275"
+  "dataType": "ID",
+  "longName": "Document Storage Status",
+  "codeName": "documentStorageStatus",
+  "hl7Table": "HL70275"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Study Instance UID",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Study Instance UID",
+  "codeName": "studyInstanceUid",
+  "hl7Table": ""
 }

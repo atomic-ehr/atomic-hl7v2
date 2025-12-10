@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Protocol Code",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Protocol Code",
+  "codeName": "protocolCode",
+  "hl7Table": ""
 }

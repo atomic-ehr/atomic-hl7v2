@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Goal Target Type",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Goal Target Type",
+  "codeName": "goalTargetType",
+  "hl7Table": ""
 }

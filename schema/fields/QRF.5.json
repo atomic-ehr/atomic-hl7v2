@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Other QRY Subject Filter",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Other QRY Subject Filter",
+  "codeName": "otherQrySubjectFilter",
+  "hl7Table": ""
 }

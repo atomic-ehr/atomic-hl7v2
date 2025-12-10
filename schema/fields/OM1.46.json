@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Target Anatomic Site Of Test",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Target Anatomic Site Of Test",
+  "codeName": "targetAnatomicSiteOfTest",
+  "hl7Table": "HL79999"
 }

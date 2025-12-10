@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "What User Qualifier",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "What User Qualifier",
+  "codeName": "whatUserQualifier",
+  "hl7Table": ""
 }

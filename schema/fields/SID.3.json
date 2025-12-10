@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Substance Container Identifier",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Substance Container Identifier",
+  "codeName": "substanceContainerIdentifier",
+  "hl7Table": ""
 }

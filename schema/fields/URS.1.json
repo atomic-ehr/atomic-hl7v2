@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "R/U Where Subject Definition",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "R/U Where Subject Definition",
+  "codeName": "rUWhereSubjectDefinition",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Event Symptom/Diagnosis Code",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Event Symptom/Diagnosis Code",
+  "codeName": "eventSymptomDiagnosisCode",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Eligibility Source",
-	"hl7Table": "HL70144"
+  "dataType": "IS",
+  "longName": "Eligibility Source",
+  "codeName": "eligibilitySource",
+  "hl7Table": "HL70144"
 }

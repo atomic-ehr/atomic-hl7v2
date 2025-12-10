@@ -1,5 +1,6 @@
 {
-	"dataType": "SI",
-	"longName": "Requisition Line Number",
-	"hl7Table": ""
+  "dataType": "SI",
+  "longName": "Requisition Line Number",
+  "codeName": "requisitionLineNumber",
+  "hl7Table": ""
 }

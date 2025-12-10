@@ -1,5 +1,6 @@
 {
-	"dataType": "SPD",
-	"longName": "Specialty",
-	"hl7Table": "HL70337"
+  "dataType": "SPD",
+  "longName": "Specialty",
+  "codeName": "specialty",
+  "hl7Table": "HL70337"
 }

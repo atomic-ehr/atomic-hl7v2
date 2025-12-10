@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Reimbursement Action Code",
-	"hl7Table": "HL70459"
+  "dataType": "IS",
+  "longName": "Reimbursement Action Code",
+  "codeName": "reimbursementActionCode",
+  "hl7Table": "HL70459"
 }

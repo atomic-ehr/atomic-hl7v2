@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Professional Organization",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Professional Organization",
+  "codeName": "professionalOrganization",
+  "hl7Table": ""
 }

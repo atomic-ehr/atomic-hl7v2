@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Diet Type",
-	"hl7Table": "HL70114"
+  "dataType": "CE",
+  "longName": "Diet Type",
+  "codeName": "dietType",
+  "hl7Table": "HL70114"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Certification Required",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Certification Required",
+  "codeName": "required",
+  "hl7Table": "HL70136"
 }

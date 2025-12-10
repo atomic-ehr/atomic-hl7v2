@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Disability Return to Work Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Disability Return to Work Date",
+  "codeName": "disabilityReturnToWorkDate",
+  "hl7Table": ""
 }

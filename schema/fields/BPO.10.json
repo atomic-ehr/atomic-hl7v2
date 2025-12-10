@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "BP Requested Dispense Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "BP Requested Dispense Date/Time",
+  "codeName": "dispenseRequested",
+  "hl7Table": ""
 }

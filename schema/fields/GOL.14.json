@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Previous Goal Review Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Previous Goal Review Date/Time",
+  "codeName": "previousGoalReviewDateTime",
+  "hl7Table": ""
 }

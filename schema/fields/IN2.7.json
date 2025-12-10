@@ -1,5 +1,6 @@
 {
-	"dataType": "XPN",
-	"longName": "Medicaid Case Name",
-	"hl7Table": ""
+  "dataType": "XPN",
+  "longName": "Medicaid Case Name",
+  "codeName": "medicaidCaseName",
+  "hl7Table": ""
 }

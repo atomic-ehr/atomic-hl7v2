@@ -1,5 +1,6 @@
 {
-	"dataType": "SI",
-	"longName": "Display Level",
-	"hl7Table": ""
+  "dataType": "SI",
+  "longName": "Display Level",
+  "codeName": "displayLevel",
+  "hl7Table": ""
 }

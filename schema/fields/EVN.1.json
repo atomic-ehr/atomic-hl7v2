@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Event Type Code",
-	"hl7Table": "HL70003"
+  "dataType": "ID",
+  "longName": "Event Type Code",
+  "codeName": "eventTypeCode",
+  "hl7Table": "HL70003"
 }

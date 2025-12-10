@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Immunization Registry Status Effective Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Immunization Registry Status Effective Date",
+  "codeName": "immunizationRegistryStatusEffectiveDate",
+  "hl7Table": ""
 }

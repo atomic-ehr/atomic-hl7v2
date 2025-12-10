@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Next of Kin/Associated Party's Identifiers",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Next of Kin/Associated Party's Identifiers",
+  "codeName": "nextOfKinAssociatedPartysIdentifiers",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Requested Procedure ID",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Requested Procedure ID",
+  "codeName": "requestedProcedureId",
+  "hl7Table": ""
 }

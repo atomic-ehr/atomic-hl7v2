@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Expected Discharge Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Expected Discharge Date/Time",
+  "codeName": "expectedDischarge",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XTN",
-	"longName": "Call Back Phone Number",
-	"hl7Table": ""
+  "dataType": "XTN",
+  "longName": "Call Back Phone Number",
+  "codeName": "callbackPhone",
+  "hl7Table": ""
 }

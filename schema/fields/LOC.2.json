@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Location Description",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Location Description",
+  "codeName": "description",
+  "hl7Table": ""
 }

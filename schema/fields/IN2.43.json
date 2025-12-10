@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Marital Status",
-	"hl7Table": "HL70002"
+  "dataType": "CE",
+  "longName": "Marital Status",
+  "codeName": "maritalStatus",
+  "hl7Table": "HL70002"
 }

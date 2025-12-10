@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Location Cost Center",
-	"hl7Table": "HL70462"
+  "dataType": "CE",
+  "longName": "Location Cost Center",
+  "codeName": "locationCostCenter",
+  "hl7Table": "HL70462"
 }

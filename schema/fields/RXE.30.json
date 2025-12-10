@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Dispense Package Method",
-	"hl7Table": "HL70321"
+  "dataType": "ID",
+  "longName": "Dispense Package Method",
+  "codeName": "dispensePackageMethod",
+  "hl7Table": "HL70321"
 }

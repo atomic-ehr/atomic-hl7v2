@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Student Indicator",
-	"hl7Table": "HL70231"
+  "dataType": "IS",
+  "longName": "Student Indicator",
+  "codeName": "student",
+  "hl7Table": "HL70231"
 }

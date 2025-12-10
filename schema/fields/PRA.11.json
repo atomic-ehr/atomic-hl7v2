@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Government Reimbursement Billing Eligibility",
-	"hl7Table": "HL70401"
+  "dataType": "CE",
+  "longName": "Government Reimbursement Billing Eligibility",
+  "codeName": "governmentReimbursementBillingEligibility",
+  "hl7Table": "HL70401"
 }

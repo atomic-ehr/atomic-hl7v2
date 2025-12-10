@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Activation Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Activation Date",
+  "codeName": "start",
+  "hl7Table": ""
 }

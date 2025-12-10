@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Consent Form ID",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Consent Form ID",
+  "codeName": "consentFormId",
+  "hl7Table": ""
 }

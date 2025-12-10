@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Accident Location",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Accident Location",
+  "codeName": "accidentLocation",
+  "hl7Table": ""
 }

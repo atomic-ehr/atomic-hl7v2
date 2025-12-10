@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Software Install Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Software Install Date",
+  "codeName": "softwareInstallDate",
+  "hl7Table": ""
 }

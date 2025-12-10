@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Overall Claim Disposition Code",
-	"hl7Table": "HL70457"
+  "dataType": "IS",
+  "longName": "Overall Claim Disposition Code",
+  "codeName": "overallClaimDispositionCode",
+  "hl7Table": "HL70457"
 }

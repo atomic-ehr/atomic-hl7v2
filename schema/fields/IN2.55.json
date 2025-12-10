@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Relationship to the Patient Start Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Relationship to the Patient Start Date",
+  "codeName": "relationshipToThePatientStartDate",
+  "hl7Table": ""
 }

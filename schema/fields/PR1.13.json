@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Consent Code",
-	"hl7Table": "HL70059"
+  "dataType": "CE",
+  "longName": "Consent Code",
+  "codeName": "consentCode",
+  "hl7Table": "HL70059"
 }

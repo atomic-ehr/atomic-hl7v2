@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Variance Classification",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Variance Classification",
+  "codeName": "varianceClassification",
+  "hl7Table": ""
 }

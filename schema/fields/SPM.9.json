@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Specimen Source Site Modifier",
-	"hl7Table": "HL70542"
+  "dataType": "CWE",
+  "longName": "Specimen Source Site Modifier",
+  "codeName": "specimenSourceSiteModifier",
+  "hl7Table": "HL70542"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Document Control Number",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Document Control Number",
+  "codeName": "documentControlNumber",
+  "hl7Table": ""
 }

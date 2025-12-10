@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "BP Administrator",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "BP Administrator",
+  "codeName": "bpAdministrator",
+  "hl7Table": ""
 }

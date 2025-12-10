@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Appointment Reason",
-	"hl7Table": "HL70276"
+  "dataType": "CE",
+  "longName": "Appointment Reason",
+  "codeName": "appointmentReason",
+  "hl7Table": "HL70276"
 }

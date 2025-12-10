@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Batch Control ID",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Batch Control ID",
+  "codeName": "batchControlId",
+  "hl7Table": ""
 }

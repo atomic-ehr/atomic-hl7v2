@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Problem Date of Onset",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Problem Date of Onset",
+  "codeName": "problemDateOfOnset",
+  "hl7Table": ""
 }

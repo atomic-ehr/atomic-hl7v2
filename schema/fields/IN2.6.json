@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Medicare Health Ins Card Number",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Medicare Health Ins Card Number",
+  "codeName": "medicareHealthInsCardNumber",
+  "hl7Table": ""
 }

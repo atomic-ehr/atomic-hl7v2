@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Outlier Cost",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Outlier Cost",
+  "codeName": "outlierCost",
+  "hl7Table": ""
 }

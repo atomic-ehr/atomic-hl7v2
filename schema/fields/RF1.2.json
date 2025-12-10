@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Referral Priority",
-	"hl7Table": "HL70280"
+  "dataType": "CE",
+  "longName": "Referral Priority",
+  "codeName": "referralPriority",
+  "hl7Table": "HL70280"
 }

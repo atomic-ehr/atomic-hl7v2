@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Default Inventory Asset Account",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Default Inventory Asset Account",
+  "codeName": "defaultInventoryAssetAccount",
+  "hl7Table": ""
 }

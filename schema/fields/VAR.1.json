@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Variance Instance ID",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Variance Instance ID",
+  "codeName": "varianceInstanceId",
+  "hl7Table": ""
 }

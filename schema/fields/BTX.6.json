@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "CP Manufacturer",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "CP Manufacturer",
+  "codeName": "cpManufacturer",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Problem Confirmation Status",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Problem Confirmation Status",
+  "codeName": "problemConfirmationStatus",
+  "hl7Table": ""
 }

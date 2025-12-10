@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Advanced Beneficiary Notice Code",
-	"hl7Table": "HL70339"
+  "dataType": "CE",
+  "longName": "Advanced Beneficiary Notice Code",
+  "codeName": "advancedBeneficiaryNoticeCode",
+  "hl7Table": "HL70339"
 }

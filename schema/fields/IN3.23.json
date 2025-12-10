@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Second Opinion Status",
-	"hl7Table": "HL70151"
+  "dataType": "IS",
+  "longName": "Second Opinion Status",
+  "codeName": "secondOpinionStatus",
+  "hl7Table": "HL70151"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Patient Condition Code",
-	"hl7Table": "HL70434"
+  "dataType": "CE",
+  "longName": "Patient Condition Code",
+  "codeName": "conditionCode",
+  "hl7Table": "HL70434"
 }

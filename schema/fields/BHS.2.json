@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Batch Encoding Characters",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Batch Encoding Characters",
+  "codeName": "batchEncodingCharacters",
+  "hl7Table": ""
 }

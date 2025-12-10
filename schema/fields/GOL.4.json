@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Goal Instance ID",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Goal Instance ID",
+  "codeName": "goalInstanceId",
+  "hl7Table": ""
 }

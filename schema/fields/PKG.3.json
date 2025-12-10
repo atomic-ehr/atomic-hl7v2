@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Default Order Unit Of Measure Indicator",
-	"hl7Table": "HL70532"
+  "dataType": "CNE",
+  "longName": "Default Order Unit Of Measure Indicator",
+  "codeName": "defaultOrderUnitOfMeasureIndicator",
+  "hl7Table": "HL70532"
 }

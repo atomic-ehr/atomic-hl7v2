@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Evaluated Product Source",
-	"hl7Table": "HL70248"
+  "dataType": "ID",
+  "longName": "Evaluated Product Source",
+  "codeName": "evaluatedProductSource",
+  "hl7Table": "HL70248"
 }

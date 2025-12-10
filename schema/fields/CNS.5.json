@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Starting Notification Code",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Starting Notification Code",
+  "codeName": "startingNotificationCode",
+  "hl7Table": ""
 }

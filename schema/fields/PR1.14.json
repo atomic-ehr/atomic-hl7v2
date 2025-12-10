@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Procedure Priority",
-	"hl7Table": "HL70418"
+  "dataType": "ID",
+  "longName": "Procedure Priority",
+  "codeName": "procedurePriority",
+  "hl7Table": "HL70418"
 }

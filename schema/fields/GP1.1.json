@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Type of Bill Code",
-	"hl7Table": "HL70455"
+  "dataType": "IS",
+  "longName": "Type of Bill Code",
+  "codeName": "typeOfBillCode",
+  "hl7Table": "HL70455"
 }

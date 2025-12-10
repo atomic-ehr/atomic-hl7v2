@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Ordered By Code",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Ordered By Code",
+  "codeName": "orderedByCode",
+  "hl7Table": ""
 }

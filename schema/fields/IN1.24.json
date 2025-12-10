@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Notice Of Admission Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Notice Of Admission Date",
+  "codeName": "noticeOfAdmissionDate",
+  "hl7Table": ""
 }

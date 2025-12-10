@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Autopsy Performed By",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Autopsy Performed By",
+  "codeName": "autopsyPerformedBy",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Procedure Practitioner",
-	"hl7Table": "HL70010"
+  "dataType": "XCN",
+  "longName": "Procedure Practitioner",
+  "codeName": "procedurePractitioner",
+  "hl7Table": "HL70010"
 }

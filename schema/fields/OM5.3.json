@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Observation ID Suffixes",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Observation ID Suffixes",
+  "codeName": "observationIdSuffixes",
+  "hl7Table": ""
 }

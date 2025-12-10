@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Reusable Cost",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Reusable Cost",
+  "codeName": "reusableCost",
+  "hl7Table": ""
 }

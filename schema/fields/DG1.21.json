@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Diagnosis Action Code",
-	"hl7Table": "HL70206"
+  "dataType": "ID",
+  "longName": "Diagnosis Action Code",
+  "codeName": "diagnosisActionCode",
+  "hl7Table": "HL70206"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "SI",
-	"longName": "Transaction Reference Key",
-	"hl7Table": ""
+  "dataType": "SI",
+  "longName": "Transaction Reference Key",
+  "codeName": "transactionReferenceKey",
+  "hl7Table": ""
 }

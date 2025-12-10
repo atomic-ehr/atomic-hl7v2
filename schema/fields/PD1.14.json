@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Place of Worship",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Place of Worship",
+  "codeName": "placeOfWorship",
+  "hl7Table": ""
 }

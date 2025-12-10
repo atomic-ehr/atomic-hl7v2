@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Goal Life Cycle Status Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Goal Life Cycle Status Date/Time",
+  "codeName": "goalLifeCycleStatusDateTime",
+  "hl7Table": ""
 }

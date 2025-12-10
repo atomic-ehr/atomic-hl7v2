@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Initial Specimen Volume",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Initial Specimen Volume",
+  "codeName": "initialSpecimenVolume",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Guarantor Marital Status Code",
-	"hl7Table": "HL70002"
+  "dataType": "CE",
+  "longName": "Guarantor Marital Status Code",
+  "codeName": "guarantorMaritalStatusCode",
+  "hl7Table": "HL70002"
 }

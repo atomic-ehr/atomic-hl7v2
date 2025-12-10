@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Country Code",
-	"hl7Table": "HL70399"
+  "dataType": "ID",
+  "longName": "Country Code",
+  "codeName": "countryCode",
+  "hl7Table": "HL70399"
 }

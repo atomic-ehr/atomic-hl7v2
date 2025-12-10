@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Severity of Illness Code",
-	"hl7Table": "HL70421"
+  "dataType": "CE",
+  "longName": "Severity of Illness Code",
+  "codeName": "severityOfIllnessCode",
+  "hl7Table": "HL70421"
 }

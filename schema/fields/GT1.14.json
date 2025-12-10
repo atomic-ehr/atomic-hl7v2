@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Guarantor Date - End",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Guarantor Date - End",
+  "codeName": "guarantorDateEnd",
+  "hl7Table": ""
 }

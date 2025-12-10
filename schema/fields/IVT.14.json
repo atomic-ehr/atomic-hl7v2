@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Item Importance Code",
-	"hl7Table": "HL70634"
+  "dataType": "CWE",
+  "longName": "Item Importance Code",
+  "codeName": "itemImportanceCode",
+  "hl7Table": "HL70634"
 }

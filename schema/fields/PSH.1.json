@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Report Type",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Report Type",
+  "codeName": "reportType",
+  "hl7Table": ""
 }

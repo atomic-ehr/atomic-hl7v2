@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "School Type Code",
-	"hl7Table": "HL70402"
+  "dataType": "CE",
+  "longName": "School Type Code",
+  "codeName": "schoolTypeCode",
+  "hl7Table": "HL70402"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Specimen Risk Code",
-	"hl7Table": "HL70489"
+  "dataType": "CWE",
+  "longName": "Specimen Risk Code",
+  "codeName": "specimenRiskCode",
+  "hl7Table": "HL70489"
 }

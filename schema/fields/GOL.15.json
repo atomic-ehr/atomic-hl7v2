@@ -1,5 +1,6 @@
 {
-	"dataType": "TQ",
-	"longName": "Goal Review Interval",
-	"hl7Table": ""
+  "dataType": "TQ",
+  "longName": "Goal Review Interval",
+  "codeName": "goalReviewInterval",
+  "hl7Table": ""
 }

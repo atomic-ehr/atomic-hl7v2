@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Total Charges",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Total Charges",
+  "codeName": "totalCharges",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Group Name",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Group Name",
+  "codeName": "groupName",
+  "hl7Table": ""
 }

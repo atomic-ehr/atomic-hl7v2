@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Inventory Limits Warning Level",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Inventory Limits Warning Level",
+  "codeName": "inventoryLimitsWarningLevel",
+  "hl7Table": ""
 }

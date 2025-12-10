@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Dispense Package Size",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Dispense Package Size",
+  "codeName": "dispensePackageSize",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Source Location Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Source Location Identifier",
+  "codeName": "sourceLocationIdentifier",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Observation Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Observation Date/Time",
+  "codeName": "observationDateTime",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Execution and Delivery Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Execution and Delivery Time",
+  "codeName": "executionAndDeliveryTime",
+  "hl7Table": ""
 }

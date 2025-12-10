@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Next of Kin / Associated Parties Job Title",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Next of Kin / Associated Parties Job Title",
+  "codeName": "nextOfKinAssociatedPartiesJobTitle",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Goal Management Discipline",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Goal Management Discipline",
+  "codeName": "goalManagementDiscipline",
+  "hl7Table": ""
 }

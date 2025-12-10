@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Guarantor Charge Adjustment Code",
-	"hl7Table": "HL70218"
+  "dataType": "CE",
+  "longName": "Guarantor Charge Adjustment Code",
+  "codeName": "guarantorChargeAdjustmentCode",
+  "hl7Table": "HL70218"
 }

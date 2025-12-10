@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "DRG Payor",
-	"hl7Table": "HL70229"
+  "dataType": "IS",
+  "longName": "DRG Payor",
+  "codeName": "drgPayor",
+  "hl7Table": "HL70229"
 }

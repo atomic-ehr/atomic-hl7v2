@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Coroner Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Coroner Indicator",
+  "codeName": "coronerIndicator",
+  "hl7Table": "HL70136"
 }

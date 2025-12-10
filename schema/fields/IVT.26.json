@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Operating Room Par Level Indicator",
-	"hl7Table": "HL70532"
+  "dataType": "CNE",
+  "longName": "Operating Room Par Level Indicator",
+  "codeName": "operatingRoomParLevelIndicator",
+  "hl7Table": "HL70532"
 }

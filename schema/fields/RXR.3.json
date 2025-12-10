@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Administration Device",
-	"hl7Table": "HL70164"
+  "dataType": "CE",
+  "longName": "Administration Device",
+  "codeName": "administrationDevice",
+  "hl7Table": "HL70164"
 }

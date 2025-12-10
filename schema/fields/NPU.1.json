@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Bed Location",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Bed Location",
+  "codeName": "bedLocation",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "HD",
-	"longName": "Current Facility",
-	"hl7Table": ""
+  "dataType": "HD",
+  "longName": "Current Facility",
+  "codeName": "currentFacility",
+  "hl7Table": ""
 }

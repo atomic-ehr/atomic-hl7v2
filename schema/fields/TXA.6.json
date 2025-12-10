@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Origination Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Origination Date/Time",
+  "codeName": "originationDateTime",
+  "hl7Table": ""
 }

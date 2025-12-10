@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Software Certified Version or Release Number",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Software Certified Version or Release Number",
+  "codeName": "softwareCertifiedVersionOrReleaseNumber",
+  "hl7Table": ""
 }

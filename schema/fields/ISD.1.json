@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Reference Interaction Number (unique identifier)",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Reference Interaction Number (unique identifier)",
+  "codeName": "referenceInteractionNumber",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "BP Units",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "BP Units",
+  "codeName": "unit",
+  "hl7Table": ""
 }

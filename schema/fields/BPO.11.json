@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "BP Requested Dispense To Location",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "BP Requested Dispense To Location",
+  "codeName": "bpRequestedDispenseToLocation",
+  "hl7Table": ""
 }

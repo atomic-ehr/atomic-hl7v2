@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Contact Person Social Security Number",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Contact Person Social Security Number",
+  "codeName": "contactPersonSocialSecurityNumber",
+  "hl7Table": ""
 }

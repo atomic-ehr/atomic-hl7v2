@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Query/Response Format Code",
-	"hl7Table": "HL70106"
+  "dataType": "ID",
+  "longName": "Query/Response Format Code",
+  "codeName": "queryResponseFormat",
+  "hl7Table": "HL70106"
 }

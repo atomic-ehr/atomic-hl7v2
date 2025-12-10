@@ -1,5 +1,6 @@
 {
-	"dataType": "NDL",
-	"longName": "Transcriptionist",
-	"hl7Table": ""
+  "dataType": "NDL",
+  "longName": "Transcriptionist",
+  "codeName": "transcriptionist",
+  "hl7Table": ""
 }

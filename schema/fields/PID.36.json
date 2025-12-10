@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Breed Code",
-	"hl7Table": "HL70447"
+  "dataType": "CE",
+  "longName": "Breed Code",
+  "codeName": "breedCode",
+  "hl7Table": "HL70447"
 }

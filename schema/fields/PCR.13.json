@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Product Available For Inspection",
-	"hl7Table": "HL70246"
+  "dataType": "IS",
+  "longName": "Product Available For Inspection",
+  "codeName": "productAvailableForInspection",
+  "hl7Table": "HL70246"
 }

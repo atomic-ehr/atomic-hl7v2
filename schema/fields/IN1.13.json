@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Plan Expiration Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Plan Expiration Date",
+  "codeName": "planExpirationDate",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Contract Number",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Contract Number",
+  "codeName": "contractNumber",
+  "hl7Table": ""
 }

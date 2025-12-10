@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Security/Sensitivity",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Security/Sensitivity",
+  "codeName": "securitySensitivity",
+  "hl7Table": ""
 }

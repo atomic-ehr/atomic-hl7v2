@@ -1,5 +1,6 @@
 {
-	"dataType": "varies",
-	"longName": "Column Value",
-	"hl7Table": ""
+  "dataType": "varies",
+  "longName": "Column Value",
+  "codeName": "columnValue",
+  "hl7Table": ""
 }

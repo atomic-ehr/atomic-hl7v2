@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Quantity in Use Method",
-	"hl7Table": "HL70329"
+  "dataType": "ID",
+  "longName": "Quantity in Use Method",
+  "codeName": "quantityInUseMethod",
+  "hl7Table": "HL70329"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Observation Instance Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Observation Instance Identifier",
+  "codeName": "observationInstanceIdentifier",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Total Daily Dose",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Total Daily Dose",
+  "codeName": "totalDailyDose",
+  "hl7Table": ""
 }

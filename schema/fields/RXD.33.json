@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Dispense Type",
-	"hl7Table": "HL70484"
+  "dataType": "CWE",
+  "longName": "Dispense Type",
+  "codeName": "dispenseType",
+  "hl7Table": "HL70484"
 }

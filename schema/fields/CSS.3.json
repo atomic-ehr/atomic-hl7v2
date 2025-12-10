@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Study Quality Control Codes",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Study Quality Control Codes",
+  "codeName": "studyQualityControlCodes",
+  "hl7Table": ""
 }

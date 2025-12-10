@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Alert Level",
-	"hl7Table": "HL70367"
+  "dataType": "CE",
+  "longName": "Alert Level",
+  "codeName": "alertLevel",
+  "hl7Table": "HL70367"
 }

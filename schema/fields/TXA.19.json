@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Document Availability Status",
-	"hl7Table": "HL70273"
+  "dataType": "ID",
+  "longName": "Document Availability Status",
+  "codeName": "documentAvailabilityStatus",
+  "hl7Table": "HL70273"
 }

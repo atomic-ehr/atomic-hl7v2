@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Report Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Report Date",
+  "codeName": "reportDate",
+  "hl7Table": ""
 }

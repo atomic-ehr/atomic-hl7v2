@@ -1,5 +1,6 @@
 {
-	"dataType": "VR",
-	"longName": "What Data Code Value Qual.",
-	"hl7Table": ""
+  "dataType": "VR",
+  "longName": "What Data Code Value Qual.",
+  "codeName": "whatDataCodeValueQual",
+  "hl7Table": ""
 }

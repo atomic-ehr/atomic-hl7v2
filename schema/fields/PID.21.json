@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Mother's Identifier",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Mother's Identifier",
+  "codeName": "mothersIdentifier",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Current CPU",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Current CPU",
+  "codeName": "currentCpu",
+  "hl7Table": ""
 }

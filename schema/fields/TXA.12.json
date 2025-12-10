@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Unique Document Number",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Unique Document Number",
+  "codeName": "uniqueDocumentNumber",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Query Tag",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Query Tag",
+  "codeName": "queryTag",
+  "hl7Table": ""
 }

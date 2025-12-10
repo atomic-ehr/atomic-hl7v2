@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Insurance Company ID",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Insurance Company ID",
+  "codeName": "insuranceCompanyId",
+  "hl7Table": ""
 }

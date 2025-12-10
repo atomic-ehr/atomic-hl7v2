@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Previous Treatment Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Previous Treatment Date",
+  "codeName": "previousTreatmentDate",
+  "hl7Table": ""
 }

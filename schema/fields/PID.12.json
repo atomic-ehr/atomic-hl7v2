@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "County Code",
-	"hl7Table": "HL70289"
+  "dataType": "IS",
+  "longName": "County Code",
+  "codeName": "countyCode",
+  "hl7Table": "HL70289"
 }

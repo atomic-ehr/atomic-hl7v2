@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Blood Replaced-Pints (41)",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Blood Replaced-Pints (41)",
+  "codeName": "bloodReplacedPints",
+  "hl7Table": ""
 }

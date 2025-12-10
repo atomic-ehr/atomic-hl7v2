@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Operator ID",
-	"hl7Table": "HL70188"
+  "dataType": "XCN",
+  "longName": "Operator ID",
+  "codeName": "operatorId",
+  "hl7Table": "HL70188"
 }

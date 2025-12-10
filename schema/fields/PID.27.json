@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Veterans Military Status",
-	"hl7Table": "HL70172"
+  "dataType": "CE",
+  "longName": "Veterans Military Status",
+  "codeName": "veteransMilitaryStatus",
+  "hl7Table": "HL70172"
 }

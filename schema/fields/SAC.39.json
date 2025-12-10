@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Fibrin Index Units",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Fibrin Index Units",
+  "codeName": "fibrinIndexUnit",
+  "hl7Table": ""
 }

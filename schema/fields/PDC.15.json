@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Date Last Marketed",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Date Last Marketed",
+  "codeName": "dateLastMarketed",
+  "hl7Table": ""
 }

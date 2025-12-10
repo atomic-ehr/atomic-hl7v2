@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Revocation Reason Code",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Revocation Reason Code",
+  "codeName": "revocationReasonCode",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "BP Transfusion Interrupted Reason",
-	"hl7Table": "HL70515"
+  "dataType": "CWE",
+  "longName": "BP Transfusion Interrupted Reason",
+  "codeName": "bpTransfusionInterruptedReason",
+  "hl7Table": "HL70515"
 }

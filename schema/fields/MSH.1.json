@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Field Separator",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Field Separator",
+  "codeName": "fieldSeparator",
+  "hl7Table": ""
 }

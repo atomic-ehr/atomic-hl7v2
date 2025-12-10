@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Specimen Priorities",
-	"hl7Table": "HL70027"
+  "dataType": "ID",
+  "longName": "Specimen Priorities",
+  "codeName": "specimenPriorities",
+  "hl7Table": "HL70027"
 }

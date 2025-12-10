@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "User Defined Access Checks",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "User Defined Access Checks",
+  "codeName": "userDefinedAccessChecks",
+  "hl7Table": ""
 }

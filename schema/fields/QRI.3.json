@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Algorithm Descriptor",
-	"hl7Table": "HL70393"
+  "dataType": "CE",
+  "longName": "Algorithm Descriptor",
+  "codeName": "algorithmDescriptor",
+  "hl7Table": "HL70393"
 }

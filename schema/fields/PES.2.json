@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Sender Individual Name",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Sender Individual Name",
+  "codeName": "senderIndividualName",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "New Fileserver",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "New Fileserver",
+  "codeName": "newFileserver",
+  "hl7Table": ""
 }

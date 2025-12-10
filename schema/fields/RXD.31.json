@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "Dispense to Pharmacy Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "Dispense to Pharmacy Address",
+  "codeName": "dispenseToPharmacyAddress",
+  "hl7Table": ""
 }

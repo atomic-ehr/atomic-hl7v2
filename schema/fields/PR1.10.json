@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Anesthesia Minutes",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Anesthesia Minutes",
+  "codeName": "anesthesiaMinutes",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "External Accession Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "External Accession Identifier",
+  "codeName": "externalAccessionIdentifier",
+  "hl7Table": ""
 }

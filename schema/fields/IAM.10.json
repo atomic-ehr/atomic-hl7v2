@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Allergen Group Code/Mnemonic/Description",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Allergen Group Code/Mnemonic/Description",
+  "codeName": "allergenGroupCodeMnemonicDescription",
+  "hl7Table": ""
 }

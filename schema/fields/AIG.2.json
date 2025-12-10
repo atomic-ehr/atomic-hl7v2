@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Segment Action Code",
-	"hl7Table": "HL70206"
+  "dataType": "ID",
+  "longName": "Segment Action Code",
+  "codeName": "actionCode",
+  "hl7Table": "HL70206"
 }

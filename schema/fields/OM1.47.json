@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Modality Of Imaging Measurement",
-	"hl7Table": "HL70259"
+  "dataType": "CE",
+  "longName": "Modality Of Imaging Measurement",
+  "codeName": "modalityOfImagingMeasurement",
+  "hl7Table": "HL70259"
 }

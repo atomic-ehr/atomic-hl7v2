@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Value Type",
-	"hl7Table": "HL70125"
+  "dataType": "ID",
+  "longName": "Value Type",
+  "codeName": "valueType",
+  "hl7Table": "HL70125"
 }

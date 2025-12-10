@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Pharmacy Order Type",
-	"hl7Table": "HL70480"
+  "dataType": "ID",
+  "longName": "Pharmacy Order Type",
+  "codeName": "pharmacyOrderType",
+  "hl7Table": "HL70480"
 }

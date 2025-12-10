@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Freight Charge Indicator",
-	"hl7Table": "HL70532"
+  "dataType": "CNE",
+  "longName": "Freight Charge Indicator",
+  "codeName": "freightChargeIndicator",
+  "hl7Table": "HL70532"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Carrier Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Carrier Identifier",
+  "codeName": "carrierIdentifier",
+  "hl7Table": ""
 }

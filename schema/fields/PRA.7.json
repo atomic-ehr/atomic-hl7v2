@@ -1,5 +1,6 @@
 {
-	"dataType": "PIP",
-	"longName": "Privileges",
-	"hl7Table": ""
+  "dataType": "PIP",
+  "longName": "Privileges",
+  "codeName": "privileges",
+  "hl7Table": ""
 }

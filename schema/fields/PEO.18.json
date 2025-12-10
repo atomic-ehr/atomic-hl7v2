@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Cause Of Death",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Cause Of Death",
+  "codeName": "causeOfDeath",
+  "hl7Table": ""
 }

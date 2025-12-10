@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Sender Sequence Number",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Sender Sequence Number",
+  "codeName": "senderSequenceNumber",
+  "hl7Table": ""
 }

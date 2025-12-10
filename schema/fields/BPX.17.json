@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "BP Unique ID",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "BP Unique ID",
+  "codeName": "bpUniqueId",
+  "hl7Table": ""
 }

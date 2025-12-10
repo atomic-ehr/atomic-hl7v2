@@ -1,5 +1,6 @@
 {
-	"dataType": "MO",
-	"longName": "Inventory Received Item Cost",
-	"hl7Table": ""
+  "dataType": "MO",
+  "longName": "Inventory Received Item Cost",
+  "codeName": "inventoryReceivedItemCost",
+  "hl7Table": ""
 }

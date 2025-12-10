@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Record-Level Event Code",
-	"hl7Table": "HL70180"
+  "dataType": "ID",
+  "longName": "Record-Level Event Code",
+  "codeName": "recordEventCode",
+  "hl7Table": "HL70180"
 }

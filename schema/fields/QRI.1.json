@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Candidate Confidence",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Candidate Confidence",
+  "codeName": "candidateConfidence",
+  "hl7Table": ""
 }

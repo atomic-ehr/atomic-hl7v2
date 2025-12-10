@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Payment Reference ID",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Payment Reference ID",
+  "codeName": "paymentReferenceId",
+  "hl7Table": ""
 }

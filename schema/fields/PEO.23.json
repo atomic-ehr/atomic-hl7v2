@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Confirmation Provided By",
-	"hl7Table": "HL70242"
+  "dataType": "ID",
+  "longName": "Confirmation Provided By",
+  "codeName": "confirmationProvidedBy",
+  "hl7Table": "HL70242"
 }

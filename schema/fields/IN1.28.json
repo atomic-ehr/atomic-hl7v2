@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Pre-Admit Cert (PAC)",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Pre-Admit Cert (PAC)",
+  "codeName": "preAdmitCert",
+  "hl7Table": ""
 }

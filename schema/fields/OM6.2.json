@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Derivation Rule",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Derivation Rule",
+  "codeName": "derivationRule",
+  "hl7Table": ""
 }

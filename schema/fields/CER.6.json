@@ -1,5 +1,6 @@
 {
-	"dataType": "ED",
-	"longName": "Signature of Issuing Authority",
-	"hl7Table": ""
+  "dataType": "ED",
+  "longName": "Signature of Issuing Authority",
+  "codeName": "signatureOfIssuingAuthority",
+  "hl7Table": ""
 }

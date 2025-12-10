@@ -1,5 +1,6 @@
 {
-	"dataType": "XTN",
-	"longName": "Help Desk Contact Point",
-	"hl7Table": ""
+  "dataType": "XTN",
+  "longName": "Help Desk Contact Point",
+  "codeName": "helpDeskContactPoint",
+  "hl7Table": ""
 }

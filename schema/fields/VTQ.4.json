@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Virtual Table Name",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Virtual Table Name",
+  "codeName": "virtualTableName",
+  "hl7Table": ""
 }

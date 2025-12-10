@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Relatedness Assessment",
-	"hl7Table": "HL70250"
+  "dataType": "ID",
+  "longName": "Relatedness Assessment",
+  "codeName": "relatednessAssessment",
+  "hl7Table": "HL70250"
 }

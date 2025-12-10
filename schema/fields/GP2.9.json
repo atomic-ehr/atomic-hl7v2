@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Payment Adjustment Code",
-	"hl7Table": "HL70468"
+  "dataType": "IS",
+  "longName": "Payment Adjustment Code",
+  "codeName": "paymentAdjustmentCode",
+  "hl7Table": "HL70468"
 }

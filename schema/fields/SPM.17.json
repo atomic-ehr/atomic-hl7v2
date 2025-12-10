@@ -1,5 +1,6 @@
 {
-	"dataType": "DR",
-	"longName": "Specimen Collection Date/Time",
-	"hl7Table": ""
+  "dataType": "DR",
+  "longName": "Specimen Collection Date/Time",
+  "codeName": "specimenCollection",
+  "hl7Table": ""
 }

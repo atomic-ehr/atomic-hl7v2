@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Text Message",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Text Message",
+  "codeName": "textMessage",
+  "hl7Table": ""
 }

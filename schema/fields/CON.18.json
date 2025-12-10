@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Language Translated To",
-	"hl7Table": "HL70296"
+  "dataType": "ID",
+  "longName": "Language Translated To",
+  "codeName": "languageTranslatedTo",
+  "hl7Table": "HL70296"
 }

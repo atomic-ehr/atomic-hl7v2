@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Primary Key Value - CDM",
-	"hl7Table": "HL70132"
+  "dataType": "CE",
+  "longName": "Primary Key Value - CDM",
+  "codeName": "primaryKey",
+  "hl7Table": "HL70132"
 }

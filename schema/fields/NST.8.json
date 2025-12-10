@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Messages Received",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Messages Received",
+  "codeName": "messagesReceived",
+  "hl7Table": ""
 }

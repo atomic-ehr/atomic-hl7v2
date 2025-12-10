@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Administered Per (Time Unit)",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Administered Per (Time Unit)",
+  "codeName": "administeredPer",
+  "hl7Table": ""
 }

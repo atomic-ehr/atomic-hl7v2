@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Death Certified By",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Death Certified By",
+  "codeName": "deathCertifiedBy",
+  "hl7Table": ""
 }

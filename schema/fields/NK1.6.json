@@ -1,5 +1,6 @@
 {
-	"dataType": "XTN",
-	"longName": "Business Phone Number",
-	"hl7Table": ""
+  "dataType": "XTN",
+  "longName": "Business Phone Number",
+  "codeName": "businessPhone",
+  "hl7Table": ""
 }

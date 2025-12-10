@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "First Used Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "First Used Date/Time",
+  "codeName": "firstUsedDateTime",
+  "hl7Table": ""
 }

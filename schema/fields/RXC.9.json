@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Component Drug Strength Volume Units",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Component Drug Strength Volume Units",
+  "codeName": "componentDrugStrengthVolumeUnit",
+  "hl7Table": ""
 }

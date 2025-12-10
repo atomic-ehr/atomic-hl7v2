@@ -1,5 +1,6 @@
 {
-	"dataType": "varies",
-	"longName": "User Parameters (in successive fields)",
-	"hl7Table": ""
+  "dataType": "varies",
+  "longName": "User Parameters (in successive fields)",
+  "codeName": "userParameters",
+  "hl7Table": ""
 }

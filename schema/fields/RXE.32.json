@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Original Order Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Original Order Date/Time",
+  "codeName": "originalOrderDateTime",
+  "hl7Table": ""
 }

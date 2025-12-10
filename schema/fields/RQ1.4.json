@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Vendor ID",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Vendor ID",
+  "codeName": "vendorId",
+  "hl7Table": ""
 }

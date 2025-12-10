@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Renewal Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Renewal Date",
+  "codeName": "renewalDate",
+  "hl7Table": ""
 }

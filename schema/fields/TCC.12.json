@@ -1,5 +1,6 @@
 {
-	"dataType": "SN",
-	"longName": "Equipment Dynamic Range",
-	"hl7Table": ""
+  "dataType": "SN",
+  "longName": "Equipment Dynamic Range",
+  "codeName": "equipmentDynamicRange",
+  "hl7Table": ""
 }

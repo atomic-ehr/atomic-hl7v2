@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Document Change Reason",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Document Change Reason",
+  "codeName": "documentChangeReason",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Action Reason",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Action Reason",
+  "codeName": "actionReason",
+  "hl7Table": ""
 }

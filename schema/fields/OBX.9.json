@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Probability",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Probability",
+  "codeName": "probability",
+  "hl7Table": ""
 }

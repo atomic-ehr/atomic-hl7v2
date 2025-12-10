@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Insurance Co. Contact Reason",
-	"hl7Table": "HL70232"
+  "dataType": "IS",
+  "longName": "Insurance Co. Contact Reason",
+  "codeName": "insuranceCoContactReason",
+  "hl7Table": "HL70232"
 }

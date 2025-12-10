@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Administrative Sex",
-	"hl7Table": "HL70001"
+  "dataType": "IS",
+  "longName": "Administrative Sex",
+  "codeName": "gender",
+  "hl7Table": "HL70001"
 }

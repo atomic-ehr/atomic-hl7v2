@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Units of Measure",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Units of Measure",
+  "codeName": "unitOfMeasure",
+  "hl7Table": "HL79999"
 }

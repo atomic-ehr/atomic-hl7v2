@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Scheduled Procedure Step Location",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Scheduled Procedure Step Location",
+  "codeName": "scheduledProcedureStepLocation",
+  "hl7Table": ""
 }

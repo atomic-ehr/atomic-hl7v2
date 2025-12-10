@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Occurrence Span (33)",
-	"hl7Table": "HL70351"
+  "dataType": "CE",
+  "longName": "Occurrence Span (33)",
+  "codeName": "occurrenceSpan",
+  "hl7Table": "HL70351"
 }

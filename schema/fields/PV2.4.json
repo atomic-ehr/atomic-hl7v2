@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Transfer Reason",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Transfer Reason",
+  "codeName": "transferReason",
+  "hl7Table": ""
 }

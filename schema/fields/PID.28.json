@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Nationality",
-	"hl7Table": "HL70212"
+  "dataType": "CE",
+  "longName": "Nationality",
+  "codeName": "nationality",
+  "hl7Table": "HL70212"
 }

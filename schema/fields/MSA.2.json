@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Message Control ID",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Message Control ID",
+  "codeName": "messageControlId",
+  "hl7Table": ""
 }

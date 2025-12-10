@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Insured's Date Of Birth",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Insured's Date Of Birth",
+  "codeName": "insuredsDateOfBirth",
+  "hl7Table": ""
 }

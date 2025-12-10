@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Co-Pay Amount",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Co-Pay Amount",
+  "codeName": "coPayAmount",
+  "hl7Table": ""
 }

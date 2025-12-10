@@ -1,5 +1,6 @@
 {
-	"dataType": "NA",
-	"longName": "Position in Tray",
-	"hl7Table": ""
+  "dataType": "NA",
+  "longName": "Position in Tray",
+  "codeName": "positionInTray",
+  "hl7Table": ""
 }

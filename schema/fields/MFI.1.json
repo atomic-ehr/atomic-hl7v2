@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Master File Identifier",
-	"hl7Table": "HL70175"
+  "dataType": "CE",
+  "longName": "Master File Identifier",
+  "codeName": "masterFileIdentifier",
+  "hl7Table": "HL70175"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Event Report Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Event Report Date",
+  "codeName": "eventReportDate",
+  "hl7Table": ""
 }

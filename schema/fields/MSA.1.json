@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Acknowledgment Code",
-	"hl7Table": "HL70008"
+  "dataType": "ID",
+  "longName": "Acknowledgment Code",
+  "codeName": "acknowledgmentCode",
+  "hl7Table": "HL70008"
 }

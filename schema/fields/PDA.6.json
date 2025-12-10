@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Autopsy Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Autopsy Indicator",
+  "codeName": "autopsyIndicator",
+  "hl7Table": "HL70136"
 }

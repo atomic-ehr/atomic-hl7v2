@@ -1,5 +1,6 @@
 {
-	"dataType": "DLT",
-	"longName": "Delta Check Criteria",
-	"hl7Table": ""
+  "dataType": "DLT",
+  "longName": "Delta Check Criteria",
+  "codeName": "deltaCheckCriteria",
+  "hl7Table": ""
 }

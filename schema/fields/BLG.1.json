@@ -1,5 +1,6 @@
 {
-	"dataType": "CCD",
-	"longName": "When to Charge",
-	"hl7Table": "HL70100"
+  "dataType": "CCD",
+  "longName": "When to Charge",
+  "codeName": "whenToCharge",
+  "hl7Table": "HL70100"
 }

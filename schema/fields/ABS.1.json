@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Discharge Care Provider",
-	"hl7Table": "HL70010"
+  "dataType": "XCN",
+  "longName": "Discharge Care Provider",
+  "codeName": "dischargeCareProvider",
+  "hl7Table": "HL70010"
 }

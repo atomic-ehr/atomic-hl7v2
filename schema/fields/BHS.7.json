@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Batch Creation Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Batch Creation Date/Time",
+  "codeName": "batchCreationDateTime",
+  "hl7Table": ""
 }

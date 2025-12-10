@@ -1,5 +1,6 @@
 {
-	"dataType": "FC",
-	"longName": "Guarantor Financial Class",
-	"hl7Table": ""
+  "dataType": "FC",
+  "longName": "Guarantor Financial Class",
+  "codeName": "guarantorFinancialClass",
+  "hl7Table": ""
 }

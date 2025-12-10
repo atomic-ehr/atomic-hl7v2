@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Start Date/Time Offset",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Start Date/Time Offset",
+  "codeName": "startOffset",
+  "hl7Table": ""
 }

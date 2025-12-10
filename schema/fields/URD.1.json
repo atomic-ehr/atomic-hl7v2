@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "R/U Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "R/U Date/Time",
+  "codeName": "rUDateTime",
+  "hl7Table": ""
 }

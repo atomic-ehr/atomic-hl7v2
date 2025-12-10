@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Component Amount",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Component Amount",
+  "codeName": "componentAmount",
+  "hl7Table": ""
 }

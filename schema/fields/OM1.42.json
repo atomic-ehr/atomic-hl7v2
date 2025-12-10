@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Kind of Quantity Observed",
-	"hl7Table": "HL70254"
+  "dataType": "CE",
+  "longName": "Kind of Quantity Observed",
+  "codeName": "kindOfQuantityObserved",
+  "hl7Table": "HL70254"
 }

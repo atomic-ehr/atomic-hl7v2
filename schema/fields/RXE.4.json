@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Give Amount - Maximum",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Give Amount - Maximum",
+  "codeName": "giveAmountMaximum",
+  "hl7Table": ""
 }

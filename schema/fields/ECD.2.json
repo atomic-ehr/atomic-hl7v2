@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Remote Control Command",
-	"hl7Table": "HL70368"
+  "dataType": "CE",
+  "longName": "Remote Control Command",
+  "codeName": "remoteControlCommand",
+  "hl7Table": "HL70368"
 }

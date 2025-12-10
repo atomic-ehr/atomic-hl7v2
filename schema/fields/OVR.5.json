@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Override Authorized By",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Override Authorized By",
+  "codeName": "overrideAuthorizedBy",
+  "hl7Table": ""
 }

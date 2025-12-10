@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "BP Dispensed to Receiver",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "BP Dispensed to Receiver",
+  "codeName": "bpDispensedToReceiver",
+  "hl7Table": ""
 }

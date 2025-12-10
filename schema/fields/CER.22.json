@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Jurisdiction Breadth",
-	"hl7Table": "HL70547"
+  "dataType": "CWE",
+  "longName": "Jurisdiction Breadth",
+  "codeName": "jurisdictionBreadth",
+  "hl7Table": "HL70547"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XPN",
-	"longName": "Prior Patient Name",
-	"hl7Table": ""
+  "dataType": "XPN",
+  "longName": "Prior Patient Name",
+  "codeName": "priorPatientName",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "VH",
-	"longName": "Visiting Hours",
-	"hl7Table": "HL70267"
+  "dataType": "VH",
+  "longName": "Visiting Hours",
+  "codeName": "visitingHours",
+  "hl7Table": "HL70267"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Segment Unique Key",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Segment Unique Key",
+  "codeName": "segmentUniqueKey",
+  "hl7Table": ""
 }

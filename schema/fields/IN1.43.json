@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Insured's Administrative Sex",
-	"hl7Table": "HL70001"
+  "dataType": "IS",
+  "longName": "Insured's Administrative Sex",
+  "codeName": "insuredsAdministrativeGender",
+  "hl7Table": "HL70001"
 }

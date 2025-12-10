@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Military Retire Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Military Retire Date",
+  "codeName": "militaryRetireDate",
+  "hl7Table": ""
 }

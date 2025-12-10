@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Event Reason Code",
-	"hl7Table": "HL70062"
+  "dataType": "IS",
+  "longName": "Event Reason Code",
+  "codeName": "eventReasonCode",
+  "hl7Table": "HL70062"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Originator Code/Name",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Originator Code/Name",
+  "codeName": "originatorCodeName",
+  "hl7Table": ""
 }

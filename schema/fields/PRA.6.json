@@ -1,5 +1,6 @@
 {
-	"dataType": "PLN",
-	"longName": "Practitioner ID Numbers",
-	"hl7Table": "HL70338"
+  "dataType": "PLN",
+  "longName": "Practitioner ID Numbers",
+  "codeName": "practitionerIdNumbers",
+  "hl7Table": "HL70338"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Practitioner Category",
-	"hl7Table": "HL70186"
+  "dataType": "IS",
+  "longName": "Practitioner Category",
+  "codeName": "practitionerCategory",
+  "hl7Table": "HL70186"
 }

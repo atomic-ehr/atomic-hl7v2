@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Quantity",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Quantity",
+  "codeName": "value",
+  "hl7Table": ""
 }

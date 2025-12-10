@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "BP Intended Use Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "BP Intended Use Date/Time",
+  "codeName": "intendedUse",
+  "hl7Table": ""
 }

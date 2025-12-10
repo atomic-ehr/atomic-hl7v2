@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Facility ID - PRC",
-	"hl7Table": "HL70464"
+  "dataType": "CE",
+  "longName": "Facility ID - PRC",
+  "codeName": "facilityIdPrc",
+  "hl7Table": "HL70464"
 }

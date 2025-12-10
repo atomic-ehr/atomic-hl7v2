@@ -1,5 +1,6 @@
 {
-	"dataType": "XPN",
-	"longName": "Primary Observer Name",
-	"hl7Table": ""
+  "dataType": "XPN",
+  "longName": "Primary Observer Name",
+  "codeName": "primaryObserverName",
+  "hl7Table": ""
 }

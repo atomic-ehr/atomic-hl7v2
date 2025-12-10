@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Data Line",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Data Line",
+  "codeName": "dataLine",
+  "hl7Table": ""
 }

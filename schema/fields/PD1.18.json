@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Publicity Code Effective Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Publicity Code Effective Date",
+  "codeName": "publicityCodeEffectiveDate",
+  "hl7Table": ""
 }

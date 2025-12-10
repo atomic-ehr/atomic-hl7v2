@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Verification Status",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Verification Status",
+  "codeName": "verificationStatus",
+  "hl7Table": ""
 }

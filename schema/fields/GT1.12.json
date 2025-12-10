@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Guarantor SSN",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Guarantor SSN",
+  "codeName": "guarantorSsn",
+  "hl7Table": ""
 }

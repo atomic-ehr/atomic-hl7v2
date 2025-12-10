@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Consent Non-disclosure Reason",
-	"hl7Table": "HL70501"
+  "dataType": "CWE",
+  "longName": "Consent Non-disclosure Reason",
+  "codeName": "consentNonDisclosureReason",
+  "hl7Table": "HL70501"
 }

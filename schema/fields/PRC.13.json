@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Price Override Flag",
-	"hl7Table": "HL70268"
+  "dataType": "IS",
+  "longName": "Price Override Flag",
+  "codeName": "priceOverrideFlag",
+  "hl7Table": "HL70268"
 }

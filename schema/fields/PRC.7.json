@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Minimum Quantity",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Minimum Quantity",
+  "codeName": "minimumQuantity",
+  "hl7Table": ""
 }

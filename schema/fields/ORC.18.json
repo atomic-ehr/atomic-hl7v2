@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Entering Device",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Entering Device",
+  "codeName": "enteringDevice",
+  "hl7Table": ""
 }

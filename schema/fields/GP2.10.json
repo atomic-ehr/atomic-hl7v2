@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Packaging Status Code",
-	"hl7Table": "HL70469"
+  "dataType": "IS",
+  "longName": "Packaging Status Code",
+  "codeName": "packagingStatusCode",
+  "hl7Table": "HL70469"
 }

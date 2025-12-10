@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Dispense Sub-ID Counter",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Dispense Sub-ID Counter",
+  "codeName": "dispenseSubIdCounter",
+  "hl7Table": ""
 }

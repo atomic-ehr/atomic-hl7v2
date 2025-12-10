@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Test/Service Default Duration Quantity",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Test/Service Default Duration Quantity",
+  "codeName": "testServiceDefaultDurationQuantity",
+  "hl7Table": ""
 }

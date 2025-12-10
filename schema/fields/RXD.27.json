@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Packaging/Assembly Location",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Packaging/Assembly Location",
+  "codeName": "packagingAssemblyLocation",
+  "hl7Table": ""
 }

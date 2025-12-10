@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Responsible Observer",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Responsible Observer",
+  "codeName": "responsibleObserver",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Organization Unit Code",
-	"hl7Table": "HL70405"
+  "dataType": "CE",
+  "longName": "Organization Unit Code",
+  "codeName": "organizationUnitCode",
+  "hl7Table": "HL70405"
 }

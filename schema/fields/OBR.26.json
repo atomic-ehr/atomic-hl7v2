@@ -1,5 +1,6 @@
 {
-	"dataType": "PRL",
-	"longName": "Parent Result",
-	"hl7Table": ""
+  "dataType": "PRL",
+  "longName": "Parent Result",
+  "codeName": "parentResult",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "SI",
-	"longName": "Set ID - DSP",
-	"hl7Table": ""
+  "dataType": "SI",
+  "longName": "Set ID - DSP",
+  "codeName": "setIdDsp",
+  "hl7Table": ""
 }

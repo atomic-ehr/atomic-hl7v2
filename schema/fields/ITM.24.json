@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Item Set Indicator",
-	"hl7Table": "HL70532"
+  "dataType": "CNE",
+  "longName": "Item Set Indicator",
+  "codeName": "itemSetIndicator",
+  "hl7Table": "HL70532"
 }

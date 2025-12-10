@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Family/Significant Other Awareness of Problem/Prognosis",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Family/Significant Other Awareness of Problem/Prognosis",
+  "codeName": "familySignificantOtherAwarenessOfProblemPrognosis",
+  "hl7Table": ""
 }

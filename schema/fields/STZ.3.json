@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Maintenance Cycle",
-	"hl7Table": "HL70809"
+  "dataType": "CWE",
+  "longName": "Maintenance Cycle",
+  "codeName": "maintenanceCycle",
+  "hl7Table": "HL70809"
 }

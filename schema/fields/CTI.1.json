@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Sponsor Study ID",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Sponsor Study ID",
+  "codeName": "studyId",
+  "hl7Table": ""
 }

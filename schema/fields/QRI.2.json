@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Match Reason Code",
-	"hl7Table": "HL70392"
+  "dataType": "IS",
+  "longName": "Match Reason Code",
+  "codeName": "matchReasonCode",
+  "hl7Table": "HL70392"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Military Partnership Code",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Military Partnership Code",
+  "codeName": "militaryPartnershipCode",
+  "hl7Table": "HL70136"
 }

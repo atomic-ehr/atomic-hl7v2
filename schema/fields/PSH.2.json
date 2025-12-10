@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Report Form Identifier",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Report Form Identifier",
+  "codeName": "reportFormIdentifier",
+  "hl7Table": ""
 }

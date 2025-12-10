@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Application control-level Errors",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Application control-level Errors",
+  "codeName": "applicationControlLevelErrors",
+  "hl7Table": ""
 }

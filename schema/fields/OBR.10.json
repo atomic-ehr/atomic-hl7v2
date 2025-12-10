@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Collector Identifier",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Collector Identifier",
+  "codeName": "collectorIdentifier",
+  "hl7Table": ""
 }

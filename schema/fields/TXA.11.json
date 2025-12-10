@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Transcriptionist Code/Name",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Transcriptionist Code/Name",
+  "codeName": "transcriptionistCodeName",
+  "hl7Table": ""
 }

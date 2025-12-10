@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Primary Key Value - IIM",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Primary Key Value - IIM",
+  "codeName": "primaryKeyValueIim",
+  "hl7Table": ""
 }

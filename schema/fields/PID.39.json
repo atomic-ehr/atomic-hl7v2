@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Tribal Citizenship",
-	"hl7Table": "HL70171"
+  "dataType": "CWE",
+  "longName": "Tribal Citizenship",
+  "codeName": "tribalCitizenship",
+  "hl7Table": "HL70171"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Expected Number of Insurance Plans",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Expected Number of Insurance Plans",
+  "codeName": "expectedNumberOfInsurancePlans",
+  "hl7Table": ""
 }

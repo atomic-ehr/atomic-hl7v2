@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Software Vendor Organization",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Software Vendor Organization",
+  "codeName": "softwareVendorOrganization",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Stated Variance Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Stated Variance Date/Time",
+  "codeName": "statedVarianceDateTime",
+  "hl7Table": ""
 }

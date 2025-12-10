@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Rules that Trigger Reflex Testing",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Rules that Trigger Reflex Testing",
+  "codeName": "rulesThatTriggerReflexTesting",
+  "hl7Table": ""
 }

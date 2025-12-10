@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Container Units",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Container Units",
+  "codeName": "containerUnit",
+  "hl7Table": "HL79999"
 }

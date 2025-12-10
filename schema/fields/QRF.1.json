@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Where Subject Filter",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Where Subject Filter",
+  "codeName": "whereSubjectFilter",
+  "hl7Table": ""
 }

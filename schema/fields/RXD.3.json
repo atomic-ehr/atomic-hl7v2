@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Date/Time Dispensed",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Date/Time Dispensed",
+  "codeName": "dispensedDateTime",
+  "hl7Table": ""
 }

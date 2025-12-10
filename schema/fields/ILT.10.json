@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Inventory On Hand Quantity Unit",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Inventory On Hand Quantity Unit",
+  "codeName": "inventoryOnHandQuantityUnit",
+  "hl7Table": ""
 }

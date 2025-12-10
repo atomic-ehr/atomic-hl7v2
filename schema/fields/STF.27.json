@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Race",
-	"hl7Table": "HL70005"
+  "dataType": "CE",
+  "longName": "Race",
+  "codeName": "race",
+  "hl7Table": "HL70005"
 }

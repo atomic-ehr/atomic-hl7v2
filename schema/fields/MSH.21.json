@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Message Profile Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Message Profile Identifier",
+  "codeName": "messageProfileIdentifier",
+  "hl7Table": ""
 }

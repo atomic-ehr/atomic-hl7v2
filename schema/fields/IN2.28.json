@@ -1,5 +1,6 @@
 {
-	"dataType": "RMC",
-	"longName": "Room Coverage Type/Amount",
-	"hl7Table": ""
+  "dataType": "RMC",
+  "longName": "Room Coverage Type/Amount",
+  "codeName": "roomCoverageTypeAmount",
+  "hl7Table": ""
 }

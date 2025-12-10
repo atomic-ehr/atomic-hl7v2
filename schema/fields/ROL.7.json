@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Role Duration",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Role Duration",
+  "codeName": "roleDuration",
+  "hl7Table": ""
 }

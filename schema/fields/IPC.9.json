@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Scheduled AE Title",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Scheduled AE Title",
+  "codeName": "scheduledAeTitle",
+  "hl7Table": ""
 }

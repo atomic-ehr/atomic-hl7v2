@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Preferred Short Name or Mnemonic for Observation",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Preferred Short Name or Mnemonic for Observation",
+  "codeName": "preferredShortNameOrMnemonicForObservation",
+  "hl7Table": ""
 }

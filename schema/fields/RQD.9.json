@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Deliver To ID",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Deliver To ID",
+  "codeName": "deliverToId",
+  "hl7Table": ""
 }

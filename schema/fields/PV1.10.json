@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Hospital Service",
-	"hl7Table": "HL70069"
+  "dataType": "IS",
+  "longName": "Hospital Service",
+  "codeName": "hospitalService",
+  "hl7Table": "HL70069"
 }

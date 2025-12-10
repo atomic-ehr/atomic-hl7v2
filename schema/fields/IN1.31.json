@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Type Of Agreement Code",
-	"hl7Table": "HL70098"
+  "dataType": "IS",
+  "longName": "Type Of Agreement Code",
+  "codeName": "typeOfAgreementCode",
+  "hl7Table": "HL70098"
 }

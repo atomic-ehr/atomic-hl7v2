@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Appeal Reason",
-	"hl7Table": "HL70345"
+  "dataType": "CE",
+  "longName": "Appeal Reason",
+  "codeName": "appealReason",
+  "hl7Table": "HL70345"
 }

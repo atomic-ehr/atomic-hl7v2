@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Expected Admit Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Expected Admit Date/Time",
+  "codeName": "expectedAdmission",
+  "hl7Table": ""
 }

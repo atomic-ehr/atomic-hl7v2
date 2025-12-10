@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Send Character Count",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Send Character Count",
+  "codeName": "sendCharacterCount",
+  "hl7Table": ""
 }

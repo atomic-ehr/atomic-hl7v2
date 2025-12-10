@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Override Entered By",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Override Entered By",
+  "codeName": "overrideEnteredBy",
+  "hl7Table": ""
 }

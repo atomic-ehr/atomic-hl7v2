@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Visit User Code",
-	"hl7Table": "HL70130"
+  "dataType": "IS",
+  "longName": "Visit User Code",
+  "codeName": "visitUserCode",
+  "hl7Table": "HL70130"
 }

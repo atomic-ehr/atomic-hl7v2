@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Bottom Delta",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Bottom Delta",
+  "codeName": "bottomDelta",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Visit Publicity Code",
-	"hl7Table": "HL70215"
+  "dataType": "IS",
+  "longName": "Visit Publicity Code",
+  "codeName": "visitPublicityCode",
+  "hl7Table": "HL70215"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Connect Timeouts",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Connect Timeouts",
+  "codeName": "connectTimeouts",
+  "hl7Table": ""
 }

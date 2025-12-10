@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Baby Coverage",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Baby Coverage",
+  "codeName": "babyCoverage",
+  "hl7Table": "HL70136"
 }

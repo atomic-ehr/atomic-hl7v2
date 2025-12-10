@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Covered Days (7)",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Covered Days (7)",
+  "codeName": "coveredDays",
+  "hl7Table": ""
 }

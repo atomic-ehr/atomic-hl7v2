@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Catalogue Identifier",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Catalogue Identifier",
+  "codeName": "catalogueIdentifier",
+  "hl7Table": ""
 }

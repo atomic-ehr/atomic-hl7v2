@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Military Handicapped Program",
-	"hl7Table": "HL70343"
+  "dataType": "CE",
+  "longName": "Military Handicapped Program",
+  "codeName": "militaryHandicappedProgram",
+  "hl7Table": "HL70343"
 }

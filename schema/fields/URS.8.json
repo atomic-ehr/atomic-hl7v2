@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "R/U Date/Time Selection Qualifier",
-	"hl7Table": "HL70158"
+  "dataType": "ID",
+  "longName": "R/U Date/Time Selection Qualifier",
+  "codeName": "rUDateTimeSelectionQualifier",
+  "hl7Table": "HL70158"
 }

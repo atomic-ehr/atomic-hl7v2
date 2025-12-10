@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Valid Coded \"Answers\"",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Valid Coded \"Answers\"",
+  "codeName": "validCodedAnswers",
+  "hl7Table": "HL79999"
 }

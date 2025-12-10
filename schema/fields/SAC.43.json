@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Special Handling Code",
-	"hl7Table": "HL70376"
+  "dataType": "CWE",
+  "longName": "Special Handling Code",
+  "codeName": "specialHandlingCode",
+  "hl7Table": "HL70376"
 }

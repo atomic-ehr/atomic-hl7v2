@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Container Condition",
-	"hl7Table": "HL70544"
+  "dataType": "CWE",
+  "longName": "Container Condition",
+  "codeName": "containerCondition",
+  "hl7Table": "HL70544"
 }

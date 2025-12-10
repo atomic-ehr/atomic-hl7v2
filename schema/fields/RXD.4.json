@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Actual Dispense Amount",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Actual Dispense Amount",
+  "codeName": "actualDispenseAmount",
+  "hl7Table": ""
 }

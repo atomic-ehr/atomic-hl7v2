@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Sequence/Results Flag",
-	"hl7Table": "HL70503"
+  "dataType": "ID",
+  "longName": "Sequence/Results Flag",
+  "codeName": "flag",
+  "hl7Table": "HL70503"
 }

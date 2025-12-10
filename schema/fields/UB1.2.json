@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Blood Deductible  (43)",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Blood Deductible  (43)",
+  "codeName": "bloodDeductible",
+  "hl7Table": ""
 }

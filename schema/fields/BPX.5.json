@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "BC Donation ID",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "BC Donation ID",
+  "codeName": "bcDonationId",
+  "hl7Table": ""
 }

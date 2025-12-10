@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Automatic Repeat Allowed",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Automatic Repeat Allowed",
+  "codeName": "autoRepeatAllowed",
+  "hl7Table": "HL70136"
 }

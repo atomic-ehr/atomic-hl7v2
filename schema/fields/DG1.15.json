@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Diagnosis Priority",
-	"hl7Table": "HL70359"
+  "dataType": "ID",
+  "longName": "Diagnosis Priority",
+  "codeName": "diagnosisPriority",
+  "hl7Table": "HL70359"
 }

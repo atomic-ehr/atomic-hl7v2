@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Admit Source",
-	"hl7Table": "HL70023"
+  "dataType": "IS",
+  "longName": "Admit Source",
+  "codeName": "admitSource",
+  "hl7Table": "HL70023"
 }

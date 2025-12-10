@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Prior Patient Location",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Prior Patient Location",
+  "codeName": "priorPatientLocation",
+  "hl7Table": ""
 }

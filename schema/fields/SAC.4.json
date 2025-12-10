@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Primary (parent) Container Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Primary (parent) Container Identifier",
+  "codeName": "primaryContainerIdentifier",
+  "hl7Table": ""
 }

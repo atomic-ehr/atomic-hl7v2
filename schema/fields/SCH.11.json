@@ -1,5 +1,6 @@
 {
-	"dataType": "TQ",
-	"longName": "Appointment Timing Quantity",
-	"hl7Table": ""
+  "dataType": "TQ",
+  "longName": "Appointment Timing Quantity",
+  "codeName": "appointmentTimingQuantity",
+  "hl7Table": ""
 }

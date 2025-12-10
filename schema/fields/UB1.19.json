@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Occur Span End Date (33)",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Occur Span End Date (33)",
+  "codeName": "occurSpanEndDate",
+  "hl7Table": ""
 }

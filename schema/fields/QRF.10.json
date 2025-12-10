@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Search Confidence Threshold",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Search Confidence Threshold",
+  "codeName": "searchConfidenceThreshold",
+  "hl7Table": ""
 }

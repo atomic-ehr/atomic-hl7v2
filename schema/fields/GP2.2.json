@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Number of Service Units",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Number of Service Units",
+  "codeName": "numberOfServiceUnit",
+  "hl7Table": ""
 }

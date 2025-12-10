@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Specimen Appropriateness",
-	"hl7Table": "HL70492"
+  "dataType": "CWE",
+  "longName": "Specimen Appropriateness",
+  "codeName": "specimenAppropriateness",
+  "hl7Table": "HL70492"
 }

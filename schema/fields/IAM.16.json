@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Alert Device Code",
-	"hl7Table": "HL70437"
+  "dataType": "CE",
+  "longName": "Alert Device Code",
+  "codeName": "alertDeviceCode",
+  "hl7Table": "HL70437"
 }

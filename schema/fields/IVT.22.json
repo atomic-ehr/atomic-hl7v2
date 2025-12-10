@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Recommended Safety Stock Days",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Recommended Safety Stock Days",
+  "codeName": "recommendedSafetyStockDays",
+  "hl7Table": ""
 }

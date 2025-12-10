@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Mood Identifier",
-	"hl7Table": ""
+  "dataType": "CNE",
+  "longName": "Mood Identifier",
+  "codeName": "moodIdentifier",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Person Performing Study Registration",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Person Performing Study Registration",
+  "codeName": "personPerformingStudyRegistration",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Outside Site(s) Where Observation may be Performed",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Outside Site(s) Where Observation may be Performed",
+  "codeName": "outsideSiteWhereObservationMayBePerformed",
+  "hl7Table": "HL79999"
 }

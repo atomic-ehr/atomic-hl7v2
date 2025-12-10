@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Employment Stop Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Employment Stop Date",
+  "codeName": "employmentEnd",
+  "hl7Table": ""
 }

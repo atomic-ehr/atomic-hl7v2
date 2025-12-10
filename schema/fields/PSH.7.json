@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Quantity Distributed",
-	"hl7Table": ""
+  "dataType": "CQ",
+  "longName": "Quantity Distributed",
+  "codeName": "quantityDistributed",
+  "hl7Table": ""
 }

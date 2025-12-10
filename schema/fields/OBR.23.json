@@ -1,5 +1,6 @@
 {
-	"dataType": "MOC",
-	"longName": "Charge to Practice",
-	"hl7Table": ""
+  "dataType": "MOC",
+  "longName": "Charge to Practice",
+  "codeName": "chargeToPractice",
+  "hl7Table": ""
 }

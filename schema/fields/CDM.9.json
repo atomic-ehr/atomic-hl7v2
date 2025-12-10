@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Inventory Number",
-	"hl7Table": "HL70463"
+  "dataType": "CE",
+  "longName": "Inventory Number",
+  "codeName": "inventoryNumber",
+  "hl7Table": "HL70463"
 }

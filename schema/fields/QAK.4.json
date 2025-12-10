@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Hit Count",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Hit Count",
+  "codeName": "hitCount",
+  "hl7Table": ""
 }

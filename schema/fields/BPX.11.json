@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "BP Blood Group",
-	"hl7Table": ""
+  "dataType": "CNE",
+  "longName": "BP Blood Group",
+  "codeName": "bpBloodGroup",
+  "hl7Table": ""
 }

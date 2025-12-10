@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Lipemia Index Units",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Lipemia Index Units",
+  "codeName": "lipemiaIndexUnit",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Stored Procedure Name",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Stored Procedure Name",
+  "codeName": "storedProcedureName",
+  "hl7Table": ""
 }

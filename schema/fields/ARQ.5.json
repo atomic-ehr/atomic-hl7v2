@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Schedule ID",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Schedule ID",
+  "codeName": "scheduleId",
+  "hl7Table": ""
 }

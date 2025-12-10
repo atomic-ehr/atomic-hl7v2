@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Guarantor Number",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Guarantor Number",
+  "codeName": "guarantorNumber",
+  "hl7Table": ""
 }

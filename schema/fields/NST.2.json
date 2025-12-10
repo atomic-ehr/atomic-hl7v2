@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Source Identifier",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Source Identifier",
+  "codeName": "sourceIdentifier",
+  "hl7Table": ""
 }

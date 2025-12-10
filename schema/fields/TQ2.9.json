@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Cyclic Group Maximum Number of Repeats",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Cyclic Group Maximum Number of Repeats",
+  "codeName": "cyclicGroupMaximumNumberOfRepeats",
+  "hl7Table": ""
 }

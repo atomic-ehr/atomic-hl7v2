@@ -1,5 +1,6 @@
 {
-	"dataType": "EIP",
-	"longName": "Parent",
-	"hl7Table": ""
+  "dataType": "EIP",
+  "longName": "Parent",
+  "codeName": "parent",
+  "hl7Table": ""
 }

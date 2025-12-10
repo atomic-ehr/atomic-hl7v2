@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Guarantor Birth Place",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Guarantor Birth Place",
+  "codeName": "guarantorBirthPlace",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NDL",
-	"longName": "Technician",
-	"hl7Table": ""
+  "dataType": "NDL",
+  "longName": "Technician",
+  "codeName": "technician",
+  "hl7Table": ""
 }

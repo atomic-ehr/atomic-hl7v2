@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Change Pathway Life Cycle Status Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Change Pathway Life Cycle Status Date/Time",
+  "codeName": "changePathwayLifeCycleStatusDateTime",
+  "hl7Table": ""
 }

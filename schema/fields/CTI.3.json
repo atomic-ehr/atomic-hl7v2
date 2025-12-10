@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Study Scheduled Time Point",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Study Scheduled Time Point",
+  "codeName": "studyScheduledTimePoint",
+  "hl7Table": ""
 }

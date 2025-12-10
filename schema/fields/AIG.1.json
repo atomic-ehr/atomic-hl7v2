@@ -1,5 +1,6 @@
 {
-	"dataType": "SI",
-	"longName": "Set ID - AIG",
-	"hl7Table": ""
+  "dataType": "SI",
+  "longName": "Set ID - AIG",
+  "codeName": "setIdAig",
+  "hl7Table": ""
 }

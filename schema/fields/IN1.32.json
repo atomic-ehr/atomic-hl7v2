@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Billing Status",
-	"hl7Table": "HL70022"
+  "dataType": "IS",
+  "longName": "Billing Status",
+  "codeName": "billingStatus",
+  "hl7Table": "HL70022"
 }

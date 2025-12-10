@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Consent Type",
-	"hl7Table": "HL70496"
+  "dataType": "CWE",
+  "longName": "Consent Type",
+  "codeName": "consentType",
+  "hl7Table": "HL70496"
 }

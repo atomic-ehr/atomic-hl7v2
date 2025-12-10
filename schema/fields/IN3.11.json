@@ -1,5 +1,6 @@
 {
-	"dataType": "DTN",
-	"longName": "Days",
-	"hl7Table": ""
+  "dataType": "DTN",
+  "longName": "Days",
+  "codeName": "days",
+  "hl7Table": ""
 }

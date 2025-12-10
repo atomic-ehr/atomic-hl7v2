@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Charge Code",
-	"hl7Table": "HL70132"
+  "dataType": "CE",
+  "longName": "Charge Code",
+  "codeName": "code",
+  "hl7Table": "HL70132"
 }

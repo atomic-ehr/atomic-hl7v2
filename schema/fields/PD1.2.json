@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Living Arrangement",
-	"hl7Table": "HL70220"
+  "dataType": "IS",
+  "longName": "Living Arrangement",
+  "codeName": "livingArrangement",
+  "hl7Table": "HL70220"
 }

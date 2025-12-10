@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Substance/Treatment Refusal Reason",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Substance/Treatment Refusal Reason",
+  "codeName": "substanceTreatmentRefusalReason",
+  "hl7Table": ""
 }

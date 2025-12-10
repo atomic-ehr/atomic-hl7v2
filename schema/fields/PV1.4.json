@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Admission Type",
-	"hl7Table": "HL70007"
+  "dataType": "IS",
+  "longName": "Admission Type",
+  "codeName": "admissionType",
+  "hl7Table": "HL70007"
 }

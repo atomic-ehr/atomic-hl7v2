@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Item Set Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Item Set Identifier",
+  "codeName": "itemSetIdentifier",
+  "hl7Table": ""
 }

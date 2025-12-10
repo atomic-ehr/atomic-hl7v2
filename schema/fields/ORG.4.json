@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Primary Org Unit Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Primary Org Unit Indicator",
+  "codeName": "primaryOrgUnitIndicator",
+  "hl7Table": "HL70136"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "BP  Processing Requirements",
-	"hl7Table": "HL70508"
+  "dataType": "CWE",
+  "longName": "BP  Processing Requirements",
+  "codeName": "bpProcessingRequirements",
+  "hl7Table": "HL70508"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Consignment Item Indicator",
-	"hl7Table": "HL70532"
+  "dataType": "CNE",
+  "longName": "Consignment Item Indicator",
+  "codeName": "consignmentItemIndicator",
+  "hl7Table": "HL70532"
 }

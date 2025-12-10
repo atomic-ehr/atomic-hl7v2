@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Charge On Indicator",
-	"hl7Table": "HL70269"
+  "dataType": "IS",
+  "longName": "Charge On Indicator",
+  "codeName": "chargeOnIndicator",
+  "hl7Table": "HL70269"
 }

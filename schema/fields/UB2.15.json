@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "UB92 Locator 57 (National)",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "UB92 Locator 57 (National)",
+  "codeName": "ub92Locator57",
+  "hl7Table": ""
 }

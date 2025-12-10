@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Placer Field 2",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Placer Field 2",
+  "codeName": "placerField2",
+  "hl7Table": ""
 }

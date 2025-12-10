@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Protection Indicator Effective Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Protection Indicator Effective Date",
+  "codeName": "protectionIndicatorEffectiveDate",
+  "hl7Table": ""
 }

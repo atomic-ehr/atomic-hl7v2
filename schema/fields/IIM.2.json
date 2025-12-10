@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Service Item Code",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Service Item Code",
+  "codeName": "serviceItemCode",
+  "hl7Table": ""
 }

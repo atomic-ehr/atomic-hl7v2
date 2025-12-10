@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Study Scheduled Patient Time Point",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Study Scheduled Patient Time Point",
+  "codeName": "studyScheduledPatientTimePoint",
+  "hl7Table": ""
 }

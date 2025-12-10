@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Batch Security",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Batch Security",
+  "codeName": "batchSecurity",
+  "hl7Table": ""
 }

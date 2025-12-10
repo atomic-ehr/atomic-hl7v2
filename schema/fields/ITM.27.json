@@ -1,5 +1,6 @@
 {
-	"dataType": "CNE",
-	"longName": "Procedure Code",
-	"hl7Table": "HL70088"
+  "dataType": "CNE",
+  "longName": "Procedure Code",
+  "codeName": "procedureCode",
+  "hl7Table": "HL70088"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Batch Field Separator",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Batch Field Separator",
+  "codeName": "batchFieldSeparator",
+  "hl7Table": ""
 }

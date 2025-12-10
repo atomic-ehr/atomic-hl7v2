@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Inventory Received Quantity",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Inventory Received Quantity",
+  "codeName": "inventoryReceivedQuantity",
+  "hl7Table": ""
 }

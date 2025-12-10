@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "Primary Observer Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "Primary Observer Address",
+  "codeName": "primaryObserverAddress",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Certification Agency",
-	"hl7Table": "HL70346"
+  "dataType": "CE",
+  "longName": "Certification Agency",
+  "codeName": "certificationAgency",
+  "hl7Table": "HL70346"
 }

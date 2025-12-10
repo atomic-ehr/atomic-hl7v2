@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Item Category",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Item Category",
+  "codeName": "itemCategory",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "PLN",
-	"longName": "Contact Identifiers",
-	"hl7Table": ""
+  "dataType": "PLN",
+  "longName": "Contact Identifiers",
+  "codeName": "contactIdentifiers",
+  "hl7Table": ""
 }

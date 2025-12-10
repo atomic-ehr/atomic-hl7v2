@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Disabled Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Disabled Indicator",
+  "codeName": "disabledIndicator",
+  "hl7Table": "HL70136"
 }

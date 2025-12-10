@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Text instruction",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Text instruction",
+  "codeName": "textInstruction",
+  "hl7Table": ""
 }

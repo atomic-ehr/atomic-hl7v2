@@ -1,5 +1,6 @@
 {
-	"dataType": "SCV",
-	"longName": "Resource Selection Criteria",
-	"hl7Table": "HL70294"
+  "dataType": "SCV",
+  "longName": "Resource Selection Criteria",
+  "codeName": "resourceSelectionCriteria",
+  "hl7Table": "HL70294"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Certification Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Certification Date/Time",
+  "codeName": "certificationDateTime",
+  "hl7Table": ""
 }

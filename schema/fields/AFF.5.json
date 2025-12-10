@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Professional Affiliation Additional Information",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Professional Affiliation Additional Information",
+  "codeName": "professionalAffiliationAdditionalInformation",
+  "hl7Table": ""
 }

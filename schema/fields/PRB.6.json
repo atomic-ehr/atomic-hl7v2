@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Problem List Priority",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Problem List Priority",
+  "codeName": "problemListPriority",
+  "hl7Table": ""
 }

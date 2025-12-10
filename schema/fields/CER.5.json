@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Issuing Authority",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Issuing Authority",
+  "codeName": "issuingAuthority",
+  "hl7Table": ""
 }

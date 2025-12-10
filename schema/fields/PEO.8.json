@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Event Qualification",
-	"hl7Table": "HL70237"
+  "dataType": "ID",
+  "longName": "Event Qualification",
+  "codeName": "eventQualification",
+  "hl7Table": "HL70237"
 }

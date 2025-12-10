@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Range of Decimal Precision",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Range of Decimal Precision",
+  "codeName": "rangeOfDecimalPrecision",
+  "hl7Table": ""
 }

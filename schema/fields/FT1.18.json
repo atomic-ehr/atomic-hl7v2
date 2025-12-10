@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Patient Type",
-	"hl7Table": "HL70018"
+  "dataType": "IS",
+  "longName": "Patient Type",
+  "codeName": "type",
+  "hl7Table": "HL70018"
 }

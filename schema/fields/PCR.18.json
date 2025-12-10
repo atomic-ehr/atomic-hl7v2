@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Date Product Returned To Manufacturer",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Date Product Returned To Manufacturer",
+  "codeName": "dateProductReturnedToManufacturer",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Patient Status Effective Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Patient Status Effective Date",
+  "codeName": "statusStart",
+  "hl7Table": ""
 }

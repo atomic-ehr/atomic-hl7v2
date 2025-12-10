@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Primary Key Value Type",
-	"hl7Table": "HL70355"
+  "dataType": "ID",
+  "longName": "Primary Key Value Type",
+  "codeName": "primaryKeyValueType",
+  "hl7Table": "HL70355"
 }

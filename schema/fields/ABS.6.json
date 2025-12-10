@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Triage Code",
-	"hl7Table": "HL70422"
+  "dataType": "CE",
+  "longName": "Triage Code",
+  "codeName": "triageCode",
+  "hl7Table": "HL70422"
 }

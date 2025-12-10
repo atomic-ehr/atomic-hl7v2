@@ -1,5 +1,6 @@
 {
-	"dataType": "MO",
-	"longName": "Approved To Buy Price",
-	"hl7Table": ""
+  "dataType": "MO",
+  "longName": "Approved To Buy Price",
+  "codeName": "approvedToBuyPrice",
+  "hl7Table": ""
 }

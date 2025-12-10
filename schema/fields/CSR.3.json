@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Institution Registering the Patient",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Institution Registering the Patient",
+  "codeName": "institutionRegisteringThePatient",
+  "hl7Table": ""
 }

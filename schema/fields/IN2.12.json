@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Military Organization",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Military Organization",
+  "codeName": "militaryOrganization",
+  "hl7Table": ""
 }

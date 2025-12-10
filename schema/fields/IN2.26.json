@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Payor Subscriber ID",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Payor Subscriber ID",
+  "codeName": "payorSubscriberId",
+  "hl7Table": ""
 }

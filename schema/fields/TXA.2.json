@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Document Type",
-	"hl7Table": "HL70270"
+  "dataType": "IS",
+  "longName": "Document Type",
+  "codeName": "documentType",
+  "hl7Table": "HL70270"
 }

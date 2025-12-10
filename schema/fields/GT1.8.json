@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Guarantor Date/Time Of Birth",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Guarantor Date/Time Of Birth",
+  "codeName": "birthDate",
+  "hl7Table": ""
 }

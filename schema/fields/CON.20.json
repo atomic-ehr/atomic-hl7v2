@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Consent Bypass Reason",
-	"hl7Table": "HL70499"
+  "dataType": "CWE",
+  "longName": "Consent Bypass Reason",
+  "codeName": "consentBypassReason",
+  "hl7Table": "HL70499"
 }

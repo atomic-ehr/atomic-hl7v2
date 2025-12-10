@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Procedure Minutes",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Procedure Minutes",
+  "codeName": "procedureMinutes",
+  "hl7Table": ""
 }

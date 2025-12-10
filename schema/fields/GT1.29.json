@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Guarantor Employer ID Number",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Guarantor Employer ID Number",
+  "codeName": "guarantorEmployerIdNumber",
+  "hl7Table": ""
 }

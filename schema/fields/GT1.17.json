@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "Guarantor Employer Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "Guarantor Employer Address",
+  "codeName": "guarantorEmployerAddress",
+  "hl7Table": ""
 }

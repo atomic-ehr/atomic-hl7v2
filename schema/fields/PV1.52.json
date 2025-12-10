@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Other Healthcare Provider",
-	"hl7Table": "HL70010"
+  "dataType": "XCN",
+  "longName": "Other Healthcare Provider",
+  "codeName": "otherHealthcareProvider",
+  "hl7Table": "HL70010"
 }

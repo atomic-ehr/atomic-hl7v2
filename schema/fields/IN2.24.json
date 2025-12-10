@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Non-Covered Insurance Code",
-	"hl7Table": "HL70143"
+  "dataType": "IS",
+  "longName": "Non-Covered Insurance Code",
+  "codeName": "nonCoveredInsuranceCode",
+  "hl7Table": "HL70143"
 }

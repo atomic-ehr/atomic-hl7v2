@@ -1,5 +1,6 @@
 {
-	"dataType": "RI",
-	"longName": "Repeating Interval",
-	"hl7Table": ""
+  "dataType": "RI",
+  "longName": "Repeating Interval",
+  "codeName": "repeatingInterval",
+  "hl7Table": ""
 }

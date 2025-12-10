@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Preferred Coding System",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Preferred Coding System",
+  "codeName": "preferredCodingSystem",
+  "hl7Table": "HL79999"
 }

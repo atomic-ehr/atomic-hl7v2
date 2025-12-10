@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Test/Service Default Frequency",
-	"hl7Table": "HL70335"
+  "dataType": "IS",
+  "longName": "Test/Service Default Frequency",
+  "codeName": "testServiceDefaultFrequency",
+  "hl7Table": "HL70335"
 }

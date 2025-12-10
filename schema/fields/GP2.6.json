@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "OCE Edit Code",
-	"hl7Table": "HL70458"
+  "dataType": "IS",
+  "longName": "OCE Edit Code",
+  "codeName": "oceEditCode",
+  "hl7Table": "HL70458"
 }

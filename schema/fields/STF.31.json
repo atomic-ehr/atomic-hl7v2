@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Death Date and Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Death Date and Time",
+  "codeName": "deathDateAndTime",
+  "hl7Table": ""
 }

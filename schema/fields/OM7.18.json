@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Consent Waiting Period Units",
-	"hl7Table": "HL70414"
+  "dataType": "CE",
+  "longName": "Consent Waiting Period Units",
+  "codeName": "consentWaitingPeriodUnit",
+  "hl7Table": "HL70414"
 }

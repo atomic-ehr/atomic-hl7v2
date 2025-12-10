@@ -1,5 +1,6 @@
 {
-	"dataType": "varies",
-	"longName": "Primary Key Value - MFA",
-	"hl7Table": "HL79999"
+  "dataType": "varies",
+  "longName": "Primary Key Value - MFA",
+  "codeName": "primaryKeyValueMfa",
+  "hl7Table": "HL79999"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "TQ",
-	"longName": "When Quantity/Timing Qualifier",
-	"hl7Table": ""
+  "dataType": "TQ",
+  "longName": "When Quantity/Timing Qualifier",
+  "codeName": "whenQuantityTimingQualifier",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Order Status Modifier",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Order Status Modifier",
+  "codeName": "orderStatusModifier",
+  "hl7Table": ""
 }

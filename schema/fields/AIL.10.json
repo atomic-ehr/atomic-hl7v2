@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Duration Units",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Duration Units",
+  "codeName": "durationUnit",
+  "hl7Table": ""
 }

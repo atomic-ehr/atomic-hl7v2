@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Admit Reason",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Admit Reason",
+  "codeName": "admitReason",
+  "hl7Table": ""
 }

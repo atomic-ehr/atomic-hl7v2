@@ -1,5 +1,6 @@
 {
-	"dataType": "SI",
-	"longName": "Set ID - OBR",
-	"hl7Table": ""
+  "dataType": "SI",
+  "longName": "Set ID - OBR",
+  "codeName": "setIdObr",
+  "hl7Table": ""
 }

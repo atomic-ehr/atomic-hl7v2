@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Dispense Package Size Unit",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Dispense Package Size Unit",
+  "codeName": "dispensePackageSizeUnit",
+  "hl7Table": ""
 }

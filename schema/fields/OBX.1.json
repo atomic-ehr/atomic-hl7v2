@@ -1,5 +1,6 @@
 {
-	"dataType": "SI",
-	"longName": "Set ID - OBX",
-	"hl7Table": ""
+  "dataType": "SI",
+  "longName": "Set ID - OBX",
+  "codeName": "setIdObx",
+  "hl7Table": ""
 }

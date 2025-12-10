@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Software Binary ID",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Software Binary ID",
+  "codeName": "softwareBinaryId",
+  "hl7Table": ""
 }

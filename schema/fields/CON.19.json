@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Informational Material Supplied Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Informational Material Supplied Indicator",
+  "codeName": "informationalMaterialSuppliedIndicator",
+  "hl7Table": "HL70136"
 }

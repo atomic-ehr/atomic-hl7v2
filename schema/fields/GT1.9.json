@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Guarantor Administrative Sex",
-	"hl7Table": "HL70001"
+  "dataType": "IS",
+  "longName": "Guarantor Administrative Sex",
+  "codeName": "guarantorAdministrativeGender",
+  "hl7Table": "HL70001"
 }

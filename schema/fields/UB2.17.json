@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Special Visit Count",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Special Visit Count",
+  "codeName": "specialVisitCount",
+  "hl7Table": ""
 }

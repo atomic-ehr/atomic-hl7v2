@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Category Synonym",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Category Synonym",
+  "codeName": "categorySynonym",
+  "hl7Table": ""
 }

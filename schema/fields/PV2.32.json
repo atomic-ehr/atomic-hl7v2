@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Billing Media Code",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Billing Media Code",
+  "codeName": "billingMediaCode",
+  "hl7Table": "HL70136"
 }

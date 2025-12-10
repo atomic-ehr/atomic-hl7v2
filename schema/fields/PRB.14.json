@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Problem Life Cycle Status",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Problem Life Cycle Status",
+  "codeName": "problemLifeCycleStatus",
+  "hl7Table": ""
 }

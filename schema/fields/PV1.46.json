@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Current Patient Balance",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Current Patient Balance",
+  "codeName": "currentPatientBalance",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Group Number",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Group Number",
+  "codeName": "groupNumber",
+  "hl7Table": ""
 }

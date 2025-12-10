@@ -1,5 +1,6 @@
 {
-	"dataType": "CX",
-	"longName": "Disabled Person Identifier",
-	"hl7Table": ""
+  "dataType": "CX",
+  "longName": "Disabled Person Identifier",
+  "codeName": "disabledPersonIdentifier",
+  "hl7Table": ""
 }

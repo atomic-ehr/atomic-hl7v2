@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Performing Organization Medical Director",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Performing Organization Medical Director",
+  "codeName": "performingOrganizationMedicalDirector",
+  "hl7Table": ""
 }

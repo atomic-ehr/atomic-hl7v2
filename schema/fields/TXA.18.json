@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Document Confidentiality Status",
-	"hl7Table": "HL70272"
+  "dataType": "ID",
+  "longName": "Document Confidentiality Status",
+  "codeName": "documentConfidentialityStatus",
+  "hl7Table": "HL70272"
 }

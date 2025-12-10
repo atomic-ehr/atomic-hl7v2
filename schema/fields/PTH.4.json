@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Pathway Established Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Pathway Established Date/Time",
+  "codeName": "pathwayEstablishedDateTime",
+  "hl7Table": ""
 }

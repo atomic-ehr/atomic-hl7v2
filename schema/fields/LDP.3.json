@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Location Service",
-	"hl7Table": "HL70069"
+  "dataType": "IS",
+  "longName": "Location Service",
+  "codeName": "locationService",
+  "hl7Table": "HL70069"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XCN",
-	"longName": "Primary Activity Provider Code/Name",
-	"hl7Table": ""
+  "dataType": "XCN",
+  "longName": "Primary Activity Provider Code/Name",
+  "codeName": "primaryActivityProviderCodeName",
+  "hl7Table": ""
 }

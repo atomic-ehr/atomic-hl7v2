@@ -1,5 +1,6 @@
 {
-	"dataType": "SI",
-	"longName": "Inventory Location Name",
-	"hl7Table": ""
+  "dataType": "SI",
+  "longName": "Inventory Location Name",
+  "codeName": "inventoryLocationName",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Date/Time of Birth",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Date/Time of Birth",
+  "codeName": "birthDate",
+  "hl7Table": ""
 }

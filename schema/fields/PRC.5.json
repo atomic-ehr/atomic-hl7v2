@@ -1,5 +1,6 @@
 {
-	"dataType": "CP",
-	"longName": "Price",
-	"hl7Table": ""
+  "dataType": "CP",
+  "longName": "Price",
+  "codeName": "price",
+  "hl7Table": ""
 }

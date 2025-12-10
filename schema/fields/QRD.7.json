@@ -1,5 +1,6 @@
 {
-	"dataType": "CQ",
-	"longName": "Quantity Limited Request",
-	"hl7Table": "HL70126"
+  "dataType": "CQ",
+  "longName": "Quantity Limited Request",
+  "codeName": "quantityLimitedRequest",
+  "hl7Table": "HL70126"
 }

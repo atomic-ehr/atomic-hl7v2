@@ -1,5 +1,6 @@
 {
-	"dataType": "VID",
-	"longName": "Version ID",
-	"hl7Table": ""
+  "dataType": "VID",
+  "longName": "Version ID",
+  "codeName": "version",
+  "hl7Table": ""
 }

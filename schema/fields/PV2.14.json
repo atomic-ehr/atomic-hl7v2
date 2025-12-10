@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Previous Service Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Previous Service Date",
+  "codeName": "previousServiceDate",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Brought In By",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Brought In By",
+  "codeName": "broughtInBy",
+  "hl7Table": ""
 }

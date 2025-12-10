@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Bin Location Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Bin Location Identifier",
+  "codeName": "binLocationIdentifier",
+  "hl7Table": ""
 }

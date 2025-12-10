@@ -1,5 +1,6 @@
 {
-	"dataType": "PT",
-	"longName": "Processing ID",
-	"hl7Table": ""
+  "dataType": "PT",
+  "longName": "Processing ID",
+  "codeName": "processingId",
+  "hl7Table": ""
 }

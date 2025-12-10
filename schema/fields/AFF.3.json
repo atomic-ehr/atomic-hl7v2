@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "Professional Organization Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "Professional Organization Address",
+  "codeName": "professionalOrganizationAddress",
+  "hl7Table": ""
 }

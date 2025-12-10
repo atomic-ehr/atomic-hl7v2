@@ -1,5 +1,6 @@
 {
-	"dataType": "SCV",
-	"longName": "Filler Override Criteria",
-	"hl7Table": ""
+  "dataType": "SCV",
+  "longName": "Filler Override Criteria",
+  "codeName": "fillerOverrideCriteria",
+  "hl7Table": ""
 }

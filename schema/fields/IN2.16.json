@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Military Status",
-	"hl7Table": "HL70142"
+  "dataType": "IS",
+  "longName": "Military Status",
+  "codeName": "militaryStatus",
+  "hl7Table": "HL70142"
 }

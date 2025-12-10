@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Current Goal Review Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Current Goal Review Date/Time",
+  "codeName": "currentGoalReviewDateTime",
+  "hl7Table": ""
 }

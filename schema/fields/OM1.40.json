@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Service/Test/Observation Performance Schedule",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Service/Test/Observation Performance Schedule",
+  "codeName": "serviceTestObservationPerformanceSchedule",
+  "hl7Table": ""
 }

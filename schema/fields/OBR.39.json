@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Collector's Comment *",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Collector's Comment *",
+  "codeName": "collectorsComment",
+  "hl7Table": ""
 }

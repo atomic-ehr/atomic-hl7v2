@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Insurance Company Name",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Insurance Company Name",
+  "codeName": "insuranceCompanyName",
+  "hl7Table": ""
 }

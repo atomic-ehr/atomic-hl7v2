@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Generic Product",
-	"hl7Table": "HL70249"
+  "dataType": "IS",
+  "longName": "Generic Product",
+  "codeName": "genericProduct",
+  "hl7Table": "HL70249"
 }

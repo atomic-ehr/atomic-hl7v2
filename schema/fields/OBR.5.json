@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Priority - OBR",
-	"hl7Table": ""
+  "dataType": "ID",
+  "longName": "Priority - OBR",
+  "codeName": "priorityObr",
+  "hl7Table": ""
 }

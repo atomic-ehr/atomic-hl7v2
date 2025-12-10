@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Authorization Effective Date",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Authorization Effective Date",
+  "codeName": "authorizationEffectiveDate",
+  "hl7Table": ""
 }

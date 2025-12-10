@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Unique Document File Name",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Unique Document File Name",
+  "codeName": "uniqueDocumentFileName",
+  "hl7Table": ""
 }

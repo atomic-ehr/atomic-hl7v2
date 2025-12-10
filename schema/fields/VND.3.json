@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Vendor Name",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Vendor Name",
+  "codeName": "vendorName",
+  "hl7Table": ""
 }

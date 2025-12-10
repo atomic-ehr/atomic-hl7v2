@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Manufacturer Labeler Identification Code",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Manufacturer Labeler Identification Code",
+  "codeName": "manufacturerLabelerIdentificationCode",
+  "hl7Table": ""
 }

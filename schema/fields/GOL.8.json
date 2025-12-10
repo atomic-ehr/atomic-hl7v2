@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Expected Goal Achieve Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Expected Goal Achieve Date/Time",
+  "codeName": "expectedGoalAchieveDateTime",
+  "hl7Table": ""
 }

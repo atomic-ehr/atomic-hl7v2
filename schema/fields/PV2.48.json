@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Expected Pre-admission Testing Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Expected Pre-admission Testing Date/Time",
+  "codeName": "expectedPreAdmissionTestingDateTime",
+  "hl7Table": ""
 }

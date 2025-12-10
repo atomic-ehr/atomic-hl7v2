@@ -1,5 +1,6 @@
 {
-	"dataType": "MSG",
-	"longName": "Message Type",
-	"hl7Table": ""
+  "dataType": "MSG",
+  "longName": "Message Type",
+  "codeName": "messageType",
+  "hl7Table": ""
 }

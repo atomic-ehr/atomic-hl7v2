@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Allergy Clinical Status Code",
-	"hl7Table": "HL70438"
+  "dataType": "CE",
+  "longName": "Allergy Clinical Status Code",
+  "codeName": "allergyClinicalStatusCode",
+  "hl7Table": "HL70438"
 }

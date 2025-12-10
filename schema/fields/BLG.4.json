@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Charge Type Reason",
-	"hl7Table": "HL70475"
+  "dataType": "CWE",
+  "longName": "Charge Type Reason",
+  "codeName": "chargeTypeReason",
+  "hl7Table": "HL70475"
 }

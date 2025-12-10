@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Guarantor Death Flag",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Guarantor Death Flag",
+  "codeName": "guarantorDeathFlag",
+  "hl7Table": "HL70136"
 }

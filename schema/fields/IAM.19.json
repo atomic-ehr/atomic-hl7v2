@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Statused by Organization",
-	"hl7Table": ""
+  "dataType": "XON",
+  "longName": "Statused by Organization",
+  "codeName": "statusedByOrganization",
+  "hl7Table": ""
 }

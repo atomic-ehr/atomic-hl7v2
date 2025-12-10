@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Software Product Information",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Software Product Information",
+  "codeName": "softwareProductInformation",
+  "hl7Table": ""
 }

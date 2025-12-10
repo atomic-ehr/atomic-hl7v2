@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Current Goal Review Status",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Current Goal Review Status",
+  "codeName": "currentGoalReviewStatus",
+  "hl7Table": ""
 }

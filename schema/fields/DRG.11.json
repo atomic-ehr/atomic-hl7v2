@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "DRG Transfer Type",
-	"hl7Table": "HL70415"
+  "dataType": "IS",
+  "longName": "DRG Transfer Type",
+  "codeName": "drgTransferType",
+  "hl7Table": "HL70415"
 }

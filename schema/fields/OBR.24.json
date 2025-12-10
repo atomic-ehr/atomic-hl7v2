@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Diagnostic Serv Sect ID",
-	"hl7Table": "HL70074"
+  "dataType": "ID",
+  "longName": "Diagnostic Serv Sect ID",
+  "codeName": "diagnosticServSectId",
+  "hl7Table": "HL70074"
 }

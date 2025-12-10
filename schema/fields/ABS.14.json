@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Stillborn Indicator",
-	"hl7Table": "HL70136"
+  "dataType": "ID",
+  "longName": "Stillborn Indicator",
+  "codeName": "stillbornIndicator",
+  "hl7Table": "HL70136"
 }

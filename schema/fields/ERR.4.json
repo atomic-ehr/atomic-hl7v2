@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Severity",
-	"hl7Table": "HL70516"
+  "dataType": "ID",
+  "longName": "Severity",
+  "codeName": "severity",
+  "hl7Table": "HL70516"
 }

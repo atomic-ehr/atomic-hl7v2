@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Courtesy Code",
-	"hl7Table": "HL70045"
+  "dataType": "IS",
+  "longName": "Courtesy Code",
+  "codeName": "courtesyCode",
+  "hl7Table": "HL70045"
 }

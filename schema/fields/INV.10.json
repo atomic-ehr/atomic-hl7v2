@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Consumption Quantity",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Consumption Quantity",
+  "codeName": "consumptionQuantity",
+  "hl7Table": ""
 }

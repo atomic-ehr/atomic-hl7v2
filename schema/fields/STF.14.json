@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Backup Person ID",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Backup Person ID",
+  "codeName": "backupPersonId",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "XON",
-	"longName": "Approving Regulatory Agency",
-	"hl7Table": "HL70790"
+  "dataType": "XON",
+  "longName": "Approving Regulatory Agency",
+  "codeName": "approvingRegulatoryAgency",
+  "hl7Table": "HL70790"
 }

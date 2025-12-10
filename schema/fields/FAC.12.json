@@ -1,5 +1,6 @@
 {
-	"dataType": "XTN",
-	"longName": "Signature Authority Telecommunication",
-	"hl7Table": ""
+  "dataType": "XTN",
+  "longName": "Signature Authority Telecommunication",
+  "codeName": "signatureAuthorityTelecommunication",
+  "hl7Table": ""
 }

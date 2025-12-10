@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Dept. Cost Center",
-	"hl7Table": "HL70319"
+  "dataType": "IS",
+  "longName": "Dept. Cost Center",
+  "codeName": "deptCostCenter",
+  "hl7Table": "HL70319"
 }

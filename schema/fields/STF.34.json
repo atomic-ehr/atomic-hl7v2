@@ -1,5 +1,6 @@
 {
-	"dataType": "DR",
-	"longName": "Institution Relationship Period",
-	"hl7Table": ""
+  "dataType": "DR",
+  "longName": "Institution Relationship Period",
+  "codeName": "institutionRelationshipPeriod",
+  "hl7Table": ""
 }

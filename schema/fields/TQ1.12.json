@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Conjunction",
-	"hl7Table": "HL70427"
+  "dataType": "ID",
+  "longName": "Conjunction",
+  "codeName": "conjunction",
+  "hl7Table": "HL70427"
 }

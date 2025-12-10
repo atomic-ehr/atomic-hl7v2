@@ -1,5 +1,6 @@
 {
-	"dataType": "IS",
-	"longName": "Living Will Code",
-	"hl7Table": "HL70315"
+  "dataType": "IS",
+  "longName": "Living Will Code",
+  "codeName": "livingWill",
+  "hl7Table": "HL70315"
 }

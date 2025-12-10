@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Device Operator Qualifications",
-	"hl7Table": "HL70242"
+  "dataType": "ID",
+  "longName": "Device Operator Qualifications",
+  "codeName": "deviceOperatorQualifications",
+  "hl7Table": "HL70242"
 }

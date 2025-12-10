@@ -1,5 +1,6 @@
 {
-	"dataType": "ID",
-	"longName": "Segment group inclusion",
-	"hl7Table": ""
+  "dataType": "ID",
+  "longName": "Segment group inclusion",
+  "codeName": "segmentGroupInclusion",
+  "hl7Table": ""
 }

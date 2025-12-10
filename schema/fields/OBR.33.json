@@ -1,5 +1,6 @@
 {
-	"dataType": "NDL",
-	"longName": "Assistant Result Interpreter",
-	"hl7Table": ""
+  "dataType": "NDL",
+  "longName": "Assistant Result Interpreter",
+  "codeName": "assistantResultInterpreter",
+  "hl7Table": ""
 }

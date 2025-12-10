@@ -1,5 +1,6 @@
 {
-	"dataType": "XPN",
-	"longName": "Special Coverage Approval Name",
-	"hl7Table": ""
+  "dataType": "XPN",
+  "longName": "Special Coverage Approval Name",
+  "codeName": "specialCoverageApprovalName",
+  "hl7Table": ""
 }

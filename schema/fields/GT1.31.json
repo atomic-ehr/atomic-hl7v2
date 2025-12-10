@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Guarantor Hire Effective Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Guarantor Hire Effective Date",
+  "codeName": "guarantorHireEffectiveDate",
+  "hl7Table": ""
 }

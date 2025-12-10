@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Problem Prognosis",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Problem Prognosis",
+  "codeName": "problemPrognosis",
+  "hl7Table": ""
 }

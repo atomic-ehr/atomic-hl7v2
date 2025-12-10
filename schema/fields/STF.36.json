@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Cost Center Code",
-	"hl7Table": "HL70539"
+  "dataType": "CWE",
+  "longName": "Cost Center Code",
+  "codeName": "costCenterCode",
+  "hl7Table": "HL70539"
 }

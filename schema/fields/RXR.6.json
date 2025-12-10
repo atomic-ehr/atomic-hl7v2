@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Administration Site Modifier",
-	"hl7Table": "HL70495"
+  "dataType": "CWE",
+  "longName": "Administration Site Modifier",
+  "codeName": "administrationSiteModifier",
+  "hl7Table": "HL70495"
 }

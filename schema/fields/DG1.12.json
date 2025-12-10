@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Outlier Days",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Outlier Days",
+  "codeName": "outlierDays",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Last IRB Approval Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Last IRB Approval Date",
+  "codeName": "lastIrbApprovalDate",
+  "hl7Table": ""
 }

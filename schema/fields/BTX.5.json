@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "CP Commercial Product",
-	"hl7Table": "HL70512"
+  "dataType": "CWE",
+  "longName": "CP Commercial Product",
+  "codeName": "cpCommercialProduct",
+  "hl7Table": "HL70512"
 }

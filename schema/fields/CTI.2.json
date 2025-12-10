@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Study Phase Identifier",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Study Phase Identifier",
+  "codeName": "studyPhaseId",
+  "hl7Table": ""
 }

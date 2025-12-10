@@ -1,5 +1,6 @@
 {
-	"dataType": "DIN",
-	"longName": "Institution Activation Date",
-	"hl7Table": "HL70537"
+  "dataType": "DIN",
+  "longName": "Institution Activation Date",
+  "codeName": "institutionActivationDate",
+  "hl7Table": "HL70537"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "PL",
-	"longName": "Primary Key Value - LCH",
-	"hl7Table": ""
+  "dataType": "PL",
+  "longName": "Primary Key Value - LCH",
+  "codeName": "primaryKeyValueLch",
+  "hl7Table": ""
 }

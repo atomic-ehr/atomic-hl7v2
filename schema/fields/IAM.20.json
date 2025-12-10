@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Statused at Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Statused at Date/Time",
+  "codeName": "statusedAtDateTime",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "TM",
-	"longName": "Explicit Time",
-	"hl7Table": ""
+  "dataType": "TM",
+  "longName": "Explicit Time",
+  "codeName": "explicitTime",
+  "hl7Table": ""
 }

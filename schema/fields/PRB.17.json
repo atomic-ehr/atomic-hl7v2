@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Problem Onset Text",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Problem Onset Text",
+  "codeName": "problemOnsetText",
+  "hl7Table": ""
 }

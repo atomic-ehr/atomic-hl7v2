@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Order Type",
-	"hl7Table": "HL70482"
+  "dataType": "CWE",
+  "longName": "Order Type",
+  "codeName": "orderType",
+  "hl7Table": "HL70482"
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Container Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Container Identifier",
+  "codeName": "containerIdentifier",
+  "hl7Table": ""
 }

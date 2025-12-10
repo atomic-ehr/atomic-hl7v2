@@ -1,5 +1,6 @@
 {
-	"dataType": "TS",
-	"longName": "Consent Decision Date/Time",
-	"hl7Table": ""
+  "dataType": "TS",
+  "longName": "Consent Decision Date/Time",
+  "codeName": "consentDecisionDateTime",
+  "hl7Table": ""
 }

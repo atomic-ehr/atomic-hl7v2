@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "E-Mail Address",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "E-Mail Address",
+  "codeName": "eMailAddress",
+  "hl7Table": ""
 }

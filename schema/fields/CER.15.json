@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Subject Public Key Info",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Subject Public Key Info",
+  "codeName": "subjectPublicKeyInfo",
+  "hl7Table": ""
 }

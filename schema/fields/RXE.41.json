@@ -1,5 +1,6 @@
 {
-	"dataType": "XAD",
-	"longName": "Dispensing Pharmacy Address",
-	"hl7Table": ""
+  "dataType": "XAD",
+  "longName": "Dispensing Pharmacy Address",
+  "codeName": "dispensingPharmacyAddress",
+  "hl7Table": ""
 }

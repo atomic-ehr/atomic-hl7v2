@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Test/Observations Included within an Ordered Test Battery",
-	"hl7Table": "HL79999"
+  "dataType": "CE",
+  "longName": "Test/Observations Included within an Ordered Test Battery",
+  "codeName": "testObservationsIncludedWithinAnOrderedTestBattery",
+  "hl7Table": "HL79999"
 }

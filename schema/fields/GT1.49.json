@@ -1,5 +1,6 @@
 {
-	"dataType": "ST",
-	"longName": "Job Title",
-	"hl7Table": ""
+  "dataType": "ST",
+  "longName": "Job Title",
+  "codeName": "jobTitle",
+  "hl7Table": ""
 }

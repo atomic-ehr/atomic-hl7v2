@@ -1,5 +1,6 @@
 {
-	"dataType": "TX",
-	"longName": "Diagnostic Information",
-	"hl7Table": ""
+  "dataType": "TX",
+  "longName": "Diagnostic Information",
+  "codeName": "diagnosticInformation",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Guarantor Credit Rating Code",
-	"hl7Table": "HL70341"
+  "dataType": "CE",
+  "longName": "Guarantor Credit Rating Code",
+  "codeName": "guarantorCreditRatingCode",
+  "hl7Table": "HL70341"
 }

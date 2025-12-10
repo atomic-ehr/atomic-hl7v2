@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Local/Remote Control State",
-	"hl7Table": "HL70366"
+  "dataType": "CE",
+  "longName": "Local/Remote Control State",
+  "codeName": "localRemoteControlState",
+  "hl7Table": "HL70366"
 }

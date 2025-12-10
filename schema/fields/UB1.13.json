@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "PSRO/UR Approval Indicator (87)",
-	"hl7Table": "HL70349"
+  "dataType": "CE",
+  "longName": "PSRO/UR Approval Indicator (87)",
+  "codeName": "psroUrApprovalIndicator",
+  "hl7Table": "HL70349"
 }

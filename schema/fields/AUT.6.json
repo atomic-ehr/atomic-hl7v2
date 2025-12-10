@@ -1,5 +1,6 @@
 {
-	"dataType": "EI",
-	"longName": "Authorization Identifier",
-	"hl7Table": ""
+  "dataType": "EI",
+  "longName": "Authorization Identifier",
+  "codeName": "authorizationIdentifier",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "Certification End Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "Certification End Date",
+  "codeName": "certificationEndDate",
+  "hl7Table": ""
 }

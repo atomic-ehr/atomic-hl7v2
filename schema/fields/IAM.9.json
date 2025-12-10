@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Sensitivity to Causative Agent Code",
-	"hl7Table": "HL70436"
+  "dataType": "CE",
+  "longName": "Sensitivity to Causative Agent Code",
+  "codeName": "sensitivityToCausativeAgentCode",
+  "hl7Table": "HL70436"
 }

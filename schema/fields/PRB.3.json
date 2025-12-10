@@ -1,5 +1,6 @@
 {
-	"dataType": "CE",
-	"longName": "Problem ID",
-	"hl7Table": ""
+  "dataType": "CE",
+  "longName": "Problem ID",
+  "codeName": "problemId",
+  "hl7Table": ""
 }

@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "Contract Amount",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "Contract Amount",
+  "codeName": "contractAmount",
+  "hl7Table": ""
 }

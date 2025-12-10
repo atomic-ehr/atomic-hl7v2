@@ -1,5 +1,6 @@
 {
-	"dataType": "NM",
-	"longName": "This payload",
-	"hl7Table": ""
+  "dataType": "NM",
+  "longName": "This payload",
+  "codeName": "thisPayload",
+  "hl7Table": ""
 }

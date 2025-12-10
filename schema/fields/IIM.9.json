@@ -1,5 +1,6 @@
 {
-	"dataType": "CWE",
-	"longName": "Inventory Received Quantity Unit",
-	"hl7Table": ""
+  "dataType": "CWE",
+  "longName": "Inventory Received Quantity Unit",
+  "codeName": "inventoryReceivedQuantityUnit",
+  "hl7Table": ""
 }

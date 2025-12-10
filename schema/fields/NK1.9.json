@@ -1,5 +1,6 @@
 {
-	"dataType": "DT",
-	"longName": "End Date",
-	"hl7Table": ""
+  "dataType": "DT",
+  "longName": "End Date",
+  "codeName": "endDate",
+  "hl7Table": ""
 }
