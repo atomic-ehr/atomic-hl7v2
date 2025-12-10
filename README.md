@@ -154,6 +154,8 @@ bun test
 
 Created by [Nikolai Ryzhikov](https://github.com/niquola) at [Health Samurai](https://www.health-samurai.io/).
 
+HL7v2 schema metadata derived from [redox-hl7-v2](https://github.com/RedoxEngine/redox-hl7-v2) by Redox Engine.
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
