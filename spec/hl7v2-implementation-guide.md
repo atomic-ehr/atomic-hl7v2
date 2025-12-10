@@ -144,7 +144,7 @@ Note: Multiple trigger events can share the same structure (e.g., ADT A01/A04/A0
 Component metadata with optional `codeName` for cleaner generated names:
 
 ```json
-{ "dataType": "FN", "longName": "Family Name", "codeName": "familyName" }
+{ "dataType": "FN", "longName": "Family Name", "codeName": "family" }
 ```
 
 - `codeName` — optional override for generated property name
@@ -174,89 +174,85 @@ bun src/hl7v2/codegen.ts ./output ADT_A01 BAR_P01
 
 ---
 
+## Field Naming Convention
+
+All field names use `$[index]_[name]` pattern — index first for HL7-native autocomplete:
+
+```
+$N_name   →  field/component N
+```
+
+**Why this pattern?**
+- `$` is compact and visually distinct — marks HL7 field positions
+- Index-first matches HL7 thinking: "PID.8", "XPN.1"
+- Type `$8` → immediately find gender (PID.8)
+- Type `$1` on XPN → immediately find family name (XPN.1)
+- **Neutral** — works for both reading and writing (no `set_`/`get_` asymmetry)
+
+Examples:
+- `$8_gender` → PID.8
+- `$2_given` → XPN.2
+- `$1_surname` → FN.1 (when nested in `$1_family`)
+- `$1_value` → CX.1
+
+---
+
 ## Segment Interfaces
 
-Segments use the same `set_[index]_[name]` pattern as datatypes — plain object literals:
+Segments use plain object literals with `$N_name` properties:
 
 ```ts
 import type { PID } from "./fields";
 
 const pid: PID = {
-  set_1_setIdPid: "1",
-  set_3_identifier: [{
-    set_1_value: "12345",
-    set_4_system: { set_1_namespace: "Hospital" },
-    set_5_type: "MR"
+  $1_setIdPid: "1",
+  $3_identifier: [{
+    $1_value: "12345",
+    $4_system: { $1_namespace: "Hospital" },
+    $5_type: "MR"
   }],
-  set_5_name: [{
-    set_1_family: {
-      set_1_surname: "Smith",
-      set_2_ownSurnamePrefix: "van"
+  $5_name: [{
+    $1_family: {
+      $1_surname: "Smith",
+      $2_ownSurnamePrefix: "van"
     },
-    set_2_given: "John",
-    set_3_middle: "Robert",
-    set_4_suffix: "Jr"
+    $2_given: "John",
+    $3_middle: "Robert",
+    $4_suffix: "Jr"
   }],
-  set_8_gender: "M"
+  $8_gender: "M"
 };
 ```
 
----
-
-## Field Naming Convention
-
-All field names use `set_[index]_[name]` pattern — index first for HL7-native autocomplete:
-
-```
-set_N_name   →  component N (segment field or datatype component)
-```
-
-**Why index-first?**
-- HL7v2 developers think in terms of positions: "PID.8", "XPN.1"
-- Type `set_8` → immediately find gender (PID.8)
-- Type `set_1` on XPN → immediately find family name (XPN.1)
-- Matches how HL7 specs are organized
-- **Consistent everywhere** — segments and datatypes use same pattern
-
-Examples:
-- `set_8_gender` → PID.8
-- `set_2_given` → XPN.2
-- `set_1_surname` → FN.1 (when nested in `set_1_family`)
-- `set_1_value` → CX.1
-
----
-
-## Segment Interfaces
-
-Generated interfaces for segments follow the same pattern as datatypes:
+Generated interfaces:
 
 ```ts
 // PID - Patient Identification
 interface PID {
   /** PID.1 - Set ID */
-  set_1_setIdPid?: string;
+  $1_setIdPid?: string;
   /** PID.3 - Patient Identifier List */
-  set_3_identifier?: CX[];
+  $3_identifier?: CX[];
   /** PID.5 - Patient Name */
-  set_5_name?: XPN[];
+  $5_name?: XPN[];
   /** PID.7 - Date/Time of Birth */
-  set_7_birthDate?: string;
+  $7_birthDate?: string;
   /** PID.8 - Administrative Sex */
-  set_8_gender?: AdministrativeSex | string;
+  $8_gender?: AdministrativeSex | string;
   /** PID.11 - Patient Address */
-  set_11_address?: XAD[];
+  $11_address?: XAD[];
 }
 
 // MSH - Message Header
 interface MSH {
   /** MSH.3 - Sending Application */
-  set_3_sendingApplication?: HD;
+  $3_sendingApplication?: HD;
   /** MSH.7 - Date/Time Of Message */
-  set_7_messageDateTime?: string;
+  $7_messageDateTime?: string;
   /** MSH.9 - Message Type */
-  set_9_messageType?: MSG;
+  $9_messageType?: MSG;
   /** MSH.10 - Message Control ID */
-  set_10_messageControlId?: string;
+  $10_messageControlId?: string;
 }
 ```
 
@@ -264,44 +260,44 @@ interface MSH {
 
 ## DataType Interfaces
 
-Generated interfaces mirror HL7v2 datatype structure with `set_[index]_[name]` properties:
+Generated interfaces mirror HL7v2 datatype structure:
 
 ```ts
 // XPN - Extended Person Name
 interface XPN {
-  set_1_family?: FN;        // complex component
-  set_2_given?: string;     // primitive component
-  set_3_middle?: string;
-  set_4_suffix?: string;
-  set_5_prefix?: string;
-  set_6_degree?: string;
-  set_7_nameTypeCode?: string;
+  $1_family?: FN;        // complex component
+  $2_given?: string;     // primitive component
+  $3_middle?: string;
+  $4_suffix?: string;
+  $5_prefix?: string;
+  $6_degree?: string;
+  $7_nameTypeCode?: string;
 }
 
-// FN - Family Name (nested in set_1_family)
+// FN - Family Name (nested in $1_family)
 interface FN {
-  set_1_surname?: string;
-  set_2_ownSurnamePrefix?: string;
-  set_3_ownSurname?: string;
-  set_4_surnamePrefixFromPartner?: string;
-  set_5_surnameFromPartner?: string;
+  $1_surname?: string;
+  $2_ownSurnamePrefix?: string;
+  $3_ownSurname?: string;
+  $4_surnamePrefixFromPartner?: string;
+  $5_surnameFromPartner?: string;
 }
 
 // CX - Composite ID
 interface CX {
-  set_1_value?: string;
-  set_2_checkDigit?: string;
-  set_3_checkDigitScheme?: string;
-  set_4_system?: HD;
-  set_5_type?: string;
-  set_6_assigningFacility?: HD;
+  $1_value?: string;
+  $2_checkDigit?: string;
+  $3_checkDigitScheme?: string;
+  $4_system?: HD;
+  $5_type?: string;
+  $6_assigningFacility?: HD;
 }
 
 // HD - Hierarchic Designator
 interface HD {
-  set_1_namespace?: string;
-  set_2_universalId?: string;
-  set_3_universalIdType?: string;
+  $1_namespace?: string;
+  $2_universalId?: string;
+  $3_universalIdType?: string;
 }
 ```
 
@@ -313,11 +309,11 @@ All fields are optional. Undefined/null values are ignored during conversion:
 
 ```ts
 const pid: PID = {
-  set_5_name: [{
-    set_1_family: {
-      set_1_surname: patient.name?.family  // undefined if missing
+  $5_name: [{
+    $1_family: {
+      $1_surname: patient.name?.family  // undefined if missing
     },
-    set_2_given: patient.name?.given?.[0]
+    $2_given: patient.name?.given?.[0]
   }]
 };
 ```
@@ -333,42 +329,42 @@ import { ADT_A01Builder } from "./messages";
 
 const message = new ADT_A01Builder()
   .msh({
-    set_3_sendingApplication: { set_1_namespace: "FHIR_APP" },
-    set_9_messageType: {
-      set_1_code: "ADT",
-      set_2_event: "A01",
-      set_3_structure: "ADT_A01"
+    $3_sendingApplication: { $1_namespace: "FHIR_APP" },
+    $9_messageType: {
+      $1_code: "ADT",
+      $2_event: "A01",
+      $3_structure: "ADT_A01"
     },
-    set_10_messageControlId: "MSG001"
+    $10_messageControlId: "MSG001"
   })
   .evn({
-    set_1_eventTypeCode: "A01",
-    set_2_recordedDateTime: "20231201120000"
+    $1_eventTypeCode: "A01",
+    $2_recordedDateTime: "20231201120000"
   })
   .pid({
-    set_3_identifier: [{
-      set_1_value: "12345",
-      set_5_type: "MR"
+    $3_identifier: [{
+      $1_value: "12345",
+      $5_type: "MR"
     }],
-    set_5_name: [{
-      set_1_family: { set_1_surname: "Smith" },
-      set_2_given: "John"
+    $5_name: [{
+      $1_family: { $1_surname: "Smith" },
+      $2_given: "John"
     }]
   })
   .pv1({
-    set_2_class: PatientClass.Inpatient
+    $2_class: PatientClass.Inpatient
   })
   .addDG1({
-    set_1_setIdDg1: "1",
-    set_3_diagnosisCode: {
-      set_1_code: "J20.9",
-      set_3_system: "ICD10"
+    $1_setIdDg1: "1",
+    $3_diagnosisCode: {
+      $1_code: "J20.9",
+      $3_system: "ICD10"
     }
   })
   .addINSURANCE(ins => ins
     .in1({
-      set_1_setIdIn1: "1",
-      set_2_insurancePlanId: { set_1_code: "BCBS" }
+      $1_setIdIn1: "1",
+      $2_insurancePlanId: { $1_code: "BCBS" }
     }))
   .build();
 ```
@@ -408,19 +404,19 @@ function buildPID(input: PatientInput): PID {
   const address = input.patient.address?.[0];
 
   return {
-    set_3_identifier: [{
-      set_1_value: input.patient.identifier?.[0]?.value,
-      set_5_type: "MR"
+    $3_identifier: [{
+      $1_value: input.patient.identifier?.[0]?.value,
+      $5_type: "MR"
     }],
-    set_5_name: [{
-      set_1_family: { set_1_surname: name?.family },
-      set_2_given: name?.given?.[0]
+    $5_name: [{
+      $1_family: { $1_surname: name?.family },
+      $2_given: name?.given?.[0]
     }],
-    set_11_address: [{
-      set_1_street: { set_1_line: address?.line?.[0] },
-      set_3_city: address?.city,
-      set_4_state: address?.state,
-      set_5_postalCode: address?.postalCode
+    $11_address: [{
+      $1_street: { $1_line: address?.line?.[0] },
+      $3_city: address?.city,
+      $4_state: address?.state,
+      $5_postalCode: address?.postalCode
     }]
   };
 }
@@ -476,16 +472,16 @@ When a field references a table that exists in `schema/tables/`, the property ac
 ```ts
 // With enum - IDE shows all valid options
 const pid: PID = {
-  set_8_gender: AdministrativeSex.Male
+  $8_gender: AdministrativeSex.Male
 };
 
 const pv1: PV1 = {
-  set_2_class: PatientClass.Inpatient
+  $2_class: PatientClass.Inpatient
 };
 
 // Raw string still works for edge cases
 const pid2: PID = {
-  set_8_gender: "M"
+  $8_gender: "M"
 };
 ```
 
@@ -531,8 +527,9 @@ bun scripts/check-tables.ts --list    # Missing table numbers only
 
 - **1:1 mapping to wire format** — serialization is trivial
 - **Schema-driven** — fields validated against `schema/`
-- **HL7-native autocomplete** — type `set_8` to find PID.8 (gender), `set_1` to find XPN.1 (family)
-- **Consistent pattern** — segments and datatypes both use `set_N_name` object literals
+- **HL7-native autocomplete** — type `$8` to find PID.8 (gender), `$1` to find XPN.1 (family)
+- **Compact notation** — `$N_name` is concise and visually distinct
+- **Neutral naming** — same property for read and write (no `set_`/`get_` asymmetry)
 - **Table enums** — coded fields show valid options with descriptions
 - **Compile-time safety** — message builders catch missing required segments
 - **Composable** — plain objects can be spread, merged, constructed dynamically

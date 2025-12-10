@@ -430,7 +430,7 @@ class HL7v2CodeGen {
         const typeName = nestedDtDef ? compDef.dataType : "string";
 
         output.push(`  /** ${comp.dataType} - ${compDef.longName} */`);
-        output.push(`  set_${compNum}_${fieldName}?: ${typeName};`);
+        output.push(`  $${compNum}_${fieldName}?: ${typeName};`);
       }
 
       output.push(`}`);
@@ -447,7 +447,7 @@ class HL7v2CodeGen {
     output.push(`  const result: { [key: number]: FieldValue } = {};`);
     output.push(`  for (const [key, value] of Object.entries(obj)) {`);
     output.push(`    if (value == null) continue;`);
-    output.push(`    const match = key.match(/^set_(\\\d+)_/);`);
+    output.push(`    const match = key.match(/^\\$(\\\d+)_/);`);
     output.push(`    if (!match || !match[1]) continue;`);
     output.push(`    const idx = parseInt(match[1], 10);`);
     output.push(`    if (typeof value === "string") {`);
@@ -483,9 +483,9 @@ class HL7v2CodeGen {
       if (firstFieldName && firstCompDef) {
         const firstNestedDt = this.dataTypeDefs.get(firstCompDef.dataType);
         if (firstNestedDt) {
-          output.push(`  if (typeof fv === "string") return { set_1_${firstFieldName}: from${firstCompDef.dataType}(fv) };`);
+          output.push(`  if (typeof fv === "string") return { $1_${firstFieldName}: from${firstCompDef.dataType}(fv) };`);
         } else {
-          output.push(`  if (typeof fv === "string") return { set_1_${firstFieldName}: fv };`);
+          output.push(`  if (typeof fv === "string") return { $1_${firstFieldName}: fv };`);
         }
       } else {
         output.push(`  if (typeof fv === "string") return undefined;`);
@@ -504,12 +504,12 @@ class HL7v2CodeGen {
         const nestedDtDef = this.dataTypeDefs.get(compDef.dataType);
 
         if (nestedDtDef) {
-          output.push(`  if (fv[${compNum}] !== undefined) result.set_${compNum}_${fieldName} = from${compDef.dataType}(fv[${compNum}]);`);
+          output.push(`  if (fv[${compNum}] !== undefined) result.$${compNum}_${fieldName} = from${compDef.dataType}(fv[${compNum}]);`);
         } else {
           output.push(`  if (fv[${compNum}] !== undefined) {`);
           output.push(`    const v${compNum} = fv[${compNum}];`);
-          output.push(`    if (typeof v${compNum} === "string") result.set_${compNum}_${fieldName} = v${compNum};`);
-          output.push(`    else if (typeof v${compNum} === "object" && !Array.isArray(v${compNum}) && typeof (v${compNum} as any)[1] === "string") result.set_${compNum}_${fieldName} = (v${compNum} as any)[1];`);
+          output.push(`    if (typeof v${compNum} === "string") result.$${compNum}_${fieldName} = v${compNum};`);
+          output.push(`    else if (typeof v${compNum} === "object" && !Array.isArray(v${compNum}) && typeof (v${compNum} as any)[1] === "string") result.$${compNum}_${fieldName} = (v${compNum} as any)[1];`);
           output.push(`  }`);
         }
       }
@@ -565,7 +565,7 @@ class HL7v2CodeGen {
         }
 
         output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
-        output.push(`  set_${fieldNum}_${fieldName}?: ${typeName};`);
+        output.push(`  $${fieldNum}_${fieldName}?: ${typeName};`);
       }
 
       output.push(`}`);
@@ -580,7 +580,7 @@ class HL7v2CodeGen {
     output.push(`  const fields: Record<number, FieldValue> = {};`);
     output.push(`  for (const [key, value] of Object.entries(data)) {`);
     output.push(`    if (value == null) continue;`);
-    output.push(`    const match = key.match(/^set_(\\d+)_/);`);
+    output.push(`    const match = key.match(/^\\$(\\d+)_/);`);
     output.push(`    if (!match || !match[1]) continue;`);
     output.push(`    const idx = parseInt(match[1], 10);`);
     output.push(`    if (typeof value === "string") {`);
