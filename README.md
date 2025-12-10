@@ -1,4 +1,6 @@
-# atomic-ehr/hl7v2
+# @atomic-ehr/hl7v2
+
+[![npm version](https://img.shields.io/npm/v/@atomic-ehr/hl7v2.svg)](https://www.npmjs.com/package/@atomic-ehr/hl7v2)
 
 A TypeScript library for parsing and generating HL7v2 messages with type-safe, schema-driven builders.
 

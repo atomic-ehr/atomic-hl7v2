@@ -1,7 +1,27 @@
 {
-  "name": "atomic-ehr/hl7v2",
+  "name": "@atomic-ehr/hl7v2",
+  "version": "0.0.1",
+  "description": "TypeScript library for parsing and generating HL7v2 messages with type-safe, schema-driven builders",
   "module": "src/index.ts",
+  "main": "src/index.ts",
   "type": "module",
+  "files": [
+    "src",
+    "schema"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomic-ehr/hl7v2.git"
+  },
+  "keywords": [
+    "hl7",
+    "hl7v2",
+    "healthcare",
+    "parser",
+    "typescript"
+  ],
+  "author": "Nikolai Ryzhikov",
+  "license": "MIT",
   "devDependencies": {
     "@types/bun": "latest"
   },
