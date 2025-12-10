@@ -1,4 +1,4 @@
-# atomic-hl7v2
+# atomic-ehr/hl7v2
 
 A TypeScript library for parsing and generating HL7v2 messages with type-safe, schema-driven builders.
 
@@ -150,6 +150,10 @@ bun example/parse-to-fhir-example.ts
 bun test
 ```
 
+## Credits
+
+Created by [Nikolai Ryzhikov](https://github.com/niquola) at [Health Samurai](https://www.health-samurai.io/).
+
 ## License
 
-MIT
+MIT License - see [LICENSE](LICENSE) for details.
