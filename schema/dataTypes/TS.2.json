@@ -1,5 +1,5 @@
 {
   "dataType": "ID",
   "longName": "Degree of Precision",
-  "codeName": "degreeOfPrecision"
+  "codeName": "precision"
 }

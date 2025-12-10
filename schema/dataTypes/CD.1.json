@@ -1,5 +1,5 @@
 {
   "dataType": "WVI",
   "longName": "Channel Identifier",
-  "codeName": "channelIdentifier"
+  "codeName": "channelId"
 }

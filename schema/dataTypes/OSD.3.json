@@ -1,5 +1,5 @@
 {
   "dataType": "IS",
   "longName": "Placer Order Number: Namespace ID",
-  "codeName": "placerOrderNumberNamespaceId"
+  "codeName": "placerNamespace"
 }

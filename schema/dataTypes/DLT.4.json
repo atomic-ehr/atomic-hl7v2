@@ -1,5 +1,5 @@
 {
   "dataType": "NM",
   "longName": "Days Retained",
-  "codeName": "daysRetained"
+  "codeName": "retentionDays"
 }

@@ -1,5 +1,5 @@
 {
   "dataType": "ST",
   "longName": "Alternate Unit of Measure Identifier",
-  "codeName": "alternateUnitOfMeasureIdentifier"
+  "codeName": "altUnit"
 }

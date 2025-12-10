@@ -1,5 +1,5 @@
 {
   "dataType": "DT",
   "longName": "Activation Date",
-  "codeName": "activationDate"
+  "codeName": "start"
 }

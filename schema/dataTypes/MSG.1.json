@@ -1,5 +1,5 @@
 {
   "dataType": "ID",
   "longName": "Message Code",
-  "codeName": "messageCode"
+  "codeName": "code"
 }

@@ -1,5 +1,5 @@
 {
   "dataType": "NM",
   "longName": "Channel Calibration Baseline",
-  "codeName": "channelCalibrationBaseline"
+  "codeName": "baseline"
 }

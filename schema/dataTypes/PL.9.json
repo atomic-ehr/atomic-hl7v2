@@ -1,5 +1,5 @@
 {
   "dataType": "ST",
   "longName": "Location Description",
-  "codeName": "locationDescription"
+  "codeName": "description"
 }

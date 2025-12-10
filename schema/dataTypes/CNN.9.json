@@ -1,5 +1,5 @@
 {
   "dataType": "IS",
   "longName": "Assigning Authority   - Namespace ID",
-  "codeName": "assigningAuthorityNamespaceId"
+  "codeName": "systemNamespace"
 }

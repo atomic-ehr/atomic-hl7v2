@@ -1,5 +1,5 @@
 {
   "dataType": "MO",
   "longName": "Monetary Amount",
-  "codeName": "monetaryAmount"
+  "codeName": "amount"
 }

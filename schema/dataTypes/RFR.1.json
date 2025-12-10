@@ -1,5 +1,5 @@
 {
   "dataType": "NR",
   "longName": "Numeric Range",
-  "codeName": "numericRange"
+  "codeName": "range"
 }

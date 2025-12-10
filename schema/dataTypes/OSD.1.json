@@ -1,5 +1,5 @@
 {
   "dataType": "ID",
   "longName": "Sequence/Results Flag",
-  "codeName": "sequenceResultsFlag"
+  "codeName": "flag"
 }

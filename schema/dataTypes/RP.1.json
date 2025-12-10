@@ -1,5 +1,5 @@
 {
   "dataType": "ST",
   "longName": "Pointer",
-  "codeName": "pointer"
+  "codeName": "reference"
 }

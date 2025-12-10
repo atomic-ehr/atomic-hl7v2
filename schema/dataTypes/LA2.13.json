@@ -1,5 +1,5 @@
 {
   "dataType": "ST",
   "longName": "Zip or Postal Code",
-  "codeName": "zipOrPostalCode"
+  "codeName": "postalCode"
 }

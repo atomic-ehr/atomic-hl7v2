@@ -1,5 +1,5 @@
 {
   "dataType": "CCP",
   "longName": "Channel Calibration Parameters",
-  "codeName": "channelCalibrationParameters"
+  "codeName": "calibrationParameters"
 }

@@ -1,5 +1,5 @@
 {
   "dataType": "ID",
   "longName": "Assigning Authority  - Universal ID Type",
-  "codeName": "assigningAuthorityUniversalIdType"
+  "codeName": "systemType"
 }

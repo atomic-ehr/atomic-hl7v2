@@ -1,5 +1,5 @@
 {
   "dataType": "IS",
   "longName": "Patient Location Type",
-  "codeName": "patientLocationType"
+  "codeName": "locationType"
 }

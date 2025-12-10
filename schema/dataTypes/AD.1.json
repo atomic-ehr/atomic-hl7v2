@@ -1,5 +1,5 @@
 {
   "dataType": "ST",
   "longName": "Street Address",
-  "codeName": "streetAddress"
+  "codeName": "line1"
 }

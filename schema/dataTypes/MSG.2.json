@@ -1,5 +1,5 @@
 {
   "dataType": "ID",
   "longName": "Trigger Event",
-  "codeName": "triggerEvent"
+  "codeName": "event"
 }

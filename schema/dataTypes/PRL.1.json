@@ -1,5 +1,5 @@
 {
   "dataType": "CE",
   "longName": "Parent Observation Identifier",
-  "codeName": "parentObservationIdentifier"
+  "codeName": "parent"
 }

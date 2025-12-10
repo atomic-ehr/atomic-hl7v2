@@ -1,5 +1,5 @@
 {
   "dataType": "NM",
   "longName": "Channel Calibration Time Skew",
-  "codeName": "channelCalibrationTimeSkew"
+  "codeName": "timeSkew"
 }

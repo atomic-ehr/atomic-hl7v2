@@ -1,5 +1,5 @@
 {
   "dataType": "TX",
   "longName": "Specimen Collection Method",
-  "codeName": "specimenCollectionMethod"
+  "codeName": "collectionMethod"
 }

@@ -1,5 +1,5 @@
 {
   "dataType": "OSD",
   "longName": "Order Sequencing",
-  "codeName": "orderSequencing"
+  "codeName": "sequence"
 }

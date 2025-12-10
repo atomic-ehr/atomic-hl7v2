@@ -1,5 +1,5 @@
 {
   "dataType": "IS",
   "longName": "Event Offset Units",
-  "codeName": "eventOffsetUnits"
+  "codeName": "offsetUnit"
 }

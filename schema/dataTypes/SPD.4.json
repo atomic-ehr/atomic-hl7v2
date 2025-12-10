@@ -1,5 +1,5 @@
 {
   "dataType": "DT",
   "longName": "Date of Certification",
-  "codeName": "dateOfCertification"
+  "codeName": "certifiedOn"
 }

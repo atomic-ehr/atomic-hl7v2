@@ -1,5 +1,5 @@
 {
   "dataType": "IS",
   "longName": "Certification Patient Type",
-  "codeName": "certificationPatientType"
+  "codeName": "patientType"
 }

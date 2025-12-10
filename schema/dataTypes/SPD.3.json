@@ -1,5 +1,5 @@
 {
   "dataType": "ID",
   "longName": "Eligible or Certified",
-  "codeName": "eligibleOrCertified"
+  "codeName": "certificationStatus"
 }

@@ -1,5 +1,5 @@
 {
   "dataType": "DR",
   "longName": "Address Validity Range",
-  "codeName": "addressValidityRange"
+  "codeName": "period"
 }

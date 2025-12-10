@@ -1,5 +1,5 @@
 {
   "dataType": "ST",
   "longName": "Surname From Partner/Spouse",
-  "codeName": "surnameFromPartnerSpouse"
+  "codeName": "partnerFamily"
 }

@@ -1,5 +1,5 @@
 {
   "dataType": "DT",
   "longName": "Expiration Date",
-  "codeName": "expirationDate"
+  "codeName": "end"
 }

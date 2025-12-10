@@ -1,5 +1,5 @@
 {
   "dataType": "ST",
   "longName": "Sequence Condition Value",
-  "codeName": "sequenceConditionValue"
+  "codeName": "condition"
 }

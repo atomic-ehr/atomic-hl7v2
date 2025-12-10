@@ -1,5 +1,5 @@
 {
   "dataType": "ST",
   "longName": "Filler Order Number: Entity Identifier",
-  "codeName": "fillerOrderNumberEntityIdentifier"
+  "codeName": "fillerId"
 }

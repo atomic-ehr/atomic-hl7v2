@@ -1,5 +1,5 @@
 {
   "dataType": "TS",
   "longName": "End Date/Time",
-  "codeName": "endDateTime"
+  "codeName": "end"
 }

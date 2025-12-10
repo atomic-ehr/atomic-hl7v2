@@ -1,5 +1,5 @@
 {
   "dataType": "NM",
   "longName": "Maximum Number of Repeats",
-  "codeName": "maximumNumberOfRepeats"
+  "codeName": "maxRepeats"
 }

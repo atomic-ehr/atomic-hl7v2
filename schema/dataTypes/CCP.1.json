@@ -1,5 +1,5 @@
 {
   "dataType": "NM",
   "longName": "Channel Calibration Sensitivity Correction Factor",
-  "codeName": "channelCalibrationSensitivityCorrectionFactor"
+  "codeName": "sensitivityCorrection"
 }

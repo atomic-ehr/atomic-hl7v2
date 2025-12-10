@@ -1,5 +1,5 @@
 {
   "dataType": "TS",
   "longName": "Effective Date",
-  "codeName": "effectiveDate"
+  "codeName": "start"
 }

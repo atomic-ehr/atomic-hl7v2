@@ -1,5 +1,5 @@
 {
   "dataType": "IS",
   "longName": "Filler Order Number: Namespace ID",
-  "codeName": "fillerOrderNumberNamespaceId"
+  "codeName": "fillerNamespace"
 }

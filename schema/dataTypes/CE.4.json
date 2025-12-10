@@ -1,5 +1,5 @@
 {
   "dataType": "ST",
   "longName": "Alternate Identifier",
-  "codeName": "alternateIdentifier"
+  "codeName": "altCode"
 }

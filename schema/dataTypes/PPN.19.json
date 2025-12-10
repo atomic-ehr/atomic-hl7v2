@@ -1,5 +1,5 @@
 {
   "dataType": "ID",
   "longName": "Name Assembly Order",
-  "codeName": "nameAssemblyOrder"
+  "codeName": "order"
 }

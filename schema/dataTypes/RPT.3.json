@@ -1,5 +1,5 @@
 {
   "dataType": "NM",
   "longName": "Phase Range Begin Value",
-  "codeName": "phaseRangeBeginValue"
+  "codeName": "phaseStart"
 }

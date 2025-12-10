@@ -1,5 +1,5 @@
 {
   "dataType": "CSU",
   "longName": "Channel Sensitivity/Units",
-  "codeName": "channelSensitivityUnits"
+  "codeName": "sensitivityUnits"
 }

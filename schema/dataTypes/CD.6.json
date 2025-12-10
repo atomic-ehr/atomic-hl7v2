@@ -1,5 +1,5 @@
 {
   "dataType": "NR",
   "longName": "Minimum/Maximum Data Values",
-  "codeName": "minimumMaximumDataValues"
+  "codeName": "bounds"
 }

@@ -1,5 +1,5 @@
 {
   "dataType": "DT",
   "longName": "Occurrence Span Stop Date",
-  "codeName": "occurrenceSpanStopDate"
+  "codeName": "end"
 }

@@ -1,5 +1,5 @@
 {
   "dataType": "ST",
   "longName": "Identifier Check Digit",
-  "codeName": "identifierCheckDigit"
+  "codeName": "checkDigit"
 }

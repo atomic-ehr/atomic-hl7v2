@@ -1,5 +1,5 @@
 {
   "dataType": "CNE",
   "longName": "Occurrence Span Code",
-  "codeName": "occurrenceSpanCode"
+  "codeName": "code"
 }

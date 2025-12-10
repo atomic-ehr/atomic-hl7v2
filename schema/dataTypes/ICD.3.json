@@ -1,5 +1,5 @@
 {
   "dataType": "TS",
   "longName": "Date/Time Certification Required",
-  "codeName": "dateTimeCertificationRequired"
+  "codeName": "requiredAt"
 }

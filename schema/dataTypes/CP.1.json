@@ -1,5 +1,5 @@
 {
   "dataType": "MO",
   "longName": "Price",
-  "codeName": "price"
+  "codeName": "amount"
 }

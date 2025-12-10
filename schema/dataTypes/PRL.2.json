@@ -1,5 +1,5 @@
 {
   "dataType": "ST",
   "longName": "Parent Observation Sub-identifier",
-  "codeName": "parentObservationSubIdentifier"
+  "codeName": "parentSubId"
 }

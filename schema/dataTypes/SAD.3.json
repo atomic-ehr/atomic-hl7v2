@@ -1,5 +1,5 @@
 {
   "dataType": "ST",
   "longName": "Dwelling Number",
-  "codeName": "dwellingNumber"
+  "codeName": "houseNumber"
 }

@@ -1,5 +1,5 @@
 {
   "dataType": "DT",
   "longName": "Occurrence Date",
-  "codeName": "occurrenceDate"
+  "codeName": "date"
 }

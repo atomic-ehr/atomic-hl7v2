@@ -1,5 +1,5 @@
 {
   "dataType": "NM",
   "longName": "Event Offset Quantity",
-  "codeName": "eventOffsetQuantity"
+  "codeName": "offset"
 }

@@ -1,5 +1,5 @@
 {
   "dataType": "NM",
   "longName": "Maximum Column Width",
-  "codeName": "maximumColumnWidth"
+  "codeName": "width"
 }

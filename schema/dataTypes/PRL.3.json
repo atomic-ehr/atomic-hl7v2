@@ -1,5 +1,5 @@
 {
   "dataType": "TX",
   "longName": "Parent Observation Value Descriptor",
-  "codeName": "parentObservationValueDescriptor"
+  "codeName": "parentDescriptor"
 }
