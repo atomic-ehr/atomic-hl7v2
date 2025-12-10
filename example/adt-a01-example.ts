@@ -14,19 +14,19 @@ import { formatMessage } from "../src/hl7v2/format";
 const message = new ADT_A01Builder()
   // MSH - Message Header (required)
   .msh(msh => msh
-    .set_msh_3_sendingApplication({ namespaceId_1: "HOSPITAL_APP" })
-    .set_msh_4_sendingFacility({ namespaceId_1: "HOSPITAL_FAC" })
-    .set_msh_5_receivingApplication({ namespaceId_1: "ADT_RECEIVER" })
-    .set_msh_6_receivingFacility({ namespaceId_1: "RECV_FAC" })
-    .set_msh_7_dateTimeOfMessage("20251210120000")
+    .set_msh_3_sendingApplication({ namespace_1: "HOSPITAL_APP" })
+    .set_msh_4_sendingFacility({ namespace_1: "HOSPITAL_FAC" })
+    .set_msh_5_receivingApplication({ namespace_1: "ADT_RECEIVER" })
+    .set_msh_6_receivingFacility({ namespace_1: "RECV_FAC" })
+    .set_msh_7_messageDateTime("20251210120000")
     .set_msh_9_messageType({
-      messageCode_1: "ADT",
-      triggerEvent_2: "A01",
-      messageStructure_3: "ADT_A01"
+      code_1: "ADT",
+      event_2: "A01",
+      structure_3: "ADT_A01"
     })
     .set_msh_10_messageControlId("MSG00001")
     .set_msh_11_processingId({ processingId_1: "P" })
-    .set_msh_12_versionId({ versionId_1: "2.5.1" })
+    .set_msh_12_version({ version_1: "2.5.1" })
   )
 
   // EVN - Event Type (required)
@@ -39,88 +39,88 @@ const message = new ADT_A01Builder()
   // PID - Patient Identification (required)
   .pid(pid => pid
     .set_pid_1_setIdPid("1")
-    .set_pid_3_patientIdentifierList([
+    .set_pid_3_identifier([
       {
-        idNumber_1: "12345678",
-        assigningAuthority_4: { namespaceId_1: "HOSP" },
-        identifierTypeCode_5: "MR"
+        value_1: "12345678",
+        system_4: { namespace_1: "HOSP" },
+        type_5: "MR"
       },
       {
-        idNumber_1: "987-65-4321",
-        assigningAuthority_4: { namespaceId_1: "SSA" },
-        identifierTypeCode_5: "SS"
+        value_1: "987-65-4321",
+        system_4: { namespace_1: "SSA" },
+        type_5: "SS"
       }
     ])
-    .set_pid_5_patientName([{
-      familyName_1: { surname_1: "Smith" },
-      givenName_2: "John",
-      secondAndFurtherGivenNamesOrInitialsThereof_3: "Robert",
+    .set_pid_5_name([{
+      family_1: { family_1: "Smith" },
+      given_2: "John",
+      additionalGiven_3: "Robert",
       suffix_4: "Jr",
     }])
-    .set_pid_7_dateTimeOfBirth("19800515")
-    .set_pid_8_administrativeSex("M")
-    .set_pid_11_patientAddress([{
-      streetAddress_1: { streetOrMailingAddress_1: "123 Main Street" },
-      otherDesignation_2: "Apt 4B",
+    .set_pid_7_birthDate("19800515")
+    .set_pid_8_gender("M")
+    .set_pid_11_address([{
+      line1_1: { line_1: "123 Main Street" },
+      line2_2: "Apt 4B",
       city_3: "Boston",
-      stateOrProvince_4: "MA",
-      zipOrPostalCode_5: "02101",
+      state_4: "MA",
+      postalCode_5: "02101",
       country_6: "USA"
     }])
-    .set_pid_13_phoneNumberHome([{
-      telephoneNumber_1: "617-555-1234",
-      telecommunicationUseCode_2: "PRN"
+    .set_pid_13_homePhone([{
+      value_1: "617-555-1234",
+      use_2: "PRN"
     }])
-    .set_pid_14_phoneNumberBusiness([{
-      telephoneNumber_1: "617-555-5678",
-      telecommunicationUseCode_2: "WPN"
+    .set_pid_14_businessPhone([{
+      value_1: "617-555-5678",
+      use_2: "WPN"
     }])
   )
 
   // PV1 - Patient Visit (required)
   .pv1(pv1 => pv1
     .set_pv1_1_setIdPv1("1")
-    .set_pv1_2_patientClass("I")  // I = Inpatient
+    .set_pv1_2_class("I")  // I = Inpatient
     .set_pv1_3_assignedPatientLocation({
-      pointOfCare_1: "WARD-A",
+      careSite_1: "WARD-A",
       room_2: "101",
       bed_3: "1",
-      facility_4: { namespaceId_1: "HOSP" }
+      facility_4: { namespace_1: "HOSP" }
     })
     .set_pv1_4_admissionType("E")  // E = Emergency
     .set_pv1_7_attendingDoctor([{
-      idNumber_1: "DOC001",
-      familyName_2: { surname_1: "Johnson" },
-      givenName_3: "Mary",
-      assigningAuthority_9: { namespaceId_1: "HOSP" }
+      value_1: "DOC001",
+      family_2: { family_1: "Johnson" },
+      given_3: "Mary",
+      system_9: { namespace_1: "HOSP" }
     }])
     .set_pv1_10_hospitalService("MED")
     .set_pv1_14_admitSource("7")  // 7 = Emergency Room
     .set_pv1_17_admittingDoctor([{
-      idNumber_1: "DOC002",
-      familyName_2: { surname_1: "Williams" },
-      givenName_3: "James"
+      value_1: "DOC002",
+      family_2: { family_1: "Williams" },
+      given_3: "James"
     }])
     .set_pv1_19_visitNumber({
-      idNumber_1: "V12345",
-      assigningAuthority_4: { namespaceId_1: "HOSP" }
+      value_1: "V12345",
+      system_4: { namespace_1: "HOSP" }
     })
-    .set_pv1_44_admitDateTime("20251210115000")
+    .set_pv1_44_admission("20251210115000")
   )
 
   // NK1 - Next of Kin (optional, repeating)
   .addNK1(nk1 => nk1
     .set_nk1_1_setIdNk1("1")
     .set_nk1_2_name([{
-      familyName_1: { surname_1: "Smith" },
-      givenName_2: "Jane"
+      family_1: { family_1: "Smith" },
+      given_2: "Jane"
     }])
     .set_nk1_3_relationship({
-      identifier_1: "SPO",
+      code_1: "SPO",
       text_2: "Spouse"
     })
-    .set_nk1_5_phoneNumber([{
-      telephoneNumber_1: "617-555-9999"
+    .set_nk1_5_phone([{
+      value_1: "617-555-9999"
     }])
   )
 
@@ -128,9 +128,9 @@ const message = new ADT_A01Builder()
   .addDG1(dg1 => dg1
     .set_dg1_1_setIdDg1("1")
     .set_dg1_3_diagnosisCodeDg1({
-      identifier_1: "J18.9",
+      code_1: "J18.9",
       text_2: "Pneumonia, unspecified organism",
-      nameOfCodingSystem_3: "ICD10"
+      system_3: "ICD10"
     })
     .set_dg1_6_diagnosisType("A")  // A = Admitting
     .set_dg1_15_diagnosisPriority("1")
@@ -138,9 +138,9 @@ const message = new ADT_A01Builder()
   .addDG1(dg1 => dg1
     .set_dg1_1_setIdDg1("2")
     .set_dg1_3_diagnosisCodeDg1({
-      identifier_1: "I10",
+      code_1: "I10",
       text_2: "Essential hypertension",
-      nameOfCodingSystem_3: "ICD10"
+      system_3: "ICD10"
     })
     .set_dg1_6_diagnosisType("F")  // F = Final
     .set_dg1_15_diagnosisPriority("2")
@@ -150,15 +150,15 @@ const message = new ADT_A01Builder()
   .addAL1(al1 => al1
     .set_al1_1_setIdAl1("1")
     .set_al1_2_allergenTypeCode({
-      identifier_1: "DA",
+      code_1: "DA",
       text_2: "Drug Allergy"
     })
     .set_al1_3_allergenCodeMnemonicDescription({
-      identifier_1: "PENICILLIN",
+      code_1: "PENICILLIN",
       text_2: "Penicillin"
     })
     .set_al1_4_allergySeverityCode({
-      identifier_1: "SV",
+      code_1: "SV",
       text_2: "Severe"
     })
   )
@@ -168,15 +168,15 @@ const message = new ADT_A01Builder()
     .in1(in1 => in1
       .set_in1_1_setIdIn1("1")
       .set_in1_2_insurancePlanId({
-        identifier_1: "BCBS001",
+        code_1: "BCBS001",
         text_2: "Blue Cross Blue Shield"
       })
       .set_in1_3_insuranceCompanyId([{
-        idNumber_1: "INS123",
-        assigningAuthority_4: { namespaceId_1: "BCBS" }
+        value_1: "INS123",
+        system_4: { namespace_1: "BCBS" }
       }])
       .set_in1_4_insuranceCompanyName([{
-        organizationName_1: "Blue Cross Blue Shield of MA"
+        name_1: "Blue Cross Blue Shield of MA"
       }])
       .set_in1_8_groupNumber("GRP12345")
       .set_in1_36_policyNumber("POL987654")

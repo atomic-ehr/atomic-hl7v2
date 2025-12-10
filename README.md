@@ -43,11 +43,11 @@ import { formatMessage } from "./src/hl7v2/format";
 const message = new ADT_A01Builder()
   .msh(msh => msh
     .set_msh_3_sendingApplication({ namespace_1: "HOSPITAL" })
-    .set_msh_9_messageType({ messageCode_1: "ADT", triggerEvent_2: "A01" })
+    .set_msh_9_messageType({ code_1: "ADT", event_2: "A01" })
   )
   .pid(pid => pid
-    .set_pid_3_patientIdentifierList([{ value_1: "12345", type_5: "MR" }])
-    .set_pid_5_patientName([{ family_1: { family_1: "Smith" }, given_2: "John" }])
+    .set_pid_3_identifier([{ value_1: "12345", type_5: "MR" }])
+    .set_pid_5_name([{ family_1: { family_1: "Smith" }, given_2: "John" }])
   )
   .build();
 
@@ -63,7 +63,7 @@ import { PIDBuilder } from "./example/adt-a01-fields";
 const pid = new PIDBuilder();
 (pid as any).seg = parsedPidSegment;
 
-const names = pid.get_pid_5_patientName();
+const names = pid.get_pid_5_name();
 // names[0].family_1?.family_1 => "Smith"
 // names[0].given_2 => "John"
 ```

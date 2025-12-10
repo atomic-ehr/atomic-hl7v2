@@ -66,7 +66,7 @@ function extractPatientFromPID(pidSegment: HL7v2Segment): FHIRPatient {
   // Extract identifiers (PID-3: Patient Identifier List)
   // CX uses: value_1, system_4 (HD), type_5
   // HD uses: namespace_1
-  const identifiers = pid.get_pid_3_patientIdentifierList();
+  const identifiers = pid.get_pid_3_identifier();
   if (identifiers && identifiers.length > 0) {
     patient.identifier = identifiers.map(id => ({
       value: id.value_1,
@@ -82,7 +82,7 @@ function extractPatientFromPID(pidSegment: HL7v2Segment): FHIRPatient {
   // Extract patient name (PID-5: Patient Name)
   // XPN uses: family_1 (FN), given_2, additionalGiven_3, suffix_4, prefix_5
   // FN uses: family_1 (surname)
-  const names = pid.get_pid_5_patientName();
+  const names = pid.get_pid_5_name();
   if (names && names.length > 0) {
     patient.name = names.map(name => {
       const result: NonNullable<FHIRPatient["name"]>[0] = {};
@@ -106,7 +106,7 @@ function extractPatientFromPID(pidSegment: HL7v2Segment): FHIRPatient {
   }
 
   // Extract gender (PID-8: Administrative Sex)
-  const sex = pid.get_pid_8_administrativeSex();
+  const sex = pid.get_pid_8_gender();
   if (sex) {
     const genderMap: Record<string, FHIRPatient["gender"]> = {
       "M": "male",
@@ -118,7 +118,7 @@ function extractPatientFromPID(pidSegment: HL7v2Segment): FHIRPatient {
   }
 
   // Extract birth date (PID-7: Date/Time of Birth)
-  const birthDate = pid.get_pid_7_dateTimeOfBirth();
+  const birthDate = pid.get_pid_7_birthDate();
   if (birthDate) {
     // Convert HL7 date format (YYYYMMDD) to FHIR format (YYYY-MM-DD)
     patient.birthDate = `${birthDate.substring(0, 4)}-${birthDate.substring(4, 6)}-${birthDate.substring(6, 8)}`;
@@ -127,7 +127,7 @@ function extractPatientFromPID(pidSegment: HL7v2Segment): FHIRPatient {
   // Extract addresses (PID-11: Patient Address)
   // XAD uses: line1_1 (SAD), line2_2, city_3, state_4, postalCode_5, country_6
   // SAD uses: line_1 (street address)
-  const addresses = pid.get_pid_11_patientAddress();
+  const addresses = pid.get_pid_11_address();
   if (addresses && addresses.length > 0) {
     patient.address = addresses.map(addr => {
       const result: NonNullable<FHIRPatient["address"]>[0] = {};
@@ -152,7 +152,7 @@ function extractPatientFromPID(pidSegment: HL7v2Segment): FHIRPatient {
   // XTN uses: value_1 (phone number), use_2, system_3
   const telecoms: NonNullable<FHIRPatient["telecom"]> = [];
 
-  const homePhones = pid.get_pid_13_phoneNumberHome();
+  const homePhones = pid.get_pid_13_homePhone();
   if (homePhones) {
     for (const phone of homePhones) {
       if (phone.value_1) {
@@ -165,7 +165,7 @@ function extractPatientFromPID(pidSegment: HL7v2Segment): FHIRPatient {
     }
   }
 
-  const workPhones = pid.get_pid_14_phoneNumberBusiness();
+  const workPhones = pid.get_pid_14_businessPhone();
   if (workPhones) {
     for (const phone of workPhones) {
       if (phone.value_1) {
@@ -222,7 +222,7 @@ const pid = Object.assign(new PIDBuilder(), {}) as any;
 pid.seg = pidSegment;
 
 console.log("Patient Identifiers:");
-const ids = pid.get_pid_3_patientIdentifierList();
+const ids = pid.get_pid_3_identifier();
 if (ids) {
   for (const id of ids) {
     // CX uses: value_1, system_4 (HD), type_5
@@ -232,7 +232,7 @@ if (ids) {
 }
 
 console.log("\nPatient Name:");
-const names = pid.get_pid_5_patientName();
+const names = pid.get_pid_5_name();
 if (names) {
   for (const name of names) {
     // XPN uses: prefix_5, given_2, additionalGiven_3, family_1 (FN), suffix_4
@@ -248,5 +248,5 @@ if (names) {
   }
 }
 
-console.log(`\nGender: ${pid.get_pid_8_administrativeSex()}`);
-console.log(`Birth Date: ${pid.get_pid_7_dateTimeOfBirth()}`);
+console.log(`\nGender: ${pid.get_pid_8_gender()}`);
+console.log(`Birth Date: ${pid.get_pid_7_birthDate()}`);

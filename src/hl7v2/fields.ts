@@ -2435,7 +2435,7 @@ export class ACCBuilder {
 // ====== AL1 Segment ======
 
 /** Get AL1.1 - Set ID - AL1 */
-export function AL1_1_set_i_d_a_l1(seg: HL7v2Segment): string | undefined {
+export function AL1_1_set_id_al1(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -2655,7 +2655,7 @@ export class AL1Builder {
 // ====== DB1 Segment ======
 
 /** Get DB1.1 - Set ID - DB1 */
-export function DB1_1_set_i_d_d_b1(seg: HL7v2Segment): string | undefined {
+export function DB1_1_set_id_db1(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -3059,7 +3059,7 @@ export class DB1Builder {
 // ====== DG1 Segment ======
 
 /** Get DG1.1 - Set ID - DG1 */
-export function DG1_1_set_i_d_d_g1(seg: HL7v2Segment): string | undefined {
+export function DG1_1_set_id_dg1(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -3207,7 +3207,7 @@ export function DG1_8_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get DG1.9 - DRG Approval Indicator */
-export function DG1_9_d_r_g_approval_indicator(seg: HL7v2Segment): string | undefined {
+export function DG1_9_drg_approval(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[9];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -3215,7 +3215,7 @@ export function DG1_9_d_r_g_approval_indicator(seg: HL7v2Segment): string | unde
 }
 
 /** Get DG1.10 - DRG Grouper Review Code */
-export function DG1_10_d_r_g_grouper_review_code(seg: HL7v2Segment): string | undefined {
+export function DG1_10_drg_grouper_review_code(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[10];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -3892,13 +3892,13 @@ export class DG1Builder {
   }
 
   /** DG1.9 - DRG Approval Indicator */
-  set_dg1_9_drgApprovalIndicator(value: string | null | undefined): this {
+  set_dg1_9_drgApproval(value: string | null | undefined): this {
     if (value != null) this.seg.fields[9] = value;
     return this;
   }
 
   /** DG1.9 - DRG Approval Indicator */
-  get_dg1_9_drgApprovalIndicator(): string | undefined {
+  get_dg1_9_drgApproval(): string | undefined {
     const val = this.seg.fields[9];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -4133,7 +4133,7 @@ export function DRG_1_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get DRG.2 - DRG Assigned Date/Time */
-export function DRG_2_d_r_g_assigned_date_time(seg: HL7v2Segment): string | undefined {
+export function DRG_2_drg_assigned_date_time(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[2];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -4141,7 +4141,7 @@ export function DRG_2_d_r_g_assigned_date_time(seg: HL7v2Segment): string | unde
 }
 
 /** Get DRG.3 - DRG Approval Indicator */
-export function DRG_3_d_r_g_approval_indicator(seg: HL7v2Segment): string | undefined {
+export function DRG_3_drg_approval(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[3];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -4149,7 +4149,7 @@ export function DRG_3_d_r_g_approval_indicator(seg: HL7v2Segment): string | unde
 }
 
 /** Get DRG.4 - DRG Grouper Review Code */
-export function DRG_4_d_r_g_grouper_review_code(seg: HL7v2Segment): string | undefined {
+export function DRG_4_drg_grouper_review_code(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[4];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -4285,7 +4285,7 @@ export function DRG_7_6_range_type(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get DRG.8 - DRG Payor */
-export function DRG_8_d_r_g_payor(seg: HL7v2Segment): string | undefined {
+export function DRG_8_drg_payor(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[8];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -4385,7 +4385,7 @@ export function DRG_10_confidential_indicator(seg: HL7v2Segment): string | undef
 }
 
 /** Get DRG.11 - DRG Transfer Type */
-export function DRG_11_d_r_g_transfer_type(seg: HL7v2Segment): string | undefined {
+export function DRG_11_drg_transfer_type(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[11];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -4422,13 +4422,13 @@ export class DRGBuilder {
   }
 
   /** DRG.3 - DRG Approval Indicator */
-  set_drg_3_drgApprovalIndicator(value: string | null | undefined): this {
+  set_drg_3_drgApproval(value: string | null | undefined): this {
     if (value != null) this.seg.fields[3] = value;
     return this;
   }
 
   /** DRG.3 - DRG Approval Indicator */
-  get_drg_3_drgApprovalIndicator(): string | undefined {
+  get_drg_3_drgApproval(): string | undefined {
     const val = this.seg.fields[3];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -4565,7 +4565,7 @@ export function EVN_2_recorded_date_time(seg: HL7v2Segment): string | undefined 
 }
 
 /** Get EVN.3 - Date/Time Planned Event */
-export function EVN_3_date_time_planned_event(seg: HL7v2Segment): string | undefined {
+export function EVN_3_planned_event_date_time(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[3];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -4998,13 +4998,13 @@ export class EVNBuilder {
   }
 
   /** EVN.3 - Date/Time Planned Event */
-  set_evn_3_dateTimePlannedEvent(value: string | null | undefined): this {
+  set_evn_3_plannedEventDateTime(value: string | null | undefined): this {
     if (value != null) this.seg.fields[3] = value;
     return this;
   }
 
   /** EVN.3 - Date/Time Planned Event */
-  get_evn_3_dateTimePlannedEvent(): string | undefined {
+  get_evn_3_plannedEventDateTime(): string | undefined {
     const val = this.seg.fields[3];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -5095,7 +5095,7 @@ export class EVNBuilder {
 // ====== GT1 Segment ======
 
 /** Get GT1.1 - Set ID - GT1 */
-export function GT1_1_set_i_d_g_t1(seg: HL7v2Segment): string | undefined {
+export function GT1_1_set_id_gt1(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -5889,7 +5889,7 @@ export function GT1_7_12_unformatted(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get GT1.8 - Guarantor Date/Time Of Birth */
-export function GT1_8_guarantor_date_time_of_birth(seg: HL7v2Segment): string | undefined {
+export function GT1_8_birth_date(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[8];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -5897,7 +5897,7 @@ export function GT1_8_guarantor_date_time_of_birth(seg: HL7v2Segment): string | 
 }
 
 /** Get GT1.9 - Guarantor Administrative Sex */
-export function GT1_9_guarantor_administrative_sex(seg: HL7v2Segment): string | undefined {
+export function GT1_9_guarantor_administrative_gender(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[9];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -5949,7 +5949,7 @@ export function GT1_11_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get GT1.12 - Guarantor SSN */
-export function GT1_12_guarantor_s_s_n(seg: HL7v2Segment): string | undefined {
+export function GT1_12_guarantor_ssn(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[12];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -7073,7 +7073,7 @@ export function GT1_31_guarantor_hire_effective_date(seg: HL7v2Segment): string 
 }
 
 /** Get GT1.32 - Employment Stop Date */
-export function GT1_32_employment_stop_date(seg: HL7v2Segment): string | undefined {
+export function GT1_32_employment_end(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[32];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -7221,7 +7221,7 @@ export function GT1_39_protection_indicator(seg: HL7v2Segment): string | undefin
 }
 
 /** Get GT1.40 - Student Indicator */
-export function GT1_40_student_indicator(seg: HL7v2Segment): string | undefined {
+export function GT1_40_student(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[40];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -7899,7 +7899,7 @@ export function GT1_51_10_organization_id(seg: HL7v2Segment): string | undefined
 }
 
 /** Get GT1.52 - Handicap */
-export function GT1_52_handicap(seg: HL7v2Segment): string | undefined {
+export function GT1_52_disability(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[52];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -7971,7 +7971,7 @@ export function GT1_56_guarantor_birth_place(seg: HL7v2Segment): string | undefi
 }
 
 /** Get GT1.57 - VIP Indicator */
-export function GT1_57_v_i_p_indicator(seg: HL7v2Segment): string | undefined {
+export function GT1_57_vip(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[57];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -8212,13 +8212,13 @@ export class GT1Builder {
   }
 
   /** GT1.8 - Guarantor Date/Time Of Birth */
-  set_gt1_8_guarantorDateTimeOfBirth(value: string | null | undefined): this {
+  set_gt1_8_birthDate(value: string | null | undefined): this {
     if (value != null) this.seg.fields[8] = value;
     return this;
   }
 
   /** GT1.8 - Guarantor Date/Time Of Birth */
-  get_gt1_8_guarantorDateTimeOfBirth(): string | undefined {
+  get_gt1_8_birthDate(): string | undefined {
     const val = this.seg.fields[8];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -8226,13 +8226,13 @@ export class GT1Builder {
   }
 
   /** GT1.9 - Guarantor Administrative Sex */
-  set_gt1_9_guarantorAdministrativeSex(value: string | null | undefined): this {
+  set_gt1_9_guarantorAdministrativeGender(value: string | null | undefined): this {
     if (value != null) this.seg.fields[9] = value;
     return this;
   }
 
   /** GT1.9 - Guarantor Administrative Sex */
-  get_gt1_9_guarantorAdministrativeSex(): string | undefined {
+  get_gt1_9_guarantorAdministrativeGender(): string | undefined {
     const val = this.seg.fields[9];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -8670,13 +8670,13 @@ export class GT1Builder {
   }
 
   /** GT1.32 - Employment Stop Date */
-  set_gt1_32_employmentStopDate(value: string | null | undefined): this {
+  set_gt1_32_employmentEnd(value: string | null | undefined): this {
     if (value != null) this.seg.fields[32] = value;
     return this;
   }
 
   /** GT1.32 - Employment Stop Date */
-  get_gt1_32_employmentStopDate(): string | undefined {
+  get_gt1_32_employmentEnd(): string | undefined {
     const val = this.seg.fields[32];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -8748,14 +8748,14 @@ export class GT1Builder {
   }
 
   /** GT1.36 - Primary Language */
-  set_gt1_36_primaryLanguage(value: CE | null | undefined): this {
+  set_gt1_36_language(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[36] = fv;
     return this;
   }
 
   /** GT1.36 - Primary Language */
-  get_gt1_36_primaryLanguage(): CE | undefined {
+  get_gt1_36_language(): CE | undefined {
     return fromCE(this.seg.fields[36]);
   }
 
@@ -8800,13 +8800,13 @@ export class GT1Builder {
   }
 
   /** GT1.40 - Student Indicator */
-  set_gt1_40_studentIndicator(value: string | null | undefined): this {
+  set_gt1_40_student(value: string | null | undefined): this {
     if (value != null) this.seg.fields[40] = value;
     return this;
   }
 
   /** GT1.40 - Student Indicator */
-  get_gt1_40_studentIndicator(): string | undefined {
+  get_gt1_40_student(): string | undefined {
     const val = this.seg.fields[40];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -8826,7 +8826,7 @@ export class GT1Builder {
   }
 
   /** GT1.42 - Mother's Maiden Name (set all values) */
-  set_gt1_42_motherSMaidenName(values: XPN[] | null | undefined): this {
+  set_gt1_42_mothersMaidenName(values: XPN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -8838,7 +8838,7 @@ export class GT1Builder {
   }
 
   /** GT1.42 - Mother's Maiden Name (add single value) */
-  add_gt1_42_motherSMaidenName(value: XPN | null | undefined): this {
+  add_gt1_42_mothersMaidenName(value: XPN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -8853,7 +8853,7 @@ export class GT1Builder {
   }
 
   /** GT1.42 - Mother's Maiden Name */
-  get_gt1_42_motherSMaidenName(): XPN[] | undefined {
+  get_gt1_42_mothersMaidenName(): XPN[] | undefined {
     const val = this.seg.fields[42];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -8874,7 +8874,7 @@ export class GT1Builder {
   }
 
   /** GT1.44 - Ethnic Group (set all values) */
-  set_gt1_44_ethnicGroup(values: CE[] | null | undefined): this {
+  set_gt1_44_ethnicity(values: CE[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -8886,7 +8886,7 @@ export class GT1Builder {
   }
 
   /** GT1.44 - Ethnic Group (add single value) */
-  add_gt1_44_ethnicGroup(value: CE | null | undefined): this {
+  add_gt1_44_ethnicity(value: CE | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -8901,7 +8901,7 @@ export class GT1Builder {
   }
 
   /** GT1.44 - Ethnic Group */
-  get_gt1_44_ethnicGroup(): CE[] | undefined {
+  get_gt1_44_ethnicity(): CE[] | undefined {
     const val = this.seg.fields[44];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -8910,7 +8910,7 @@ export class GT1Builder {
   }
 
   /** GT1.45 - Contact Person's Name (set all values) */
-  set_gt1_45_contactPersonSName(values: XPN[] | null | undefined): this {
+  set_gt1_45_contactPersonsName(values: XPN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -8922,7 +8922,7 @@ export class GT1Builder {
   }
 
   /** GT1.45 - Contact Person's Name (add single value) */
-  add_gt1_45_contactPersonSName(value: XPN | null | undefined): this {
+  add_gt1_45_contactPersonsName(value: XPN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -8937,7 +8937,7 @@ export class GT1Builder {
   }
 
   /** GT1.45 - Contact Person's Name */
-  get_gt1_45_contactPersonSName(): XPN[] | undefined {
+  get_gt1_45_contactPersonsName(): XPN[] | undefined {
     const val = this.seg.fields[45];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -8946,7 +8946,7 @@ export class GT1Builder {
   }
 
   /** GT1.46 - Contact Person's Telephone Number (set all values) */
-  set_gt1_46_contactPersonSTelephoneNumber(values: XTN[] | null | undefined): this {
+  set_gt1_46_contactPhone(values: XTN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -8958,7 +8958,7 @@ export class GT1Builder {
   }
 
   /** GT1.46 - Contact Person's Telephone Number (add single value) */
-  add_gt1_46_contactPersonSTelephoneNumber(value: XTN | null | undefined): this {
+  add_gt1_46_contactPhone(value: XTN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -8973,7 +8973,7 @@ export class GT1Builder {
   }
 
   /** GT1.46 - Contact Person's Telephone Number */
-  get_gt1_46_contactPersonSTelephoneNumber(): XTN[] | undefined {
+  get_gt1_46_contactPhone(): XTN[] | undefined {
     const val = this.seg.fields[46];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -9034,7 +9034,7 @@ export class GT1Builder {
   }
 
   /** GT1.51 - Guarantor Employer's Organization Name (set all values) */
-  set_gt1_51_guarantorEmployerSOrganizationName(values: XON[] | null | undefined): this {
+  set_gt1_51_guarantorEmployersOrganizationName(values: XON[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -9046,7 +9046,7 @@ export class GT1Builder {
   }
 
   /** GT1.51 - Guarantor Employer's Organization Name (add single value) */
-  add_gt1_51_guarantorEmployerSOrganizationName(value: XON | null | undefined): this {
+  add_gt1_51_guarantorEmployersOrganizationName(value: XON | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -9061,7 +9061,7 @@ export class GT1Builder {
   }
 
   /** GT1.51 - Guarantor Employer's Organization Name */
-  get_gt1_51_guarantorEmployerSOrganizationName(): XON[] | undefined {
+  get_gt1_51_guarantorEmployersOrganizationName(): XON[] | undefined {
     const val = this.seg.fields[51];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -9070,13 +9070,13 @@ export class GT1Builder {
   }
 
   /** GT1.52 - Handicap */
-  set_gt1_52_handicap(value: string | null | undefined): this {
+  set_gt1_52_disability(value: string | null | undefined): this {
     if (value != null) this.seg.fields[52] = value;
     return this;
   }
 
   /** GT1.52 - Handicap */
-  get_gt1_52_handicap(): string | undefined {
+  get_gt1_52_disability(): string | undefined {
     const val = this.seg.fields[52];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -9160,13 +9160,13 @@ export class GT1Builder {
   }
 
   /** GT1.57 - VIP Indicator */
-  set_gt1_57_vipIndicator(value: string | null | undefined): this {
+  set_gt1_57_vip(value: string | null | undefined): this {
     if (value != null) this.seg.fields[57] = value;
     return this;
   }
 
   /** GT1.57 - VIP Indicator */
-  get_gt1_57_vipIndicator(): string | undefined {
+  get_gt1_57_vip(): string | undefined {
     const val = this.seg.fields[57];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -9181,7 +9181,7 @@ export class GT1Builder {
 // ====== IN1 Segment ======
 
 /** Get IN1.1 - Set ID - IN1 */
-export function IN1_1_set_i_d_i_n1(seg: HL7v2Segment): string | undefined {
+export function IN1_1_set_id_in1(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -10517,7 +10517,7 @@ export function IN1_17_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get IN1.18 - Insured's Date Of Birth */
-export function IN1_18_insured_s_date_of_birth(seg: HL7v2Segment): string | undefined {
+export function IN1_18_insureds_date_of_birth(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[18];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -10703,7 +10703,7 @@ export function IN1_27_release_information_code(seg: HL7v2Segment): string | und
 }
 
 /** Get IN1.28 - Pre-Admit Cert (PAC) */
-export function IN1_28_pre_admit_cert_p_a_c(seg: HL7v2Segment): string | undefined {
+export function IN1_28_pre_admit_cert(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[28];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -11507,7 +11507,7 @@ export function IN1_42_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get IN1.43 - Insured's Administrative Sex */
-export function IN1_43_insured_s_administrative_sex(seg: HL7v2Segment): string | undefined {
+export function IN1_43_insureds_administrative_gender(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[43];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -11637,7 +11637,7 @@ export function IN1_45_verification_status(seg: HL7v2Segment): string | undefine
 }
 
 /** Get IN1.46 - Prior Insurance Plan ID */
-export function IN1_46_prior_insurance_plan_i_d(seg: HL7v2Segment): string | undefined {
+export function IN1_46_prior_insurance_plan_id(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[46];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -11653,7 +11653,7 @@ export function IN1_47_coverage_type(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get IN1.48 - Handicap */
-export function IN1_48_handicap(seg: HL7v2Segment): string | undefined {
+export function IN1_48_disability(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[48];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -11881,7 +11881,7 @@ export function IN1_51_signature_code_date(seg: HL7v2Segment): string | undefine
 }
 
 /** Get IN1.52 - Insured's Birth Place */
-export function IN1_52_insured_s_birth_place(seg: HL7v2Segment): string | undefined {
+export function IN1_52_insureds_birth_place(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[52];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -11889,7 +11889,7 @@ export function IN1_52_insured_s_birth_place(seg: HL7v2Segment): string | undefi
 }
 
 /** Get IN1.53 - VIP Indicator */
-export function IN1_53_v_i_p_indicator(seg: HL7v2Segment): string | undefined {
+export function IN1_53_vip(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[53];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -12070,7 +12070,7 @@ export class IN1Builder {
   }
 
   /** IN1.7 - Insurance Co Phone Number (set all values) */
-  set_in1_7_insuranceCoPhoneNumber(values: XTN[] | null | undefined): this {
+  set_in1_7_insurancePhone(values: XTN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -12082,7 +12082,7 @@ export class IN1Builder {
   }
 
   /** IN1.7 - Insurance Co Phone Number (add single value) */
-  add_in1_7_insuranceCoPhoneNumber(value: XTN | null | undefined): this {
+  add_in1_7_insurancePhone(value: XTN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -12097,7 +12097,7 @@ export class IN1Builder {
   }
 
   /** IN1.7 - Insurance Co Phone Number */
-  get_in1_7_insuranceCoPhoneNumber(): XTN[] | undefined {
+  get_in1_7_insurancePhone(): XTN[] | undefined {
     const val = this.seg.fields[7];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -12156,7 +12156,7 @@ export class IN1Builder {
   }
 
   /** IN1.10 - Insured's Group Emp ID (set all values) */
-  set_in1_10_insuredSGroupEmpId(values: CX[] | null | undefined): this {
+  set_in1_10_insuredsGroupEmpId(values: CX[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -12168,7 +12168,7 @@ export class IN1Builder {
   }
 
   /** IN1.10 - Insured's Group Emp ID (add single value) */
-  add_in1_10_insuredSGroupEmpId(value: CX | null | undefined): this {
+  add_in1_10_insuredsGroupEmpId(value: CX | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -12183,7 +12183,7 @@ export class IN1Builder {
   }
 
   /** IN1.10 - Insured's Group Emp ID */
-  get_in1_10_insuredSGroupEmpId(): CX[] | undefined {
+  get_in1_10_insuredsGroupEmpId(): CX[] | undefined {
     const val = this.seg.fields[10];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -12192,7 +12192,7 @@ export class IN1Builder {
   }
 
   /** IN1.11 - Insured's Group Emp Name (set all values) */
-  set_in1_11_insuredSGroupEmpName(values: XON[] | null | undefined): this {
+  set_in1_11_insuredsGroupEmpName(values: XON[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -12204,7 +12204,7 @@ export class IN1Builder {
   }
 
   /** IN1.11 - Insured's Group Emp Name (add single value) */
-  add_in1_11_insuredSGroupEmpName(value: XON | null | undefined): this {
+  add_in1_11_insuredsGroupEmpName(value: XON | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -12219,7 +12219,7 @@ export class IN1Builder {
   }
 
   /** IN1.11 - Insured's Group Emp Name */
-  get_in1_11_insuredSGroupEmpName(): XON[] | undefined {
+  get_in1_11_insuredsGroupEmpName(): XON[] | undefined {
     const val = this.seg.fields[11];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -12318,25 +12318,25 @@ export class IN1Builder {
   }
 
   /** IN1.17 - Insured's Relationship To Patient */
-  set_in1_17_insuredSRelationshipToPatient(value: CE | null | undefined): this {
+  set_in1_17_insuredsRelationshipToPatient(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[17] = fv;
     return this;
   }
 
   /** IN1.17 - Insured's Relationship To Patient */
-  get_in1_17_insuredSRelationshipToPatient(): CE | undefined {
+  get_in1_17_insuredsRelationshipToPatient(): CE | undefined {
     return fromCE(this.seg.fields[17]);
   }
 
   /** IN1.18 - Insured's Date Of Birth */
-  set_in1_18_insuredSDateOfBirth(value: string | null | undefined): this {
+  set_in1_18_insuredsDateOfBirth(value: string | null | undefined): this {
     if (value != null) this.seg.fields[18] = value;
     return this;
   }
 
   /** IN1.18 - Insured's Date Of Birth */
-  get_in1_18_insuredSDateOfBirth(): string | undefined {
+  get_in1_18_insuredsDateOfBirth(): string | undefined {
     const val = this.seg.fields[18];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -12344,7 +12344,7 @@ export class IN1Builder {
   }
 
   /** IN1.19 - Insured's Address (set all values) */
-  set_in1_19_insuredSAddress(values: XAD[] | null | undefined): this {
+  set_in1_19_insuredsAddress(values: XAD[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -12356,7 +12356,7 @@ export class IN1Builder {
   }
 
   /** IN1.19 - Insured's Address (add single value) */
-  add_in1_19_insuredSAddress(value: XAD | null | undefined): this {
+  add_in1_19_insuredsAddress(value: XAD | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -12371,7 +12371,7 @@ export class IN1Builder {
   }
 
   /** IN1.19 - Insured's Address */
-  get_in1_19_insuredSAddress(): XAD[] | undefined {
+  get_in1_19_insuredsAddress(): XAD[] | undefined {
     const val = this.seg.fields[19];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -12492,13 +12492,13 @@ export class IN1Builder {
   }
 
   /** IN1.28 - Pre-Admit Cert (PAC) */
-  set_in1_28_preAdmitCertPac(value: string | null | undefined): this {
+  set_in1_28_preAdmitCert(value: string | null | undefined): this {
     if (value != null) this.seg.fields[28] = value;
     return this;
   }
 
   /** IN1.28 - Pre-Admit Cert (PAC) */
-  get_in1_28_preAdmitCertPac(): string | undefined {
+  get_in1_28_preAdmitCert(): string | undefined {
     const val = this.seg.fields[28];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -12702,25 +12702,25 @@ export class IN1Builder {
   }
 
   /** IN1.42 - Insured's Employment Status */
-  set_in1_42_insuredSEmploymentStatus(value: CE | null | undefined): this {
+  set_in1_42_insuredsEmploymentStatus(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[42] = fv;
     return this;
   }
 
   /** IN1.42 - Insured's Employment Status */
-  get_in1_42_insuredSEmploymentStatus(): CE | undefined {
+  get_in1_42_insuredsEmploymentStatus(): CE | undefined {
     return fromCE(this.seg.fields[42]);
   }
 
   /** IN1.43 - Insured's Administrative Sex */
-  set_in1_43_insuredSAdministrativeSex(value: string | null | undefined): this {
+  set_in1_43_insuredsAdministrativeGender(value: string | null | undefined): this {
     if (value != null) this.seg.fields[43] = value;
     return this;
   }
 
   /** IN1.43 - Insured's Administrative Sex */
-  get_in1_43_insuredSAdministrativeSex(): string | undefined {
+  get_in1_43_insuredsAdministrativeGender(): string | undefined {
     const val = this.seg.fields[43];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -12728,7 +12728,7 @@ export class IN1Builder {
   }
 
   /** IN1.44 - Insured's Employer's Address (set all values) */
-  set_in1_44_insuredSEmployerSAddress(values: XAD[] | null | undefined): this {
+  set_in1_44_insuredsEmployersAddress(values: XAD[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -12740,7 +12740,7 @@ export class IN1Builder {
   }
 
   /** IN1.44 - Insured's Employer's Address (add single value) */
-  add_in1_44_insuredSEmployerSAddress(value: XAD | null | undefined): this {
+  add_in1_44_insuredsEmployersAddress(value: XAD | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -12755,7 +12755,7 @@ export class IN1Builder {
   }
 
   /** IN1.44 - Insured's Employer's Address */
-  get_in1_44_insuredSEmployerSAddress(): XAD[] | undefined {
+  get_in1_44_insuredsEmployersAddress(): XAD[] | undefined {
     const val = this.seg.fields[44];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -12806,13 +12806,13 @@ export class IN1Builder {
   }
 
   /** IN1.48 - Handicap */
-  set_in1_48_handicap(value: string | null | undefined): this {
+  set_in1_48_disability(value: string | null | undefined): this {
     if (value != null) this.seg.fields[48] = value;
     return this;
   }
 
   /** IN1.48 - Handicap */
-  get_in1_48_handicap(): string | undefined {
+  get_in1_48_disability(): string | undefined {
     const val = this.seg.fields[48];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -12820,7 +12820,7 @@ export class IN1Builder {
   }
 
   /** IN1.49 - Insured's ID Number (set all values) */
-  set_in1_49_insuredSIdNumber(values: CX[] | null | undefined): this {
+  set_in1_49_insuredsIdNumber(values: CX[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -12832,7 +12832,7 @@ export class IN1Builder {
   }
 
   /** IN1.49 - Insured's ID Number (add single value) */
-  add_in1_49_insuredSIdNumber(value: CX | null | undefined): this {
+  add_in1_49_insuredsIdNumber(value: CX | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -12847,7 +12847,7 @@ export class IN1Builder {
   }
 
   /** IN1.49 - Insured's ID Number */
-  get_in1_49_insuredSIdNumber(): CX[] | undefined {
+  get_in1_49_insuredsIdNumber(): CX[] | undefined {
     const val = this.seg.fields[49];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -12884,13 +12884,13 @@ export class IN1Builder {
   }
 
   /** IN1.52 - Insured's Birth Place */
-  set_in1_52_insuredSBirthPlace(value: string | null | undefined): this {
+  set_in1_52_insuredsBirthPlace(value: string | null | undefined): this {
     if (value != null) this.seg.fields[52] = value;
     return this;
   }
 
   /** IN1.52 - Insured's Birth Place */
-  get_in1_52_insuredSBirthPlace(): string | undefined {
+  get_in1_52_insuredsBirthPlace(): string | undefined {
     const val = this.seg.fields[52];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -12898,13 +12898,13 @@ export class IN1Builder {
   }
 
   /** IN1.53 - VIP Indicator */
-  set_in1_53_vipIndicator(value: string | null | undefined): this {
+  set_in1_53_vip(value: string | null | undefined): this {
     if (value != null) this.seg.fields[53] = value;
     return this;
   }
 
   /** IN1.53 - VIP Indicator */
-  get_in1_53_vipIndicator(): string | undefined {
+  get_in1_53_vip(): string | undefined {
     const val = this.seg.fields[53];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -13123,7 +13123,7 @@ export function IN2_1_10_9_original_text(seg: HL7v2Segment): string | undefined 
 }
 
 /** Get IN2.2 - Insured's Social Security Number */
-export function IN2_2_insured_s_social_security_number(seg: HL7v2Segment): string | undefined {
+export function IN2_2_insureds_social_security_number(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[2];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -13847,7 +13847,7 @@ export function IN2_9_14_credential(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get IN2.10 - Military ID Number */
-export function IN2_10_military_i_d_number(seg: HL7v2Segment): string | undefined {
+export function IN2_10_military_id_number(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[10];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -14819,7 +14819,7 @@ export function IN2_37_protection_indicator(seg: HL7v2Segment): string | undefin
 }
 
 /** Get IN2.38 - Student Indicator */
-export function IN2_38_student_indicator(seg: HL7v2Segment): string | undefined {
+export function IN2_38_student(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[38];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -15133,7 +15133,7 @@ export function IN2_43_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get IN2.44 - Insured's Employment Start Date */
-export function IN2_44_insured_s_employment_start_date(seg: HL7v2Segment): string | undefined {
+export function IN2_44_insureds_employment_start_date(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[44];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -15141,7 +15141,7 @@ export function IN2_44_insured_s_employment_start_date(seg: HL7v2Segment): strin
 }
 
 /** Get IN2.45 - Employment Stop Date */
-export function IN2_45_employment_stop_date(seg: HL7v2Segment): string | undefined {
+export function IN2_45_employment_end(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[45];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -15659,7 +15659,7 @@ export function IN2_53_12_unformatted(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get IN2.54 - Insured's Contact Person Reason */
-export function IN2_54_insured_s_contact_person_reason(seg: HL7v2Segment): string | undefined {
+export function IN2_54_insureds_contact_person_reason(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[54];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -16490,7 +16490,7 @@ export class IN2Builder {
   private seg: HL7v2Segment = { segment: "IN2", fields: {} };
 
   /** IN2.1 - Insured's Employee ID (set all values) */
-  set_in2_1_insuredSEmployeeId(values: CX[] | null | undefined): this {
+  set_in2_1_insuredsEmployeeId(values: CX[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -16502,7 +16502,7 @@ export class IN2Builder {
   }
 
   /** IN2.1 - Insured's Employee ID (add single value) */
-  add_in2_1_insuredSEmployeeId(value: CX | null | undefined): this {
+  add_in2_1_insuredsEmployeeId(value: CX | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -16517,7 +16517,7 @@ export class IN2Builder {
   }
 
   /** IN2.1 - Insured's Employee ID */
-  get_in2_1_insuredSEmployeeId(): CX[] | undefined {
+  get_in2_1_insuredsEmployeeId(): CX[] | undefined {
     const val = this.seg.fields[1];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -16526,13 +16526,13 @@ export class IN2Builder {
   }
 
   /** IN2.2 - Insured's Social Security Number */
-  set_in2_2_insuredSSocialSecurityNumber(value: string | null | undefined): this {
+  set_in2_2_insuredsSocialSecurityNumber(value: string | null | undefined): this {
     if (value != null) this.seg.fields[2] = value;
     return this;
   }
 
   /** IN2.2 - Insured's Social Security Number */
-  get_in2_2_insuredSSocialSecurityNumber(): string | undefined {
+  get_in2_2_insuredsSocialSecurityNumber(): string | undefined {
     const val = this.seg.fields[2];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -16540,7 +16540,7 @@ export class IN2Builder {
   }
 
   /** IN2.3 - Insured's Employer's Name and ID (set all values) */
-  set_in2_3_insuredSEmployerSNameAndId(values: XCN[] | null | undefined): this {
+  set_in2_3_insuredsEmployersNameAndId(values: XCN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -16552,7 +16552,7 @@ export class IN2Builder {
   }
 
   /** IN2.3 - Insured's Employer's Name and ID (add single value) */
-  add_in2_3_insuredSEmployerSNameAndId(value: XCN | null | undefined): this {
+  add_in2_3_insuredsEmployersNameAndId(value: XCN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -16567,7 +16567,7 @@ export class IN2Builder {
   }
 
   /** IN2.3 - Insured's Employer's Name and ID */
-  get_in2_3_insuredSEmployerSNameAndId(): XCN[] | undefined {
+  get_in2_3_insuredsEmployersNameAndId(): XCN[] | undefined {
     const val = this.seg.fields[3];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -17168,14 +17168,14 @@ export class IN2Builder {
   }
 
   /** IN2.34 - Primary Language */
-  set_in2_34_primaryLanguage(value: CE | null | undefined): this {
+  set_in2_34_language(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[34] = fv;
     return this;
   }
 
   /** IN2.34 - Primary Language */
-  get_in2_34_primaryLanguage(): CE | undefined {
+  get_in2_34_language(): CE | undefined {
     return fromCE(this.seg.fields[34]);
   }
 
@@ -17220,13 +17220,13 @@ export class IN2Builder {
   }
 
   /** IN2.38 - Student Indicator */
-  set_in2_38_studentIndicator(value: string | null | undefined): this {
+  set_in2_38_student(value: string | null | undefined): this {
     if (value != null) this.seg.fields[38] = value;
     return this;
   }
 
   /** IN2.38 - Student Indicator */
-  get_in2_38_studentIndicator(): string | undefined {
+  get_in2_38_student(): string | undefined {
     const val = this.seg.fields[38];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -17246,7 +17246,7 @@ export class IN2Builder {
   }
 
   /** IN2.40 - Mother's Maiden Name (set all values) */
-  set_in2_40_motherSMaidenName(values: XPN[] | null | undefined): this {
+  set_in2_40_mothersMaidenName(values: XPN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -17258,7 +17258,7 @@ export class IN2Builder {
   }
 
   /** IN2.40 - Mother's Maiden Name (add single value) */
-  add_in2_40_motherSMaidenName(value: XPN | null | undefined): this {
+  add_in2_40_mothersMaidenName(value: XPN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -17273,7 +17273,7 @@ export class IN2Builder {
   }
 
   /** IN2.40 - Mother's Maiden Name */
-  get_in2_40_motherSMaidenName(): XPN[] | undefined {
+  get_in2_40_mothersMaidenName(): XPN[] | undefined {
     const val = this.seg.fields[40];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -17294,7 +17294,7 @@ export class IN2Builder {
   }
 
   /** IN2.42 - Ethnic Group (set all values) */
-  set_in2_42_ethnicGroup(values: CE[] | null | undefined): this {
+  set_in2_42_ethnicity(values: CE[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -17306,7 +17306,7 @@ export class IN2Builder {
   }
 
   /** IN2.42 - Ethnic Group (add single value) */
-  add_in2_42_ethnicGroup(value: CE | null | undefined): this {
+  add_in2_42_ethnicity(value: CE | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -17321,7 +17321,7 @@ export class IN2Builder {
   }
 
   /** IN2.42 - Ethnic Group */
-  get_in2_42_ethnicGroup(): CE[] | undefined {
+  get_in2_42_ethnicity(): CE[] | undefined {
     const val = this.seg.fields[42];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -17366,13 +17366,13 @@ export class IN2Builder {
   }
 
   /** IN2.44 - Insured's Employment Start Date */
-  set_in2_44_insuredSEmploymentStartDate(value: string | null | undefined): this {
+  set_in2_44_insuredsEmploymentStartDate(value: string | null | undefined): this {
     if (value != null) this.seg.fields[44] = value;
     return this;
   }
 
   /** IN2.44 - Insured's Employment Start Date */
-  get_in2_44_insuredSEmploymentStartDate(): string | undefined {
+  get_in2_44_insuredsEmploymentStartDate(): string | undefined {
     const val = this.seg.fields[44];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -17380,13 +17380,13 @@ export class IN2Builder {
   }
 
   /** IN2.45 - Employment Stop Date */
-  set_in2_45_employmentStopDate(value: string | null | undefined): this {
+  set_in2_45_employmentEnd(value: string | null | undefined): this {
     if (value != null) this.seg.fields[45] = value;
     return this;
   }
 
   /** IN2.45 - Employment Stop Date */
-  get_in2_45_employmentStopDate(): string | undefined {
+  get_in2_45_employmentEnd(): string | undefined {
     const val = this.seg.fields[45];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -17470,7 +17470,7 @@ export class IN2Builder {
   }
 
   /** IN2.50 - Employer Contact Person Phone Number (set all values) */
-  set_in2_50_employerContactPersonPhoneNumber(values: XTN[] | null | undefined): this {
+  set_in2_50_employerContactPhone(values: XTN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -17482,7 +17482,7 @@ export class IN2Builder {
   }
 
   /** IN2.50 - Employer Contact Person Phone Number (add single value) */
-  add_in2_50_employerContactPersonPhoneNumber(value: XTN | null | undefined): this {
+  add_in2_50_employerContactPhone(value: XTN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -17497,7 +17497,7 @@ export class IN2Builder {
   }
 
   /** IN2.50 - Employer Contact Person Phone Number */
-  get_in2_50_employerContactPersonPhoneNumber(): XTN[] | undefined {
+  get_in2_50_employerContactPhone(): XTN[] | undefined {
     const val = this.seg.fields[50];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -17520,7 +17520,7 @@ export class IN2Builder {
   }
 
   /** IN2.52 - Insured's Contact Person's Name (set all values) */
-  set_in2_52_insuredSContactPersonSName(values: XPN[] | null | undefined): this {
+  set_in2_52_insuredsContactPersonsName(values: XPN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -17532,7 +17532,7 @@ export class IN2Builder {
   }
 
   /** IN2.52 - Insured's Contact Person's Name (add single value) */
-  add_in2_52_insuredSContactPersonSName(value: XPN | null | undefined): this {
+  add_in2_52_insuredsContactPersonsName(value: XPN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -17547,7 +17547,7 @@ export class IN2Builder {
   }
 
   /** IN2.52 - Insured's Contact Person's Name */
-  get_in2_52_insuredSContactPersonSName(): XPN[] | undefined {
+  get_in2_52_insuredsContactPersonsName(): XPN[] | undefined {
     const val = this.seg.fields[52];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -17556,7 +17556,7 @@ export class IN2Builder {
   }
 
   /** IN2.53 - Insured's Contact Person Phone Number (set all values) */
-  set_in2_53_insuredSContactPersonPhoneNumber(values: XTN[] | null | undefined): this {
+  set_in2_53_insuredContactPhone(values: XTN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -17568,7 +17568,7 @@ export class IN2Builder {
   }
 
   /** IN2.53 - Insured's Contact Person Phone Number (add single value) */
-  add_in2_53_insuredSContactPersonPhoneNumber(value: XTN | null | undefined): this {
+  add_in2_53_insuredContactPhone(value: XTN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -17583,7 +17583,7 @@ export class IN2Builder {
   }
 
   /** IN2.53 - Insured's Contact Person Phone Number */
-  get_in2_53_insuredSContactPersonPhoneNumber(): XTN[] | undefined {
+  get_in2_53_insuredContactPhone(): XTN[] | undefined {
     const val = this.seg.fields[53];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -17592,13 +17592,13 @@ export class IN2Builder {
   }
 
   /** IN2.54 - Insured's Contact Person Reason */
-  set_in2_54_insuredSContactPersonReason(value: string | null | undefined): this {
+  set_in2_54_insuredsContactPersonReason(value: string | null | undefined): this {
     if (value != null) this.seg.fields[54] = value;
     return this;
   }
 
   /** IN2.54 - Insured's Contact Person Reason */
-  get_in2_54_insuredSContactPersonReason(): string | undefined {
+  get_in2_54_insuredsContactPersonReason(): string | undefined {
     const val = this.seg.fields[54];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -17648,14 +17648,14 @@ export class IN2Builder {
   }
 
   /** IN2.58 - Insurance Co Contact Phone Number */
-  set_in2_58_insuranceCoContactPhoneNumber(value: XTN | null | undefined): this {
+  set_in2_58_insuranceContactPhone(value: XTN | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[58] = fv;
     return this;
   }
 
   /** IN2.58 - Insurance Co Contact Phone Number */
-  get_in2_58_insuranceCoContactPhoneNumber(): XTN | undefined {
+  get_in2_58_insuranceContactPhone(): XTN | undefined {
     return fromXTN(this.seg.fields[58]);
   }
 
@@ -17688,31 +17688,31 @@ export class IN2Builder {
   }
 
   /** IN2.61 - Patient Member Number */
-  set_in2_61_patientMemberNumber(value: CX | null | undefined): this {
+  set_in2_61_memberNumber(value: CX | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[61] = fv;
     return this;
   }
 
   /** IN2.61 - Patient Member Number */
-  get_in2_61_patientMemberNumber(): CX | undefined {
+  get_in2_61_memberNumber(): CX | undefined {
     return fromCX(this.seg.fields[61]);
   }
 
   /** IN2.62 - Guarantor's Relationship to Insured */
-  set_in2_62_guarantorSRelationshipToInsured(value: CE | null | undefined): this {
+  set_in2_62_guarantorsRelationshipToInsured(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[62] = fv;
     return this;
   }
 
   /** IN2.62 - Guarantor's Relationship to Insured */
-  get_in2_62_guarantorSRelationshipToInsured(): CE | undefined {
+  get_in2_62_guarantorsRelationshipToInsured(): CE | undefined {
     return fromCE(this.seg.fields[62]);
   }
 
   /** IN2.63 - Insured's Phone Number - Home (set all values) */
-  set_in2_63_insuredSPhoneNumberHome(values: XTN[] | null | undefined): this {
+  set_in2_63_insuredHomePhone(values: XTN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -17724,7 +17724,7 @@ export class IN2Builder {
   }
 
   /** IN2.63 - Insured's Phone Number - Home (add single value) */
-  add_in2_63_insuredSPhoneNumberHome(value: XTN | null | undefined): this {
+  add_in2_63_insuredHomePhone(value: XTN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -17739,7 +17739,7 @@ export class IN2Builder {
   }
 
   /** IN2.63 - Insured's Phone Number - Home */
-  get_in2_63_insuredSPhoneNumberHome(): XTN[] | undefined {
+  get_in2_63_insuredHomePhone(): XTN[] | undefined {
     const val = this.seg.fields[63];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -17748,7 +17748,7 @@ export class IN2Builder {
   }
 
   /** IN2.64 - Insured's Employer Phone Number (set all values) */
-  set_in2_64_insuredSEmployerPhoneNumber(values: XTN[] | null | undefined): this {
+  set_in2_64_insuredEmployerPhone(values: XTN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -17760,7 +17760,7 @@ export class IN2Builder {
   }
 
   /** IN2.64 - Insured's Employer Phone Number (add single value) */
-  add_in2_64_insuredSEmployerPhoneNumber(value: XTN | null | undefined): this {
+  add_in2_64_insuredEmployerPhone(value: XTN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -17775,7 +17775,7 @@ export class IN2Builder {
   }
 
   /** IN2.64 - Insured's Employer Phone Number */
-  get_in2_64_insuredSEmployerPhoneNumber(): XTN[] | undefined {
+  get_in2_64_insuredEmployerPhone(): XTN[] | undefined {
     const val = this.seg.fields[64];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -17946,14 +17946,14 @@ export class IN2Builder {
   }
 
   /** IN2.72 - CMS Patient's Relationship to Insured */
-  set_in2_72_cmsPatientSRelationshipToInsured(value: CE | null | undefined): this {
+  set_in2_72_cmsPatientsRelationshipToInsured(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[72] = fv;
     return this;
   }
 
   /** IN2.72 - CMS Patient's Relationship to Insured */
-  get_in2_72_cmsPatientSRelationshipToInsured(): CE | undefined {
+  get_in2_72_cmsPatientsRelationshipToInsured(): CE | undefined {
     return fromCE(this.seg.fields[72]);
   }
 
@@ -17965,7 +17965,7 @@ export class IN2Builder {
 // ====== IN3 Segment ======
 
 /** Get IN3.1 - Set ID - IN3 */
-export function IN3_1_set_i_d_i_n3(seg: HL7v2Segment): string | undefined {
+export function IN3_1_set_id_in3(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -18537,7 +18537,7 @@ export function IN3_3_23_9_original_text(seg: HL7v2Segment): string | undefined 
 }
 
 /** Get IN3.4 - Certification Required */
-export function IN3_4_certification_required(seg: HL7v2Segment): string | undefined {
+export function IN3_4_required(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[4];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -20070,13 +20070,13 @@ export class IN3Builder {
   }
 
   /** IN3.4 - Certification Required */
-  set_in3_4_certificationRequired(value: string | null | undefined): this {
+  set_in3_4_required(value: string | null | undefined): this {
     if (value != null) this.seg.fields[4] = value;
     return this;
   }
 
   /** IN3.4 - Certification Required */
-  get_in3_4_certificationRequired(): string | undefined {
+  get_in3_4_required(): string | undefined {
     const val = this.seg.fields[4];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -20595,7 +20595,7 @@ export function MSH_6_3_system_type(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get MSH.7 - Date/Time Of Message */
-export function MSH_7_date_time_of_message(seg: HL7v2Segment): string | undefined {
+export function MSH_7_message_date_time(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[7];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -20629,7 +20629,7 @@ export function MSH_9_3_structure(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get MSH.10 - Message Control ID */
-export function MSH_10_message_control_i_d(seg: HL7v2Segment): string | undefined {
+export function MSH_10_message_control_id(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[10];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -20934,13 +20934,13 @@ export class MSHBuilder {
   }
 
   /** MSH.7 - Date/Time Of Message */
-  set_msh_7_dateTimeOfMessage(value: string | null | undefined): this {
+  set_msh_7_messageDateTime(value: string | null | undefined): this {
     if (value != null) this.seg.fields[7] = value;
     return this;
   }
 
   /** MSH.7 - Date/Time Of Message */
-  get_msh_7_dateTimeOfMessage(): string | undefined {
+  get_msh_7_messageDateTime(): string | undefined {
     const val = this.seg.fields[7];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -21000,14 +21000,14 @@ export class MSHBuilder {
   }
 
   /** MSH.12 - Version ID */
-  set_msh_12_versionId(value: VID | null | undefined): this {
+  set_msh_12_version(value: VID | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[12] = fv;
     return this;
   }
 
   /** MSH.12 - Version ID */
-  get_msh_12_versionId(): VID | undefined {
+  get_msh_12_version(): VID | undefined {
     return fromVID(this.seg.fields[12]);
   }
 
@@ -21165,7 +21165,7 @@ export class MSHBuilder {
 // ====== NK1 Segment ======
 
 /** Get NK1.1 - Set ID - NK1 */
-export function NK1_1_set_i_d_n_k1(seg: HL7v2Segment): string | undefined {
+export function NK1_1_set_id_nk1(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -22043,7 +22043,7 @@ export function NK1_14_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get NK1.15 - Administrative Sex */
-export function NK1_15_administrative_sex(seg: HL7v2Segment): string | undefined {
+export function NK1_15_gender(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[15];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -22051,7 +22051,7 @@ export function NK1_15_administrative_sex(seg: HL7v2Segment): string | undefined
 }
 
 /** Get NK1.16 - Date/Time of Birth */
-export function NK1_16_date_time_of_birth(seg: HL7v2Segment): string | undefined {
+export function NK1_16_birth_date(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[16];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -22199,7 +22199,7 @@ export function NK1_23_protection_indicator(seg: HL7v2Segment): string | undefin
 }
 
 /** Get NK1.24 - Student Indicator */
-export function NK1_24_student_indicator(seg: HL7v2Segment): string | undefined {
+export function NK1_24_student(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[24];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -23109,7 +23109,7 @@ export function NK1_35_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get NK1.36 - Handicap */
-export function NK1_36_handicap(seg: HL7v2Segment): string | undefined {
+export function NK1_36_disability(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[36];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -23133,7 +23133,7 @@ export function NK1_38_next_of_kin_birth_place(seg: HL7v2Segment): string | unde
 }
 
 /** Get NK1.39 - VIP Indicator */
-export function NK1_39_v_i_p_indicator(seg: HL7v2Segment): string | undefined {
+export function NK1_39_vip(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[39];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -23206,7 +23206,7 @@ export class NK1Builder {
   }
 
   /** NK1.4 - Address (set all values) */
-  set_nk1_4_address(values: XAD[] | null | undefined): this {
+  set_nk1_4_text(values: XAD[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -23218,7 +23218,7 @@ export class NK1Builder {
   }
 
   /** NK1.4 - Address (add single value) */
-  add_nk1_4_address(value: XAD | null | undefined): this {
+  add_nk1_4_text(value: XAD | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -23233,7 +23233,7 @@ export class NK1Builder {
   }
 
   /** NK1.4 - Address */
-  get_nk1_4_address(): XAD[] | undefined {
+  get_nk1_4_text(): XAD[] | undefined {
     const val = this.seg.fields[4];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -23242,7 +23242,7 @@ export class NK1Builder {
   }
 
   /** NK1.5 - Phone Number (set all values) */
-  set_nk1_5_phoneNumber(values: XTN[] | null | undefined): this {
+  set_nk1_5_phone(values: XTN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -23254,7 +23254,7 @@ export class NK1Builder {
   }
 
   /** NK1.5 - Phone Number (add single value) */
-  add_nk1_5_phoneNumber(value: XTN | null | undefined): this {
+  add_nk1_5_phone(value: XTN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -23269,7 +23269,7 @@ export class NK1Builder {
   }
 
   /** NK1.5 - Phone Number */
-  get_nk1_5_phoneNumber(): XTN[] | undefined {
+  get_nk1_5_phone(): XTN[] | undefined {
     const val = this.seg.fields[5];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -23278,7 +23278,7 @@ export class NK1Builder {
   }
 
   /** NK1.6 - Business Phone Number (set all values) */
-  set_nk1_6_businessPhoneNumber(values: XTN[] | null | undefined): this {
+  set_nk1_6_businessPhone(values: XTN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -23290,7 +23290,7 @@ export class NK1Builder {
   }
 
   /** NK1.6 - Business Phone Number (add single value) */
-  add_nk1_6_businessPhoneNumber(value: XTN | null | undefined): this {
+  add_nk1_6_businessPhone(value: XTN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -23305,7 +23305,7 @@ export class NK1Builder {
   }
 
   /** NK1.6 - Business Phone Number */
-  get_nk1_6_businessPhoneNumber(): XTN[] | undefined {
+  get_nk1_6_businessPhone(): XTN[] | undefined {
     const val = this.seg.fields[6];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -23440,13 +23440,13 @@ export class NK1Builder {
   }
 
   /** NK1.15 - Administrative Sex */
-  set_nk1_15_administrativeSex(value: string | null | undefined): this {
+  set_nk1_15_gender(value: string | null | undefined): this {
     if (value != null) this.seg.fields[15] = value;
     return this;
   }
 
   /** NK1.15 - Administrative Sex */
-  get_nk1_15_administrativeSex(): string | undefined {
+  get_nk1_15_gender(): string | undefined {
     const val = this.seg.fields[15];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -23454,13 +23454,13 @@ export class NK1Builder {
   }
 
   /** NK1.16 - Date/Time of Birth */
-  set_nk1_16_dateTimeOfBirth(value: string | null | undefined): this {
+  set_nk1_16_birthDate(value: string | null | undefined): this {
     if (value != null) this.seg.fields[16] = value;
     return this;
   }
 
   /** NK1.16 - Date/Time of Birth */
-  get_nk1_16_dateTimeOfBirth(): string | undefined {
+  get_nk1_16_birthDate(): string | undefined {
     const val = this.seg.fields[16];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -23532,14 +23532,14 @@ export class NK1Builder {
   }
 
   /** NK1.20 - Primary Language */
-  set_nk1_20_primaryLanguage(value: CE | null | undefined): this {
+  set_nk1_20_language(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[20] = fv;
     return this;
   }
 
   /** NK1.20 - Primary Language */
-  get_nk1_20_primaryLanguage(): CE | undefined {
+  get_nk1_20_language(): CE | undefined {
     return fromCE(this.seg.fields[20]);
   }
 
@@ -23584,13 +23584,13 @@ export class NK1Builder {
   }
 
   /** NK1.24 - Student Indicator */
-  set_nk1_24_studentIndicator(value: string | null | undefined): this {
+  set_nk1_24_student(value: string | null | undefined): this {
     if (value != null) this.seg.fields[24] = value;
     return this;
   }
 
   /** NK1.24 - Student Indicator */
-  get_nk1_24_studentIndicator(): string | undefined {
+  get_nk1_24_student(): string | undefined {
     const val = this.seg.fields[24];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -23610,7 +23610,7 @@ export class NK1Builder {
   }
 
   /** NK1.26 - Mother's Maiden Name (set all values) */
-  set_nk1_26_motherSMaidenName(values: XPN[] | null | undefined): this {
+  set_nk1_26_mothersMaidenName(values: XPN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -23622,7 +23622,7 @@ export class NK1Builder {
   }
 
   /** NK1.26 - Mother's Maiden Name (add single value) */
-  add_nk1_26_motherSMaidenName(value: XPN | null | undefined): this {
+  add_nk1_26_mothersMaidenName(value: XPN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -23637,7 +23637,7 @@ export class NK1Builder {
   }
 
   /** NK1.26 - Mother's Maiden Name */
-  get_nk1_26_motherSMaidenName(): XPN[] | undefined {
+  get_nk1_26_mothersMaidenName(): XPN[] | undefined {
     const val = this.seg.fields[26];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -23658,7 +23658,7 @@ export class NK1Builder {
   }
 
   /** NK1.28 - Ethnic Group (set all values) */
-  set_nk1_28_ethnicGroup(values: CE[] | null | undefined): this {
+  set_nk1_28_ethnicity(values: CE[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -23670,7 +23670,7 @@ export class NK1Builder {
   }
 
   /** NK1.28 - Ethnic Group (add single value) */
-  add_nk1_28_ethnicGroup(value: CE | null | undefined): this {
+  add_nk1_28_ethnicity(value: CE | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -23685,7 +23685,7 @@ export class NK1Builder {
   }
 
   /** NK1.28 - Ethnic Group */
-  get_nk1_28_ethnicGroup(): CE[] | undefined {
+  get_nk1_28_ethnicity(): CE[] | undefined {
     const val = this.seg.fields[28];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -23730,7 +23730,7 @@ export class NK1Builder {
   }
 
   /** NK1.30 - Contact Person's Name (set all values) */
-  set_nk1_30_contactPersonSName(values: XPN[] | null | undefined): this {
+  set_nk1_30_contactPersonsName(values: XPN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -23742,7 +23742,7 @@ export class NK1Builder {
   }
 
   /** NK1.30 - Contact Person's Name (add single value) */
-  add_nk1_30_contactPersonSName(value: XPN | null | undefined): this {
+  add_nk1_30_contactPersonsName(value: XPN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -23757,7 +23757,7 @@ export class NK1Builder {
   }
 
   /** NK1.30 - Contact Person's Name */
-  get_nk1_30_contactPersonSName(): XPN[] | undefined {
+  get_nk1_30_contactPersonsName(): XPN[] | undefined {
     const val = this.seg.fields[30];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -23766,7 +23766,7 @@ export class NK1Builder {
   }
 
   /** NK1.31 - Contact Person's Telephone Number (set all values) */
-  set_nk1_31_contactPersonSTelephoneNumber(values: XTN[] | null | undefined): this {
+  set_nk1_31_contactPhone(values: XTN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -23778,7 +23778,7 @@ export class NK1Builder {
   }
 
   /** NK1.31 - Contact Person's Telephone Number (add single value) */
-  add_nk1_31_contactPersonSTelephoneNumber(value: XTN | null | undefined): this {
+  add_nk1_31_contactPhone(value: XTN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -23793,7 +23793,7 @@ export class NK1Builder {
   }
 
   /** NK1.31 - Contact Person's Telephone Number */
-  get_nk1_31_contactPersonSTelephoneNumber(): XTN[] | undefined {
+  get_nk1_31_contactPhone(): XTN[] | undefined {
     const val = this.seg.fields[31];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -23802,7 +23802,7 @@ export class NK1Builder {
   }
 
   /** NK1.32 - Contact Person's Address (set all values) */
-  set_nk1_32_contactPersonSAddress(values: XAD[] | null | undefined): this {
+  set_nk1_32_contactPersonsAddress(values: XAD[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -23814,7 +23814,7 @@ export class NK1Builder {
   }
 
   /** NK1.32 - Contact Person's Address (add single value) */
-  add_nk1_32_contactPersonSAddress(value: XAD | null | undefined): this {
+  add_nk1_32_contactPersonsAddress(value: XAD | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -23829,7 +23829,7 @@ export class NK1Builder {
   }
 
   /** NK1.32 - Contact Person's Address */
-  get_nk1_32_contactPersonSAddress(): XAD[] | undefined {
+  get_nk1_32_contactPersonsAddress(): XAD[] | undefined {
     const val = this.seg.fields[32];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -23838,7 +23838,7 @@ export class NK1Builder {
   }
 
   /** NK1.33 - Next of Kin/Associated Party's Identifiers (set all values) */
-  set_nk1_33_nextOfKinAssociatedPartySIdentifiers(values: CX[] | null | undefined): this {
+  set_nk1_33_nextOfKinAssociatedPartysIdentifiers(values: CX[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -23850,7 +23850,7 @@ export class NK1Builder {
   }
 
   /** NK1.33 - Next of Kin/Associated Party's Identifiers (add single value) */
-  add_nk1_33_nextOfKinAssociatedPartySIdentifiers(value: CX | null | undefined): this {
+  add_nk1_33_nextOfKinAssociatedPartysIdentifiers(value: CX | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -23865,7 +23865,7 @@ export class NK1Builder {
   }
 
   /** NK1.33 - Next of Kin/Associated Party's Identifiers */
-  get_nk1_33_nextOfKinAssociatedPartySIdentifiers(): CX[] | undefined {
+  get_nk1_33_nextOfKinAssociatedPartysIdentifiers(): CX[] | undefined {
     const val = this.seg.fields[33];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -23924,13 +23924,13 @@ export class NK1Builder {
   }
 
   /** NK1.36 - Handicap */
-  set_nk1_36_handicap(value: string | null | undefined): this {
+  set_nk1_36_disability(value: string | null | undefined): this {
     if (value != null) this.seg.fields[36] = value;
     return this;
   }
 
   /** NK1.36 - Handicap */
-  get_nk1_36_handicap(): string | undefined {
+  get_nk1_36_disability(): string | undefined {
     const val = this.seg.fields[36];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -23966,13 +23966,13 @@ export class NK1Builder {
   }
 
   /** NK1.39 - VIP Indicator */
-  set_nk1_39_vipIndicator(value: string | null | undefined): this {
+  set_nk1_39_vip(value: string | null | undefined): this {
     if (value != null) this.seg.fields[39] = value;
     return this;
   }
 
   /** NK1.39 - VIP Indicator */
-  get_nk1_39_vipIndicator(): string | undefined {
+  get_nk1_39_vip(): string | undefined {
     const val = this.seg.fields[39];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -23987,7 +23987,7 @@ export class NK1Builder {
 // ====== OBX Segment ======
 
 /** Get OBX.1 - Set ID - OBX */
-export function OBX_1_set_i_d_o_b_x(seg: HL7v2Segment): string | undefined {
+export function OBX_1_set_id_obx(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -24039,7 +24039,7 @@ export function OBX_3_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get OBX.4 - Observation Sub-ID */
-export function OBX_4_observation_sub_i_d(seg: HL7v2Segment): string | undefined {
+export function OBX_4_observation_sub_id(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[4];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -24147,7 +24147,7 @@ export function OBX_13_user_defined_access_checks(seg: HL7v2Segment): string | u
 }
 
 /** Get OBX.14 - Date/Time of the Observation */
-export function OBX_14_date_time_of_the_observation(seg: HL7v2Segment): string | undefined {
+export function OBX_14_observation_date_time(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[14];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -24611,7 +24611,7 @@ export function OBX_18_4_system_type(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get OBX.19 - Date/Time of the Analysis */
-export function OBX_19_date_time_of_the_analysis(seg: HL7v2Segment): string | undefined {
+export function OBX_19_analysis_date_time(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[19];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -25392,14 +25392,14 @@ export class OBXBuilder {
   }
 
   /** OBX.6 - Units */
-  set_obx_6_units(value: CE | null | undefined): this {
+  set_obx_6_unit(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[6] = fv;
     return this;
   }
 
   /** OBX.6 - Units */
-  get_obx_6_units(): CE | undefined {
+  get_obx_6_unit(): CE | undefined {
     return fromCE(this.seg.fields[6]);
   }
 
@@ -25502,13 +25502,13 @@ export class OBXBuilder {
   }
 
   /** OBX.14 - Date/Time of the Observation */
-  set_obx_14_dateTimeOfTheObservation(value: string | null | undefined): this {
+  set_obx_14_observationDateTime(value: string | null | undefined): this {
     if (value != null) this.seg.fields[14] = value;
     return this;
   }
 
   /** OBX.14 - Date/Time of the Observation */
-  get_obx_14_dateTimeOfTheObservation(): string | undefined {
+  get_obx_14_observationDateTime(): string | undefined {
     const val = this.seg.fields[14];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -25516,14 +25516,14 @@ export class OBXBuilder {
   }
 
   /** OBX.15 - Producer's Reference */
-  set_obx_15_producerSReference(value: CE | null | undefined): this {
+  set_obx_15_producersReference(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[15] = fv;
     return this;
   }
 
   /** OBX.15 - Producer's Reference */
-  get_obx_15_producerSReference(): CE | undefined {
+  get_obx_15_producersReference(): CE | undefined {
     return fromCE(this.seg.fields[15]);
   }
 
@@ -25636,13 +25636,13 @@ export class OBXBuilder {
   }
 
   /** OBX.19 - Date/Time of the Analysis */
-  set_obx_19_dateTimeOfTheAnalysis(value: string | null | undefined): this {
+  set_obx_19_analysisDateTime(value: string | null | undefined): this {
     if (value != null) this.seg.fields[19] = value;
     return this;
   }
 
   /** OBX.19 - Date/Time of the Analysis */
-  get_obx_19_dateTimeOfTheAnalysis(): string | undefined {
+  get_obx_19_analysisDateTime(): string | undefined {
     const val = this.seg.fields[19];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -26225,7 +26225,7 @@ export function PD1_4_23_9_original_text(seg: HL7v2Segment): string | undefined 
 }
 
 /** Get PD1.5 - Student Indicator */
-export function PD1_5_student_indicator(seg: HL7v2Segment): string | undefined {
+export function PD1_5_student(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[5];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -26233,7 +26233,7 @@ export function PD1_5_student_indicator(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PD1.6 - Handicap */
-export function PD1_6_handicap(seg: HL7v2Segment): string | undefined {
+export function PD1_6_disability(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[6];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -26241,7 +26241,7 @@ export function PD1_6_handicap(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PD1.7 - Living Will Code */
-export function PD1_7_living_will_code(seg: HL7v2Segment): string | undefined {
+export function PD1_7_living_will(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[7];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -26732,7 +26732,7 @@ export class PD1Builder {
   }
 
   /** PD1.3 - Patient Primary Facility (set all values) */
-  set_pd1_3_patientPrimaryFacility(values: XON[] | null | undefined): this {
+  set_pd1_3_primaryFacility(values: XON[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -26744,7 +26744,7 @@ export class PD1Builder {
   }
 
   /** PD1.3 - Patient Primary Facility (add single value) */
-  add_pd1_3_patientPrimaryFacility(value: XON | null | undefined): this {
+  add_pd1_3_primaryFacility(value: XON | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -26759,7 +26759,7 @@ export class PD1Builder {
   }
 
   /** PD1.3 - Patient Primary Facility */
-  get_pd1_3_patientPrimaryFacility(): XON[] | undefined {
+  get_pd1_3_primaryFacility(): XON[] | undefined {
     const val = this.seg.fields[3];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -26768,7 +26768,7 @@ export class PD1Builder {
   }
 
   /** PD1.4 - Patient Primary Care Provider Name & ID No. (set all values) */
-  set_pd1_4_patientPrimaryCareProviderNameIdNo(values: XCN[] | null | undefined): this {
+  set_pd1_4_primaryCareProvider(values: XCN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -26780,7 +26780,7 @@ export class PD1Builder {
   }
 
   /** PD1.4 - Patient Primary Care Provider Name & ID No. (add single value) */
-  add_pd1_4_patientPrimaryCareProviderNameIdNo(value: XCN | null | undefined): this {
+  add_pd1_4_primaryCareProvider(value: XCN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -26795,7 +26795,7 @@ export class PD1Builder {
   }
 
   /** PD1.4 - Patient Primary Care Provider Name & ID No. */
-  get_pd1_4_patientPrimaryCareProviderNameIdNo(): XCN[] | undefined {
+  get_pd1_4_primaryCareProvider(): XCN[] | undefined {
     const val = this.seg.fields[4];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -26804,13 +26804,13 @@ export class PD1Builder {
   }
 
   /** PD1.5 - Student Indicator */
-  set_pd1_5_studentIndicator(value: string | null | undefined): this {
+  set_pd1_5_student(value: string | null | undefined): this {
     if (value != null) this.seg.fields[5] = value;
     return this;
   }
 
   /** PD1.5 - Student Indicator */
-  get_pd1_5_studentIndicator(): string | undefined {
+  get_pd1_5_student(): string | undefined {
     const val = this.seg.fields[5];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -26818,13 +26818,13 @@ export class PD1Builder {
   }
 
   /** PD1.6 - Handicap */
-  set_pd1_6_handicap(value: string | null | undefined): this {
+  set_pd1_6_disability(value: string | null | undefined): this {
     if (value != null) this.seg.fields[6] = value;
     return this;
   }
 
   /** PD1.6 - Handicap */
-  get_pd1_6_handicap(): string | undefined {
+  get_pd1_6_disability(): string | undefined {
     const val = this.seg.fields[6];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -26832,13 +26832,13 @@ export class PD1Builder {
   }
 
   /** PD1.7 - Living Will Code */
-  set_pd1_7_livingWillCode(value: string | null | undefined): this {
+  set_pd1_7_livingWill(value: string | null | undefined): this {
     if (value != null) this.seg.fields[7] = value;
     return this;
   }
 
   /** PD1.7 - Living Will Code */
-  get_pd1_7_livingWillCode(): string | undefined {
+  get_pd1_7_livingWill(): string | undefined {
     const val = this.seg.fields[7];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -27113,7 +27113,7 @@ export class PD1Builder {
 // ====== PID Segment ======
 
 /** Get PID.1 - Set ID - PID */
-export function PID_1_set_i_d_p_i_d(seg: HL7v2Segment): string | undefined {
+export function PID_1_set_id_pid(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -28057,7 +28057,7 @@ export function PID_6_14_credential(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PID.7 - Date/Time of Birth */
-export function PID_7_date_time_of_birth(seg: HL7v2Segment): string | undefined {
+export function PID_7_birth_date(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[7];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -28065,7 +28065,7 @@ export function PID_7_date_time_of_birth(seg: HL7v2Segment): string | undefined 
 }
 
 /** Get PID.8 - Administrative Sex */
-export function PID_8_administrative_sex(seg: HL7v2Segment): string | undefined {
+export function PID_8_gender(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[8];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -28849,7 +28849,7 @@ export function PID_18_10_9_original_text(seg: HL7v2Segment): string | undefined
 }
 
 /** Get PID.19 - SSN Number - Patient */
-export function PID_19_s_s_n_number_patient(seg: HL7v2Segment): string | undefined {
+export function PID_19_ssn_number_patient(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[19];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -29247,7 +29247,7 @@ export function PID_28_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PID.29 - Patient Death Date and Time */
-export function PID_29_patient_death_date_and_time(seg: HL7v2Segment): string | undefined {
+export function PID_29_deceased_date_time(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[29];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -29255,7 +29255,7 @@ export function PID_29_patient_death_date_and_time(seg: HL7v2Segment): string | 
 }
 
 /** Get PID.30 - Patient Death Indicator */
-export function PID_30_patient_death_indicator(seg: HL7v2Segment): string | undefined {
+export function PID_30_deceased(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[30];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -29504,7 +29504,7 @@ export class PIDBuilder {
   }
 
   /** PID.3 - Patient Identifier List (set all values) */
-  set_pid_3_patientIdentifierList(values: CX[] | null | undefined): this {
+  set_pid_3_identifier(values: CX[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -29516,7 +29516,7 @@ export class PIDBuilder {
   }
 
   /** PID.3 - Patient Identifier List (add single value) */
-  add_pid_3_patientIdentifierList(value: CX | null | undefined): this {
+  add_pid_3_identifier(value: CX | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -29531,7 +29531,7 @@ export class PIDBuilder {
   }
 
   /** PID.3 - Patient Identifier List */
-  get_pid_3_patientIdentifierList(): CX[] | undefined {
+  get_pid_3_identifier(): CX[] | undefined {
     const val = this.seg.fields[3];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -29576,7 +29576,7 @@ export class PIDBuilder {
   }
 
   /** PID.5 - Patient Name (set all values) */
-  set_pid_5_patientName(values: XPN[] | null | undefined): this {
+  set_pid_5_name(values: XPN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -29588,7 +29588,7 @@ export class PIDBuilder {
   }
 
   /** PID.5 - Patient Name (add single value) */
-  add_pid_5_patientName(value: XPN | null | undefined): this {
+  add_pid_5_name(value: XPN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -29603,7 +29603,7 @@ export class PIDBuilder {
   }
 
   /** PID.5 - Patient Name */
-  get_pid_5_patientName(): XPN[] | undefined {
+  get_pid_5_name(): XPN[] | undefined {
     const val = this.seg.fields[5];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -29612,7 +29612,7 @@ export class PIDBuilder {
   }
 
   /** PID.6 - Mother's Maiden Name (set all values) */
-  set_pid_6_motherSMaidenName(values: XPN[] | null | undefined): this {
+  set_pid_6_mothersMaidenName(values: XPN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -29624,7 +29624,7 @@ export class PIDBuilder {
   }
 
   /** PID.6 - Mother's Maiden Name (add single value) */
-  add_pid_6_motherSMaidenName(value: XPN | null | undefined): this {
+  add_pid_6_mothersMaidenName(value: XPN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -29639,7 +29639,7 @@ export class PIDBuilder {
   }
 
   /** PID.6 - Mother's Maiden Name */
-  get_pid_6_motherSMaidenName(): XPN[] | undefined {
+  get_pid_6_mothersMaidenName(): XPN[] | undefined {
     const val = this.seg.fields[6];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -29648,13 +29648,13 @@ export class PIDBuilder {
   }
 
   /** PID.7 - Date/Time of Birth */
-  set_pid_7_dateTimeOfBirth(value: string | null | undefined): this {
+  set_pid_7_birthDate(value: string | null | undefined): this {
     if (value != null) this.seg.fields[7] = value;
     return this;
   }
 
   /** PID.7 - Date/Time of Birth */
-  get_pid_7_dateTimeOfBirth(): string | undefined {
+  get_pid_7_birthDate(): string | undefined {
     const val = this.seg.fields[7];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -29662,13 +29662,13 @@ export class PIDBuilder {
   }
 
   /** PID.8 - Administrative Sex */
-  set_pid_8_administrativeSex(value: string | null | undefined): this {
+  set_pid_8_gender(value: string | null | undefined): this {
     if (value != null) this.seg.fields[8] = value;
     return this;
   }
 
   /** PID.8 - Administrative Sex */
-  get_pid_8_administrativeSex(): string | undefined {
+  get_pid_8_gender(): string | undefined {
     const val = this.seg.fields[8];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -29676,7 +29676,7 @@ export class PIDBuilder {
   }
 
   /** PID.9 - Patient Alias (set all values) */
-  set_pid_9_patientAlias(values: XPN[] | null | undefined): this {
+  set_pid_9_alias(values: XPN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -29688,7 +29688,7 @@ export class PIDBuilder {
   }
 
   /** PID.9 - Patient Alias (add single value) */
-  add_pid_9_patientAlias(value: XPN | null | undefined): this {
+  add_pid_9_alias(value: XPN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -29703,7 +29703,7 @@ export class PIDBuilder {
   }
 
   /** PID.9 - Patient Alias */
-  get_pid_9_patientAlias(): XPN[] | undefined {
+  get_pid_9_alias(): XPN[] | undefined {
     const val = this.seg.fields[9];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -29748,7 +29748,7 @@ export class PIDBuilder {
   }
 
   /** PID.11 - Patient Address (set all values) */
-  set_pid_11_patientAddress(values: XAD[] | null | undefined): this {
+  set_pid_11_address(values: XAD[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -29760,7 +29760,7 @@ export class PIDBuilder {
   }
 
   /** PID.11 - Patient Address (add single value) */
-  add_pid_11_patientAddress(value: XAD | null | undefined): this {
+  add_pid_11_address(value: XAD | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -29775,7 +29775,7 @@ export class PIDBuilder {
   }
 
   /** PID.11 - Patient Address */
-  get_pid_11_patientAddress(): XAD[] | undefined {
+  get_pid_11_address(): XAD[] | undefined {
     const val = this.seg.fields[11];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -29798,7 +29798,7 @@ export class PIDBuilder {
   }
 
   /** PID.13 - Phone Number - Home (set all values) */
-  set_pid_13_phoneNumberHome(values: XTN[] | null | undefined): this {
+  set_pid_13_homePhone(values: XTN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -29810,7 +29810,7 @@ export class PIDBuilder {
   }
 
   /** PID.13 - Phone Number - Home (add single value) */
-  add_pid_13_phoneNumberHome(value: XTN | null | undefined): this {
+  add_pid_13_homePhone(value: XTN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -29825,7 +29825,7 @@ export class PIDBuilder {
   }
 
   /** PID.13 - Phone Number - Home */
-  get_pid_13_phoneNumberHome(): XTN[] | undefined {
+  get_pid_13_homePhone(): XTN[] | undefined {
     const val = this.seg.fields[13];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -29834,7 +29834,7 @@ export class PIDBuilder {
   }
 
   /** PID.14 - Phone Number - Business (set all values) */
-  set_pid_14_phoneNumberBusiness(values: XTN[] | null | undefined): this {
+  set_pid_14_businessPhone(values: XTN[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -29846,7 +29846,7 @@ export class PIDBuilder {
   }
 
   /** PID.14 - Phone Number - Business (add single value) */
-  add_pid_14_phoneNumberBusiness(value: XTN | null | undefined): this {
+  add_pid_14_businessPhone(value: XTN | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -29861,7 +29861,7 @@ export class PIDBuilder {
   }
 
   /** PID.14 - Phone Number - Business */
-  get_pid_14_phoneNumberBusiness(): XTN[] | undefined {
+  get_pid_14_businessPhone(): XTN[] | undefined {
     const val = this.seg.fields[14];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -29870,14 +29870,14 @@ export class PIDBuilder {
   }
 
   /** PID.15 - Primary Language */
-  set_pid_15_primaryLanguage(value: CE | null | undefined): this {
+  set_pid_15_language(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[15] = fv;
     return this;
   }
 
   /** PID.15 - Primary Language */
-  get_pid_15_primaryLanguage(): CE | undefined {
+  get_pid_15_language(): CE | undefined {
     return fromCE(this.seg.fields[15]);
   }
 
@@ -29906,14 +29906,14 @@ export class PIDBuilder {
   }
 
   /** PID.18 - Patient Account Number */
-  set_pid_18_patientAccountNumber(value: CX | null | undefined): this {
+  set_pid_18_accountNumber(value: CX | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[18] = fv;
     return this;
   }
 
   /** PID.18 - Patient Account Number */
-  get_pid_18_patientAccountNumber(): CX | undefined {
+  get_pid_18_accountNumber(): CX | undefined {
     return fromCX(this.seg.fields[18]);
   }
 
@@ -29932,19 +29932,19 @@ export class PIDBuilder {
   }
 
   /** PID.20 - Driver's License Number - Patient */
-  set_pid_20_driverSLicenseNumberPatient(value: DLN | null | undefined): this {
+  set_pid_20_driversLicenseNumberPatient(value: DLN | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[20] = fv;
     return this;
   }
 
   /** PID.20 - Driver's License Number - Patient */
-  get_pid_20_driverSLicenseNumberPatient(): DLN | undefined {
+  get_pid_20_driversLicenseNumberPatient(): DLN | undefined {
     return fromDLN(this.seg.fields[20]);
   }
 
   /** PID.21 - Mother's Identifier (set all values) */
-  set_pid_21_motherSIdentifier(values: CX[] | null | undefined): this {
+  set_pid_21_mothersIdentifier(values: CX[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -29956,7 +29956,7 @@ export class PIDBuilder {
   }
 
   /** PID.21 - Mother's Identifier (add single value) */
-  add_pid_21_motherSIdentifier(value: CX | null | undefined): this {
+  add_pid_21_mothersIdentifier(value: CX | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -29971,7 +29971,7 @@ export class PIDBuilder {
   }
 
   /** PID.21 - Mother's Identifier */
-  get_pid_21_motherSIdentifier(): CX[] | undefined {
+  get_pid_21_mothersIdentifier(): CX[] | undefined {
     const val = this.seg.fields[21];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -29980,7 +29980,7 @@ export class PIDBuilder {
   }
 
   /** PID.22 - Ethnic Group (set all values) */
-  set_pid_22_ethnicGroup(values: CE[] | null | undefined): this {
+  set_pid_22_ethnicity(values: CE[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -29992,7 +29992,7 @@ export class PIDBuilder {
   }
 
   /** PID.22 - Ethnic Group (add single value) */
-  add_pid_22_ethnicGroup(value: CE | null | undefined): this {
+  add_pid_22_ethnicity(value: CE | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -30007,7 +30007,7 @@ export class PIDBuilder {
   }
 
   /** PID.22 - Ethnic Group */
-  get_pid_22_ethnicGroup(): CE[] | undefined {
+  get_pid_22_ethnicity(): CE[] | undefined {
     const val = this.seg.fields[22];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -30118,13 +30118,13 @@ export class PIDBuilder {
   }
 
   /** PID.29 - Patient Death Date and Time */
-  set_pid_29_patientDeathDateAndTime(value: string | null | undefined): this {
+  set_pid_29_deceasedDateTime(value: string | null | undefined): this {
     if (value != null) this.seg.fields[29] = value;
     return this;
   }
 
   /** PID.29 - Patient Death Date and Time */
-  get_pid_29_patientDeathDateAndTime(): string | undefined {
+  get_pid_29_deceasedDateTime(): string | undefined {
     const val = this.seg.fields[29];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -30132,13 +30132,13 @@ export class PIDBuilder {
   }
 
   /** PID.30 - Patient Death Indicator */
-  set_pid_30_patientDeathIndicator(value: string | null | undefined): this {
+  set_pid_30_deceased(value: string | null | undefined): this {
     if (value != null) this.seg.fields[30] = value;
     return this;
   }
 
   /** PID.30 - Patient Death Indicator */
-  get_pid_30_patientDeathIndicator(): string | undefined {
+  get_pid_30_deceased(): string | undefined {
     const val = this.seg.fields[30];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -30293,7 +30293,7 @@ export class PIDBuilder {
 // ====== PR1 Segment ======
 
 /** Get PR1.1 - Set ID - PR1 */
-export function PR1_1_set_i_d_p_r1(seg: HL7v2Segment): string | undefined {
+export function PR1_1_set_id_pr1(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -31589,7 +31589,7 @@ export function PR1_16_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PR1.17 - Procedure DRG Type */
-export function PR1_17_procedure_d_r_g_type(seg: HL7v2Segment): string | undefined {
+export function PR1_17_procedure_drg_type(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[17];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -32057,7 +32057,7 @@ export class PR1Builder {
 // ====== PV1 Segment ======
 
 /** Get PV1.1 - Set ID - PV1 */
-export function PV1_1_set_i_d_p_v1(seg: HL7v2Segment): string | undefined {
+export function PV1_1_set_id_pv1(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -32065,7 +32065,7 @@ export function PV1_1_set_i_d_p_v1(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PV1.2 - Patient Class */
-export function PV1_2_patient_class(seg: HL7v2Segment): string | undefined {
+export function PV1_2_class(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[2];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -33783,7 +33783,7 @@ export function PV1_15_ambulatory_status(seg: HL7v2Segment): string | undefined 
 }
 
 /** Get PV1.16 - VIP Indicator */
-export function PV1_16_v_i_p_indicator(seg: HL7v2Segment): string | undefined {
+export function PV1_16_vip(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[16];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -34151,7 +34151,7 @@ export function PV1_17_23_9_original_text(seg: HL7v2Segment): string | undefined
 }
 
 /** Get PV1.18 - Patient Type */
-export function PV1_18_patient_type(seg: HL7v2Segment): string | undefined {
+export function PV1_18_type(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[18];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -34827,7 +34827,7 @@ export function PV1_43_11_3_system_type(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PV1.44 - Admit Date/Time */
-export function PV1_44_admit_date_time(seg: HL7v2Segment): string | undefined {
+export function PV1_44_admission(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[44];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -34835,7 +34835,7 @@ export function PV1_44_admit_date_time(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PV1.45 - Discharge Date/Time */
-export function PV1_45_discharge_date_time(seg: HL7v2Segment): string | undefined {
+export function PV1_45_discharge(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[45];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -35464,13 +35464,13 @@ export class PV1Builder {
   }
 
   /** PV1.2 - Patient Class */
-  set_pv1_2_patientClass(value: string | null | undefined): this {
+  set_pv1_2_class(value: string | null | undefined): this {
     if (value != null) this.seg.fields[2] = value;
     return this;
   }
 
   /** PV1.2 - Patient Class */
-  get_pv1_2_patientClass(): string | undefined {
+  get_pv1_2_class(): string | undefined {
     const val = this.seg.fields[2];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -35718,13 +35718,13 @@ export class PV1Builder {
   }
 
   /** PV1.16 - VIP Indicator */
-  set_pv1_16_vipIndicator(value: string | null | undefined): this {
+  set_pv1_16_vip(value: string | null | undefined): this {
     if (value != null) this.seg.fields[16] = value;
     return this;
   }
 
   /** PV1.16 - VIP Indicator */
-  get_pv1_16_vipIndicator(): string | undefined {
+  get_pv1_16_vip(): string | undefined {
     const val = this.seg.fields[16];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -35768,13 +35768,13 @@ export class PV1Builder {
   }
 
   /** PV1.18 - Patient Type */
-  set_pv1_18_patientType(value: string | null | undefined): this {
+  set_pv1_18_type(value: string | null | undefined): this {
     if (value != null) this.seg.fields[18] = value;
     return this;
   }
 
   /** PV1.18 - Patient Type */
-  get_pv1_18_patientType(): string | undefined {
+  get_pv1_18_type(): string | undefined {
     const val = this.seg.fields[18];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -36144,13 +36144,13 @@ export class PV1Builder {
   }
 
   /** PV1.44 - Admit Date/Time */
-  set_pv1_44_admitDateTime(value: string | null | undefined): this {
+  set_pv1_44_admission(value: string | null | undefined): this {
     if (value != null) this.seg.fields[44] = value;
     return this;
   }
 
   /** PV1.44 - Admit Date/Time */
-  get_pv1_44_admitDateTime(): string | undefined {
+  get_pv1_44_admission(): string | undefined {
     const val = this.seg.fields[44];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -36158,13 +36158,13 @@ export class PV1Builder {
   }
 
   /** PV1.45 - Discharge Date/Time */
-  set_pv1_45_dischargeDateTime(value: string | null | undefined): this {
+  set_pv1_45_discharge(value: string | null | undefined): this {
     if (value != null) this.seg.fields[45] = value;
     return this;
   }
 
   /** PV1.45 - Discharge Date/Time */
-  get_pv1_45_dischargeDateTime(): string | undefined {
+  get_pv1_45_discharge(): string | undefined {
     const val = this.seg.fields[45];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -36531,7 +36531,7 @@ export function PV2_4_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PV2.5 - Patient Valuables */
-export function PV2_5_patient_valuables(seg: HL7v2Segment): string | undefined {
+export function PV2_5_valuables(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[5];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -36539,7 +36539,7 @@ export function PV2_5_patient_valuables(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PV2.6 - Patient Valuables Location */
-export function PV2_6_patient_valuables_location(seg: HL7v2Segment): string | undefined {
+export function PV2_6_valuables_location(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[6];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -36555,7 +36555,7 @@ export function PV2_7_visit_user_code(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PV2.8 - Expected Admit Date/Time */
-export function PV2_8_expected_admit_date_time(seg: HL7v2Segment): string | undefined {
+export function PV2_8_expected_admission(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[8];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -36563,7 +36563,7 @@ export function PV2_8_expected_admit_date_time(seg: HL7v2Segment): string | unde
 }
 
 /** Get PV2.9 - Expected Discharge Date/Time */
-export function PV2_9_expected_discharge_date_time(seg: HL7v2Segment): string | undefined {
+export function PV2_9_expected_discharge(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[9];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -37123,7 +37123,7 @@ export function PV2_23_10_organization_id(seg: HL7v2Segment): string | undefined
 }
 
 /** Get PV2.24 - Patient Status Code */
-export function PV2_24_patient_status_code(seg: HL7v2Segment): string | undefined {
+export function PV2_24_status(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[24];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -37443,7 +37443,7 @@ export function PV2_42_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PV2.43 - Living Will Code */
-export function PV2_43_living_will_code(seg: HL7v2Segment): string | undefined {
+export function PV2_43_living_will(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[43];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -37495,7 +37495,7 @@ export function PV2_45_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get PV2.46 - Patient Status Effective Date */
-export function PV2_46_patient_status_effective_date(seg: HL7v2Segment): string | undefined {
+export function PV2_46_status_start(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[46];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -37503,7 +37503,7 @@ export function PV2_46_patient_status_effective_date(seg: HL7v2Segment): string 
 }
 
 /** Get PV2.47 - Expected LOA Return Date/Time */
-export function PV2_47_expected_l_o_a_return_date_time(seg: HL7v2Segment): string | undefined {
+export function PV2_47_expected_loa_return_date_time(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[47];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -37578,13 +37578,13 @@ export class PV2Builder {
   }
 
   /** PV2.5 - Patient Valuables */
-  set_pv2_5_patientValuables(value: string | null | undefined): this {
+  set_pv2_5_valuables(value: string | null | undefined): this {
     if (value != null) this.seg.fields[5] = value;
     return this;
   }
 
   /** PV2.5 - Patient Valuables */
-  get_pv2_5_patientValuables(): string | undefined {
+  get_pv2_5_valuables(): string | undefined {
     const val = this.seg.fields[5];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -37592,13 +37592,13 @@ export class PV2Builder {
   }
 
   /** PV2.6 - Patient Valuables Location */
-  set_pv2_6_patientValuablesLocation(value: string | null | undefined): this {
+  set_pv2_6_valuablesLocation(value: string | null | undefined): this {
     if (value != null) this.seg.fields[6] = value;
     return this;
   }
 
   /** PV2.6 - Patient Valuables Location */
-  get_pv2_6_patientValuablesLocation(): string | undefined {
+  get_pv2_6_valuablesLocation(): string | undefined {
     const val = this.seg.fields[6];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -37620,13 +37620,13 @@ export class PV2Builder {
   }
 
   /** PV2.8 - Expected Admit Date/Time */
-  set_pv2_8_expectedAdmitDateTime(value: string | null | undefined): this {
+  set_pv2_8_expectedAdmission(value: string | null | undefined): this {
     if (value != null) this.seg.fields[8] = value;
     return this;
   }
 
   /** PV2.8 - Expected Admit Date/Time */
-  get_pv2_8_expectedAdmitDateTime(): string | undefined {
+  get_pv2_8_expectedAdmission(): string | undefined {
     const val = this.seg.fields[8];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -37634,13 +37634,13 @@ export class PV2Builder {
   }
 
   /** PV2.9 - Expected Discharge Date/Time */
-  set_pv2_9_expectedDischargeDateTime(value: string | null | undefined): this {
+  set_pv2_9_expectedDischarge(value: string | null | undefined): this {
     if (value != null) this.seg.fields[9] = value;
     return this;
   }
 
   /** PV2.9 - Expected Discharge Date/Time */
-  get_pv2_9_expectedDischargeDateTime(): string | undefined {
+  get_pv2_9_expectedDischarge(): string | undefined {
     const val = this.seg.fields[9];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -37888,13 +37888,13 @@ export class PV2Builder {
   }
 
   /** PV2.24 - Patient Status Code */
-  set_pv2_24_patientStatusCode(value: string | null | undefined): this {
+  set_pv2_24_status(value: string | null | undefined): this {
     if (value != null) this.seg.fields[24] = value;
     return this;
   }
 
   /** PV2.24 - Patient Status Code */
-  get_pv2_24_patientStatusCode(): string | undefined {
+  get_pv2_24_status(): string | undefined {
     const val = this.seg.fields[24];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -37972,14 +37972,14 @@ export class PV2Builder {
   }
 
   /** PV2.30 - Patient Charge Adjustment Code */
-  set_pv2_30_patientChargeAdjustmentCode(value: CE | null | undefined): this {
+  set_pv2_30_chargeAdjustmentCode(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[30] = fv;
     return this;
   }
 
   /** PV2.30 - Patient Charge Adjustment Code */
-  get_pv2_30_patientChargeAdjustmentCode(): CE | undefined {
+  get_pv2_30_chargeAdjustmentCode(): CE | undefined {
     return fromCE(this.seg.fields[30]);
   }
 
@@ -38178,25 +38178,25 @@ export class PV2Builder {
   }
 
   /** PV2.42 - Patient Condition Code */
-  set_pv2_42_patientConditionCode(value: CE | null | undefined): this {
+  set_pv2_42_conditionCode(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[42] = fv;
     return this;
   }
 
   /** PV2.42 - Patient Condition Code */
-  get_pv2_42_patientConditionCode(): CE | undefined {
+  get_pv2_42_conditionCode(): CE | undefined {
     return fromCE(this.seg.fields[42]);
   }
 
   /** PV2.43 - Living Will Code */
-  set_pv2_43_livingWillCode(value: string | null | undefined): this {
+  set_pv2_43_livingWill(value: string | null | undefined): this {
     if (value != null) this.seg.fields[43] = value;
     return this;
   }
 
   /** PV2.43 - Living Will Code */
-  get_pv2_43_livingWillCode(): string | undefined {
+  get_pv2_43_livingWill(): string | undefined {
     const val = this.seg.fields[43];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -38254,13 +38254,13 @@ export class PV2Builder {
   }
 
   /** PV2.46 - Patient Status Effective Date */
-  set_pv2_46_patientStatusEffectiveDate(value: string | null | undefined): this {
+  set_pv2_46_statusStart(value: string | null | undefined): this {
     if (value != null) this.seg.fields[46] = value;
     return this;
   }
 
   /** PV2.46 - Patient Status Effective Date */
-  get_pv2_46_patientStatusEffectiveDate(): string | undefined {
+  get_pv2_46_statusStart(): string | undefined {
     const val = this.seg.fields[46];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39268,7 +39268,7 @@ export class ROLBuilder {
   }
 
   /** ROL.11 - Office/Home Address/Birthplace (set all values) */
-  set_rol_11_officeHomeAddressBirthplace(values: XAD[] | null | undefined): this {
+  set_rol_11_address(values: XAD[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -39280,7 +39280,7 @@ export class ROLBuilder {
   }
 
   /** ROL.11 - Office/Home Address/Birthplace (add single value) */
-  add_rol_11_officeHomeAddressBirthplace(value: XAD | null | undefined): this {
+  add_rol_11_address(value: XAD | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -39295,7 +39295,7 @@ export class ROLBuilder {
   }
 
   /** ROL.11 - Office/Home Address/Birthplace */
-  get_rol_11_officeHomeAddressBirthplace(): XAD[] | undefined {
+  get_rol_11_address(): XAD[] | undefined {
     const val = this.seg.fields[11];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -39459,7 +39459,7 @@ export function SFT_3_software_product_name(seg: HL7v2Segment): string | undefin
 }
 
 /** Get SFT.4 - Software Binary ID */
-export function SFT_4_software_binary_i_d(seg: HL7v2Segment): string | undefined {
+export function SFT_4_software_binary_id(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[4];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39575,7 +39575,7 @@ export class SFTBuilder {
 // ====== UB1 Segment ======
 
 /** Get UB1.1 - Set ID - UB1 */
-export function UB1_1_set_i_d_u_b1(seg: HL7v2Segment): string | undefined {
+export function UB1_1_set_id_ub1(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39583,7 +39583,7 @@ export function UB1_1_set_i_d_u_b1(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get UB1.2 - Blood Deductible  (43) */
-export function UB1_2_blood_deductible_43(seg: HL7v2Segment): string | undefined {
+export function UB1_2_blood_deductible(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[2];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39591,7 +39591,7 @@ export function UB1_2_blood_deductible_43(seg: HL7v2Segment): string | undefined
 }
 
 /** Get UB1.3 - Blood Furnished-Pints Of (40) */
-export function UB1_3_blood_furnished_pints_of_40(seg: HL7v2Segment): string | undefined {
+export function UB1_3_blood_furnished_pints_of(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[3];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39599,7 +39599,7 @@ export function UB1_3_blood_furnished_pints_of_40(seg: HL7v2Segment): string | u
 }
 
 /** Get UB1.4 - Blood Replaced-Pints (41) */
-export function UB1_4_blood_replaced_pints_41(seg: HL7v2Segment): string | undefined {
+export function UB1_4_blood_replaced_pints(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[4];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39607,7 +39607,7 @@ export function UB1_4_blood_replaced_pints_41(seg: HL7v2Segment): string | undef
 }
 
 /** Get UB1.5 - Blood Not Replaced-Pints(42) */
-export function UB1_5_blood_not_replaced_pints_42(seg: HL7v2Segment): string | undefined {
+export function UB1_5_blood_not_replaced_pints(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[5];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39615,7 +39615,7 @@ export function UB1_5_blood_not_replaced_pints_42(seg: HL7v2Segment): string | u
 }
 
 /** Get UB1.6 - Co-Insurance Days (25) */
-export function UB1_6_co_insurance_days_25(seg: HL7v2Segment): string | undefined {
+export function UB1_6_co_insurance_days(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[6];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39623,7 +39623,7 @@ export function UB1_6_co_insurance_days_25(seg: HL7v2Segment): string | undefine
 }
 
 /** Get UB1.7 - Condition Code (35-39) */
-export function UB1_7_condition_code_35_39(seg: HL7v2Segment): string | undefined {
+export function UB1_7_condition_code(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[7];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39631,7 +39631,7 @@ export function UB1_7_condition_code_35_39(seg: HL7v2Segment): string | undefine
 }
 
 /** Get UB1.8 - Covered Days - (23) */
-export function UB1_8_covered_days_23(seg: HL7v2Segment): string | undefined {
+export function UB1_8_covered_days(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[8];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39639,7 +39639,7 @@ export function UB1_8_covered_days_23(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get UB1.9 - Non Covered Days - (24) */
-export function UB1_9_non_covered_days_24(seg: HL7v2Segment): string | undefined {
+export function UB1_9_non_covered_days(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[9];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39725,7 +39725,7 @@ export function UB1_10_2_2_currency(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get UB1.11 - Number Of Grace Days (90) */
-export function UB1_11_number_of_grace_days_90(seg: HL7v2Segment): string | undefined {
+export function UB1_11_number_of_grace_days(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[11];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39805,7 +39805,7 @@ export function UB1_13_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get UB1.14 - PSRO/UR Approved Stay-Fm (88) */
-export function UB1_14_p_s_r_o_u_r_approved_stay_fm_88(seg: HL7v2Segment): string | undefined {
+export function UB1_14_psro_ur_approved_stay_fm(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[14];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39813,7 +39813,7 @@ export function UB1_14_p_s_r_o_u_r_approved_stay_fm_88(seg: HL7v2Segment): strin
 }
 
 /** Get UB1.15 - PSRO/UR Approved Stay-To (89) */
-export function UB1_15_p_s_r_o_u_r_approved_stay_to_89(seg: HL7v2Segment): string | undefined {
+export function UB1_15_psro_ur_approved_stay_to(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[15];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39923,7 +39923,7 @@ export function UB1_17_6_alt_system(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get UB1.18 - Occur Span Start Date(33) */
-export function UB1_18_occur_span_start_date_33(seg: HL7v2Segment): string | undefined {
+export function UB1_18_occur_span_start_date(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[18];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39931,7 +39931,7 @@ export function UB1_18_occur_span_start_date_33(seg: HL7v2Segment): string | und
 }
 
 /** Get UB1.19 - Occur Span End Date (33) */
-export function UB1_19_occur_span_end_date_33(seg: HL7v2Segment): string | undefined {
+export function UB1_19_occur_span_end_date(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[19];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39939,7 +39939,7 @@ export function UB1_19_occur_span_end_date_33(seg: HL7v2Segment): string | undef
 }
 
 /** Get UB1.20 - UB-82 Locator 2 */
-export function UB1_20_u_b_82_locator_2(seg: HL7v2Segment): string | undefined {
+export function UB1_20_ub82_locator2(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[20];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39947,7 +39947,7 @@ export function UB1_20_u_b_82_locator_2(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get UB1.21 - UB-82 Locator 9 */
-export function UB1_21_u_b_82_locator_9(seg: HL7v2Segment): string | undefined {
+export function UB1_21_ub82_locator9(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[21];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39955,7 +39955,7 @@ export function UB1_21_u_b_82_locator_9(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get UB1.22 - UB-82 Locator 27 */
-export function UB1_22_u_b_82_locator_27(seg: HL7v2Segment): string | undefined {
+export function UB1_22_ub82_locator27(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[22];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39963,7 +39963,7 @@ export function UB1_22_u_b_82_locator_27(seg: HL7v2Segment): string | undefined 
 }
 
 /** Get UB1.23 - UB-82 Locator 45 */
-export function UB1_23_u_b_82_locator_45(seg: HL7v2Segment): string | undefined {
+export function UB1_23_ub82_locator45(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[23];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -39988,13 +39988,13 @@ export class UB1Builder {
   }
 
   /** UB1.2 - Blood Deductible  (43) */
-  set_ub1_2_bloodDeductible43(value: string | null | undefined): this {
+  set_ub1_2_bloodDeductible(value: string | null | undefined): this {
     if (value != null) this.seg.fields[2] = value;
     return this;
   }
 
   /** UB1.2 - Blood Deductible  (43) */
-  get_ub1_2_bloodDeductible43(): string | undefined {
+  get_ub1_2_bloodDeductible(): string | undefined {
     const val = this.seg.fields[2];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40002,13 +40002,13 @@ export class UB1Builder {
   }
 
   /** UB1.3 - Blood Furnished-Pints Of (40) */
-  set_ub1_3_bloodFurnishedPintsOf40(value: string | null | undefined): this {
+  set_ub1_3_bloodFurnishedPintsOf(value: string | null | undefined): this {
     if (value != null) this.seg.fields[3] = value;
     return this;
   }
 
   /** UB1.3 - Blood Furnished-Pints Of (40) */
-  get_ub1_3_bloodFurnishedPintsOf40(): string | undefined {
+  get_ub1_3_bloodFurnishedPintsOf(): string | undefined {
     const val = this.seg.fields[3];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40016,13 +40016,13 @@ export class UB1Builder {
   }
 
   /** UB1.4 - Blood Replaced-Pints (41) */
-  set_ub1_4_bloodReplacedPints41(value: string | null | undefined): this {
+  set_ub1_4_bloodReplacedPints(value: string | null | undefined): this {
     if (value != null) this.seg.fields[4] = value;
     return this;
   }
 
   /** UB1.4 - Blood Replaced-Pints (41) */
-  get_ub1_4_bloodReplacedPints41(): string | undefined {
+  get_ub1_4_bloodReplacedPints(): string | undefined {
     const val = this.seg.fields[4];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40030,13 +40030,13 @@ export class UB1Builder {
   }
 
   /** UB1.5 - Blood Not Replaced-Pints(42) */
-  set_ub1_5_bloodNotReplacedPints42(value: string | null | undefined): this {
+  set_ub1_5_bloodNotReplacedPints(value: string | null | undefined): this {
     if (value != null) this.seg.fields[5] = value;
     return this;
   }
 
   /** UB1.5 - Blood Not Replaced-Pints(42) */
-  get_ub1_5_bloodNotReplacedPints42(): string | undefined {
+  get_ub1_5_bloodNotReplacedPints(): string | undefined {
     const val = this.seg.fields[5];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40044,13 +40044,13 @@ export class UB1Builder {
   }
 
   /** UB1.6 - Co-Insurance Days (25) */
-  set_ub1_6_coInsuranceDays25(value: string | null | undefined): this {
+  set_ub1_6_coInsuranceDays(value: string | null | undefined): this {
     if (value != null) this.seg.fields[6] = value;
     return this;
   }
 
   /** UB1.6 - Co-Insurance Days (25) */
-  get_ub1_6_coInsuranceDays25(): string | undefined {
+  get_ub1_6_coInsuranceDays(): string | undefined {
     const val = this.seg.fields[6];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40058,13 +40058,13 @@ export class UB1Builder {
   }
 
   /** UB1.7 - Condition Code (35-39) */
-  set_ub1_7_conditionCode3539(value: string | null | undefined): this {
+  set_ub1_7_conditionCode(value: string | null | undefined): this {
     if (value != null) this.seg.fields[7] = value;
     return this;
   }
 
   /** UB1.7 - Condition Code (35-39) */
-  get_ub1_7_conditionCode3539(): string | undefined {
+  get_ub1_7_conditionCode(): string | undefined {
     const val = this.seg.fields[7];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40072,13 +40072,13 @@ export class UB1Builder {
   }
 
   /** UB1.8 - Covered Days - (23) */
-  set_ub1_8_coveredDays23(value: string | null | undefined): this {
+  set_ub1_8_coveredDays(value: string | null | undefined): this {
     if (value != null) this.seg.fields[8] = value;
     return this;
   }
 
   /** UB1.8 - Covered Days - (23) */
-  get_ub1_8_coveredDays23(): string | undefined {
+  get_ub1_8_coveredDays(): string | undefined {
     const val = this.seg.fields[8];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40086,13 +40086,13 @@ export class UB1Builder {
   }
 
   /** UB1.9 - Non Covered Days - (24) */
-  set_ub1_9_nonCoveredDays24(value: string | null | undefined): this {
+  set_ub1_9_nonCoveredDays(value: string | null | undefined): this {
     if (value != null) this.seg.fields[9] = value;
     return this;
   }
 
   /** UB1.9 - Non Covered Days - (24) */
-  get_ub1_9_nonCoveredDays24(): string | undefined {
+  get_ub1_9_nonCoveredDays(): string | undefined {
     const val = this.seg.fields[9];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40100,7 +40100,7 @@ export class UB1Builder {
   }
 
   /** UB1.10 - Value Amount & Code (46-49) (set all values) */
-  set_ub1_10_valueAmountCode4649(values: UVC[] | null | undefined): this {
+  set_ub1_10_valueAmountAndCode(values: UVC[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -40112,7 +40112,7 @@ export class UB1Builder {
   }
 
   /** UB1.10 - Value Amount & Code (46-49) (add single value) */
-  add_ub1_10_valueAmountCode4649(value: UVC | null | undefined): this {
+  add_ub1_10_valueAmountAndCode(value: UVC | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -40127,7 +40127,7 @@ export class UB1Builder {
   }
 
   /** UB1.10 - Value Amount & Code (46-49) */
-  get_ub1_10_valueAmountCode4649(): UVC[] | undefined {
+  get_ub1_10_valueAmountAndCode(): UVC[] | undefined {
     const val = this.seg.fields[10];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -40136,13 +40136,13 @@ export class UB1Builder {
   }
 
   /** UB1.11 - Number Of Grace Days (90) */
-  set_ub1_11_numberOfGraceDays90(value: string | null | undefined): this {
+  set_ub1_11_numberOfGraceDays(value: string | null | undefined): this {
     if (value != null) this.seg.fields[11] = value;
     return this;
   }
 
   /** UB1.11 - Number Of Grace Days (90) */
-  get_ub1_11_numberOfGraceDays90(): string | undefined {
+  get_ub1_11_numberOfGraceDays(): string | undefined {
     const val = this.seg.fields[11];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40150,37 +40150,37 @@ export class UB1Builder {
   }
 
   /** UB1.12 - Special Program Indicator (44) */
-  set_ub1_12_specialProgramIndicator44(value: CE | null | undefined): this {
+  set_ub1_12_specialProgramIndicator(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[12] = fv;
     return this;
   }
 
   /** UB1.12 - Special Program Indicator (44) */
-  get_ub1_12_specialProgramIndicator44(): CE | undefined {
+  get_ub1_12_specialProgramIndicator(): CE | undefined {
     return fromCE(this.seg.fields[12]);
   }
 
   /** UB1.13 - PSRO/UR Approval Indicator (87) */
-  set_ub1_13_psroUrApprovalIndicator87(value: CE | null | undefined): this {
+  set_ub1_13_psroUrApprovalIndicator(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[13] = fv;
     return this;
   }
 
   /** UB1.13 - PSRO/UR Approval Indicator (87) */
-  get_ub1_13_psroUrApprovalIndicator87(): CE | undefined {
+  get_ub1_13_psroUrApprovalIndicator(): CE | undefined {
     return fromCE(this.seg.fields[13]);
   }
 
   /** UB1.14 - PSRO/UR Approved Stay-Fm (88) */
-  set_ub1_14_psroUrApprovedStayFm88(value: string | null | undefined): this {
+  set_ub1_14_psroUrApprovedStayFm(value: string | null | undefined): this {
     if (value != null) this.seg.fields[14] = value;
     return this;
   }
 
   /** UB1.14 - PSRO/UR Approved Stay-Fm (88) */
-  get_ub1_14_psroUrApprovedStayFm88(): string | undefined {
+  get_ub1_14_psroUrApprovedStayFm(): string | undefined {
     const val = this.seg.fields[14];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40188,13 +40188,13 @@ export class UB1Builder {
   }
 
   /** UB1.15 - PSRO/UR Approved Stay-To (89) */
-  set_ub1_15_psroUrApprovedStayTo89(value: string | null | undefined): this {
+  set_ub1_15_psroUrApprovedStayTo(value: string | null | undefined): this {
     if (value != null) this.seg.fields[15] = value;
     return this;
   }
 
   /** UB1.15 - PSRO/UR Approved Stay-To (89) */
-  get_ub1_15_psroUrApprovedStayTo89(): string | undefined {
+  get_ub1_15_psroUrApprovedStayTo(): string | undefined {
     const val = this.seg.fields[15];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40202,7 +40202,7 @@ export class UB1Builder {
   }
 
   /** UB1.16 - Occurrence (28-32) (set all values) */
-  set_ub1_16_occurrence2832(values: OCD[] | null | undefined): this {
+  set_ub1_16_occurrence(values: OCD[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -40214,7 +40214,7 @@ export class UB1Builder {
   }
 
   /** UB1.16 - Occurrence (28-32) (add single value) */
-  add_ub1_16_occurrence2832(value: OCD | null | undefined): this {
+  add_ub1_16_occurrence(value: OCD | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -40229,7 +40229,7 @@ export class UB1Builder {
   }
 
   /** UB1.16 - Occurrence (28-32) */
-  get_ub1_16_occurrence2832(): OCD[] | undefined {
+  get_ub1_16_occurrence(): OCD[] | undefined {
     const val = this.seg.fields[16];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -40238,25 +40238,25 @@ export class UB1Builder {
   }
 
   /** UB1.17 - Occurrence Span (33) */
-  set_ub1_17_occurrenceSpan33(value: CE | null | undefined): this {
+  set_ub1_17_occurrenceSpan(value: CE | null | undefined): this {
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) this.seg.fields[17] = fv;
     return this;
   }
 
   /** UB1.17 - Occurrence Span (33) */
-  get_ub1_17_occurrenceSpan33(): CE | undefined {
+  get_ub1_17_occurrenceSpan(): CE | undefined {
     return fromCE(this.seg.fields[17]);
   }
 
   /** UB1.18 - Occur Span Start Date(33) */
-  set_ub1_18_occurSpanStartDate33(value: string | null | undefined): this {
+  set_ub1_18_occurSpanStartDate(value: string | null | undefined): this {
     if (value != null) this.seg.fields[18] = value;
     return this;
   }
 
   /** UB1.18 - Occur Span Start Date(33) */
-  get_ub1_18_occurSpanStartDate33(): string | undefined {
+  get_ub1_18_occurSpanStartDate(): string | undefined {
     const val = this.seg.fields[18];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40264,13 +40264,13 @@ export class UB1Builder {
   }
 
   /** UB1.19 - Occur Span End Date (33) */
-  set_ub1_19_occurSpanEndDate33(value: string | null | undefined): this {
+  set_ub1_19_occurSpanEndDate(value: string | null | undefined): this {
     if (value != null) this.seg.fields[19] = value;
     return this;
   }
 
   /** UB1.19 - Occur Span End Date (33) */
-  get_ub1_19_occurSpanEndDate33(): string | undefined {
+  get_ub1_19_occurSpanEndDate(): string | undefined {
     const val = this.seg.fields[19];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40341,7 +40341,7 @@ export class UB1Builder {
 // ====== UB2 Segment ======
 
 /** Get UB2.1 - Set ID - UB2 */
-export function UB2_1_set_i_d_u_b2(seg: HL7v2Segment): string | undefined {
+export function UB2_1_set_id_ub2(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[1];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40349,7 +40349,7 @@ export function UB2_1_set_i_d_u_b2(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get UB2.2 - Co-Insurance Days (9) */
-export function UB2_2_co_insurance_days_9(seg: HL7v2Segment): string | undefined {
+export function UB2_2_co_insurance_days(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[2];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40357,7 +40357,7 @@ export function UB2_2_co_insurance_days_9(seg: HL7v2Segment): string | undefined
 }
 
 /** Get UB2.3 - Condition Code (24-30) */
-export function UB2_3_condition_code_24_30(seg: HL7v2Segment): string | undefined {
+export function UB2_3_condition_code(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[3];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40365,7 +40365,7 @@ export function UB2_3_condition_code_24_30(seg: HL7v2Segment): string | undefine
 }
 
 /** Get UB2.4 - Covered Days (7) */
-export function UB2_4_covered_days_7(seg: HL7v2Segment): string | undefined {
+export function UB2_4_covered_days(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[4];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40373,7 +40373,7 @@ export function UB2_4_covered_days_7(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get UB2.5 - Non-Covered Days (8) */
-export function UB2_5_non_covered_days_8(seg: HL7v2Segment): string | undefined {
+export function UB2_5_non_covered_days(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[5];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40597,7 +40597,7 @@ export function UB2_8_3_end(seg: HL7v2Segment): string | undefined {
 }
 
 /** Get UB2.9 - UB92 Locator 2 (State) */
-export function UB2_9_u_b92_locator_2_state(seg: HL7v2Segment): string | undefined {
+export function UB2_9_ub92_locator2(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[9];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40605,7 +40605,7 @@ export function UB2_9_u_b92_locator_2_state(seg: HL7v2Segment): string | undefin
 }
 
 /** Get UB2.10 - UB92 Locator 11 (State) */
-export function UB2_10_u_b92_locator_11_state(seg: HL7v2Segment): string | undefined {
+export function UB2_10_ub92_locator11(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[10];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40613,7 +40613,7 @@ export function UB2_10_u_b92_locator_11_state(seg: HL7v2Segment): string | undef
 }
 
 /** Get UB2.11 - UB92 Locator 31 (National) */
-export function UB2_11_u_b92_locator_31_national(seg: HL7v2Segment): string | undefined {
+export function UB2_11_ub92_locator31(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[11];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40629,7 +40629,7 @@ export function UB2_12_document_control_number(seg: HL7v2Segment): string | unde
 }
 
 /** Get UB2.13 - UB92 Locator 49 (National) */
-export function UB2_13_u_b92_locator_49_national(seg: HL7v2Segment): string | undefined {
+export function UB2_13_ub92_locator49(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[13];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40637,7 +40637,7 @@ export function UB2_13_u_b92_locator_49_national(seg: HL7v2Segment): string | un
 }
 
 /** Get UB2.14 - UB92 Locator 56 (State) */
-export function UB2_14_u_b92_locator_56_state(seg: HL7v2Segment): string | undefined {
+export function UB2_14_ub92_locator56(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[14];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40645,7 +40645,7 @@ export function UB2_14_u_b92_locator_56_state(seg: HL7v2Segment): string | undef
 }
 
 /** Get UB2.15 - UB92 Locator 57 (National) */
-export function UB2_15_u_b92_locator_57_national(seg: HL7v2Segment): string | undefined {
+export function UB2_15_ub92_locator57(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[15];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40653,7 +40653,7 @@ export function UB2_15_u_b92_locator_57_national(seg: HL7v2Segment): string | un
 }
 
 /** Get UB2.16 - UB92 Locator 78 (State) */
-export function UB2_16_u_b92_locator_78_state(seg: HL7v2Segment): string | undefined {
+export function UB2_16_ub92_locator78(seg: HL7v2Segment): string | undefined {
   const val = seg.fields[16];
   if (typeof val === "string") return val;
   if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40686,13 +40686,13 @@ export class UB2Builder {
   }
 
   /** UB2.2 - Co-Insurance Days (9) */
-  set_ub2_2_coInsuranceDays9(value: string | null | undefined): this {
+  set_ub2_2_coInsuranceDays(value: string | null | undefined): this {
     if (value != null) this.seg.fields[2] = value;
     return this;
   }
 
   /** UB2.2 - Co-Insurance Days (9) */
-  get_ub2_2_coInsuranceDays9(): string | undefined {
+  get_ub2_2_coInsuranceDays(): string | undefined {
     const val = this.seg.fields[2];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40700,13 +40700,13 @@ export class UB2Builder {
   }
 
   /** UB2.3 - Condition Code (24-30) */
-  set_ub2_3_conditionCode2430(value: string | null | undefined): this {
+  set_ub2_3_conditionCode(value: string | null | undefined): this {
     if (value != null) this.seg.fields[3] = value;
     return this;
   }
 
   /** UB2.3 - Condition Code (24-30) */
-  get_ub2_3_conditionCode2430(): string | undefined {
+  get_ub2_3_conditionCode(): string | undefined {
     const val = this.seg.fields[3];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40714,13 +40714,13 @@ export class UB2Builder {
   }
 
   /** UB2.4 - Covered Days (7) */
-  set_ub2_4_coveredDays7(value: string | null | undefined): this {
+  set_ub2_4_coveredDays(value: string | null | undefined): this {
     if (value != null) this.seg.fields[4] = value;
     return this;
   }
 
   /** UB2.4 - Covered Days (7) */
-  get_ub2_4_coveredDays7(): string | undefined {
+  get_ub2_4_coveredDays(): string | undefined {
     const val = this.seg.fields[4];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40728,13 +40728,13 @@ export class UB2Builder {
   }
 
   /** UB2.5 - Non-Covered Days (8) */
-  set_ub2_5_nonCoveredDays8(value: string | null | undefined): this {
+  set_ub2_5_nonCoveredDays(value: string | null | undefined): this {
     if (value != null) this.seg.fields[5] = value;
     return this;
   }
 
   /** UB2.5 - Non-Covered Days (8) */
-  get_ub2_5_nonCoveredDays8(): string | undefined {
+  get_ub2_5_nonCoveredDays(): string | undefined {
     const val = this.seg.fields[5];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40742,7 +40742,7 @@ export class UB2Builder {
   }
 
   /** UB2.6 - Value Amount & Code (set all values) */
-  set_ub2_6_valueAmountCode(values: UVC[] | null | undefined): this {
+  set_ub2_6_valueAmountAndCode(values: UVC[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -40754,7 +40754,7 @@ export class UB2Builder {
   }
 
   /** UB2.6 - Value Amount & Code (add single value) */
-  add_ub2_6_valueAmountCode(value: UVC | null | undefined): this {
+  add_ub2_6_valueAmountAndCode(value: UVC | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -40769,7 +40769,7 @@ export class UB2Builder {
   }
 
   /** UB2.6 - Value Amount & Code */
-  get_ub2_6_valueAmountCode(): UVC[] | undefined {
+  get_ub2_6_valueAmountAndCode(): UVC[] | undefined {
     const val = this.seg.fields[6];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -40778,7 +40778,7 @@ export class UB2Builder {
   }
 
   /** UB2.7 - Occurrence Code & Date (32-35) (set all values) */
-  set_ub2_7_occurrenceCodeDate3235(values: OCD[] | null | undefined): this {
+  set_ub2_7_occurrenceCodeAndDate(values: OCD[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -40790,7 +40790,7 @@ export class UB2Builder {
   }
 
   /** UB2.7 - Occurrence Code & Date (32-35) (add single value) */
-  add_ub2_7_occurrenceCodeDate3235(value: OCD | null | undefined): this {
+  add_ub2_7_occurrenceCodeAndDate(value: OCD | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -40805,7 +40805,7 @@ export class UB2Builder {
   }
 
   /** UB2.7 - Occurrence Code & Date (32-35) */
-  get_ub2_7_occurrenceCodeDate3235(): OCD[] | undefined {
+  get_ub2_7_occurrenceCodeAndDate(): OCD[] | undefined {
     const val = this.seg.fields[7];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -40814,7 +40814,7 @@ export class UB2Builder {
   }
 
   /** UB2.8 - Occurrence Span Code/Dates (36) (set all values) */
-  set_ub2_8_occurrenceSpanCodeDates36(values: OSP[] | null | undefined): this {
+  set_ub2_8_occurrenceSpanCodeDates(values: OSP[] | null | undefined): this {
     if (values == null) return this;
     const arr: FieldValue[] = [];
     for (const v of values) {
@@ -40826,7 +40826,7 @@ export class UB2Builder {
   }
 
   /** UB2.8 - Occurrence Span Code/Dates (36) (add single value) */
-  add_ub2_8_occurrenceSpanCodeDates36(value: OSP | null | undefined): this {
+  add_ub2_8_occurrenceSpanCodeDates(value: OSP | null | undefined): this {
     if (value == null) return this;
     const fv = toFieldValue(value as Record<string, unknown>);
     if (fv !== undefined) {
@@ -40841,7 +40841,7 @@ export class UB2Builder {
   }
 
   /** UB2.8 - Occurrence Span Code/Dates (36) */
-  get_ub2_8_occurrenceSpanCodeDates36(): OSP[] | undefined {
+  get_ub2_8_occurrenceSpanCodeDates(): OSP[] | undefined {
     const val = this.seg.fields[8];
     if (val === undefined) return undefined;
     // Handle both array (repeating) and single value (parsed without repetition)
@@ -40850,13 +40850,13 @@ export class UB2Builder {
   }
 
   /** UB2.9 - UB92 Locator 2 (State) */
-  set_ub2_9_ub92Locator2State(value: string | null | undefined): this {
+  set_ub2_9_ub92Locator2(value: string | null | undefined): this {
     if (value != null) this.seg.fields[9] = value;
     return this;
   }
 
   /** UB2.9 - UB92 Locator 2 (State) */
-  get_ub2_9_ub92Locator2State(): string | undefined {
+  get_ub2_9_ub92Locator2(): string | undefined {
     const val = this.seg.fields[9];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40864,13 +40864,13 @@ export class UB2Builder {
   }
 
   /** UB2.10 - UB92 Locator 11 (State) */
-  set_ub2_10_ub92Locator11State(value: string | null | undefined): this {
+  set_ub2_10_ub92Locator11(value: string | null | undefined): this {
     if (value != null) this.seg.fields[10] = value;
     return this;
   }
 
   /** UB2.10 - UB92 Locator 11 (State) */
-  get_ub2_10_ub92Locator11State(): string | undefined {
+  get_ub2_10_ub92Locator11(): string | undefined {
     const val = this.seg.fields[10];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40878,13 +40878,13 @@ export class UB2Builder {
   }
 
   /** UB2.11 - UB92 Locator 31 (National) */
-  set_ub2_11_ub92Locator31National(value: string | null | undefined): this {
+  set_ub2_11_ub92Locator31(value: string | null | undefined): this {
     if (value != null) this.seg.fields[11] = value;
     return this;
   }
 
   /** UB2.11 - UB92 Locator 31 (National) */
-  get_ub2_11_ub92Locator31National(): string | undefined {
+  get_ub2_11_ub92Locator31(): string | undefined {
     const val = this.seg.fields[11];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40906,13 +40906,13 @@ export class UB2Builder {
   }
 
   /** UB2.13 - UB92 Locator 49 (National) */
-  set_ub2_13_ub92Locator49National(value: string | null | undefined): this {
+  set_ub2_13_ub92Locator49(value: string | null | undefined): this {
     if (value != null) this.seg.fields[13] = value;
     return this;
   }
 
   /** UB2.13 - UB92 Locator 49 (National) */
-  get_ub2_13_ub92Locator49National(): string | undefined {
+  get_ub2_13_ub92Locator49(): string | undefined {
     const val = this.seg.fields[13];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40920,13 +40920,13 @@ export class UB2Builder {
   }
 
   /** UB2.14 - UB92 Locator 56 (State) */
-  set_ub2_14_ub92Locator56State(value: string | null | undefined): this {
+  set_ub2_14_ub92Locator56(value: string | null | undefined): this {
     if (value != null) this.seg.fields[14] = value;
     return this;
   }
 
   /** UB2.14 - UB92 Locator 56 (State) */
-  get_ub2_14_ub92Locator56State(): string | undefined {
+  get_ub2_14_ub92Locator56(): string | undefined {
     const val = this.seg.fields[14];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40934,13 +40934,13 @@ export class UB2Builder {
   }
 
   /** UB2.15 - UB92 Locator 57 (National) */
-  set_ub2_15_ub92Locator57National(value: string | null | undefined): this {
+  set_ub2_15_ub92Locator57(value: string | null | undefined): this {
     if (value != null) this.seg.fields[15] = value;
     return this;
   }
 
   /** UB2.15 - UB92 Locator 57 (National) */
-  get_ub2_15_ub92Locator57National(): string | undefined {
+  get_ub2_15_ub92Locator57(): string | undefined {
     const val = this.seg.fields[15];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
@@ -40948,13 +40948,13 @@ export class UB2Builder {
   }
 
   /** UB2.16 - UB92 Locator 78 (State) */
-  set_ub2_16_ub92Locator78State(value: string | null | undefined): this {
+  set_ub2_16_ub92Locator78(value: string | null | undefined): this {
     if (value != null) this.seg.fields[16] = value;
     return this;
   }
 
   /** UB2.16 - UB92 Locator 78 (State) */
-  get_ub2_16_ub92Locator78State(): string | undefined {
+  get_ub2_16_ub92Locator78(): string | undefined {
     const val = this.seg.fields[16];
     if (typeof val === "string") return val;
     if (Array.isArray(val) && typeof val[0] === "string") return val[0];
