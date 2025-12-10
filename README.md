@@ -7,7 +7,8 @@ A TypeScript library for parsing and generating HL7v2 messages with type-safe, s
 ## Features
 
 - **Parse** HL7v2 wire format to typed internal representation
-- **Generate** HL7v2 messages using fluent, type-safe builders
+- **Generate** HL7v2 messages using fluent builders or typed input objects
+- **Symmetric API** - `toXXX` functions for building, `fromXXX` functions for parsing
 - **Schema-driven** code generation from HL7v2 specification
 - **Zero dependencies** - pure TypeScript implementation
 
@@ -19,53 +20,120 @@ bun install
 
 ## Quick Start
 
-### Parsing HL7v2 Messages
+### Building Messages with Input Objects
+
+The simplest way to build messages - pass a typed object:
 
 ```typescript
-import { parseMessage } from "./src/hl7v2/parse";
+import { toADT_A01, type ADT_A01_Input } from "./example/messages";
+import { formatMessage } from "./src/hl7v2/format";
+import { AdministrativeSex, PatientClass } from "./example/tables";
 
-const wire = `MSH|^~\\&|HOSPITAL|FAC|||20231201||ADT^A01|MSG001|P|2.5.1
-PID|1||12345^^^HOSP^MR||Smith^John||19800515|M`;
+const input: ADT_A01_Input = {
+  type: "ADT_A01",
+  MSH: {
+    $3_sendingApplication: { $1_namespace: "HOSPITAL" },
+    $5_receivingApplication: { $1_namespace: "LAB" },
+    $7_messageDateTime: "20251210120000",
+    $9_messageType: { $1_code: "ADT", $2_event: "A01" },
+    $10_messageControlId: "MSG001",
+    $11_processingId: { $1_processingId: "P" },
+    $12_version: { $1_version: "2.5.1" }
+  },
+  EVN: { $2_recordedDateTime: "20251210120000" },
+  PID: {
+    $3_identifier: [{ $1_value: "12345", $4_system: { $1_namespace: "MRN" } }],
+    $5_name: [{ $1_family: { $1_family: "Smith" }, $2_given: "John" }],
+    $8_gender: AdministrativeSex.Male
+  },
+  PV1: { $2_class: PatientClass.Inpatient },
+  DG1: [
+    { $1_setIdDg1: "1", $3_diagnosisCodeDg1: { $1_code: "J18.9" }, $6_diagnosisType: "A" }
+  ]
+};
 
-const message = parseMessage(wire);
-
-// Access segments
-const pid = message.find(s => s.segment === "PID");
-console.log(pid?.fields[5]); // { 1: "Smith", 2: "John" }
+const message = toADT_A01(input);
+const wire = formatMessage(message);
 ```
 
-### Building HL7v2 Messages
+### Building Messages with Fluent Builder
+
+For more control, use the builder pattern:
 
 ```typescript
 import { ADT_A01Builder } from "./example/messages";
 import { formatMessage } from "./src/hl7v2/format";
 
 const message = new ADT_A01Builder()
-  .msh(msh => msh
-    .set_msh_3_sendingApplication({ namespace_1: "HOSPITAL" })
-    .set_msh_9_messageType({ code_1: "ADT", event_2: "A01" })
-  )
-  .pid(pid => pid
-    .set_pid_3_identifier([{ value_1: "12345", type_5: "MR" }])
-    .set_pid_5_name([{ family_1: { family_1: "Smith" }, given_2: "John" }])
-  )
+  .msh({
+    $3_sendingApplication: { $1_namespace: "HOSPITAL" },
+    $7_messageDateTime: "20251210120000",
+    $9_messageType: { $1_code: "ADT", $2_event: "A01" },
+    $10_messageControlId: "MSG001",
+    $11_processingId: { $1_processingId: "P" },
+    $12_version: { $1_version: "2.5.1" }
+  })
+  .evn({ $2_recordedDateTime: "20251210120000" })
+  .pid({
+    $3_identifier: [{ $1_value: "12345" }],
+    $5_name: [{ $1_family: { $1_family: "Smith" }, $2_given: "John" }]
+  })
+  .pv1({ $2_class: "I" })
+  .addDG1({ $1_setIdDg1: "1", $3_diagnosisCodeDg1: { $1_code: "J18.9" }, $6_diagnosisType: "A" })
   .build();
 
 const wireFormat = formatMessage(message);
 ```
 
-### Using Typed Getters
+### Parsing Messages
 
 ```typescript
-import { PIDBuilder } from "./example/fields";
+import { parseMessage } from "./src/hl7v2/parse";
+import { fromPID, fromMSH, fromPV1 } from "./example/fields";
 
-// After parsing, use getters to extract typed data
-const pid = new PIDBuilder();
-(pid as any).seg = parsedPidSegment;
+const wire = `MSH|^~\\&|HOSPITAL|FAC|||20231201||ADT^A01|MSG001|P|2.5.1
+PID|1||12345^^^HOSP^MR||Smith^John||19800515|M`;
 
-const names = pid.get_pid_5_name();
-// names[0].family_1?.family_1 => "Smith"
-// names[0].given_2 => "John"
+const message = parseMessage(wire);
+
+// Use typed getters for segments
+const pidSeg = message.find(s => s.segment === "PID");
+const pid = fromPID(pidSeg!);
+
+console.log(pid.$3_identifier?.[0]?.$1_value);     // "12345"
+console.log(pid.$5_name?.[0]?.$1_family?.$1_family); // "Smith"
+console.log(pid.$5_name?.[0]?.$2_given);           // "John"
+console.log(pid.$8_gender);                         // "M"
+```
+
+## Field Naming: `$N_name` Pattern
+
+All generated interfaces use the `$N_name` pattern where `N` is the field/component position:
+
+```typescript
+// PID segment
+interface PID {
+  $1_setIdPid?: string;
+  $3_identifier: CX[];      // Required
+  $5_name: XPN[];           // Required
+  $7_birthDate?: string;
+  $8_gender?: AdministrativeSex | string;
+}
+
+// XPN (Extended Person Name) datatype
+interface XPN {
+  $1_family?: FN;           // Family name (complex)
+  $2_given?: string;        // Given name
+  $3_additionalGiven?: string;
+  $4_suffix?: string;
+  $5_prefix?: string;
+}
+
+// Usage - same pattern for read and write
+const pid: PID = {
+  $3_identifier: [{ $1_value: "12345" }],
+  $5_name: [{ $1_family: { $1_family: "Smith" }, $2_given: "John" }]
+};
 ```
 
 ## Architecture
@@ -76,6 +144,17 @@ const names = pid.get_pid_5_name();
 │  (pipe-delim)   │     │ Representation  │     │  (pipe-delim)   │
 └─────────────────┘     └─────────────────┘     └─────────────────┘
     parseMessage()           HL7v2Message         formatMessage()
+                                 │
+                    ┌────────────┴────────────┐
+                    │                         │
+               fromPID()                 toADT_A01()
+               fromMSH()                 ADT_A01Builder
+                    │                         │
+                    ▼                         ▼
+            ┌───────────────┐         ┌───────────────┐
+            │ Typed Objects │         │ Typed Objects │
+            │  PID, MSH...  │         │  ADT_A01_Input│
+            └───────────────┘         └───────────────┘
 ```
 
 ### Internal Representation
@@ -95,7 +174,7 @@ type HL7v2Message = HL7v2Segment[];
 
 ### Code Generation
 
-The `codegen.ts` generates self-contained type-safe builders from HL7v2 schema:
+The `codegen.ts` generates self-contained type-safe code from HL7v2 schema:
 
 ```bash
 # Generate all files for specified message types into output folder
@@ -103,16 +182,20 @@ bun src/hl7v2/codegen.ts ./output ADT_A01 BAR_P01
 
 # This generates:
 #   ./output/types.ts    - Core types (FieldValue, HL7v2Segment, HL7v2Message)
-#   ./output/fields.ts   - DataType interfaces and segment builders
-#   ./output/messages.ts - Message builders for specified message types
+#   ./output/tables.ts   - Enum constants (AdministrativeSex, PatientClass, etc.)
+#   ./output/fields.ts   - DataType interfaces, segment interfaces, fromXXX getters
+#   ./output/messages.ts - Message builders and toXXX functions
 ```
 
 Generated code includes:
 - **Core types** (types.ts) - FieldValue, HL7v2Segment, HL7v2Message, getComponent()
-- **DataType interfaces** (fields.ts) - XPN, CX, HD, etc. with typed properties
-- **Segment builders** (fields.ts) - PIDBuilder, MSHBuilder with fluent setters/getters
-- **Message builders** (messages.ts) - ADT_A01Builder with segment orchestration
-- **Converter functions** (fields.ts) - fromXPN, fromCX for parsing support
+- **Table constants** (tables.ts) - AdministrativeSex, PatientClass, DiagnosisType, etc.
+- **DataType interfaces** (fields.ts) - XPN, CX, HD, CE with `$N_name` properties
+- **Segment interfaces** (fields.ts) - PID, MSH, PV1 with required/optional fields
+- **Getter functions** (fields.ts) - fromPID(), fromMSH(), fromPV1() for parsing
+- **Input interfaces** (messages.ts) - ADT_A01_Input with typed segment data
+- **Converter functions** (messages.ts) - toADT_A01() for building from input objects
+- **Builder classes** (messages.ts) - ADT_A01Builder with fluent API
 
 The generated code is self-contained and doesn't depend on `src/hl7v2/`.
 
@@ -124,8 +207,7 @@ src/hl7v2/
 ├── parse.ts      # Wire format → Internal representation
 ├── format.ts     # Internal representation → Wire format
 ├── codegen.ts    # Schema-driven code generator
-├── fields.ts     # Generated segment builders (BAR_P01)
-└── messages.ts   # Generated message builders (BAR_P01)
+└── highlight.ts  # Syntax highlighting for terminal
 
 schema/
 ├── messages/     # Message structure definitions
@@ -135,21 +217,26 @@ schema/
 └── structure/    # Message type → structure mapping
 
 example/
-├── adt-a01-example.ts       # Building ADT^A01 message
-├── parse-to-fhir-example.ts # Parsing to FHIR Patient
-├── types.ts                 # Generated core types
-├── fields.ts                # Generated ADT_A01 segment builders
-└── messages.ts              # Generated ADT_A01 message builder
+├── adt-a01-example.ts    # Building ADT^A01 with builder
+├── input-example.ts      # Building ADT^A01 with input object
+├── parse-example.ts      # Parsing and using getters
+├── types.ts              # Generated core types
+├── tables.ts             # Generated table constants
+├── fields.ts             # Generated segment interfaces and getters
+└── messages.ts           # Generated builders and toADT_A01
 ```
 
 ## Running Examples
 
 ```bash
-# Build and format an ADT^A01 message
+# Build ADT^A01 with fluent builder
 bun example/adt-a01-example.ts
 
-# Parse ADT^A01 and extract FHIR Patient
-bun example/parse-to-fhir-example.ts
+# Build ADT^A01 with input object
+bun example/input-example.ts
+
+# Parse and extract typed data
+bun example/parse-example.ts
 ```
 
 ## Testing
