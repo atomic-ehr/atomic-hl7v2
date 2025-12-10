@@ -37,7 +37,7 @@ console.log(pid?.fields[5]); // { 1: "Smith", 2: "John" }
 ### Building HL7v2 Messages
 
 ```typescript
-import { ADT_A01Builder } from "./example/adt-a01-messages";
+import { ADT_A01Builder } from "./example/messages";
 import { formatMessage } from "./src/hl7v2/format";
 
 const message = new ADT_A01Builder()
@@ -57,7 +57,7 @@ const wireFormat = formatMessage(message);
 ### Using Typed Getters
 
 ```typescript
-import { PIDBuilder } from "./example/adt-a01-fields";
+import { PIDBuilder } from "./example/fields";
 
 // After parsing, use getters to extract typed data
 const pid = new PIDBuilder();
@@ -95,21 +95,26 @@ type HL7v2Message = HL7v2Segment[];
 
 ### Code Generation
 
-The `codegen.ts` generates type-safe builders from HL7v2 schema:
+The `codegen.ts` generates self-contained type-safe builders from HL7v2 schema:
 
 ```bash
-# Generate segment builders (fields.ts)
-bun src/hl7v2/codegen.ts ADT_A01 > output/fields.ts
+# Generate all files for specified message types into output folder
+bun src/hl7v2/codegen.ts ./output ADT_A01 BAR_P01
 
-# Generate message builders (messages.ts)
-bun src/hl7v2/codegen.ts ADT_A01 --messages > output/messages.ts
+# This generates:
+#   ./output/types.ts    - Core types (FieldValue, HL7v2Segment, HL7v2Message)
+#   ./output/fields.ts   - DataType interfaces and segment builders
+#   ./output/messages.ts - Message builders for specified message types
 ```
 
 Generated code includes:
-- **DataType interfaces** (XPN, CX, HD, etc.) with typed properties
-- **Segment builders** (PIDBuilder, MSHBuilder) with fluent setters/getters
-- **Message builders** (ADT_A01Builder) with segment orchestration
-- **Converter functions** (fromXPN, fromCX) for parsing support
+- **Core types** (types.ts) - FieldValue, HL7v2Segment, HL7v2Message, getComponent()
+- **DataType interfaces** (fields.ts) - XPN, CX, HD, etc. with typed properties
+- **Segment builders** (fields.ts) - PIDBuilder, MSHBuilder with fluent setters/getters
+- **Message builders** (messages.ts) - ADT_A01Builder with segment orchestration
+- **Converter functions** (fields.ts) - fromXPN, fromCX for parsing support
+
+The generated code is self-contained and doesn't depend on `src/hl7v2/`.
 
 ## Project Structure
 
@@ -132,8 +137,9 @@ schema/
 example/
 ├── adt-a01-example.ts       # Building ADT^A01 message
 ├── parse-to-fhir-example.ts # Parsing to FHIR Patient
-├── adt-a01-fields.ts        # Generated ADT_A01 builders
-└── adt-a01-messages.ts      # Generated ADT_A01 message builder
+├── types.ts                 # Generated core types
+├── fields.ts                # Generated ADT_A01 segment builders
+└── messages.ts              # Generated ADT_A01 message builder
 ```
 
 ## Running Examples
