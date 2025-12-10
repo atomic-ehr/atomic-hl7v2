@@ -542,6 +542,7 @@ class HL7v2CodeGen {
         const fieldNum = parseInt(fieldNumStr, 10);
         const fieldName = this.getCodeName(fieldDef);
         const isRepeating = field.maxOccurs === "unbounded" || parseInt(field.maxOccurs) > 1;
+        const isRequired = field.minOccurs !== "0";
         const dtDef = this.dataTypeDefs.get(fieldDef.dataType);
         const isPrimitive = PRIMITIVE_TYPES.has(fieldDef.dataType);
 
@@ -564,8 +565,9 @@ class HL7v2CodeGen {
           typeName = tableTypeName ? `(${tableTypeName} | string)[]` : "string[]";
         }
 
+        const optionalMark = isRequired ? "" : "?";
         output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
-        output.push(`  $${fieldNum}_${fieldName}?: ${typeName};`);
+        output.push(`  $${fieldNum}_${fieldName}${optionalMark}: ${typeName};`);
       }
 
       output.push(`}`);

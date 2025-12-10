@@ -1705,11 +1705,11 @@ export interface ACC {
 /** AL1 Segment */
 export interface AL1 {
   /** AL1.1 - Set ID - AL1 */
-  $1_setIdAl1?: string;
+  $1_setIdAl1: string;
   /** AL1.2 - Allergen Type Code */
   $2_allergenTypeCode?: CE;
   /** AL1.3 - Allergen Code/Mnemonic/Description */
-  $3_allergenCodeMnemonicDescription?: CE;
+  $3_allergenCodeMnemonicDescription: CE;
   /** AL1.4 - Allergy Severity Code */
   $4_allergySeverityCode?: CE;
   /** AL1.5 - Allergy Reaction Code */
@@ -1721,7 +1721,7 @@ export interface AL1 {
 /** DB1 Segment */
 export interface DB1 {
   /** DB1.1 - Set ID - DB1 */
-  $1_setIdDb1?: string;
+  $1_setIdDb1: string;
   /** DB1.2 - Disabled Person Code */
   $2_disabledPersonCode?: DisabilityInformationRelationship | string;
   /** DB1.3 - Disabled Person Identifier */
@@ -1741,7 +1741,7 @@ export interface DB1 {
 /** DG1 Segment */
 export interface DG1 {
   /** DG1.1 - Set ID - DG1 */
-  $1_setIdDg1?: string;
+  $1_setIdDg1: string;
   /** DG1.2 - Diagnosis Coding Method */
   $2_diagnosisCodingMethod?: string;
   /** DG1.3 - Diagnosis Code - DG1 */
@@ -1751,7 +1751,7 @@ export interface DG1 {
   /** DG1.5 - Diagnosis Date/Time */
   $5_diagnosisDateTime?: string;
   /** DG1.6 - Diagnosis Type */
-  $6_diagnosisType?: DiagnosisType | string;
+  $6_diagnosisType: DiagnosisType | string;
   /** DG1.7 - Major Diagnostic Category */
   $7_majorDiagnosticCategory?: CE;
   /** DG1.8 - Diagnostic Related Group */
@@ -1815,7 +1815,7 @@ export interface EVN {
   /** EVN.1 - Event Type Code */
   $1_eventTypeCode?: Event | string;
   /** EVN.2 - Recorded Date/Time */
-  $2_recordedDateTime?: string;
+  $2_recordedDateTime: string;
   /** EVN.3 - Date/Time Planned Event */
   $3_plannedEventDateTime?: string;
   /** EVN.4 - Event Reason Code */
@@ -1831,11 +1831,11 @@ export interface EVN {
 /** GT1 Segment */
 export interface GT1 {
   /** GT1.1 - Set ID - GT1 */
-  $1_setIdGt1?: string;
+  $1_setIdGt1: string;
   /** GT1.2 - Guarantor Number */
   $2_guarantorNumber?: CX[];
   /** GT1.3 - Guarantor Name */
-  $3_guarantorName?: XPN[];
+  $3_guarantorName: XPN[];
   /** GT1.4 - Guarantor Spouse Name */
   $4_guarantorSpouseName?: XPN[];
   /** GT1.5 - Guarantor Address */
@@ -1949,11 +1949,11 @@ export interface GT1 {
 /** IN1 Segment */
 export interface IN1 {
   /** IN1.1 - Set ID - IN1 */
-  $1_setIdIn1?: string;
+  $1_setIdIn1: string;
   /** IN1.2 - Insurance Plan ID */
-  $2_insurancePlanId?: CE;
+  $2_insurancePlanId: CE;
   /** IN1.3 - Insurance Company ID */
-  $3_insuranceCompanyId?: CX[];
+  $3_insuranceCompanyId: CX[];
   /** IN1.4 - Insurance Company Name */
   $4_insuranceCompanyName?: XON[];
   /** IN1.5 - Insurance Company Address */
@@ -2207,7 +2207,7 @@ export interface IN2 {
 /** IN3 Segment */
 export interface IN3 {
   /** IN3.1 - Set ID - IN3 */
-  $1_setIdIn3?: string;
+  $1_setIdIn3: string;
   /** IN3.2 - Certification Number */
   $2_certificationNumber?: CX;
   /** IN3.3 - Certified By */
@@ -2261,9 +2261,9 @@ export interface IN3 {
 /** MSH Segment */
 export interface MSH {
   /** MSH.1 - Field Separator */
-  $1_fieldSeparator?: string;
+  $1_fieldSeparator: string;
   /** MSH.2 - Encoding Characters */
-  $2_encodingCharacters?: string;
+  $2_encodingCharacters: string;
   /** MSH.3 - Sending Application */
   $3_sendingApplication?: HD;
   /** MSH.4 - Sending Facility */
@@ -2273,17 +2273,17 @@ export interface MSH {
   /** MSH.6 - Receiving Facility */
   $6_receivingFacility?: HD;
   /** MSH.7 - Date/Time Of Message */
-  $7_messageDateTime?: string;
+  $7_messageDateTime: string;
   /** MSH.8 - Security */
   $8_security?: string;
   /** MSH.9 - Message Type */
-  $9_messageType?: MSG;
+  $9_messageType: MSG;
   /** MSH.10 - Message Control ID */
-  $10_messageControlId?: string;
+  $10_messageControlId: string;
   /** MSH.11 - Processing ID */
-  $11_processingId?: PT;
+  $11_processingId: PT;
   /** MSH.12 - Version ID */
-  $12_version?: VID;
+  $12_version: VID;
   /** MSH.13 - Sequence Number */
   $13_sequenceNumber?: string;
   /** MSH.14 - Continuation Pointer */
@@ -2307,7 +2307,7 @@ export interface MSH {
 /** NK1 Segment */
 export interface NK1 {
   /** NK1.1 - Set ID - NK1 */
-  $1_setIdNk1?: string;
+  $1_setIdNk1: string;
   /** NK1.2 - Name */
   $2_name?: XPN[];
   /** NK1.3 - Relationship */
@@ -2393,7 +2393,7 @@ export interface OBX {
   /** OBX.2 - Value Type */
   $2_valueType?: string;
   /** OBX.3 - Observation Identifier */
-  $3_observationIdentifier?: CE;
+  $3_observationIdentifier: CE;
   /** OBX.4 - Observation Sub-ID */
   $4_observationSubId?: string;
   /** OBX.5 - Observation Value */
@@ -2409,7 +2409,7 @@ export interface OBX {
   /** OBX.10 - Nature of Abnormal Test */
   $10_natureOfAbnormalTest?: (NatureOfAbnormalTesting | string)[];
   /** OBX.11 - Observation Result Status */
-  $11_observationResultStatus?: ObservationResultStatusCodesInterpretation | string;
+  $11_observationResultStatus: ObservationResultStatusCodesInterpretation | string;
   /** OBX.12 - Effective Date of Reference Range Values */
   $12_effectiveDateOfReferenceRangeValues?: string;
   /** OBX.13 - User Defined Access Checks */
@@ -2515,11 +2515,11 @@ export interface PID {
   /** PID.2 - Patient ID */
   $2_patientId?: CX;
   /** PID.3 - Patient Identifier List */
-  $3_identifier?: CX[];
+  $3_identifier: CX[];
   /** PID.4 - Alternate Patient ID - PID */
   $4_alternatePatientIdPid?: CX[];
   /** PID.5 - Patient Name */
-  $5_name?: XPN[];
+  $5_name: XPN[];
   /** PID.6 - Mother's Maiden Name */
   $6_mothersMaidenName?: XPN[];
   /** PID.7 - Date/Time of Birth */
@@ -2593,15 +2593,15 @@ export interface PID {
 /** PR1 Segment */
 export interface PR1 {
   /** PR1.1 - Set ID - PR1 */
-  $1_setIdPr1?: string;
+  $1_setIdPr1: string;
   /** PR1.2 - Procedure Coding Method */
   $2_procedureCodingMethod?: string;
   /** PR1.3 - Procedure Code */
-  $3_procedureCode?: CE;
+  $3_procedureCode: CE;
   /** PR1.4 - Procedure Description */
   $4_procedureDescription?: string;
   /** PR1.5 - Procedure Date/Time */
-  $5_procedureDateTime?: string;
+  $5_procedureDateTime: string;
   /** PR1.6 - Procedure Functional Type */
   $6_procedureFunctionalType?: ProcedureFunctionalType | string;
   /** PR1.7 - Procedure Minutes */
@@ -2639,7 +2639,7 @@ export interface PV1 {
   /** PV1.1 - Set ID - PV1 */
   $1_setIdPv1?: string;
   /** PV1.2 - Patient Class */
-  $2_class?: PatientClass | string;
+  $2_class: PatientClass | string;
   /** PV1.3 - Assigned Patient Location */
   $3_assignedPatientLocation?: PL;
   /** PV1.4 - Admission Type */
@@ -2849,11 +2849,11 @@ export interface ROL {
   /** ROL.1 - Role Instance ID */
   $1_roleInstanceId?: EI;
   /** ROL.2 - Action Code */
-  $2_actionCode?: ProblemGoalAction | string;
+  $2_actionCode: ProblemGoalAction | string;
   /** ROL.3 - Role-ROL */
-  $3_roleRol?: CE;
+  $3_roleRol: CE;
   /** ROL.4 - Role Person */
-  $4_rolePerson?: XCN[];
+  $4_rolePerson: XCN[];
   /** ROL.5 - Role Begin Date/Time */
   $5_roleBeginDateTime?: string;
   /** ROL.6 - Role End Date/Time */
@@ -2875,13 +2875,13 @@ export interface ROL {
 /** SFT Segment */
 export interface SFT {
   /** SFT.1 - Software Vendor Organization */
-  $1_softwareVendorOrganization?: XON;
+  $1_softwareVendorOrganization: XON;
   /** SFT.2 - Software Certified Version or Release Number */
-  $2_softwareCertifiedVersionOrReleaseNumber?: string;
+  $2_softwareCertifiedVersionOrReleaseNumber: string;
   /** SFT.3 - Software Product Name */
-  $3_softwareProductName?: string;
+  $3_softwareProductName: string;
   /** SFT.4 - Software Binary ID */
-  $4_softwareBinaryId?: string;
+  $4_softwareBinaryId: string;
   /** SFT.5 - Software Product Information */
   $5_softwareProductInformation?: string;
   /** SFT.6 - Software Install Date */
