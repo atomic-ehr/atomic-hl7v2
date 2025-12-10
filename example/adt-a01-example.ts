@@ -9,6 +9,7 @@
 
 import { ADT_A01Builder } from "./messages";
 import { formatMessage } from "../src/hl7v2/format";
+import { AdministrativeSex, PatientClass, AdmissionType } from "./tables";
 
 // Build an ADT^A01 message for patient admission
 const message = new ADT_A01Builder()
@@ -58,7 +59,7 @@ const message = new ADT_A01Builder()
       suffix_4: "Jr",
     }])
     .set_pid_7_birthDate("19800515")
-    .set_pid_8_gender("M")
+    .set_pid_8_gender(AdministrativeSex.Male)  // Using table enum
     .set_pid_11_address([{
       line1_1: { line_1: "123 Main Street" },
       line2_2: "Apt 4B",
@@ -80,14 +81,14 @@ const message = new ADT_A01Builder()
   // PV1 - Patient Visit (required)
   .pv1(pv1 => pv1
     .set_pv1_1_setIdPv1("1")
-    .set_pv1_2_class("I")  // I = Inpatient
+    .set_pv1_2_class(PatientClass.Inpatient)  // Using table enum
     .set_pv1_3_assignedPatientLocation({
       careSite_1: "WARD-A",
       room_2: "101",
       bed_3: "1",
       facility_4: { namespace_1: "HOSP" }
     })
-    .set_pv1_4_admissionType("E")  // E = Emergency
+    .set_pv1_4_admissionType(AdmissionType.Emergency)  // Using table enum
     .set_pv1_7_attendingDoctor([{
       value_1: "DOC001",
       family_2: { family_1: "Johnson" },

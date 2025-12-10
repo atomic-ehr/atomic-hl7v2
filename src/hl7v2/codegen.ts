@@ -42,6 +42,19 @@ interface FieldDef {
   dataType: string;
   longName: string;
   codeName?: string;
+  hl7Table?: string;
+}
+
+interface TableConcept {
+  code: string;
+  display: string;
+  definition?: string;
+}
+
+interface TableDef {
+  tableNumber: string;
+  name: string;
+  concepts: TableConcept[];
 }
 
 interface DataTypeDef {
@@ -65,10 +78,14 @@ async function readJsonAsync<T>(path: string): Promise<T | null> {
 class HL7v2CodeGen {
   private usedSegments = new Set<string>();
   private usedDataTypes = new Set<string>();
+  private usedTables = new Set<string>();
   private fieldDefs = new Map<string, FieldDef>();
   private dataTypeDefs = new Map<string, DataTypeDef>();
   private segmentDefs = new Map<string, SegmentDef>();
   private messageDefs = new Map<string, MessageDef>();
+  private tableDefs = new Map<string, TableDef>();
+  // Maps table number (e.g., "0001") to generated type name (e.g., "AdministrativeSex")
+  private tableTypeNames = new Map<string, string>();
 
   constructor(private messageTypes: string[], private outputFolder: string) {}
 
@@ -89,13 +106,20 @@ class HL7v2CodeGen {
     // 3. Recursively load all data types
     await this.loadAllDataTypes();
 
-    // 4. Generate files
+    // 4. Load tables that are referenced AND exist
+    await this.loadTables();
+
+    // 5. Generate files
     await this.writeTypesFile();
+    await this.writeTablesFile();
     await this.writeFieldsFile();
     await this.writeMessagesFile();
 
     console.log(`Generated files in ${this.outputFolder}:`);
     console.log(`  - types.ts`);
+    if (this.tableDefs.size > 0) {
+      console.log(`  - tables.ts (${this.tableDefs.size} tables)`);
+    }
     console.log(`  - fields.ts`);
     console.log(`  - messages.ts`);
   }
@@ -148,6 +172,13 @@ class HL7v2CodeGen {
       if (fieldDef) {
         this.fieldDefs.set(field.field, fieldDef);
         this.usedDataTypes.add(fieldDef.dataType);
+        // Track table reference
+        if (fieldDef.hl7Table) {
+          const match = fieldDef.hl7Table.match(/^HL7(\d+)$/);
+          if (match && match[1]) {
+            this.usedTables.add(match[1]);
+          }
+        }
       }
     }
   }
@@ -182,6 +213,17 @@ class HL7v2CodeGen {
             toProcess.add(compDef.dataType);
           }
         }
+      }
+    }
+  }
+
+  private async loadTables(): Promise<void> {
+    for (const tableNum of this.usedTables) {
+      const path = `${SCHEMA_BASE}/tables/${tableNum}.json`;
+      const tableDef = await readJsonAsync<TableDef>(path);
+      if (tableDef && tableDef.concepts && tableDef.concepts.length > 0) {
+        this.tableDefs.set(tableNum, tableDef);
+        this.tableTypeNames.set(tableNum, tableDef.name);
       }
     }
   }
@@ -240,6 +282,62 @@ class HL7v2CodeGen {
     await Bun.write(join(this.outputFolder, "types.ts"), output.join("\n"));
   }
 
+  // ===== tables.ts =====
+  private async writeTablesFile(): Promise<void> {
+    if (this.tableDefs.size === 0) return;
+
+    const output: string[] = [];
+
+    output.push(`// AUTO-GENERATED - HL7v2 Table Value Types`);
+    output.push(`// Generated for: ${this.messageTypes.join(", ")}`);
+    output.push(``);
+
+    const sortedTables = [...this.tableDefs.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+
+    for (const [tableNum, tableDef] of sortedTables) {
+      const typeName = tableDef.name;
+
+      output.push(`/** Table ${tableNum} - ${typeName} */`);
+      output.push(`export const ${typeName} = {`);
+
+      for (const concept of tableDef.concepts) {
+        // Convert display to valid identifier (PascalCase)
+        const key = this.displayToIdentifier(concept.display);
+        const comment = concept.definition ? ` // ${concept.definition.slice(0, 60)}${concept.definition.length > 60 ? '...' : ''}` : '';
+        output.push(`  ${key}: "${concept.code}",${comment}`);
+      }
+
+      output.push(`} as const;`);
+      output.push(`export type ${typeName} = typeof ${typeName}[keyof typeof ${typeName}];`);
+      output.push(``);
+    }
+
+    await Bun.write(join(this.outputFolder, "tables.ts"), output.join("\n"));
+  }
+
+  private displayToIdentifier(display: string): string {
+    // Convert "Some Display Name" to "SomeDisplayName"
+    // Handle special characters and edge cases
+    let result = display
+      .replace(/[^a-zA-Z0-9\s]/g, " ")
+      .split(/\s+/)
+      .filter(w => w.length > 0)
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join("");
+
+    // Prefix with underscore if starts with digit
+    if (/^\d/.test(result)) {
+      result = "_" + result;
+    }
+
+    // If empty, use a default
+    if (!result) {
+      result = "_Empty";
+    }
+
+    return result;
+  }
+
   // ===== fields.ts =====
   private async writeFieldsFile(): Promise<void> {
     const output: string[] = [];
@@ -249,6 +347,13 @@ class HL7v2CodeGen {
     output.push(``);
     output.push(`import type { HL7v2Segment, FieldValue } from "./types";`);
     output.push(`import { getComponent } from "./types";`);
+
+    // Import table types if any tables are used
+    if (this.tableDefs.size > 0) {
+      const tableImports = [...this.tableDefs.values()].map(t => t.name).sort();
+      output.push(`import { ${tableImports.join(", ")} } from "./tables";`);
+    }
+
     output.push(``);
 
     this.generateDataTypeInterfaces(output);
@@ -443,8 +548,12 @@ class HL7v2CodeGen {
         const segLower = segName.toLowerCase();
 
         if (isPrimitive) {
+          // Check if this field has a table type
+          const tableTypeName = this.getTableTypeName(fieldDef);
+          const valueType = tableTypeName ? `${tableTypeName} | string` : "string";
+
           output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
-          output.push(`  set_${segLower}_${fieldNum}_${fieldName}(value: string | null | undefined): this {`);
+          output.push(`  set_${segLower}_${fieldNum}_${fieldName}(value: ${valueType} | null | undefined): this {`);
           output.push(`    if (value != null) this.seg.fields[${fieldNum}] = value;`);
           output.push(`    return this;`);
           output.push(`  }`);
@@ -528,6 +637,13 @@ class HL7v2CodeGen {
   private getCodeName(def: FieldDef): string {
     if (def.codeName && def.codeName.trim()) return def.codeName;
     return this.toCamelCase(def.longName);
+  }
+
+  private getTableTypeName(def: FieldDef): string | undefined {
+    if (!def.hl7Table) return undefined;
+    const match = def.hl7Table.match(/^HL7(\d+)$/);
+    if (!match || !match[1]) return undefined;
+    return this.tableTypeNames.get(match[1]);
   }
 
   private toCamelCase(str: string): string {

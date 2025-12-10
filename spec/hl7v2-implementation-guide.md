@@ -438,10 +438,94 @@ export function generateBarMessage(input: BarMessageInput): HL7v2Message {
 
 ---
 
+## Table Value Types
+
+Fields referencing HL7 tables get generated const objects for IDE autocomplete:
+
+```ts
+// Generated from schema/tables/0001.json
+export const AdministrativeSex = {
+  Female: "F",
+  Male: "M",
+  Other: "O",
+  Unknown: "U",
+  Ambiguous: "A",
+  NotApplicable: "N",
+  NonBinary: "X"
+} as const;
+export type AdministrativeSex = typeof AdministrativeSex[keyof typeof AdministrativeSex];
+
+// Generated from schema/tables/0004.json
+export const PatientClass = {
+  Emergency: "E",
+  Inpatient: "I",
+  Outpatient: "O",
+  Preadmit: "P",
+  RecurringPatient: "R",
+  Obstetrics: "B",
+  CommercialAccount: "C",
+  NotApplicable: "N",
+  Unknown: "U"
+} as const;
+export type PatientClass = typeof PatientClass[keyof typeof PatientClass];
+```
+
+### Usage in Setters
+
+When a field references a table that exists in `schema/tables/`, the setter accepts both the enum and raw strings:
+
+```ts
+// With enum - IDE shows all valid options
+.set_pid_8_gender(AdministrativeSex.Male)
+.set_pv1_2_class(PatientClass.Inpatient)
+
+// Raw string still works for edge cases
+.set_pid_8_gender("M")
+```
+
+### Schema Reference
+
+Fields in `schema/fields/*.json` reference tables via `hl7Table`:
+
+```json
+{
+  "dataType": "IS",
+  "longName": "Administrative Sex",
+  "codeName": "gender",
+  "hl7Table": "HL70001"
+}
+```
+
+Tables in `schema/tables/*.json` define valid codes:
+
+```json
+{
+  "tableNumber": "0001",
+  "name": "AdministrativeSex",
+  "concepts": [
+    { "code": "F", "display": "Female" },
+    { "code": "M", "display": "Male" }
+  ]
+}
+```
+
+### Validation
+
+Check for missing tables:
+
+```sh
+bun scripts/check-tables.ts           # Full report
+bun scripts/check-tables.ts --json    # JSON output
+bun scripts/check-tables.ts --list    # Missing table numbers only
+```
+
+---
+
 ## Design Benefits
 
 - **1:1 mapping to wire format** — serialization is trivial
 - **Schema-driven** — fields validated against `schema/`
 - **IDE autocomplete** — type `set_pid` to see all PID field methods
+- **Table enums** — coded fields show valid options with descriptions
 - **Compile-time safety** — message builders catch missing required segments
 - **Auto-generated** — regenerate when schema updates

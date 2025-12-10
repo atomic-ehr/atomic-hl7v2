@@ -3,6 +3,7 @@
 
 import type { HL7v2Segment, FieldValue } from "./types";
 import { getComponent } from "./types";
+import { AcceptApplicationAcknowledgmentConditions, AdministrativeSex, AdmissionLevelOfCare, AdmissionType, AdvanceDirective, AllergenType, AllergySeverity, AlternateCharacterSetHandlingScheme, AlternateCharacterSets, AmbulatoryStatus, ArrivalMode, AssignmentOfBenefits, BedStatus, ClergyNotificationType, ContactRole2, CoordinationOfBenefits, CoverageType, DiagnosisClassification, DiagnosisPriority, DiagnosisType, DisabilityInformationRelationship, DrgTransferType, EligibilitySource, EmploymentStatus, EthnicGroup, Event, EventReason, HospitalService, IdentifierType, IdentityReliability, ImmunizationRegistryStatus, InsuranceCompanyContactReason, JobStatus, LivingArrangement, LivingDependency2, LivingWillCodes, MailClaimParty, MaritalStatus, MilitaryService, MilitaryStatus, NatureOfAbnormalTesting, ObservationResultStatusCodesInterpretation, OrganDonorCodes, OrganizationUnitType, OutlierType, PHRaceAndEthnicityCDC, PatientClass, PatientCondition, PatientStatus, PatientsRelationshipToInsured, Precaution, ProblemGoalAction, ProcedureDrgType, ProcedureFunctionalType, ProcedurePriority, ProductionClass, ProviderRole, Publicity, PurgeStatus, ReAdmissionIndicator, RecreationalDrugType, Relationship, Religion2, SegmentAction, SignatureType, SpecialProgram, StudentStatus, TissueType, TypeOfAgreement, VisitIndicator, VisitPriority, VisitUserCodes } from "./tables";
 
 // ====== DataType Interfaces ======
 
@@ -1937,7 +1938,7 @@ export class DB1Builder {
   }
 
   /** DB1.2 - Disabled Person Code */
-  set_db1_2_disabledPersonCode(value: string | null | undefined): this {
+  set_db1_2_disabledPersonCode(value: DisabilityInformationRelationship | string | null | undefined): this {
     if (value != null) this.seg.fields[2] = value;
     return this;
   }
@@ -2134,7 +2135,7 @@ export class DG1Builder {
   }
 
   /** DG1.6 - Diagnosis Type */
-  set_dg1_6_diagnosisType(value: string | null | undefined): this {
+  set_dg1_6_diagnosisType(value: DiagnosisType | string | null | undefined): this {
     if (value != null) this.seg.fields[6] = value;
     return this;
   }
@@ -2252,7 +2253,7 @@ export class DG1Builder {
   }
 
   /** DG1.15 - Diagnosis Priority */
-  set_dg1_15_diagnosisPriority(value: string | null | undefined): this {
+  set_dg1_15_diagnosisPriority(value: DiagnosisPriority | string | null | undefined): this {
     if (value != null) this.seg.fields[15] = value;
     return this;
   }
@@ -2301,7 +2302,7 @@ export class DG1Builder {
   }
 
   /** DG1.17 - Diagnosis Classification */
-  set_dg1_17_diagnosisClassification(value: string | null | undefined): this {
+  set_dg1_17_diagnosisClassification(value: DiagnosisClassification | string | null | undefined): this {
     if (value != null) this.seg.fields[17] = value;
     return this;
   }
@@ -2355,7 +2356,7 @@ export class DG1Builder {
   }
 
   /** DG1.21 - Diagnosis Action Code */
-  set_dg1_21_diagnosisActionCode(value: string | null | undefined): this {
+  set_dg1_21_diagnosisActionCode(value: SegmentAction | string | null | undefined): this {
     if (value != null) this.seg.fields[21] = value;
     return this;
   }
@@ -2511,7 +2512,7 @@ export class DRGBuilder {
   }
 
   /** DRG.11 - DRG Transfer Type */
-  set_drg_11_drgTransferType(value: string | null | undefined): this {
+  set_drg_11_drgTransferType(value: DrgTransferType | string | null | undefined): this {
     if (value != null) this.seg.fields[11] = value;
     return this;
   }
@@ -2535,7 +2536,7 @@ export class EVNBuilder {
   private seg: HL7v2Segment = { segment: "EVN", fields: {} };
 
   /** EVN.1 - Event Type Code */
-  set_evn_1_eventTypeCode(value: string | null | undefined): this {
+  set_evn_1_eventTypeCode(value: Event | string | null | undefined): this {
     if (value != null) this.seg.fields[1] = value;
     return this;
   }
@@ -2577,7 +2578,7 @@ export class EVNBuilder {
   }
 
   /** EVN.4 - Event Reason Code */
-  set_evn_4_eventReasonCode(value: string | null | undefined): this {
+  set_evn_4_eventReasonCode(value: EventReason | string | null | undefined): this {
     if (value != null) this.seg.fields[4] = value;
     return this;
   }
@@ -2900,7 +2901,7 @@ export class GT1Builder {
   }
 
   /** GT1.9 - Guarantor Administrative Sex */
-  set_gt1_9_guarantorAdministrativeGender(value: string | null | undefined): this {
+  set_gt1_9_guarantorAdministrativeGender(value: AdministrativeSex | string | null | undefined): this {
     if (value != null) this.seg.fields[9] = value;
     return this;
   }
@@ -3136,7 +3137,7 @@ export class GT1Builder {
   }
 
   /** GT1.20 - Guarantor Employment Status */
-  set_gt1_20_guarantorEmploymentStatus(value: string | null | undefined): this {
+  set_gt1_20_guarantorEmploymentStatus(value: EmploymentStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[20] = value;
     return this;
   }
@@ -3352,7 +3353,7 @@ export class GT1Builder {
   }
 
   /** GT1.33 - Living Dependency */
-  set_gt1_33_livingDependency(value: string | null | undefined): this {
+  set_gt1_33_livingDependency(value: LivingDependency2 | string | null | undefined): this {
     if (value != null) this.seg.fields[33] = value;
     return this;
   }
@@ -3366,7 +3367,7 @@ export class GT1Builder {
   }
 
   /** GT1.34 - Ambulatory Status */
-  set_gt1_34_ambulatoryStatus(value: string | null | undefined): this {
+  set_gt1_34_ambulatoryStatus(value: AmbulatoryStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[34] = value;
     return this;
   }
@@ -3427,7 +3428,7 @@ export class GT1Builder {
   }
 
   /** GT1.37 - Living Arrangement */
-  set_gt1_37_livingArrangement(value: string | null | undefined): this {
+  set_gt1_37_livingArrangement(value: LivingArrangement | string | null | undefined): this {
     if (value != null) this.seg.fields[37] = value;
     return this;
   }
@@ -3467,7 +3468,7 @@ export class GT1Builder {
   }
 
   /** GT1.40 - Student Indicator */
-  set_gt1_40_student(value: string | null | undefined): this {
+  set_gt1_40_student(value: StudentStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[40] = value;
     return this;
   }
@@ -3657,7 +3658,7 @@ export class GT1Builder {
   }
 
   /** GT1.48 - Contact Relationship */
-  set_gt1_48_contactRelationship(value: string | null | undefined): this {
+  set_gt1_48_contactRelationship(value: Relationship | string | null | undefined): this {
     if (value != null) this.seg.fields[48] = value;
     return this;
   }
@@ -3746,7 +3747,7 @@ export class GT1Builder {
   }
 
   /** GT1.53 - Job Status */
-  set_gt1_53_jobStatus(value: string | null | undefined): this {
+  set_gt1_53_jobStatus(value: JobStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[53] = value;
     return this;
   }
@@ -4315,7 +4316,7 @@ export class IN1Builder {
   }
 
   /** IN1.20 - Assignment Of Benefits */
-  set_in1_20_assignmentOfBenefits(value: string | null | undefined): this {
+  set_in1_20_assignmentOfBenefits(value: AssignmentOfBenefits | string | null | undefined): this {
     if (value != null) this.seg.fields[20] = value;
     return this;
   }
@@ -4329,7 +4330,7 @@ export class IN1Builder {
   }
 
   /** IN1.21 - Coordination Of Benefits */
-  set_in1_21_coordinationOfBenefits(value: string | null | undefined): this {
+  set_in1_21_coordinationOfBenefits(value: CoordinationOfBenefits | string | null | undefined): this {
     if (value != null) this.seg.fields[21] = value;
     return this;
   }
@@ -4490,7 +4491,7 @@ export class IN1Builder {
   }
 
   /** IN1.31 - Type Of Agreement Code */
-  set_in1_31_typeOfAgreementCode(value: string | null | undefined): this {
+  set_in1_31_typeOfAgreementCode(value: TypeOfAgreement | string | null | undefined): this {
     if (value != null) this.seg.fields[31] = value;
     return this;
   }
@@ -4648,7 +4649,7 @@ export class IN1Builder {
   }
 
   /** IN1.43 - Insured's Administrative Sex */
-  set_in1_43_insuredsAdministrativeGender(value: string | null | undefined): this {
+  set_in1_43_insuredsAdministrativeGender(value: AdministrativeSex | string | null | undefined): this {
     if (value != null) this.seg.fields[43] = value;
     return this;
   }
@@ -4725,7 +4726,7 @@ export class IN1Builder {
   }
 
   /** IN1.47 - Coverage Type */
-  set_in1_47_coverageType(value: string | null | undefined): this {
+  set_in1_47_coverageType(value: CoverageType | string | null | undefined): this {
     if (value != null) this.seg.fields[47] = value;
     return this;
   }
@@ -4788,7 +4789,7 @@ export class IN1Builder {
   }
 
   /** IN1.50 - Signature Code */
-  set_in1_50_signatureCode(value: string | null | undefined): this {
+  set_in1_50_signatureCode(value: SignatureType | string | null | undefined): this {
     if (value != null) this.seg.fields[50] = value;
     return this;
   }
@@ -4952,7 +4953,7 @@ export class IN2Builder {
   }
 
   /** IN2.5 - Mail Claim Party */
-  set_in2_5_mailClaimParty(value: string | null | undefined): this {
+  set_in2_5_mailClaimParty(value: MailClaimParty | string | null | undefined): this {
     if (value != null) this.seg.fields[5] = value;
     return this;
   }
@@ -5118,7 +5119,7 @@ export class IN2Builder {
   }
 
   /** IN2.14 - Military Service */
-  set_in2_14_militaryService(value: string | null | undefined): this {
+  set_in2_14_militaryService(value: MilitaryService | string | null | undefined): this {
     if (value != null) this.seg.fields[14] = value;
     return this;
   }
@@ -5146,7 +5147,7 @@ export class IN2Builder {
   }
 
   /** IN2.16 - Military Status */
-  set_in2_16_militaryStatus(value: string | null | undefined): this {
+  set_in2_16_militaryStatus(value: MilitaryStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[16] = value;
     return this;
   }
@@ -5363,7 +5364,7 @@ export class IN2Builder {
   }
 
   /** IN2.27 - Eligibility Source */
-  set_in2_27_eligibilitySource(value: string | null | undefined): this {
+  set_in2_27_eligibilitySource(value: EligibilitySource | string | null | undefined): this {
     if (value != null) this.seg.fields[27] = value;
     return this;
   }
@@ -5459,7 +5460,7 @@ export class IN2Builder {
   }
 
   /** IN2.31 - Living Dependency */
-  set_in2_31_livingDependency(value: string | null | undefined): this {
+  set_in2_31_livingDependency(value: LivingDependency2 | string | null | undefined): this {
     if (value != null) this.seg.fields[31] = value;
     return this;
   }
@@ -5473,7 +5474,7 @@ export class IN2Builder {
   }
 
   /** IN2.32 - Ambulatory Status */
-  set_in2_32_ambulatoryStatus(value: string | null | undefined): this {
+  set_in2_32_ambulatoryStatus(value: AmbulatoryStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[32] = value;
     return this;
   }
@@ -5534,7 +5535,7 @@ export class IN2Builder {
   }
 
   /** IN2.35 - Living Arrangement */
-  set_in2_35_livingArrangement(value: string | null | undefined): this {
+  set_in2_35_livingArrangement(value: LivingArrangement | string | null | undefined): this {
     if (value != null) this.seg.fields[35] = value;
     return this;
   }
@@ -5574,7 +5575,7 @@ export class IN2Builder {
   }
 
   /** IN2.38 - Student Indicator */
-  set_in2_38_student(value: string | null | undefined): this {
+  set_in2_38_student(value: StudentStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[38] = value;
     return this;
   }
@@ -5771,7 +5772,7 @@ export class IN2Builder {
   }
 
   /** IN2.48 - Job Status */
-  set_in2_48_jobStatus(value: string | null | undefined): this {
+  set_in2_48_jobStatus(value: JobStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[48] = value;
     return this;
   }
@@ -5981,7 +5982,7 @@ export class IN2Builder {
   }
 
   /** IN2.57 - Insurance Co. Contact Reason */
-  set_in2_57_insuranceCoContactReason(value: string | null | undefined): this {
+  set_in2_57_insuranceCoContactReason(value: InsuranceCompanyContactReason | string | null | undefined): this {
     if (value != null) this.seg.fields[57] = value;
     return this;
   }
@@ -6987,7 +6988,7 @@ export class MSHBuilder {
   }
 
   /** MSH.15 - Accept Acknowledgment Type */
-  set_msh_15_acceptAcknowledgmentType(value: string | null | undefined): this {
+  set_msh_15_acceptAcknowledgmentType(value: AcceptApplicationAcknowledgmentConditions | string | null | undefined): this {
     if (value != null) this.seg.fields[15] = value;
     return this;
   }
@@ -7001,7 +7002,7 @@ export class MSHBuilder {
   }
 
   /** MSH.16 - Application Acknowledgment Type */
-  set_msh_16_applicationAcknowledgmentType(value: string | null | undefined): this {
+  set_msh_16_applicationAcknowledgmentType(value: AcceptApplicationAcknowledgmentConditions | string | null | undefined): this {
     if (value != null) this.seg.fields[16] = value;
     return this;
   }
@@ -7029,7 +7030,7 @@ export class MSHBuilder {
   }
 
   /** MSH.18 - Character Set */
-  set_msh_18_characterSet(value: string | null | undefined): this {
+  set_msh_18_characterSet(value: AlternateCharacterSets | string | null | undefined): this {
     if (value != null) this.seg.fields[18] = value;
     return this;
   }
@@ -7055,7 +7056,7 @@ export class MSHBuilder {
   }
 
   /** MSH.20 - Alternate Character Set Handling Scheme */
-  set_msh_20_alternateCharacterSetHandlingScheme(value: string | null | undefined): this {
+  set_msh_20_alternateCharacterSetHandlingScheme(value: AlternateCharacterSetHandlingScheme | string | null | undefined): this {
     if (value != null) this.seg.fields[20] = value;
     return this;
   }
@@ -7405,7 +7406,7 @@ export class NK1Builder {
   }
 
   /** NK1.15 - Administrative Sex */
-  set_nk1_15_gender(value: string | null | undefined): this {
+  set_nk1_15_gender(value: AdministrativeSex | string | null | undefined): this {
     if (value != null) this.seg.fields[15] = value;
     return this;
   }
@@ -7433,7 +7434,7 @@ export class NK1Builder {
   }
 
   /** NK1.17 - Living Dependency */
-  set_nk1_17_livingDependency(value: string | null | undefined): this {
+  set_nk1_17_livingDependency(value: LivingDependency2 | string | null | undefined): this {
     if (value != null) this.seg.fields[17] = value;
     return this;
   }
@@ -7447,7 +7448,7 @@ export class NK1Builder {
   }
 
   /** NK1.18 - Ambulatory Status */
-  set_nk1_18_ambulatoryStatus(value: string | null | undefined): this {
+  set_nk1_18_ambulatoryStatus(value: AmbulatoryStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[18] = value;
     return this;
   }
@@ -7508,7 +7509,7 @@ export class NK1Builder {
   }
 
   /** NK1.21 - Living Arrangement */
-  set_nk1_21_livingArrangement(value: string | null | undefined): this {
+  set_nk1_21_livingArrangement(value: LivingArrangement | string | null | undefined): this {
     if (value != null) this.seg.fields[21] = value;
     return this;
   }
@@ -7548,7 +7549,7 @@ export class NK1Builder {
   }
 
   /** NK1.24 - Student Indicator */
-  set_nk1_24_student(value: string | null | undefined): this {
+  set_nk1_24_student(value: StudentStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[24] = value;
     return this;
   }
@@ -7831,7 +7832,7 @@ export class NK1Builder {
   }
 
   /** NK1.34 - Job Status */
-  set_nk1_34_jobStatus(value: string | null | undefined): this {
+  set_nk1_34_jobStatus(value: JobStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[34] = value;
     return this;
   }
@@ -8068,7 +8069,7 @@ export class OBXBuilder {
   }
 
   /** OBX.10 - Nature of Abnormal Test */
-  set_obx_10_natureOfAbnormalTest(value: string | null | undefined): this {
+  set_obx_10_natureOfAbnormalTest(value: NatureOfAbnormalTesting | string | null | undefined): this {
     if (value != null) this.seg.fields[10] = value;
     return this;
   }
@@ -8082,7 +8083,7 @@ export class OBXBuilder {
   }
 
   /** OBX.11 - Observation Result Status */
-  set_obx_11_observationResultStatus(value: string | null | undefined): this {
+  set_obx_11_observationResultStatus(value: ObservationResultStatusCodesInterpretation | string | null | undefined): this {
     if (value != null) this.seg.fields[11] = value;
     return this;
   }
@@ -8374,7 +8375,7 @@ export class PD1Builder {
   private seg: HL7v2Segment = { segment: "PD1", fields: {} };
 
   /** PD1.1 - Living Dependency */
-  set_pd1_1_livingDependency(value: string | null | undefined): this {
+  set_pd1_1_livingDependency(value: LivingDependency2 | string | null | undefined): this {
     if (value != null) this.seg.fields[1] = value;
     return this;
   }
@@ -8388,7 +8389,7 @@ export class PD1Builder {
   }
 
   /** PD1.2 - Living Arrangement */
-  set_pd1_2_livingArrangement(value: string | null | undefined): this {
+  set_pd1_2_livingArrangement(value: LivingArrangement | string | null | undefined): this {
     if (value != null) this.seg.fields[2] = value;
     return this;
   }
@@ -8472,7 +8473,7 @@ export class PD1Builder {
   }
 
   /** PD1.5 - Student Indicator */
-  set_pd1_5_student(value: string | null | undefined): this {
+  set_pd1_5_student(value: StudentStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[5] = value;
     return this;
   }
@@ -8500,7 +8501,7 @@ export class PD1Builder {
   }
 
   /** PD1.7 - Living Will Code */
-  set_pd1_7_livingWill(value: string | null | undefined): this {
+  set_pd1_7_livingWill(value: LivingWillCodes | string | null | undefined): this {
     if (value != null) this.seg.fields[7] = value;
     return this;
   }
@@ -8514,7 +8515,7 @@ export class PD1Builder {
   }
 
   /** PD1.8 - Organ Donor Code */
-  set_pd1_8_organDonorCode(value: string | null | undefined): this {
+  set_pd1_8_organDonorCode(value: OrganDonorCodes | string | null | undefined): this {
     if (value != null) this.seg.fields[8] = value;
     return this;
   }
@@ -8687,7 +8688,7 @@ export class PD1Builder {
   }
 
   /** PD1.16 - Immunization Registry Status */
-  set_pd1_16_immunizationRegistryStatus(value: string | null | undefined): this {
+  set_pd1_16_immunizationRegistryStatus(value: ImmunizationRegistryStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[16] = value;
     return this;
   }
@@ -8729,7 +8730,7 @@ export class PD1Builder {
   }
 
   /** PD1.19 - Military Branch */
-  set_pd1_19_militaryBranch(value: string | null | undefined): this {
+  set_pd1_19_militaryBranch(value: MilitaryService | string | null | undefined): this {
     if (value != null) this.seg.fields[19] = value;
     return this;
   }
@@ -8757,7 +8758,7 @@ export class PD1Builder {
   }
 
   /** PD1.21 - Military Status */
-  set_pd1_21_militaryStatus(value: string | null | undefined): this {
+  set_pd1_21_militaryStatus(value: MilitaryStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[21] = value;
     return this;
   }
@@ -9110,7 +9111,7 @@ export class PIDBuilder {
   }
 
   /** PID.8 - Administrative Sex */
-  set_pid_8_gender(value: string | null | undefined): this {
+  set_pid_8_gender(value: AdministrativeSex | string | null | undefined): this {
     if (value != null) this.seg.fields[8] = value;
     return this;
   }
@@ -9600,7 +9601,7 @@ export class PIDBuilder {
   }
 
   /** PID.32 - Identity Reliability Code */
-  set_pid_32_identityReliabilityCode(value: string | null | undefined): this {
+  set_pid_32_identityReliabilityCode(value: IdentityReliability | string | null | undefined): this {
     if (value != null) this.seg.fields[32] = value;
     return this;
   }
@@ -9803,7 +9804,7 @@ export class PR1Builder {
   }
 
   /** PR1.6 - Procedure Functional Type */
-  set_pr1_6_procedureFunctionalType(value: string | null | undefined): this {
+  set_pr1_6_procedureFunctionalType(value: ProcedureFunctionalType | string | null | undefined): this {
     if (value != null) this.seg.fields[6] = value;
     return this;
   }
@@ -9976,7 +9977,7 @@ export class PR1Builder {
   }
 
   /** PR1.14 - Procedure Priority */
-  set_pr1_14_procedurePriority(value: string | null | undefined): this {
+  set_pr1_14_procedurePriority(value: ProcedurePriority | string | null | undefined): this {
     if (value != null) this.seg.fields[14] = value;
     return this;
   }
@@ -10037,7 +10038,7 @@ export class PR1Builder {
   }
 
   /** PR1.17 - Procedure DRG Type */
-  set_pr1_17_procedureDrgType(value: string | null | undefined): this {
+  set_pr1_17_procedureDrgType(value: ProcedureDrgType | string | null | undefined): this {
     if (value != null) this.seg.fields[17] = value;
     return this;
   }
@@ -10098,7 +10099,7 @@ export class PR1Builder {
   }
 
   /** PR1.20 - Procedure Action Code */
-  set_pr1_20_procedureActionCode(value: string | null | undefined): this {
+  set_pr1_20_procedureActionCode(value: SegmentAction | string | null | undefined): this {
     if (value != null) this.seg.fields[20] = value;
     return this;
   }
@@ -10136,7 +10137,7 @@ export class PV1Builder {
   }
 
   /** PV1.2 - Patient Class */
-  set_pv1_2_class(value: string | null | undefined): this {
+  set_pv1_2_class(value: PatientClass | string | null | undefined): this {
     if (value != null) this.seg.fields[2] = value;
     return this;
   }
@@ -10162,7 +10163,7 @@ export class PV1Builder {
   }
 
   /** PV1.4 - Admission Type */
-  set_pv1_4_admissionType(value: string | null | undefined): this {
+  set_pv1_4_admissionType(value: AdmissionType | string | null | undefined): this {
     if (value != null) this.seg.fields[4] = value;
     return this;
   }
@@ -10305,7 +10306,7 @@ export class PV1Builder {
   }
 
   /** PV1.10 - Hospital Service */
-  set_pv1_10_hospitalService(value: string | null | undefined): this {
+  set_pv1_10_hospitalService(value: HospitalService | string | null | undefined): this {
     if (value != null) this.seg.fields[10] = value;
     return this;
   }
@@ -10345,7 +10346,7 @@ export class PV1Builder {
   }
 
   /** PV1.13 - Re-admission Indicator */
-  set_pv1_13_reAdmissionIndicator(value: string | null | undefined): this {
+  set_pv1_13_reAdmissionIndicator(value: ReAdmissionIndicator | string | null | undefined): this {
     if (value != null) this.seg.fields[13] = value;
     return this;
   }
@@ -10373,7 +10374,7 @@ export class PV1Builder {
   }
 
   /** PV1.15 - Ambulatory Status */
-  set_pv1_15_ambulatoryStatus(value: string | null | undefined): this {
+  set_pv1_15_ambulatoryStatus(value: AmbulatoryStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[15] = value;
     return this;
   }
@@ -10759,7 +10760,7 @@ export class PV1Builder {
   }
 
   /** PV1.40 - Bed Status */
-  set_pv1_40_bedStatus(value: string | null | undefined): this {
+  set_pv1_40_bedStatus(value: BedStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[40] = value;
     return this;
   }
@@ -10907,7 +10908,7 @@ export class PV1Builder {
   }
 
   /** PV1.51 - Visit Indicator */
-  set_pv1_51_visitIndicator(value: string | null | undefined): this {
+  set_pv1_51_visitIndicator(value: VisitIndicator | string | null | undefined): this {
     if (value != null) this.seg.fields[51] = value;
     return this;
   }
@@ -11042,7 +11043,7 @@ export class PV2Builder {
   }
 
   /** PV2.7 - Visit User Code */
-  set_pv2_7_visitUserCode(value: string | null | undefined): this {
+  set_pv2_7_visitUserCode(value: VisitUserCodes | string | null | undefined): this {
     if (value != null) this.seg.fields[7] = value;
     return this;
   }
@@ -11189,7 +11190,7 @@ export class PV2Builder {
   }
 
   /** PV2.16 - Purge Status Code */
-  set_pv2_16_purgeStatusCode(value: string | null | undefined): this {
+  set_pv2_16_purgeStatusCode(value: PurgeStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[16] = value;
     return this;
   }
@@ -11217,7 +11218,7 @@ export class PV2Builder {
   }
 
   /** PV2.18 - Special Program Code */
-  set_pv2_18_specialProgramCode(value: string | null | undefined): this {
+  set_pv2_18_specialProgramCode(value: SpecialProgram | string | null | undefined): this {
     if (value != null) this.seg.fields[18] = value;
     return this;
   }
@@ -11259,7 +11260,7 @@ export class PV2Builder {
   }
 
   /** PV2.21 - Visit Publicity Code */
-  set_pv2_21_visitPublicityCode(value: string | null | undefined): this {
+  set_pv2_21_visitPublicityCode(value: Publicity | string | null | undefined): this {
     if (value != null) this.seg.fields[21] = value;
     return this;
   }
@@ -11322,7 +11323,7 @@ export class PV2Builder {
   }
 
   /** PV2.24 - Patient Status Code */
-  set_pv2_24_status(value: string | null | undefined): this {
+  set_pv2_24_status(value: PatientStatus | string | null | undefined): this {
     if (value != null) this.seg.fields[24] = value;
     return this;
   }
@@ -11336,7 +11337,7 @@ export class PV2Builder {
   }
 
   /** PV2.25 - Visit Priority Code */
-  set_pv2_25_visitPriorityCode(value: string | null | undefined): this {
+  set_pv2_25_visitPriorityCode(value: VisitPriority | string | null | undefined): this {
     if (value != null) this.seg.fields[25] = value;
     return this;
   }
@@ -11622,7 +11623,7 @@ export class PV2Builder {
   }
 
   /** PV2.43 - Living Will Code */
-  set_pv2_43_livingWill(value: string | null | undefined): this {
+  set_pv2_43_livingWill(value: LivingWillCodes | string | null | undefined): this {
     if (value != null) this.seg.fields[43] = value;
     return this;
   }
@@ -11636,7 +11637,7 @@ export class PV2Builder {
   }
 
   /** PV2.44 - Organ Donor Code */
-  set_pv2_44_organDonorCode(value: string | null | undefined): this {
+  set_pv2_44_organDonorCode(value: OrganDonorCodes | string | null | undefined): this {
     if (value != null) this.seg.fields[44] = value;
     return this;
   }
@@ -11727,7 +11728,7 @@ export class PV2Builder {
   }
 
   /** PV2.49 - Notify Clergy Code */
-  set_pv2_49_notifyClergyCode(value: string | null | undefined): this {
+  set_pv2_49_notifyClergyCode(value: ClergyNotificationType | string | null | undefined): this {
     if (value != null) this.seg.fields[49] = value;
     return this;
   }
@@ -11763,7 +11764,7 @@ export class ROLBuilder {
   }
 
   /** ROL.2 - Action Code */
-  set_rol_2_actionCode(value: string | null | undefined): this {
+  set_rol_2_actionCode(value: ProblemGoalAction | string | null | undefined): this {
     if (value != null) this.seg.fields[2] = value;
     return this;
   }
