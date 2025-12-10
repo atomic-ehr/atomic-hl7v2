@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0435",
+  "id": "v2-0435",
+  "name": "AdvanceDirective",
+  "title": "advanceDirective",
+  "description": "Code system of concepts specifying the patient's instructions to the healthcare facility.  Used in HL7 Version 2.x messaging in the PV2 and PD1 segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0435",
+  "concepts": [
+    {
+      "code": "DNR",
+      "display": "Do not resuscitate"
+    },
+    {
+      "code": "N",
+      "display": "No directive"
+    }
+  ]
+}

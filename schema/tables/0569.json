@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0569",
+  "id": "v2-0569",
+  "name": "AdjustmentAction",
+  "title": "adjustmentAction",
+  "description": "Code system of concepts used to specify the action requested of the party that receives an adjustment.  Used in the Adjustment (ADJ) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0569",
+  "concepts": [
+    {
+      "code": "EOB",
+      "display": "Print on EOB"
+    },
+    {
+      "code": "PAT",
+      "display": "Inform Patient"
+    },
+    {
+      "code": "PRO",
+      "display": "Inform Provider"
+    }
+  ]
+}

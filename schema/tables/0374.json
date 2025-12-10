@@ -1,0 +1,14 @@
+{
+  "tableNumber": "0374",
+  "id": "v2-0374",
+  "name": "SystemInducedContaminants",
+  "title": "systemInducedContaminants",
+  "description": "Code system of concepts that identify the specimen contaminant identifier associated with the specimen in the container.  Used in the Interaction Specimen Container Detail (SAC) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0374",
+  "concepts": [
+    {
+      "code": "CNTM",
+      "display": "Present, type of contamination unspecified"
+    }
+  ]
+}

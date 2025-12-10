@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0315",
+  "id": "v2-0315",
+  "name": "LivingWillCodes",
+  "title": "livingWillCodes",
+  "description": "Code system of concepts specifying whether or not the patient has a living will and, if so, whether a copy fo the living will is on file at the healthcare facility.  If the patient does not have a living will, the value of this field indicates whether the patient was provided information on living wills.  Used in HL7 Version 2.x messaging in the Patient Visit - Additional Information ( PV2) and Patient Additional Demographic (PD1) segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0315",
+  "concepts": [
+    {
+      "code": "Y",
+      "display": "Yes, patient has a living will"
+    },
+    {
+      "code": "F",
+      "display": "Yes, patient has a living will but it is not on file"
+    },
+    {
+      "code": "N",
+      "display": "No, patient does not have a living will and no information was provided"
+    },
+    {
+      "code": "I",
+      "display": "No, patient does not have a living will but information was provided"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

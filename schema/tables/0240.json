@@ -1,0 +1,46 @@
+{
+  "tableNumber": "0240",
+  "id": "v2-0240",
+  "name": "EventConsequence",
+  "title": "eventConsequence",
+  "description": "HL7-defined code system of concepts used to describe the impact of an event on a patient.  Used in HL7 Version 2.x messaging in the PEO segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0240",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "Death"
+    },
+    {
+      "code": "L",
+      "display": "Life threatening"
+    },
+    {
+      "code": "H",
+      "display": "Caused hospitalized"
+    },
+    {
+      "code": "P",
+      "display": "Prolonged hospitalization"
+    },
+    {
+      "code": "C",
+      "display": "Congenital anomaly/birth defect"
+    },
+    {
+      "code": "I",
+      "display": "Incapacity which is significant, persistent or permanent"
+    },
+    {
+      "code": "J",
+      "display": "Disability which is significant, persistent or permanent"
+    },
+    {
+      "code": "R",
+      "display": "Required intervention to prevent permanent impairment/damage"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    }
+  ]
+}

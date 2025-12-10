@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0367",
+  "id": "v2-0367",
+  "name": "AlertLevel",
+  "title": "alertLevel",
+  "description": "HL7-defined code system of concepts that identify the highest level of the alert state (e.g.,highest alert severity) that is associated with the indicated equipment (e.g. processing event, inventory event, QC event).  Used in the Equipment Detail (EQU) and Notification Detail (NDS) segments in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0367",
+  "concepts": [
+    {
+      "code": "N",
+      "display": "Normal"
+    },
+    {
+      "code": "W",
+      "display": "Warning"
+    },
+    {
+      "code": "S",
+      "display": "Serious"
+    },
+    {
+      "code": "C",
+      "display": "Critical"
+    },
+    {
+      "code": "...",
+      "display": "(null) No level change"
+    },
+    {
+      "code": "…",
+      "display": "(null) No level change"
+    }
+  ]
+}

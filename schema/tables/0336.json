@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0336",
+  "id": "v2-0336",
+  "name": "ReferralReason",
+  "title": "referralReason",
+  "description": "Code system of concepts used to specify the reason for which the referral will take place.  Used in HL7 Version 2.x messaging in the Referral Information (RF1) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0336",
+  "concepts": [
+    {
+      "code": "S",
+      "display": "Second Opinion"
+    },
+    {
+      "code": "P",
+      "display": "Patient Preference"
+    },
+    {
+      "code": "O",
+      "display": "Provider Ordered"
+    },
+    {
+      "code": "W",
+      "display": "Work Load"
+    }
+  ]
+}

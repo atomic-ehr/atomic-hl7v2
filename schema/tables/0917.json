@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0917",
+  "id": "v2-0917",
+  "name": "BolusType",
+  "title": "bolusType",
+  "description": "HL7-defined code system of concepts specifying the type of bolus.  Used in HL7 Version 2.x messaging in the RXV segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0917",
+  "concepts": [
+    {
+      "code": "C",
+      "display": "Supplemental"
+    },
+    {
+      "code": "L",
+      "display": "Loading"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0298",
+  "id": "v2-0298",
+  "name": "CpRangeType",
+  "title": "cpRangeType",
+  "description": "HL7-defined code system of concepts used to define a type of range used in composite pricing in financial transacxtions.  Used in HL7 Version 2 messaging in the CP datatype.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0298",
+  "concepts": [
+    {
+      "code": "P",
+      "display": "Pro-rate. Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been consumed"
+    },
+    {
+      "code": "F",
+      "display": "Flat-rate. Apply the entire price to this interval, do not pro-rate the price if the full interval has not occurred/been consumed"
+    }
+  ]
+}

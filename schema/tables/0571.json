@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0571",
+  "id": "v2-0571",
+  "name": "InvoiceProcessingResultsStatus",
+  "title": "invoiceProcessingResultsStatus",
+  "description": "Code system of concepts used to specify the processing status for an Invoice Processing Result.  Used in the Invoice Processing Result (IPR) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0571",
+  "concepts": [
+    {
+      "code": "ACK",
+      "display": "Acknowledge"
+    },
+    {
+      "code": "REJECT",
+      "display": "Reject"
+    },
+    {
+      "code": "PEND",
+      "display": "Pending"
+    },
+    {
+      "code": "ADJZER",
+      "display": "Adjudicated to Zero"
+    },
+    {
+      "code": "ADJSUB",
+      "display": "Adjudicated as Submitted"
+    },
+    {
+      "code": "ADJ",
+      "display": "Adjudicated with Adjustments"
+    },
+    {
+      "code": "PAID",
+      "display": "Paid"
+    },
+    {
+      "code": "PRED",
+      "display": "Pre-Determination"
+    }
+  ]
+}

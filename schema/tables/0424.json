@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0424",
+  "id": "v2-0424",
+  "name": "GestationCategory",
+  "title": "gestationCategory",
+  "description": "HL7-defined code system of concepts which specify the status of a birth in relation to the gestation.  Used in HL7 Version 2 messaging in the ABS segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0424",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Premature / Pre-term"
+    },
+    {
+      "code": "2",
+      "display": "Full Term"
+    },
+    {
+      "code": "3",
+      "display": "Overdue / Post-term"
+    }
+  ]
+}

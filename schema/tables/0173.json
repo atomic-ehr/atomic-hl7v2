@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0173",
+  "id": "v2-0173",
+  "name": "CoordinationOfBenefits",
+  "title": "coordinationOfBenefits",
+  "description": "Code system of concepts specifying whether this insurance works in conjunction with other insurance plans or if it provides independent coverage and payment of benefits regardless of other insurance that might be available to the patient.  Used in HL7 Version 2.x messaging in the IN1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0173",
+  "concepts": [
+    {
+      "code": "CO",
+      "display": "Coordination"
+    },
+    {
+      "code": "IN",
+      "display": "Independent"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0145",
+  "id": "v2-0145",
+  "name": "RoomType",
+  "title": "roomType",
+  "description": "Code system of concepts  which specify the room type.  Used in HL7 Version 2.x messaging in the RMC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0145",
+  "concepts": [
+    {
+      "code": "PRI",
+      "display": "Private room"
+    },
+    {
+      "code": "2PRI",
+      "display": "Second private room"
+    },
+    {
+      "code": "SPR",
+      "display": "Semi-private room"
+    },
+    {
+      "code": "2SPR",
+      "display": "Second semi-private room"
+    },
+    {
+      "code": "ICU",
+      "display": "Intensive care unit"
+    },
+    {
+      "code": "2ICU",
+      "display": "Second intensive care unit"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0421",
+  "id": "v2-0421",
+  "name": "SeverityOfIllness",
+  "title": "severityOfIllness",
+  "description": "HL7-defined code system of concepts which specify the ranking of a patient’s illness.  Used in HL7 Version 2 messaging in the ABS segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0421",
+  "concepts": [
+    {
+      "code": "MI",
+      "display": "Mild"
+    },
+    {
+      "code": "MO",
+      "display": "Moderate"
+    },
+    {
+      "code": "SE",
+      "display": "Severe"
+    }
+  ]
+}

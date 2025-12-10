@@ -1,0 +1,106 @@
+{
+  "tableNumber": "0200",
+  "id": "v2-0200",
+  "name": "NameType2",
+  "title": "nameType2",
+  "description": "HL7-defined code system of concepts for types of names for persons.  Used in HL7 Version 2.x messaging in the XPN, PPN, XCN, PID and MRG segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0200",
+  "concepts": [
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "A",
+      "display": "Assigned"
+    },
+    {
+      "code": "B",
+      "display": "Birth name"
+    },
+    {
+      "code": "BAD",
+      "display": "Bad Name"
+    },
+    {
+      "code": "C",
+      "display": "Adopted Name"
+    },
+    {
+      "code": "D",
+      "display": "Customary Name"
+    },
+    {
+      "code": "F",
+      "display": "Fathers Name"
+    },
+    {
+      "code": "I",
+      "display": "Licensing Name"
+    },
+    {
+      "code": "K",
+      "display": "Business name"
+    },
+    {
+      "code": "L",
+      "display": "Official Registry Name"
+    },
+    {
+      "code": "M",
+      "display": "Maiden Name"
+    },
+    {
+      "code": "MSK",
+      "display": "Masked"
+    },
+    {
+      "code": "N",
+      "display": "Nickname"
+    },
+    {
+      "code": "NAV",
+      "display": "Temporarily Unavailable"
+    },
+    {
+      "code": "NB",
+      "display": "Newborn Name"
+    },
+    {
+      "code": "NOUSE",
+      "display": "No Longer To Be Used"
+    },
+    {
+      "code": "P",
+      "display": "Name of Partner/Spouse"
+    },
+    {
+      "code": "R",
+      "display": "Registered Name"
+    },
+    {
+      "code": "REL",
+      "display": "Religious"
+    },
+    {
+      "code": "S",
+      "display": "Pseudonym"
+    },
+    {
+      "code": "T",
+      "display": "Indigenous/Tribal"
+    },
+    {
+      "code": "TEMP",
+      "display": "Temporary Name"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    },
+    {
+      "code": "...",
+      "display": "No suggested values defined"
+    }
+  ]
+}

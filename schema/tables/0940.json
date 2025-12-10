@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0940",
+  "id": "v2-0940",
+  "name": "LimitationTypeCode",
+  "title": "limitationTypeCode",
+  "description": "HL7-defined code system of concepts specifying the type of limitation.  Used in HL7 Version 2.x messaging in the DPS segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0940",
+  "concepts": [
+    {
+      "code": "LCP",
+      "display": "Limited Coverage Policy"
+    },
+    {
+      "code": "NFDA",
+      "display": "Non-FDA Approved Diagnositic Procedure"
+    },
+    {
+      "code": "FLDP",
+      "display": "Frequency Limited Diagnostics Procedure"
+    },
+    {
+      "code": "NT",
+      "display": "New Test - Limited Diagnostic History"
+    }
+  ]
+}

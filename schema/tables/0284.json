@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0284",
+  "id": "v2-0284",
+  "name": "ReferralCategory",
+  "title": "referralCategory",
+  "description": "Code system of concepts used to describe the patient care setting where a referral should take place.  Used in HL7 Version 2.x messaging in the RF1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0284",
+  "concepts": [
+    {
+      "code": "I",
+      "display": "Inpatient"
+    },
+    {
+      "code": "O",
+      "display": "Outpatient"
+    },
+    {
+      "code": "A",
+      "display": "Ambulatory"
+    },
+    {
+      "code": "E",
+      "display": "Emergency"
+    }
+  ]
+}

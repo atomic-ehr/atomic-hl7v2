@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0080",
+  "id": "v2-0080",
+  "name": "NatureOfAbnormalTesting",
+  "title": "natureOfAbnormalTesting",
+  "description": "HL7-defined code system of concepts specifying the nature of an abnormal test.  Used in HL7 Version 2.x messaging in the OBX segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0080",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "An age-based population"
+    },
+    {
+      "code": "N",
+      "display": "None - generic normal range"
+    },
+    {
+      "code": "R",
+      "display": "A race-based population"
+    },
+    {
+      "code": "S",
+      "display": "A sex-based population"
+    },
+    {
+      "code": "SP",
+      "display": "Species"
+    },
+    {
+      "code": "B",
+      "display": "Breed"
+    },
+    {
+      "code": "ST",
+      "display": "Strain"
+    }
+  ]
+}

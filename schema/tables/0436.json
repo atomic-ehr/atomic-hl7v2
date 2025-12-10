@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0436",
+  "id": "v2-0436",
+  "name": "SensitivityToCausativeAgent",
+  "title": "sensitivityToCausativeAgent",
+  "description": "Code system of concepts specifying the reason the patient should not be exposed to a substance.  Used in HL7 Version 2.x messaging in the IAM segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0436",
+  "concepts": [
+    {
+      "code": "AD",
+      "display": "Adverse Reaction (Not otherwise classified)"
+    },
+    {
+      "code": "AL",
+      "display": "Allergy"
+    },
+    {
+      "code": "CT",
+      "display": "Contraindication"
+    },
+    {
+      "code": "IN",
+      "display": "Intolerance"
+    },
+    {
+      "code": "SE",
+      "display": "Side Effect"
+    }
+  ]
+}

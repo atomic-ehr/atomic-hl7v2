@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0250",
+  "id": "v2-0250",
+  "name": "RelatednessAssessment",
+  "title": "relatednessAssessment",
+  "description": "HL7-defined code system of concepts used to provide an estimate of whether an issue with a  product was the cause of an event.  Used in HL7 Version 2.x messaging in the PCR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0250",
+  "concepts": [
+    {
+      "code": "H",
+      "display": "Highly probable"
+    },
+    {
+      "code": "M",
+      "display": "Moderately probable"
+    },
+    {
+      "code": "S",
+      "display": "Somewhat probable"
+    },
+    {
+      "code": "I",
+      "display": "Improbable"
+    },
+    {
+      "code": "N",
+      "display": "Not related"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0261",
+  "id": "v2-0261",
+  "name": "LocationEquipment",
+  "title": "locationEquipment",
+  "description": "Code system of concepts used to identify the equipment available in a location definition identified as a room or bed.  Used in HL7 Version 2.x messaging in the LOC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0261",
+  "concepts": [
+    {
+      "code": "OXY",
+      "display": "Oxygen"
+    },
+    {
+      "code": "SUC",
+      "display": "Suction"
+    },
+    {
+      "code": "VIT",
+      "display": "Vital signs monitor"
+    },
+    {
+      "code": "INF",
+      "display": "Infusion pump"
+    },
+    {
+      "code": "IVP",
+      "display": "IV pump"
+    },
+    {
+      "code": "EEG",
+      "display": "Electro-Encephalogram"
+    },
+    {
+      "code": "EKG",
+      "display": "Electro-Cardiogram"
+    },
+    {
+      "code": "VEN",
+      "display": "Ventilator"
+    }
+  ]
+}

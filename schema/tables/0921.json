@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0921",
+  "id": "v2-0921",
+  "name": "CertificationType",
+  "title": "certificationType",
+  "description": "Code system of concepts specifying the code for the certification type.  Used in HL7 Version 2.x messaging in the IN3 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0921",
+  "concepts": [
+    {
+      "code": "ADM",
+      "display": "Admitting"
+    },
+    {
+      "code": "SERV",
+      "display": "Service"
+    },
+    {
+      "code": "PROC",
+      "display": "Procedure"
+    }
+  ]
+}

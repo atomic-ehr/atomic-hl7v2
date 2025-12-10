@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0356",
+  "id": "v2-0356",
+  "name": "AlternateCharacterSetHandlingScheme",
+  "title": "alternateCharacterSetHandlingScheme",
+  "description": "HL7-defined code system of concept that specify the scheme used when any alternative character sets are specified in the second or later iterations of MSH-18 Character Set, and if any special handling scheme is needed.  Used in HL7 Version 2.x messaging in the MSH segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0356",
+  "concepts": [
+    {
+      "code": "ISO 2022-1994",
+      "display": "This standard is titled \"Information Technology - Character Code Structure and Extension Technique\". ."
+    },
+    {
+      "code": "2.3",
+      "display": "The character set switching mode specified in HL7 2.5, section 2.7.2 and section 2.A.46, \"XPN - extended person name\"."
+    },
+    {
+      "code": "<null>",
+      "display": "This is the default, indicating that there is no character set switching occurring in this message."
+    }
+  ]
+}

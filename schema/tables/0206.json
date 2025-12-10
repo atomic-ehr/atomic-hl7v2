@@ -1,0 +1,31 @@
+{
+  "tableNumber": "0206",
+  "id": "v2-0206",
+  "name": "SegmentAction",
+  "title": "segmentAction",
+  "description": "HL7-defined code system of concepts specifying actions to be applied for segments when an HL7 version 2 interface is operating in \"action code mode\" (a kind of update mode in the Standard).  Used in HL7 Version 2.x messaging in the RXA, RXV, LCH, IAM, ARV, IN1 and OH1 segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0206",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Add/Insert"
+    },
+    {
+      "code": "D",
+      "display": "Delete"
+    },
+    {
+      "code": "S",
+      "display": "Used in Snapshot mode",
+      "definition": "Declares when segment falls under snapshot  mode handling, i.e. all elements that were previously sent will be sent, not just any changes"
+    },
+    {
+      "code": "U",
+      "display": "Update"
+    },
+    {
+      "code": "X",
+      "display": "No Change"
+    }
+  ]
+}

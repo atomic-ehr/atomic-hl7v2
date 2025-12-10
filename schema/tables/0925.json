@@ -1,0 +1,62 @@
+{
+  "tableNumber": "0925",
+  "id": "v2-0925",
+  "name": "PhlebotomyIssue",
+  "title": "phlebotomyIssue",
+  "description": "HL7-defined code system of concepts specifying the phlebotomy issue.  Used in HL7 Version 2.x messaging in the DON segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0925",
+  "concepts": [
+    {
+      "code": "INF",
+      "display": "Infiltration"
+    },
+    {
+      "code": "VSM",
+      "display": "Vein Spasm"
+    },
+    {
+      "code": "COL",
+      "display": "Collapse"
+    },
+    {
+      "code": "MIS",
+      "display": "Missed / in tissue"
+    },
+    {
+      "code": "NAD",
+      "display": "Needle adjustment (this may not end a procedure, if successful will impact component production)"
+    },
+    {
+      "code": "PFL",
+      "display": "Poor flow"
+    },
+    {
+      "code": "CLT",
+      "display": "Clotted"
+    },
+    {
+      "code": "DND",
+      "display": "Defective Needle"
+    },
+    {
+      "code": "DBG",
+      "display": "Defective Bag"
+    },
+    {
+      "code": "DAK",
+      "display": "Defective Apheresis Kit"
+    },
+    {
+      "code": "DMT",
+      "display": "Defective Instrument"
+    },
+    {
+      "code": "IPF",
+      "display": "Instrument Power Failure"
+    },
+    {
+      "code": "ACN",
+      "display": "Air Contamination"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0667",
+  "id": "v2-0667",
+  "name": "DeviceDataState",
+  "title": "deviceDataState",
+  "description": "Code system of concepts that define the state of the data as provided from a device. Used in HL7 Version 2.x messaging in the SDD segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0667",
+  "concepts": [
+    {
+      "code": "0",
+      "display": "Real Time Values"
+    },
+    {
+      "code": "1",
+      "display": "Historic Values"
+    }
+  ]
+}

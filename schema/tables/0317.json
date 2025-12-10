@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0317",
+  "id": "v2-0317",
+  "name": "Annotations",
+  "title": "annotations",
+  "description": "Code system of concepts specifying the coded entry associated with a given point in time during the waveform recording.  Used in HL7 Version 2.x messaging in the Observation Result (OBX) Another Observation (ANO) segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0317",
+  "concepts": [
+    {
+      "code": "9900",
+      "display": "Pace spike"
+    },
+    {
+      "code": "9901",
+      "display": "SAS marker"
+    },
+    {
+      "code": "9902",
+      "display": "Sense marker"
+    },
+    {
+      "code": "9903",
+      "display": "Beat marker"
+    },
+    {
+      "code": "9904",
+      "display": "etc."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0949",
+  "id": "v2-0949",
+  "name": "OrderControlCodeReason",
+  "title": "orderControlCodeReason",
+  "description": "HL7-defined code system of concepts that describe reasons for the chosen order control codes. Used in HL7 Version 2 messaging in the ORC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0949",
+  "concepts": [
+    {
+      "code": "CO",
+      "display": "Cost",
+      "definition": "Order changed based on cost"
+    },
+    {
+      "code": "ST",
+      "display": "Specimen Type",
+      "definition": "Incorrect specimen type submitted for the requested test"
+    },
+    {
+      "code": "SV",
+      "display": "Specimen Volume",
+      "definition": "Provided specimen volume inadequate for testing"
+    },
+    {
+      "code": "UN",
+      "display": "Unavailable test",
+      "definition": "Requested test not available"
+    }
+  ]
+}

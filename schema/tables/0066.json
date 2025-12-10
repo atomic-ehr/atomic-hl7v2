@@ -1,0 +1,71 @@
+{
+  "tableNumber": "0066",
+  "id": "v2-0066",
+  "name": "EmploymentStatus",
+  "title": "employmentStatus",
+  "description": "HL7-defined code system of concepts which specify an employment status of a person. Used in HL7 Version 2 messaging in the GT1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0066",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Full time employed"
+    },
+    {
+      "code": "F",
+      "display": "Full Time"
+    },
+    {
+      "code": "...",
+      "display": "see chapter 6"
+    },
+    {
+      "code": "2",
+      "display": "Part time employed"
+    },
+    {
+      "code": "P",
+      "display": "Part Time"
+    },
+    {
+      "code": "4",
+      "display": "Self-employed",
+      "definition": "Self-employed,"
+    },
+    {
+      "code": "D",
+      "display": "Per Diem"
+    },
+    {
+      "code": "C",
+      "display": "Contract, per diem"
+    },
+    {
+      "code": "L",
+      "display": "Leave of absence (e.g., family leave, sabbatical, etc.)"
+    },
+    {
+      "code": "T",
+      "display": "Temporarily unemployed"
+    },
+    {
+      "code": "3",
+      "display": "Unemployed"
+    },
+    {
+      "code": "5",
+      "display": "Retired"
+    },
+    {
+      "code": "6",
+      "display": "On active military duty"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "9",
+      "display": "Unknown"
+    }
+  ]
+}

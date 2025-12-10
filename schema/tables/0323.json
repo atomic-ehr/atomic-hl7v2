@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0323",
+  "id": "v2-0323",
+  "name": "ActionCodes",
+  "title": "actionCodes",
+  "description": "HL7-defined code system ofstatus codes of record operation. Used in Version 2 messaging, these are used in the RXA segment in the vaccine messages, where a method of correcting vaccination information transmitted with incorrect patient identifying information is needed.  As of version 2.6, this table was replaced with table 0206, whose values are defined by code system xxxx.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0323",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Add/Insert"
+    },
+    {
+      "code": "D",
+      "display": "Delete"
+    },
+    {
+      "code": "U",
+      "display": "Update"
+    },
+    {
+      "code": "X",
+      "display": "No change"
+    }
+  ]
+}

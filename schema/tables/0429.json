@@ -1,0 +1,58 @@
+{
+  "tableNumber": "0429",
+  "id": "v2-0429",
+  "name": "ProductionClass",
+  "title": "productionClass",
+  "description": "Code system of concepts  specifying the code and/or text indicating the primary use for which the living subject was bred or grown.  Used in HL7 Version 2.x messaging in the PID segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0429",
+  "concepts": [
+    {
+      "code": "BR",
+      "display": "Breeding/genetic stock"
+    },
+    {
+      "code": "DA",
+      "display": "Dairy"
+    },
+    {
+      "code": "DR",
+      "display": "Draft"
+    },
+    {
+      "code": "DU",
+      "display": "Dual Purpose"
+    },
+    {
+      "code": "LY",
+      "display": "Layer, Includes Multiplier flocks"
+    },
+    {
+      "code": "MT",
+      "display": "Meat"
+    },
+    {
+      "code": "OT",
+      "display": "Other"
+    },
+    {
+      "code": "PL",
+      "display": "Pleasure"
+    },
+    {
+      "code": "RA",
+      "display": "Racing"
+    },
+    {
+      "code": "SH",
+      "display": "Show"
+    },
+    {
+      "code": "NA",
+      "display": "Not Applicable"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

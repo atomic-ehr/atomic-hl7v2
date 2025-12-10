@@ -1,0 +1,50 @@
+{
+  "tableNumber": "0493",
+  "id": "v2-0493",
+  "name": "SpecimenCondition",
+  "title": "specimenCondition",
+  "description": "Code system of concepts specifying a mode or state of being that describes the nature of the specimen.  Used in HL7 Version 2.x messaging in the SPM segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0493",
+  "concepts": [
+    {
+      "code": "AUT",
+      "display": "Autolyzed"
+    },
+    {
+      "code": "CLOT",
+      "display": "Clotted"
+    },
+    {
+      "code": "CON",
+      "display": "Contaminated"
+    },
+    {
+      "code": "COOL",
+      "display": "Cool"
+    },
+    {
+      "code": "FROZ",
+      "display": "Frozen"
+    },
+    {
+      "code": "HEM",
+      "display": "Hemolyzed"
+    },
+    {
+      "code": "LIVE",
+      "display": "Live"
+    },
+    {
+      "code": "ROOM",
+      "display": "Room temperature"
+    },
+    {
+      "code": "SNR",
+      "display": "Sample not received"
+    },
+    {
+      "code": "CFU",
+      "display": "Centrifuged"
+    }
+  ]
+}

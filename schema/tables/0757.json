@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0757",
+  "id": "v2-0757",
+  "name": "DrgStatusRespirationMinutes",
+  "title": "drgStatusRespirationMinutes",
+  "description": "Code system of concepts specifying the status of the use of the respiration minutes information for diagnosis related group (DRG) determination.  US Realm. Used in HL7 Version 2.x messaging in the DRG segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0757",
+  "concepts": [
+    {
+      "code": "0",
+      "display": "Respiration minutes not used for grouping"
+    },
+    {
+      "code": "1",
+      "display": "Listed respiration minutes used for grouping"
+    },
+    {
+      "code": "2",
+      "display": "OPS code value used for grouping"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0530",
+  "id": "v2-0530",
+  "name": "OrganizationAgencyDepartment",
+  "title": "organization-Agency-Department",
+  "description": "Code system of concepts used to specify the agency or department that assigned the identifier in component 1.  Used in the Performing Person Time Stamp (PPN), Extended Composite ID Number and Name for Persons (XCN) and Extended Composite ID with Check Digit (CX) segments in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0530",
+  "concepts": [
+    {
+      "code": "AE",
+      "display": "American Express"
+    },
+    {
+      "code": "DEA",
+      "display": "Drug Enforcement Agency"
+    },
+    {
+      "code": "DOD",
+      "display": "Department of Defense"
+    },
+    {
+      "code": "MC",
+      "display": "Master Card"
+    },
+    {
+      "code": "VA",
+      "display": "Veterans Affairs"
+    },
+    {
+      "code": "VI",
+      "display": "Visa"
+    }
+  ]
+}

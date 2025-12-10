@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0102",
+  "id": "v2-0102",
+  "name": "DelayedAcknowledgmentType",
+  "title": "delayedAcknowledgmentType",
+  "description": "HL7-defined code system of concepts which specify a response type used in deferred processing two phase reply for delayed acknowldgement mode of the original acknowledgement mechanism defined in HL7 Version 2.x messaging and used in the MSH segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0102",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "Message received, stored for later processing"
+    },
+    {
+      "code": "F",
+      "display": "acknowledgment after processing"
+    }
+  ]
+}

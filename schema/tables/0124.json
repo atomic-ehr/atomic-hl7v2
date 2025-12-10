@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0124",
+  "id": "v2-0124",
+  "name": "TransportationMode",
+  "title": "transportationMode",
+  "description": "HL7-defined code system of concepts which specify how (or whether) to transport a patient, when applicable, for an ordered service.  Used in HL7 Version 2.x messaging in the OBR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0124",
+  "concepts": [
+    {
+      "code": "CART",
+      "display": "Cart - patient travels on cart or gurney"
+    },
+    {
+      "code": "PORT",
+      "display": "The examining device goes to patient's location"
+    },
+    {
+      "code": "WALK",
+      "display": "Patient walks to diagnostic service"
+    },
+    {
+      "code": "WHLC",
+      "display": "Wheelchair"
+    }
+  ]
+}

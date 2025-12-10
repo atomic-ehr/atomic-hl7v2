@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0806",
+  "id": "v2-0806",
+  "name": "SterilizationType",
+  "title": "sterilizationType",
+  "description": "Code system of concepts specifying the type of sterilization used for sterilizing the inventory supply item in the ITM segment.  Used in HL7 Version 2.x messaging in the  STZ segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0806",
+  "concepts": [
+    {
+      "code": "EOG",
+      "display": "Ethylene Oxide Gas"
+    },
+    {
+      "code": "PCA",
+      "display": "Peracetic acid"
+    },
+    {
+      "code": "STM",
+      "display": "Steam"
+    }
+  ]
+}

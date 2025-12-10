@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0927",
+  "id": "v2-0927",
+  "name": "ArmStick",
+  "title": "armStick",
+  "description": "HL7-defined code system of concepts specifying the arm(s) receiving the stick.  Used in HL7 Version 2.x messaging in the DON segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0927",
+  "concepts": [
+    {
+      "code": "L",
+      "display": "Left Arm"
+    },
+    {
+      "code": "R",
+      "display": "Right Arm"
+    },
+    {
+      "code": "B",
+      "display": "Both Arms"
+    }
+  ]
+}

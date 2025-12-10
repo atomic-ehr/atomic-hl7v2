@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0474",
+  "id": "v2-0474",
+  "name": "OrganizationUnitType",
+  "title": "organizationUnitType",
+  "description": "Code system of concepts specifying the classification of the organization unit.  Used in HL7 Version 2.x messaging in the ORG segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0474",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "Department"
+    },
+    {
+      "code": "F",
+      "display": "Facility"
+    },
+    {
+      "code": "L",
+      "display": "Local market area"
+    },
+    {
+      "code": "U",
+      "display": "Subdepartment"
+    },
+    {
+      "code": "M",
+      "display": "Medical Center Area"
+    },
+    {
+      "code": "S",
+      "display": "Subdivision"
+    },
+    {
+      "code": "V",
+      "display": "Division"
+    }
+  ]
+}

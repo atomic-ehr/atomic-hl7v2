@@ -1,0 +1,78 @@
+{
+  "tableNumber": "0376",
+  "id": "v2-0376",
+  "name": "SpecialHandling",
+  "title": "specialHandling",
+  "description": "Code system of concepts describing how a specimen and/or container needs to be handled from the time of collection through the initiation of testing.  Used in HL7 Version 2.x messaging in the SPM, SAC, PAC and OM4 segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0376",
+  "concepts": [
+    {
+      "code": "C37",
+      "display": "Body temperature"
+    },
+    {
+      "code": "AMB",
+      "display": "Ambient temperature"
+    },
+    {
+      "code": "CAMB",
+      "display": "Critical ambient temperature"
+    },
+    {
+      "code": "REF",
+      "display": "Refrigerated temperature"
+    },
+    {
+      "code": "CREF",
+      "display": "Critical refrigerated temperature"
+    },
+    {
+      "code": "FRZ",
+      "display": "Frozen temperature"
+    },
+    {
+      "code": "CFRZ",
+      "display": "Critical frozen temperature"
+    },
+    {
+      "code": "DFRZ",
+      "display": "Deep frozen"
+    },
+    {
+      "code": "UFRZ",
+      "display": "Ultra frozen"
+    },
+    {
+      "code": "NTR",
+      "display": "Liquid nitrogen"
+    },
+    {
+      "code": "PRTL",
+      "display": "Protect from light"
+    },
+    {
+      "code": "CATM",
+      "display": "Protect from air"
+    },
+    {
+      "code": "DRY",
+      "display": "Dry"
+    },
+    {
+      "code": "PSO",
+      "display": "No shock"
+    },
+    {
+      "code": "PSA",
+      "display": "Do not shake"
+    },
+    {
+      "code": "UPR",
+      "display": "Upright"
+    },
+    {
+      "code": "MTLF",
+      "display": "Metal Free"
+    }
+  ]
+}

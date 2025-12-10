@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0428",
+  "id": "v2-0428",
+  "name": "IncidentType",
+  "title": "incidentType",
+  "description": "HL7-defined code system of concepts which specify a classification of types of incidents.  Used in HL7 Version 2 messaging in the RMI segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0428",
+  "concepts": [
+    {
+      "code": "P",
+      "display": "Preventable"
+    },
+    {
+      "code": "U",
+      "display": "User Error"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    }
+  ]
+}

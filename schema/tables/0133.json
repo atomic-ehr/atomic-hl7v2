@@ -1,0 +1,46 @@
+{
+  "tableNumber": "0133",
+  "id": "v2-0133",
+  "name": "ProcedurePractitionerIdentifierCodeType",
+  "title": "procedurePractitionerIdentifierCodeType",
+  "description": "HL7-defined table of concepts which specify the different types of practitioners associated with this procedure.   This set of codes is known to be incomplete.  Note that as of v2.6, this table and the field(s) it was used in was replaced by table 443 used in the ROL segment.  Used in Version 2.x messaging in the PR1 segment, but was discontinued as of 2.6; usage replaced with code system 2.16.840.1.113883.18.283 providerRole.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0133",
+  "concepts": [
+    {
+      "code": "AN",
+      "display": "Anesthesiologist/Anesthetist"
+    },
+    {
+      "code": "PR",
+      "display": "Procedure MD/ Surgeon"
+    },
+    {
+      "code": "RD",
+      "display": "Radiologist"
+    },
+    {
+      "code": "RS",
+      "display": "Resident"
+    },
+    {
+      "code": "NP",
+      "display": "Nurse Practitioner"
+    },
+    {
+      "code": "CM",
+      "display": "Certified Nurse Midwife"
+    },
+    {
+      "code": "SN",
+      "display": "Scrub Nurse"
+    },
+    {
+      "code": "PS",
+      "display": "Primary Surgeon"
+    },
+    {
+      "code": "AS",
+      "display": "Assistant Surgeon"
+    }
+  ]
+}

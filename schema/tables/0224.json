@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0224",
+  "id": "v2-0224",
+  "name": "TransportArranged",
+  "title": "transportArranged",
+  "description": "HL7-defined code system of concepts defining whether patient transportation preparations are in place.  Used in HL7 Version 2.x messaging in the OBR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0224",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Arranged"
+    },
+    {
+      "code": "N",
+      "display": "Not Arranged"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

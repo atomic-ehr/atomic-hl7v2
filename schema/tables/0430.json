@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0430",
+  "id": "v2-0430",
+  "name": "ArrivalMode",
+  "title": "arrivalMode",
+  "description": "Code system of concepts specifying how the patient was brought to the healthcare facility.  Used in HL7 Version 2.x messaging in the PV2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0430",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Ambulance"
+    },
+    {
+      "code": "C",
+      "display": "Car"
+    },
+    {
+      "code": "F",
+      "display": "On foot"
+    },
+    {
+      "code": "H",
+      "display": "Helicopter"
+    },
+    {
+      "code": "P",
+      "display": "Public Transport"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

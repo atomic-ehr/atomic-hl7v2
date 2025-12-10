@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0214",
+  "id": "v2-0214",
+  "name": "SpecialProgram",
+  "title": "specialProgram",
+  "description": "Code system of concepts used to record a health insurance program required for healthcare visit reimbursement.  Used in HL7 Version 2.x messaging in the PV2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0214",
+  "concepts": [
+    {
+      "code": "CH",
+      "display": "Child Health Assistance"
+    },
+    {
+      "code": "ES",
+      "display": "Elective Surgery Program"
+    },
+    {
+      "code": "FP",
+      "display": "Family Planning"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

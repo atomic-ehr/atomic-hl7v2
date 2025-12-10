@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0536",
+  "id": "v2-0536",
+  "name": "CertificateStatus",
+  "title": "certificateStatus",
+  "description": "Code system of concepts specifying the status of the certificate held by the health professional.  Used in HL7 Version 2 messaging in the CER segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0536",
+  "concepts": [
+    {
+      "code": "P",
+      "display": "Provisional"
+    },
+    {
+      "code": "R",
+      "display": "Revoked"
+    },
+    {
+      "code": "V",
+      "display": "Active/Valid"
+    },
+    {
+      "code": "E",
+      "display": "Expired"
+    },
+    {
+      "code": "I",
+      "display": "Inactive"
+    }
+  ]
+}

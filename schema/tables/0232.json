@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0232",
+  "id": "v2-0232",
+  "name": "InsuranceCompanyContactReason",
+  "title": "insuranceCompanyContactReason",
+  "description": "Code system of concepts used to describe why an insurance company has been contacted.  Used in HL7 Version 2.x messaging in the IN2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0232",
+  "concepts": [
+    {
+      "code": "01",
+      "display": "Medicare claim status"
+    },
+    {
+      "code": "02",
+      "display": "Medicaid claim status"
+    },
+    {
+      "code": "03",
+      "display": "Name/address change"
+    }
+  ]
+}

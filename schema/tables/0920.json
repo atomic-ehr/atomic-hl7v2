@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0920",
+  "id": "v2-0920",
+  "name": "PreferredSpecimenAttributeStatus",
+  "title": "preferredSpecimen-AttributeStatus",
+  "description": "HL7-defined code system of concepts that indicate whether a Specimen/Attribute is Preferred or Alternate for collection of a particular specimen.  Used in HL7 Version 2.x messaging in Master Files (OM4 segment) to characterize information about specimens that are associated with certain observations.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0920",
+  "concepts": [
+    {
+      "code": "P",
+      "display": "Preferred"
+    },
+    {
+      "code": "A",
+      "display": "Alternate"
+    }
+  ]
+}

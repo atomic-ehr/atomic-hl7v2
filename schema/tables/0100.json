@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0100",
+  "id": "v2-0100",
+  "name": "InvocationEvent",
+  "title": "invocationEvent",
+  "description": "HL7-defined code system of concepts which specify codes for an event precipitating/triggering a charge activity.  Used in HL7 Version 2.x messaging in the CCD and BLG segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0100",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "On discharge"
+    },
+    {
+      "code": "O",
+      "display": "On receipt of order"
+    },
+    {
+      "code": "R",
+      "display": "At time service is completed"
+    },
+    {
+      "code": "S",
+      "display": "At time service is started"
+    },
+    {
+      "code": "T",
+      "display": "At a designated date/time"
+    }
+  ]
+}

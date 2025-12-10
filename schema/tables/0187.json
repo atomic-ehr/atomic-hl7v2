@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0187",
+  "id": "v2-0187",
+  "name": "ProviderBilling",
+  "title": "providerBilling",
+  "description": "HL7-defined code system of concepts specifying how provider services are billed.  Used in HL7 Version 2.x messaging in the PRA segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0187",
+  "concepts": [
+    {
+      "code": "I",
+      "display": "Institution bills for provider"
+    },
+    {
+      "code": "P",
+      "display": "Provider does own billing"
+    }
+  ]
+}

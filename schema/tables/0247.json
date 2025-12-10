@@ -1,0 +1,58 @@
+{
+  "tableNumber": "0247",
+  "id": "v2-0247",
+  "name": "StatusOfEvaluation",
+  "title": "statusOfEvaluation",
+  "description": "HL7-defined code system of concepts that describes the status of product evaluation.  Used in HL7 Version 2.x messaging in the PCR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0247",
+  "concepts": [
+    {
+      "code": "Y",
+      "display": "Evaluation completed"
+    },
+    {
+      "code": "P",
+      "display": "Evaluation in progress"
+    },
+    {
+      "code": "K",
+      "display": "Problem already known, no evaluation necessary"
+    },
+    {
+      "code": "X",
+      "display": "Product not made by company"
+    },
+    {
+      "code": "A",
+      "display": "Evaluation anticipated, but not yet begun"
+    },
+    {
+      "code": "D",
+      "display": "Product discarded -- unable to follow up"
+    },
+    {
+      "code": "C",
+      "display": "Product received in condition which made analysis impossible"
+    },
+    {
+      "code": "I",
+      "display": "Product remains implanted -- unable to follow up"
+    },
+    {
+      "code": "U",
+      "display": "Product unavailable for follow up investigation"
+    },
+    {
+      "code": "Q",
+      "display": "Product under quarantine -- unable to follow up"
+    },
+    {
+      "code": "R",
+      "display": "Product under recall/corrective action"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    }
+  ]
+}

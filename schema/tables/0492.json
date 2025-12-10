@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0492",
+  "id": "v2-0492",
+  "name": "SpecimenAppropriateness",
+  "title": "specimenAppropriateness",
+  "description": "Code system of concepts specifying the suitability of the specimen for the particular planned use as determined by the filler.  Used in HL7 Version 2.x messaging in the SPM segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0492",
+  "concepts": [
+    {
+      "code": "P",
+      "display": "Preferred"
+    },
+    {
+      "code": "A",
+      "display": "Appropriate"
+    },
+    {
+      "code": "I",
+      "display": "Inappropriate"
+    },
+    {
+      "code": "??",
+      "display": "Inappropriate due to ..."
+    }
+  ]
+}

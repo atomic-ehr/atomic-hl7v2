@@ -1,0 +1,70 @@
+{
+  "tableNumber": "0426",
+  "id": "v2-0426",
+  "name": "BloodProduct",
+  "title": "bloodProduct",
+  "description": "HL7-defined code system of concepts which specify a type of blood product.  Used in HL7 Version 2 messaging in the BLC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0426",
+  "concepts": [
+    {
+      "code": "CRYO",
+      "display": "Cryoprecipitated AHF"
+    },
+    {
+      "code": "CRYOP",
+      "display": "Pooled Cryoprecipitate"
+    },
+    {
+      "code": "FFP",
+      "display": "Fresh Frozen Plasma"
+    },
+    {
+      "code": "FFPTH",
+      "display": "Fresh Frozen Plasma - Thawed"
+    },
+    {
+      "code": "PC",
+      "display": "Packed Cells"
+    },
+    {
+      "code": "PCA",
+      "display": "Autologous Packed Cells"
+    },
+    {
+      "code": "PCNEO",
+      "display": "Packed Cells - Neonatal"
+    },
+    {
+      "code": "PCW",
+      "display": "Washed Packed Cells"
+    },
+    {
+      "code": "PLT",
+      "display": "Platelet Concentrate"
+    },
+    {
+      "code": "PLTNEO",
+      "display": "Reduced Volume Platelets"
+    },
+    {
+      "code": "PLTP",
+      "display": "Pooled Platelets"
+    },
+    {
+      "code": "PLTPH",
+      "display": "Platelet Pheresis"
+    },
+    {
+      "code": "PLTPHLR",
+      "display": "Leukoreduced Platelet Pheresis"
+    },
+    {
+      "code": "RWB",
+      "display": "Reconstituted Whole Blood"
+    },
+    {
+      "code": "WBA",
+      "display": "Autologous Whole Blood"
+    }
+  ]
+}

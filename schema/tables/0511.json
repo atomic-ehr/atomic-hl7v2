@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0511",
+  "id": "v2-0511",
+  "name": "BpObservationStatusCodesInterpretation",
+  "title": "bpObservationStatusCodesInterpretation",
+  "description": "HL7-defined code system of concepts used to specify the interpretation for the blood product observation status codes.  A status is considered preliminary until a blood product has reached a final disposition for the patient. For example, when the product is first cross-matched and a status message is sent, it would be considered preliminary. When the product is dispensed to the patient, that status would also be considered preliminary.  However, once the product is transfused, the status would be considered final.  Used in the Blood Product Dispense Status (BPX) and Blood Product Transfusion/Disposition (BTX) segments in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0511",
+  "concepts": [
+    {
+      "code": "C",
+      "display": "Record coming over is a correction and thus replaces a final status"
+    },
+    {
+      "code": "D",
+      "display": "Deletes the BPX record"
+    },
+    {
+      "code": "F",
+      "display": "Final status; Can only be changed with a corrected status"
+    },
+    {
+      "code": "O",
+      "display": "Order detail description only (no status)"
+    },
+    {
+      "code": "P",
+      "display": "Preliminary status"
+    },
+    {
+      "code": "W",
+      "display": "Post original as wrong, e.g., transmitted for wrong patient"
+    }
+  ]
+}

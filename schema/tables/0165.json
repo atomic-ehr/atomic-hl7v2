@@ -1,0 +1,70 @@
+{
+  "tableNumber": "0165",
+  "id": "v2-0165",
+  "name": "AdministrationMethod",
+  "title": "administrationMethod",
+  "description": "Code system of concepts  which specify the specific method requested for the administration of the drug or treatment to the patient.  Used in HL7 Version 2.x messaging in the RXR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0165",
+  "concepts": [
+    {
+      "code": "CH",
+      "display": "Chew"
+    },
+    {
+      "code": "DI",
+      "display": "Dissolve"
+    },
+    {
+      "code": "DU",
+      "display": "Dust"
+    },
+    {
+      "code": "IF",
+      "display": "Infiltrate"
+    },
+    {
+      "code": "IS",
+      "display": "Insert"
+    },
+    {
+      "code": "IR",
+      "display": "Irrigate"
+    },
+    {
+      "code": "IVPB",
+      "display": "IV Piggyback"
+    },
+    {
+      "code": "IVP",
+      "display": "IV Push"
+    },
+    {
+      "code": "NB",
+      "display": "Nebulized"
+    },
+    {
+      "code": "PT",
+      "display": "Paint"
+    },
+    {
+      "code": "PF",
+      "display": "Perfuse"
+    },
+    {
+      "code": "SH",
+      "display": "Shampoo"
+    },
+    {
+      "code": "SO",
+      "display": "Soak"
+    },
+    {
+      "code": "WA",
+      "display": "Wash"
+    },
+    {
+      "code": "WI",
+      "display": "Wipe"
+    }
+  ]
+}

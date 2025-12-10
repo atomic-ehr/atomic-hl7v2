@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0286",
+  "id": "v2-0286",
+  "name": "ProviderRole",
+  "title": "providerRole",
+  "description": "Code system of concepts used to define the relationship between a referral recipient and a patient or between a referral initiator and a patient.  Used in HL7 Version 2.x messaging in the PRD segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0286",
+  "concepts": [
+    {
+      "code": "RP",
+      "display": "Referring Provider"
+    },
+    {
+      "code": "PP",
+      "display": "Primary Care Provider"
+    },
+    {
+      "code": "CP",
+      "display": "Consulting Provider"
+    },
+    {
+      "code": "RT",
+      "display": "Referred to Provider"
+    }
+  ]
+}

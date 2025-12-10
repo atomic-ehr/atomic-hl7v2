@@ -1,0 +1,58 @@
+{
+  "tableNumber": "0384",
+  "id": "v2-0384",
+  "name": "SubstanceType",
+  "title": "substanceType",
+  "description": "HL7-defined  code system of concepts identifying the type of substance.  Used in HL7 Version 2.x messaging in the Inventory Detail (INV) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0384",
+  "concepts": [
+    {
+      "code": "SR",
+      "display": "Single Test Reagent"
+    },
+    {
+      "code": "MR",
+      "display": "Multiple Test Reagent"
+    },
+    {
+      "code": "DI",
+      "display": "Diluent"
+    },
+    {
+      "code": "PT",
+      "display": "Pretreatment"
+    },
+    {
+      "code": "RC",
+      "display": "Reagent Calibrator"
+    },
+    {
+      "code": "CO",
+      "display": "Control Reagent"
+    },
+    {
+      "code": "PW",
+      "display": "Purified Water"
+    },
+    {
+      "code": "LW",
+      "display": "Liquid Waste"
+    },
+    {
+      "code": "SW",
+      "display": "Solid Waste"
+    },
+    {
+      "code": "SC",
+      "display": "Countable Solid Item"
+    },
+    {
+      "code": "LI",
+      "display": "Measurable Liquid Item"
+    },
+    {
+      "code": "OT",
+      "display": "Other"
+    }
+  ]
+}

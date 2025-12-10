@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0061",
+  "id": "v2-0061",
+  "name": "CheckDigitScheme",
+  "title": "checkDigitScheme",
+  "description": "HL7-defined code system of concepts specifying the check digit scheme employed.   Used in HL7 Version 2.x messaging in PPN, XCN and XON segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0061",
+  "concepts": [
+    {
+      "code": "BCV",
+      "display": "Bank Card Validation Number"
+    },
+    {
+      "code": "NPI",
+      "display": "Check digit algorithm in the US National Provider Identifier"
+    },
+    {
+      "code": "ISO",
+      "display": "ISO 7064: 1983"
+    },
+    {
+      "code": "M10",
+      "display": "Mod 10 algorithm"
+    },
+    {
+      "code": "M11",
+      "display": "Mod 11 algorithm"
+    }
+  ]
+}

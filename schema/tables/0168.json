@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0168",
+  "id": "v2-0168",
+  "name": "ProcessingPriority",
+  "title": "processingPriority",
+  "description": "HL7-defined code system of concepts  which specify one or more available priorities for performing the observation or test.  Used in HL7 Version 2.x messaging in the OM1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0168",
+  "concepts": [
+    {
+      "code": "S",
+      "display": "Stat (do immediately)"
+    },
+    {
+      "code": "A",
+      "display": "As soon as possible (a priority lower than stat)"
+    },
+    {
+      "code": "R",
+      "display": "Routine"
+    },
+    {
+      "code": "P",
+      "display": "Preoperative (to be done prior to surgery)"
+    },
+    {
+      "code": "T",
+      "display": "Timing critical (do as near as possible to requested time)"
+    },
+    {
+      "code": "C",
+      "display": "Measure continuously (e.g., arterial line blood pressure)"
+    },
+    {
+      "code": "B",
+      "display": "Do at bedside or portable (may be used with other codes)"
+    }
+  ]
+}

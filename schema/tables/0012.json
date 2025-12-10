@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0012",
+  "id": "v2-0012",
+  "name": "StockLocation",
+  "title": "stockLocation",
+  "description": "Code system of concepts specifying a stock location for older Version 2 messaging systems; not used after version 2.2 of the Standard.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0012",
+  "concepts": [
+    {
+      "code": "AN",
+      "display": "Filled from ancillary department stock"
+    },
+    {
+      "code": "FL",
+      "display": "Filled from floor stock"
+    }
+  ]
+}

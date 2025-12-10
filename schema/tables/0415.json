@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0415",
+  "id": "v2-0415",
+  "name": "DrgTransferType",
+  "title": "drgTransferType",
+  "description": "HL7-defined code system of concepts which specify a type of hospital receiving a transfer patient, which affects how a facility is reimbursed under diagnosis related group (DRG’s), for example, exempt or non-exempt.  Used in HL7 Version 2 messaging in the DRG segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0415",
+  "concepts": [
+    {
+      "code": "N",
+      "display": "DRG Non Exempt"
+    },
+    {
+      "code": "E",
+      "display": "DRG Exempt"
+    }
+  ]
+}

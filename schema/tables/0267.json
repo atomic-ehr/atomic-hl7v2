@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0267",
+  "id": "v2-0267",
+  "name": "DaysOfTheWeek",
+  "title": "daysOfTheWeek",
+  "description": "HL7-defined code system of concepts used to identify the day(s) of the week when a location may be scheduled for appointments.  Used in HL7 Version 2.x messaging in the UVC and LDP segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0267",
+  "concepts": [
+    {
+      "code": "SAT",
+      "display": "Saturday"
+    },
+    {
+      "code": "SUN",
+      "display": "Sunday"
+    },
+    {
+      "code": "MON",
+      "display": "Monday"
+    },
+    {
+      "code": "TUE",
+      "display": "Tuesday"
+    },
+    {
+      "code": "WED",
+      "display": "Wednesday"
+    },
+    {
+      "code": "THU",
+      "display": "Thursday"
+    },
+    {
+      "code": "FRI",
+      "display": "Friday"
+    }
+  ]
+}

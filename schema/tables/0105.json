@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0105",
+  "id": "v2-0105",
+  "name": "SourceOfComment",
+  "title": "sourceOfComment",
+  "description": "HL7-defined code system of concepts which are used to specify the source of a comment.  Used in HL7 Version 2.x messaging in the NTE segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0105",
+  "concepts": [
+    {
+      "code": "L",
+      "display": "Ancillary (filler) department is source of comment"
+    },
+    {
+      "code": "P",
+      "display": "Orderer (placer) is source of comment"
+    },
+    {
+      "code": "O",
+      "display": "Other system is source of comment"
+    }
+  ]
+}

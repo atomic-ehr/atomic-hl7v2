@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0882",
+  "id": "v2-0882",
+  "name": "MedicalRoleExecutingPhysician",
+  "title": "medicalRoleExecutingPhysician",
+  "description": "Code system of concepts specifying the role of the physician (\"self-employed\" or \"employed\").  Used in HL7 Version 2.x messaging in the PSL segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0882",
+  "concepts": [
+    {
+      "code": "E",
+      "display": "Employed"
+    },
+    {
+      "code": "SE",
+      "display": "Self-employed"
+    }
+  ]
+}

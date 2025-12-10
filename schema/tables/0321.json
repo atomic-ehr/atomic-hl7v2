@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0321",
+  "id": "v2-0321",
+  "name": "DispenseMethod",
+  "title": "dispenseMethod",
+  "description": "HL7-definde code system of concepts specifying the method by which treatment is dispensed.  Used in HL7 Version 2.x messaging in the Pharmacy/Treatment Encoded order (RXE) and Pharmacy/Treatment dispense (RXD) segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0321",
+  "concepts": [
+    {
+      "code": "TR",
+      "display": "Traditional"
+    },
+    {
+      "code": "UD",
+      "display": "Unit Dose"
+    },
+    {
+      "code": "F",
+      "display": "Floor Stock"
+    },
+    {
+      "code": "AD",
+      "display": "Automatic Dispensing"
+    }
+  ]
+}

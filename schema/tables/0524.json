@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0524",
+  "id": "v2-0524",
+  "name": "SequenceCondition",
+  "title": "sequenceCondition",
+  "description": "HL7-defined code system of concepts that identify whether sequence conditions or a repeating cycle of orders is defined.   This is part of the Order Sequence Definition used in HL7 Version 2.x messaaging in the OSD datatype.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0524",
+  "concepts": [
+    {
+      "code": "S",
+      "display": "Sequence conditions"
+    },
+    {
+      "code": "C",
+      "display": "Repeating cycle of orders"
+    },
+    {
+      "code": "R",
+      "display": "Reserved for possible future use"
+    }
+  ]
+}

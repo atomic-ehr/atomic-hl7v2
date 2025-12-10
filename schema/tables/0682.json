@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0682",
+  "id": "v2-0682",
+  "name": "DeviceStatus",
+  "title": "deviceStatus",
+  "description": "Code system of concepts that communicate the state of a device. Used in HL7 Version 2.x messaging in the SCD segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0682",
+  "concepts": [
+    {
+      "code": "0",
+      "display": "Ready"
+    },
+    {
+      "code": "1",
+      "display": "Not Ready"
+    }
+  ]
+}

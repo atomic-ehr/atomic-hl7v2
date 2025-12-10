@@ -1,0 +1,62 @@
+{
+  "tableNumber": "0485",
+  "id": "v2-0485",
+  "name": "ExtendedPriorityCodes",
+  "title": "extendedPriorityCodes",
+  "description": "Code system of concepts describing the urgency of a request carried in an order.  Used in HL7 Version 2.x messaging in timing/quantity; in older versions of the Standard was used in the TQ datatype, but in later versions it is used in the TQ1 segment (which replaced the TQ datatype which has been withdrawn).",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0485",
+  "concepts": [
+    {
+      "code": "S",
+      "display": "Stat"
+    },
+    {
+      "code": "A",
+      "display": "ASAP"
+    },
+    {
+      "code": "R",
+      "display": "Routine"
+    },
+    {
+      "code": "P",
+      "display": "Preop"
+    },
+    {
+      "code": "C",
+      "display": "Callback"
+    },
+    {
+      "code": "T",
+      "display": "Timing critical"
+    },
+    {
+      "code": "TS<integer>",
+      "display": "Timing critical within <integer> seconds."
+    },
+    {
+      "code": "TM<integer>",
+      "display": "Timing critical within <integer> minutes."
+    },
+    {
+      "code": "TH<integer>",
+      "display": "Timing critical within <integer> hours."
+    },
+    {
+      "code": "TD<integer>",
+      "display": "Timing critical within <integer> days."
+    },
+    {
+      "code": "TW<integer>",
+      "display": "Timing critical within <integer> weeks."
+    },
+    {
+      "code": "TL<integer>",
+      "display": "Timing critical within <integer> months."
+    },
+    {
+      "code": "PRN",
+      "display": "As needed"
+    }
+  ]
+}

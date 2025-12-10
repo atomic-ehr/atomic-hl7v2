@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0127",
+  "id": "v2-0127",
+  "name": "AllergenType",
+  "title": "allergenType",
+  "description": "Code system of concepts speciying a classification of general allergy categories (drug, food, pollen, etc.).  Used in HL7 Version 2.x messaging in the AL1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0127",
+  "concepts": [
+    {
+      "code": "DA",
+      "display": "Drug allergy"
+    },
+    {
+      "code": "FA",
+      "display": "Food allergy"
+    },
+    {
+      "code": "MA",
+      "display": "Miscellaneous allergy"
+    },
+    {
+      "code": "MC",
+      "display": "Miscellaneous contraindication"
+    },
+    {
+      "code": "EA",
+      "display": "Environmental Allergy"
+    },
+    {
+      "code": "AA",
+      "display": "Animal Allergy"
+    },
+    {
+      "code": "PA",
+      "display": "Plant Allergy"
+    },
+    {
+      "code": "LA",
+      "display": "Pollen Allergy"
+    }
+  ]
+}

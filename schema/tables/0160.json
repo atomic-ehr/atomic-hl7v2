@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0160",
+  "id": "v2-0160",
+  "name": "TrayType",
+  "title": "trayType",
+  "description": "HL7-defined code system of concepts  which specify whether the type of diet.    Used in HL7 Version 2.x messaging in the ODT segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0160",
+  "concepts": [
+    {
+      "code": "EARLY",
+      "display": "Early tray"
+    },
+    {
+      "code": "LATE",
+      "display": "Late tray"
+    },
+    {
+      "code": "GUEST",
+      "display": "Guest tray"
+    },
+    {
+      "code": "NO",
+      "display": "No tray"
+    },
+    {
+      "code": "MSG",
+      "display": "Tray message only"
+    }
+  ]
+}

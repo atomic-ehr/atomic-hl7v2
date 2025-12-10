@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0150",
+  "id": "v2-0150",
+  "name": "CertificationPatientType",
+  "title": "certificationPatientType",
+  "description": "Code system of concepts  which specify the category or type of patient for which this certification is requested.  Used in HL7 Version 2.x messaging in the ICD segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0150",
+  "concepts": [
+    {
+      "code": "ER",
+      "display": "Emergency"
+    },
+    {
+      "code": "IPE",
+      "display": "Inpatient elective"
+    },
+    {
+      "code": "OPE",
+      "display": "Outpatient elective"
+    },
+    {
+      "code": "UR",
+      "display": "Urgent"
+    }
+  ]
+}

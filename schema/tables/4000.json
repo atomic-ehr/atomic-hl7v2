@@ -1,0 +1,22 @@
+{
+  "tableNumber": "4000",
+  "id": "v2-4000",
+  "name": "NameAddressRepresentation",
+  "title": "name-addressRepresentation",
+  "description": "HL7-defined cdoe system of concepts that provide an indication of the kind of representation provided by a name or address, but does not necessarily specify the character sets used for the data.  It is used to provides hints for a receiver, so it can make choices regarding what it has been sent and what it is capable of displaying.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-4000",
+  "concepts": [
+    {
+      "code": "I",
+      "display": "Ideographic (i.e., Kanji)"
+    },
+    {
+      "code": "A",
+      "display": "Alphabetic (i.e., Default or some single-byte)"
+    },
+    {
+      "code": "P",
+      "display": "Phonetic (i.e., ASCII, Katakana, Hiragana, etc.)"
+    }
+  ]
+}

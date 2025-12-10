@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0497",
+  "id": "v2-0497",
+  "name": "ConsentMode",
+  "title": "consentMode",
+  "description": "HL7-defined code system of concepts specifying the method in which a subject provides consent.  Used in HL7 Version 2.x messaging in the TXA and CON segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0497",
+  "concepts": [
+    {
+      "code": "V",
+      "display": "Verbal"
+    },
+    {
+      "code": "W",
+      "display": "Written"
+    },
+    {
+      "code": "T",
+      "display": "Telephone"
+    }
+  ]
+}

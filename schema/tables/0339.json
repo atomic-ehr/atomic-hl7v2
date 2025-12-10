@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0339",
+  "id": "v2-0339",
+  "name": "AdvancedBeneficiaryNotice",
+  "title": "advancedBeneficiaryNotice",
+  "description": "Code system of concepts specifying the status of the patient's or the patient's representative's consent for responsibility to pay for potentially uninsured services. This element was introduced to satisfy CMS Medical Necessity requirements for outpatient services in the United States. Includes concepts such as (a) whether the associated diagnosis codes for the service are subject to medical necessity procedures, (b) whether, for this type of service, the patient has been informed that they may be responsible for payment for the service, and (c) whether the patient agrees to be billed for this service.  Used in HL7 Version 2.x messaging in the ORC and FT1 segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0339",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Service is subject to medical necessity procedures"
+    },
+    {
+      "code": "2",
+      "display": "Patient has been informed of responsibility, and agrees to pay for service"
+    },
+    {
+      "code": "3",
+      "display": "Patient has been informed of responsibility, and asks that the payer be billed"
+    },
+    {
+      "code": "4",
+      "display": "Advanced Beneficiary Notice has not been signed"
+    }
+  ]
+}

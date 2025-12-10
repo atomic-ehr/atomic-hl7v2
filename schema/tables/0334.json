@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0334",
+  "id": "v2-0334",
+  "name": "DisabilityInformationRelationship",
+  "title": "disabilityInformationRelationship",
+  "description": "Code system of concepts used to specify to which person the disability information relates in the message.  For example, if the value is PT, the disability information relates to the patient.  Used in HL7 Version 2.x messaging in the Disability (DB1) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0334",
+  "concepts": [
+    {
+      "code": "PT",
+      "display": "Patient"
+    },
+    {
+      "code": "GT",
+      "display": "Guarantor"
+    },
+    {
+      "code": "IN",
+      "display": "Insured"
+    },
+    {
+      "code": "AP",
+      "display": "Associated party"
+    }
+  ]
+}

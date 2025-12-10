@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0818",
+  "id": "v2-0818",
+  "name": "Package",
+  "title": "package",
+  "description": "Code system of concepts specifying the packaging unit in which this inventory supply item can be ordered or issued when purchased from the vendor in the related vendor segment.  Used in HL7 Version 2.x messaging in the PKG segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0818",
+  "concepts": [
+    {
+      "code": "CS",
+      "display": "Case"
+    },
+    {
+      "code": "BX",
+      "display": "Box"
+    },
+    {
+      "code": "EA",
+      "display": "Each"
+    },
+    {
+      "code": "SET",
+      "display": "Set"
+    }
+  ]
+}

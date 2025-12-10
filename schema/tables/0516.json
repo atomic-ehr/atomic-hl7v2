@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0516",
+  "id": "v2-0516",
+  "name": "ErrorSeverity",
+  "title": "errorSeverity",
+  "description": "HL7-defined code system of concepts specifying the severity of an application error as reported during acknowledgment of messages. Knowing if something is Error, Warning or Information is intrinsic to how an application handles the content and the information flow.  Used in HL7 Version 2.x messaging acknowledgment in the ERR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0516",
+  "concepts": [
+    {
+      "code": "W",
+      "display": "Warning",
+      "definition": "Transaction successful, but there may be issues"
+    },
+    {
+      "code": "I",
+      "display": "Information",
+      "definition": "Transaction was successful but includes information"
+    },
+    {
+      "code": "E",
+      "display": "Error",
+      "definition": "Transaction was unsuccessful"
+    },
+    {
+      "code": "F",
+      "display": "Fatal Error",
+      "definition": "Message not processed due to application or network failure condition"
+    }
+  ]
+}

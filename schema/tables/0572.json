@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0572",
+  "id": "v2-0572",
+  "name": "TaxStatus",
+  "title": "taxStatus",
+  "description": "Code system of concepts used to specify the tax status of the provider.  Used in the Invoice (IVC) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0572",
+  "concepts": [
+    {
+      "code": "RVAT",
+      "display": "Registered in VAT register"
+    },
+    {
+      "code": "UVAT",
+      "display": "Unregistered in VAT register"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "tableNumber": "0505",
+  "id": "v2-0505",
+  "name": "CyclicEntryExitIndicator",
+  "title": "cyclicEntryExitIndicator",
+  "description": "HL7-defined code system of concepts used to specify if this service request is the first or last service request in a cyclic series of service requests.  Used in the Timing/Quantity Relationship (TQ2) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0505",
+  "concepts": [
+    {
+      "code": "F",
+      "display": "First service",
+      "definition": "The first service request in a cyclic group"
+    },
+    {
+      "code": "L",
+      "display": "Last service",
+      "definition": "The last service request in a cyclic group"
+    },
+    {
+      "code": "*",
+      "display": "The first service request in a cyclic group"
+    },
+    {
+      "code": "#",
+      "display": "The last service request in a cyclic group."
+    }
+  ]
+}

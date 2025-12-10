@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0242",
+  "id": "v2-0242",
+  "name": "PrimaryObserverQualification",
+  "title": "primaryObserverQualification",
+  "description": "HL7-defined code system of concepts used to provide a general description of the kind of health care professional who provided the primary observation.  Used in HL7 Version 2.x messaging in the PEO and PCR segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0242",
+  "concepts": [
+    {
+      "code": "P",
+      "display": "Physician (osteopath, homeopath)"
+    },
+    {
+      "code": "R",
+      "display": "Pharmacist"
+    },
+    {
+      "code": "M",
+      "display": "Mid-level professional (nurse, nurse practitioner, physician's assistant)"
+    },
+    {
+      "code": "H",
+      "display": "Other health professional"
+    },
+    {
+      "code": "C",
+      "display": "Health care consumer/patient"
+    },
+    {
+      "code": "L",
+      "display": "Lawyer/attorney"
+    },
+    {
+      "code": "O",
+      "display": "Other non-health professional"
+    }
+  ]
+}

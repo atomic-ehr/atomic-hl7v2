@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0210",
+  "id": "v2-0210",
+  "name": "RelationalConjunction",
+  "title": "relationalConjunction",
+  "description": "HL7-defined code system of concepts used with relationalOperator values to group more than one segment field name.   Used in HL7 Version 2.x messaging in the QSC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0210",
+  "concepts": [
+    {
+      "code": "AND",
+      "display": "Default"
+    },
+    {
+      "code": "OR",
+      "display": "OR"
+    }
+  ]
+}

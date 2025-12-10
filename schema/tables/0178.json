@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0178",
+  "id": "v2-0178",
+  "name": "FileLevelEvent",
+  "title": "file-levelEvent",
+  "description": "HL7-defined code system of concepts specifying file-level events for master files.  Used in HL7 Version 2 messaging in the MFI segment.  ",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0178",
+  "concepts": [
+    {
+      "code": "REP",
+      "display": "Replace current version of this master file with the version contained in this message"
+    },
+    {
+      "code": "UPD",
+      "display": "Change file records as defined in the record-level event codes for each record that follows"
+    }
+  ]
+}

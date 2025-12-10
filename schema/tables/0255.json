@@ -1,0 +1,120 @@
+{
+  "tableNumber": "0255",
+  "id": "v2-0255",
+  "name": "DurationCategories",
+  "title": "durationCategories",
+  "description": "Code system of concepts used to classify an observation definition as intended to measure a patient's state at a point in time.  Used in HL7 Version 2.x messaging in the OM1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0255",
+  "concepts": [
+    {
+      "code": "*",
+      "display": "(asterisk) Life of the \"unit\""
+    },
+    {
+      "code": "30M",
+      "display": "30 minutes"
+    },
+    {
+      "code": "1H",
+      "display": "1 hour"
+    },
+    {
+      "code": "2H",
+      "display": "2 hours"
+    },
+    {
+      "code": "2.5H",
+      "display": "2 1/2 hours"
+    },
+    {
+      "code": "3H",
+      "display": "3 hours"
+    },
+    {
+      "code": "4H",
+      "display": "4 hours"
+    },
+    {
+      "code": "5H",
+      "display": "5 hours"
+    },
+    {
+      "code": "6H",
+      "display": "6 hours"
+    },
+    {
+      "code": "7H",
+      "display": "7 hours"
+    },
+    {
+      "code": "8H",
+      "display": "8 hours"
+    },
+    {
+      "code": "12H",
+      "display": "12 hours"
+    },
+    {
+      "code": "24H",
+      "display": "24 hours"
+    },
+    {
+      "code": "2D",
+      "display": "2 days"
+    },
+    {
+      "code": "3D",
+      "display": "3 days"
+    },
+    {
+      "code": "4D",
+      "display": "4 days"
+    },
+    {
+      "code": "5D",
+      "display": "5 days"
+    },
+    {
+      "code": "6D",
+      "display": "6 days"
+    },
+    {
+      "code": "1W",
+      "display": "1 week"
+    },
+    {
+      "code": "2W",
+      "display": "2 weeks"
+    },
+    {
+      "code": "3W",
+      "display": "3 weeks"
+    },
+    {
+      "code": "4W",
+      "display": "4 weeks"
+    },
+    {
+      "code": "1L",
+      "display": "1 months (30 days)"
+    },
+    {
+      "code": "2L",
+      "display": "2 months"
+    },
+    {
+      "code": "3L",
+      "display": "3 months"
+    },
+    {
+      "code": "LU",
+      "display": "Life of the \"unit\"",
+      "definition": "Life of the \"unit\" (for blood products)."
+    },
+    {
+      "code": "PT",
+      "display": "point in time",
+      "definition": "To identify measures at a point in time.  This is a synonym for \"spot\" or \"random\" as applied to urine measurements."
+    }
+  ]
+}

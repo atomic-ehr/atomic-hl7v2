@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0273",
+  "id": "v2-0273",
+  "name": "DocumentAvailabilityStatus",
+  "title": "documentAvailabilityStatus",
+  "description": "HL7-defined code system of concepts used to define whether a patient document is appropriate or available for use in patient care.  Used in HL7 Version 2.x messaging in the TXA segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0273",
+  "concepts": [
+    {
+      "code": "AV",
+      "display": "Available for patient care"
+    },
+    {
+      "code": "CA",
+      "display": "Deleted"
+    },
+    {
+      "code": "OB",
+      "display": "Obsolete"
+    },
+    {
+      "code": "UN",
+      "display": "Unavailable for patient care"
+    }
+  ]
+}

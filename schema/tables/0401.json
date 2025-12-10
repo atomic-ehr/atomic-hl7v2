@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0401",
+  "id": "v2-0401",
+  "name": "GovernmentReimbursementProgram",
+  "title": "governmentReimbursementProgram",
+  "description": "Code system of concepts which specify codes that indicate an agency that the practitioner is authorized to bill for medical services.  Existing codes only for use in the United States. Used in HL7 Version 2.x messaging in the PRA segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0401",
+  "concepts": [
+    {
+      "code": "MM",
+      "display": "Medicare"
+    },
+    {
+      "code": "C",
+      "display": "Medi-Cal"
+    }
+  ]
+}

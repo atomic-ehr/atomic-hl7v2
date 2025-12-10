@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0642",
+  "id": "v2-0642",
+  "name": "ReorderTheory",
+  "title": "reorderTheory",
+  "description": "Code system of concepts that identify the calculation method used to determine the resupply schedule. Used in HL7 Version 2.x messaging in the IVT segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0642",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "DOP/DOQ"
+    },
+    {
+      "code": "M",
+      "display": "MIN/MAX"
+    },
+    {
+      "code": "O",
+      "display": "Override"
+    }
+  ]
+}

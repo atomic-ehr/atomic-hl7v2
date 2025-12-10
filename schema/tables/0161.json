@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0161",
+  "id": "v2-0161",
+  "name": "AllowSubstitution",
+  "title": "allowSubstitution",
+  "description": "HL7-defined code system of concepts  which specify whether substitutions are allowed and, if so, the type of substitutions allowed.    Used in HL7 Version 2.x messaging in the RXO segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0161",
+  "concepts": [
+    {
+      "code": "N",
+      "display": "Substitutions are NOT authorized.  (This is the default - null.)"
+    },
+    {
+      "code": "G",
+      "display": "Allow generic substitutions."
+    },
+    {
+      "code": "T",
+      "display": "Allow therapeutic substitutions"
+    }
+  ]
+}

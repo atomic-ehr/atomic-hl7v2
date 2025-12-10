@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0776",
+  "id": "v2-0776",
+  "name": "ItemStatus",
+  "title": "itemStatus",
+  "description": "Code system of concepts specifying the status (useful for reporting and item usage purposes) that applies to an item. Used in HL7 Version 2.x messaging in the ITM segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0776",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Active"
+    },
+    {
+      "code": "P",
+      "display": "Pending Inactive"
+    },
+    {
+      "code": "I",
+      "display": "Inactive"
+    }
+  ]
+}

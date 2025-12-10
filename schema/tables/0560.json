@@ -1,0 +1,35 @@
+{
+  "tableNumber": "0560",
+  "id": "v2-0560",
+  "name": "QuantityUnits",
+  "title": "Quantity Units",
+  "description": "HL7-defined code system of concepts specifying the adjustment quantity.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0560",
+  "concepts": [
+    {
+      "code": "FL",
+      "display": "Units",
+      "definition": "no definition"
+    },
+    {
+      "code": "DY",
+      "display": "Days",
+      "definition": "no definition"
+    },
+    {
+      "code": "HS",
+      "display": "Hours",
+      "definition": "no definition"
+    },
+    {
+      "code": "MN",
+      "display": "Month",
+      "definition": "no definition"
+    },
+    {
+      "code": "YY",
+      "display": "Years",
+      "definition": "no definition"
+    }
+  ]
+}

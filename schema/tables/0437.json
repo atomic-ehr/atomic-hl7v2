@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0437",
+  "id": "v2-0437",
+  "name": "AlertDevice",
+  "title": "alertDevice",
+  "description": "Code system of concepts specifying any type of allergy alert device the patient may be carrying or wearing.  Used in HL7 Version 2.x messaging in the IAM segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0437",
+  "concepts": [
+    {
+      "code": "B",
+      "display": "Bracelet"
+    },
+    {
+      "code": "N",
+      "display": "Necklace"
+    },
+    {
+      "code": "W",
+      "display": "Wallet Card"
+    }
+  ]
+}

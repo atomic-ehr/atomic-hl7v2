@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0520",
+  "id": "v2-0520",
+  "name": "MessageWaitingPriority",
+  "title": "messageWaitingPriority",
+  "description": "HL7-defined code system of concepts which specify the disposition of the patient at time of discharge (i.e., discharged to home, expired, etc.).  Used in HL7 Version 2.x messaging in the MSA segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0520",
+  "concepts": [
+    {
+      "code": "H",
+      "display": "High"
+    },
+    {
+      "code": "M",
+      "display": "Medium"
+    },
+    {
+      "code": "L",
+      "display": "Low"
+    }
+  ]
+}

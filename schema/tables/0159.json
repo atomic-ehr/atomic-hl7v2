@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0159",
+  "id": "v2-0159",
+  "name": "DietCodeSpecificationType",
+  "title": "dietCodeSpecificationType",
+  "description": "HL7-defined code system of concepts  which specify whether the type of diet.    Used in HL7 Version 2.x messaging in the ODS segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0159",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "Diet"
+    },
+    {
+      "code": "S",
+      "display": "Supplement"
+    },
+    {
+      "code": "P",
+      "display": "Preference"
+    }
+  ]
+}

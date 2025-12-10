@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0416",
+  "id": "v2-0416",
+  "name": "ProcedureDrgType",
+  "title": "procedureDrgType",
+  "description": "HL7-defined code system of concepts which specify a procedure’s priority ranking relative to its DRG.  Used in HL7 Version 2 messaging in the PR1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0416",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "1st non-Operative"
+    },
+    {
+      "code": "2",
+      "display": "2nd non-Operative"
+    },
+    {
+      "code": "3",
+      "display": "Major Operative"
+    },
+    {
+      "code": "4",
+      "display": "2nd Operative"
+    },
+    {
+      "code": "5",
+      "display": "3rd Operative"
+    }
+  ]
+}

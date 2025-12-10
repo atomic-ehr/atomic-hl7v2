@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0402",
+  "id": "v2-0402",
+  "name": "SchoolType",
+  "title": "schoolType",
+  "description": "Code system of concepts which specify a categorization of an academic institution that grants a degree to a Staff Member.  Used in HL7 Version 2.x messaging in the EDU segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0402",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "Dental"
+    },
+    {
+      "code": "G",
+      "display": "Graduate"
+    },
+    {
+      "code": "M",
+      "display": "Medical"
+    },
+    {
+      "code": "U",
+      "display": "Undergraduate"
+    }
+  ]
+}

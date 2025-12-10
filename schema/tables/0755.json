@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0755",
+  "id": "v2-0755",
+  "name": "DrgstatusWeightAtBirth",
+  "title": "drgstatusWeightAtBirth",
+  "description": "Code system of concepts specifying the status of the use of the weight at birth for diagnosis related group (DRG) determination.  US Realm.  Used in HL7 Version 2.x messaging in the DRG segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0755",
+  "concepts": [
+    {
+      "code": "0",
+      "display": "No weight reported at admission used for grouping"
+    },
+    {
+      "code": "1",
+      "display": "Weight reported at admission used for grouping"
+    },
+    {
+      "code": "2",
+      "display": "Default weight (>2499g) used for grouping"
+    }
+  ]
+}

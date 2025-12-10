@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0916",
+  "id": "v2-0916",
+  "name": "RelevantClincialInformation",
+  "title": "relevantClincialInformation",
+  "description": "Code system of concepts specifying additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies. Used in HL7 Version 2.x messaging in the OBR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0916",
+  "concepts": [
+    {
+      "code": "F",
+      "display": "Patient was fasting prior to the procedure."
+    },
+    {
+      "code": "NF",
+      "display": "The patient indicated they did not fast prior to the procedure."
+    },
+    {
+      "code": "NG",
+      "display": "Not Given - Patient was not asked at the time of the procedure."
+    },
+    {
+      "code": "FNA",
+      "display": "Fasting not asked of the patient at time of procedure."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0355",
+  "id": "v2-0355",
+  "name": "PrimaryKeyValueType",
+  "title": "primaryKeyValueType",
+  "description": "HL7-defined code system of concepts used to specify the type for the master file record identifier.  Used in HL7 Version 2.x messaging in the Master File Entry (MFE) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0355",
+  "concepts": [
+    {
+      "code": "PL",
+      "display": "Person location"
+    },
+    {
+      "code": "CE",
+      "display": "Coded element"
+    },
+    {
+      "code": "CWE",
+      "display": "Coded with Exceptions"
+    }
+  ]
+}

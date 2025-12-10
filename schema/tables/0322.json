@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0322",
+  "id": "v2-0322",
+  "name": "CompletionStatus",
+  "title": "completionStatus",
+  "description": "HL7-defined code system of concepts specifying the status of the treatment administration event segment.  Used in HL7 Version 2.x messaging in the Pharmacy Order Administration (RXA) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0322",
+  "concepts": [
+    {
+      "code": "CP",
+      "display": "Complete"
+    },
+    {
+      "code": "RE",
+      "display": "Refused"
+    },
+    {
+      "code": "NA",
+      "display": "Not Administered"
+    },
+    {
+      "code": "PA",
+      "display": "Partially Administered"
+    }
+  ]
+}

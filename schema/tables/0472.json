@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0472",
+  "id": "v2-0472",
+  "name": "TqConjunctionId",
+  "title": "tqConjunctionId",
+  "description": "HL7-defined code system of concepts specifying that a second timing specification is to follow using the repeat delimiter.  Used in HL7 Version 2.x messaging in the TQ1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0472",
+  "concepts": [
+    {
+      "code": "S",
+      "display": "Synchronous"
+    },
+    {
+      "code": "A",
+      "display": "Asynchronous"
+    },
+    {
+      "code": "C",
+      "display": "Actuation Time"
+    }
+  ]
+}

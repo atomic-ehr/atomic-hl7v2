@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0213",
+  "id": "v2-0213",
+  "name": "PurgeStatus",
+  "title": "purgeStatus",
+  "description": "Code system of concepts used to define the state of a visit relative to its place in a purge workflow.  Used in HL7 Version 2.x messaging in the PV2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0213",
+  "concepts": [
+    {
+      "code": "P",
+      "display": "Marked for purge.  User is no longer able to update the visit."
+    },
+    {
+      "code": "D",
+      "display": "The visit is marked for deletion and the user cannot enter new data against it."
+    },
+    {
+      "code": "I",
+      "display": "The visit is marked inactive and the user cannot enter new data against it."
+    }
+  ]
+}

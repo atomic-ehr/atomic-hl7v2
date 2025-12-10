@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0305",
+  "id": "v2-0305",
+  "name": "PersonLocationType",
+  "title": "personLocationType",
+  "description": "Code system of concepts specifying the categorization of the person's location.  Used in HL7 Version 2.x messaging datatypes that contain location identifiers such as Person Location (PL), Location with address variation (LA) and Name with date and location (NDL).",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0305",
+  "concepts": [
+    {
+      "code": "C",
+      "display": "Clinic"
+    },
+    {
+      "code": "D",
+      "display": "Department"
+    },
+    {
+      "code": "H",
+      "display": "Home"
+    },
+    {
+      "code": "N",
+      "display": "Nursing Unit"
+    },
+    {
+      "code": "O",
+      "display": "Provider's Office"
+    },
+    {
+      "code": "P",
+      "display": "Phone"
+    },
+    {
+      "code": "S",
+      "display": "SNF"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0659",
+  "id": "v2-0659",
+  "name": "LotControl",
+  "title": "lotControl",
+  "description": "Code system of concepts that define whether the sterilization load for a device is built in the sub-sterile area adjacent to an Operating Room or the Central Processing Department. Used in HL7 Version 2.x messaging in the SCP segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0659",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "OR Mode Without Operator"
+    },
+    {
+      "code": "2",
+      "display": "OR Mode with Operator"
+    },
+    {
+      "code": "3",
+      "display": "CPD Mode Without Operator"
+    },
+    {
+      "code": "4",
+      "display": "CPD Mode With Operator"
+    },
+    {
+      "code": "5",
+      "display": "Offline Mode"
+    }
+  ]
+}

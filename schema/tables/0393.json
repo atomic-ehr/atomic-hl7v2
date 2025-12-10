@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0393",
+  "id": "v2-0393",
+  "name": "MatchAlgorithms",
+  "title": "matchAlgorithms",
+  "description": "Code system of concepts identifying the name or identity of the specific search algorithm to which the RCP-5 Search Confidence Threshold and the QRI-1 Candidate Confidence refer.  Used in HL7 Version 2.x messaging in the Query Response Instance (QRI) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0393",
+  "concepts": [
+    {
+      "code": "LINKSOFT_2.01",
+      "display": "Proprietary algorithm for LinkSoft v2.01"
+    },
+    {
+      "code": "MATCHWARE_1.2",
+      "display": "Proprietary algorithm for MatchWare v1.2"
+    }
+  ]
+}

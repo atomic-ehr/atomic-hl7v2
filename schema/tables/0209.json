@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0209",
+  "id": "v2-0209",
+  "name": "RelationalOperator",
+  "title": "relationalOperator",
+  "description": "HL7-defined code system of concepts used to define the relationship between HL7 segment field names identified in a query construct.  Used in HL7 Version 2.x messaging in the QSC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0209",
+  "concepts": [
+    {
+      "code": "EQ",
+      "display": "Equal"
+    },
+    {
+      "code": "NE",
+      "display": "Not Equal"
+    },
+    {
+      "code": "LT",
+      "display": "Less than"
+    },
+    {
+      "code": "GT",
+      "display": "Greater than"
+    },
+    {
+      "code": "LE",
+      "display": "Less than or equal"
+    },
+    {
+      "code": "GE",
+      "display": "Greater than or equal"
+    },
+    {
+      "code": "CT",
+      "display": "Contains"
+    },
+    {
+      "code": "GN",
+      "display": "Generic"
+    }
+  ]
+}

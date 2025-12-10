@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0475",
+  "id": "v2-0475",
+  "name": "ChargeTypeReason",
+  "title": "chargeTypeReason",
+  "description": "Code system of concepts specifying the choice of, and providing the clinical rationale for, a selected charge type.  Used in HL7 Version 2.x messaging in the BLG segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0475",
+  "concepts": [
+    {
+      "code": "01",
+      "display": "Allergy"
+    },
+    {
+      "code": "02",
+      "display": "Intolerance"
+    },
+    {
+      "code": "03",
+      "display": "Treatment Failure"
+    },
+    {
+      "code": "04",
+      "display": "Patient Request"
+    },
+    {
+      "code": "05",
+      "display": "No Exception"
+    }
+  ]
+}

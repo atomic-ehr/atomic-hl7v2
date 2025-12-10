@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0445",
+  "id": "v2-0445",
+  "name": "IdentityReliability",
+  "title": "identityReliability",
+  "description": "Code system of concepts specifying the reliability of patient/person identifying data transmitted via a transaction.  Used in HL7 Version 2.x messaging in the PID segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0445",
+  "concepts": [
+    {
+      "code": "US",
+      "display": "Unknown/Default Social Security Number"
+    },
+    {
+      "code": "UD",
+      "display": "Unknown/Default Date of Birth"
+    },
+    {
+      "code": "UA",
+      "display": "Unknown/Default Address"
+    },
+    {
+      "code": "AL",
+      "display": "Patient/Person Name is an Alias"
+    }
+  ]
+}

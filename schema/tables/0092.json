@@ -1,0 +1,14 @@
+{
+  "tableNumber": "0092",
+  "id": "v2-0092",
+  "name": "ReAdmissionIndicator",
+  "title": "re-admissionIndicator",
+  "description": "Code system of concepts which are used to specify that a patient is being re admitted to a healthcare facilityin from which they were discharged, and indicates the circumstances around such re-admission.  Used in HL7 Version 2.x messagine in the PV1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0092",
+  "concepts": [
+    {
+      "code": "R",
+      "display": "Re-admission"
+    }
+  ]
+}

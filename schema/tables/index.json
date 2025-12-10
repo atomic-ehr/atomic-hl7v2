@@ -1,0 +1,2087 @@
+[
+  {
+    "tableNumber": "0001",
+    "name": "AdministrativeSex",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0002",
+    "name": "MaritalStatus",
+    "conceptCount": 16
+  },
+  {
+    "tableNumber": "0003",
+    "name": "Event",
+    "conceptCount": 384
+  },
+  {
+    "tableNumber": "0004",
+    "name": "PatientClass",
+    "conceptCount": 9
+  },
+  {
+    "tableNumber": "0005",
+    "name": "PHRaceAndEthnicityCDC",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0006",
+    "name": "Religion2",
+    "conceptCount": 95
+  },
+  {
+    "tableNumber": "0007",
+    "name": "AdmissionType",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0008",
+    "name": "AcknowledgmentCodes",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0009",
+    "name": "AmbulatoryStatus",
+    "conceptCount": 16
+  },
+  {
+    "tableNumber": "0012",
+    "name": "StockLocation",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0017",
+    "name": "TransactionType",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0027",
+    "name": "Priority",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0033",
+    "name": "Route",
+    "conceptCount": 28
+  },
+  {
+    "tableNumber": "0034",
+    "name": "SiteAdministered",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0038",
+    "name": "OrderStatus",
+    "conceptCount": 9
+  },
+  {
+    "tableNumber": "0048",
+    "name": "WhatSubjectFilter",
+    "conceptCount": 38
+  },
+  {
+    "tableNumber": "0052",
+    "name": "DiagnosisType",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0061",
+    "name": "CheckDigitScheme",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0062",
+    "name": "EventReason",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0063",
+    "name": "Relationship",
+    "conceptCount": 32
+  },
+  {
+    "tableNumber": "0065",
+    "name": "SpecimenAction",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0066",
+    "name": "EmploymentStatus",
+    "conceptCount": 15
+  },
+  {
+    "tableNumber": "0069",
+    "name": "HospitalService",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0070",
+    "name": "SpecimenSourceCodes",
+    "conceptCount": 137
+  },
+  {
+    "tableNumber": "0074",
+    "name": "DiagnosticServiceSectionId",
+    "conceptCount": 45
+  },
+  {
+    "tableNumber": "0076",
+    "name": "MessageType",
+    "conceptCount": 159
+  },
+  {
+    "tableNumber": "0080",
+    "name": "NatureOfAbnormalTesting",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0083",
+    "name": "OutlierType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0085",
+    "name": "ObservationResultStatusCodesInterpretation",
+    "conceptCount": 15
+  },
+  {
+    "tableNumber": "0091",
+    "name": "QueryPriority",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0092",
+    "name": "ReAdmissionIndicator",
+    "conceptCount": 1
+  },
+  {
+    "tableNumber": "0098",
+    "name": "TypeOfAgreement",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0100",
+    "name": "InvocationEvent",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0102",
+    "name": "DelayedAcknowledgmentType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0103",
+    "name": "ProcessingId",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0104",
+    "name": "VersionId",
+    "conceptCount": 17
+  },
+  {
+    "tableNumber": "0105",
+    "name": "SourceOfComment",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0106",
+    "name": "QueryResponseFormat",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0107",
+    "name": "DeferredResponseType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0108",
+    "name": "QueryResultsLevel",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0109",
+    "name": "ReportPriority",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0116",
+    "name": "BedStatus",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0119",
+    "name": "OrderControlCodes",
+    "conceptCount": 58
+  },
+  {
+    "tableNumber": "0121",
+    "name": "ResponseFlag",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0122",
+    "name": "ChargeType",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0123",
+    "name": "ResultStatus",
+    "conceptCount": 13
+  },
+  {
+    "tableNumber": "0124",
+    "name": "TransportationMode",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0126",
+    "name": "QuantityLimitedRequest",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0127",
+    "name": "AllergenType",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0128",
+    "name": "AllergySeverity",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0130",
+    "name": "VisitUserCodes",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0131",
+    "name": "ContactRole2",
+    "conceptCount": 12
+  },
+  {
+    "tableNumber": "0133",
+    "name": "ProcedurePractitionerIdentifierCodeType",
+    "conceptCount": 9
+  },
+  {
+    "tableNumber": "0135",
+    "name": "AssignmentOfBenefits",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0137",
+    "name": "MailClaimParty",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0140",
+    "name": "MilitaryService",
+    "conceptCount": 11
+  },
+  {
+    "tableNumber": "0142",
+    "name": "MilitaryStatus",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0144",
+    "name": "EligibilitySource",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0145",
+    "name": "RoomType",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0146",
+    "name": "AmountType",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0147",
+    "name": "PolicyType",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0148",
+    "name": "MoneyOrPercentageIndicator",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0149",
+    "name": "DayType",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0150",
+    "name": "CertificationPatientType",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0155",
+    "name": "AcceptApplicationAcknowledgmentConditions",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0156",
+    "name": "WhichDateTimeQualifier",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0157",
+    "name": "WhichDateTimeStatusQualifier",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0158",
+    "name": "DateTimeSelectionQualifier",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0159",
+    "name": "DietCodeSpecificationType",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0160",
+    "name": "TrayType",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0161",
+    "name": "AllowSubstitution",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0162",
+    "name": "RouteOfAdministration",
+    "conceptCount": 47
+  },
+  {
+    "tableNumber": "0163",
+    "name": "BodySite",
+    "conceptCount": 56
+  },
+  {
+    "tableNumber": "0164",
+    "name": "AdministrationDevice",
+    "conceptCount": 9
+  },
+  {
+    "tableNumber": "0165",
+    "name": "AdministrationMethod",
+    "conceptCount": 15
+  },
+  {
+    "tableNumber": "0166",
+    "name": "RxComponentType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0167",
+    "name": "SubstitutionStatus",
+    "conceptCount": 11
+  },
+  {
+    "tableNumber": "0168",
+    "name": "ProcessingPriority",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0169",
+    "name": "ReportingPriority",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0170",
+    "name": "DerivedSpecimen",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0173",
+    "name": "CoordinationOfBenefits",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0174",
+    "name": "NatureOfServiceTestObservation",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0175",
+    "name": "MasterFileIdentifierCodes",
+    "conceptCount": 26
+  },
+  {
+    "tableNumber": "0177",
+    "name": "ConfidentialityCodes",
+    "conceptCount": 10
+  },
+  {
+    "tableNumber": "0178",
+    "name": "FileLevelEvent",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0179",
+    "name": "ResponseLevel",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0180",
+    "name": "MasterfileActionCode",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0181",
+    "name": "MfnRecordLevelErrorReturn",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0183",
+    "name": "ActiveInactive",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0185",
+    "name": "PreferredMethodOfContact",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0187",
+    "name": "ProviderBilling",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0189",
+    "name": "EthnicGroup",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0190",
+    "name": "AddressType",
+    "conceptCount": 18
+  },
+  {
+    "tableNumber": "0191",
+    "name": "TypeOfReferencedData",
+    "conceptCount": 13
+  },
+  {
+    "tableNumber": "0193",
+    "name": "AmountClass",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0200",
+    "name": "NameType2",
+    "conceptCount": 24
+  },
+  {
+    "tableNumber": "0201",
+    "name": "TelecommunicationUse",
+    "conceptCount": 10
+  },
+  {
+    "tableNumber": "0202",
+    "name": "TelecommunicationEquipmentType",
+    "conceptCount": 10
+  },
+  {
+    "tableNumber": "0203",
+    "name": "IdentifierType",
+    "conceptCount": 147
+  },
+  {
+    "tableNumber": "0204",
+    "name": "OrganizationalNameType",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0205",
+    "name": "PriceType",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0206",
+    "name": "SegmentAction",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0207",
+    "name": "ProcessingMode",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0208",
+    "name": "QueryResponseStatus",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0209",
+    "name": "RelationalOperator",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0210",
+    "name": "RelationalConjunction",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0211",
+    "name": "AlternateCharacterSets",
+    "conceptCount": 25
+  },
+  {
+    "tableNumber": "0213",
+    "name": "PurgeStatus",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0214",
+    "name": "SpecialProgram",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0215",
+    "name": "Publicity",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0216",
+    "name": "PatientStatus",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0217",
+    "name": "VisitPriority",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0220",
+    "name": "LivingArrangement",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0223",
+    "name": "LivingDependency2",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0224",
+    "name": "TransportArranged",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0225",
+    "name": "EscortRequired",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0228",
+    "name": "DiagnosisClassification",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0230",
+    "name": "ProcedureFunctionalType",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0231",
+    "name": "StudentStatus",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0232",
+    "name": "InsuranceCompanyContactReason",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0234",
+    "name": "ReportTiming",
+    "conceptCount": 10
+  },
+  {
+    "tableNumber": "0235",
+    "name": "ReportSource",
+    "conceptCount": 10
+  },
+  {
+    "tableNumber": "0236",
+    "name": "EventReportedTo",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0237",
+    "name": "EventQualification",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0238",
+    "name": "EventSeriousness",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0239",
+    "name": "EventExpected",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0240",
+    "name": "EventConsequence",
+    "conceptCount": 9
+  },
+  {
+    "tableNumber": "0241",
+    "name": "PatientOutcome",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0242",
+    "name": "PrimaryObserverQualification",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0243",
+    "name": "IdentityMayBeDivulged",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0247",
+    "name": "StatusOfEvaluation",
+    "conceptCount": 12
+  },
+  {
+    "tableNumber": "0248",
+    "name": "ProductSource",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0250",
+    "name": "RelatednessAssessment",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0251",
+    "name": "ActionTakenInResponseToTheEvent",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0252",
+    "name": "CausalityObservations",
+    "conceptCount": 11
+  },
+  {
+    "tableNumber": "0253",
+    "name": "IndirectExposureMechanism",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0254",
+    "name": "KindOfQuantity",
+    "conceptCount": 102
+  },
+  {
+    "tableNumber": "0255",
+    "name": "DurationCategories",
+    "conceptCount": 27
+  },
+  {
+    "tableNumber": "0256",
+    "name": "TimeDelayPostChallenge",
+    "conceptCount": 44
+  },
+  {
+    "tableNumber": "0257",
+    "name": "NatureOfChallenge",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0258",
+    "name": "RelationshipModifier",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0260",
+    "name": "PatientLocationType",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0261",
+    "name": "LocationEquipment",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0262",
+    "name": "PrivacyLevel",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0263",
+    "name": "LevelOfCare",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0265",
+    "name": "SpecialtyType",
+    "conceptCount": 26
+  },
+  {
+    "tableNumber": "0267",
+    "name": "DaysOfTheWeek",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0268",
+    "name": "Override",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0269",
+    "name": "ChargeOnIndicator",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0270",
+    "name": "DocumentType",
+    "conceptCount": 14
+  },
+  {
+    "tableNumber": "0271",
+    "name": "DocumentCompletionStatus",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0272",
+    "name": "DocumentConfidentialityStatus2",
+    "conceptCount": 9
+  },
+  {
+    "tableNumber": "0273",
+    "name": "DocumentAvailabilityStatus",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0275",
+    "name": "DocumentStorageStatus",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0276",
+    "name": "AppointmentReason",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0277",
+    "name": "AppointmentType",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0278",
+    "name": "FillerStatus",
+    "conceptCount": 21
+  },
+  {
+    "tableNumber": "0279",
+    "name": "AllowSubstitution",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0280",
+    "name": "ReferralPriority",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0281",
+    "name": "ReferralType",
+    "conceptCount": 12
+  },
+  {
+    "tableNumber": "0282",
+    "name": "ReferralDisposition",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0283",
+    "name": "ReferralStatus",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0284",
+    "name": "ReferralCategory",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0286",
+    "name": "ProviderRole",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0287",
+    "name": "ProblemGoalAction",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0290",
+    "name": "MimeBase64EncodingCharacters",
+    "conceptCount": 65
+  },
+  {
+    "tableNumber": "0291",
+    "name": "SubtypeOfReferencedData",
+    "conceptCount": 17
+  },
+  {
+    "tableNumber": "0294",
+    "name": "TimeSelectionCriteriaParameterClass",
+    "conceptCount": 18
+  },
+  {
+    "tableNumber": "0298",
+    "name": "CpRangeType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0299",
+    "name": "Encoding",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0301",
+    "name": "UniversalIdType",
+    "conceptCount": 19
+  },
+  {
+    "tableNumber": "0305",
+    "name": "PersonLocationType",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0309",
+    "name": "CoverageType",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0311",
+    "name": "JobStatus",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0315",
+    "name": "LivingWillCodes",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0316",
+    "name": "OrganDonorCodes",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0317",
+    "name": "Annotations",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0321",
+    "name": "DispenseMethod",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0322",
+    "name": "CompletionStatus",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0323",
+    "name": "ActionCodes",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0324",
+    "name": "LocationCharacteristic",
+    "conceptCount": 12
+  },
+  {
+    "tableNumber": "0325",
+    "name": "LocationRelationship",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0326",
+    "name": "VisitIndicator",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0329",
+    "name": "QuantityMethod",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0330",
+    "name": "MarketingBasis",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0331",
+    "name": "FacilityType",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0332",
+    "name": "SourceType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0334",
+    "name": "DisabilityInformationRelationship",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0335",
+    "name": "RepeatPattern",
+    "conceptCount": 28
+  },
+  {
+    "tableNumber": "0336",
+    "name": "ReferralReason",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0337",
+    "name": "CertificationStatus",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0339",
+    "name": "AdvancedBeneficiaryNotice",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0344",
+    "name": "PatientsRelationshipToInsured",
+    "conceptCount": 19
+  },
+  {
+    "tableNumber": "0353",
+    "name": "CweStatuses",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0354",
+    "name": "MessageStructure",
+    "conceptCount": 316
+  },
+  {
+    "tableNumber": "0355",
+    "name": "PrimaryKeyValueType",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0356",
+    "name": "AlternateCharacterSetHandlingScheme",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0357",
+    "name": "MessageErrorCondition",
+    "conceptCount": 16
+  },
+  {
+    "tableNumber": "0359",
+    "name": "DiagnosisPriority",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0360",
+    "name": "DegreeLicenseCertificate",
+    "conceptCount": 61
+  },
+  {
+    "tableNumber": "0364",
+    "name": "CommentType",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0365",
+    "name": "EquipmentState",
+    "conceptCount": 20
+  },
+  {
+    "tableNumber": "0366",
+    "name": "LocalRemoteControlState",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0367",
+    "name": "AlertLevel",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0368",
+    "name": "RemoteControlCommand",
+    "conceptCount": 21
+  },
+  {
+    "tableNumber": "0369",
+    "name": "SpecimenRole",
+    "conceptCount": 12
+  },
+  {
+    "tableNumber": "0370",
+    "name": "ContainerStatus",
+    "conceptCount": 9
+  },
+  {
+    "tableNumber": "0371",
+    "name": "AdditivePreservative",
+    "conceptCount": 57
+  },
+  {
+    "tableNumber": "0372",
+    "name": "SpecimenComponent",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0373",
+    "name": "Treatment",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0374",
+    "name": "SystemInducedContaminants",
+    "conceptCount": 1
+  },
+  {
+    "tableNumber": "0375",
+    "name": "ArtificialBlood",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0376",
+    "name": "SpecialHandling",
+    "conceptCount": 17
+  },
+  {
+    "tableNumber": "0377",
+    "name": "EnvironmentalFactors",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0383",
+    "name": "SubstanceStatus",
+    "conceptCount": 11
+  },
+  {
+    "tableNumber": "0384",
+    "name": "SubstanceType",
+    "conceptCount": 12
+  },
+  {
+    "tableNumber": "0387",
+    "name": "CommandResponse",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0388",
+    "name": "ProcessingType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0389",
+    "name": "AnalyteRepeatStatus",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0391",
+    "name": "SegmentGroup",
+    "conceptCount": 148
+  },
+  {
+    "tableNumber": "0392",
+    "name": "MatchReason",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0393",
+    "name": "MatchAlgorithms",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0394",
+    "name": "ResponseModality",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0395",
+    "name": "ModifyIndicator",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0396",
+    "name": "CodingSystem",
+    "conceptCount": 254
+  },
+  {
+    "tableNumber": "0397",
+    "name": "Sequencing",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0398",
+    "name": "ContinuationStyle",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0401",
+    "name": "GovernmentReimbursementProgram",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0402",
+    "name": "SchoolType",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0403",
+    "name": "LanguageAbility",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0404",
+    "name": "LanguageProficiency",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0406",
+    "name": "OrganizationUnitType",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0409",
+    "name": "ApplicationChangeType",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0415",
+    "name": "DrgTransferType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0416",
+    "name": "ProcedureDrgType",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0417",
+    "name": "TissueType",
+    "conceptCount": 13
+  },
+  {
+    "tableNumber": "0418",
+    "name": "ProcedurePriority",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0421",
+    "name": "SeverityOfIllness",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0422",
+    "name": "TriageType",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0423",
+    "name": "CaseCategory",
+    "conceptCount": 1
+  },
+  {
+    "tableNumber": "0424",
+    "name": "GestationCategory",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0425",
+    "name": "NewbornType",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0426",
+    "name": "BloodProduct",
+    "conceptCount": 15
+  },
+  {
+    "tableNumber": "0427",
+    "name": "RiskManagementIncident",
+    "conceptCount": 14
+  },
+  {
+    "tableNumber": "0428",
+    "name": "IncidentType",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0429",
+    "name": "ProductionClass",
+    "conceptCount": 12
+  },
+  {
+    "tableNumber": "0430",
+    "name": "ArrivalMode",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0431",
+    "name": "RecreationalDrugType",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0432",
+    "name": "AdmissionLevelOfCare",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0433",
+    "name": "Precaution",
+    "conceptCount": 9
+  },
+  {
+    "tableNumber": "0434",
+    "name": "PatientCondition",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0435",
+    "name": "AdvanceDirective",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0436",
+    "name": "SensitivityToCausativeAgent",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0437",
+    "name": "AlertDevice",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0438",
+    "name": "AllergyClinicalStatus",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0440",
+    "name": "DataTypes",
+    "conceptCount": 96
+  },
+  {
+    "tableNumber": "0441",
+    "name": "ImmunizationRegistryStatus",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0442",
+    "name": "LocationServiceType",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0443",
+    "name": "ProviderRole",
+    "conceptCount": 23
+  },
+  {
+    "tableNumber": "0444",
+    "name": "NameAssemblyOrder",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0445",
+    "name": "IdentityReliability",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0450",
+    "name": "EventType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0457",
+    "name": "OverallClaimDisposition",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0465",
+    "name": "NameAddressRepresentation",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0466",
+    "name": "AmbulatoryPaymentClassification",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0468",
+    "name": "PaymentAdjustmentInformation",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0469",
+    "name": "PackagingStatus",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0470",
+    "name": "ReimbursementType",
+    "conceptCount": 10
+  },
+  {
+    "tableNumber": "0472",
+    "name": "TqConjunctionId",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0473",
+    "name": "FormularyStatus",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0474",
+    "name": "OrganizationUnitType",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0475",
+    "name": "ChargeTypeReason",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0477",
+    "name": "ControlledSubstanceSchedule",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0478",
+    "name": "FormularyStatus",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0480",
+    "name": "PharmacyOrderTypes",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0482",
+    "name": "OrderType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0483",
+    "name": "AuthorizationMode",
+    "conceptCount": 10
+  },
+  {
+    "tableNumber": "0484",
+    "name": "DispenseType",
+    "conceptCount": 9
+  },
+  {
+    "tableNumber": "0485",
+    "name": "ExtendedPriorityCodes",
+    "conceptCount": 13
+  },
+  {
+    "tableNumber": "0487",
+    "name": "SpecimenType",
+    "conceptCount": 315
+  },
+  {
+    "tableNumber": "0488",
+    "name": "SpecimenCollectionMethod",
+    "conceptCount": 42
+  },
+  {
+    "tableNumber": "0489",
+    "name": "Risks",
+    "conceptCount": 11
+  },
+  {
+    "tableNumber": "0490",
+    "name": "SpecimenRejectReason",
+    "conceptCount": 14
+  },
+  {
+    "tableNumber": "0491",
+    "name": "SpecimenQuality",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0492",
+    "name": "SpecimenAppropriateness",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0493",
+    "name": "SpecimenCondition",
+    "conceptCount": 10
+  },
+  {
+    "tableNumber": "0494",
+    "name": "SpecimenChildRole",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0495",
+    "name": "BodySiteModifier",
+    "conceptCount": 16
+  },
+  {
+    "tableNumber": "0496",
+    "name": "ConsentType",
+    "conceptCount": 137
+  },
+  {
+    "tableNumber": "0497",
+    "name": "ConsentMode",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0498",
+    "name": "ConsentStatus",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0499",
+    "name": "ConsentBypassReason",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0500",
+    "name": "ConsentDisclosureLevel",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0501",
+    "name": "ConsentNonDisclosureReason",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0502",
+    "name": "NonSubjectConsenterReason",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0503",
+    "name": "SequenceResultsFlag",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0504",
+    "name": "SequenceCondition",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0505",
+    "name": "CyclicEntryExitIndicator",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0506",
+    "name": "ServiceRequestRelationship",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0507",
+    "name": "ObservationResultHandling",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0508",
+    "name": "BloodProductProcessingRequirements",
+    "conceptCount": 11
+  },
+  {
+    "tableNumber": "0510",
+    "name": "BloodProductDispenseStatus",
+    "conceptCount": 11
+  },
+  {
+    "tableNumber": "0511",
+    "name": "BpObservationStatusCodesInterpretation",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0513",
+    "name": "BloodProductTransfusionDispositionStatus",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0514",
+    "name": "TransfusionAdverseReaction",
+    "conceptCount": 19
+  },
+  {
+    "tableNumber": "0516",
+    "name": "ErrorSeverity",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0517",
+    "name": "InformInstructions",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0518",
+    "name": "OverrideType",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0520",
+    "name": "MessageWaitingPriority",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0523",
+    "name": "ComputationType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0524",
+    "name": "SequenceCondition",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0527",
+    "name": "CalendarAlignment",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0528",
+    "name": "EventRelatedPeriod",
+    "conceptCount": 13
+  },
+  {
+    "tableNumber": "0529",
+    "name": "Precision",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0530",
+    "name": "OrganizationAgencyDepartment",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0532",
+    "name": "ExpandedYesNoIndicator",
+    "conceptCount": 9
+  },
+  {
+    "tableNumber": "0534",
+    "name": "ClergyNotificationType",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0535",
+    "name": "SignatureType",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0536",
+    "name": "CertificateStatus",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0538",
+    "name": "InstitutionRelationshipType",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0540",
+    "name": "InactiveReason",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0544",
+    "name": "ContainerCondition",
+    "conceptCount": 22
+  },
+  {
+    "tableNumber": "0547",
+    "name": "JurisdictionalBreadth",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0548",
+    "name": "SignatorysRelationshipToSubject",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0550",
+    "name": "BodyParts",
+    "conceptCount": 442
+  },
+  {
+    "tableNumber": "0553",
+    "name": "InvoiceControl",
+    "conceptCount": 17
+  },
+  {
+    "tableNumber": "0554",
+    "name": "InvoiceReason",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0555",
+    "name": "InvoiceType",
+    "conceptCount": 10
+  },
+  {
+    "tableNumber": "0556",
+    "name": "BenefitGroup",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0557",
+    "name": "PayeeType",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0558",
+    "name": "PayeeRelationshipToInvoice",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0559",
+    "name": "ProductServiceStatus",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0560",
+    "name": "QuantityUnits",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0561",
+    "name": "ProductServicesClarification",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0562",
+    "name": "ProcessingConsideration",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0564",
+    "name": "AdjustmentCategory",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0565",
+    "name": "ProviderAdjustmentReason",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0566",
+    "name": "BloodUnitType",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0569",
+    "name": "AdjustmentAction",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0570",
+    "name": "PaymentMethod",
+    "conceptCount": 10
+  },
+  {
+    "tableNumber": "0571",
+    "name": "InvoiceProcessingResultsStatus",
+    "conceptCount": 8
+  },
+  {
+    "tableNumber": "0572",
+    "name": "TaxStatus",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0615",
+    "name": "UserAuthenticationCredentialType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0616",
+    "name": "AddressExpirationReason",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0617",
+    "name": "AddressUsage",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0618",
+    "name": "Protection",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0625",
+    "name": "ItemStatus",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0634",
+    "name": "ItemImportance",
+    "conceptCount": 1
+  },
+  {
+    "tableNumber": "0642",
+    "name": "ReorderTheory",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0651",
+    "name": "LaborCalculationType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0653",
+    "name": "DateFormat",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0657",
+    "name": "DeviceType",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0659",
+    "name": "LotControl",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0667",
+    "name": "DeviceDataState",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0669",
+    "name": "LoadStatus",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0682",
+    "name": "DeviceStatus",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0702",
+    "name": "CycleType",
+    "conceptCount": 32
+  },
+  {
+    "tableNumber": "0717",
+    "name": "AccessRestrictionValue",
+    "conceptCount": 76
+  },
+  {
+    "tableNumber": "0728",
+    "name": "CclValue",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0731",
+    "name": "DrgDiagnosisDeterminationStatus",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0734",
+    "name": "GrouperStatus",
+    "conceptCount": 10
+  },
+  {
+    "tableNumber": "0739",
+    "name": "DrgStatusPatient",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0742",
+    "name": "DrgStatusFinancialCalculation",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0749",
+    "name": "DrgGroupingStatus",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0755",
+    "name": "DrgstatusWeightAtBirth",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0757",
+    "name": "DrgStatusRespirationMinutes",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0759",
+    "name": "DrgstatusAdmission",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0761",
+    "name": "DrgProcedureDeterminationStatus",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0763",
+    "name": "DrgProcedureRelevance",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0776",
+    "name": "ItemStatus",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0778",
+    "name": "ItemType",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0790",
+    "name": "ApprovingRegulatoryAgency",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0793",
+    "name": "RulingAct",
+    "conceptCount": 1
+  },
+  {
+    "tableNumber": "0806",
+    "name": "SterilizationType",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0818",
+    "name": "Package",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0834",
+    "name": "MimeTypes",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0868",
+    "name": "TelecommunicationExpirationReason",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0871",
+    "name": "SupplyRisk",
+    "conceptCount": 7
+  },
+  {
+    "tableNumber": "0881",
+    "name": "RoleExecutingPhysician",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0882",
+    "name": "MedicalRoleExecutingPhysician",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0894",
+    "name": "SideOfBody",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0904",
+    "name": "SecurityCheckScheme",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0905",
+    "name": "ShipmentStatus",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0906",
+    "name": "Actpriority",
+    "conceptCount": 15
+  },
+  {
+    "tableNumber": "0907",
+    "name": "Confidentiality",
+    "conceptCount": 14
+  },
+  {
+    "tableNumber": "0909",
+    "name": "PatientResultsReleaseCategorizationScheme",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0912",
+    "name": "Participation",
+    "conceptCount": 52
+  },
+  {
+    "tableNumber": "0914",
+    "name": "RootCause",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0916",
+    "name": "RelevantClincialInformation",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0917",
+    "name": "BolusType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0918",
+    "name": "PcaType",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0919",
+    "name": "ExclusiveTest",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0920",
+    "name": "PreferredSpecimenAttributeStatus",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0921",
+    "name": "CertificationType",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0922",
+    "name": "CertificationCategory",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0923",
+    "name": "ProcessInterruption",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0924",
+    "name": "CumulativeDosageLimitUom",
+    "conceptCount": 6
+  },
+  {
+    "tableNumber": "0925",
+    "name": "PhlebotomyIssue",
+    "conceptCount": 13
+  },
+  {
+    "tableNumber": "0926",
+    "name": "PhlebotomyStatus",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0927",
+    "name": "ArmStick",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0933",
+    "name": "IntendedProcedureType",
+    "conceptCount": 13
+  },
+  {
+    "tableNumber": "0935",
+    "name": "ProcessInterruptionReason",
+    "conceptCount": 9
+  },
+  {
+    "tableNumber": "0936",
+    "name": "ObservationType",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0937",
+    "name": "ObservationSubtype",
+    "conceptCount": 14
+  },
+  {
+    "tableNumber": "0938",
+    "name": "CollectionEvent",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0939",
+    "name": "CommunicationLocation",
+    "conceptCount": 21
+  },
+  {
+    "tableNumber": "0940",
+    "name": "LimitationTypeCode",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0942",
+    "name": "EquipmentStateIndicator",
+    "conceptCount": 5
+  },
+  {
+    "tableNumber": "0945",
+    "name": "AutoDilutionType",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0946",
+    "name": "SupplierType",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0948",
+    "name": "V2CSRelationshipType",
+    "conceptCount": 9
+  },
+  {
+    "tableNumber": "0949",
+    "name": "OrderControlCodeReason",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "0950",
+    "name": "OrderStatusModifier",
+    "conceptCount": 2
+  },
+  {
+    "tableNumber": "0951",
+    "name": "ReasonForStudy",
+    "conceptCount": 13
+  },
+  {
+    "tableNumber": "0970",
+    "name": "OnlineVerificationResult",
+    "conceptCount": 3
+  },
+  {
+    "tableNumber": "0971",
+    "name": "OnlineVerificationResultErrorCodes",
+    "conceptCount": 4
+  },
+  {
+    "tableNumber": "4000",
+    "name": "NameAddressRepresentation",
+    "conceptCount": 3
+  }
+]

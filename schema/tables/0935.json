@@ -1,0 +1,46 @@
+{
+  "tableNumber": "0935",
+  "id": "v2-0935",
+  "name": "ProcessInterruptionReason",
+  "title": "processInterruptionReason",
+  "description": "HL7-defined code system of concepts specifying the reason for the process interruption.  Used in HL7 Version 2.x messaging in the DON segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0935",
+  "concepts": [
+    {
+      "code": "NRG",
+      "display": "No reason given, donor decided to stop without giving a reason"
+    },
+    {
+      "code": "PCD",
+      "display": "Phone Call-Donor"
+    },
+    {
+      "code": "DCW",
+      "display": "Couldn't wait"
+    },
+    {
+      "code": "CFT",
+      "display": "Couldn't follow through with donation (scared)"
+    },
+    {
+      "code": "DBB",
+      "display": "Bathroom"
+    },
+    {
+      "code": "DNI",
+      "display": "Phlebotomy Issue"
+    },
+    {
+      "code": "ASC",
+      "display": "Apheresis Software Crash"
+    },
+    {
+      "code": "BSC",
+      "display": "Manufacturing Software Crash"
+    },
+    {
+      "code": "GFE",
+      "display": "General Facility Emergency"
+    }
+  ]
+}

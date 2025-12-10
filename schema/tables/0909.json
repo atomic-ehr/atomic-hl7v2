@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0909",
+  "id": "v2-0909",
+  "name": "PatientResultsReleaseCategorizationScheme",
+  "title": "patientResultsReleaseCategorizationScheme",
+  "description": "HL7-defined code system of concepts specifying the scheme for the patient results release categorization.  Used in HL7 Version 2.x messaging in the OBX segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0909",
+  "concepts": [
+    {
+      "code": "STBD",
+      "display": "Share To Be Determined -<p>Category to be determined"
+    },
+    {
+      "code": "SIMM",
+      "display": "Share Immediately -<p>Share result with patient immediately"
+    },
+    {
+      "code": "SWNL",
+      "display": "Share Within Normal Limits -<p>Share result in reference/therapeutic range with patient immediately<p>Share result out of reference/therapeutic ranges with patient after 1 or more business day as agreed to by the systems in play."
+    },
+    {
+      "code": "SID",
+      "display": "Share In1 Day -<p>Share result regardless of reference/therapeutic range after 1 or more business day as agreed to by the systems in play."
+    },
+    {
+      "code": "SIDC",
+      "display": "Share in 1 Day Conditionally -<p>Share result in reference ranges/therapeutic with patient after 1 or more business day as agreed to by the systems in play.<p>Withhold result out of reference/therapeutic range until physician release"
+    },
+    {
+      "code": "SWTH",
+      "display": "Share Withhold -<p>Withhold result regardless of reference/therapeutic ranges"
+    }
+  ]
+}

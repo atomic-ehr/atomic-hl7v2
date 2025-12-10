@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0749",
+  "id": "v2-0749",
+  "name": "DrgGroupingStatus",
+  "title": "drgGroupingStatus",
+  "description": "Code system of concepts specifying the status of the use of the gender information for diagnosis related group (DRG) determination.  US Realm. Used in HL7 Version 2.x messaging in the DRG segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0749",
+  "concepts": [
+    {
+      "code": "0",
+      "display": "Valid code; not used for grouping"
+    },
+    {
+      "code": "1",
+      "display": "Valid code; used for grouping"
+    },
+    {
+      "code": "2",
+      "display": "Invalid code; not used for grouping"
+    },
+    {
+      "code": "3",
+      "display": "Invalid code; code is relevant for grouping"
+    }
+  ]
+}

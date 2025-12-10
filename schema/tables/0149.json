@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0149",
+  "id": "v2-0149",
+  "name": "DayType",
+  "title": "dayType",
+  "description": "Code system of concepts  which specify whether the days are denied, pending or approved.  Used in HL7 Version 2.x messaging in the DTN segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0149",
+  "concepts": [
+    {
+      "code": "AP",
+      "display": "Approved"
+    },
+    {
+      "code": "DE",
+      "display": "Denied"
+    },
+    {
+      "code": "PE",
+      "display": "Pending"
+    }
+  ]
+}

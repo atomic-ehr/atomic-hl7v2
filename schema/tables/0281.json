@@ -1,0 +1,58 @@
+{
+  "tableNumber": "0281",
+  "id": "v2-0281",
+  "name": "ReferralType",
+  "title": "referralType",
+  "description": "Code system of concepts used to identify the general category of healthcare professional desired to satisfy a referral.  Used in HL7 Version 2.x messaging in the RF1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0281",
+  "concepts": [
+    {
+      "code": "HOM",
+      "display": "Home Care"
+    },
+    {
+      "code": "LAB",
+      "display": "Laboratory"
+    },
+    {
+      "code": "MED",
+      "display": "Medical"
+    },
+    {
+      "code": "PSY",
+      "display": "Psychiatric"
+    },
+    {
+      "code": "RAD",
+      "display": "Radiology"
+    },
+    {
+      "code": "SKN",
+      "display": "Skilled Nursing"
+    },
+    {
+      "code": "Lab",
+      "display": "Laboratory"
+    },
+    {
+      "code": "Rad",
+      "display": "Radiology"
+    },
+    {
+      "code": "Med",
+      "display": "Medical"
+    },
+    {
+      "code": "Skn",
+      "display": "Skilled Nursing"
+    },
+    {
+      "code": "Psy",
+      "display": "Psychiatric"
+    },
+    {
+      "code": "Hom",
+      "display": "Home Care"
+    }
+  ]
+}

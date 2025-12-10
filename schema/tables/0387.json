@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0387",
+  "id": "v2-0387",
+  "name": "CommandResponse",
+  "title": "commandResponse",
+  "description": "Code system of concepts identifying the response of the previously issued command.  Used in HL7 Version 2.x messaging in the Equipment Command Response (ECR) and Interaction Status Detail (ISD) segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0387",
+  "concepts": [
+    {
+      "code": "OK",
+      "display": "Command completed successfully"
+    },
+    {
+      "code": "TI",
+      "display": "Command cannot be completed within requested completion time"
+    },
+    {
+      "code": "ER",
+      "display": "Command cannot be completed because of error condition"
+    },
+    {
+      "code": "ST",
+      "display": "Command cannot be completed because of the status of the requested equipment"
+    },
+    {
+      "code": "UN",
+      "display": "Command cannot be completed for unknown reasons"
+    }
+  ]
+}

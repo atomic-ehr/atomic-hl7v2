@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0538",
+  "id": "v2-0538",
+  "name": "InstitutionRelationshipType",
+  "title": "institutionRelationshipType",
+  "description": "Code system of concepts specifying the relationship the staff person has with the institution for whom he/she provides services.  Used in HL7 Version 2 messaging in the STF segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0538",
+  "concepts": [
+    {
+      "code": "EMP",
+      "display": "Employee"
+    },
+    {
+      "code": "VOL",
+      "display": "Volunteer"
+    },
+    {
+      "code": "CON",
+      "display": "Contractor"
+    },
+    {
+      "code": "CST",
+      "display": "Consultant"
+    }
+  ]
+}

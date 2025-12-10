@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0657",
+  "id": "v2-0657",
+  "name": "DeviceType",
+  "title": "deviceType",
+  "description": "Code system of concepts that idenfity the kind of device as defined by the manufacturer. Used in HL7 Version 2.x messaging in the SCP segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0657",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "EO Gas Sterilizer"
+    },
+    {
+      "code": "2",
+      "display": "Steam Sterilizer"
+    },
+    {
+      "code": "3",
+      "display": "Peracetic Acid"
+    }
+  ]
+}

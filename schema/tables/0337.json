@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0337",
+  "id": "v2-0337",
+  "name": "CertificationStatus",
+  "title": "certificationStatus",
+  "description": "HL7-defined code system of concepts used to specify the status of the practitioner's speciality certification.  Used in HL7 Version 2.x messaging in the Specialty Description (SPD) value and Practitioner Detail (PRA) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0337",
+  "concepts": [
+    {
+      "code": "C",
+      "display": "Certified"
+    },
+    {
+      "code": "E",
+      "display": "Eligible"
+    }
+  ]
+}

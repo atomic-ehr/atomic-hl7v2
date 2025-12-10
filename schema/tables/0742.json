@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0742",
+  "id": "v2-0742",
+  "name": "DrgStatusFinancialCalculation",
+  "title": "drgStatusFinancialCalculation",
+  "description": "Code system of concepts specifying the status of the diagnosis related group (DRG) calculation regarding the financial aspects.  US Realm. Used in HL7 Version 2.x messaging in the DRG segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0742",
+  "concepts": [
+    {
+      "code": "00",
+      "display": "Effective weight calculated"
+    },
+    {
+      "code": "01",
+      "display": "Hospital specific contract"
+    },
+    {
+      "code": "03",
+      "display": "Eeffective weight for transfer/referral calculated"
+    },
+    {
+      "code": "04",
+      "display": "Referral from other hospital based on a cooperation (no DRG reimbursement)"
+    },
+    {
+      "code": "05",
+      "display": "Invalid length of stay"
+    },
+    {
+      "code": "10",
+      "display": "No information/entry in cost data for this DRG"
+    },
+    {
+      "code": "11",
+      "display": "No relative weight found for department (type)"
+    }
+  ]
+}

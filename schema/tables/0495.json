@@ -1,0 +1,74 @@
+{
+  "tableNumber": "0495",
+  "id": "v2-0495",
+  "name": "BodySiteModifier",
+  "title": "bodySiteModifier",
+  "description": "HL7-defined code system of concepts specifying the modifier for the body site.  Used in HL7 Version 2.x messaging in the RXR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0495",
+  "concepts": [
+    {
+      "code": "ANT",
+      "display": "Anterior"
+    },
+    {
+      "code": "BIL",
+      "display": "Bilateral"
+    },
+    {
+      "code": "DIS",
+      "display": "Distal"
+    },
+    {
+      "code": "EXT",
+      "display": "External"
+    },
+    {
+      "code": "LAT",
+      "display": "Lateral"
+    },
+    {
+      "code": "L",
+      "display": "Left"
+    },
+    {
+      "code": "LOW",
+      "display": "Lower"
+    },
+    {
+      "code": "MED",
+      "display": "Medial"
+    },
+    {
+      "code": "POS",
+      "display": "Posterior"
+    },
+    {
+      "code": "PRO",
+      "display": "Proximal"
+    },
+    {
+      "code": "LLQ",
+      "display": "Quadrant, Left Lower"
+    },
+    {
+      "code": "LUQ",
+      "display": "Quadrant, Left Upper"
+    },
+    {
+      "code": "RLQ",
+      "display": "Quadrant, Right Lower"
+    },
+    {
+      "code": "RUQ",
+      "display": "Quadrant, Right Upper"
+    },
+    {
+      "code": "R",
+      "display": "Right"
+    },
+    {
+      "code": "UPP",
+      "display": "Upper"
+    }
+  ]
+}

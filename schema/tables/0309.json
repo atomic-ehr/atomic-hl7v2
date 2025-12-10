@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0309",
+  "id": "v2-0309",
+  "name": "CoverageType",
+  "title": "coverageType",
+  "description": "Code system of concepts specifying the type of insurance coverage or what types of services are covered for the purposes of a billing system.  For example, a physician billing system will only want to receive insurance information for plans that cover physician/professional charges.  Used in HL7 Version 2.x messaging in the Insurance (IN1) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0309",
+  "concepts": [
+    {
+      "code": "H",
+      "display": "Hospital/institutional"
+    },
+    {
+      "code": "P",
+      "display": "Physician/professional"
+    },
+    {
+      "code": "B",
+      "display": "Both hospital and physician"
+    },
+    {
+      "code": "RX",
+      "display": "Pharmacy"
+    }
+  ]
+}

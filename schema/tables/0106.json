@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0106",
+  "id": "v2-0106",
+  "name": "QueryResponseFormat",
+  "title": "queryResponseFormat",
+  "description": "HL7-defined code system of concepts which specify which of several types of formats for data to be returned in response to a query.  Used in HL7 Version 2 messaging in the EQL segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0106",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "Response is in display format"
+    },
+    {
+      "code": "R",
+      "display": "Response is in record-oriented format"
+    },
+    {
+      "code": "T",
+      "display": "Response is in tabular format"
+    }
+  ]
+}

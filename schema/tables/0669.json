@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0669",
+  "id": "v2-0669",
+  "name": "LoadStatus",
+  "title": "loadStatus",
+  "description": "Code system of concepts used to define the status of the information provided in a device sterilization or decontamination cycle. Used in HL7 Version 2.x messaging in the SDD segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0669",
+  "concepts": [
+    {
+      "code": "LLD",
+      "display": "Building a Load"
+    },
+    {
+      "code": "LCP",
+      "display": "Load In Process"
+    },
+    {
+      "code": "LCC",
+      "display": "Load is Complete"
+    },
+    {
+      "code": "LCN",
+      "display": "Load Canceled"
+    }
+  ]
+}

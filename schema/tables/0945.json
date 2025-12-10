@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0945",
+  "id": "v2-0945",
+  "name": "AutoDilutionType",
+  "title": "auto-DilutionType",
+  "description": "Code system of vendor-defined codes that specify the pre‑configured dilution to be applied on the instrument, which can be used instead of a numeric declaration.  Used in Version 2 messaging in the TCD segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0945",
+  "concepts": [
+    {
+      "code": "X2",
+      "display": "Dilution factor 2",
+      "definition": "Specimen pre-diluted by factor 2 applied on the instrument"
+    },
+    {
+      "code": "X5",
+      "display": "Dilution factor 5",
+      "definition": "Specimen pre-diluted by factor 5 applied on the instrument"
+    },
+    {
+      "code": "D1",
+      "display": "Dilution factor 1.23",
+      "definition": "Specimen pre-diluted by factor 1.23 applied on the instrument"
+    },
+    {
+      "code": "D2",
+      "display": "Dilution factor 1.45",
+      "definition": "Specimen pre-diluted by factor 1.45 applied on the instrument"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0406",
+  "id": "v2-0406",
+  "name": "OrganizationUnitType",
+  "title": "organizationUnitType",
+  "description": "HL7-defined code system of concepts which identify an environment in which a provider acts in a specified role.  The provider environment is not the specialty for the provider.  This is intended to allow communication of this information when the provider information may not have been communicated previously in a master file, and is used to support international requirements.  Used in HL7 Version 2 messaging in the PRT and ROL segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0406",
+  "concepts": [
+    {
+      "code": "H",
+      "display": "Home"
+    },
+    {
+      "code": "O",
+      "display": "Office"
+    },
+    {
+      "code": "1",
+      "display": "Hospital"
+    },
+    {
+      "code": "2",
+      "display": "Physician Clinic"
+    },
+    {
+      "code": "3",
+      "display": "Long Term Care"
+    },
+    {
+      "code": "4",
+      "display": "Acute Care"
+    },
+    {
+      "code": "5",
+      "display": "Other"
+    }
+  ]
+}

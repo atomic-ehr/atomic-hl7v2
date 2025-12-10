@@ -1,0 +1,138 @@
+{
+  "tableNumber": "0063",
+  "id": "v2-0063",
+  "name": "Relationship",
+  "title": "relationship",
+  "description": "HL7-defined code system of concepts specifying an actual personal relationship that the next of kin/associated party has to a patient.  Used in HL7 Version 2.x messaging in the NK1 and IN1 segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0063",
+  "concepts": [
+    {
+      "code": "SEL",
+      "display": "Self"
+    },
+    {
+      "code": "SPO",
+      "display": "Spouse"
+    },
+    {
+      "code": "DOM",
+      "display": "Life partner"
+    },
+    {
+      "code": "CHD",
+      "display": "Child"
+    },
+    {
+      "code": "GCH",
+      "display": "Grandchild"
+    },
+    {
+      "code": "NCH",
+      "display": "Natural child"
+    },
+    {
+      "code": "SCH",
+      "display": "Stepchild"
+    },
+    {
+      "code": "FCH",
+      "display": "Foster child"
+    },
+    {
+      "code": "DEP",
+      "display": "Handicapped dependent"
+    },
+    {
+      "code": "WRD",
+      "display": "Ward of court"
+    },
+    {
+      "code": "PAR",
+      "display": "Parent"
+    },
+    {
+      "code": "MTH",
+      "display": "Mother"
+    },
+    {
+      "code": "FTH",
+      "display": "Father"
+    },
+    {
+      "code": "CGV",
+      "display": "Care giver"
+    },
+    {
+      "code": "GRD",
+      "display": "Guardian"
+    },
+    {
+      "code": "GRP",
+      "display": "Grandparent"
+    },
+    {
+      "code": "EXF",
+      "display": "Extended family"
+    },
+    {
+      "code": "SIB",
+      "display": "Sibling"
+    },
+    {
+      "code": "BRO",
+      "display": "Brother"
+    },
+    {
+      "code": "SIS",
+      "display": "Sister"
+    },
+    {
+      "code": "FND",
+      "display": "Friend"
+    },
+    {
+      "code": "OAD",
+      "display": "Other adult"
+    },
+    {
+      "code": "EME",
+      "display": "Employee"
+    },
+    {
+      "code": "EMR",
+      "display": "Employer"
+    },
+    {
+      "code": "ASC",
+      "display": "Associate"
+    },
+    {
+      "code": "EMC",
+      "display": "Emergency contact"
+    },
+    {
+      "code": "OWN",
+      "display": "Owner"
+    },
+    {
+      "code": "TRA",
+      "display": "Trainer"
+    },
+    {
+      "code": "MGR",
+      "display": "Manager"
+    },
+    {
+      "code": "NON",
+      "display": "None"
+    },
+    {
+      "code": "UNK",
+      "display": "Unknown"
+    },
+    {
+      "code": "OTH",
+      "display": "Other"
+    }
+  ]
+}

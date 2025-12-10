@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0157",
+  "id": "v2-0157",
+  "name": "WhichDateTimeStatusQualifier",
+  "title": "whichDate-timeStatusQualifier",
+  "description": "HL7-defined code system of concepts that specify the status type of objects selected in a date range.  Used in HL7 Vesion 2 messaging in the QRF segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0157",
+  "concepts": [
+    {
+      "code": "ANY",
+      "display": "Any status"
+    },
+    {
+      "code": "CFN",
+      "display": "Current final value, whether final or corrected"
+    },
+    {
+      "code": "COR",
+      "display": "Corrected only (no final with corrections)"
+    },
+    {
+      "code": "FIN",
+      "display": "Final only (no corrections)"
+    },
+    {
+      "code": "PRE",
+      "display": "Preliminary"
+    },
+    {
+      "code": "REP",
+      "display": "Report completion date/time"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0216",
+  "id": "v2-0216",
+  "name": "PatientStatus",
+  "title": "patientStatus",
+  "description": "Code system of concepts used to define the state of a care episode for a patient.  Used in HL7 Version 2.x messaging in the PV2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0216",
+  "concepts": [
+    {
+      "code": "AI",
+      "display": "Active Inpatient"
+    },
+    {
+      "code": "DI",
+      "display": "Discharged Inpatient"
+    }
+  ]
+}

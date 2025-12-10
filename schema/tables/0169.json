@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0169",
+  "id": "v2-0169",
+  "name": "ReportingPriority",
+  "title": "reportingPriority",
+  "description": "HL7-defined code system of concepts  which specify the available priorities reporting the test results when the user is asked to specify the reporting priority independent of the processing priority.  Used in HL7 Version 2.x messaging in the OM1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0169",
+  "concepts": [
+    {
+      "code": "C",
+      "display": "Call back results"
+    },
+    {
+      "code": "R",
+      "display": "Rush reporting"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0942",
+  "id": "v2-0942",
+  "name": "EquipmentStateIndicator",
+  "title": "equipmentStateIndicator",
+  "description": "HL7-defined code sytem of cocepts that specify the type of measurement of the state of an automated laboratory instrument. Used in HL7 Version 2.x messaging in the INV segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0942",
+  "concepts": [
+    {
+      "code": "EB",
+      "display": "Emergency input buffer current capacity",
+      "definition": "Current capacity of an emergency input specimen buffer"
+    },
+    {
+      "code": "IB",
+      "display": "Input buffer current capacity",
+      "definition": "Current capacity of a regular input specimen buffer"
+    },
+    {
+      "code": "IC",
+      "display": "Instrument current processing capacity",
+      "definition": "Current processing capacity of the instrument"
+    },
+    {
+      "code": "OB",
+      "display": "Output buffer current capacity",
+      "definition": "Current capacity of an output specimen buffer"
+    },
+    {
+      "code": "TA",
+      "display": "Current test availability"
+    }
+  ]
+}

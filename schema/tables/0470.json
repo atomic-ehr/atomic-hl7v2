@@ -1,0 +1,50 @@
+{
+  "tableNumber": "0470",
+  "id": "v2-0470",
+  "name": "ReimbursementType",
+  "title": "reimbursementType",
+  "description": "Code system of concepts specifying the fee schedule reimbursement type applied to the line item.  Used in HL7 Version 2.x messaging in the GP2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0470",
+  "concepts": [
+    {
+      "code": "OPPS",
+      "display": "Outpatient Prospective Payment System"
+    },
+    {
+      "code": "Pckg",
+      "display": "Packaged APC"
+    },
+    {
+      "code": "Lab",
+      "display": "Clinical Laboratory APC"
+    },
+    {
+      "code": "Thrpy",
+      "display": "Therapy APC"
+    },
+    {
+      "code": "DME",
+      "display": "Durable Medical Equipment"
+    },
+    {
+      "code": "EPO",
+      "display": "Epotein"
+    },
+    {
+      "code": "Mamm",
+      "display": "Screening Mammography APC"
+    },
+    {
+      "code": "PartH",
+      "display": "Partial Hospitalization APC"
+    },
+    {
+      "code": "Crnl",
+      "display": "Corneal Tissue APC"
+    },
+    {
+      "code": "NoPay",
+      "display": "This APC is not paid"
+    }
+  ]
+}

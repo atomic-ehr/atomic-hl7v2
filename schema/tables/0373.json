@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0373",
+  "id": "v2-0373",
+  "name": "Treatment",
+  "title": "treatment",
+  "description": "Code system of concepts that identify the specimen treatment performed during lab processing.  Used in the Interaction Specimen Container Detail (SAC) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0373",
+  "concepts": [
+    {
+      "code": "LDLP",
+      "display": "LDL Precipitation"
+    },
+    {
+      "code": "RECA",
+      "display": "Recalification"
+    },
+    {
+      "code": "DEFB",
+      "display": "Defibrination"
+    },
+    {
+      "code": "ACID",
+      "display": "Acidification"
+    },
+    {
+      "code": "NEUT",
+      "display": "Neutralization"
+    },
+    {
+      "code": "ALK",
+      "display": "Alkalization"
+    },
+    {
+      "code": "FILT",
+      "display": "Filtration"
+    },
+    {
+      "code": "UFIL",
+      "display": "Ultrafiltration"
+    }
+  ]
+}

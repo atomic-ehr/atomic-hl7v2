@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0473",
+  "id": "v2-0473",
+  "name": "FormularyStatus",
+  "title": "formularyStatus",
+  "description": "Code system of concepts specifying whether or not the service (pharmaceutical) is in the formulary.  Used in HL7 Version 2.x messaging in the OM7 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0473",
+  "concepts": [
+    {
+      "code": "G",
+      "display": "This observation/service is on the formulary, and has guidelines"
+    },
+    {
+      "code": "N",
+      "display": "This observation/service is not on the formulary"
+    },
+    {
+      "code": "R",
+      "display": "This observation/service is on the formulary, but is restricted"
+    },
+    {
+      "code": "Y",
+      "display": "This observation/service is on the formulary"
+    }
+  ]
+}

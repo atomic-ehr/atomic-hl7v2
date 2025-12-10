@@ -1,0 +1,54 @@
+{
+  "tableNumber": "0489",
+  "id": "v2-0489",
+  "name": "Risks",
+  "title": "risks",
+  "description": "Code system of concepts specifying any known or suspected specimen hazards, e.g., exceptionally infectious agent or blood from a hepatitis patient.  Used in HL7 Version 2.x messaging in the SPM and PAC segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0489",
+  "concepts": [
+    {
+      "code": "BIO",
+      "display": "Biological"
+    },
+    {
+      "code": "COR",
+      "display": "Corrosive"
+    },
+    {
+      "code": "ESC",
+      "display": "Escape Risk"
+    },
+    {
+      "code": "AGG",
+      "display": "Aggressive"
+    },
+    {
+      "code": "IFL",
+      "display": "MaterialDangerInflammable"
+    },
+    {
+      "code": "EXP",
+      "display": "Explosive"
+    },
+    {
+      "code": "INF",
+      "display": "MaterialDangerInfectious"
+    },
+    {
+      "code": "BHZ",
+      "display": "Biohazard"
+    },
+    {
+      "code": "INJ",
+      "display": "Injury Hazard"
+    },
+    {
+      "code": "POI",
+      "display": "Poison"
+    },
+    {
+      "code": "RAD",
+      "display": "Radioactive"
+    }
+  ]
+}

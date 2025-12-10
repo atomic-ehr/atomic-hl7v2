@@ -1,0 +1,50 @@
+{
+  "tableNumber": "0235",
+  "id": "v2-0235",
+  "name": "ReportSource",
+  "title": "reportSource",
+  "description": "HL7-defined code system of concepts used to identify where a report sender learned about an event.  Used in HL7 Version 2.x messaging in the PES segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0235",
+  "concepts": [
+    {
+      "code": "C",
+      "display": "Clinical trial"
+    },
+    {
+      "code": "L",
+      "display": "Literature"
+    },
+    {
+      "code": "H",
+      "display": "Health professional"
+    },
+    {
+      "code": "R",
+      "display": "Regulatory agency"
+    },
+    {
+      "code": "D",
+      "display": "Database/registry/poison control center"
+    },
+    {
+      "code": "N",
+      "display": "Non-healthcare professional"
+    },
+    {
+      "code": "P",
+      "display": "Patient"
+    },
+    {
+      "code": "M",
+      "display": "Manufacturer/marketing authority holder"
+    },
+    {
+      "code": "E",
+      "display": "Distributor"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    }
+  ]
+}

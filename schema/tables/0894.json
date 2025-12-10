@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0894",
+  "id": "v2-0894",
+  "name": "SideOfBody",
+  "title": "sideOfBody",
+  "description": "Code system of concepts specifying the side of the body (\"left\" or \"right\").  Used in HL7 Version 2.x messaging in the PSL segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0894",
+  "concepts": [
+    {
+      "code": "L",
+      "display": "Left"
+    },
+    {
+      "code": "R",
+      "display": "Right"
+    }
+  ]
+}

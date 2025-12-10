@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0564",
+  "id": "v2-0564",
+  "name": "AdjustmentCategory",
+  "title": "adjustmentCategory",
+  "description": "Code system of concepts used to specify the category of adjustment and is used to assist in determining which table is used for Adjustment Reason.  Used in the Adjustment (ADJ) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0564",
+  "concepts": [
+    {
+      "code": "EA",
+      "display": "Edit/Adjudication Response"
+    },
+    {
+      "code": "IN",
+      "display": "Information"
+    },
+    {
+      "code": "PA",
+      "display": "Provider Adjustment"
+    },
+    {
+      "code": "PR",
+      "display": "Processing Result"
+    }
+  ]
+}

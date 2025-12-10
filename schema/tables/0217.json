@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0217",
+  "id": "v2-0217",
+  "name": "VisitPriority",
+  "title": "visitPriority",
+  "description": "Code system of concepts used to define a relative level of urgency applied to a patient visit.  Used in HL7 Version 2.x messaging in the PV2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0217",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Emergency"
+    },
+    {
+      "code": "2",
+      "display": "Urgent"
+    },
+    {
+      "code": "3",
+      "display": "Elective"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "tableNumber": "0939",
+  "id": "v2-0939",
+  "name": "CommunicationLocation",
+  "title": "communicationLocation",
+  "description": "HL7-defined code system of concepts specifying the communication location.  Used in HL7 Version 2.x messaging in the OMC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0939",
+  "concepts": [
+    {
+      "code": "OBR-OBX",
+      "display": "OBX segment following an OBR segment"
+    },
+    {
+      "code": "SPM-OBX",
+      "display": "OBX segment following an SPM segment"
+    },
+    {
+      "code": "DG1-3",
+      "display": "Diagnosis Code"
+    },
+    {
+      "code": "NK1-11",
+      "display": "Next of Kin / Associated Parties Job Code/Class"
+    },
+    {
+      "code": "NK1-13",
+      "display": "Organization Name - NK1"
+    },
+    {
+      "code": "NK1-28",
+      "display": "Ethnic Group"
+    },
+    {
+      "code": "NK1-35",
+      "display": "Race"
+    },
+    {
+      "code": "OBR-16",
+      "display": "Ordering Provider"
+    },
+    {
+      "code": "OBR-13",
+      "display": "Relevant Clinical Information"
+    },
+    {
+      "code": "OBR-49",
+      "display": "Result Handling"
+    },
+    {
+      "code": "PID-11",
+      "display": "Patient Address"
+    },
+    {
+      "code": "PID-3",
+      "display": "Patient Identifier List"
+    },
+    {
+      "code": "PID-5",
+      "display": "Patient Name"
+    },
+    {
+      "code": "PID-6",
+      "display": "Mother's Maiden Name"
+    },
+    {
+      "code": "PID-7",
+      "display": "Date/Time of Birth"
+    },
+    {
+      "code": "PID-13",
+      "display": "Phone Number - Home"
+    },
+    {
+      "code": "PID-14",
+      "display": "Phone Number - Business"
+    },
+    {
+      "code": "PID-40",
+      "display": "Phone Number"
+    },
+    {
+      "code": "PRT-5",
+      "display": "Participation Person"
+    },
+    {
+      "code": "SPM-4",
+      "display": "Specimen Type"
+    },
+    {
+      "code": "SPM-8",
+      "display": "Specimen Source Site"
+    }
+  ]
+}

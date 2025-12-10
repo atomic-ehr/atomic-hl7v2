@@ -1,0 +1,25 @@
+{
+  "tableNumber": "0970",
+  "id": "v2-0970",
+  "name": "OnlineVerificationResult",
+  "title": "onlineVerificationResult",
+  "description": "Code values used to indicate the result of an online verification of insurance data.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0970",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Update performed",
+      "definition": "English: Update of insurance information on card\r\n\r\nGerman: Aktualisierung VSD auf eGK durchgeführt"
+    },
+    {
+      "code": "2",
+      "display": "update not necessary",
+      "definition": "English: update of insurance information on card not necessary\r\n\r\nGerman: Keine Aktualisierung VSD auf eGK erforderlich"
+    },
+    {
+      "code": "3",
+      "display": "Error",
+      "definition": "English: An unrecoverable error occurred during the update or verification of the insurance information\r\n\r\nGerman: Aktualisierung VSD auf eGK war nicht möglich"
+    }
+  ]
+}

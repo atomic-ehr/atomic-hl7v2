@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0007",
+  "id": "v2-0007",
+  "name": "AdmissionType",
+  "title": "admissionType",
+  "description": "Code system of concepts specifying the circumstances under which the patient was or will be admitted.  Used in HL7 Version 2.x messaging in the PV1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0007",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Accident"
+    },
+    {
+      "code": "E",
+      "display": "Emergency"
+    },
+    {
+      "code": "L",
+      "display": "Labor and Delivery"
+    },
+    {
+      "code": "R",
+      "display": "Routine"
+    },
+    {
+      "code": "N",
+      "display": "Newborn (Birth in healthcare facility)"
+    },
+    {
+      "code": "U",
+      "display": "Urgent"
+    },
+    {
+      "code": "C",
+      "display": "Elective"
+    }
+  ]
+}

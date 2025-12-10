@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0523",
+  "id": "v2-0523",
+  "name": "ComputationType",
+  "title": "computationType",
+  "description": "HL7-defined code system of concepts used to specify if the change is computed as a percent change or as an absolute change.  Used in the Delta (DLT) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0523",
+  "concepts": [
+    {
+      "code": "%",
+      "display": "Indicates a percent change"
+    },
+    {
+      "code": "a",
+      "display": "Absolute Change"
+    }
+  ]
+}

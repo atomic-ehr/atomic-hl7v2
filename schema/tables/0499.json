@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0499",
+  "id": "v2-0499",
+  "name": "ConsentBypassReason",
+  "title": "consentBypassReason",
+  "description": "Code system of concepts specifying the reason the subject's consent was not sought.  Used in HL7 Version 2.x messaging in the CON segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0499",
+  "concepts": [
+    {
+      "code": "E",
+      "display": "Emergency"
+    },
+    {
+      "code": "PJ",
+      "display": "Professional Judgment"
+    }
+  ]
+}

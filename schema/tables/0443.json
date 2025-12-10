@@ -1,0 +1,102 @@
+{
+  "tableNumber": "0443",
+  "id": "v2-0443",
+  "name": "ProviderRole",
+  "title": "providerRole",
+  "description": "Code system of concepts specifying the functional involvement with the activity being transmitted (e.g., Case Manager, Evaluator, Transcriber, Nurse Care Practitioner, Midwife, Physician Assistant, etc.).  Used in HL7 Version 2.x messaging in the ROL segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0443",
+  "concepts": [
+    {
+      "code": "AD",
+      "display": "Admitting"
+    },
+    {
+      "code": "AP",
+      "display": "Administering Provider"
+    },
+    {
+      "code": "AT",
+      "display": "Attending"
+    },
+    {
+      "code": "CLP",
+      "display": "Collecting Provider"
+    },
+    {
+      "code": "CP",
+      "display": "Consulting Provider"
+    },
+    {
+      "code": "DP",
+      "display": "Dispensing Provider"
+    },
+    {
+      "code": "EP",
+      "display": "Entering Provider (probably not the same as transcriptionist?)"
+    },
+    {
+      "code": "FHCP",
+      "display": "Family Health Care Professional"
+    },
+    {
+      "code": "IP",
+      "display": "Initiating Provider (as in action by)"
+    },
+    {
+      "code": "MDIR",
+      "display": "Medical Director"
+    },
+    {
+      "code": "OP",
+      "display": "Ordering Provider"
+    },
+    {
+      "code": "PH",
+      "display": "Pharmacist   (not sure how to dissect Pharmacist/Treatment Supplier's Verifier ID)"
+    },
+    {
+      "code": "PP",
+      "display": "Primary Care Provider"
+    },
+    {
+      "code": "RO",
+      "display": "Responsible Observer"
+    },
+    {
+      "code": "RP",
+      "display": "Referring Provider"
+    },
+    {
+      "code": "RT",
+      "display": "Referred to Provider"
+    },
+    {
+      "code": "TR",
+      "display": "Transcriptionist"
+    },
+    {
+      "code": "PI",
+      "display": "Primary Interpreter"
+    },
+    {
+      "code": "AI",
+      "display": "Assistant/Alternate Interpreter"
+    },
+    {
+      "code": "TN",
+      "display": "Technician"
+    },
+    {
+      "code": "VP",
+      "display": "Verifying Provider"
+    },
+    {
+      "code": "VPS",
+      "display": "Verifying Pharmaceutical Supplier   (not sure how to dissect Pharmacist/Treatment Supplier's Verifier ID)"
+    },
+    {
+      "code": "VTS",
+      "display": "Verifying Treatment Supplier   (not sure how to dissect Pharmacist/Treatment Supplier's Verifier ID)"
+    }
+  ]
+}

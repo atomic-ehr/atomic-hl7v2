@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0904",
+  "id": "v2-0904",
+  "name": "SecurityCheckScheme",
+  "title": "securityCheckScheme",
+  "description": "HL7-defined code system of concepts specifying the scheme for the security check.  Used in HL7 Version 2.x messaging in the CX datatypes and PPN and XCN segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0904",
+  "concepts": [
+    {
+      "code": "BCV",
+      "display": "Bank Card Validation Number"
+    },
+    {
+      "code": "CCS",
+      "display": "Credit Card Security code"
+    },
+    {
+      "code": "VID",
+      "display": "Version ID"
+    }
+  ]
+}

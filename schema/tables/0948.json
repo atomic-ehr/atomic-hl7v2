@@ -1,0 +1,55 @@
+{
+  "tableNumber": "0948",
+  "id": "v2-0948",
+  "name": "V2CSRelationshipType",
+  "title": "v2CS-relationshipType",
+  "description": "HL7-defined code system of concepts that identify the type of relationship identified by Relationship Instance Identifier (REL-3) that is established between the Source Information Instance (REL-4)  and the Target Information Instance (REL-5).",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0948",
+  "concepts": [
+    {
+      "code": "CAUS",
+      "display": "Causes/caused",
+      "definition": "Source universal service identifier causes/caused the outcome(s) on the target"
+    },
+    {
+      "code": "COMP",
+      "display": "Component of",
+      "definition": "Target universal service identifier is a component of source universal identifier"
+    },
+    {
+      "code": "CONCR",
+      "display": "Concurrently",
+      "definition": "Source and target universal service identifier should start concurrently"
+    },
+    {
+      "code": "EVID",
+      "display": "Evidence",
+      "definition": "Source universal service identifier provides evidence for target universal service identifier"
+    },
+    {
+      "code": "INTF",
+      "display": "Interferes / interfered",
+      "definition": "Source universal service identifier interferes / interfered with fulfilment of target universal service identifier"
+    },
+    {
+      "code": "LIMIT",
+      "display": "Limits/limited",
+      "definition": "Source universal service identifier limits/limited the fulfillment of target universal service identifier"
+    },
+    {
+      "code": "SUCCD",
+      "display": "Succeeds",
+      "definition": "Target universal service identifier should succeed (starts after end of) source universal service identifier"
+    },
+    {
+      "code": "SVTGT",
+      "display": "Service target",
+      "definition": "Target universal service identifier is the object of the service identified by the source universal service identifier"
+    },
+    {
+      "code": "TRIG",
+      "display": "Triggers/triggered",
+      "definition": "Source universal service identifier triggers action of target universal service identifier"
+    }
+  ]
+}

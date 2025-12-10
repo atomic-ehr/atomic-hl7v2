@@ -1,0 +1,23 @@
+{
+  "tableNumber": "0299",
+  "id": "v2-0299",
+  "name": "Encoding",
+  "title": "encoding",
+  "description": "HL7-defined code system of concept identifying the type of encoding used to represent successive octets of binary data as displayable ASCII characters.  These are defined by IETF; more information may be found at https://www.ietf.org/rfc/rfc1521.txt.  Used in HL7 Version 2.x messaging in the ED datatypes.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0299",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "No encoding - data are displayable ASCII characters."
+    },
+    {
+      "code": "Hex",
+      "display": "Hexadecimal encoding - consecutive pairs of hexadecimal digits represent consecutive single octets."
+    },
+    {
+      "code": "Base64",
+      "display": "Encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521. Four consecutive ASCII characters represent three consecutive octets of binary data. Base64 utilizes a 65-character subset of US-ASCII, consisting of both the upper and",
+      "definition": "Encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521. Four consecutive ASCII characters represent three consecutive octets of binary data. Base64 utilizes a 65-character subset of US-ASCII, consisting of both the upper and lower case alphabetic characters, digits “0” through “9”, “+”, “/”, and “=”."
+    }
+  ]
+}

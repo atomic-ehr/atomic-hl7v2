@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0616",
+  "id": "v2-0616",
+  "name": "AddressExpirationReason",
+  "title": "addressExpirationReason",
+  "description": "Code system of concepts specifying the reason this address was marked as \"ended\".  Used in HL7 Version 2.x messaging in the XAD segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0616",
+  "concepts": [
+    {
+      "code": "M",
+      "display": "Moved"
+    },
+    {
+      "code": "E",
+      "display": "Added in error"
+    },
+    {
+      "code": "R",
+      "display": "On request"
+    },
+    {
+      "code": "C",
+      "display": "Corrected"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0441",
+  "id": "v2-0441",
+  "name": "ImmunizationRegistryStatus",
+  "title": "immunizationRegistryStatus",
+  "description": "Code system of concepts specifying the immunization registry status of the patient.  Used in HL7 Version 2.x messaging in the PD1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0441",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Active"
+    },
+    {
+      "code": "I",
+      "display": "Inactive"
+    },
+    {
+      "code": "L",
+      "display": "Inactive - Lost to follow-up (cancel contract)"
+    },
+    {
+      "code": "M",
+      "display": "Inactive - Moved or gone elsewhere (cancel contract)"
+    },
+    {
+      "code": "P",
+      "display": "Inactive - Permanently inactive (Do not reactivate or add new entries to the record)"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

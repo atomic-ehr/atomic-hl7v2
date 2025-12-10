@@ -1,0 +1,54 @@
+{
+  "tableNumber": "0383",
+  "id": "v2-0383",
+  "name": "SubstanceStatus",
+  "title": "substanceStatus",
+  "description": "HL7-defined code system of concepts identifying the status of the inventoried item.  The status indicates the current status of the substance.  Used in HL7 Version 2.x messaging in the Inventory Detail (INV) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0383",
+  "concepts": [
+    {
+      "code": "EW",
+      "display": "Expired Warning"
+    },
+    {
+      "code": "EE",
+      "display": "Expired Error"
+    },
+    {
+      "code": "CW",
+      "display": "Calibration Warning"
+    },
+    {
+      "code": "CE",
+      "display": "Calibration Error"
+    },
+    {
+      "code": "QW",
+      "display": "QC Warning"
+    },
+    {
+      "code": "QE",
+      "display": "QC Error"
+    },
+    {
+      "code": "NW",
+      "display": "Not Available Warning"
+    },
+    {
+      "code": "NE",
+      "display": "Not Available Error"
+    },
+    {
+      "code": "OW",
+      "display": "Other Warning"
+    },
+    {
+      "code": "OE",
+      "display": "Other Error"
+    },
+    {
+      "code": "OK",
+      "display": "OK Status"
+    }
+  ]
+}

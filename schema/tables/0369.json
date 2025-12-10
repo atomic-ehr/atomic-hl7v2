@@ -1,0 +1,70 @@
+{
+  "tableNumber": "0369",
+  "id": "v2-0369",
+  "name": "SpecimenRole",
+  "title": "specimenRole",
+  "description": "HL7-defined code system of concepts that identify the role of a sample.  Used in HL7 Version 2.x messaging in the Specimen (SPM) and Observation Request (OBR) segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0369",
+  "concepts": [
+    {
+      "code": "B",
+      "display": "Blind Sample",
+      "definition": "Used to test the validity of the measurement process, where the composition of the sample is unknown except to the person submitting it."
+    },
+    {
+      "code": "C",
+      "display": "Calibrator",
+      "definition": "Used for initial setting of calibration of the instrument."
+    },
+    {
+      "code": "E",
+      "display": "Electronic QC",
+      "definition": "Used with manufactured reference providing signals that simulate QC results"
+    },
+    {
+      "code": "F",
+      "display": "Filler Organization Proficiency",
+      "definition": "Specimen used for testing proficiency of the organization performing the testing (Filler)."
+    },
+    {
+      "code": "G",
+      "display": "Group",
+      "definition": "Used when solid specimens consist of multiple individual elements that are not individually identified but can be separated again into the original specimens.  The identifiers of the original specimens may be tracked."
+    },
+    {
+      "code": "H",
+      "display": "Historical Specimen",
+      "definition": "This identifies a parent specimen to the specimen that is submitted for testing"
+    },
+    {
+      "code": "L",
+      "display": "Pool",
+      "definition": "Used when aliquots of liquid individual specimens are combined to form a single specimen representing all of the components that are not individually identified.  The identifiers of the original specimens may be tracked."
+    },
+    {
+      "code": "O",
+      "display": "Operator Proficiency",
+      "definition": "Specimen used for testing Operator Proficiency."
+    },
+    {
+      "code": "P",
+      "display": "Patient",
+      "definition": "Used for any patient sample."
+    },
+    {
+      "code": "Q",
+      "display": "Control specimen",
+      "definition": "Used when specimen is the control specimen (either positive or negative)."
+    },
+    {
+      "code": "R",
+      "display": "Replicate (of patient sample as a control)",
+      "definition": "Used when a patient sample is re-run as a control for a repeat test."
+    },
+    {
+      "code": "V",
+      "display": "Verifying Calibrator",
+      "definition": "Used for periodic calibration checks."
+    }
+  ]
+}

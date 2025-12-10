@@ -1,0 +1,51 @@
+{
+  "tableNumber": "0201",
+  "id": "v2-0201",
+  "name": "TelecommunicationUse",
+  "title": "telecommunicationUse",
+  "description": "HL7-defined code system of concepts for specifying a specific use of a telecommunication number.  Best practice is to use this concept whenever a telecommunication number or access string is specified.  Used in HL7 Version 2.x messaging in the XTN segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0201",
+  "concepts": [
+    {
+      "code": "PRN",
+      "display": "Primary Residence Number"
+    },
+    {
+      "code": "ORN",
+      "display": "Other Residence Number"
+    },
+    {
+      "code": "WPN",
+      "display": "Work Number"
+    },
+    {
+      "code": "VHN",
+      "display": "Vacation Home Number"
+    },
+    {
+      "code": "ASN",
+      "display": "Answering Service Number"
+    },
+    {
+      "code": "EMR",
+      "display": "Emergency Number"
+    },
+    {
+      "code": "NET",
+      "display": "Network (email) Address"
+    },
+    {
+      "code": "BPN",
+      "display": "Beeper Number"
+    },
+    {
+      "code": "PRS",
+      "display": "Personal"
+    },
+    {
+      "code": "DSM",
+      "display": "Direct Secure Messaging",
+      "definition": "Direct Secure Messaging using the Direct Protocol"
+    }
+  ]
+}

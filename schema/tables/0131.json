@@ -1,0 +1,58 @@
+{
+  "tableNumber": "0131",
+  "id": "v2-0131",
+  "name": "ContactRole2",
+  "title": "contactRole2",
+  "description": "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0131",
+  "concepts": [
+    {
+      "code": "BP",
+      "display": "Billing contact person"
+    },
+    {
+      "code": "CP",
+      "display": "Contact person"
+    },
+    {
+      "code": "EP",
+      "display": "Emergency contact person"
+    },
+    {
+      "code": "PR",
+      "display": "Person preparing referral"
+    },
+    {
+      "code": "E",
+      "display": "Employer"
+    },
+    {
+      "code": "C",
+      "display": "Emergency Contact"
+    },
+    {
+      "code": "F",
+      "display": "Federal Agency"
+    },
+    {
+      "code": "I",
+      "display": "Insurance Company"
+    },
+    {
+      "code": "N",
+      "display": "Next-of-Kin"
+    },
+    {
+      "code": "S",
+      "display": "State Agency"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

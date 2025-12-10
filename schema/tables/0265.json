@@ -1,0 +1,114 @@
+{
+  "tableNumber": "0265",
+  "id": "v2-0265",
+  "name": "SpecialtyType",
+  "title": "specialtyType",
+  "description": "Code system of concepts used to identify the specialty of the care professional who is supported when using this location definition.  Used in HL7 Version 2.x messaging in the LDP segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0265",
+  "concepts": [
+    {
+      "code": "AMB",
+      "display": "Ambulatory"
+    },
+    {
+      "code": "PSY",
+      "display": "Psychiatric"
+    },
+    {
+      "code": "PPS",
+      "display": "Pediatric psychiatric"
+    },
+    {
+      "code": "REH",
+      "display": "Rehabilitation"
+    },
+    {
+      "code": "PRE",
+      "display": "Pediatric rehabilitation"
+    },
+    {
+      "code": "ISO",
+      "display": "Isolation"
+    },
+    {
+      "code": "OBG",
+      "display": "Obstetrics, gynecology"
+    },
+    {
+      "code": "PIN",
+      "display": "Pediatric/neonatal intensive care"
+    },
+    {
+      "code": "INT",
+      "display": "Intensive care"
+    },
+    {
+      "code": "SUR",
+      "display": "Surgery"
+    },
+    {
+      "code": "PSI",
+      "display": "Psychiatric intensive care"
+    },
+    {
+      "code": "EDI",
+      "display": "Education"
+    },
+    {
+      "code": "CAR",
+      "display": "Coronary/cardiac care"
+    },
+    {
+      "code": "NBI",
+      "display": "Newborn, nursery, infants"
+    },
+    {
+      "code": "CCR",
+      "display": "Critical care"
+    },
+    {
+      "code": "PED",
+      "display": "Pediatrics"
+    },
+    {
+      "code": "EMR",
+      "display": "Emergency"
+    },
+    {
+      "code": "OBS",
+      "display": "Observation"
+    },
+    {
+      "code": "WIC",
+      "display": "Walk-in clinic"
+    },
+    {
+      "code": "PHY",
+      "display": "General/family practice"
+    },
+    {
+      "code": "ALC",
+      "display": "Allergy"
+    },
+    {
+      "code": "FPC",
+      "display": "Family planning"
+    },
+    {
+      "code": "CHI",
+      "display": "Chiropractic"
+    },
+    {
+      "code": "CAN",
+      "display": "Cancer"
+    },
+    {
+      "code": "NAT",
+      "display": "Naturopathic"
+    },
+    {
+      "code": "OTH",
+      "display": "Other specialty"
+    }
+  ]
+}

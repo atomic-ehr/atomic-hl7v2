@@ -1,0 +1,78 @@
+{
+  "tableNumber": "0553",
+  "id": "v2-0553",
+  "name": "InvoiceControl",
+  "title": "invoiceControl",
+  "description": "Code system of concepts used to specify what action is being performed by this message.  Used in the Invoice (IVC) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0553",
+  "concepts": [
+    {
+      "code": "OR",
+      "display": "Original Invoice"
+    },
+    {
+      "code": "CN",
+      "display": "Cancel Invoice"
+    },
+    {
+      "code": "CG",
+      "display": "Cancel Invoice Product/Service Group"
+    },
+    {
+      "code": "CL",
+      "display": "Cancel Invoice Product/Service Line Item"
+    },
+    {
+      "code": "PD",
+      "display": "Pre-Determination Invoice"
+    },
+    {
+      "code": "RA",
+      "display": "Re-Assessment"
+    },
+    {
+      "code": "OA",
+      "display": "Original Authorization"
+    },
+    {
+      "code": "SA",
+      "display": "Special Authorization"
+    },
+    {
+      "code": "AI",
+      "display": "Combined Authorization and Adjudication request"
+    },
+    {
+      "code": "PA",
+      "display": "Pre-Authorization"
+    },
+    {
+      "code": "AA",
+      "display": "Authorization request for inpatient admission"
+    },
+    {
+      "code": "EA",
+      "display": "Authorization request for inpatient stay extension"
+    },
+    {
+      "code": "RC",
+      "display": "Referral Pre-Authorization"
+    },
+    {
+      "code": "CA",
+      "display": "Cancel Authorization request"
+    },
+    {
+      "code": "CP",
+      "display": "Copy of Invoice"
+    },
+    {
+      "code": "CQ",
+      "display": "Coverage Register Query"
+    },
+    {
+      "code": "RU",
+      "display": "Referral authorization"
+    }
+  ]
+}

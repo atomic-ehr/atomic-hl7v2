@@ -1,0 +1,138 @@
+{
+  "tableNumber": "0702",
+  "id": "v2-0702",
+  "name": "CycleType",
+  "title": "cycleType",
+  "description": "Code system of concepts  specifying the type of cycle that is being executed.  A cycle type is a specific sterilization method used for a specific type of supply item.  Used in HL7 Version 2.x messaging in the SCD segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0702",
+  "concepts": [
+    {
+      "code": "FLS",
+      "display": "Flash"
+    },
+    {
+      "code": "PRV",
+      "display": "Prevac"
+    },
+    {
+      "code": "GRV",
+      "display": "Gravity"
+    },
+    {
+      "code": "LQD",
+      "display": "Liquid"
+    },
+    {
+      "code": "EXP",
+      "display": "Express"
+    },
+    {
+      "code": "DRT",
+      "display": "Dart"
+    },
+    {
+      "code": "DRW",
+      "display": "Dart Warm-up Cycle"
+    },
+    {
+      "code": "THR",
+      "display": "Thermal"
+    },
+    {
+      "code": "ISO",
+      "display": "Isothermal"
+    },
+    {
+      "code": "BWD",
+      "display": "Bowie-Dick Test"
+    },
+    {
+      "code": "LKT",
+      "display": "Leak Test"
+    },
+    {
+      "code": "WFP",
+      "display": "Wrap/Steam Flush Pressure Pulse (Wrap/SFPP)"
+    },
+    {
+      "code": "SFP",
+      "display": "Steam Flush Pressure Pulse"
+    },
+    {
+      "code": "CMW",
+      "display": "Chemical Wash"
+    },
+    {
+      "code": "PEA",
+      "display": "Peracetic Acid"
+    },
+    {
+      "code": "EOH",
+      "display": "EO High Temperature"
+    },
+    {
+      "code": "EOL",
+      "display": "EO Low Temperature"
+    },
+    {
+      "code": "CRT",
+      "display": "Cart Wash"
+    },
+    {
+      "code": "UTL",
+      "display": "Utensil Wash"
+    },
+    {
+      "code": "IST",
+      "display": "Instrument Wash"
+    },
+    {
+      "code": "GLS",
+      "display": "Glassware"
+    },
+    {
+      "code": "PLA",
+      "display": "Plastic Goods Wash"
+    },
+    {
+      "code": "ANR",
+      "display": "Anesthesia/Respiratory"
+    },
+    {
+      "code": "GTL",
+      "display": "Gentle"
+    },
+    {
+      "code": "OPW",
+      "display": "Optional Wash"
+    },
+    {
+      "code": "BDP",
+      "display": "Bedpans"
+    },
+    {
+      "code": "TRB",
+      "display": "Tray/Basin"
+    },
+    {
+      "code": "GNP",
+      "display": "Gen. Purpose"
+    },
+    {
+      "code": "COD",
+      "display": "Code"
+    },
+    {
+      "code": "RNS",
+      "display": "Rinse"
+    },
+    {
+      "code": "2RS",
+      "display": "Second Rinse"
+    },
+    {
+      "code": "DEC",
+      "display": "Decontamination"
+    }
+  ]
+}

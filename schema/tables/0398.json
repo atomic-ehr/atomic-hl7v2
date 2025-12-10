@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0398",
+  "id": "v2-0398",
+  "name": "ContinuationStyle",
+  "title": "continuationStyle",
+  "description": "HL7-defined code system of concepts identifying whether it is a fragmented message or part of an interactive continuation message.  Used in HL7 Version 2.x messaging in the Continuation Pointer (DSC) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0398",
+  "concepts": [
+    {
+      "code": "F",
+      "display": "Fragmentation"
+    },
+    {
+      "code": "I",
+      "display": "Interactive Continuation"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0146",
+  "id": "v2-0146",
+  "name": "AmountType",
+  "title": "amountType",
+  "description": "Code system of concepts  which specify amount quantity type.  Used in HL7 Version 2.x messaging in the RMC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0146",
+  "concepts": [
+    {
+      "code": "DF",
+      "display": "Differential"
+    },
+    {
+      "code": "LM",
+      "display": "Limit"
+    },
+    {
+      "code": "PC",
+      "display": "Percentage"
+    },
+    {
+      "code": "RT",
+      "display": "Rate"
+    },
+    {
+      "code": "UL",
+      "display": "Unlimited"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0562",
+  "id": "v2-0562",
+  "name": "ProcessingConsideration",
+  "title": "processingConsideration",
+  "description": "Code system of concepts used to specify special processing requested of Payer for this Product/Service Line Item (e.g., hold until paper supporting documentation is received by Payer).  Used in the Product/Service Line Item (PSL) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0562",
+  "concepts": [
+    {
+      "code": "PAPER",
+      "display": "Paper documentation to follow"
+    },
+    {
+      "code": "EFORM",
+      "display": "Electronic form to follow"
+    },
+    {
+      "code": "FAX",
+      "display": "Fax to follow"
+    },
+    {
+      "code": "RTADJ",
+      "display": "Real Time Adjudication Processing"
+    },
+    {
+      "code": "DFADJ",
+      "display": "Deferred Adjudication Processing"
+    },
+    {
+      "code": "PYRDELAY",
+      "display": "Delayed by a Previous Payer"
+    }
+  ]
+}

@@ -1,0 +1,602 @@
+{
+  "tableNumber": "0391",
+  "id": "v2-0391",
+  "name": "SegmentGroup",
+  "title": "segmentGroup",
+  "description": "HL7-defined code system of concepts specifying the optional segment groups which are to be included in the response.  This is a repeating field, to accommodate inclusion of multiple segment groups. The default for this field, not present, means that all relevant groups are included.  Used in HL7 Version 2.x messaging in the Response Control Parameter (RCP) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0391",
+  "concepts": [
+    {
+      "code": "PIDG",
+      "display": "PID group"
+    },
+    {
+      "code": "ADMINISTRATION",
+      "display": "ADMINISTRATION"
+    },
+    {
+      "code": "OBRG",
+      "display": "OBR group"
+    },
+    {
+      "code": "ALLERGY",
+      "display": "ALLERGY"
+    },
+    {
+      "code": "ORCG",
+      "display": "ORC group"
+    },
+    {
+      "code": "APP_STATS",
+      "display": "APP_STATS"
+    },
+    {
+      "code": "RXAG",
+      "display": "RXA group"
+    },
+    {
+      "code": "APP_STATUS",
+      "display": "APP_STATUS"
+    },
+    {
+      "code": "RXDG",
+      "display": "RXD group"
+    },
+    {
+      "code": "ASSOCIATED_PERSON",
+      "display": "ASSOCIATED_PERSON"
+    },
+    {
+      "code": "RXEG",
+      "display": "RXE group"
+    },
+    {
+      "code": "ASSOCIATED_RX_ADMIN",
+      "display": "ASSOCIATED_RX_ADMIN"
+    },
+    {
+      "code": "RXOG",
+      "display": "RXO group"
+    },
+    {
+      "code": "ASSOCIATED_RX_ORDER",
+      "display": "ASSOCIATED_RX_ORDER"
+    },
+    {
+      "code": "etc",
+      "display": "etc"
+    },
+    {
+      "code": "AUTHORIZATION",
+      "display": "AUTHORIZATION"
+    },
+    {
+      "code": "AUTHORIZATION_CONTACT",
+      "display": "AUTHORIZATION_CONTACT"
+    },
+    {
+      "code": "CERTIFICATE",
+      "display": "CERTIFICATE"
+    },
+    {
+      "code": "CLOCK",
+      "display": "CLOCK"
+    },
+    {
+      "code": "CLOCK_AND_STATISTICS",
+      "display": "CLOCK_AND_STATISTICS"
+    },
+    {
+      "code": "CLOCK_AND_STATS_WITH_NOTE",
+      "display": "CLOCK_AND_STATS_WITH_NOTE"
+    },
+    {
+      "code": "CLOCK_AND_STATS_WITH_NOTES",
+      "display": "CLOCK_AND_STATS_WITH_NOTES"
+    },
+    {
+      "code": "CLOCK_AND_STATS_WITH_NOTES_ALT",
+      "display": "CLOCK_AND_STATS_WITH_NOTES_ALT"
+    },
+    {
+      "code": "COMMAND",
+      "display": "COMMAND"
+    },
+    {
+      "code": "COMMAND_RESPONSE",
+      "display": "COMMAND_RESPONSE"
+    },
+    {
+      "code": "COMMON_ORDER",
+      "display": "COMMON_ORDER"
+    },
+    {
+      "code": "COMPONENT",
+      "display": "COMPONENT"
+    },
+    {
+      "code": "COMPONENTS",
+      "display": "COMPONENTS"
+    },
+    {
+      "code": "CONTAINER",
+      "display": "CONTAINER"
+    },
+    {
+      "code": "DEFINITION",
+      "display": "DEFINITION"
+    },
+    {
+      "code": "DIET",
+      "display": "DIET"
+    },
+    {
+      "code": "DISPENSE",
+      "display": "DISPENSE"
+    },
+    {
+      "code": "ENCODED ORDER",
+      "display": "ENCODED ORDER"
+    },
+    {
+      "code": "ENCODED_ORDER",
+      "display": "ENCODED_ORDER"
+    },
+    {
+      "code": "ENCODING",
+      "display": "ENCODING"
+    },
+    {
+      "code": "EXPERIENCE",
+      "display": "EXPERIENCE"
+    },
+    {
+      "code": "FINANCIAL",
+      "display": "FINANCIAL"
+    },
+    {
+      "code": "FINANCIAL_COMMON_ORDER",
+      "display": "FINANCIAL_COMMON_ORDER"
+    },
+    {
+      "code": "FINANCIAL_COMMON ORDER",
+      "display": "FINANCIAL_COMMON ORDER"
+    },
+    {
+      "code": "FINANCIAL_INSURANCE",
+      "display": "FINANCIAL_INSURANCE"
+    },
+    {
+      "code": "FINANCIAL_OBSERVATION",
+      "display": "FINANCIAL_OBSERVATION"
+    },
+    {
+      "code": "FINANCIAL_ORDER",
+      "display": "FINANCIAL_ORDER"
+    },
+    {
+      "code": "FINANCIAL_PROCEDURE",
+      "display": "FINANCIAL_PROCEDURE"
+    },
+    {
+      "code": "FINANCIAL_TIMING_QUANTITY",
+      "display": "FINANCIAL_TIMING_QUANTITY"
+    },
+    {
+      "code": "FINANCIAL_TIMING QUANTITY",
+      "display": "FINANCIAL_TIMING QUANTITY"
+    },
+    {
+      "code": "GENERAL_RESOURCE",
+      "display": "GENERAL_RESOURCE"
+    },
+    {
+      "code": "GIVE",
+      "display": "GIVE"
+    },
+    {
+      "code": "GENERAL RESOURCE",
+      "display": "GENERAL RESOURCE"
+    },
+    {
+      "code": "GOAL",
+      "display": "GOAL"
+    },
+    {
+      "code": "GOAL_OBSERVATION",
+      "display": "GOAL_OBSERVATION"
+    },
+    {
+      "code": "GOAL_PATHWAY",
+      "display": "GOAL_PATHWAY"
+    },
+    {
+      "code": "GOAL_ROLE",
+      "display": "GOAL_ROLE"
+    },
+    {
+      "code": "GUARANTOR_INSURANCE",
+      "display": "GUARANTOR_INSURANCE"
+    },
+    {
+      "code": "INSURANCE",
+      "display": "INSURANCE"
+    },
+    {
+      "code": "LOCATION_RESOURCE",
+      "display": "LOCATION_RESOURCE"
+    },
+    {
+      "code": "MERGE_INFO",
+      "display": "MERGE_INFO"
+    },
+    {
+      "code": "MF",
+      "display": "MF"
+    },
+    {
+      "code": "LOCATION RESOURCE",
+      "display": "LOCATION RESOURCE"
+    },
+    {
+      "code": "MF_CDM",
+      "display": "MF_CDM"
+    },
+    {
+      "code": "MF_CLIN_STUDY",
+      "display": "MF_CLIN_STUDY"
+    },
+    {
+      "code": "MF_CLIN_STUDY_SCHED",
+      "display": "MF_CLIN_STUDY_SCHED"
+    },
+    {
+      "code": "MF_INV_ITEM",
+      "display": "MF_INV_ITEM"
+    },
+    {
+      "code": "MF_LOC_DEPT",
+      "display": "MF_LOC_DEPT"
+    },
+    {
+      "code": "MF_LOCATION",
+      "display": "MF_LOCATION"
+    },
+    {
+      "code": "MF_OBS_ATTRIBUTES",
+      "display": "MF_OBS_ATTRIBUTES"
+    },
+    {
+      "code": "MF_PHASE_SCHED_DETAIL",
+      "display": "MF_PHASE_SCHED_DETAIL"
+    },
+    {
+      "code": "MF_QUERY",
+      "display": "MF_QUERY"
+    },
+    {
+      "code": "MF_SITE_DEFINED",
+      "display": "MF_SITE_DEFINED"
+    },
+    {
+      "code": "MF_STAFF",
+      "display": "MF_STAFF"
+    },
+    {
+      "code": "MF_TEST",
+      "display": "MF_TEST"
+    },
+    {
+      "code": "MF_TEST_BATT_DETAIL",
+      "display": "MF_TEST_BATT_DETAIL"
+    },
+    {
+      "code": "MF_TEST_BATTERIES",
+      "display": "MF_TEST_BATTERIES"
+    },
+    {
+      "code": "MF_TEST_CALC_DETAIL",
+      "display": "MF_TEST_CALC_DETAIL"
+    },
+    {
+      "code": "MF_TEST_CALCULATED",
+      "display": "MF_TEST_CALCULATED"
+    },
+    {
+      "code": "MF_TEST_CAT_DETAIL",
+      "display": "MF_TEST_CAT_DETAIL"
+    },
+    {
+      "code": "MF_TEST_CATEGORICAL",
+      "display": "MF_TEST_CATEGORICAL"
+    },
+    {
+      "code": "MF_TEST_NUMERIC",
+      "display": "MF_TEST_NUMERIC"
+    },
+    {
+      "code": "NK1_TIMING_QTY",
+      "display": "NK1_TIMING_QTY"
+    },
+    {
+      "code": "NOTIFICATION",
+      "display": "NOTIFICATION"
+    },
+    {
+      "code": "OBSERVATION",
+      "display": "OBSERVATION"
+    },
+    {
+      "code": "OBSERVATION_PRIOR",
+      "display": "OBSERVATION_PRIOR"
+    },
+    {
+      "code": "OBSERVATION_REQUEST",
+      "display": "OBSERVATION_REQUEST"
+    },
+    {
+      "code": "OMSERVATION",
+      "display": "OMSERVATION"
+    },
+    {
+      "code": "ORDER",
+      "display": "ORDER"
+    },
+    {
+      "code": "ORDER_CHOICE",
+      "display": "ORDER_CHOICE"
+    },
+    {
+      "code": "ORDER_DETAIL",
+      "display": "ORDER_DETAIL"
+    },
+    {
+      "code": "ORDER_DETAIL_SUPPLEMENT",
+      "display": "ORDER_DETAIL_SUPPLEMENT"
+    },
+    {
+      "code": "ORDER_DIET",
+      "display": "ORDER_DIET"
+    },
+    {
+      "code": "ORDER_ENCODED",
+      "display": "ORDER_ENCODED"
+    },
+    {
+      "code": "ORDER_OBSERVATION",
+      "display": "ORDER_OBSERVATION"
+    },
+    {
+      "code": "ORDER_PRIOR",
+      "display": "ORDER_PRIOR"
+    },
+    {
+      "code": "ORDER_TRAY",
+      "display": "ORDER_TRAY"
+    },
+    {
+      "code": "PATHWAY",
+      "display": "PATHWAY"
+    },
+    {
+      "code": "PATHWAY_ROLE",
+      "display": "PATHWAY_ROLE"
+    },
+    {
+      "code": "PATIENT",
+      "display": "PATIENT"
+    },
+    {
+      "code": "PATIENT_PRIOR",
+      "display": "PATIENT_PRIOR"
+    },
+    {
+      "code": "PATIENT_RESULT",
+      "display": "PATIENT_RESULT"
+    },
+    {
+      "code": "PATIENT_VISIT",
+      "display": "PATIENT_VISIT"
+    },
+    {
+      "code": "PATIENT_VISIT_PRIOR",
+      "display": "PATIENT_VISIT_PRIOR"
+    },
+    {
+      "code": "PATIENT VISIT",
+      "display": "PATIENT VISIT"
+    },
+    {
+      "code": "PERSONNEL_RESOURCE",
+      "display": "PERSONNEL_RESOURCE"
+    },
+    {
+      "code": "PEX_CAUSE",
+      "display": "PEX_CAUSE"
+    },
+    {
+      "code": "PEX_OBSERVATION",
+      "display": "PEX_OBSERVATION"
+    },
+    {
+      "code": "PRIOR_RESULT",
+      "display": "PRIOR_RESULT"
+    },
+    {
+      "code": "PROBLEM",
+      "display": "PROBLEM"
+    },
+    {
+      "code": "PERSONNEL RESOURCE",
+      "display": "PERSONNEL RESOURCE"
+    },
+    {
+      "code": "PROBLEM_OBSERVATION",
+      "display": "PROBLEM_OBSERVATION"
+    },
+    {
+      "code": "PROBLEM_PATHWAY",
+      "display": "PROBLEM_PATHWAY"
+    },
+    {
+      "code": "PROBLEM_ROLE",
+      "display": "PROBLEM_ROLE"
+    },
+    {
+      "code": "PROCEDURE",
+      "display": "PROCEDURE"
+    },
+    {
+      "code": "PRODUCT",
+      "display": "PRODUCT"
+    },
+    {
+      "code": "PRODUCT_STATUS",
+      "display": "PRODUCT_STATUS"
+    },
+    {
+      "code": "PROVIDER",
+      "display": "PROVIDER"
+    },
+    {
+      "code": "PROVIDER_CONTACT",
+      "display": "PROVIDER_CONTACT"
+    },
+    {
+      "code": "QBP",
+      "display": "QBP"
+    },
+    {
+      "code": "QRY_WITH_DETAIL",
+      "display": "QRY_WITH_DETAIL"
+    },
+    {
+      "code": "QUERY_RESPONSE",
+      "display": "QUERY_RESPONSE"
+    },
+    {
+      "code": "QUERY_RESULT_CLUSTER",
+      "display": "QUERY_RESULT_CLUSTER"
+    },
+    {
+      "code": "REQUEST",
+      "display": "REQUEST"
+    },
+    {
+      "code": "RESOURCE",
+      "display": "RESOURCE"
+    },
+    {
+      "code": "RESOURCES",
+      "display": "RESOURCES"
+    },
+    {
+      "code": "RESPONSE",
+      "display": "RESPONSE"
+    },
+    {
+      "code": "RESULT",
+      "display": "RESULT"
+    },
+    {
+      "code": "RESULTS",
+      "display": "RESULTS"
+    },
+    {
+      "code": "RESULTS_NOTES",
+      "display": "RESULTS_NOTES"
+    },
+    {
+      "code": "ROW_DEFINITION",
+      "display": "ROW_DEFINITION"
+    },
+    {
+      "code": "RX_ADMINISTRATION",
+      "display": "RX_ADMINISTRATION"
+    },
+    {
+      "code": "RX_ORDER",
+      "display": "RX_ORDER"
+    },
+    {
+      "code": "SCHEDULE",
+      "display": "SCHEDULE"
+    },
+    {
+      "code": "SERVICE",
+      "display": "SERVICE"
+    },
+    {
+      "code": "SPECIMEN",
+      "display": "SPECIMEN"
+    },
+    {
+      "code": "SPECIMEN_CONTAINER",
+      "display": "SPECIMEN_CONTAINER"
+    },
+    {
+      "code": "STAFF",
+      "display": "STAFF"
+    },
+    {
+      "code": "STUDY",
+      "display": "STUDY"
+    },
+    {
+      "code": "STUDY_OBSERVATION",
+      "display": "STUDY_OBSERVATION"
+    },
+    {
+      "code": "STUDY_PHASE",
+      "display": "STUDY_PHASE"
+    },
+    {
+      "code": "STUDY_SCHEDULE",
+      "display": "STUDY_SCHEDULE"
+    },
+    {
+      "code": "TEST_CONFIGURATION",
+      "display": "TEST_CONFIGURATION"
+    },
+    {
+      "code": "TIMING",
+      "display": "TIMING"
+    },
+    {
+      "code": "TIMING_DIET",
+      "display": "TIMING_DIET"
+    },
+    {
+      "code": "TIMING_ENCODED",
+      "display": "TIMING_ENCODED"
+    },
+    {
+      "code": "TIMING_GIVE",
+      "display": "TIMING_GIVE"
+    },
+    {
+      "code": "TIMING_PRIOR",
+      "display": "TIMING_PRIOR"
+    },
+    {
+      "code": "TIMING_QTY",
+      "display": "TIMING_QTY"
+    },
+    {
+      "code": "TIMING_QUANTITY",
+      "display": "TIMING_QUANTITY"
+    },
+    {
+      "code": "TIMING_TRAY",
+      "display": "TIMING_TRAY"
+    },
+    {
+      "code": "TREATMENT",
+      "display": "TREATMENT"
+    },
+    {
+      "code": "VISIT",
+      "display": "VISIT"
+    }
+  ]
+}

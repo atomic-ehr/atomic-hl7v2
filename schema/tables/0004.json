@@ -1,0 +1,46 @@
+{
+  "tableNumber": "0004",
+  "id": "v2-0004",
+  "name": "PatientClass",
+  "title": "patientClass",
+  "description": "Code system of concepts used by systems to categorize patients by site in HL7 Version 2.x interfaces in the PV1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0004",
+  "concepts": [
+    {
+      "code": "E",
+      "display": "Emergency"
+    },
+    {
+      "code": "I",
+      "display": "Inpatient"
+    },
+    {
+      "code": "O",
+      "display": "Outpatient"
+    },
+    {
+      "code": "P",
+      "display": "Preadmit"
+    },
+    {
+      "code": "R",
+      "display": "Recurring patient"
+    },
+    {
+      "code": "B",
+      "display": "Obstetrics"
+    },
+    {
+      "code": "C",
+      "display": "Commercial Account"
+    },
+    {
+      "code": "N",
+      "display": "Not Applicable"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

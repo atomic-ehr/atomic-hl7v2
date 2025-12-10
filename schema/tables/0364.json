@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0364",
+  "id": "v2-0364",
+  "name": "CommentType",
+  "title": "commentType",
+  "description": "Code system of concepts that identify the type of comment text being sent in the specific comment record.  Used in the Notes and Comments (NTE) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0364",
+  "concepts": [
+    {
+      "code": "PI",
+      "display": "Patient Instructions"
+    },
+    {
+      "code": "AI",
+      "display": "Ancillary Instructions"
+    },
+    {
+      "code": "GI",
+      "display": "General Instructions"
+    },
+    {
+      "code": "1R",
+      "display": "Primary Reason"
+    },
+    {
+      "code": "2R",
+      "display": "Secondary Reason"
+    },
+    {
+      "code": "GR",
+      "display": "General Reason"
+    },
+    {
+      "code": "RE",
+      "display": "Remark"
+    },
+    {
+      "code": "DR",
+      "display": "Duplicate/Interaction Reason"
+    }
+  ]
+}

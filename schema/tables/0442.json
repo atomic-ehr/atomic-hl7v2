@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0442",
+  "id": "v2-0442",
+  "name": "LocationServiceType",
+  "title": "locationServiceType",
+  "description": "Code system of concepts  specifying the types of services provided by the location.  Used in HL7 Version 2.x messaging in the LOC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0442",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "Diagnostic"
+    },
+    {
+      "code": "T",
+      "display": "Therapeutic"
+    },
+    {
+      "code": "P",
+      "display": "Primary Care"
+    },
+    {
+      "code": "E",
+      "display": "Emergency Room Casualty"
+    }
+  ]
+}

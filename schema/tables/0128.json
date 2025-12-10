@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0128",
+  "id": "v2-0128",
+  "name": "AllergySeverity",
+  "title": "allergySeverity",
+  "description": "Code system of concepts which specify the general severity of an allergy.  Used in HL7 Version 2.x messaging in the AL1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0128",
+  "concepts": [
+    {
+      "code": "SV",
+      "display": "Severe"
+    },
+    {
+      "code": "MO",
+      "display": "Moderate"
+    },
+    {
+      "code": "MI",
+      "display": "Mild"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

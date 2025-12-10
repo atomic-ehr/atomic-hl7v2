@@ -1,0 +1,36 @@
+{
+  "tableNumber": "0208",
+  "id": "v2-0208",
+  "name": "QueryResponseStatus",
+  "title": "queryResponseStatus",
+  "description": "HL7-defined code system of concepts defining precise response status concepts in support of HL7 Version 2 query messaging.  It is commonly used to indicate no data is found that matches the query parameters, but no error.   Used in HL7 Version 2.x messaging in the QAK segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0208",
+  "concepts": [
+    {
+      "code": "OK",
+      "display": "Data found, no errors (this is the default)"
+    },
+    {
+      "code": "NF",
+      "display": "No data found, no errors"
+    },
+    {
+      "code": "AE",
+      "display": "Application error"
+    },
+    {
+      "code": "AR",
+      "display": "Application reject"
+    },
+    {
+      "code": "TM",
+      "display": "Too much data found",
+      "definition": "The response would exceed the maximum length designated in RCP-2 of the query message."
+    },
+    {
+      "code": "PD",
+      "display": "Protected data",
+      "definition": "Data matching the query parameters was found but could not be shared with the querying system for reasons including local policy or legal restrictions."
+    }
+  ]
+}

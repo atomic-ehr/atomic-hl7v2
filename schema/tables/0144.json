@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0144",
+  "id": "v2-0144",
+  "name": "EligibilitySource",
+  "title": "eligibilitySource",
+  "description": "Code system of concepts  which specify the source of information about the insured's eligibility for benefits.  Used in HL7 Version 2.x messaging in the IN2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0144",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Insurance company"
+    },
+    {
+      "code": "2",
+      "display": "Employer"
+    },
+    {
+      "code": "3",
+      "display": "Insured presented policy"
+    },
+    {
+      "code": "4",
+      "display": "Insured presented card"
+    },
+    {
+      "code": "5",
+      "display": "Signed statement on file"
+    },
+    {
+      "code": "6",
+      "display": "Verbal information"
+    },
+    {
+      "code": "7",
+      "display": "None"
+    }
+  ]
+}

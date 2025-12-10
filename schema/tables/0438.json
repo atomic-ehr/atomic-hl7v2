@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0438",
+  "id": "v2-0438",
+  "name": "AllergyClinicalStatus",
+  "title": "allergyClinicalStatus",
+  "description": "Code system of concepts specifying the verification status for the allergy.  Used in HL7 Version 2.x messaging in the IAM segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0438",
+  "concepts": [
+    {
+      "code": "U",
+      "display": "Unconfirmed"
+    },
+    {
+      "code": "P",
+      "display": "Pending"
+    },
+    {
+      "code": "S",
+      "display": "Suspect"
+    },
+    {
+      "code": "C",
+      "display": "Confirmed or verified"
+    },
+    {
+      "code": "I",
+      "display": "Confirmed but inactive"
+    },
+    {
+      "code": "E",
+      "display": "Erroneous"
+    },
+    {
+      "code": "D",
+      "display": "Doubt raised"
+    }
+  ]
+}

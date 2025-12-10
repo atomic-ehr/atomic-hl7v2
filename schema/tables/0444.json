@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0444",
+  "id": "v2-0444",
+  "name": "NameAssemblyOrder",
+  "title": "nameAssemblyOrder",
+  "description": "Code system of concepts specifying the preferred display order of the components of this person name.  Used in HL7 Version 2.x messaging in the PPN, XCN and XPN segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0444",
+  "concepts": [
+    {
+      "code": "G",
+      "display": "Prefix Given Middle Family Suffix"
+    },
+    {
+      "code": "F",
+      "display": "Prefix Family Middle Given Suffix"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0468",
+  "id": "v2-0468",
+  "name": "PaymentAdjustmentInformation",
+  "title": "paymentAdjustmentInformation",
+  "description": "Code system of concepts specifying any payment adjustment due to drugs or medical devices.  Used in HL7 Version 2.x messaging in the GP2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0468",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "No payment adjustment"
+    },
+    {
+      "code": "2",
+      "display": "Designated current drug or biological payment adjustment applies to APC (status indicator G)"
+    },
+    {
+      "code": "3",
+      "display": "Designated new device payment adjustment applies to APC (status indicator H)"
+    },
+    {
+      "code": "4",
+      "display": "Designated new drug or new biological payment adjustment applies to APC (status indicator J)"
+    },
+    {
+      "code": "5",
+      "display": "Deductible not applicable (specific list of HCPCS codes)"
+    }
+  ]
+}

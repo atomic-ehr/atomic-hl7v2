@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0731",
+  "id": "v2-0731",
+  "name": "DrgDiagnosisDeterminationStatus",
+  "title": "drgDiagnosisDeterminationStatus",
+  "description": "HL7-defined cCode system of concepts specifying the status of a diagnosis for a diagnosis related group (DRG) determination.  US Realm. Used in HL7 Version 2.x messaging in the DG1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0731",
+  "concepts": [
+    {
+      "code": "0",
+      "display": "Valid code"
+    },
+    {
+      "code": "1",
+      "display": "Invalid code"
+    },
+    {
+      "code": "2",
+      "display": "Two primary diagnosis codes"
+    },
+    {
+      "code": "3",
+      "display": "Invalid for this gender"
+    },
+    {
+      "code": "4",
+      "display": "Invalid for this age"
+    }
+  ]
+}

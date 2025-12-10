@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0325",
+  "id": "v2-0325",
+  "name": "LocationRelationship",
+  "title": "locationRelationship",
+  "description": "Code system of concepts specifying an identifier code to show which relationship is being communicated with the segment.  Used in HL7 Version 2.x messaging in the Location Relationship (LRL) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0325",
+  "concepts": [
+    {
+      "code": "RX",
+      "display": "Nearest  pharmacy"
+    },
+    {
+      "code": "RX2",
+      "display": "Second nearest pharmacy"
+    },
+    {
+      "code": "LAB",
+      "display": "Nearest  lab"
+    },
+    {
+      "code": "LB2",
+      "display": "Second nearest lab"
+    },
+    {
+      "code": "DTY",
+      "display": "Nearest  dietary location"
+    },
+    {
+      "code": "ALI",
+      "display": "Location Alias(es)"
+    },
+    {
+      "code": "PAR",
+      "display": "Parent location"
+    }
+  ]
+}

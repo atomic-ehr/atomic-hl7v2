@@ -1,0 +1,55 @@
+{
+  "tableNumber": "0370",
+  "id": "v2-0370",
+  "name": "ContainerStatus",
+  "title": "containerStatus",
+  "description": "HL7-defined  code system of concepts that identify the status of the unique container in which the specimen resides at the time the transaction was initiated.  Used in the Interaction Specimen Container Detail (SAC) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0370",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Archived",
+      "definition": "Archived status is used by one system to inform another that the container was already processed by this system, archived for a longer time period and is re-introduced to the automation system for re-processing."
+    },
+    {
+      "code": "I",
+      "display": "Identified",
+      "definition": "Identified status is used by one system to inform another that it has received a container. In the exchange between the LAS and LIS the Identified status can be used for reporting of the \"In Lab\" (Specimen Received) status. In some cases this may not be equal to the first event of sample recognition."
+    },
+    {
+      "code": "L",
+      "display": "Left Equipment",
+      "definition": "Left Equipment status is used by one system to inform another that the container has been released from that system."
+    },
+    {
+      "code": "M",
+      "display": "Missing",
+      "definition": "Missing status is used by one system to inform another that the container did not arrive at its next expected location."
+    },
+    {
+      "code": "O",
+      "display": "In Process",
+      "definition": "In Process status is used by one system to inform another that the specific container is being processed by the equipment. It is useful as a response to a query about Container Status, when the specific step of the process is not relevant."
+    },
+    {
+      "code": "P",
+      "display": "In Position",
+      "definition": "In Position status is used by one system to inform another that the container is in position for specimen transfer (e.g., container removal from track, pipetting, etc.)."
+    },
+    {
+      "code": "R",
+      "display": "Process Completed",
+      "definition": "Process Completed status is used by one system to inform another that the processing has been completed, but the container has not been released from that system."
+    },
+    {
+      "code": "U",
+      "display": "Unknown",
+      "definition": "Unknown status is used by one system to inform another that the container has not been identified."
+    },
+    {
+      "code": "X",
+      "display": "Container Unavailable",
+      "definition": "Cancelled status is used by one system to inform another that the container is no longer available within the scope of the system (e.g., tube broken or discarded)."
+    }
+  ]
+}

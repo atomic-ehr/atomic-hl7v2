@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0238",
+  "id": "v2-0238",
+  "name": "EventSeriousness",
+  "title": "eventSeriousness",
+  "description": "HL7-defined code system of concepts used by a sender to designate an event as serious or significant.  Used in HL7 Version 2.x messaging in the PEO segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0238",
+  "concepts": [
+    {
+      "code": "Y",
+      "display": "Yes"
+    },
+    {
+      "code": "S",
+      "display": "Significant"
+    },
+    {
+      "code": "N",
+      "display": "No"
+    }
+  ]
+}

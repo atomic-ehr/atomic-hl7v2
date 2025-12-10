@@ -1,0 +1,241 @@
+{
+  "tableNumber": "0912",
+  "id": "v2-0912",
+  "name": "Participation",
+  "title": "participation",
+  "description": "HL7-defined code system of concepts that represent functional involvement of a caregiver or member of a care team with an activity being transmitted (e.g., Case Manager, Evaluator, Transcriber, Nurse Care Practitioner, Midwife, Physician Assistant, etc.).  Used in HL7 Version 2.x messaging in the PRT segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0912",
+  "concepts": [
+    {
+      "code": "AAP",
+      "display": "Alert Acknowledging Provider"
+    },
+    {
+      "code": "AC",
+      "display": "Administration Cosigner",
+      "definition": "Person that cosigned the prescription"
+    },
+    {
+      "code": "AD",
+      "display": "Admitting Provider"
+    },
+    {
+      "code": "AHP",
+      "display": "Authorized Performing Health Professional",
+      "definition": "The specific Health Professional who has been approved to perform the ordered services for the patient."
+    },
+    {
+      "code": "AI",
+      "display": "Assistant/Alternate Interpreter"
+    },
+    {
+      "code": "AP",
+      "display": "Administering Provider"
+    },
+    {
+      "code": "APO",
+      "display": "Authorized Performing Provider Organization",
+      "definition": "The Provider Organization that has been approved to perform the sanctioned procedures to which the patient was referred to."
+    },
+    {
+      "code": "ARI",
+      "display": "Assistant Result Interpreter"
+    },
+    {
+      "code": "AT",
+      "display": "Attending Provider"
+    },
+    {
+      "code": "AUT",
+      "display": "Author/Event Initiator",
+      "definition": "Identifies the entity responsible for initiating the event"
+    },
+    {
+      "code": "CLPO",
+      "display": "Collecting Provider Organization",
+      "definition": "The organization that is responsible for collecting the specimen."
+    },
+    {
+      "code": "CP",
+      "display": "Consulting Provider"
+    },
+    {
+      "code": "DIE",
+      "display": "De-Identification Entity",
+      "definition": "Organization, person or device that has the authority to remove a specimen identifier."
+    },
+    {
+      "code": "DP",
+      "display": "Dispensing Provider"
+    },
+    {
+      "code": "EARI",
+      "display": "Expected Assistant Result Interpreter",
+      "definition": "The Assistant Result Interpreter who is expected to interpret the result (in the future)."
+    },
+    {
+      "code": "ED",
+      "display": "Entering Device",
+      "definition": "Identifies the device that was used to enter the order into the system."
+    },
+    {
+      "code": "EO",
+      "display": "Entering Organization",
+      "definition": "Identifies the organization that entered the order into the system."
+    },
+    {
+      "code": "EP",
+      "display": "Entering Person",
+      "definition": "Identifies the person that entered the order into the system"
+    },
+    {
+      "code": "EPRI",
+      "display": "Expected Principal Result Interpreter",
+      "definition": "The Principal Result Interpreter who is expected to interpret the result (in the future)."
+    },
+    {
+      "code": "EQUIP",
+      "display": "Equipment"
+    },
+    {
+      "code": "FHCP",
+      "display": "Family Health Care Professional"
+    },
+    {
+      "code": "FL",
+      "display": "From Location",
+      "definition": "Describes the location (coordinates) of the specimen/container in the previous holder / storage equipment before the move or the geographical location from which the specimen/container was moved."
+    },
+    {
+      "code": "MDIR",
+      "display": "Medical Director"
+    },
+    {
+      "code": "OF",
+      "display": "Ordering Facility",
+      "definition": "The facility from where the order was placed"
+    },
+    {
+      "code": "OP",
+      "display": "Ordering Provider"
+    },
+    {
+      "code": "OPO",
+      "display": "Ordering Provider Organization",
+      "definition": "The organization the ordering provider is associated with."
+    },
+    {
+      "code": "OS",
+      "display": "Outside Site(s) Where Observation May Be Performed"
+    },
+    {
+      "code": "PB",
+      "display": "Packed by"
+    },
+    {
+      "code": "PH",
+      "display": "Pharmacist",
+      "definition": "Identifies the person taking responsibility for the prescription dispense"
+    },
+    {
+      "code": "PI",
+      "display": "Primary Interpreter"
+    },
+    {
+      "code": "PO",
+      "display": "Performing Organization"
+    },
+    {
+      "code": "POMD",
+      "display": "Performing Organization Medical Director"
+    },
+    {
+      "code": "PP",
+      "display": "Primary Care Provider"
+    },
+    {
+      "code": "PPH",
+      "display": "Patient Preferred Pharmacy",
+      "definition": "Pharmacy the patient would prefer to use for any future medication orders."
+    },
+    {
+      "code": "PRI",
+      "display": "Principal Result Interpreter",
+      "definition": "Identifies the person responsible for interpreting the results of the study/test"
+    },
+    {
+      "code": "RCT",
+      "display": "Results Copies To"
+    },
+    {
+      "code": "RHP",
+      "display": "Referring Health Professional",
+      "definition": "The Health Professional who refers the patient."
+    },
+    {
+      "code": "RIE",
+      "display": "Re-Identification Entity",
+      "definition": "Organization, person or device that has the authority to assign a specimen identifier."
+    },
+    {
+      "code": "RO",
+      "display": "Responsible Observer"
+    },
+    {
+      "code": "RP",
+      "display": "Referring Provider"
+    },
+    {
+      "code": "RPO",
+      "display": "Referring Provider Organization",
+      "definition": "The Provider Organization that refers the patient."
+    },
+    {
+      "code": "RT",
+      "display": "Referred to Provider"
+    },
+    {
+      "code": "SB",
+      "display": "Send by"
+    },
+    {
+      "code": "SC",
+      "display": "Specimen Collector",
+      "definition": "The person that collected the specimen."
+    },
+    {
+      "code": "TL",
+      "display": "To Location",
+      "definition": "Describes the location (coordinates) of the specimen/container in the previous holder / storage equipment after the move or the geographical location to which the specimen/container was moved."
+    },
+    {
+      "code": "TN",
+      "display": "Technician"
+    },
+    {
+      "code": "TR",
+      "display": "Transcriptionist"
+    },
+    {
+      "code": "VP",
+      "display": "Verifier (Verifying Person)",
+      "definition": "Identifies the person verifying the dispense / a step in the dispense process / verifying the treatment corresponds to the order"
+    },
+    {
+      "code": "VPS",
+      "display": "Verifying Pharmaceutical Supplier   (not sure how to dissect Pharmacist/Treatment Supplier's Verifier ID)"
+    },
+    {
+      "code": "VTS",
+      "display": "Verifying Treatment Supplier   (not sure how to dissect Pharmacist/Treatment Supplier's Verifier ID)"
+    },
+    {
+      "code": "WAY",
+      "display": "Waypoint"
+    },
+    {
+      "code": "WAYR",
+      "display": "Waypoint Recipient"
+    }
+  ]
+}

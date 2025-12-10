@@ -1,0 +1,50 @@
+{
+  "tableNumber": "0555",
+  "id": "v2-0555",
+  "name": "InvoiceType",
+  "title": "invoiceType",
+  "description": "Code system of concepts used to specify the type of invoice.  Used in the Invoice (IVC) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0555",
+  "concepts": [
+    {
+      "code": "FS",
+      "display": "Fee for Service"
+    },
+    {
+      "code": "SS",
+      "display": "By Session"
+    },
+    {
+      "code": "GP",
+      "display": "Group"
+    },
+    {
+      "code": "BK",
+      "display": "Block"
+    },
+    {
+      "code": "SL",
+      "display": "Salary"
+    },
+    {
+      "code": "IN",
+      "display": "Information Only"
+    },
+    {
+      "code": "NP",
+      "display": "Non Patient"
+    },
+    {
+      "code": "FN",
+      "display": "Final"
+    },
+    {
+      "code": "PA",
+      "display": "Partial"
+    },
+    {
+      "code": "SU",
+      "display": "Supplemental"
+    }
+  ]
+}

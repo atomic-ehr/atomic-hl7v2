@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0919",
+  "id": "v2-0919",
+  "name": "ExclusiveTest",
+  "title": "exclusiveTest",
+  "description": "HL7-defined code system of concepts that define if a test should be a specific event with no other tests to be performed with this test, or not, or other special circumstances.  Used in HL7 Version 2.x messaging in Master Files (OM1 segment) to characterize observations in a master of such orderables.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0919",
+  "concepts": [
+    {
+      "code": "Y",
+      "display": "This test should be exclusive"
+    },
+    {
+      "code": "N",
+      "display": "This test can be included with any number of other tests"
+    },
+    {
+      "code": "D",
+      "display": "In some cases, this test should be only exclusively with like tests (examples are cyto or pathology)"
+    }
+  ]
+}

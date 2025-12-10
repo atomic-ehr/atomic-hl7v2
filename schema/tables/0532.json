@@ -1,0 +1,46 @@
+{
+  "tableNumber": "0532",
+  "id": "v2-0532",
+  "name": "ExpandedYesNoIndicator",
+  "title": "expandedYes-NoIndicator",
+  "description": "HL7-defined code system of concepts used to specify an expansion on the original Yes/No indicator table by including \"flavors of null\".  It is intended to be applied to fields where the response is not limited to \"yes\" or \"no\".  Used in numerous locations in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0532",
+  "concepts": [
+    {
+      "code": "Y",
+      "display": "Yes"
+    },
+    {
+      "code": "N",
+      "display": "No"
+    },
+    {
+      "code": "NI",
+      "display": "No Information"
+    },
+    {
+      "code": "NA",
+      "display": "not applicable"
+    },
+    {
+      "code": "UNK",
+      "display": "unknown"
+    },
+    {
+      "code": "NASK",
+      "display": "not asked"
+    },
+    {
+      "code": "ASKU",
+      "display": "asked but unknown"
+    },
+    {
+      "code": "NAV",
+      "display": "temporarily unavailable"
+    },
+    {
+      "code": "NP",
+      "display": "not present"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0243",
+  "id": "v2-0243",
+  "name": "IdentityMayBeDivulged",
+  "title": "identityMayBeDivulged",
+  "description": "HL7-defined code system of concepts used to define whether the primary observer has given permission for their identification information to be provided to a product manufacturer.  Used in HL7 Version 2.x messaging in the PEO segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0243",
+  "concepts": [
+    {
+      "code": "Y",
+      "display": "Yes"
+    },
+    {
+      "code": "N",
+      "display": "No"
+    },
+    {
+      "code": "NA",
+      "display": "Not applicable"
+    }
+  ]
+}

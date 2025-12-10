@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0271",
+  "id": "v2-0271",
+  "name": "DocumentCompletionStatus",
+  "title": "documentCompletionStatus",
+  "description": "HL7-defined code system of concepts used to record the state of a document in a workflow.  Used in HL7 Version 2.x messaging in the TXA segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0271",
+  "concepts": [
+    {
+      "code": "DI",
+      "display": "Dictated"
+    },
+    {
+      "code": "DO",
+      "display": "Documented"
+    },
+    {
+      "code": "IP",
+      "display": "In Progress"
+    },
+    {
+      "code": "IN",
+      "display": "Incomplete"
+    },
+    {
+      "code": "PA",
+      "display": "Pre-authenticated"
+    },
+    {
+      "code": "AU",
+      "display": "Authenticated"
+    },
+    {
+      "code": "LA",
+      "display": "Legally authenticated"
+    }
+  ]
+}

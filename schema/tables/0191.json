@@ -1,0 +1,62 @@
+{
+  "tableNumber": "0191",
+  "id": "v2-0191",
+  "name": "TypeOfReferencedData",
+  "title": "typeOfReferencedData",
+  "description": "HL7-defined code system of concepts declaring the general type of media data that is encoded.  Used in v2.5.1 interfaces and earlier, and replaced with the full set of IANA media types as a standard coding system for this after HL7 version 2.6 (see value set 2.16.840.1.113883.21.425 hl7VS-mimeTypes for HL7 table 0834 built on MIME types).  More information may be found at http://www.iana.org/assignments/media-types/media-types.xhtml",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0191",
+  "concepts": [
+    {
+      "code": "AP",
+      "display": "Other application data, typically uninterpreted binary data (HL7 V2.3 and later)"
+    },
+    {
+      "code": "AU",
+      "display": "Audio data (HL7 V2.3 and later)"
+    },
+    {
+      "code": "FT",
+      "display": "Formatted text (HL7 V2.2 only)"
+    },
+    {
+      "code": "IM",
+      "display": "Image data (HL7 V2.3 and later)"
+    },
+    {
+      "code": "multipart",
+      "display": "MIME multipart package"
+    },
+    {
+      "code": "NS",
+      "display": "Non-scanned image (HL7 V2.2 only)"
+    },
+    {
+      "code": "SD",
+      "display": "Scanned document (HL7 V2.2 only)"
+    },
+    {
+      "code": "SI",
+      "display": "Scanned image (HL7 V2.2 only)"
+    },
+    {
+      "code": "Image",
+      "display": "Image data  (HL7 V2.3 and later)"
+    },
+    {
+      "code": "TEXT",
+      "display": "Machine readable text document (HL7 V2.3.1 and later)"
+    },
+    {
+      "code": "Audio",
+      "display": "Audio data  (HL7 V2.3 and later)"
+    },
+    {
+      "code": "TX",
+      "display": "Machine readable text document (HL7 V2.2 only)"
+    },
+    {
+      "code": "Application",
+      "display": "Other application data, typically uninterpreted binary data  (HL7 V2.3 and later)"
+    }
+  ]
+}

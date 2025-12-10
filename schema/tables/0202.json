@@ -1,0 +1,50 @@
+{
+  "tableNumber": "0202",
+  "id": "v2-0202",
+  "name": "TelecommunicationEquipmentType",
+  "title": "telecommunicationEquipmentType",
+  "description": "HL7-defined code system of concepts  for specifying a type of telecommunication equipment.  Best practice is to use this concept whenever a telecommunication number or access string for particular equipment is specified.  Used in HL7 Version 2.x messaging in the XTN segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0202",
+  "concepts": [
+    {
+      "code": "PH",
+      "display": "Telephone"
+    },
+    {
+      "code": "FX",
+      "display": "Fax"
+    },
+    {
+      "code": "MD",
+      "display": "Modem"
+    },
+    {
+      "code": "CP",
+      "display": "Cellular or Mobile Phone"
+    },
+    {
+      "code": "SAT",
+      "display": "Satellite Phone"
+    },
+    {
+      "code": "BP",
+      "display": "Beeper"
+    },
+    {
+      "code": "Internet",
+      "display": "Internet Address"
+    },
+    {
+      "code": "X.400",
+      "display": "X.400 email address"
+    },
+    {
+      "code": "TDD",
+      "display": "Telecommunications Device for the Deaf"
+    },
+    {
+      "code": "TTY",
+      "display": "Teletypewriter"
+    }
+  ]
+}

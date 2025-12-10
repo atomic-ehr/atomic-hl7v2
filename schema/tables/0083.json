@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0083",
+  "id": "v2-0083",
+  "name": "OutlierType",
+  "title": "outlierType",
+  "description": "HL7-defined code system of concepts specifying the type of outlier (i.e. period of care beyond DRG-standard stay in facility) that has been paid.   Used in HL7 Vesrion 2.x messaghing in the DRG segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0083",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "Outlier days"
+    },
+    {
+      "code": "C",
+      "display": "Outlier cost"
+    }
+  ]
+}

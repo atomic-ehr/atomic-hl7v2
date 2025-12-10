@@ -1,0 +1,74 @@
+{
+  "tableNumber": "0002",
+  "id": "v2-0002",
+  "name": "MaritalStatus",
+  "title": "maritalStatus",
+  "description": "Code system of concepts specifying a person's marital (civil/legal) status.  Used in HL7 Version 2.x messages in the PID segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0002",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Separated"
+    },
+    {
+      "code": "D",
+      "display": "Divorced"
+    },
+    {
+      "code": "M",
+      "display": "Married"
+    },
+    {
+      "code": "S",
+      "display": "Single"
+    },
+    {
+      "code": "W",
+      "display": "Widowed"
+    },
+    {
+      "code": "C",
+      "display": "Common law"
+    },
+    {
+      "code": "G",
+      "display": "Living together"
+    },
+    {
+      "code": "P",
+      "display": "Domestic partner"
+    },
+    {
+      "code": "R",
+      "display": "Registered domestic partner"
+    },
+    {
+      "code": "E",
+      "display": "Legally Separated"
+    },
+    {
+      "code": "N",
+      "display": "Annulled"
+    },
+    {
+      "code": "I",
+      "display": "Interlocutory"
+    },
+    {
+      "code": "B",
+      "display": "Unmarried"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "T",
+      "display": "Unreported"
+    }
+  ]
+}

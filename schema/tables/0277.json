@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0277",
+  "id": "v2-0277",
+  "name": "AppointmentType",
+  "title": "appointmentType",
+  "description": "Code system of concepts used in an appointment request to describe the kind of appointment.  Used in HL7 Version 2.x messaging in the ARQ segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0277",
+  "concepts": [
+    {
+      "code": "COMPLETE",
+      "display": "A request to add a completed appointment, used to maintain records of completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)"
+    },
+    {
+      "code": "NORMAL",
+      "display": "Routine schedule request type - default if not valued"
+    },
+    {
+      "code": "TENTATIVE",
+      "display": "A request for a tentative (e.g., “penciled in”) appointment"
+    },
+    {
+      "code": "Normal",
+      "display": "Routine schedule request type – default if not valued"
+    },
+    {
+      "code": "Tentative",
+      "display": "A request for a tentative (e.g., “penciled in”) appointment"
+    },
+    {
+      "code": "Complete",
+      "display": "A request to add a completed appointment, used to maintain records of completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)"
+    }
+  ]
+}

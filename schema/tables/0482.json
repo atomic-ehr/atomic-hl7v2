@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0482",
+  "id": "v2-0482",
+  "name": "OrderType",
+  "title": "orderType",
+  "description": "HL7-defined code system of concepts specifying whether the order is to be executed in an inpatient setting or an outpatient setting.  Used in HL7 Version 2.x messaging in the ORC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0482",
+  "concepts": [
+    {
+      "code": "I",
+      "display": "Inpatient Order"
+    },
+    {
+      "code": "O",
+      "display": "Outpatient Order"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "tableNumber": "0946",
+  "id": "v2-0946",
+  "name": "SupplierType",
+  "title": "supplierType",
+  "description": "Code system that Identifies the type of supplier that will distribute the supply items associated to a contract number.  Used in HL7 Version 2.x messaging in the CTR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0946",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "Distributor",
+      "definition": "When a vendor supplies  the medical supplies on this contract"
+    },
+    {
+      "code": "M",
+      "display": "Manufacturer",
+      "definition": "When the Manufacturer supplies the medical supplies on this contract"
+    }
+  ]
+}

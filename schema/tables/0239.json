@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0239",
+  "id": "v2-0239",
+  "name": "EventExpected",
+  "title": "eventExpected",
+  "description": "HL7-defined code system of concepts used to communicate whether an event has been judged to be expected or unexpected.  Used in HL7 Version 2.x messaging in the PEO segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0239",
+  "concepts": [
+    {
+      "code": "Y",
+      "display": "Yes"
+    },
+    {
+      "code": "N",
+      "display": "No"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

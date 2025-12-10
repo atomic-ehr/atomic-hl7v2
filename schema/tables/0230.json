@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0230",
+  "id": "v2-0230",
+  "name": "ProcedureFunctionalType",
+  "title": "procedureFunctionalType",
+  "description": "Code system of concepts used to classify a procedure.  Used in HL7 Version 2.x messaging in the PR1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0230",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Anesthesia"
+    },
+    {
+      "code": "P",
+      "display": "Procedure for treatment (therapeutic, including operations)"
+    },
+    {
+      "code": "I",
+      "display": "Invasive procedure not classified elsewhere (e.g., IV, catheter, etc.)"
+    },
+    {
+      "code": "D",
+      "display": "Diagnostic procedure"
+    }
+  ]
+}

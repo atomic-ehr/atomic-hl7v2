@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0257",
+  "id": "v2-0257",
+  "name": "NatureOfChallenge",
+  "title": "natureOfChallenge",
+  "description": "HL7-defined code system of concepts used to further describe an observation definition that is characterized as a challenge observation.  Used in HL7 Version 2.x messaging in the OM1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0257",
+  "concepts": [
+    {
+      "code": "CFST",
+      "display": "Fasting (no calorie intake) for the period specified in the time component of the term, e.g., 1H POST CFST"
+    },
+    {
+      "code": "EXCZ",
+      "display": "Exercise undertaken as challenge (can be quantified)"
+    },
+    {
+      "code": "FFST",
+      "display": "No fluid intake for the period specified in the time component of the term"
+    }
+  ]
+}

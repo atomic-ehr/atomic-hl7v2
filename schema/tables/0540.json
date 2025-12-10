@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0540",
+  "id": "v2-0540",
+  "name": "InactiveReason",
+  "title": "inactiveReason",
+  "description": "Code system of concepts specifying the reason the staff member is inactive.  Used in HL7 Version 2 messaging in the STF segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0540",
+  "concepts": [
+    {
+      "code": "L",
+      "display": "Leave of Absence"
+    },
+    {
+      "code": "T",
+      "display": "Termination"
+    },
+    {
+      "code": "R",
+      "display": "Retired"
+    }
+  ]
+}

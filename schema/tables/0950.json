@@ -1,0 +1,20 @@
+{
+  "tableNumber": "0950",
+  "id": "v2-0950",
+  "name": "OrderStatusModifier",
+  "title": "orderStatusModifier",
+  "description": "HL7-defined code system of concepts used to further define the status identified in ORC-5.  Used in HL7 Version 2 messaging in the ORC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0950",
+  "concepts": [
+    {
+      "code": "EOE",
+      "display": "Expiration on event",
+      "definition": "The order status auto-expires when a specified event occurs"
+    },
+    {
+      "code": "EOT",
+      "display": "Expiration on time",
+      "definition": "The order status is timed and will auto-expire once the prescribed  time interval has passed"
+    }
+  ]
+}

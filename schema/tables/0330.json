@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0330",
+  "id": "v2-0330",
+  "name": "MarketingBasis",
+  "title": "marketingBasis",
+  "description": "HL7-defined code system of concepts used to specify the basis for marketing approval.   Used in HL7 Version 2.x messaging in the Product Detail Country (PDC) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0330",
+  "concepts": [
+    {
+      "code": "510K",
+      "display": "510 (K)"
+    },
+    {
+      "code": "510E",
+      "display": "510 (K) exempt"
+    },
+    {
+      "code": "PMA",
+      "display": "Premarketing authorization"
+    },
+    {
+      "code": "PRE",
+      "display": "Preamendment"
+    },
+    {
+      "code": "TXN",
+      "display": "Transitional"
+    },
+    {
+      "code": "522S",
+      "display": "Post marketing study (522)"
+    }
+  ]
+}

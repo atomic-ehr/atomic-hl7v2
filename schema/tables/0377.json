@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0377",
+  "id": "v2-0377",
+  "name": "EnvironmentalFactors",
+  "title": "environmentalFactors",
+  "description": "Code system of concepts that identify the other environmental factors associated with the specimen in a specific container, e.g., atmospheric exposure.  Used in the Interaction Specimen Container Detail (SAC) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0377",
+  "concepts": [
+    {
+      "code": "ATM",
+      "display": "Opened container, atmosphere and duration unspecified"
+    },
+    {
+      "code": "A60",
+      "display": "Opened container, indoor atmosphere, 60 minutes duration"
+    }
+  ]
+}

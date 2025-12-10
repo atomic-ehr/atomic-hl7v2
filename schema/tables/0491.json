@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0491",
+  "id": "v2-0491",
+  "name": "SpecimenQuality",
+  "title": "specimenQuality",
+  "description": "Code system of concepts specifying the degree or grade of excellence of the specimen at receipt.  Used in HL7 Version 2.x messaging in the SPM segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0491",
+  "concepts": [
+    {
+      "code": "E",
+      "display": "Excellent"
+    },
+    {
+      "code": "G",
+      "display": "Good"
+    },
+    {
+      "code": "F",
+      "display": "Fair"
+    },
+    {
+      "code": "P",
+      "display": "Poor"
+    }
+  ]
+}

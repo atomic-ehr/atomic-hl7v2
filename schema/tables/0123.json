@@ -1,0 +1,70 @@
+{
+  "tableNumber": "0123",
+  "id": "v2-0123",
+  "name": "ResultStatus",
+  "title": "resultStatus",
+  "description": "HL7-defined code system of concepts which specify a status of results for an order.  Used in HL7 Version 2.x messaging in the OBR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0123",
+  "concepts": [
+    {
+      "code": "O",
+      "display": "Order received; specimen not yet received"
+    },
+    {
+      "code": "I",
+      "display": "No results available; specimen received, procedure incomplete"
+    },
+    {
+      "code": "S",
+      "display": "No results available; procedure scheduled, but not done"
+    },
+    {
+      "code": "A",
+      "display": "Some, but not all, results available"
+    },
+    {
+      "code": "P",
+      "display": "Preliminary",
+      "definition": "A verified early result is available, final results not yet obtained"
+    },
+    {
+      "code": "C",
+      "display": "Corrected, final",
+      "definition": "A result under an order, that has been finalized has been corrected"
+    },
+    {
+      "code": "R",
+      "display": "Results stored; not yet verified"
+    },
+    {
+      "code": "F",
+      "display": "Final results",
+      "definition": "Final results; results stored and verified."
+    },
+    {
+      "code": "X",
+      "display": "No results available; Order canceled",
+      "definition": "No results available; Order canceled."
+    },
+    {
+      "code": "Y",
+      "display": "No order on record for this test",
+      "definition": "No order on record for this test."
+    },
+    {
+      "code": "Z",
+      "display": "No record of this patient",
+      "definition": "No record of this patient."
+    },
+    {
+      "code": "M",
+      "display": "Corrected, not final",
+      "definition": "A result under an order, that has not yet been finalized has been corrected"
+    },
+    {
+      "code": "N",
+      "display": "Procedure completed, results pending",
+      "definition": "No result available; requested procedure done.  To indicate that a requested test is performed but results are pending/not yet available."
+    }
+  ]
+}

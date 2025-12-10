@@ -1,0 +1,66 @@
+{
+  "tableNumber": "0270",
+  "id": "v2-0270",
+  "name": "DocumentType",
+  "title": "documentType",
+  "description": "Code system of concepts used to identify the kind of patient document.  Used in HL7 Version 2.x messaging in the TXA segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0270",
+  "concepts": [
+    {
+      "code": "AR",
+      "display": "Autopsy report"
+    },
+    {
+      "code": "CD",
+      "display": "Cardiodiagnostics"
+    },
+    {
+      "code": "CN",
+      "display": "Consultation"
+    },
+    {
+      "code": "DI",
+      "display": "Diagnostic imaging"
+    },
+    {
+      "code": "DS",
+      "display": "Discharge summary"
+    },
+    {
+      "code": "ED",
+      "display": "Emergency department report"
+    },
+    {
+      "code": "HP",
+      "display": "History and physical examination"
+    },
+    {
+      "code": "OP",
+      "display": "Operative report"
+    },
+    {
+      "code": "PC",
+      "display": "Psychiatric consultation"
+    },
+    {
+      "code": "PH",
+      "display": "Psychiatric history and physical examination"
+    },
+    {
+      "code": "PN",
+      "display": "Procedure note"
+    },
+    {
+      "code": "PR",
+      "display": "Progress note"
+    },
+    {
+      "code": "SP",
+      "display": "Surgical pathology"
+    },
+    {
+      "code": "TS",
+      "display": "Transfer summary"
+    }
+  ]
+}

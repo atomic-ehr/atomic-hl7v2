@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0502",
+  "id": "v2-0502",
+  "name": "NonSubjectConsenterReason",
+  "title": "non-subjectConsenterReason",
+  "description": "HL7-defined  code system of concepts used to specify a reason consent was granted by a person other than the subject of the consent.  Used in the Consent (CON) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0502",
+  "concepts": [
+    {
+      "code": "MIN",
+      "display": "Subject is a minor"
+    },
+    {
+      "code": "NC",
+      "display": "Subject is not competent to consent"
+    },
+    {
+      "code": "LM",
+      "display": "Legally mandated"
+    }
+  ]
+}

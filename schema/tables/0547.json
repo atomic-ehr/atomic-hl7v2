@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0547",
+  "id": "v2-0547",
+  "name": "JurisdictionalBreadth",
+  "title": "jurisdictionalBreadth",
+  "description": "Code system of concepts specifying the breadth/extent of the jurisdiction where the qualification is valid.  Used in HL7 Version 2 messaging in the CER segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0547",
+  "concepts": [
+    {
+      "code": "C",
+      "display": "County/Parish"
+    },
+    {
+      "code": "S",
+      "display": "State/Province"
+    },
+    {
+      "code": "N",
+      "display": "Country"
+    }
+  ]
+}

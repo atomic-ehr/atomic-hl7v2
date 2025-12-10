@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0434",
+  "id": "v2-0434",
+  "name": "PatientCondition",
+  "title": "patientCondition",
+  "description": "Code system of concepts specifying the patient's current medical condition for the purpose of communicating to non-medical outside parties, e.g. family, employer, religious minister, media, etc.  Used in HL7 Version 2.x messaging in the PV2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0434",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Satisfactory"
+    },
+    {
+      "code": "C",
+      "display": "Critical"
+    },
+    {
+      "code": "P",
+      "display": "Poor"
+    },
+    {
+      "code": "S",
+      "display": "Stable"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

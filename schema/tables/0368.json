@@ -1,0 +1,94 @@
+{
+  "tableNumber": "0368",
+  "id": "v2-0368",
+  "name": "RemoteControlCommand",
+  "title": "remoteControlCommand",
+  "description": "Code system of concepts that identify the comment the component is to initiate.  Used in the Equipment Command (ECD) and Interaction Status Detail (ISD) segments in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0368",
+  "concepts": [
+    {
+      "code": "SA",
+      "display": "Sampling"
+    },
+    {
+      "code": "LO",
+      "display": "Load"
+    },
+    {
+      "code": "UN",
+      "display": "Unload"
+    },
+    {
+      "code": "LK",
+      "display": "Lock"
+    },
+    {
+      "code": "UC",
+      "display": "Unlock"
+    },
+    {
+      "code": "TT",
+      "display": "Transport To"
+    },
+    {
+      "code": "CN",
+      "display": "Clear Notification"
+    },
+    {
+      "code": "IN",
+      "display": "Initialize/Initiate"
+    },
+    {
+      "code": "SU",
+      "display": "Setup"
+    },
+    {
+      "code": "CL",
+      "display": "Clear"
+    },
+    {
+      "code": "PA",
+      "display": "Pause"
+    },
+    {
+      "code": "RE",
+      "display": "Resume"
+    },
+    {
+      "code": "ES",
+      "display": "Emergency -stop"
+    },
+    {
+      "code": "LC",
+      "display": "Local Control Request"
+    },
+    {
+      "code": "RC",
+      "display": "Remote Control Request"
+    },
+    {
+      "code": "AB",
+      "display": "Abort"
+    },
+    {
+      "code": "EN",
+      "display": "Enable Sending Events"
+    },
+    {
+      "code": "DI",
+      "display": "Disable Sending Events"
+    },
+    {
+      "code": "EX",
+      "display": "Execute (command specified in field Parameters (ST) 01394)"
+    },
+    {
+      "code": "AF",
+      "display": "Aliquot From container"
+    },
+    {
+      "code": "AT",
+      "display": "Aliquot To container"
+    }
+  ]
+}

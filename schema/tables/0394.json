@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0394",
+  "id": "v2-0394",
+  "name": "ResponseModality",
+  "title": "responseModality",
+  "description": "HL7-defined code system of concepts identifying the timing and grouping of the response message(s).  Used in HL7 Version 2.x messaging in the Response Control Parameter (RCP) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0394",
+  "concepts": [
+    {
+      "code": "R",
+      "display": "Real Time"
+    },
+    {
+      "code": "T",
+      "display": "Bolus (a series of responses sent at the same time without use of batch formatting)"
+    },
+    {
+      "code": "B",
+      "display": "Batch"
+    }
+  ]
+}

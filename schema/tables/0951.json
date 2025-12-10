@@ -1,0 +1,75 @@
+{
+  "tableNumber": "0951",
+  "id": "v2-0951",
+  "name": "ReasonForStudy",
+  "title": "reasonForStudy",
+  "description": "HL7-defined code system of concepts that provide additional information to the universal service identifier on why a test, study or review was ordered. Initial values are to support the IHE LCC LAB-7 transaction.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0951",
+  "concepts": [
+    {
+      "code": "BS",
+      "display": "Bank residual specimen",
+      "definition": "Requests that the specimen should be stored long term"
+    },
+    {
+      "code": "CR",
+      "display": "Confirm results value",
+      "definition": "Requests verification of previously reported results"
+    },
+    {
+      "code": "FP",
+      "display": "Store residual specimen pending follow up",
+      "definition": "Requests that the specimen should be saved for a short duration until follow up is completed"
+    },
+    {
+      "code": "IN",
+      "display": "Interpret results",
+      "definition": "Requests interpretation of previously reported results"
+    },
+    {
+      "code": "IR",
+      "display": "Review clinically inconsistent results",
+      "definition": "Requests comparison of previously reported results amongst themselves"
+    },
+    {
+      "code": "IT",
+      "display": "Incorrect test performed",
+      "definition": "For process improvement work this code can be used to identify when an incorrect test was performed for the target order"
+    },
+    {
+      "code": "OP",
+      "display": "Test ordering problem",
+      "definition": "For process improvement work this code can be used to identify orders and the respective results, where problems occurred during ordering"
+    },
+    {
+      "code": "PI",
+      "display": "Patient identification problem",
+      "definition": "For process improvement work this code can be used to identify when a patient identification issue has occurred on the target order"
+    },
+    {
+      "code": "SI",
+      "display": "Suspected interference",
+      "definition": "Requests verification of previously reported results due to suspected interference"
+    },
+    {
+      "code": "SP",
+      "display": "Sampling problem",
+      "definition": "For process improvement work this code can be used to identify orders, where problems occurred during sample collection"
+    },
+    {
+      "code": "TP",
+      "display": "Specimen transport problem",
+      "definition": "For process improvement work this code can be used to identify orders, where problems occurred during sample transport"
+    },
+    {
+      "code": "TT",
+      "display": "Turnaround time problem",
+      "definition": "For process improvement work this code can be used to identify results with excessive reporting delay"
+    },
+    {
+      "code": "XR",
+      "display": "Incorrect results",
+      "definition": "For process improvement work this code can be used to identify when incorrect result were reported for the target order"
+    }
+  ]
+}

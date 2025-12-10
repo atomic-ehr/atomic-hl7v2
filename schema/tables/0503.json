@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0503",
+  "id": "v2-0503",
+  "name": "SequenceResultsFlag",
+  "title": "sequenceResultsFlag",
+  "description": "HL7-defined  code system of concepts used to specify the sequencing relationship between the current service request and the related service request(s) specified in this TQ2 segment.  Used in the Timing/Quantity Relationship (TQ2) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0503",
+  "concepts": [
+    {
+      "code": "S",
+      "display": "Sequential"
+    },
+    {
+      "code": "C",
+      "display": "Cyclical"
+    },
+    {
+      "code": "R",
+      "display": "Reserved for future use"
+    }
+  ]
+}

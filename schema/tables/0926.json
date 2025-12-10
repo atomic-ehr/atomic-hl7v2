@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0926",
+  "id": "v2-0926",
+  "name": "PhlebotomyStatus",
+  "title": "phlebotomyStatus",
+  "description": "HL7-defined code system of concepts specifying the status of the phlebotomy.  Used in HL7 Version 2.x messaging in the DON segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0926",
+  "concepts": [
+    {
+      "code": "SUC",
+      "display": "Successful"
+    },
+    {
+      "code": "NDR",
+      "display": "Not Drawn"
+    },
+    {
+      "code": "UL5",
+      "display": "Unsuccessful Less than 50 ml drawn"
+    }
+  ]
+}

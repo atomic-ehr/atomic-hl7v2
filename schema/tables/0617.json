@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0617",
+  "id": "v2-0617",
+  "name": "AddressUsage",
+  "title": "addressUsage",
+  "description": "HL7-defined code system of concepts specifying how an address is intended to be used.  Used in HL7 Version 2.x messaging in the XAD segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0617",
+  "concepts": [
+    {
+      "code": "M",
+      "display": "Mailing"
+    },
+    {
+      "code": "V",
+      "display": "Visit"
+    },
+    {
+      "code": "C",
+      "display": "Classification"
+    }
+  ]
+}

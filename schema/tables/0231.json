@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0231",
+  "id": "v2-0231",
+  "name": "StudentStatus",
+  "title": "studentStatus",
+  "description": "Code system of concepts used to designate whether a guarantor is a full or part time student.  Used in HL7 Version 2.x messaging in the GT1, NK1 and PD1 segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0231",
+  "concepts": [
+    {
+      "code": "F",
+      "display": "Full-time student"
+    },
+    {
+      "code": "P",
+      "display": "Part-time student"
+    },
+    {
+      "code": "N",
+      "display": "Not a student"
+    }
+  ]
+}

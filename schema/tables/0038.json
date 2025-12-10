@@ -1,0 +1,46 @@
+{
+  "tableNumber": "0038",
+  "id": "v2-0038",
+  "name": "OrderStatus",
+  "title": "orderStatus",
+  "description": "HL7-defined code system of concepts specifying the status of an order. The purpose of these values are to report the status of an order either upon request (solicited), or when the status changes (unsolicited). The values are not intended to initiate action.  It is assumed that the order status value always reflects the status as it is known to the sending application at the time that a message is sent.  Only the filler can originate these values.  Used in HL7 Version 2.x messaging in the ORC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0038",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Some, but not all, results available"
+    },
+    {
+      "code": "CA",
+      "display": "Order was canceled"
+    },
+    {
+      "code": "CM",
+      "display": "Order is completed"
+    },
+    {
+      "code": "DC",
+      "display": "Order was discontinued"
+    },
+    {
+      "code": "ER",
+      "display": "Error, order not found"
+    },
+    {
+      "code": "HD",
+      "display": "Order is on hold"
+    },
+    {
+      "code": "IP",
+      "display": "In process, unspecified"
+    },
+    {
+      "code": "RP",
+      "display": "Order has been replaced"
+    },
+    {
+      "code": "SC",
+      "display": "In process, scheduled"
+    }
+  ]
+}

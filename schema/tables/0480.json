@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0480",
+  "id": "v2-0480",
+  "name": "PharmacyOrderTypes",
+  "title": "pharmacyOrderTypes",
+  "description": "HL7-defined code system of concepts specifying the general category of pharmacy order which may be used to determine the processing path the order will take.  Used in HL7 Version 2.x messaging in the RXO, RXE, RXD, RXG and RXA segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0480",
+  "concepts": [
+    {
+      "code": "M",
+      "display": "Medication"
+    },
+    {
+      "code": "S",
+      "display": "IV Large Volume Solutions"
+    },
+    {
+      "code": "O",
+      "display": "Other solution as medication orders"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0135",
+  "id": "v2-0135",
+  "name": "AssignmentOfBenefits",
+  "title": "assignmentOfBenefits",
+  "description": "Code system of concepts which indicate whether an insured person agreed to assign the insurance benefits to the healthcare provider.  If so, the insurance will pay the provider directly.  Used in HL7 Version 2.x messaging in the IN1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0135",
+  "concepts": [
+    {
+      "code": "Y",
+      "display": "Yes"
+    },
+    {
+      "code": "N",
+      "display": "No"
+    },
+    {
+      "code": "M",
+      "display": "Modified assignment"
+    }
+  ]
+}

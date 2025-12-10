@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0494",
+  "id": "v2-0494",
+  "name": "SpecimenChildRole",
+  "title": "specimenChildRole",
+  "description": "HL7-defined code system of concepts specifying for child specimens the relationship between this specimen and the parent specimen.  Used in HL7 Version 2.x messaging in the SPM segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0494",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Aliquot"
+    },
+    {
+      "code": "C",
+      "display": "Component"
+    },
+    {
+      "code": "M",
+      "display": "Modified from original specimen"
+    }
+  ]
+}

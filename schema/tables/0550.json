@@ -1,0 +1,1778 @@
+{
+  "tableNumber": "0550",
+  "id": "v2-0550",
+  "name": "BodyParts",
+  "title": "bodyParts",
+  "description": "HL7-defined code system of concepts specifying the part of the body.  Used in HL7 Version 2 messaging in the RXR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0550",
+  "concepts": [
+    {
+      "code": "JUGE",
+      "display": "Jugular, External"
+    },
+    {
+      "code": "ADB",
+      "display": "Abdomen"
+    },
+    {
+      "code": "ACET",
+      "display": "Acetabulum"
+    },
+    {
+      "code": "ACHIL",
+      "display": "Achilles"
+    },
+    {
+      "code": "ADE",
+      "display": "Adenoids"
+    },
+    {
+      "code": "ADR",
+      "display": "Adrenal"
+    },
+    {
+      "code": "AMN",
+      "display": "Amniotic fluid"
+    },
+    {
+      "code": "AMS",
+      "display": "Amniotic Sac"
+    },
+    {
+      "code": "ANAL",
+      "display": "Anal"
+    },
+    {
+      "code": "ANKL",
+      "display": "Ankle"
+    },
+    {
+      "code": "ANTEC",
+      "display": "Antecubital"
+    },
+    {
+      "code": "ANTECF",
+      "display": "Antecubital Fossa"
+    },
+    {
+      "code": "ANTR",
+      "display": "Antrum"
+    },
+    {
+      "code": "ANUS",
+      "display": "Anus"
+    },
+    {
+      "code": "AORTA",
+      "display": "Aorta"
+    },
+    {
+      "code": "AR",
+      "display": "Aortic Rim"
+    },
+    {
+      "code": "AV",
+      "display": "Aortic Valve"
+    },
+    {
+      "code": "APDX",
+      "display": "Appendix"
+    },
+    {
+      "code": "AREO",
+      "display": "Areola"
+    },
+    {
+      "code": "ARM",
+      "display": "Arm"
+    },
+    {
+      "code": "ARTE",
+      "display": "Artery"
+    },
+    {
+      "code": "ASCIT",
+      "display": "Ascites"
+    },
+    {
+      "code": "ASCT",
+      "display": "Ascitic Fluid"
+    },
+    {
+      "code": "ATR",
+      "display": "Atrium"
+    },
+    {
+      "code": "AURI",
+      "display": "Auricular"
+    },
+    {
+      "code": "AXI",
+      "display": "Axilla"
+    },
+    {
+      "code": "BACK",
+      "display": "Back"
+    },
+    {
+      "code": "BARTD",
+      "display": "Bartholin Duct"
+    },
+    {
+      "code": "BARTG",
+      "display": "Bartholin Gland"
+    },
+    {
+      "code": "BRTGF",
+      "display": "Bartholin Gland Fluid"
+    },
+    {
+      "code": "BPH",
+      "display": "Basophils"
+    },
+    {
+      "code": "BID",
+      "display": "Bile Duct"
+    },
+    {
+      "code": "BIFL",
+      "display": "Bile fluid"
+    },
+    {
+      "code": "BLAD",
+      "display": "Bladder"
+    },
+    {
+      "code": "BLOOD",
+      "display": "Blood"
+    },
+    {
+      "code": "BLDA",
+      "display": "Blood,  Arterial"
+    },
+    {
+      "code": "BLDC",
+      "display": "Blood,  Capillary"
+    },
+    {
+      "code": "BLDV",
+      "display": "Blood,  Venous"
+    },
+    {
+      "code": "CBLD",
+      "display": "Blood, Cord"
+    },
+    {
+      "code": "BLD",
+      "display": "Blood, Whole"
+    },
+    {
+      "code": "BDY",
+      "display": "Body, Whole"
+    },
+    {
+      "code": "BON",
+      "display": "Bone"
+    },
+    {
+      "code": "BMAR",
+      "display": "Bone marrow"
+    },
+    {
+      "code": "BOWEL",
+      "display": "Bowel"
+    },
+    {
+      "code": "BOWLA",
+      "display": "Bowel, Large"
+    },
+    {
+      "code": "BOWSM",
+      "display": "Bowel, Small"
+    },
+    {
+      "code": "BRA",
+      "display": "Brachial"
+    },
+    {
+      "code": "BRAIN",
+      "display": "Brain"
+    },
+    {
+      "code": "BCYS",
+      "display": "Brain Cyst Fluid"
+    },
+    {
+      "code": "BRST",
+      "display": "Breast"
+    },
+    {
+      "code": "BRSTFL",
+      "display": "Breast fluid"
+    },
+    {
+      "code": "BRO",
+      "display": "Bronchial"
+    },
+    {
+      "code": "BROCH",
+      "display": "Bronchiole/Bronchiolar"
+    },
+    {
+      "code": "BRONC",
+      "display": "Bronchus/Bronchial"
+    },
+    {
+      "code": "BRV",
+      "display": "Broviac"
+    },
+    {
+      "code": "BUCCA",
+      "display": "Buccal"
+    },
+    {
+      "code": "BURSA",
+      "display": "Bursa"
+    },
+    {
+      "code": "BURSF",
+      "display": "Bursa Fluid"
+    },
+    {
+      "code": "BUTT",
+      "display": "Buttocks"
+    },
+    {
+      "code": "CALF",
+      "display": "Calf"
+    },
+    {
+      "code": "CANAL",
+      "display": "Canal"
+    },
+    {
+      "code": "CANLI",
+      "display": "Canaliculis"
+    },
+    {
+      "code": "CNL",
+      "display": "Cannula"
+    },
+    {
+      "code": "CANTH",
+      "display": "Canthus"
+    },
+    {
+      "code": "CDM",
+      "display": "Cardiac Muscle"
+    },
+    {
+      "code": "CARO",
+      "display": "Carotid"
+    },
+    {
+      "code": "CARP",
+      "display": "Carpal"
+    },
+    {
+      "code": "CAVIT",
+      "display": "Cavity"
+    },
+    {
+      "code": "CHE",
+      "display": "Cavity, Chest"
+    },
+    {
+      "code": "CECUM",
+      "display": "Cecum/Cecal"
+    },
+    {
+      "code": "CSF",
+      "display": "Cerebral Spinal Fluid"
+    },
+    {
+      "code": "CVX",
+      "display": "Cervix"
+    },
+    {
+      "code": "CERVUT",
+      "display": "Cervix/Uterus"
+    },
+    {
+      "code": "CHEEK",
+      "display": "Cheek"
+    },
+    {
+      "code": "CHES",
+      "display": "Chest"
+    },
+    {
+      "code": "CHEST",
+      "display": "Chest Tube"
+    },
+    {
+      "code": "CHIN",
+      "display": "Chin"
+    },
+    {
+      "code": "CIRCU",
+      "display": "Circumcision Site"
+    },
+    {
+      "code": "CLAVI",
+      "display": "Clavicle/Clavicular"
+    },
+    {
+      "code": "CLITO",
+      "display": "Clitoral"
+    },
+    {
+      "code": "CLIT",
+      "display": "Clitoris"
+    },
+    {
+      "code": "COCCG",
+      "display": "Coccygeal"
+    },
+    {
+      "code": "COCCY",
+      "display": "Coccyx"
+    },
+    {
+      "code": "COLON",
+      "display": "Colon"
+    },
+    {
+      "code": "COLOS",
+      "display": "Colostomy"
+    },
+    {
+      "code": "COS",
+      "display": "Colostomy Stoma"
+    },
+    {
+      "code": "CDUCT",
+      "display": "Common Duct"
+    },
+    {
+      "code": "CONJ",
+      "display": "Conjunctiva"
+    },
+    {
+      "code": "CORAL",
+      "display": "Coral"
+    },
+    {
+      "code": "COR",
+      "display": "Cord"
+    },
+    {
+      "code": "CORD",
+      "display": "Cord Blood"
+    },
+    {
+      "code": "CORN",
+      "display": "Cornea"
+    },
+    {
+      "code": "CRANE",
+      "display": "Cranium, ethmoid"
+    },
+    {
+      "code": "CRANF",
+      "display": "Cranium, frontal"
+    },
+    {
+      "code": "CRANO",
+      "display": "Cranium, occipital"
+    },
+    {
+      "code": "CRANP",
+      "display": "Cranium, parietal"
+    },
+    {
+      "code": "CRANS",
+      "display": "Cranium, sphenoid"
+    },
+    {
+      "code": "CRANT",
+      "display": "Cranium, temporal"
+    },
+    {
+      "code": "CUBIT",
+      "display": "Cubitus"
+    },
+    {
+      "code": "CUFF",
+      "display": "Cuff"
+    },
+    {
+      "code": "CULD",
+      "display": "Cul De Sac"
+    },
+    {
+      "code": "CULDO",
+      "display": "Culdocentesis"
+    },
+    {
+      "code": "DELT",
+      "display": "Deltoid"
+    },
+    {
+      "code": "DENTA",
+      "display": "Dental"
+    },
+    {
+      "code": "DEN",
+      "display": "Dental Gingiva"
+    },
+    {
+      "code": "DIAF",
+      "display": "Dialysis Fluid"
+    },
+    {
+      "code": "DPH",
+      "display": "Diaphragm"
+    },
+    {
+      "code": "DIGIT",
+      "display": "Digit"
+    },
+    {
+      "code": "DISC",
+      "display": "Disc"
+    },
+    {
+      "code": "DORS",
+      "display": "Dorsum/Dorsal"
+    },
+    {
+      "code": "DUFL",
+      "display": "Duodenal Fluid"
+    },
+    {
+      "code": "DUODE",
+      "display": "Duodenum/Duodenal"
+    },
+    {
+      "code": "DUR",
+      "display": "Dura"
+    },
+    {
+      "code": "EAR",
+      "display": "Ear"
+    },
+    {
+      "code": "EARBI",
+      "display": "Ear bone, incus"
+    },
+    {
+      "code": "EARBM",
+      "display": "Ear bone, malleus"
+    },
+    {
+      "code": "EARBS",
+      "display": "Ear bone,stapes"
+    },
+    {
+      "code": "EARLO",
+      "display": "Ear Lobe"
+    },
+    {
+      "code": "ELBOW",
+      "display": "Elbow"
+    },
+    {
+      "code": "ELBOWJ",
+      "display": "Elbow Joint"
+    },
+    {
+      "code": "ENDC",
+      "display": "Endocardium"
+    },
+    {
+      "code": "EC",
+      "display": "Endocervical"
+    },
+    {
+      "code": "EOLPH",
+      "display": "endolpthamitis"
+    },
+    {
+      "code": "ENDM",
+      "display": "Endometrium"
+    },
+    {
+      "code": "ET",
+      "display": "Endotracheal"
+    },
+    {
+      "code": "EUR",
+      "display": "Endourethral"
+    },
+    {
+      "code": "EOS",
+      "display": "Eosinophils"
+    },
+    {
+      "code": "EPICA",
+      "display": "Epicardial"
+    },
+    {
+      "code": "EPICM",
+      "display": "Epicardium"
+    },
+    {
+      "code": "EPD",
+      "display": "Epididymis"
+    },
+    {
+      "code": "EPIDU",
+      "display": "Epidural"
+    },
+    {
+      "code": "EPIGL",
+      "display": "Epiglottis"
+    },
+    {
+      "code": "ESOPG",
+      "display": "Esophageal"
+    },
+    {
+      "code": "ESO",
+      "display": "Esophagus"
+    },
+    {
+      "code": "ETHMO",
+      "display": "Ethmoid"
+    },
+    {
+      "code": "EYE",
+      "display": "Eye"
+    },
+    {
+      "code": "BROW",
+      "display": "Eyebrow"
+    },
+    {
+      "code": "EYELI",
+      "display": "Eyelid"
+    },
+    {
+      "code": "FACE",
+      "display": "Face"
+    },
+    {
+      "code": "FBINC",
+      "display": "Facial bone, inferior nasal concha"
+    },
+    {
+      "code": "FBLAC",
+      "display": "Facial bone, lacrimal"
+    },
+    {
+      "code": "FBMAX",
+      "display": "Facial bone, maxilla"
+    },
+    {
+      "code": "FBNAS",
+      "display": "Facial bone, nasal"
+    },
+    {
+      "code": "FBPAL",
+      "display": "Facial bone, palatine"
+    },
+    {
+      "code": "FBVOM",
+      "display": "Facial bone, vomer"
+    },
+    {
+      "code": "FBZYG",
+      "display": "Facial bone, zygomatic"
+    },
+    {
+      "code": "FALLT",
+      "display": "Fallopian Tube"
+    },
+    {
+      "code": "FEMOR",
+      "display": "Femoral"
+    },
+    {
+      "code": "FMH",
+      "display": "Femoral Head"
+    },
+    {
+      "code": "FEMUR",
+      "display": "Femur"
+    },
+    {
+      "code": "FET",
+      "display": "Fetus"
+    },
+    {
+      "code": "FIBU",
+      "display": "Fibula"
+    },
+    {
+      "code": "FING",
+      "display": "Finger"
+    },
+    {
+      "code": "FINGN",
+      "display": "Finger Nail"
+    },
+    {
+      "code": "FOL",
+      "display": "Follicle"
+    },
+    {
+      "code": "FOOT",
+      "display": "Foot"
+    },
+    {
+      "code": "FOREA",
+      "display": "Forearm"
+    },
+    {
+      "code": "FOREH",
+      "display": "Forehead"
+    },
+    {
+      "code": "FORES",
+      "display": "Foreskin"
+    },
+    {
+      "code": "FOURC",
+      "display": "Fourchette"
+    },
+    {
+      "code": "GB",
+      "display": "Gall Bladder"
+    },
+    {
+      "code": "GEN",
+      "display": "Genital"
+    },
+    {
+      "code": "GVU",
+      "display": "Genital - Vulva"
+    },
+    {
+      "code": "GENC",
+      "display": "Genital Cervix"
+    },
+    {
+      "code": "GL",
+      "display": "Genital Lesion"
+    },
+    {
+      "code": "GENL",
+      "display": "Genital Lochia"
+    },
+    {
+      "code": "GLAND",
+      "display": "Gland"
+    },
+    {
+      "code": "GLANS",
+      "display": "Glans"
+    },
+    {
+      "code": "GLUTE",
+      "display": "Gluteal"
+    },
+    {
+      "code": "GLUT",
+      "display": "Gluteus"
+    },
+    {
+      "code": "GLUTM",
+      "display": "Gluteus Medius"
+    },
+    {
+      "code": "GROIN",
+      "display": "Groin"
+    },
+    {
+      "code": "GUM",
+      "display": "Gum"
+    },
+    {
+      "code": "HAR",
+      "display": "Hair"
+    },
+    {
+      "code": "HAL",
+      "display": "Hallux"
+    },
+    {
+      "code": "HAND",
+      "display": "Hand"
+    },
+    {
+      "code": "HEAD",
+      "display": "Head"
+    },
+    {
+      "code": "HART",
+      "display": "Heart"
+    },
+    {
+      "code": "HV",
+      "display": "Heart Valve"
+    },
+    {
+      "code": "HVB",
+      "display": "Heart Valve, Bicuspid"
+    },
+    {
+      "code": "HVT",
+      "display": "Heart Valve, Tricuspid"
+    },
+    {
+      "code": "HEEL",
+      "display": "Heel"
+    },
+    {
+      "code": "HEM",
+      "display": "Hemorrhoid"
+    },
+    {
+      "code": "HIP",
+      "display": "Hip"
+    },
+    {
+      "code": "HIPJ",
+      "display": "Hip Joint"
+    },
+    {
+      "code": "HUMER",
+      "display": "Humerus"
+    },
+    {
+      "code": "HYMEN",
+      "display": "Hymen"
+    },
+    {
+      "code": "ILC",
+      "display": "Ileal Conduit"
+    },
+    {
+      "code": "ILE",
+      "display": "Ileal Loop"
+    },
+    {
+      "code": "ILEOS",
+      "display": "Ileostomy"
+    },
+    {
+      "code": "ILEUM",
+      "display": "Ileum"
+    },
+    {
+      "code": "ILIAC",
+      "display": "Iliac"
+    },
+    {
+      "code": "ILCR",
+      "display": "Iliac Crest"
+    },
+    {
+      "code": "ILCON",
+      "display": "Ilical Conduit"
+    },
+    {
+      "code": "INGUI",
+      "display": "Inguinal"
+    },
+    {
+      "code": "JUGI",
+      "display": "Jugular, Internal"
+    },
+    {
+      "code": "INT",
+      "display": "Intestine"
+    },
+    {
+      "code": "ICX",
+      "display": "Intracervical"
+    },
+    {
+      "code": "INASA",
+      "display": "Intranasal"
+    },
+    {
+      "code": "INTRU",
+      "display": "Intrauterine"
+    },
+    {
+      "code": "INTRO",
+      "display": "Introitus"
+    },
+    {
+      "code": "ISCHI",
+      "display": "Ischium"
+    },
+    {
+      "code": "JAW",
+      "display": "Jaw"
+    },
+    {
+      "code": "KIDN",
+      "display": "Kidney"
+    },
+    {
+      "code": "KNEE",
+      "display": "Knee"
+    },
+    {
+      "code": "KNEEF",
+      "display": "Knee Fluid"
+    },
+    {
+      "code": "KNEEJ",
+      "display": "Knee Joint"
+    },
+    {
+      "code": "LABIA",
+      "display": "Labia"
+    },
+    {
+      "code": "LABMA",
+      "display": "Labia Majora"
+    },
+    {
+      "code": "LABMI",
+      "display": "Labia Minora"
+    },
+    {
+      "code": "LACRI",
+      "display": "Lacrimal"
+    },
+    {
+      "code": "LAM",
+      "display": "Lamella"
+    },
+    {
+      "code": "INSTL",
+      "display": "Intestine, Large"
+    },
+    {
+      "code": "LARYN",
+      "display": "Larynx"
+    },
+    {
+      "code": "LEG",
+      "display": "Leg"
+    },
+    {
+      "code": "LENS",
+      "display": "Lens"
+    },
+    {
+      "code": "WBC",
+      "display": "Leukocytes"
+    },
+    {
+      "code": "LING",
+      "display": "Lingual"
+    },
+    {
+      "code": "LINGU",
+      "display": "Lingula"
+    },
+    {
+      "code": "LIP",
+      "display": "Lip"
+    },
+    {
+      "code": "STOOLL",
+      "display": "Liquid Stool"
+    },
+    {
+      "code": "LIVER",
+      "display": "Liver"
+    },
+    {
+      "code": "LOBE",
+      "display": "Lobe"
+    },
+    {
+      "code": "LOCH",
+      "display": "Lochia"
+    },
+    {
+      "code": "ISH",
+      "display": "Loop, Ishial"
+    },
+    {
+      "code": "LUMBA",
+      "display": "Lumbar"
+    },
+    {
+      "code": "LMN",
+      "display": "Lumen"
+    },
+    {
+      "code": "LUNG",
+      "display": "Lung"
+    },
+    {
+      "code": "LN",
+      "display": "Lymph Node"
+    },
+    {
+      "code": "LNG",
+      "display": "Lymph Node, Groin"
+    },
+    {
+      "code": "LYM",
+      "display": "Lymphocytes"
+    },
+    {
+      "code": "MAC",
+      "display": "Macrophages"
+    },
+    {
+      "code": "MALLE",
+      "display": "Malleolus"
+    },
+    {
+      "code": "MANDI",
+      "display": "Mandible/Mandibular"
+    },
+    {
+      "code": "MAR",
+      "display": "Marrow"
+    },
+    {
+      "code": "MAST",
+      "display": "Mastoid"
+    },
+    {
+      "code": "MAXIL",
+      "display": "Maxilla/Maxillary"
+    },
+    {
+      "code": "MAXS",
+      "display": "Maxillary Sinus"
+    },
+    {
+      "code": "MEATU",
+      "display": "Meatus"
+    },
+    {
+      "code": "MEC",
+      "display": "Meconium"
+    },
+    {
+      "code": "MEDST",
+      "display": "Mediastinum"
+    },
+    {
+      "code": "MEDU",
+      "display": "Medullary"
+    },
+    {
+      "code": "MOU",
+      "display": "Membrane"
+    },
+    {
+      "code": "MPB",
+      "display": "Meninges"
+    },
+    {
+      "code": "METAC",
+      "display": "Metacarpal"
+    },
+    {
+      "code": "METAT",
+      "display": "Metatarsal"
+    },
+    {
+      "code": "MILK",
+      "display": "Milk, Breast"
+    },
+    {
+      "code": "MITRL",
+      "display": "Mitral Valve"
+    },
+    {
+      "code": "MOLAR",
+      "display": "Molar"
+    },
+    {
+      "code": "MP",
+      "display": "Mons Pubis"
+    },
+    {
+      "code": "MONSU",
+      "display": "Mons Ureteris"
+    },
+    {
+      "code": "MONSV",
+      "display": "Mons Veneris(Mons Pubis)"
+    },
+    {
+      "code": "MOUTH",
+      "display": "Mouth"
+    },
+    {
+      "code": "MRSA2",
+      "display": "Mrsa:"
+    },
+    {
+      "code": "MYO",
+      "display": "Myocardium"
+    },
+    {
+      "code": "NAIL",
+      "display": "Nail"
+    },
+    {
+      "code": "NAILB",
+      "display": "Nail Bed"
+    },
+    {
+      "code": "NAILF",
+      "display": "Nail, Finger"
+    },
+    {
+      "code": "NAILT",
+      "display": "Nail, Toe"
+    },
+    {
+      "code": "NARES",
+      "display": "Nares"
+    },
+    {
+      "code": "NASL",
+      "display": "Nasal"
+    },
+    {
+      "code": "NSS",
+      "display": "Nasal Septum"
+    },
+    {
+      "code": "NLACR",
+      "display": "Nasolacrimal"
+    },
+    {
+      "code": "NP",
+      "display": "Nasopharyngeal/Nasopharynx"
+    },
+    {
+      "code": "NTRAC",
+      "display": "Nasotracheal"
+    },
+    {
+      "code": "NAVEL",
+      "display": "Navel"
+    },
+    {
+      "code": "NECK",
+      "display": "Neck"
+    },
+    {
+      "code": "NERVE",
+      "display": "Nerve"
+    },
+    {
+      "code": "NIPPL",
+      "display": "Nipple"
+    },
+    {
+      "code": "NOS",
+      "display": "Nose (Nasal Passage)"
+    },
+    {
+      "code": "NOSE",
+      "display": "Nose/Nose(outside)"
+    },
+    {
+      "code": "NOSTR",
+      "display": "Nostril"
+    },
+    {
+      "code": "OCCIP",
+      "display": "Occipital"
+    },
+    {
+      "code": "OLECR",
+      "display": "Olecranon"
+    },
+    {
+      "code": "OMEN",
+      "display": "Omentum"
+    },
+    {
+      "code": "ORBIT",
+      "display": "Orbit/Orbital"
+    },
+    {
+      "code": "ORO",
+      "display": "Oropharynx"
+    },
+    {
+      "code": "OSCOX",
+      "display": "Os coxa (pelvic girdle)"
+    },
+    {
+      "code": "OVARY",
+      "display": "Ovary"
+    },
+    {
+      "code": "PALAT",
+      "display": "Palate"
+    },
+    {
+      "code": "PLATH",
+      "display": "Palate, Hard"
+    },
+    {
+      "code": "PLATS",
+      "display": "Palate, Soft"
+    },
+    {
+      "code": "PALM",
+      "display": "Palm"
+    },
+    {
+      "code": "PANCR",
+      "display": "Pancreas"
+    },
+    {
+      "code": "PAFL",
+      "display": "Pancreatic Fluid"
+    },
+    {
+      "code": "PAS",
+      "display": "Parasternal"
+    },
+    {
+      "code": "PARAT",
+      "display": "Paratracheal"
+    },
+    {
+      "code": "PARIE",
+      "display": "Parietal"
+    },
+    {
+      "code": "PARON",
+      "display": "Paronychia"
+    },
+    {
+      "code": "PAROT",
+      "display": "Parotid/Parotid Gland"
+    },
+    {
+      "code": "PATEL",
+      "display": "Patella"
+    },
+    {
+      "code": "PELV",
+      "display": "Pelvis"
+    },
+    {
+      "code": "PENSH",
+      "display": "Penile Shaft"
+    },
+    {
+      "code": "PENIS",
+      "display": "Penis"
+    },
+    {
+      "code": "PANAL",
+      "display": "Perianal/Perirectal"
+    },
+    {
+      "code": "PERI",
+      "display": "Pericardial Fluid"
+    },
+    {
+      "code": "PCARD",
+      "display": "Pericardium"
+    },
+    {
+      "code": "PCLIT",
+      "display": "Periclitoral"
+    },
+    {
+      "code": "PERIH",
+      "display": "Perihepatic"
+    },
+    {
+      "code": "PNEAL",
+      "display": "Perineal"
+    },
+    {
+      "code": "PERIN",
+      "display": "Perineal Abscess"
+    },
+    {
+      "code": "PNEPH",
+      "display": "Perinephric"
+    },
+    {
+      "code": "PNM",
+      "display": "Perineum"
+    },
+    {
+      "code": "PORBI",
+      "display": "Periorbital"
+    },
+    {
+      "code": "PERRA",
+      "display": "Perirectal"
+    },
+    {
+      "code": "PERIS",
+      "display": "Perisplenic"
+    },
+    {
+      "code": "PER",
+      "display": "Peritoneal"
+    },
+    {
+      "code": "PERT",
+      "display": "Peritoneal Fluid"
+    },
+    {
+      "code": "PERIT",
+      "display": "Peritoneum"
+    },
+    {
+      "code": "PTONS",
+      "display": "Peritonsillar"
+    },
+    {
+      "code": "PERIU",
+      "display": "Periurethal"
+    },
+    {
+      "code": "PERIV",
+      "display": "Perivesicular"
+    },
+    {
+      "code": "PHALA",
+      "display": "Phalanyx"
+    },
+    {
+      "code": "PILO",
+      "display": "Pilonidal"
+    },
+    {
+      "code": "PINNA",
+      "display": "Pinna"
+    },
+    {
+      "code": "PLC",
+      "display": "Placenta"
+    },
+    {
+      "code": "PLACF",
+      "display": "Placenta (Fetal Side)"
+    },
+    {
+      "code": "PLACM",
+      "display": "Placenta (Maternal Side)"
+    },
+    {
+      "code": "PLANT",
+      "display": "Plantar"
+    },
+    {
+      "code": "PLEUR",
+      "display": "Pleura"
+    },
+    {
+      "code": "PLEU",
+      "display": "Pleural Fluid"
+    },
+    {
+      "code": "PLR",
+      "display": "Pleural Fluid (Thoracentesis Fld)"
+    },
+    {
+      "code": "POPLI",
+      "display": "Popliteal"
+    },
+    {
+      "code": "PREAU",
+      "display": "Preauricular"
+    },
+    {
+      "code": "PRERE",
+      "display": "Prerenal"
+    },
+    {
+      "code": "PRST",
+      "display": "Prostate Gland"
+    },
+    {
+      "code": "PROS",
+      "display": "Prostatic Fluid"
+    },
+    {
+      "code": "PUBIC",
+      "display": "Pubic"
+    },
+    {
+      "code": "PUL",
+      "display": "Pulmonary Artery"
+    },
+    {
+      "code": "RADI",
+      "display": "Radial"
+    },
+    {
+      "code": "RADIUS",
+      "display": "Radius"
+    },
+    {
+      "code": "RECTL",
+      "display": "Rectal"
+    },
+    {
+      "code": "RECTU",
+      "display": "Rectum"
+    },
+    {
+      "code": "RBC",
+      "display": "Red Blood Cells"
+    },
+    {
+      "code": "RENL",
+      "display": "Renal"
+    },
+    {
+      "code": "RNP",
+      "display": "Renal Pelvis"
+    },
+    {
+      "code": "RPERI",
+      "display": "Retroperitoneal"
+    },
+    {
+      "code": "RIB",
+      "display": "Rib"
+    },
+    {
+      "code": "SACRA",
+      "display": "Sacral"
+    },
+    {
+      "code": "SACRO",
+      "display": "Sacrococcygeal"
+    },
+    {
+      "code": "SACIL",
+      "display": "Sacroiliac"
+    },
+    {
+      "code": "SACRU",
+      "display": "Sacrum"
+    },
+    {
+      "code": "SALGL",
+      "display": "Salivary Gland"
+    },
+    {
+      "code": "SCALP",
+      "display": "Scalp"
+    },
+    {
+      "code": "SCAPU",
+      "display": "Scapula/Scapular"
+    },
+    {
+      "code": "SCLER",
+      "display": "Sclera"
+    },
+    {
+      "code": "SCROT",
+      "display": "Scrotum/Scrotal"
+    },
+    {
+      "code": "SEMN",
+      "display": "Semen"
+    },
+    {
+      "code": "SEM",
+      "display": "Seminal Fluid"
+    },
+    {
+      "code": "SEPTU",
+      "display": "Septum/Septal"
+    },
+    {
+      "code": "SEROM",
+      "display": "Seroma"
+    },
+    {
+      "code": "SHIN",
+      "display": "Shin"
+    },
+    {
+      "code": "SHOLJ",
+      "display": "Sholder Joint"
+    },
+    {
+      "code": "SHOL",
+      "display": "Shoulder"
+    },
+    {
+      "code": "SIGMO",
+      "display": "Sigmoid"
+    },
+    {
+      "code": "SINUS",
+      "display": "Sinus"
+    },
+    {
+      "code": "SKM",
+      "display": "Skeletal Muscle"
+    },
+    {
+      "code": "SKENE",
+      "display": "Skene's Gland"
+    },
+    {
+      "code": "SKULL",
+      "display": "Skull"
+    },
+    {
+      "code": "INSTS",
+      "display": "Intestine, Small"
+    },
+    {
+      "code": "SOLE",
+      "display": "Sole"
+    },
+    {
+      "code": "SPRM",
+      "display": "Spermatozoa"
+    },
+    {
+      "code": "SPHEN",
+      "display": "Sphenoid"
+    },
+    {
+      "code": "SPCOR",
+      "display": "Spinal Cord"
+    },
+    {
+      "code": "SPLN",
+      "display": "Spleen"
+    },
+    {
+      "code": "STER",
+      "display": "Sternum/Sternal"
+    },
+    {
+      "code": "STOM",
+      "display": "Stoma"
+    },
+    {
+      "code": "USTOM",
+      "display": "Stoma, Urinary"
+    },
+    {
+      "code": "STOMA",
+      "display": "Stomach"
+    },
+    {
+      "code": "STUMP",
+      "display": "Stump"
+    },
+    {
+      "code": "SCLV",
+      "display": "Sub Clavian"
+    },
+    {
+      "code": "SDP",
+      "display": "Subdiaphramatic"
+    },
+    {
+      "code": "SUB",
+      "display": "Subdural"
+    },
+    {
+      "code": "SUBD",
+      "display": "Subdural Fluid"
+    },
+    {
+      "code": "SGF",
+      "display": "Subgaleal Fluid"
+    },
+    {
+      "code": "SUBM",
+      "display": "Submandibular"
+    },
+    {
+      "code": "SUBX",
+      "display": "Submaxillary"
+    },
+    {
+      "code": "SUBME",
+      "display": "Submental"
+    },
+    {
+      "code": "SUBPH",
+      "display": "Subphrenic"
+    },
+    {
+      "code": "SPX",
+      "display": "Supra Cervical"
+    },
+    {
+      "code": "SCLAV",
+      "display": "Supraclavicle/Supraclavicular"
+    },
+    {
+      "code": "SUPRA",
+      "display": "Suprapubic"
+    },
+    {
+      "code": "SUPB",
+      "display": "Suprapubic Specimen"
+    },
+    {
+      "code": "SWT",
+      "display": "Sweat"
+    },
+    {
+      "code": "SWTG",
+      "display": "Sweat Gland"
+    },
+    {
+      "code": "SYNOL",
+      "display": "Synovial"
+    },
+    {
+      "code": "SYN",
+      "display": "Synovial Fluid"
+    },
+    {
+      "code": "SYNOV",
+      "display": "Synovium"
+    },
+    {
+      "code": "TARS",
+      "display": "Tarsal"
+    },
+    {
+      "code": "TDUCT",
+      "display": "Tear Duct"
+    },
+    {
+      "code": "TEAR",
+      "display": "Tears"
+    },
+    {
+      "code": "TEMPL",
+      "display": "Temple"
+    },
+    {
+      "code": "TEMPO",
+      "display": "Temporal"
+    },
+    {
+      "code": "TML",
+      "display": "Temporal Lobe"
+    },
+    {
+      "code": "TESTI",
+      "display": "Testicle(Testis)"
+    },
+    {
+      "code": "THIGH",
+      "display": "Thigh"
+    },
+    {
+      "code": "THORA",
+      "display": "Thorax/Thoracic/Thoracentesis"
+    },
+    {
+      "code": "THRB",
+      "display": "Throat"
+    },
+    {
+      "code": "THUMB",
+      "display": "Thumb"
+    },
+    {
+      "code": "TNL",
+      "display": "Thumbnail"
+    },
+    {
+      "code": "THM",
+      "display": "Thymus"
+    },
+    {
+      "code": "THYRD",
+      "display": "Thyroid"
+    },
+    {
+      "code": "TIBIA",
+      "display": "Tibia"
+    },
+    {
+      "code": "TOE",
+      "display": "Toe"
+    },
+    {
+      "code": "TOEN",
+      "display": "Toe Nail"
+    },
+    {
+      "code": "TONG",
+      "display": "Tongue"
+    },
+    {
+      "code": "TONS",
+      "display": "Tonsil"
+    },
+    {
+      "code": "TOOTH",
+      "display": "Tooth"
+    },
+    {
+      "code": "TSK",
+      "display": "Tooth Socket"
+    },
+    {
+      "code": "TRCHE",
+      "display": "Trachea/Tracheal"
+    },
+    {
+      "code": "TBRON",
+      "display": "Transbronchial"
+    },
+    {
+      "code": "TCN",
+      "display": "Transcarina Asp"
+    },
+    {
+      "code": "ULNA",
+      "display": "Ulna/Ulnar"
+    },
+    {
+      "code": "UMB",
+      "display": "Umbilical Blood"
+    },
+    {
+      "code": "UMBL",
+      "display": "Umbilicus/Umbilical"
+    },
+    {
+      "code": "URET",
+      "display": "Ureter"
+    },
+    {
+      "code": "URTH",
+      "display": "Urethra"
+    },
+    {
+      "code": "UTERI",
+      "display": "Uterine"
+    },
+    {
+      "code": "SAC",
+      "display": "Uterine Cul/De/Sac"
+    },
+    {
+      "code": "UTER",
+      "display": "Uterus"
+    },
+    {
+      "code": "VAGIN",
+      "display": "Vagina/Vaginal"
+    },
+    {
+      "code": "VCUFF",
+      "display": "Vaginal Cuff"
+    },
+    {
+      "code": "VGV",
+      "display": "Vaginal Vault"
+    },
+    {
+      "code": "VAL",
+      "display": "Valve"
+    },
+    {
+      "code": "VAS",
+      "display": "Vas Deferens"
+    },
+    {
+      "code": "VASTL",
+      "display": "Vastus Lateralis"
+    },
+    {
+      "code": "VAULT",
+      "display": "Vault"
+    },
+    {
+      "code": "VEIN",
+      "display": "Vein"
+    },
+    {
+      "code": "VENTG",
+      "display": "Ventragluteal"
+    },
+    {
+      "code": "VCSF",
+      "display": "Ventricular CSF"
+    },
+    {
+      "code": "VERMI",
+      "display": "Vermis Cerebelli"
+    },
+    {
+      "code": "VERTC",
+      "display": "Vertebra, cervical"
+    },
+    {
+      "code": "VERTL",
+      "display": "Vertebra, lumbar"
+    },
+    {
+      "code": "VERTT",
+      "display": "Vertebra, thoracic"
+    },
+    {
+      "code": "VESI",
+      "display": "Vesicle"
+    },
+    {
+      "code": "VESCL",
+      "display": "Vesicular"
+    },
+    {
+      "code": "VESFLD",
+      "display": "Vesicular Fluid"
+    },
+    {
+      "code": "VESTI",
+      "display": "Vestibule(Genital)"
+    },
+    {
+      "code": "VITR",
+      "display": "Vitreous Fluid"
+    },
+    {
+      "code": "VOC",
+      "display": "Vocal Cord"
+    },
+    {
+      "code": "VULVA",
+      "display": "Vulva"
+    },
+    {
+      "code": "WRIST",
+      "display": "Wrist"
+    }
+  ]
+}

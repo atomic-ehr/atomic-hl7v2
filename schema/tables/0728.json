@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0728",
+  "id": "v2-0728",
+  "name": "CclValue",
+  "title": "cclValue",
+  "description": "Code system of concepts specifying the clinical complexity level (CCL) value for the determined diagnosis related group (DRG) for this diagnosis.  US Realm.  Used in HL7 Version 2.x messaging in the DG1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0728",
+  "concepts": [
+    {
+      "code": "0",
+      "display": "Nothing obvious"
+    },
+    {
+      "code": "1",
+      "display": "Low"
+    },
+    {
+      "code": "2",
+      "display": "Moderate"
+    },
+    {
+      "code": "3",
+      "display": "High"
+    },
+    {
+      "code": "4",
+      "display": "Very high"
+    }
+  ]
+}

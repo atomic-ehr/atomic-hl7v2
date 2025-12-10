@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0237",
+  "id": "v2-0237",
+  "name": "EventQualification",
+  "title": "eventQualification",
+  "description": "HL7-defined code system of concepts used to qualify an event related to a product experience.  Used in HL7 Version 2.x messaging in the PEO segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0237",
+  "concepts": [
+    {
+      "code": "I",
+      "display": "Interaction"
+    },
+    {
+      "code": "O",
+      "display": "Overdose"
+    },
+    {
+      "code": "A",
+      "display": "Abuse"
+    },
+    {
+      "code": "M",
+      "display": "Misuse"
+    },
+    {
+      "code": "D",
+      "display": "Dependency"
+    },
+    {
+      "code": "L",
+      "display": "Lack of expect therapeutic effect"
+    },
+    {
+      "code": "W",
+      "display": "Drug withdrawal"
+    },
+    {
+      "code": "B",
+      "display": "Unexpected beneficial effect"
+    }
+  ]
+}

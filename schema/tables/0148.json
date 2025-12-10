@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0148",
+  "id": "v2-0148",
+  "name": "MoneyOrPercentageIndicator",
+  "title": "moneyOrPercentageIndicator",
+  "description": "HL7-defined code system of concepts  which specify whether the amount is currency or a percentage.  Used in HL7 Version 2.x messaging in the MOP segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0148",
+  "concepts": [
+    {
+      "code": "AT",
+      "display": "Currency amount"
+    },
+    {
+      "code": "PC",
+      "display": "Percentage"
+    }
+  ]
+}

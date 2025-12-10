@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0504",
+  "id": "v2-0504",
+  "name": "SequenceCondition",
+  "title": "sequenceCondition",
+  "description": "HL7-defined code system of concepts used to specify the relationship between the start/end of the related service request(s) (from TQ2-3, TQ2-4 or TQ2-5) and the current service request from ORC-2, 3 or 4.  Used in HL7 Version 2.x messaging in the TQ2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0504",
+  "concepts": [
+    {
+      "code": "EE",
+      "display": "End related service request(s), end current service request."
+    },
+    {
+      "code": "ES",
+      "display": "End related service request(s), start current service request."
+    },
+    {
+      "code": "SS",
+      "display": "Start related service request(s), start current service request."
+    },
+    {
+      "code": "SE",
+      "display": "Start related service request(s), end current service request."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0147",
+  "id": "v2-0147",
+  "name": "PolicyType",
+  "title": "policyType",
+  "description": "Code system of concepts which specify the policy type.  Used in HL7 Version 2.x messaging in the PTA segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0147",
+  "concepts": [
+    {
+      "code": "ANC",
+      "display": "Ancillary"
+    },
+    {
+      "code": "2ANC",
+      "display": "Second ancillary"
+    },
+    {
+      "code": "MMD",
+      "display": "Major medical"
+    },
+    {
+      "code": "2MMD",
+      "display": "Second major medical"
+    },
+    {
+      "code": "3MMD",
+      "display": "Third major medical"
+    }
+  ]
+}

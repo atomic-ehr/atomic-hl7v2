@@ -1,0 +1,66 @@
+{
+  "tableNumber": "0427",
+  "id": "v2-0427",
+  "name": "RiskManagementIncident",
+  "title": "riskManagementIncident",
+  "description": "HL7-defined code system of concepts which specify a type of incident that occurs during a patient’s stay.  Used in HL7 Version 2 messaging in the RMI segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0427",
+  "concepts": [
+    {
+      "code": "B",
+      "display": "Body fluid exposure"
+    },
+    {
+      "code": "C",
+      "display": "Contaminated Substance"
+    },
+    {
+      "code": "D",
+      "display": "Diet Errors"
+    },
+    {
+      "code": "E",
+      "display": "Equipment problem"
+    },
+    {
+      "code": "F",
+      "display": "Patient fell (not from bed)"
+    },
+    {
+      "code": "H",
+      "display": "Patient fell from bed"
+    },
+    {
+      "code": "I",
+      "display": "Infusion error"
+    },
+    {
+      "code": "J",
+      "display": "Foreign object left during surgery"
+    },
+    {
+      "code": "K",
+      "display": "Sterile precaution violated"
+    },
+    {
+      "code": "P",
+      "display": "Procedure error"
+    },
+    {
+      "code": "R",
+      "display": "Pharmaceutical error"
+    },
+    {
+      "code": "S",
+      "display": "Suicide Attempt"
+    },
+    {
+      "code": "T",
+      "display": "Transfusion error"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    }
+  ]
+}

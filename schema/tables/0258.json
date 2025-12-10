@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0258",
+  "id": "v2-0258",
+  "name": "RelationshipModifier",
+  "title": "relationshipModifier",
+  "description": "HL7-defined code system of concepts used in an observation definition to describe the subject of an observation in relation to a patient.  Used in HL7 Version 2.x messaging in the OM1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0258",
+  "concepts": [
+    {
+      "code": "CONTROL",
+      "display": "Control"
+    },
+    {
+      "code": "PATIENT",
+      "display": "Patient"
+    },
+    {
+      "code": "DONOR",
+      "display": "Donor"
+    },
+    {
+      "code": "BPU",
+      "display": "Blood product unit"
+    }
+  ]
+}

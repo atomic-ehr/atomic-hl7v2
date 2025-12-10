@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0501",
+  "id": "v2-0501",
+  "name": "ConsentNonDisclosureReason",
+  "title": "consentNon-disclosureReason",
+  "description": "Code system of concepts used to specify a reason the subject did not receive full disclosure.  Used in the Consent (CON) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0501",
+  "concepts": [
+    {
+      "code": "E",
+      "display": "Emergency"
+    },
+    {
+      "code": "RX",
+      "display": "Rx Private"
+    },
+    {
+      "code": "PR",
+      "display": "Patient Request"
+    }
+  ]
+}

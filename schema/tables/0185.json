@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0185",
+  "id": "v2-0185",
+  "name": "PreferredMethodOfContact",
+  "title": "preferredMethodOfContact",
+  "description": "HL7-defined code system of concepts specifying which of a group of multiple phone numbers is the preferred method of contact for this person.  Used in HL7 Version 2.x messaging in the STF, PRD, and CTD segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0185",
+  "concepts": [
+    {
+      "code": "B",
+      "display": "Beeper Number"
+    },
+    {
+      "code": "C",
+      "display": "Cellular Phone Number"
+    },
+    {
+      "code": "E",
+      "display": "E-Mail Address (for backward compatibility)"
+    },
+    {
+      "code": "F",
+      "display": "FAX Number"
+    },
+    {
+      "code": "H",
+      "display": "Home Phone Number"
+    },
+    {
+      "code": "O",
+      "display": "Office Phone Number"
+    }
+  ]
+}

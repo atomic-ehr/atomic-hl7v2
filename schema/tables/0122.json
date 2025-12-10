@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0122",
+  "id": "v2-0122",
+  "name": "ChargeType",
+  "title": "chargeType",
+  "description": "HL7-defined code system of concepts which specify someone or something other than the patient to be billed for a service.  Used in HL7 Version 2.x messaging in the BLG segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0122",
+  "concepts": [
+    {
+      "code": "CH",
+      "display": "Charge"
+    },
+    {
+      "code": "CO",
+      "display": "Contract"
+    },
+    {
+      "code": "CR",
+      "display": "Credit"
+    },
+    {
+      "code": "DP",
+      "display": "Department"
+    },
+    {
+      "code": "GR",
+      "display": "Grant"
+    },
+    {
+      "code": "NC",
+      "display": "No Charge"
+    },
+    {
+      "code": "PC",
+      "display": "Professional"
+    },
+    {
+      "code": "RS",
+      "display": "Research"
+    }
+  ]
+}

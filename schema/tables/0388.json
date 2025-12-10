@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0388",
+  "id": "v2-0388",
+  "name": "ProcessingType",
+  "title": "processingType",
+  "description": "HL7-defined code system of concepts identifying the processing type that applies to the test code.  If this attribute is omitted, then regular production is the default.  Used in HL7 Version 2.x messaging in the Test Code Configuration (TCC) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0388",
+  "concepts": [
+    {
+      "code": "P",
+      "display": "Regular Production"
+    },
+    {
+      "code": "E",
+      "display": "Evaluation"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0422",
+  "id": "v2-0422",
+  "name": "TriageType",
+  "title": "triageType",
+  "description": "HL7-defined code system of concepts which specify a patient’s prioritization within the context of a transmitted abstract. Used in HL7 Version 2 messaging in the ABS segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0422",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Non-acute"
+    },
+    {
+      "code": "2",
+      "display": "Acute"
+    },
+    {
+      "code": "3",
+      "display": "Urgent"
+    },
+    {
+      "code": "4",
+      "display": "Severe"
+    },
+    {
+      "code": "5",
+      "display": "Dead on Arrival (DOA)"
+    },
+    {
+      "code": "99",
+      "display": "Other"
+    }
+  ]
+}

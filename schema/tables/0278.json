@@ -1,0 +1,115 @@
+{
+  "tableNumber": "0278",
+  "id": "v2-0278",
+  "name": "FillerStatus",
+  "title": "fillerStatus",
+  "description": "Code system of concepts used to describe an appointment status from the perspective of the entity assigned to fulfill the appointment.  Used in HL7 Version 2.x messaging in the SCH segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0278",
+  "concepts": [
+    {
+      "code": "BLOCKED",
+      "display": "Blocked",
+      "definition": "The indicated time slot(s) is(are) blocked."
+    },
+    {
+      "code": "BOOKED",
+      "display": "Booked",
+      "definition": "The indicated appointment is booked"
+    },
+    {
+      "code": "CANCELLED",
+      "display": "Cancelled",
+      "definition": "The indicated appointment was stopped from occurring (cancelled prior to starting)"
+    },
+    {
+      "code": "COMPLETE",
+      "display": "Complete",
+      "definition": "The indicated appointment has completed normally (was not discontinued, canceled, or deleted)"
+    },
+    {
+      "code": "DELETED",
+      "display": "Deleted",
+      "definition": "The indicated appointment was deleted from the filler application"
+    },
+    {
+      "code": "OVERBOOK",
+      "display": "Overbook",
+      "definition": "The appointment has been confirmed; however it is confirmed in an overbooked state"
+    },
+    {
+      "code": "PENDING",
+      "display": "Pending",
+      "definition": "Appointment has not yet been confirmed"
+    },
+    {
+      "code": "STARTED",
+      "display": "Started",
+      "definition": "The indicated appointment has begun and is currently in progress"
+    },
+    {
+      "code": "WAITLIST",
+      "display": "Waitlist",
+      "definition": "Appointment has been placed on a waiting list for a paricular slot, or set of slots"
+    },
+    {
+      "code": "Pending",
+      "display": "Pending",
+      "definition": "Appointment has not yet been confirmed"
+    },
+    {
+      "code": "Waitlist",
+      "display": "Waitlist",
+      "definition": "Appointment has been placed on a waiting list for a particular slot, or set of slots"
+    },
+    {
+      "code": "Booked",
+      "display": "Booked",
+      "definition": "The indicated appointment is booked"
+    },
+    {
+      "code": "Started",
+      "display": "Started",
+      "definition": "The indicated appointment has begun and is currently in progress"
+    },
+    {
+      "code": "Complete",
+      "display": "Complete",
+      "definition": "The indicated appointment has completed normally (was not discontinued, canceled, or deleted)"
+    },
+    {
+      "code": "Cancelled",
+      "display": "Cancelled",
+      "definition": "The indicated appointment was stopped from occurring (canceled prior to starting)"
+    },
+    {
+      "code": "DC",
+      "display": "Discontinued",
+      "definition": "The indicated appointment was discontinued (DC’ed while in progress, discontinued parent appointment, or discontinued child appointment)"
+    },
+    {
+      "code": "Discontinued",
+      "display": "Discontinued",
+      "definition": "The indicated appointment was discontinued (DC’ed while in progress, discontinued parent appointment, or discontinued child appointment)"
+    },
+    {
+      "code": "Deleted",
+      "display": "Deleted",
+      "definition": "The indicated appointment was deleted from the filler application"
+    },
+    {
+      "code": "Blocked",
+      "display": "Blocked",
+      "definition": "The indicated time slot(s) is(are) blocked"
+    },
+    {
+      "code": "Overbook",
+      "display": "Overbook",
+      "definition": "The appointment has been confirmed; however it is confirmed in an overbooked state"
+    },
+    {
+      "code": "Noshow",
+      "display": "Noshow",
+      "definition": "The patient did not show up for the appointment"
+    }
+  ]
+}

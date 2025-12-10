@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0372",
+  "id": "v2-0372",
+  "name": "SpecimenComponent",
+  "title": "specimenComponent",
+  "description": "Code system of concepts that identify the specimen component, e.g., supernatant, sediment, etc.  Used in the Interaction Specimen Container Detail (SAC) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0372",
+  "concepts": [
+    {
+      "code": "SUP",
+      "display": "Supernatant"
+    },
+    {
+      "code": "SED",
+      "display": "Sediment"
+    },
+    {
+      "code": "BLD",
+      "display": "Whole blood, homogeneous"
+    },
+    {
+      "code": "BSEP",
+      "display": "Whole blood, separated"
+    },
+    {
+      "code": "PRP",
+      "display": "Platelet rich plasma"
+    },
+    {
+      "code": "PPP",
+      "display": "Platelet poor plasma"
+    },
+    {
+      "code": "SER",
+      "display": "Serum, NOS (not otherwise specified)"
+    },
+    {
+      "code": "PLAS",
+      "display": "Plasma, NOS (not otherwise specified)"
+    }
+  ]
+}

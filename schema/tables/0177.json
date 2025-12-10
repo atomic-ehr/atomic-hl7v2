@@ -1,0 +1,50 @@
+{
+  "tableNumber": "0177",
+  "id": "v2-0177",
+  "name": "ConfidentialityCodes",
+  "title": "confidentialityCodes",
+  "description": "Code system of concepts specifying the degree to which special confidentiality protection should be applied to the observation.  Used in HL7 Version 2.x messaging in the OM1 and ORC segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0177",
+  "concepts": [
+    {
+      "code": "V",
+      "display": "Very restricted"
+    },
+    {
+      "code": "R",
+      "display": "Restricted"
+    },
+    {
+      "code": "U",
+      "display": "Usual control"
+    },
+    {
+      "code": "EMP",
+      "display": "Employee"
+    },
+    {
+      "code": "UWM",
+      "display": "Unwed mother"
+    },
+    {
+      "code": "VIP",
+      "display": "Very important person or celebrity"
+    },
+    {
+      "code": "PSY",
+      "display": "Psychiatric patient"
+    },
+    {
+      "code": "AID",
+      "display": "AIDS patient"
+    },
+    {
+      "code": "HIV",
+      "display": "HIV(+) patient"
+    },
+    {
+      "code": "ETH",
+      "display": "Alcohol/drug treatment patient"
+    }
+  ]
+}

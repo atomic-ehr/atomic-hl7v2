@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0027",
+  "id": "v2-0027",
+  "name": "Priority",
+  "title": "priority",
+  "description": "HL7-defined code system of concepts specifying the allowed priorities for obtaining the specimen.  Used in HL7 Version 2.x messaging in the OM4 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0027",
+  "concepts": [
+    {
+      "code": "S",
+      "display": "Stat (do immediately)"
+    },
+    {
+      "code": "A",
+      "display": "As soon as possible (a priority lower than stat)"
+    },
+    {
+      "code": "R",
+      "display": "Routine"
+    },
+    {
+      "code": "P",
+      "display": "Preoperative (to be done prior to surgery)"
+    },
+    {
+      "code": "T",
+      "display": "Timing critical (do as near as possible to requested time)"
+    }
+  ]
+}

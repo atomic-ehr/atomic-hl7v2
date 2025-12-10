@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0556",
+  "id": "v2-0556",
+  "name": "BenefitGroup",
+  "title": "benefitGroup",
+  "description": "Code system of concepts used to specify the benefit group.  Used in the Invoice (IVC) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0556",
+  "concepts": [
+    {
+      "code": "AMB",
+      "display": "AMBULATORY CARE"
+    },
+    {
+      "code": "DENT",
+      "display": "DENTAL"
+    }
+  ]
+}

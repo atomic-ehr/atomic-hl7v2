@@ -1,0 +1,249 @@
+{
+  "tableNumber": "0119",
+  "id": "v2-0119",
+  "name": "OrderControlCodes",
+  "title": "orderControlCodes",
+  "description": "HL7-defined code system of concepts which are used to determine the function of the order segment.  Depending on the message, the action specified by one of these control codes may refer to an order or an individual service.  Used in Version 2.x messaging of orders in the ORC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0119",
+  "concepts": [
+    {
+      "code": "AF",
+      "display": "Order/service refill request approval",
+      "definition": "AF is a response to RF where the placer authorizing a refill or quantity of refills."
+    },
+    {
+      "code": "CA",
+      "display": "Cancel order/service request"
+    },
+    {
+      "code": "CH",
+      "display": "Child order/service"
+    },
+    {
+      "code": "CN",
+      "display": "Combined result"
+    },
+    {
+      "code": "CP",
+      "display": "Cancel process step"
+    },
+    {
+      "code": "CR",
+      "display": "Canceled as requested"
+    },
+    {
+      "code": "DC",
+      "display": "Discontinue order/service request"
+    },
+    {
+      "code": "DE",
+      "display": "Data errors"
+    },
+    {
+      "code": "DF",
+      "display": "Order/service refill request denied"
+    },
+    {
+      "code": "DR",
+      "display": "Discontinued as requested"
+    },
+    {
+      "code": "FU",
+      "display": "Order/service refilled, unsolicited"
+    },
+    {
+      "code": "HD",
+      "display": "Hold order request"
+    },
+    {
+      "code": "HR",
+      "display": "On hold as requested"
+    },
+    {
+      "code": "LI",
+      "display": "Link order/service to patient care problem or goal"
+    },
+    {
+      "code": "MC",
+      "display": "Miscellaneous Charge - not associated with an order"
+    },
+    {
+      "code": "NA",
+      "display": "Number assigned"
+    },
+    {
+      "code": "NR",
+      "display": "Notification Received",
+      "definition": "Notifies the Filler that the Placer received a cancellation, discontinuance, or other state change notice"
+    },
+    {
+      "code": "NW",
+      "display": "New order/service"
+    },
+    {
+      "code": "OC",
+      "display": "Order/service canceled"
+    },
+    {
+      "code": "OD",
+      "display": "Order/service discontinued"
+    },
+    {
+      "code": "OE",
+      "display": "Order/service released"
+    },
+    {
+      "code": "OF",
+      "display": "Order/service refilled as requested"
+    },
+    {
+      "code": "OH",
+      "display": "Order/service held"
+    },
+    {
+      "code": "OK",
+      "display": "Order/service accepted & OK"
+    },
+    {
+      "code": "OP",
+      "display": "Notification of order for outside dispense"
+    },
+    {
+      "code": "OR",
+      "display": "Released as requested"
+    },
+    {
+      "code": "PA",
+      "display": "Parent order/service"
+    },
+    {
+      "code": "PR",
+      "display": "Previous Results with new order/service"
+    },
+    {
+      "code": "PY",
+      "display": "Notification of replacement order for outside dispense"
+    },
+    {
+      "code": "RA",
+      "display": "Recommendation Accepted",
+      "definition": "Identifies that this previously recommended replacement order has been accepted"
+    },
+    {
+      "code": "RC",
+      "display": "Recommended Change",
+      "definition": "Identifies that this OBR represents a recommended replacement order"
+    },
+    {
+      "code": "RD",
+      "display": "Recommendation Declined",
+      "definition": "Identifies that this previously sent recommended replacement order has been declined"
+    },
+    {
+      "code": "RE",
+      "display": "Observations/Performed Service to follow"
+    },
+    {
+      "code": "RF",
+      "display": "Refill order/service request"
+    },
+    {
+      "code": "RL",
+      "display": "Release previous hold"
+    },
+    {
+      "code": "RO",
+      "display": "Replacement order"
+    },
+    {
+      "code": "RP",
+      "display": "Order/service replace request"
+    },
+    {
+      "code": "RQ",
+      "display": "Replaced as requested"
+    },
+    {
+      "code": "RR",
+      "display": "Request received"
+    },
+    {
+      "code": "RU",
+      "display": "Replaced unsolicited"
+    },
+    {
+      "code": "SC",
+      "display": "Status changed"
+    },
+    {
+      "code": "SN",
+      "display": "Send order/service number"
+    },
+    {
+      "code": "SQ",
+      "display": "Supplemented as requested",
+      "definition": "Supplementation confirmation message indicating that an order was supplemented as requested."
+    },
+    {
+      "code": "SR",
+      "display": "Response to send order/service status request"
+    },
+    {
+      "code": "SS",
+      "display": "Send order/service status request"
+    },
+    {
+      "code": "SU",
+      "display": "Supplement this order",
+      "definition": "Identifies existing orders to be supplemented in Supplementation Recommendation (filler to placer) and Supplementation Request (placer to filler) messages."
+    },
+    {
+      "code": "UA",
+      "display": "Unable to accept order/service"
+    },
+    {
+      "code": "UC",
+      "display": "Unable to cancel"
+    },
+    {
+      "code": "UD",
+      "display": "Unable to discontinue"
+    },
+    {
+      "code": "UF",
+      "display": "Unable to refill"
+    },
+    {
+      "code": "UH",
+      "display": "Unable to put on hold"
+    },
+    {
+      "code": "UM",
+      "display": "Unable to replace"
+    },
+    {
+      "code": "UN",
+      "display": "Unlink order/service from patient care problem or goal"
+    },
+    {
+      "code": "UR",
+      "display": "Unable to release"
+    },
+    {
+      "code": "UX",
+      "display": "Unable to change"
+    },
+    {
+      "code": "XO",
+      "display": "Change order/service request"
+    },
+    {
+      "code": "XR",
+      "display": "Changed as requested"
+    },
+    {
+      "code": "XX",
+      "display": "Order/service changed, unsol."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tableNumber": "0001",
+  "id": "v2-0001",
+  "name": "AdministrativeSex",
+  "title": "administrativeSex",
+  "description": "Code system of concepts specifying a patient's sex for administrative purposes.  Used in HL7 Version 2.x messages in the PID segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0001",
+  "concepts": [
+    {
+      "code": "F",
+      "display": "Female"
+    },
+    {
+      "code": "M",
+      "display": "Male"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    },
+    {
+      "code": "A",
+      "display": "Ambiguous"
+    },
+    {
+      "code": "N",
+      "display": "Not applicable"
+    },
+    {
+      "code": "X",
+      "display": "Non-Binary",
+      "definition": "Intended for situations where the gender or sex representation of the individual is not strictly male, or strictly female, and is driven by jurisdictional requirements, personal needs, or legal boundaries."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0137",
+  "id": "v2-0137",
+  "name": "MailClaimParty",
+  "title": "mailClaimParty",
+  "description": "Code system of concepts which specify a party to which a claim should be mailed when claims are sent by mail.  Used in HL7 Version 2.x messaging in the IN2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0137",
+  "concepts": [
+    {
+      "code": "E",
+      "display": "Employer"
+    },
+    {
+      "code": "G",
+      "display": "Guarantor"
+    },
+    {
+      "code": "I",
+      "display": "Insurance company"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "P",
+      "display": "Patient"
+    }
+  ]
+}

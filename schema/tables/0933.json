@@ -1,0 +1,62 @@
+{
+  "tableNumber": "0933",
+  "id": "v2-0933",
+  "name": "IntendedProcedureType",
+  "title": "intendedProcedureType",
+  "description": "HL7-defined code system of concepts specifying the type of intended procedure.  Used in HL7 Version 2.x messaging in the DON segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0933",
+  "concepts": [
+    {
+      "code": "WBL",
+      "display": "Whole Blood"
+    },
+    {
+      "code": "2RC",
+      "display": "Double Red Cells"
+    },
+    {
+      "code": "PLS",
+      "display": "Plasma"
+    },
+    {
+      "code": "PLT",
+      "display": "Platelets"
+    },
+    {
+      "code": "PNP",
+      "display": "Platelets and Plasma"
+    },
+    {
+      "code": "PNR",
+      "display": "Platelets and Red Cells"
+    },
+    {
+      "code": "PPR",
+      "display": "Platelets, Plasma, and Red Cells"
+    },
+    {
+      "code": "GRN",
+      "display": "Granulocytes"
+    },
+    {
+      "code": "HEM",
+      "display": "Hemachromatosis"
+    },
+    {
+      "code": "HPC",
+      "display": "Hematopoietic Progenitor Cells"
+    },
+    {
+      "code": "LYM",
+      "display": "Lymphocytes"
+    },
+    {
+      "code": "THA",
+      "display": "Therapeutic Apheresis"
+    },
+    {
+      "code": "THW",
+      "display": "Therapeutic Whole Blood"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0651",
+  "id": "v2-0651",
+  "name": "LaborCalculationType",
+  "title": "laborCalculationType",
+  "description": "Code system of concepts that identify the method used to calculate employee labor and measure employee productivity. Used in HL7 Version 2.x messaging in the SCP segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0651",
+  "concepts": [
+    {
+      "code": "TME",
+      "display": "Time"
+    },
+    {
+      "code": "CST",
+      "display": "Cost"
+    }
+  ]
+}

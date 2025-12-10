@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0466",
+  "id": "v2-0466",
+  "name": "AmbulatoryPaymentClassification",
+  "title": "ambulatoryPaymentClassification",
+  "description": "Code system of concepts specifying the derived Ambulatory Payment Classification (APC) code.  Used in HL7 Version 2.x messaging in the GP2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0466",
+  "concepts": [
+    {
+      "code": "031",
+      "display": "Dental procedures"
+    },
+    {
+      "code": "163",
+      "display": "Excision/biopsy"
+    },
+    {
+      "code": "181",
+      "display": "Level 1 skin repair."
+    },
+    {
+      "code": "...",
+      "display": "No suggested values defined"
+    }
+  ]
+}

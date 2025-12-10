@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0204",
+  "id": "v2-0204",
+  "name": "OrganizationalNameType",
+  "title": "organizationalNameType",
+  "description": "Code system of concepts used to specify the type of name for an organization i.e., legal name, display name.   Used in HL7 Version 2.x messaging in the XON and PD1 segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0204",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Alias name"
+    },
+    {
+      "code": "L",
+      "display": "Legal name"
+    },
+    {
+      "code": "D",
+      "display": "Display name"
+    },
+    {
+      "code": "SL",
+      "display": "Stock exchange listing name"
+    }
+  ]
+}

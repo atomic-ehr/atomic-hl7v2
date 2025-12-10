@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0500",
+  "id": "v2-0500",
+  "name": "ConsentDisclosureLevel",
+  "title": "consentDisclosureLevel",
+  "description": "HL7-defined code system of concepts specifying how much information was disclosed to the subject as part of the informed consent process.  Used in HL7 Version 2.x messaging in the CON segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0500",
+  "concepts": [
+    {
+      "code": "F",
+      "display": "Full Disclosure"
+    },
+    {
+      "code": "P",
+      "display": "Partial Disclosure"
+    },
+    {
+      "code": "N",
+      "display": "No Disclosure"
+    }
+  ]
+}

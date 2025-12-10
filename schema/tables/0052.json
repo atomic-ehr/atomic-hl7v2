@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0052",
+  "id": "v2-0052",
+  "name": "DiagnosisType",
+  "title": "diagnosisType",
+  "description": "Code system of concepts specifying a type of diagnosis being sent.  Used in HL7 Version 2.x messaging in the DG1 segment..",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0052",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Admitting"
+    },
+    {
+      "code": "W",
+      "display": "Working"
+    },
+    {
+      "code": "F",
+      "display": "Final"
+    }
+  ]
+}

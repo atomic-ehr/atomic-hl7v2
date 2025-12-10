@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0834",
+  "id": "v2-0834",
+  "name": "MimeTypes",
+  "title": "mimeTypes",
+  "description": "Code system of concepts specifying the general type of data.  Used in HL7 Version 2.x messaging in the RP and ED datatypes.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0834",
+  "concepts": [
+    {
+      "code": "application",
+      "display": "Application data"
+    },
+    {
+      "code": "audio",
+      "display": "Audio data"
+    },
+    {
+      "code": "image",
+      "display": "Image data"
+    },
+    {
+      "code": "model",
+      "display": "Model data"
+    },
+    {
+      "code": "text",
+      "display": "Text data"
+    },
+    {
+      "code": "video",
+      "display": "Video data"
+    },
+    {
+      "code": "multipart",
+      "display": "MIME multipart package"
+    }
+  ]
+}

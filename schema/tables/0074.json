@@ -1,0 +1,190 @@
+{
+  "tableNumber": "0074",
+  "id": "v2-0074",
+  "name": "DiagnosticServiceSectionId",
+  "title": "diagnosticServiceSectionId",
+  "description": "HL7-defined code system of concepts which specify a section of a diagnostic service where the observation may be performed.  Used in HL7 Version 2.x messaging in the OBR and OM4 segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0074",
+  "concepts": [
+    {
+      "code": "AU",
+      "display": "Audiology"
+    },
+    {
+      "code": "BG",
+      "display": "Blood Gases"
+    },
+    {
+      "code": "BLB",
+      "display": "Blood Bank"
+    },
+    {
+      "code": "CG",
+      "display": "Cytogenetics"
+    },
+    {
+      "code": "CUS",
+      "display": "Cardiac Ultrasound"
+    },
+    {
+      "code": "CTH",
+      "display": "Cardiac Catheterization"
+    },
+    {
+      "code": "CT",
+      "display": "CAT Scan"
+    },
+    {
+      "code": "CH",
+      "display": "Chemistry"
+    },
+    {
+      "code": "CP",
+      "display": "Cytopathology"
+    },
+    {
+      "code": "EC",
+      "display": "Electrocardiac (e.g., EKG,  EEC, Holter)"
+    },
+    {
+      "code": "EN",
+      "display": "Electroneuro (EEG, EMG,EP,PSG)"
+    },
+    {
+      "code": "GE",
+      "display": "Genetics"
+    },
+    {
+      "code": "HM",
+      "display": "Hematology"
+    },
+    {
+      "code": "IMG",
+      "display": "Diagnostic Imaging"
+    },
+    {
+      "code": "ICU",
+      "display": "Bedside ICU Monitoring"
+    },
+    {
+      "code": "IMM",
+      "display": "Immunology"
+    },
+    {
+      "code": "LAB",
+      "display": "Laboratory"
+    },
+    {
+      "code": "MB",
+      "display": "Microbiology"
+    },
+    {
+      "code": "MCB",
+      "display": "Mycobacteriology"
+    },
+    {
+      "code": "MYC",
+      "display": "Mycology"
+    },
+    {
+      "code": "NMS",
+      "display": "Nuclear Medicine Scan"
+    },
+    {
+      "code": "NMR",
+      "display": "Nuclear Magnetic Resonance"
+    },
+    {
+      "code": "NRS",
+      "display": "Nursing Service Measures"
+    },
+    {
+      "code": "OUS",
+      "display": "OB Ultrasound"
+    },
+    {
+      "code": "OT",
+      "display": "Occupational Therapy"
+    },
+    {
+      "code": "OTH",
+      "display": "Other"
+    },
+    {
+      "code": "OSL",
+      "display": "Outside Lab"
+    },
+    {
+      "code": "PAR",
+      "display": "Parasitology"
+    },
+    {
+      "code": "PHR",
+      "display": "Pharmacy"
+    },
+    {
+      "code": "PAT",
+      "display": "Pathology (gross & histopath, not surgical)"
+    },
+    {
+      "code": "PT",
+      "display": "Physical Therapy"
+    },
+    {
+      "code": "PHY",
+      "display": "Physician (Hx. Dx, admission note, etc.)"
+    },
+    {
+      "code": "PF",
+      "display": "Pulmonary Function"
+    },
+    {
+      "code": "RAD",
+      "display": "Radiology"
+    },
+    {
+      "code": "RX",
+      "display": "Radiograph"
+    },
+    {
+      "code": "RUS",
+      "display": "Radiology Ultrasound"
+    },
+    {
+      "code": "RC",
+      "display": "Respiratory Care (therapy)"
+    },
+    {
+      "code": "RT",
+      "display": "Radiation Therapy"
+    },
+    {
+      "code": "SR",
+      "display": "Serology"
+    },
+    {
+      "code": "SP",
+      "display": "Surgical Pathology"
+    },
+    {
+      "code": "TX",
+      "display": "Toxicology"
+    },
+    {
+      "code": "VUS",
+      "display": "Vascular Ultrasound"
+    },
+    {
+      "code": "VR",
+      "display": "Virology"
+    },
+    {
+      "code": "URN",
+      "display": "Urinalysis"
+    },
+    {
+      "code": "XRC",
+      "display": "Cineradiograph"
+    }
+  ]
+}

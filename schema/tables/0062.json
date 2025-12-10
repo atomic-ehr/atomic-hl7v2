@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0062",
+  "id": "v2-0062",
+  "name": "EventReason",
+  "title": "eventReason",
+  "description": "Code system of concepts which specify the reason for an event.  Used in HL7 Version 2.x messaging in the EVN segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0062",
+  "concepts": [
+    {
+      "code": "01",
+      "display": "Patient request"
+    },
+    {
+      "code": "02",
+      "display": "Physician/health practitioner order"
+    },
+    {
+      "code": "03",
+      "display": "Census management"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

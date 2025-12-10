@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0065",
+  "id": "v2-0065",
+  "name": "SpecimenAction",
+  "title": "specimenAction",
+  "description": "HL7-defined code system of concepts which specify actions to be taken with respect to the specimens that accompany or precede an order.  The purpose of these are to further qualify (when appropriate) the general action indicated by the order control code (code system xxxx).  Used in HL7 Version 2.x messaging in the OBR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0065",
+  "concepts": [
+    {
+      "code": "C",
+      "display": "Cancel order for battery or tests named"
+    },
+    {
+      "code": "A",
+      "display": "Add ordered tests to the existing specimen"
+    },
+    {
+      "code": "G",
+      "display": "Generated order; reflex order"
+    },
+    {
+      "code": "L",
+      "display": "Lab to obtain specimen from patient"
+    },
+    {
+      "code": "O",
+      "display": "Specimen obtained by service other than Lab"
+    },
+    {
+      "code": "P",
+      "display": "Pending specimen; Order sent prior to delivery"
+    },
+    {
+      "code": "R",
+      "display": "Revised order"
+    },
+    {
+      "code": "S",
+      "display": "Schedule the tests specified below"
+    }
+  ]
+}

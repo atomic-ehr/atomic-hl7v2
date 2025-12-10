@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0158",
+  "id": "v2-0158",
+  "name": "DateTimeSelectionQualifier",
+  "title": "date-timeSelectionQualifier",
+  "description": "HL7-defined code system of conceptss that allow the specification of certain types of values within the date/time range. Used in HL7 Vesion 2 messaging in the QRF segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0158",
+  "concepts": [
+    {
+      "code": "1ST",
+      "display": "First value within range"
+    },
+    {
+      "code": "ALL",
+      "display": "All values within the range"
+    },
+    {
+      "code": "LST",
+      "display": "Last value within the range"
+    },
+    {
+      "code": "REV",
+      "display": "All values within the range returned in reverse chronological order (This is the default if not otherwise specified.)"
+    }
+  ]
+}

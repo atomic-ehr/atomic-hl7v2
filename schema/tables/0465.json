@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0465",
+  "id": "v2-0465",
+  "name": "NameAddressRepresentation",
+  "title": "name-addressRepresentation",
+  "description": "HL7-defined code system of concepts specifying an indication of the representation provided by the data item.  Used in HL7 Version 2.x messaging in the PPN, XAD, XCN and XON segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0465",
+  "concepts": [
+    {
+      "code": "I",
+      "display": "Ideographic (i.e., Kanji)"
+    },
+    {
+      "code": "A",
+      "display": "Alphabetic (i.e., Default or some single-byte)"
+    },
+    {
+      "code": "P",
+      "display": "Phonetic (i.e., ASCII, Katakana, Hiragana, etc.)"
+    }
+  ]
+}

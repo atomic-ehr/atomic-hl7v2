@@ -1,0 +1,39 @@
+{
+  "tableNumber": "0156",
+  "id": "v2-0156",
+  "name": "WhichDateTimeQualifier",
+  "title": "whichDate-timeQualifier",
+  "description": "HL7-defined code system of concepts that specify a type of date referred to in query specifications.   Used in HL7 Version 2 messaging in the QRF segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0156",
+  "concepts": [
+    {
+      "code": "CAN",
+      "display": "Cancellation date/time"
+    },
+    {
+      "code": "ANY",
+      "display": "Any date/time within a range"
+    },
+    {
+      "code": "COL",
+      "display": "Collection date/time, equivalent to film or sample collection date/time"
+    },
+    {
+      "code": "ORD",
+      "display": "Order date/time"
+    },
+    {
+      "code": "RCT",
+      "display": "Specimen receipt date/time, receipt of specimen in filling ancillary (Lab)"
+    },
+    {
+      "code": "REP",
+      "display": "Report date/time, report date/time at filling ancillary (i.e., Lab)",
+      "definition": "Report date/time, report date/time at filing ancillary (i.e., Lab)"
+    },
+    {
+      "code": "SCHED",
+      "display": "Schedule date/time"
+    }
+  ]
+}

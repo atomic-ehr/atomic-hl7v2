@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0268",
+  "id": "v2-0268",
+  "name": "Override",
+  "title": "override",
+  "description": "Code system of concepts used to define whether a Charge Description Master description may be overridden or if it must be overridden.  Used in HL7 Version 2.x messaging in the CDM and PRC segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0268",
+  "concepts": [
+    {
+      "code": "X",
+      "display": "Override not allowed"
+    },
+    {
+      "code": "A",
+      "display": "Override allowed"
+    },
+    {
+      "code": "R",
+      "display": "Override required"
+    }
+  ]
+}

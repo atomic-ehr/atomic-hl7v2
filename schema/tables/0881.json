@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0881",
+  "id": "v2-0881",
+  "name": "RoleExecutingPhysician",
+  "title": "roleExecutingPhysician",
+  "description": "Code system of concepts specifying the account role of the physician, for example, only billing for the professional part, the technical part or both.  Used in HL7 Version 2.x messaging in the PSL segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0881",
+  "concepts": [
+    {
+      "code": "T",
+      "display": "Technical Part"
+    },
+    {
+      "code": "P",
+      "display": "Professional Part"
+    },
+    {
+      "code": "B",
+      "display": "Both"
+    }
+  ]
+}

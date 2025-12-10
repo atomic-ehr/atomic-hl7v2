@@ -1,0 +1,58 @@
+{
+  "tableNumber": "0324",
+  "id": "v2-0324",
+  "name": "LocationCharacteristic",
+  "title": "locationCharacteristic",
+  "description": "Code system of concepts specifying an identifier code to show which characteristic is being communicated with the segment.  Used in HL7 Version 2.x messaging in the Location Characteristic (LCH) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0324",
+  "concepts": [
+    {
+      "code": "SMK",
+      "display": "Smoking"
+    },
+    {
+      "code": "LIC",
+      "display": "Licensed"
+    },
+    {
+      "code": "IMP",
+      "display": "Implant: can be used for radiation implant patients"
+    },
+    {
+      "code": "SHA",
+      "display": "Shadow: a temporary holding location that does not physically exist"
+    },
+    {
+      "code": "INF",
+      "display": "Infectious disease: this location can be used for isolation"
+    },
+    {
+      "code": "PRL",
+      "display": "Privacy level: indicating the level of private versus non-private room"
+    },
+    {
+      "code": "LCR",
+      "display": "Level of care"
+    },
+    {
+      "code": "OVR",
+      "display": "Overflow"
+    },
+    {
+      "code": "STF",
+      "display": "Bed is staffed"
+    },
+    {
+      "code": "SET",
+      "display": "Bed is set up"
+    },
+    {
+      "code": "GEN",
+      "display": "Gender of patient(s)"
+    },
+    {
+      "code": "TEA",
+      "display": "Teaching location"
+    }
+  ]
+}

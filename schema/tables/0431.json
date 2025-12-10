@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0431",
+  "id": "v2-0431",
+  "name": "RecreationalDrugType",
+  "title": "recreationalDrugType",
+  "description": "Code system of concepts specifying what recreational drugs the patient uses.  Used in HL7 Version 2.x messaging in the PV2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0431",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Alcohol"
+    },
+    {
+      "code": "K",
+      "display": "Kava"
+    },
+    {
+      "code": "M",
+      "display": "Marijuana"
+    },
+    {
+      "code": "T",
+      "display": "Tobacco - smoked"
+    },
+    {
+      "code": "C",
+      "display": "Tobacco - chewed"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

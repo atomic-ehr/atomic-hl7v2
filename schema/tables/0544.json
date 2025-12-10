@@ -1,0 +1,98 @@
+{
+  "tableNumber": "0544",
+  "id": "v2-0544",
+  "name": "ContainerCondition",
+  "title": "containerCondition",
+  "description": "HL7-defined  code system of concepts used to specify at each receipt the status of the container in which the specimen is shipped in chain of custody cases where specimens are moved from lab to lab.  If the container is compromised in any way (seal broken, container cracked or leaking, etc.), then this status needs to be recorded for legal reasons.  Used in the Specimen (SPM), Shipment (SHP) and Shipment Package (PAC) segments in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0544",
+  "concepts": [
+    {
+      "code": "...",
+      "display": "No suggested values"
+    },
+    {
+      "code": "XC37",
+      "display": "Not Body temperature"
+    },
+    {
+      "code": "XAMB",
+      "display": "Not Ambient temperature"
+    },
+    {
+      "code": "XCAMB",
+      "display": "Not Critical ambient temperature"
+    },
+    {
+      "code": "XREF",
+      "display": "Not Refrigerated temperature"
+    },
+    {
+      "code": "XCREF",
+      "display": "Not Critical refrigerated temperature"
+    },
+    {
+      "code": "XFRZ",
+      "display": "Not Frozen temperature"
+    },
+    {
+      "code": "XCFRZ",
+      "display": "Not Critical frozen temperature"
+    },
+    {
+      "code": "XDFRZ",
+      "display": "Not Deep frozen"
+    },
+    {
+      "code": "XUFRZ",
+      "display": "Not Ultra frozen"
+    },
+    {
+      "code": "XNTR",
+      "display": "Not Liquid nitrogen"
+    },
+    {
+      "code": "XPRTL",
+      "display": "Not Protected from light"
+    },
+    {
+      "code": "XCATM",
+      "display": "Exposed to Air"
+    },
+    {
+      "code": "XDRY",
+      "display": "Not Dry"
+    },
+    {
+      "code": "XPSO",
+      "display": "Exposed to shock"
+    },
+    {
+      "code": "XPSA",
+      "display": "Shaken"
+    },
+    {
+      "code": "XUPR",
+      "display": "Not Upright"
+    },
+    {
+      "code": "XMTLF",
+      "display": "Metal Exposed"
+    },
+    {
+      "code": "SB",
+      "display": "Seal Broken"
+    },
+    {
+      "code": "CC",
+      "display": "Container Cracked"
+    },
+    {
+      "code": "CT",
+      "display": "Container Torn"
+    },
+    {
+      "code": "CL",
+      "display": "Container Leaking"
+    }
+  ]
+}

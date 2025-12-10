@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0557",
+  "id": "v2-0557",
+  "name": "PayeeType",
+  "title": "payeeType",
+  "description": "Code system of concepts used to specify the type of payee (e.g., organization, person).  Used in the Payee Information (PYE) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0557",
+  "concepts": [
+    {
+      "code": "ORG",
+      "display": "Payee Organization"
+    },
+    {
+      "code": "PERS",
+      "display": "Person"
+    },
+    {
+      "code": "PPER",
+      "display": "Pay Person"
+    },
+    {
+      "code": "EMPL",
+      "display": "Employer"
+    }
+  ]
+}

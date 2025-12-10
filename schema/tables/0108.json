@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0108",
+  "id": "v2-0108",
+  "name": "QueryResultsLevel",
+  "title": "queryResultsLevel",
+  "description": "HL7-defined code system of concepts which are used to control level of detail in query results.   Used in HL7 Version 2 messaging in the URD segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0108",
+  "concepts": [
+    {
+      "code": "O",
+      "display": "Order plus order status"
+    },
+    {
+      "code": "R",
+      "display": "Results without bulk text"
+    },
+    {
+      "code": "S",
+      "display": "Status only"
+    },
+    {
+      "code": "T",
+      "display": "Full results"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0126",
+  "id": "v2-0126",
+  "name": "QuantityLimitedRequest",
+  "title": "quantityLimitedRequest",
+  "description": "HL7-defined code system of concepts which specify the maximum length of a query response that can be accepted by a requesting system, and are expressed as units of mesaure of query response objects.  Used in HL7 Version 2.x messaging in the RCP segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0126",
+  "concepts": [
+    {
+      "code": "CH",
+      "display": "Characters"
+    },
+    {
+      "code": "LI",
+      "display": "Lines"
+    },
+    {
+      "code": "PG",
+      "display": "Pages"
+    },
+    {
+      "code": "RD",
+      "display": "Records"
+    },
+    {
+      "code": "ZO",
+      "display": "Locally defined"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "tableNumber": "0357",
+  "id": "v2-0357",
+  "name": "MessageErrorCondition",
+  "title": "messageErrorCondition",
+  "description": "HL7-defined code system of concepts specifying the HL7 (communications) error code.  Used in the ERR segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0357",
+  "concepts": [
+    {
+      "code": "0",
+      "display": "Message accepted"
+    },
+    {
+      "code": "100",
+      "display": "Segment sequence error"
+    },
+    {
+      "code": "101",
+      "display": "Required field missing"
+    },
+    {
+      "code": "102",
+      "display": "Data type error"
+    },
+    {
+      "code": "103",
+      "display": "Table value not found"
+    },
+    {
+      "code": "104",
+      "display": "Value too long"
+    },
+    {
+      "code": "198",
+      "display": "Non-Conformant Cardinality",
+      "definition": "An error has been encountered related to HL7 message content. Message is not -conformant with the applicable specification’s (base standard, conformance profile or implementation profile)  cardinality."
+    },
+    {
+      "code": "199",
+      "display": "Other HL7 Error",
+      "definition": "Any other error with the HL7 syntax that is not captured in any of the other error codes in this set."
+    },
+    {
+      "code": "200",
+      "display": "Unsupported message type"
+    },
+    {
+      "code": "201",
+      "display": "Unsupported event code"
+    },
+    {
+      "code": "202",
+      "display": "Unsupported processing id"
+    },
+    {
+      "code": "203",
+      "display": "Unsupported version id"
+    },
+    {
+      "code": "204",
+      "display": "Unknown key identifier",
+      "definition": "Retained for backwards compatibility only: This situation should be reported in ERR-5 (Application Error Code) using code 101 (Unknown Key Identifier) from code system HL70533."
+    },
+    {
+      "code": "205",
+      "display": "Duplicate key identifier",
+      "definition": "Retained for backwards compatibility only: This situation should be reported in ERR-5 (Application Error Code) using code 102 (Duplicate Key Identifier) from code system HL70533."
+    },
+    {
+      "code": "206",
+      "display": "Application record locked",
+      "definition": "Retained for backwards compatibility only: This situation should be reported in ERR-5 (Application Error Code) using code 103 (Application record locked) from code system HL70533."
+    },
+    {
+      "code": "207",
+      "display": "Application error",
+      "definition": "An application level error has occurred and the detail for that error is identified in ERR-5."
+    }
+  ]
+}

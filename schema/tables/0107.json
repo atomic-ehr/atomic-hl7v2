@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0107",
+  "id": "v2-0107",
+  "name": "DeferredResponseType",
+  "title": "deferredResponseType",
+  "description": "HL7-defined code system of concepts which specify which type of deferred query resonse is desired, as specified with the query parameters.   Used in HL7 Version 2 messaging in the QRD segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0107",
+  "concepts": [
+    {
+      "code": "B",
+      "display": "Before the Date/Time specified"
+    },
+    {
+      "code": "L",
+      "display": "Later than the Date/Time specified"
+    }
+  ]
+}

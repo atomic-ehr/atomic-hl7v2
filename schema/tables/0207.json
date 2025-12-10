@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0207",
+  "id": "v2-0207",
+  "name": "ProcessingMode",
+  "title": "processingMode",
+  "description": "HL7-defined code system of concepts that indicate an archival process or an initial load process.  Used in HL7 Version 2.x messaging in the PT datatype.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0207",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Archive"
+    },
+    {
+      "code": "R",
+      "display": "Restore from archive"
+    },
+    {
+      "code": "I",
+      "display": "Initial load"
+    },
+    {
+      "code": "T",
+      "display": "Current processing, transmitted at intervals (scheduled or on demand)"
+    },
+    {
+      "code": "Not present",
+      "display": "Not present (the default, meaning current  processing)"
+    },
+    {
+      "code": "not present",
+      "display": "Not present (the default, meaning current  processing)"
+    }
+  ]
+}

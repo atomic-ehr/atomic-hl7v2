@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0269",
+  "id": "v2-0269",
+  "name": "ChargeOnIndicator",
+  "title": "chargeOnIndicator",
+  "description": "Code system of concepts used to define the event upon which a charge should be generated.  Used in HL7 Version 2.x messaging in the PRC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0269",
+  "concepts": [
+    {
+      "code": "O",
+      "display": "Charge on Order"
+    },
+    {
+      "code": "R",
+      "display": "Charge on Result"
+    }
+  ]
+}

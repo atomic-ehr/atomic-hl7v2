@@ -1,0 +1,99 @@
+{
+  "tableNumber": "0365",
+  "id": "v2-0365",
+  "name": "EquipmentState",
+  "title": "equipmentState",
+  "description": "HL7-defined code system of concepts that identify the status the equipment was in at the time the transaction was initiated.  Used in HL7 Version 2.x messaging in the EQU segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0365",
+  "concepts": [
+    {
+      "code": "IN",
+      "display": "Initializing",
+      "definition": "Software is ready, hardware not yet"
+    },
+    {
+      "code": "CO",
+      "display": "Configuring"
+    },
+    {
+      "code": "PU",
+      "display": "Powered Up",
+      "definition": "Software and hardware are not yet ready"
+    },
+    {
+      "code": "RS",
+      "display": "Ready to start",
+      "definition": "Software and hardware are ready, but user action is required to start"
+    },
+    {
+      "code": "ID",
+      "display": "Idle",
+      "definition": "Successfully started, new orders can be accepted, currently no orders are present"
+    },
+    {
+      "code": "OP",
+      "display": "Normal Operation",
+      "definition": "Successfully started, new orders can be accepted"
+    },
+    {
+      "code": "CL",
+      "display": "Clearing"
+    },
+    {
+      "code": "PA",
+      "display": "Pausing"
+    },
+    {
+      "code": "PD",
+      "display": "Paused",
+      "definition": "User action is required to continue"
+    },
+    {
+      "code": "ES",
+      "display": "E-stopped",
+      "definition": "Error, remaining orders can be finished, new orders cannot be accepted"
+    },
+    {
+      "code": "…",
+      "display": "(null) No state change"
+    },
+    {
+      "code": "TS",
+      "display": "Transport stopped"
+    },
+    {
+      "code": "SS",
+      "display": "Sampling stopped"
+    },
+    {
+      "code": "SD",
+      "display": "Shutting down"
+    },
+    {
+      "code": "DI",
+      "display": "Diagnose"
+    },
+    {
+      "code": "...",
+      "display": "(null) No state change"
+    },
+    {
+      "code": "MA",
+      "display": "Maintenance"
+    },
+    {
+      "code": "FL",
+      "display": "Failure",
+      "definition": "Failure, remaining orders are aborted, new orders cannot be accepted"
+    },
+    {
+      "code": "UNK",
+      "display": "Unknown"
+    },
+    {
+      "code": "LT",
+      "display": "Limited test menu",
+      "definition": "For diagnostic instruments: some test types are unavailable"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0225",
+  "id": "v2-0225",
+  "name": "EscortRequired",
+  "title": "escortRequired",
+  "description": "HL7-defined code system of concepts defining whether patient transportation preparations are in place.  Used in HL7 Version 2.x messaging in the OBR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0225",
+  "concepts": [
+    {
+      "code": "R",
+      "display": "Required"
+    },
+    {
+      "code": "N",
+      "display": "Not Required"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

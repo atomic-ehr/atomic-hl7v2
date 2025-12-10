@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0253",
+  "id": "v2-0253",
+  "name": "IndirectExposureMechanism",
+  "title": "indirectExposureMechanism",
+  "description": "HL7-defined code system of concepts used to identify the mechanism of product transmission when the product has not been directly applied to the patient.  Used in HL7 Version 2.x messaging in the PCR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0253",
+  "concepts": [
+    {
+      "code": "B",
+      "display": "Breast milk"
+    },
+    {
+      "code": "P",
+      "display": "Transplacental"
+    },
+    {
+      "code": "F",
+      "display": "Father"
+    },
+    {
+      "code": "X",
+      "display": "Blood product"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    }
+  ]
+}

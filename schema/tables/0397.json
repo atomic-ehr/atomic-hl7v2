@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0397",
+  "id": "v2-0397",
+  "name": "Sequencing",
+  "title": "sequencing",
+  "description": "HL7-defined code system of concepts identifying how the field or parameter will be sorted and, if sorted, whether the sort will be case sensitive (the default) or not.  Used in HL7 Version 2.x messaging in the Sort Order (SRT) value.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0397",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Ascending"
+    },
+    {
+      "code": "AN",
+      "display": "Ascending, case insensitive"
+    },
+    {
+      "code": "D",
+      "display": "Descending"
+    },
+    {
+      "code": "DN",
+      "display": "Descending, case insensitive"
+    },
+    {
+      "code": "N",
+      "display": "None"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "tableNumber": "0121",
+  "id": "v2-0121",
+  "name": "ResponseFlag",
+  "title": "responseFlag",
+  "description": "HL7-defined code system of concepts allowing the placer (sending) application to determine the amount of information to be returned from the filler.  Used in HL7 Version 2.x messaging in the ORC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0121",
+  "concepts": [
+    {
+      "code": "E",
+      "display": "Report exceptions only"
+    },
+    {
+      "code": "R",
+      "display": "Same as E, also Replacement and Parent-Child",
+      "definition": "Report exceptions, replacement and parent-child"
+    },
+    {
+      "code": "D",
+      "display": "Same as R, also other associated segments",
+      "definition": "Report exceptions, replacement, parent-child and other associated segments"
+    },
+    {
+      "code": "F",
+      "display": "Same as D, plus confirmations explicitly",
+      "definition": "Report exceptions, replacement, parent-child, other associated segments and explicit confirmations"
+    },
+    {
+      "code": "N",
+      "display": "Only the MSA segment is returned"
+    }
+  ]
+}

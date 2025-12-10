@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0034",
+  "id": "v2-0034",
+  "name": "SiteAdministered",
+  "title": "siteAdministered",
+  "description": "HL7-defined code system of concepts used for medication administration sites.   Used only in HL7 releases 2.1 and 2.2; as of 2.3 the model for this was changed and the field using this code system was removed from the Standard.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0034",
+  "concepts": [
+    {
+      "code": "B",
+      "display": "Buttock"
+    },
+    {
+      "code": "L",
+      "display": "Left arm"
+    }
+  ]
+}

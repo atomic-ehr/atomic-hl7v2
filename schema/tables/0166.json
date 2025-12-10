@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0166",
+  "id": "v2-0166",
+  "name": "RxComponentType",
+  "title": "rxComponentType",
+  "description": "HL7-defined code system of concepts  which specify the RX component type.  Used in HL7 Version 2.x messaging in the RXC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0166",
+  "concepts": [
+    {
+      "code": "B",
+      "display": "Base"
+    },
+    {
+      "code": "A",
+      "display": "Additive"
+    }
+  ]
+}

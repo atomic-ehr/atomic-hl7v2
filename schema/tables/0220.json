@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0220",
+  "id": "v2-0220",
+  "name": "LivingArrangement",
+  "title": "livingArrangement",
+  "description": "Code system of concepts characterizing the situation that patient-associated parties live in at their residential address.  Used in HL7 Version 2.x messaging in the NK1 and PD1 segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0220",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Alone"
+    },
+    {
+      "code": "F",
+      "display": "Family"
+    },
+    {
+      "code": "I",
+      "display": "Institution"
+    },
+    {
+      "code": "R",
+      "display": "Relative"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    },
+    {
+      "code": "S",
+      "display": "Spouse Only"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0548",
+  "id": "v2-0548",
+  "name": "SignatorysRelationshipToSubject",
+  "title": "signatorysRelationshipToSubject",
+  "description": "Code system of concepts specifying the relationship of the consenter to the subject.  Used in HL7 Version 2 messaging in the CON segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0548",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Self"
+    },
+    {
+      "code": "2",
+      "display": "Parent"
+    },
+    {
+      "code": "3",
+      "display": "Next of Kin"
+    },
+    {
+      "code": "4",
+      "display": "Durable Power of Attorney in Healthcare Affairs"
+    },
+    {
+      "code": "5",
+      "display": "Conservator"
+    },
+    {
+      "code": "6",
+      "display": "Emergent Practitioner (practitioner judging case as emergency requiring care without a consent)"
+    },
+    {
+      "code": "7",
+      "display": "Non-Emergent Practitioner (i.e. medical ethics committee)"
+    }
+  ]
+}

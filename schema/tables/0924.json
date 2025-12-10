@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0924",
+  "id": "v2-0924",
+  "name": "CumulativeDosageLimitUom",
+  "title": "cumulativeDosageLimitUom",
+  "description": "Code system of concepts specifying the unit of measure (UoM) for the cumulative dosage limit.  Used in HL7 Version 2.x messaging in the CDO segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0924",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Annual"
+    },
+    {
+      "code": "D",
+      "display": "Per Day"
+    },
+    {
+      "code": "M",
+      "display": "Per Month"
+    },
+    {
+      "code": "O",
+      "display": "Duration of the Order"
+    },
+    {
+      "code": "PL",
+      "display": "Patients Lifetime"
+    },
+    {
+      "code": "WK",
+      "display": "Per Week"
+    }
+  ]
+}

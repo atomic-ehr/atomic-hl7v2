@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0418",
+  "id": "v2-0418",
+  "name": "ProcedurePriority",
+  "title": "procedurePriority",
+  "description": "HL7-defined code system of concepts which specify the significance or priority of a procedure code.  Used in HL7 Version 2 messaging in the PR1 segment.  Note that this is a post-coordinated code system, where additional ordinal priorities are created by incrementing the numericinteger code value as needed.  Only the first 2 ordinal values are predefined in the code system.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0418",
+  "concepts": [
+    {
+      "code": "0",
+      "display": "the admitting procedure"
+    },
+    {
+      "code": "1",
+      "display": "the primary procedure"
+    },
+    {
+      "code": "2",
+      "display": "for ranked secondary procedures"
+    },
+    {
+      "code": "…",
+      "display": "…"
+    },
+    {
+      "code": "...",
+      "display": "No suggested values defined"
+    }
+  ]
+}

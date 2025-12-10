@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0283",
+  "id": "v2-0283",
+  "name": "ReferralStatus",
+  "title": "referralStatus",
+  "description": "Code system of concepts used to define the state of a  referral.  Used in HL7 Version 2.x messaging in the RF1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0283",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Accepted"
+    },
+    {
+      "code": "P",
+      "display": "Pending"
+    },
+    {
+      "code": "R",
+      "display": "Rejected"
+    },
+    {
+      "code": "E",
+      "display": "Expired"
+    }
+  ]
+}

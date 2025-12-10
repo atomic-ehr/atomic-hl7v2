@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0311",
+  "id": "v2-0311",
+  "name": "JobStatus",
+  "title": "jobStatus",
+  "description": "HL7-defined code system of concepts specifying the next of kin/associated party's job status.  Used in HL7 Version 2.x messaging in the Next of Kin/Associated Parties (NK1) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0311",
+  "concepts": [
+    {
+      "code": "P",
+      "display": "Permanent"
+    },
+    {
+      "code": "T",
+      "display": "Temporary"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

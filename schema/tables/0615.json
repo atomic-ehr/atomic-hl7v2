@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0615",
+  "id": "v2-0615",
+  "name": "UserAuthenticationCredentialType",
+  "title": "userAuthenticationCredentialType",
+  "description": "HL7-defined code system of concepts specifying a type of user authentication credential.  Used in HL7 Version 2.x messaging in the UAC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0615",
+  "concepts": [
+    {
+      "code": "KERB",
+      "display": "Kerberos Service Ticket"
+    },
+    {
+      "code": "SAML",
+      "display": "Authenticated User Identity Assertion"
+    }
+  ]
+}

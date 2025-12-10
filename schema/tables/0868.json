@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0868",
+  "id": "v2-0868",
+  "name": "TelecommunicationExpirationReason",
+  "title": "telecommunicationExpirationReason",
+  "description": "Code system of concepts specifying the reason this contact number/email was marked as \"ended\".  Used in HL7 Version 2.x messaging in the XTN segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0868",
+  "concepts": [
+    {
+      "code": "M",
+      "display": "Moved"
+    },
+    {
+      "code": "E",
+      "display": "Added in error"
+    },
+    {
+      "code": "R",
+      "display": "On request"
+    },
+    {
+      "code": "C",
+      "display": "Corrected"
+    },
+    {
+      "code": "N",
+      "display": "No longer in service"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0130",
+  "id": "v2-0130",
+  "name": "VisitUserCodes",
+  "title": "visitUserCodes",
+  "description": "Code system of concepts which specify categories of a patient's visit with respect to an individual institution's needs, and is expected to be different on a site-specific basis.  Used in HL7 Version 2.x messaging in the PV2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0130",
+  "concepts": [
+    {
+      "code": "TE",
+      "display": "Teaching"
+    },
+    {
+      "code": "HO",
+      "display": "Home"
+    },
+    {
+      "code": "MO",
+      "display": "Mobile Unit"
+    },
+    {
+      "code": "PH",
+      "display": "Phone"
+    }
+  ]
+}

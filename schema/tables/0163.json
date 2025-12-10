@@ -1,0 +1,234 @@
+{
+  "tableNumber": "0163",
+  "id": "v2-0163",
+  "name": "BodySite",
+  "title": "bodySite",
+  "description": "HL7-defined code system of concepts that specify a body site from which a specimen is obtained.  Used in HL7 Version 2.x messaging in the OBX and CH7 segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0163",
+  "concepts": [
+    {
+      "code": "LNB",
+      "display": "Nebulized"
+    },
+    {
+      "code": "LV",
+      "display": "Left Vastus Lateralis"
+    },
+    {
+      "code": "BE",
+      "display": "Bilateral Ears"
+    },
+    {
+      "code": "OU",
+      "display": "Bilateral Eyes"
+    },
+    {
+      "code": "BN",
+      "display": "Bilateral Nares"
+    },
+    {
+      "code": "BU",
+      "display": "Buttock"
+    },
+    {
+      "code": "CT",
+      "display": "Chest Tube"
+    },
+    {
+      "code": "LA",
+      "display": "Left Arm"
+    },
+    {
+      "code": "LAC",
+      "display": "Left Anterior Chest"
+    },
+    {
+      "code": "LACF",
+      "display": "Left Antecubital Fossa"
+    },
+    {
+      "code": "LD",
+      "display": "Left Deltoid"
+    },
+    {
+      "code": "LE",
+      "display": "Left Ear"
+    },
+    {
+      "code": "LEJ",
+      "display": "Left External Jugular"
+    },
+    {
+      "code": "OS",
+      "display": "Left Eye"
+    },
+    {
+      "code": "LF",
+      "display": "Left Foot"
+    },
+    {
+      "code": "LG",
+      "display": "Left Gluteus Medius"
+    },
+    {
+      "code": "LH",
+      "display": "Left Hand"
+    },
+    {
+      "code": "LIJ",
+      "display": "Left Internal Jugular"
+    },
+    {
+      "code": "LLAQ",
+      "display": "Left Lower Abd Quadrant"
+    },
+    {
+      "code": "LLFA",
+      "display": "Left Lower Forearm"
+    },
+    {
+      "code": "LMFA",
+      "display": "Left Mid Forearm"
+    },
+    {
+      "code": "LN",
+      "display": "Left Naris"
+    },
+    {
+      "code": "LPC",
+      "display": "Left Posterior Chest"
+    },
+    {
+      "code": "LSC",
+      "display": "Left Subclavian"
+    },
+    {
+      "code": "LT",
+      "display": "Left Thigh"
+    },
+    {
+      "code": "LUA",
+      "display": "Left Upper Arm"
+    },
+    {
+      "code": "LUAQ",
+      "display": "Left Upper Abd Quadrant"
+    },
+    {
+      "code": "LUFA",
+      "display": "Left Upper Forearm"
+    },
+    {
+      "code": "LVG",
+      "display": "Left Ventragluteal"
+    },
+    {
+      "code": "LVL",
+      "display": "Left Vastus Lateralis"
+    },
+    {
+      "code": "NB",
+      "display": "Nebulized"
+    },
+    {
+      "code": "PA",
+      "display": "Perianal"
+    },
+    {
+      "code": "PERIN",
+      "display": "Perineal"
+    },
+    {
+      "code": "RA",
+      "display": "Right Arm"
+    },
+    {
+      "code": "RAC",
+      "display": "Right Anterior Chest"
+    },
+    {
+      "code": "RACF",
+      "display": "Right Antecubital Fossa"
+    },
+    {
+      "code": "RD",
+      "display": "Right Deltoid"
+    },
+    {
+      "code": "RE",
+      "display": "Right Ear"
+    },
+    {
+      "code": "REJ",
+      "display": "Right External Jugular"
+    },
+    {
+      "code": "OD",
+      "display": "Right Eye"
+    },
+    {
+      "code": "RF",
+      "display": "Right Foot"
+    },
+    {
+      "code": "RG",
+      "display": "Right Gluteus Medius"
+    },
+    {
+      "code": "RH",
+      "display": "Right Hand"
+    },
+    {
+      "code": "RIJ",
+      "display": "Right Internal Jugular"
+    },
+    {
+      "code": "RLAQ",
+      "display": "Rt Lower Abd Quadrant"
+    },
+    {
+      "code": "RLFA",
+      "display": "Right Lower Forearm"
+    },
+    {
+      "code": "RMFA",
+      "display": "Right Mid Forearm"
+    },
+    {
+      "code": "RN",
+      "display": "Right Naris"
+    },
+    {
+      "code": "RPC",
+      "display": "Right Posterior Chest"
+    },
+    {
+      "code": "RSC",
+      "display": "Right Subclavian"
+    },
+    {
+      "code": "RT",
+      "display": "Right Thigh"
+    },
+    {
+      "code": "RUA",
+      "display": "Right Upper Arm"
+    },
+    {
+      "code": "RUAQ",
+      "display": "Right Upper Abd Quadrant"
+    },
+    {
+      "code": "RUFA",
+      "display": "Right Upper Forearm"
+    },
+    {
+      "code": "RVL",
+      "display": "Right Vastus Lateralis"
+    },
+    {
+      "code": "RVG",
+      "display": "Right Ventragluteal"
+    }
+  ]
+}

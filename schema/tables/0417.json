@@ -1,0 +1,62 @@
+{
+  "tableNumber": "0417",
+  "id": "v2-0417",
+  "name": "TissueType",
+  "title": "tissueType",
+  "description": "HL7-defined code system of concepts which specify a type of tissue removed from a patient during a procedure. Used in HL7 Version 2 messaging in the PR1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0417",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Insufficient Tissue"
+    },
+    {
+      "code": "2",
+      "display": "Not abnormal"
+    },
+    {
+      "code": "3",
+      "display": "Abnormal-not categorized"
+    },
+    {
+      "code": "4",
+      "display": "Mechanical abnormal"
+    },
+    {
+      "code": "5",
+      "display": "Growth alteration"
+    },
+    {
+      "code": "6",
+      "display": "Degeneration & necrosis"
+    },
+    {
+      "code": "7",
+      "display": "Non-acute inflammation"
+    },
+    {
+      "code": "8",
+      "display": "Non-malignant neoplasm"
+    },
+    {
+      "code": "9",
+      "display": "Malignant neoplasm"
+    },
+    {
+      "code": "0",
+      "display": "No tissue expected"
+    },
+    {
+      "code": "B",
+      "display": "Basal cell carcinoma"
+    },
+    {
+      "code": "C",
+      "display": "Carcinoma-unspecified type"
+    },
+    {
+      "code": "G",
+      "display": "Additional tissue required"
+    }
+  ]
+}

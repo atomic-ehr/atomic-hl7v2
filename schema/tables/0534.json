@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0534",
+  "id": "v2-0534",
+  "name": "ClergyNotificationType",
+  "title": "clergyNotificationType",
+  "description": "Code system of concepts specifying whether the clergy should be notified.  Used in HL7 Version 2 messaging in the PV2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0534",
+  "concepts": [
+    {
+      "code": "Y",
+      "display": "Yes"
+    },
+    {
+      "code": "N",
+      "display": "No"
+    },
+    {
+      "code": "L",
+      "display": "Last Rites only"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

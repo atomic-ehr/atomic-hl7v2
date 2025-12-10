@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0098",
+  "id": "v2-0098",
+  "name": "TypeOfAgreement",
+  "title": "typeOfAgreement",
+  "description": "Code system of concepts which specify codes to further identify an insurance plan.  Used in HL7 Version 2.x messaging in the IN1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0098",
+  "concepts": [
+    {
+      "code": "S",
+      "display": "Standard"
+    },
+    {
+      "code": "U",
+      "display": "Unified"
+    },
+    {
+      "code": "M",
+      "display": "Maternity"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0558",
+  "id": "v2-0558",
+  "name": "PayeeRelationshipToInvoice",
+  "title": "payeeRelationshipToInvoice",
+  "description": "Code system of concepts used to specify the relationship to the invoice for Person Payee Types.  Used in the Payee Information (PYE) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0558",
+  "concepts": [
+    {
+      "code": "PT",
+      "display": "Patient"
+    },
+    {
+      "code": "FM",
+      "display": "Family Member"
+    },
+    {
+      "code": "SB",
+      "display": "Subscriber"
+    },
+    {
+      "code": "GT",
+      "display": "Guarantor"
+    }
+  ]
+}

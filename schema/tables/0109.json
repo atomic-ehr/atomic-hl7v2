@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0109",
+  "id": "v2-0109",
+  "name": "ReportPriority",
+  "title": "reportPriority",
+  "description": "HL7-defined code system of concepts which specify the priority associated with a report or update run using a query.  Used in HL7 Version 2 messaging in the URD segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0109",
+  "concepts": [
+    {
+      "code": "R",
+      "display": "Routine"
+    },
+    {
+      "code": "S",
+      "display": "Stat"
+    }
+  ]
+}

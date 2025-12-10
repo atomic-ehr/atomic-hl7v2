@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0561",
+  "id": "v2-0561",
+  "name": "ProductServicesClarification",
+  "title": "product-servicesClarification",
+  "description": "Code system of concepts used to specify the Product/Service Code.  Used in the Product/Service Line Item (PSL) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0561",
+  "concepts": [
+    {
+      "code": "DTCTR",
+      "display": "Data Center Number"
+    },
+    {
+      "code": "SEQ",
+      "display": "Sequence Number"
+    },
+    {
+      "code": "DGAPP",
+      "display": "Diagnostic Approval Number"
+    },
+    {
+      "code": "CLCTR",
+      "display": "Claim Center"
+    },
+    {
+      "code": "ENC",
+      "display": "Encounter Number"
+    },
+    {
+      "code": "OOP",
+      "display": "Out of Province Indicator"
+    },
+    {
+      "code": "GFTH",
+      "display": "Good Faith Indicator"
+    }
+  ]
+}

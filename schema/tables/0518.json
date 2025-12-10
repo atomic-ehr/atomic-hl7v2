@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0518",
+  "id": "v2-0518",
+  "name": "OverrideType",
+  "title": "overrideType",
+  "description": "Code system of concepts used to specify what type of override can be used to override the specific error identified.   Used in HL7 Version 2 messaging in the ERR and OVR segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0518",
+  "concepts": [
+    {
+      "code": "EXTN",
+      "display": "Extension Override"
+    },
+    {
+      "code": "INLV",
+      "display": "Interval Override"
+    },
+    {
+      "code": "EQV",
+      "display": "Equivalence Override"
+    }
+  ]
+}

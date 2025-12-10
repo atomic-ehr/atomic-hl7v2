@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0554",
+  "id": "v2-0554",
+  "name": "InvoiceReason",
+  "title": "invoiceReason",
+  "description": "Code system of concepts used to specify the reason for this invoice.  Used in the Invoice (IVC) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0554",
+  "concepts": [
+    {
+      "code": "LATE",
+      "display": "Late Invoice"
+    },
+    {
+      "code": "NORM",
+      "display": "Normal submission"
+    },
+    {
+      "code": "SUB",
+      "display": "Subscriber coverage problem"
+    }
+  ]
+}

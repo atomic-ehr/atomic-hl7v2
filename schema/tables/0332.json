@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0332",
+  "id": "v2-0332",
+  "name": "SourceType",
+  "title": "sourceType",
+  "description": "HL7-defined code system of concepts used to specify the type of facility.   Used in HL7 Version 2.x messaging in the Facility (FAC) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0332",
+  "concepts": [
+    {
+      "code": "I",
+      "display": "Initiate"
+    },
+    {
+      "code": "A",
+      "display": "Accept"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0938",
+  "id": "v2-0938",
+  "name": "CollectionEvent",
+  "title": "collectionEvent",
+  "description": "HL7-defined code system of concepts specifying the limit for the collection event or process step.  Used in HL7 Version 2.x messaging in the OMC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0938",
+  "concepts": [
+    {
+      "code": "ORD",
+      "display": "Placing the order"
+    },
+    {
+      "code": "DRW",
+      "display": "Collecting the specimen"
+    }
+  ]
+}

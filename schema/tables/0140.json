@@ -1,0 +1,54 @@
+{
+  "tableNumber": "0140",
+  "id": "v2-0140",
+  "name": "MilitaryService",
+  "title": "militaryService",
+  "description": "Code system of concepts which specify the military branch.  This field is defined by CMS or other regulatory agencies.  Used in HL7 Version 2.x messaging in the PD1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0140",
+  "concepts": [
+    {
+      "code": "USA",
+      "display": "US Army"
+    },
+    {
+      "code": "USN",
+      "display": "US Navy"
+    },
+    {
+      "code": "USAF",
+      "display": "US Air Force"
+    },
+    {
+      "code": "USMC",
+      "display": "US Marine Corps"
+    },
+    {
+      "code": "USCG",
+      "display": "US Coast Guard"
+    },
+    {
+      "code": "USPHS",
+      "display": "US Public Health Service"
+    },
+    {
+      "code": "NOAA",
+      "display": "National Oceanic and Atmospheric Administration"
+    },
+    {
+      "code": "NATO",
+      "display": "North Atlantic Treaty Organization"
+    },
+    {
+      "code": "AUSA",
+      "display": "Australian Army"
+    },
+    {
+      "code": "AUSN",
+      "display": "Australian Navy"
+    },
+    {
+      "code": "AUSAF",
+      "display": "Australian Air Force"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "tableNumber": "0290",
+  "id": "v2-0290",
+  "name": "MimeBase64EncodingCharacters",
+  "title": "mimeBase64EncodingCharacters",
+  "description": "HL7-defined code system of concepts specifying the characters used in the MIME Base 64 encoding mechanism.  These are for reference only, as they are not carried as explicit code values in any HL7 coded field.  This table was published only in releases 2.3, 2.3.1, and 2.4 of the Standard, and was removed thereafter.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0290",
+  "concepts": [
+    {
+      "code": "0",
+      "display": "A"
+    },
+    {
+      "code": "1",
+      "display": "B"
+    },
+    {
+      "code": "2",
+      "display": "C"
+    },
+    {
+      "code": "3",
+      "display": "D"
+    },
+    {
+      "code": "4",
+      "display": "E"
+    },
+    {
+      "code": "5",
+      "display": "F"
+    },
+    {
+      "code": "6",
+      "display": "G"
+    },
+    {
+      "code": "7",
+      "display": "H"
+    },
+    {
+      "code": "8",
+      "display": "I"
+    },
+    {
+      "code": "9",
+      "display": "J"
+    },
+    {
+      "code": "10",
+      "display": "K"
+    },
+    {
+      "code": "11",
+      "display": "L"
+    },
+    {
+      "code": "12",
+      "display": "M"
+    },
+    {
+      "code": "13",
+      "display": "N"
+    },
+    {
+      "code": "14",
+      "display": "O"
+    },
+    {
+      "code": "15",
+      "display": "P"
+    },
+    {
+      "code": "16",
+      "display": "Q"
+    },
+    {
+      "code": "17",
+      "display": "R"
+    },
+    {
+      "code": "18",
+      "display": "S"
+    },
+    {
+      "code": "19",
+      "display": "T"
+    },
+    {
+      "code": "20",
+      "display": "U"
+    },
+    {
+      "code": "21",
+      "display": "V"
+    },
+    {
+      "code": "22",
+      "display": "W"
+    },
+    {
+      "code": "23",
+      "display": "X"
+    },
+    {
+      "code": "24",
+      "display": "Y"
+    },
+    {
+      "code": "25",
+      "display": "Z"
+    },
+    {
+      "code": "26",
+      "display": "a"
+    },
+    {
+      "code": "27",
+      "display": "b"
+    },
+    {
+      "code": "28",
+      "display": "c"
+    },
+    {
+      "code": "29",
+      "display": "d"
+    },
+    {
+      "code": "30",
+      "display": "e"
+    },
+    {
+      "code": "31",
+      "display": "f"
+    },
+    {
+      "code": "32",
+      "display": "g"
+    },
+    {
+      "code": "33",
+      "display": "h"
+    },
+    {
+      "code": "34",
+      "display": "I"
+    },
+    {
+      "code": "35",
+      "display": "j"
+    },
+    {
+      "code": "36",
+      "display": "k"
+    },
+    {
+      "code": "37",
+      "display": "l"
+    },
+    {
+      "code": "38",
+      "display": "m"
+    },
+    {
+      "code": "39",
+      "display": "n"
+    },
+    {
+      "code": "40",
+      "display": "o"
+    },
+    {
+      "code": "41",
+      "display": "p"
+    },
+    {
+      "code": "42",
+      "display": "q"
+    },
+    {
+      "code": "43",
+      "display": "r"
+    },
+    {
+      "code": "44",
+      "display": "s"
+    },
+    {
+      "code": "45",
+      "display": "t"
+    },
+    {
+      "code": "46",
+      "display": "u"
+    },
+    {
+      "code": "47",
+      "display": "v"
+    },
+    {
+      "code": "48",
+      "display": "w"
+    },
+    {
+      "code": "49",
+      "display": "x"
+    },
+    {
+      "code": "50",
+      "display": "y"
+    },
+    {
+      "code": "51",
+      "display": "z"
+    },
+    {
+      "code": "52",
+      "display": "0"
+    },
+    {
+      "code": "53",
+      "display": "1"
+    },
+    {
+      "code": "54",
+      "display": "2"
+    },
+    {
+      "code": "55",
+      "display": "3"
+    },
+    {
+      "code": "56",
+      "display": "4"
+    },
+    {
+      "code": "57",
+      "display": "5"
+    },
+    {
+      "code": "58",
+      "display": "6"
+    },
+    {
+      "code": "59",
+      "display": "7"
+    },
+    {
+      "code": "60",
+      "display": "8"
+    },
+    {
+      "code": "61",
+      "display": "9"
+    },
+    {
+      "code": "62",
+      "display": "+"
+    },
+    {
+      "code": "63",
+      "display": "/"
+    },
+    {
+      "code": "(pad)",
+      "display": "="
+    }
+  ]
+}

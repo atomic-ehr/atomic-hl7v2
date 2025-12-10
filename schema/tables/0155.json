@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0155",
+  "id": "v2-0155",
+  "name": "AcceptApplicationAcknowledgmentConditions",
+  "title": "accept-applicationAcknowledgmentConditions",
+  "description": "HL7-defined code system of concepts which identify conditions under which accept acknowledgments are required to be returned in response to a message, and required for enhanced acknowledgment mode. Used in HL7 Versions 2 messaging in the MSH segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0155",
+  "concepts": [
+    {
+      "code": "AL",
+      "display": "Always"
+    },
+    {
+      "code": "NE",
+      "display": "Never"
+    },
+    {
+      "code": "ER",
+      "display": "Error/reject conditions only"
+    },
+    {
+      "code": "SU",
+      "display": "Successful completion only"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "tableNumber": "0174",
+  "id": "v2-0174",
+  "name": "NatureOfServiceTestObservation",
+  "title": "natureOfServiceTestObservation",
+  "description": "Code system of concepts specifying an identification of a test battery, an entire functional procedure or study, a single test value (observation), multiple test batteries or functional procedures as an orderable unit (profile), or a single test value (observation) calculated from other independent observations, typically used as an indicator for Master Files.  Used in HL7 Version 2.x messaging in the OM1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0174",
+  "concepts": [
+    {
+      "code": "P",
+      "display": "Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes), usually done at one instrument on one specimen"
+    },
+    {
+      "code": "F",
+      "display": "Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test, creatinine clearance), usually done at different times and/or on different specimens"
+    },
+    {
+      "code": "A",
+      "display": "Atomic service/test/observation (test code or treatment code)"
+    },
+    {
+      "code": "S",
+      "display": "Superset-a set of batteries or procedures ordered under a single code unit but processed as separate batteries (e.g., routines = CBC, UA, electrolytes)<p>This set indicates that the code being described is used to order multiple service/test/observation b",
+      "definition": "Superset—a set of batteries or procedures ordered under a single code unit but processed as separate batteries (e.g., routines = CBC, UA, electrolytes)\r\nThis set indicates that the code being described is used to order multiple service/test/observation batteries.  For example, a client who routinely orders a CBC, a differential, and a thyroxine as an outpatient profile might use a single, special code to order all three test batteries, instead of having to submit three separate order codes."
+    },
+    {
+      "code": "C",
+      "display": "Single observation calculated via a rule or formula from other independent observations (e.g., Alveolar-arterial ratio, cardiac output)"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0389",
+  "id": "v2-0389",
+  "name": "AnalyteRepeatStatus",
+  "title": "analyteRepeatStatus",
+  "description": "HL7-defined code system of concepts identifying the repeat status for the analyte/result (e.g. original, rerun, repeat, reflex).  The following are assumptions regarding the table values:\r\nRepeated without dilution — performed usually to confirm correctness of results (e.g., in case of results flagged as \"Panic\" or mechanical failures).\r\nRepeated with dilution — performed usually in the case the original result exceeded the measurement range (technical limits).\r\nReflex test — this test is performed as the consequence of rules triggered based on other test result(s).  Used in HL7 Version 2.x messaging in the Test Code Detail (TCD) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0389",
+  "concepts": [
+    {
+      "code": "O",
+      "display": "Original, first run"
+    },
+    {
+      "code": "R",
+      "display": "Repeated without dilution"
+    },
+    {
+      "code": "D",
+      "display": "Repeated with dilution"
+    },
+    {
+      "code": "F",
+      "display": "Reflex test"
+    }
+  ]
+}

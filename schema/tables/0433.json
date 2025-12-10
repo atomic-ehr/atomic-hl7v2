@@ -1,0 +1,47 @@
+{
+  "tableNumber": "0433",
+  "id": "v2-0433",
+  "name": "Precaution",
+  "title": "precaution",
+  "description": "Code system of concepts  specifying non-clincal precautions that need to be taken with the patient.  Used in HL7 Version 2.x messaging in the PV2 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0433",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Aggressive"
+    },
+    {
+      "code": "B",
+      "display": "Blind"
+    },
+    {
+      "code": "C",
+      "display": "Confused"
+    },
+    {
+      "code": "D",
+      "display": "Deaf"
+    },
+    {
+      "code": "I",
+      "display": "On IV"
+    },
+    {
+      "code": "N",
+      "display": "Do not resuscitate",
+      "definition": "\"No-code\" (i.e. Do not resuscitate)"
+    },
+    {
+      "code": "P",
+      "display": "Paraplegic"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0653",
+  "id": "v2-0653",
+  "name": "DateFormat",
+  "title": "dateFormat",
+  "description": "Code system of concepts that identify the date format for a decontamination/sterilization instance. Used in HL7 Version 2.x messaging in the SCP segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0653",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "mm/dd/yy"
+    },
+    {
+      "code": "2",
+      "display": "yy.mm.dd"
+    },
+    {
+      "code": "3",
+      "display": "dd/mm/yy"
+    },
+    {
+      "code": "4",
+      "display": "dd.mm.yy"
+    },
+    {
+      "code": "5",
+      "display": "yy/mm/dd"
+    },
+    {
+      "code": "6",
+      "display": "Yymmdd"
+    }
+  ]
+}

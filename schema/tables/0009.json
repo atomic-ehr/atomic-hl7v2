@@ -1,0 +1,74 @@
+{
+  "tableNumber": "0009",
+  "id": "v2-0009",
+  "name": "AmbulatoryStatus",
+  "title": "ambulatoryStatus",
+  "description": "Code system of concepts specifying permanent or transient handicapped conditions of a person.  Used in HL7 Version 2.x messaging in the PV1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0009",
+  "concepts": [
+    {
+      "code": "A0",
+      "display": "No functional limitations"
+    },
+    {
+      "code": "A1",
+      "display": "Ambulates with assistive device"
+    },
+    {
+      "code": "A2",
+      "display": "Wheelchair/stretcher bound"
+    },
+    {
+      "code": "A3",
+      "display": "Comatose; non-responsive"
+    },
+    {
+      "code": "A4",
+      "display": "Disoriented"
+    },
+    {
+      "code": "A5",
+      "display": "Vision impaired"
+    },
+    {
+      "code": "A6",
+      "display": "Hearing impaired"
+    },
+    {
+      "code": "A7",
+      "display": "Speech impaired"
+    },
+    {
+      "code": "A8",
+      "display": "Non-English speaking"
+    },
+    {
+      "code": "A9",
+      "display": "Functional level unknown"
+    },
+    {
+      "code": "B1",
+      "display": "Oxygen therapy"
+    },
+    {
+      "code": "B2",
+      "display": "Special equipment (tubes, IVs, catheters)"
+    },
+    {
+      "code": "B3",
+      "display": "Amputee"
+    },
+    {
+      "code": "B4",
+      "display": "Mastectomy"
+    },
+    {
+      "code": "B5",
+      "display": "Paraplegic"
+    },
+    {
+      "code": "B6",
+      "display": "Pregnant"
+    }
+  ]
+}

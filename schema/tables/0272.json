@@ -1,0 +1,46 @@
+{
+  "tableNumber": "0272",
+  "id": "v2-0272",
+  "name": "DocumentConfidentialityStatus2",
+  "title": "documentConfidentialityStatus2",
+  "description": "HL7-defined code system of concetps used to identify the degree to which special confidentiality protection should be applied to this information.  Used in HL7 Version 2.x messaging in the TXA segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0272",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "ASTM Level 1"
+    },
+    {
+      "code": "2",
+      "display": "ASTM Level 2"
+    },
+    {
+      "code": "3",
+      "display": "ASTM Level 3"
+    },
+    {
+      "code": "RE",
+      "display": "Restricted"
+    },
+    {
+      "code": "UC",
+      "display": "Usual control"
+    },
+    {
+      "code": "VR",
+      "display": "Very restricted"
+    },
+    {
+      "code": "V",
+      "display": "Very restricted"
+    },
+    {
+      "code": "R",
+      "display": "Restricted"
+    },
+    {
+      "code": "U",
+      "display": "Usual control"
+    }
+  ]
+}

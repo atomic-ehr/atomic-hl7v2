@@ -1,0 +1,14 @@
+{
+  "tableNumber": "0793",
+  "id": "v2-0793",
+  "name": "RulingAct",
+  "title": "rulingAct",
+  "description": "Code system of concepts specifying an act containing a rule that the item is legally required to be included in notification reporting.  Used in HL7 Version 2.x messaging in the ITM segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0793",
+  "concepts": [
+    {
+      "code": "SMDA",
+      "display": "Safe Medical Devices Act"
+    }
+  ]
+}

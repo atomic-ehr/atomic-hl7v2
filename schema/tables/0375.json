@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0375",
+  "id": "v2-0375",
+  "name": "ArtificialBlood",
+  "title": "artificialBlood",
+  "description": "Code system of concepts that identify the artificial blood identifier associated with the specimen.  Used in the Interaction Specimen Container Detail (SAC) segment in HL7 Version 2.x messaging.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0375",
+  "concepts": [
+    {
+      "code": "SFHB",
+      "display": "Stromal free hemoglobin preparations"
+    },
+    {
+      "code": "FLUR",
+      "display": "Fluorocarbons"
+    }
+  ]
+}

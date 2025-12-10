@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0241",
+  "id": "v2-0241",
+  "name": "PatientOutcome",
+  "title": "patientOutcome",
+  "description": "HL7-defined code system of concepts used to describe the overall state of a patient as a result of patient care.  Used in HL7 Version 2.x messaging in the PEO segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0241",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "Died"
+    },
+    {
+      "code": "R",
+      "display": "Recovering"
+    },
+    {
+      "code": "N",
+      "display": "Not recovering/unchanged"
+    },
+    {
+      "code": "W",
+      "display": "Worsening"
+    },
+    {
+      "code": "S",
+      "display": "Sequelae"
+    },
+    {
+      "code": "F",
+      "display": "Fully recovered"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0918",
+  "id": "v2-0918",
+  "name": "PcaType",
+  "title": "pcaType",
+  "description": "HL7-defined code system of concepts specifying the type of PCA.  Used in HL7 Version 2.x messaging in the RXV segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0918",
+  "concepts": [
+    {
+      "code": "C",
+      "display": "Continuous"
+    },
+    {
+      "code": "P",
+      "display": "PCA Only"
+    },
+    {
+      "code": "PC",
+      "display": "PCA + Continuous"
+    }
+  ]
+}

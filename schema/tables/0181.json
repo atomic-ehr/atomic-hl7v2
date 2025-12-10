@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0181",
+  "id": "v2-0181",
+  "name": "MfnRecordLevelErrorReturn",
+  "title": "mfnRecord-levelErrorReturn",
+  "description": "Code system of concepts specifying the status of the requested update.  Site-defined table, specific to each master file being updated via this transaction.  Used in HL7 Version 2.x messaging in the MFA segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0181",
+  "concepts": [
+    {
+      "code": "S",
+      "display": "Successful posting of the record defined by the MFE segment"
+    },
+    {
+      "code": "U",
+      "display": "Unsuccessful posting of the record defined by the MFE segment"
+    }
+  ]
+}

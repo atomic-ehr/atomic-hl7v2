@@ -1,0 +1,50 @@
+{
+  "tableNumber": "0483",
+  "id": "v2-0483",
+  "name": "AuthorizationMode",
+  "title": "authorizationMode",
+  "description": "HL7-defined code system of concepts of forms of authorization a recorder may receive from the responsible practitioner to create or change an order.  Used in HL7 Version 2.x messaging in the ORC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0483",
+  "concepts": [
+    {
+      "code": "EL",
+      "display": "Electronic"
+    },
+    {
+      "code": "EM",
+      "display": "E-mail"
+    },
+    {
+      "code": "FX",
+      "display": "Fax"
+    },
+    {
+      "code": "IP",
+      "display": "In Person"
+    },
+    {
+      "code": "MA",
+      "display": "Mail"
+    },
+    {
+      "code": "PA",
+      "display": "Paper"
+    },
+    {
+      "code": "PH",
+      "display": "Phone"
+    },
+    {
+      "code": "RE",
+      "display": "Reflexive (Automated system)"
+    },
+    {
+      "code": "VC",
+      "display": "Video-conference"
+    },
+    {
+      "code": "VO",
+      "display": "Voice"
+    }
+  ]
+}

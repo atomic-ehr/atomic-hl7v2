@@ -1,0 +1,34 @@
+{
+  "tableNumber": "0404",
+  "id": "v2-0404",
+  "name": "LanguageProficiency",
+  "title": "languageProficiency",
+  "description": "HL7-defined code system of concepts which specify a level of knowledge that a Staff Member possesses with respect to their language ability.  Used in HL7 Version 2 messaging in the LAN segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0404",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Excellent"
+    },
+    {
+      "code": "2",
+      "display": "Good"
+    },
+    {
+      "code": "3",
+      "display": "Fair"
+    },
+    {
+      "code": "4",
+      "display": "Poor"
+    },
+    {
+      "code": "5",
+      "display": "Some (level unknown)"
+    },
+    {
+      "code": "6",
+      "display": "None"
+    }
+  ]
+}

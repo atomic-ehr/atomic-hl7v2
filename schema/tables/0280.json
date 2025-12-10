@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0280",
+  "id": "v2-0280",
+  "name": "ReferralPriority",
+  "title": "referralPriority",
+  "description": "Code system of concepts used to designate the urgency of a  referral.  Used in HL7 Version 2.x messaging in the RF1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0280",
+  "concepts": [
+    {
+      "code": "S",
+      "display": "STAT"
+    },
+    {
+      "code": "A",
+      "display": "ASAP"
+    },
+    {
+      "code": "R",
+      "display": "Routine"
+    }
+  ]
+}

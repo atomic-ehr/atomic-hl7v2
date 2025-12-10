@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0457",
+  "id": "v2-0457",
+  "name": "OverallClaimDisposition",
+  "title": "overallClaimDisposition",
+  "description": "Code system of concepts specifying the final status of the claim.  Used in HL7 Version 2.x messaging in the GP1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0457",
+  "concepts": [
+    {
+      "code": "0",
+      "display": "No edits present on claim"
+    },
+    {
+      "code": "1",
+      "display": "Only edits present are for line item denial or rejection"
+    },
+    {
+      "code": "2",
+      "display": "Multiple-day claim with one or more days denied or rejected"
+    },
+    {
+      "code": "3",
+      "display": "Claim denied, rejected, suspended or returned to provider with only post payment edits"
+    },
+    {
+      "code": "4",
+      "display": "Claim denied, rejected, suspended or returned to provider with only pre payment edits"
+    }
+  ]
+}

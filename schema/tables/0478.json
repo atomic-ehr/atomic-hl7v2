@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0478",
+  "id": "v2-0478",
+  "name": "FormularyStatus",
+  "title": "formularyStatus",
+  "description": "HL7-defined code system of concepts specifying whether or not the pharmaceutical substance is part of the local formulary.  Used in HL7 Version 2.x messaging in the RXE segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0478",
+  "concepts": [
+    {
+      "code": "Y",
+      "display": "Pharmaceutical substance is in the formulary"
+    },
+    {
+      "code": "N",
+      "display": "Pharmaceutical substance is NOT in the formulary"
+    },
+    {
+      "code": "R",
+      "display": "Pharmaceutical substance is in the formulary, but restrictions apply"
+    },
+    {
+      "code": "G",
+      "display": "Pharmaceutical substance is in the formulary, but guidelines apply"
+    }
+  ]
+}

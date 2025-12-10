@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0282",
+  "id": "v2-0282",
+  "name": "ReferralDisposition",
+  "title": "referralDisposition",
+  "description": "Code system of concepts used to identify the expected response from the healthcare professional receiving a referral.  Used in HL7 Version 2.x messaging in the RF1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0282",
+  "concepts": [
+    {
+      "code": "WR",
+      "display": "Send Written Report"
+    },
+    {
+      "code": "RP",
+      "display": "Return Patient After Evaluation"
+    },
+    {
+      "code": "AM",
+      "display": "Assume Management"
+    },
+    {
+      "code": "SO",
+      "display": "Second Opinion"
+    }
+  ]
+}

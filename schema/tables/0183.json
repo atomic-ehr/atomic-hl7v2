@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0183",
+  "id": "v2-0183",
+  "name": "ActiveInactive",
+  "title": "active-inactive",
+  "description": "HL7-defined code system of concepts specifying whether a person is currently a valid staff member.  Used in HL7 Version 2.x messaging in the STF segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0183",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Active Staff"
+    },
+    {
+      "code": "I",
+      "display": "Inactive Staff"
+    }
+  ]
+}

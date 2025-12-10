@@ -1,0 +1,19 @@
+{
+  "tableNumber": "0326",
+  "id": "v2-0326",
+  "name": "VisitIndicator",
+  "title": "visitIndicator",
+  "description": "Code system of concepts specifying the level on which data are being sent.  It is the indicator used to send data at two levels, visit and account.  HL7 recommends sending an \"A\" or no value when the data in the message are at the account level or \"V\" to indicate that the data sent in the message are at the visit level.  Used in HL7 Version 2.x messaging in the Patient Visit (PV1) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0326",
+  "concepts": [
+    {
+      "code": "A",
+      "display": "Account level",
+      "definition": "Account level (default)"
+    },
+    {
+      "code": "V",
+      "display": "Visit level"
+    }
+  ]
+}

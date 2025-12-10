@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0005",
+  "id": "v2-0005",
+  "name": "PHRaceAndEthnicityCDC",
+  "title": "PH_RaceAndEthnicity_CDC",
+  "description": "Code system of concepts specifying the patient's race.  Used in HL7 Version 2.x messages in the PID segment.\r\n\r\nThis code system includes codes used decades ago are are maintained here for historical purposes such as searching in past history records. These codes were formally deprecated in V2.9 and retired in THO in 2021. Please reference http://build.fhir.org/ig/HL7/UTG/CodeSystem-CDCREC for the current CDC Race and Ethnicity code system.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0005",
+  "concepts": [
+    {
+      "code": "B",
+      "display": "Black"
+    },
+    {
+      "code": "C",
+      "display": "Caucasian"
+    },
+    {
+      "code": "H",
+      "display": "Hispanic"
+    },
+    {
+      "code": "R",
+      "display": "Oriental"
+    },
+    {
+      "code": "...",
+      "display": "see chapter 3"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "tableNumber": "0236",
+  "id": "v2-0236",
+  "name": "EventReportedTo",
+  "title": "eventReportedTo",
+  "description": "HL7-defined code system of concepts used to identify the type of entity to which the even has been reported.  Used in HL7 Version 2.x messaging in the PES segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0236",
+  "concepts": [
+    {
+      "code": "M",
+      "display": "Manufacturer"
+    },
+    {
+      "code": "L",
+      "display": "Local facility/user facility"
+    },
+    {
+      "code": "R",
+      "display": "Regulatory agency"
+    },
+    {
+      "code": "D",
+      "display": "Distributor"
+    }
+  ]
+}

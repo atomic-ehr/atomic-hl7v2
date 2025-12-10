@@ -1,0 +1,38 @@
+{
+  "tableNumber": "0871",
+  "id": "v2-0871",
+  "name": "SupplyRisk",
+  "title": "supplyRisk",
+  "description": "Code system of concepts specifying any known or suspected hazard associated with this material item.  Used in HL7 Version 2.x messaging in the ITM segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0871",
+  "concepts": [
+    {
+      "code": "COR",
+      "display": "Corrosive"
+    },
+    {
+      "code": "FLA",
+      "display": "Flammable"
+    },
+    {
+      "code": "EXP",
+      "display": "Explosive"
+    },
+    {
+      "code": "INJ",
+      "display": "Injury Hazard"
+    },
+    {
+      "code": "TOX",
+      "display": "Toxic"
+    },
+    {
+      "code": "RAD",
+      "display": "Radioactive"
+    },
+    {
+      "code": "UNK",
+      "display": "Unknown"
+    }
+  ]
+}

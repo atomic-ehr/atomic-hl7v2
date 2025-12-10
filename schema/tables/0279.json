@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0279",
+  "id": "v2-0279",
+  "name": "AllowSubstitution",
+  "title": "allowSubstitution",
+  "description": "Code system of concepts used to indicate whether the appointment resource may be substituted for another by the entity assigned to fulfill the appointment.  Used in HL7 Version 2.x messaging in the AIS and AIG segments.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0279",
+  "concepts": [
+    {
+      "code": "CONFIRM",
+      "display": "Contact the Placer Contact Person prior to making any substitutions of this resource"
+    },
+    {
+      "code": "NO",
+      "display": "Substitution of this resource is not allowed"
+    },
+    {
+      "code": "NOTIFY",
+      "display": "Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made"
+    },
+    {
+      "code": "YES",
+      "display": "Substitution of this resource is allowed"
+    },
+    {
+      "code": "No",
+      "display": "Substitution of this resource is not allowed"
+    },
+    {
+      "code": "Confirm",
+      "display": "Contact the Placer Contact Person prior to making any substitutions of this resource"
+    },
+    {
+      "code": "Notify",
+      "display": "Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made"
+    },
+    {
+      "code": "Yes",
+      "display": "Substitution of this resource is allowed"
+    }
+  ]
+}

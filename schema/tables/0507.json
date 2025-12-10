@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0507",
+  "id": "v2-0507",
+  "name": "ObservationResultHandling",
+  "title": "observationResultHandling",
+  "description": "Code system of concepts regarding the handling of a result.  For example, an order may specify that the result (e.g., an x-ray film) should be given to the patient for return to the requestor.   Used in HL7 Version 2.x messaging in the OBR segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0507",
+  "concepts": [
+    {
+      "code": "F",
+      "display": "Film-with-patient"
+    },
+    {
+      "code": "N",
+      "display": "Notify provider when ready"
+    },
+    {
+      "code": "A",
+      "display": "Alert provider when abnormal"
+    },
+    {
+      "code": "CC",
+      "display": "Copies requested"
+    },
+    {
+      "code": "BCC",
+      "display": "Blind copy"
+    }
+  ]
+}

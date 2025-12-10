@@ -1,0 +1,18 @@
+{
+  "tableNumber": "0395",
+  "id": "v2-0395",
+  "name": "ModifyIndicator",
+  "title": "modifyIndicator",
+  "description": "HL7-defined code system of concepts identifying whether the subscription is new or is being modified.  Used in HL7 Version 2.x messaging in the Response Control Parameter (RCP) segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0395",
+  "concepts": [
+    {
+      "code": "N",
+      "display": "New Subscription"
+    },
+    {
+      "code": "M",
+      "display": "Modified Subscription"
+    }
+  ]
+}

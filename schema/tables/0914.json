@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0914",
+  "id": "v2-0914",
+  "name": "RootCause",
+  "title": "rootCause",
+  "description": "Code system of concepts specifying the root cause.  Used in HL7 Version 2.x messaging in the OBX segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0914",
+  "concepts": [
+    {
+      "code": "AP",
+      "display": "Analysis Process"
+    },
+    {
+      "code": "IM",
+      "display": "Information Management"
+    },
+    {
+      "code": "L",
+      "display": "Laboratory"
+    },
+    {
+      "code": "NA",
+      "display": "Not Applicable"
+    },
+    {
+      "code": "PD",
+      "display": "Placer Data"
+    }
+  ]
+}

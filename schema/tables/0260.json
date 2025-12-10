@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0260",
+  "id": "v2-0260",
+  "name": "PatientLocationType",
+  "title": "patientLocationType",
+  "description": "Code system of concepts used to identify the kind of location described in the location definition.  Used in HL7 Version 2.x messaging in the LOC segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0260",
+  "concepts": [
+    {
+      "code": "N",
+      "display": "Nursing Unit"
+    },
+    {
+      "code": "R",
+      "display": "Room"
+    },
+    {
+      "code": "B",
+      "display": "Bed"
+    },
+    {
+      "code": "E",
+      "display": "Exam Room"
+    },
+    {
+      "code": "O",
+      "display": "Operating Room"
+    },
+    {
+      "code": "C",
+      "display": "Clinic"
+    },
+    {
+      "code": "D",
+      "display": "Department"
+    },
+    {
+      "code": "L",
+      "display": "Other Location"
+    }
+  ]
+}

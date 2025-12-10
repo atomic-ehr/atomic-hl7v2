@@ -1,0 +1,42 @@
+{
+  "tableNumber": "0223",
+  "id": "v2-0223",
+  "name": "LivingDependency2",
+  "title": "livingDependency2",
+  "description": "HL7-defined code system of concepts that identify specific living conditions (e.g., spouse dependent on patient, walk-up) that are relevant to an evaluation of the patient’s healthcare needs.  This information can be used for discharge planning.  Examples might include Spouse Dependent, Medical Supervision Required, Small Children Dependent.  Used in Version 2.s messaging in the NK1 segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0223",
+  "concepts": [
+    {
+      "code": "D",
+      "display": "Spouse dependent"
+    },
+    {
+      "code": "S",
+      "display": "Spouse Dependent"
+    },
+    {
+      "code": "M",
+      "display": "Medical Supervision Required"
+    },
+    {
+      "code": "C",
+      "display": "Small Children Dependent"
+    },
+    {
+      "code": "WU",
+      "display": "Walk up"
+    },
+    {
+      "code": "O",
+      "display": "Other"
+    },
+    {
+      "code": "CB",
+      "display": "Common Bath"
+    },
+    {
+      "code": "U",
+      "display": "Unknown"
+    }
+  ]
+}

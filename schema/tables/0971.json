@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0971",
+  "id": "v2-0971",
+  "name": "OnlineVerificationResultErrorCodes",
+  "title": "onlineVerificationResultErrorCodes",
+  "description": "Code values representing a type of error from a failed operation to perform online verification of insurance data.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0971",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Update technically not possible",
+      "definition": "English: update of insurance date on card technically not possible\r\n\r\nGerman: Aktualisierung VSD auf eGK technisch nicht möglich"
+    },
+    {
+      "code": "2",
+      "display": "Invalid Authentification certificate",
+      "definition": "English: authentication certificate is invalid\r\n\r\nGerman: Authentifizierungszertifikat eGK ungültig"
+    },
+    {
+      "code": "3",
+      "display": "Online verification technically not possible",
+      "definition": "English: online verification of authentication certificate is technically not possible\r\n\r\nGerman: Onlineprüfung des Authentifizierungszerti-fikats technisch nicht möglich"
+    },
+    {
+      "code": "4",
+      "display": "Update technically not possible due to offline time exceeded",
+      "definition": "English: update of insurance date is technically not possible due to maximum offline time exceeded\r\n\r\nGerman: Aktualisierung VSD auf eGK technisch nicht möglich weil maximaler Offline-Zeitraum überschritten"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "tableNumber": "0490",
+  "id": "v2-0490",
+  "name": "SpecimenRejectReason",
+  "title": "specimenRejectReason",
+  "description": "HL7-defined code system of reasons a specimen may be rejected for a specified observation/result/analysis.  Used in HL7 Version 2.x messaging in the SPM segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0490",
+  "concepts": [
+    {
+      "code": "EX",
+      "display": "Expired"
+    },
+    {
+      "code": "QS",
+      "display": "Quantity not sufficient"
+    },
+    {
+      "code": "RB",
+      "display": "Broken container"
+    },
+    {
+      "code": "RC",
+      "display": "Clotting"
+    },
+    {
+      "code": "RD",
+      "display": "Missing collection date"
+    },
+    {
+      "code": "RA",
+      "display": "Missing patient ID number"
+    },
+    {
+      "code": "RE",
+      "display": "Missing patient name"
+    },
+    {
+      "code": "RH",
+      "display": "Hemolysis"
+    },
+    {
+      "code": "RI",
+      "display": "Identification problem"
+    },
+    {
+      "code": "RM",
+      "display": "Labeling"
+    },
+    {
+      "code": "RN",
+      "display": "Contamination"
+    },
+    {
+      "code": "RP",
+      "display": "Missing phlebotomist ID"
+    },
+    {
+      "code": "RR",
+      "display": "Improper storage"
+    },
+    {
+      "code": "RS",
+      "display": "Name misspelling"
+    }
+  ]
+}

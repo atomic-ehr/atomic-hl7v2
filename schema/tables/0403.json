@@ -1,0 +1,30 @@
+{
+  "tableNumber": "0403",
+  "id": "v2-0403",
+  "name": "LanguageAbility",
+  "title": "languageAbility",
+  "description": "Code system of concepts which specify codes that indicate the ability that a Staff Member possesses with respect to the language. Used in HL7 Version 2.x messaging in the LAN segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0403",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Read"
+    },
+    {
+      "code": "2",
+      "display": "Write"
+    },
+    {
+      "code": "3",
+      "display": "Speak"
+    },
+    {
+      "code": "4",
+      "display": "Understand"
+    },
+    {
+      "code": "5",
+      "display": "Sign"
+    }
+  ]
+}

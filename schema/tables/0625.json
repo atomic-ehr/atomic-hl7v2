@@ -1,0 +1,22 @@
+{
+  "tableNumber": "0625",
+  "id": "v2-0625",
+  "name": "ItemStatus",
+  "title": "itemStatus",
+  "description": "Code system of concepts that identify the state of an inventory item within the context of an inventory location. Used in HL7 Version 2.x messaging in the IVT segment.",
+  "url": "http://terminology.hl7.org/CodeSystem/v2-0625",
+  "concepts": [
+    {
+      "code": "1",
+      "display": "Active"
+    },
+    {
+      "code": "2",
+      "display": "Pending Inactive"
+    },
+    {
+      "code": "3",
+      "display": "Inactive"
+    }
+  ]
+}
