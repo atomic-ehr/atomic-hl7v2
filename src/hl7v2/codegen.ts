@@ -359,7 +359,7 @@ class HL7v2CodeGen {
     this.generateDataTypeInterfaces(output);
     this.generateConversionFunction(output);
     this.generateFromFieldValueFunctions(output);
-    this.generateSegmentBuilders(output);
+    this.generateSegmentInterfaces(output);
 
     await Bun.write(join(this.outputFolder, "fields.ts"), output.join("\n"));
   }
@@ -382,11 +382,12 @@ class HL7v2CodeGen {
       }
     }
 
-    // Import segment builders
+    // Import segment interfaces and toSegment
     const sortedSegments = [...allSegments].sort();
     output.push(`import {`);
+    output.push(`  toSegment,`);
     for (const seg of sortedSegments) {
-      output.push(`  ${seg}Builder,`);
+      output.push(`  type ${seg},`);
     }
     output.push(`} from "./fields";`);
     output.push(``);
@@ -429,7 +430,7 @@ class HL7v2CodeGen {
         const typeName = nestedDtDef ? compDef.dataType : "string";
 
         output.push(`  /** ${comp.dataType} - ${compDef.longName} */`);
-        output.push(`  ${fieldName}_${compNum}?: ${typeName};`);
+        output.push(`  set_${compNum}_${fieldName}?: ${typeName};`);
       }
 
       output.push(`}`);
@@ -446,7 +447,7 @@ class HL7v2CodeGen {
     output.push(`  const result: { [key: number]: FieldValue } = {};`);
     output.push(`  for (const [key, value] of Object.entries(obj)) {`);
     output.push(`    if (value == null) continue;`);
-    output.push(`    const match = key.match(/_(\\\d+)$/);`);
+    output.push(`    const match = key.match(/^set_(\\\d+)_/);`);
     output.push(`    if (!match || !match[1]) continue;`);
     output.push(`    const idx = parseInt(match[1], 10);`);
     output.push(`    if (typeof value === "string") {`);
@@ -482,9 +483,9 @@ class HL7v2CodeGen {
       if (firstFieldName && firstCompDef) {
         const firstNestedDt = this.dataTypeDefs.get(firstCompDef.dataType);
         if (firstNestedDt) {
-          output.push(`  if (typeof fv === "string") return { ${firstFieldName}_1: from${firstCompDef.dataType}(fv) };`);
+          output.push(`  if (typeof fv === "string") return { set_1_${firstFieldName}: from${firstCompDef.dataType}(fv) };`);
         } else {
-          output.push(`  if (typeof fv === "string") return { ${firstFieldName}_1: fv };`);
+          output.push(`  if (typeof fv === "string") return { set_1_${firstFieldName}: fv };`);
         }
       } else {
         output.push(`  if (typeof fv === "string") return undefined;`);
@@ -503,12 +504,12 @@ class HL7v2CodeGen {
         const nestedDtDef = this.dataTypeDefs.get(compDef.dataType);
 
         if (nestedDtDef) {
-          output.push(`  if (fv[${compNum}] !== undefined) result.${fieldName}_${compNum} = from${compDef.dataType}(fv[${compNum}]);`);
+          output.push(`  if (fv[${compNum}] !== undefined) result.set_${compNum}_${fieldName} = from${compDef.dataType}(fv[${compNum}]);`);
         } else {
           output.push(`  if (fv[${compNum}] !== undefined) {`);
           output.push(`    const v${compNum} = fv[${compNum}];`);
-          output.push(`    if (typeof v${compNum} === "string") result.${fieldName}_${compNum} = v${compNum};`);
-          output.push(`    else if (typeof v${compNum} === "object" && !Array.isArray(v${compNum}) && typeof (v${compNum} as any)[1] === "string") result.${fieldName}_${compNum} = (v${compNum} as any)[1];`);
+          output.push(`    if (typeof v${compNum} === "string") result.set_${compNum}_${fieldName} = v${compNum};`);
+          output.push(`    else if (typeof v${compNum} === "object" && !Array.isArray(v${compNum}) && typeof (v${compNum} as any)[1] === "string") result.set_${compNum}_${fieldName} = (v${compNum} as any)[1];`);
           output.push(`  }`);
         }
       }
@@ -519,19 +520,18 @@ class HL7v2CodeGen {
     }
   }
 
-  private generateSegmentBuilders(output: string[]): void {
+  private generateSegmentInterfaces(output: string[]): void {
     const segments = [...this.usedSegments].sort();
+
+    output.push(`// ====== Segment Interfaces ======`);
+    output.push(``);
 
     for (const segName of segments) {
       const segDef = this.segmentDefs.get(segName);
       if (!segDef) continue;
 
-      output.push(`// ====== ${segName} Segment ======`);
-      output.push(``);
-
-      output.push(`export class ${segName}Builder {`);
-      output.push(`  private seg: HL7v2Segment = { segment: "${segName}", fields: {} };`);
-      output.push(``);
+      output.push(`/** ${segName} Segment */`);
+      output.push(`export interface ${segName} {`);
 
       for (const field of segDef.fields) {
         const fieldDef = this.fieldDefs.get(field.field);
@@ -545,93 +545,65 @@ class HL7v2CodeGen {
         const dtDef = this.dataTypeDefs.get(fieldDef.dataType);
         const isPrimitive = PRIMITIVE_TYPES.has(fieldDef.dataType);
 
-        const segLower = segName.toLowerCase();
-
+        let typeName: string;
         if (isPrimitive) {
-          // Check if this field has a table type
           const tableTypeName = this.getTableTypeName(fieldDef);
-          const valueType = tableTypeName ? `${tableTypeName} | string` : "string";
-
-          output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
-          output.push(`  set_${segLower}_${fieldNum}_${fieldName}(value: ${valueType} | null | undefined): this {`);
-          output.push(`    if (value != null) this.seg.fields[${fieldNum}] = value;`);
-          output.push(`    return this;`);
-          output.push(`  }`);
-          output.push(``);
-
-          output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
-          output.push(`  get_${segLower}_${fieldNum}_${fieldName}(): string | undefined {`);
-          output.push(`    const val = this.seg.fields[${fieldNum}];`);
-          output.push(`    if (typeof val === "string") return val;`);
-          output.push(`    if (Array.isArray(val) && typeof val[0] === "string") return val[0];`);
-          output.push(`    return undefined;`);
-          output.push(`  }`);
-          output.push(``);
+          typeName = tableTypeName ? `${tableTypeName} | string` : "string";
         } else if (dtDef) {
-          const typeName = fieldDef.dataType;
-
+          typeName = fieldDef.dataType;
           if (isRepeating) {
-            output.push(`  /** ${field.field} - ${fieldDef.longName} (set all values) */`);
-            output.push(`  set_${segLower}_${fieldNum}_${fieldName}(values: ${typeName}[] | null | undefined): this {`);
-            output.push(`    if (values == null) return this;`);
-            output.push(`    const arr: FieldValue[] = [];`);
-            output.push(`    for (const v of values) {`);
-            output.push(`      const fv = toFieldValue(v as Record<string, unknown>);`);
-            output.push(`      if (fv !== undefined) arr.push(fv);`);
-            output.push(`    }`);
-            output.push(`    if (arr.length > 0) this.seg.fields[${fieldNum}] = arr;`);
-            output.push(`    return this;`);
-            output.push(`  }`);
-            output.push(``);
-
-            output.push(`  /** ${field.field} - ${fieldDef.longName} (add single value) */`);
-            output.push(`  add_${segLower}_${fieldNum}_${fieldName}(value: ${typeName} | null | undefined): this {`);
-            output.push(`    if (value == null) return this;`);
-            output.push(`    const fv = toFieldValue(value as Record<string, unknown>);`);
-            output.push(`    if (fv !== undefined) {`);
-            output.push(`      const existing = this.seg.fields[${fieldNum}];`);
-            output.push(`      if (Array.isArray(existing)) {`);
-            output.push(`        existing.push(fv);`);
-            output.push(`      } else {`);
-            output.push(`        this.seg.fields[${fieldNum}] = [fv];`);
-            output.push(`      }`);
-            output.push(`    }`);
-            output.push(`    return this;`);
-            output.push(`  }`);
-            output.push(``);
-
-            output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
-            output.push(`  get_${segLower}_${fieldNum}_${fieldName}(): ${typeName}[] | undefined {`);
-            output.push(`    const val = this.seg.fields[${fieldNum}];`);
-            output.push(`    if (val === undefined) return undefined;`);
-            output.push(`    const arr = Array.isArray(val) ? val : [val];`);
-            output.push(`    return arr.map(v => from${typeName}(v)).filter((v): v is ${typeName} => v !== undefined);`);
-            output.push(`  }`);
-            output.push(``);
-          } else {
-            output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
-            output.push(`  set_${segLower}_${fieldNum}_${fieldName}(value: ${typeName} | null | undefined): this {`);
-            output.push(`    const fv = toFieldValue(value as Record<string, unknown>);`);
-            output.push(`    if (fv !== undefined) this.seg.fields[${fieldNum}] = fv;`);
-            output.push(`    return this;`);
-            output.push(`  }`);
-            output.push(``);
-
-            output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
-            output.push(`  get_${segLower}_${fieldNum}_${fieldName}(): ${typeName} | undefined {`);
-            output.push(`    return from${typeName}(this.seg.fields[${fieldNum}]);`);
-            output.push(`  }`);
-            output.push(``);
+            typeName = `${typeName}[]`;
           }
+        } else {
+          typeName = "string";
         }
+
+        // For primitive repeating fields
+        if (isPrimitive && isRepeating) {
+          const tableTypeName = this.getTableTypeName(fieldDef);
+          typeName = tableTypeName ? `(${tableTypeName} | string)[]` : "string[]";
+        }
+
+        output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
+        output.push(`  set_${fieldNum}_${fieldName}?: ${typeName};`);
       }
 
-      output.push(`  build(): HL7v2Segment {`);
-      output.push(`    return this.seg;`);
-      output.push(`  }`);
       output.push(`}`);
       output.push(``);
     }
+
+    // Generate toSegment helper function
+    output.push(`// ====== Segment Conversion ======`);
+    output.push(``);
+    output.push(`/** Convert typed segment object to HL7v2Segment */`);
+    output.push(`export function toSegment(segmentName: string, data: Record<string, unknown>): HL7v2Segment {`);
+    output.push(`  const fields: Record<number, FieldValue> = {};`);
+    output.push(`  for (const [key, value] of Object.entries(data)) {`);
+    output.push(`    if (value == null) continue;`);
+    output.push(`    const match = key.match(/^set_(\\d+)_/);`);
+    output.push(`    if (!match || !match[1]) continue;`);
+    output.push(`    const idx = parseInt(match[1], 10);`);
+    output.push(`    if (typeof value === "string") {`);
+    output.push(`      fields[idx] = value;`);
+    output.push(`    } else if (Array.isArray(value)) {`);
+    output.push(`      const arr: FieldValue[] = [];`);
+    output.push(`      for (const v of value) {`);
+    output.push(`        if (typeof v === "string") {`);
+    output.push(`          arr.push(v);`);
+    output.push(`        } else if (v != null) {`);
+    output.push(`          const fv = toFieldValue(v as Record<string, unknown>);`);
+    output.push(`          if (fv !== undefined) arr.push(fv);`);
+    output.push(`        }`);
+    output.push(`      }`);
+    output.push(`      if (arr.length > 0) fields[idx] = arr;`);
+    output.push(`    } else if (typeof value === "object") {`);
+    output.push(`      const fv = toFieldValue(value as Record<string, unknown>);`);
+    output.push(`      if (fv !== undefined) fields[idx] = fv;`);
+    output.push(`    }`);
+    output.push(`  }`);
+    output.push(`  return { segment: segmentName, fields };`);
+    output.push(`}`);
+    output.push(``);
   }
 
   private getCodeName(def: FieldDef): string {
@@ -744,7 +716,7 @@ class HL7v2CodeGen {
     msgType: string,
     groupName: string,
     groupDef: { elements: MessageElement[] },
-    msgDef: MessageDef
+    _msgDef: MessageDef
   ): void {
     output.push(`export interface ${msgType}_${groupName} {`);
 
@@ -795,23 +767,17 @@ class HL7v2CodeGen {
       const methodName = this.getElementMethodName(el);
 
       if (el.segment) {
-        const segBuilderName = `${el.segment}Builder`;
+        const segType = el.segment;
 
         if (isRepeating) {
-          output.push(`  add${methodName}(segment: HL7v2Segment | ${segBuilderName} | ((builder: ${segBuilderName}) => ${segBuilderName})): this {`);
-          output.push(`    let seg: HL7v2Segment;`);
-          output.push(`    if (typeof segment === "function") seg = segment(new ${segBuilderName}()).build();`);
-          output.push(`    else if (segment instanceof ${segBuilderName}) seg = segment.build();`);
-          output.push(`    else seg = segment;`);
+          output.push(`  add${methodName}(segment: ${segType}): this {`);
           output.push(`    if (!this.group.${fieldName}) this.group.${fieldName} = [];`);
-          output.push(`    this.group.${fieldName}.push(seg);`);
+          output.push(`    this.group.${fieldName}.push(toSegment("${el.segment}", segment));`);
           output.push(`    return this;`);
           output.push(`  }`);
         } else {
-          output.push(`  ${fieldName}(segment: HL7v2Segment | ${segBuilderName} | ((builder: ${segBuilderName}) => ${segBuilderName})): this {`);
-          output.push(`    if (typeof segment === "function") this.group.${fieldName} = segment(new ${segBuilderName}()).build();`);
-          output.push(`    else if (segment instanceof ${segBuilderName}) this.group.${fieldName} = segment.build();`);
-          output.push(`    else this.group.${fieldName} = segment;`);
+          output.push(`  ${fieldName}(segment: ${segType}): this {`);
+          output.push(`    this.group.${fieldName} = toSegment("${el.segment}", segment);`);
           output.push(`    return this;`);
           output.push(`  }`);
         }
@@ -821,19 +787,17 @@ class HL7v2CodeGen {
         const nestedTypeName = `${msgType}_${el.group}`;
 
         if (isRepeating) {
-          output.push(`  add${methodName}(group: ${nestedTypeName} | ${nestedBuilderName} | ((builder: ${nestedBuilderName}) => ${nestedBuilderName})): this {`);
+          output.push(`  add${methodName}(group: ${nestedTypeName} | ((builder: ${nestedBuilderName}) => ${nestedBuilderName})): this {`);
           output.push(`    let g: ${nestedTypeName};`);
           output.push(`    if (typeof group === "function") g = group(new ${nestedBuilderName}()).build();`);
-          output.push(`    else if (group instanceof ${nestedBuilderName}) g = group.build();`);
           output.push(`    else g = group;`);
           output.push(`    if (!this.group.${fieldName}) this.group.${fieldName} = [];`);
           output.push(`    this.group.${fieldName}.push(g);`);
           output.push(`    return this;`);
           output.push(`  }`);
         } else {
-          output.push(`  ${fieldName}(group: ${nestedTypeName} | ${nestedBuilderName} | ((builder: ${nestedBuilderName}) => ${nestedBuilderName})): this {`);
+          output.push(`  ${fieldName}(group: ${nestedTypeName} | ((builder: ${nestedBuilderName}) => ${nestedBuilderName})): this {`);
           output.push(`    if (typeof group === "function") this.group.${fieldName} = group(new ${nestedBuilderName}()).build();`);
-          output.push(`    else if (group instanceof ${nestedBuilderName}) this.group.${fieldName} = group.build();`);
           output.push(`    else this.group.${fieldName} = group;`);
           output.push(`    return this;`);
           output.push(`  }`);
@@ -871,25 +835,19 @@ class HL7v2CodeGen {
       const methodName = this.getElementMethodName(el);
 
       if (el.segment) {
-        const segBuilderName = `${el.segment}Builder`;
+        const segType = el.segment;
 
         if (isRequired) requiredFields.push(fieldName);
 
         if (isRepeating) {
-          output.push(`  add${methodName}(segment: HL7v2Segment | ${segBuilderName} | ((builder: ${segBuilderName}) => ${segBuilderName})): this {`);
-          output.push(`    let seg: HL7v2Segment;`);
-          output.push(`    if (typeof segment === "function") seg = segment(new ${segBuilderName}()).build();`);
-          output.push(`    else if (segment instanceof ${segBuilderName}) seg = segment.build();`);
-          output.push(`    else seg = segment;`);
+          output.push(`  add${methodName}(segment: ${segType}): this {`);
           output.push(`    if (!this.msg.${fieldName}) this.msg.${fieldName} = [];`);
-          output.push(`    this.msg.${fieldName}.push(seg);`);
+          output.push(`    this.msg.${fieldName}.push(toSegment("${el.segment}", segment));`);
           output.push(`    return this;`);
           output.push(`  }`);
         } else {
-          output.push(`  ${fieldName}(segment: HL7v2Segment | ${segBuilderName} | ((builder: ${segBuilderName}) => ${segBuilderName})): this {`);
-          output.push(`    if (typeof segment === "function") this.msg.${fieldName} = segment(new ${segBuilderName}()).build();`);
-          output.push(`    else if (segment instanceof ${segBuilderName}) this.msg.${fieldName} = segment.build();`);
-          output.push(`    else this.msg.${fieldName} = segment;`);
+          output.push(`  ${fieldName}(segment: ${segType}): this {`);
+          output.push(`    this.msg.${fieldName} = toSegment("${el.segment}", segment);`);
           output.push(`    return this;`);
           output.push(`  }`);
         }
@@ -901,19 +859,17 @@ class HL7v2CodeGen {
         if (isRequired) requiredFields.push(fieldName);
 
         if (isRepeating) {
-          output.push(`  add${methodName}(group: ${groupTypeName} | ${groupBuilderName} | ((builder: ${groupBuilderName}) => ${groupBuilderName})): this {`);
+          output.push(`  add${methodName}(group: ${groupTypeName} | ((builder: ${groupBuilderName}) => ${groupBuilderName})): this {`);
           output.push(`    let g: ${groupTypeName};`);
           output.push(`    if (typeof group === "function") g = group(new ${groupBuilderName}()).build();`);
-          output.push(`    else if (group instanceof ${groupBuilderName}) g = group.build();`);
           output.push(`    else g = group;`);
           output.push(`    if (!this.msg.${fieldName}) this.msg.${fieldName} = [];`);
           output.push(`    this.msg.${fieldName}.push(g);`);
           output.push(`    return this;`);
           output.push(`  }`);
         } else {
-          output.push(`  ${fieldName}(group: ${groupTypeName} | ${groupBuilderName} | ((builder: ${groupBuilderName}) => ${groupBuilderName})): this {`);
+          output.push(`  ${fieldName}(group: ${groupTypeName} | ((builder: ${groupBuilderName}) => ${groupBuilderName})): this {`);
           output.push(`    if (typeof group === "function") this.msg.${fieldName} = group(new ${groupBuilderName}()).build();`);
-          output.push(`    else if (group instanceof ${groupBuilderName}) this.msg.${fieldName} = group.build();`);
           output.push(`    else this.msg.${fieldName} = group;`);
           output.push(`    return this;`);
           output.push(`  }`);

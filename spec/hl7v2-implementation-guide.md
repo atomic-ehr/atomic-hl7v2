@@ -55,7 +55,7 @@ src/hl7v2/
   types.ts       # FieldValue, HL7v2Segment, HL7v2Message
   parse.ts       # deserialize from pipe-delimited string
   format.ts      # serialize to pipe-delimited string
-  fields.ts      # segment field helpers + fluent builders - GENERATED
+  fields.ts      # segment + datatype interfaces - GENERATED
   messages.ts    # message-level type-safe builders - GENERATED
   codegen.ts     # generates fields.ts and messages.ts from schema
 
@@ -168,210 +168,208 @@ Component metadata with optional `codeName` for cleaner generated names:
 Generate helpers for specific message types:
 
 ```sh
-# Generate segment-level field helpers and builders
-bun src/hl7v2/codegen.ts BAR_P01 > src/hl7v2/fields.ts
-
-# Generate message-level type-safe builders
-bun src/hl7v2/codegen.ts BAR_P01 --messages > src/hl7v2/messages.ts
+# Generate all files (types.ts, tables.ts, fields.ts, messages.ts)
+bun src/hl7v2/codegen.ts ./output ADT_A01 BAR_P01
 ```
 
 ---
 
-## Segment Builders
+## Segment Interfaces
 
-Fluent API for building segments. Method names follow the pattern `set_[segment]_[idx]_[fieldName]`:
+Segments use the same `set_[index]_[name]` pattern as datatypes — plain object literals:
 
 ```ts
-import { PIDBuilder } from "./hl7v2/fields";
+import type { PID } from "./fields";
 
-const pid = new PIDBuilder()
-  // Primitive field - direct value
-  .set_pid_1_setIdPid("1")
-  .set_pid_8_administrativeSex("M")
-
-  // Complex field - record object with _N suffix for component positions
-  .set_pid_5_patientName([{
-    familyName_1: {
-      surname_1: "Smith",
-      ownSurnamePrefix_2: "van"
+const pid: PID = {
+  set_1_setIdPid: "1",
+  set_3_identifier: [{
+    set_1_value: "12345",
+    set_4_system: { set_1_namespace: "Hospital" },
+    set_5_type: "MR"
+  }],
+  set_5_name: [{
+    set_1_family: {
+      set_1_surname: "Smith",
+      set_2_ownSurnamePrefix: "van"
     },
-    givenName_2: "John",
-    middleName_3: "Robert",
-    suffix_4: "Jr"
-  }])
-
-  // Repeating field - set all values as array
-  .set_pid_3_patientIdentifierList([{
-    idNumber_1: "12345",
-    assigningAuthority_4: {
-      namespaceId_1: "Hospital"
-    },
-    identifierTypeCode_5: "MR"
-  }])
-
-  // Repeating field - add additional values one by one
-  .add_pid_3_patientIdentifierList({
-    idNumber_1: "67890",
-    identifierTypeCode_5: "SSN"
-  })
-
-  .build();
+    set_2_given: "John",
+    set_3_middle: "Robert",
+    set_4_suffix: "Jr"
+  }],
+  set_8_gender: "M"
+};
 ```
 
 ---
 
 ## Field Naming Convention
 
-Field names use `_N` suffix to indicate HL7v2 component position:
+All field names use `set_[index]_[name]` pattern — index first for HL7-native autocomplete:
 
 ```
-{name}_N     →  component N
-{name}_N_M   →  component N, subcomponent M (flattened in parent)
+set_N_name   →  component N (segment field or datatype component)
 ```
+
+**Why index-first?**
+- HL7v2 developers think in terms of positions: "PID.8", "XPN.1"
+- Type `set_8` → immediately find gender (PID.8)
+- Type `set_1` on XPN → immediately find family name (XPN.1)
+- Matches how HL7 specs are organized
+- **Consistent everywhere** — segments and datatypes use same pattern
 
 Examples:
-- `givenName_2` → XPN.2
-- `surname_1` → FN.1 (when nested in `familyName_1`)
-- `idNumber_1` → CX.1
+- `set_8_gender` → PID.8
+- `set_2_given` → XPN.2
+- `set_1_surname` → FN.1 (when nested in `set_1_family`)
+- `set_1_value` → CX.1
+
+---
+
+## Segment Interfaces
+
+Generated interfaces for segments follow the same pattern as datatypes:
+
+```ts
+// PID - Patient Identification
+interface PID {
+  /** PID.1 - Set ID */
+  set_1_setIdPid?: string;
+  /** PID.3 - Patient Identifier List */
+  set_3_identifier?: CX[];
+  /** PID.5 - Patient Name */
+  set_5_name?: XPN[];
+  /** PID.7 - Date/Time of Birth */
+  set_7_birthDate?: string;
+  /** PID.8 - Administrative Sex */
+  set_8_gender?: AdministrativeSex | string;
+  /** PID.11 - Patient Address */
+  set_11_address?: XAD[];
+}
+
+// MSH - Message Header
+interface MSH {
+  /** MSH.3 - Sending Application */
+  set_3_sendingApplication?: HD;
+  /** MSH.7 - Date/Time Of Message */
+  set_7_messageDateTime?: string;
+  /** MSH.9 - Message Type */
+  set_9_messageType?: MSG;
+  /** MSH.10 - Message Control ID */
+  set_10_messageControlId?: string;
+}
+```
 
 ---
 
 ## DataType Interfaces
 
-Generated interfaces mirror HL7v2 datatype structure:
+Generated interfaces mirror HL7v2 datatype structure with `set_[index]_[name]` properties:
 
 ```ts
 // XPN - Extended Person Name
 interface XPN {
-  familyName_1?: FN;        // complex component
-  givenName_2?: string;     // primitive component
-  middleName_3?: string;
-  suffix_4?: string;
-  prefix_5?: string;
-  degree_6?: string;
-  nameTypeCode_7?: string;
+  set_1_family?: FN;        // complex component
+  set_2_given?: string;     // primitive component
+  set_3_middle?: string;
+  set_4_suffix?: string;
+  set_5_prefix?: string;
+  set_6_degree?: string;
+  set_7_nameTypeCode?: string;
 }
 
-// FN - Family Name (nested in XPN.1)
+// FN - Family Name (nested in set_1_family)
 interface FN {
-  surname_1?: string;
-  ownSurnamePrefix_2?: string;
-  ownSurname_3?: string;
-  surnamePrefixFromPartner_4?: string;
-  surnameFromPartner_5?: string;
+  set_1_surname?: string;
+  set_2_ownSurnamePrefix?: string;
+  set_3_ownSurname?: string;
+  set_4_surnamePrefixFromPartner?: string;
+  set_5_surnameFromPartner?: string;
 }
 
 // CX - Composite ID
 interface CX {
-  idNumber_1?: string;
-  checkDigit_2?: string;
-  checkDigitScheme_3?: string;
-  assigningAuthority_4?: HD;
-  identifierTypeCode_5?: string;
-  assigningFacility_6?: HD;
+  set_1_value?: string;
+  set_2_checkDigit?: string;
+  set_3_checkDigitScheme?: string;
+  set_4_system?: HD;
+  set_5_type?: string;
+  set_6_assigningFacility?: HD;
 }
 
 // HD - Hierarchic Designator
 interface HD {
-  namespaceId_1?: string;
-  universalId_2?: string;
-  universalIdType_3?: string;
+  set_1_namespace?: string;
+  set_2_universalId?: string;
+  set_3_universalIdType?: string;
 }
-```
-
----
-
-## Field Access Patterns
-
-### Setters
-
-| Schema | Method | Example |
-|--------|--------|---------|
-| primitive | `set_[seg]_[N]_name(value)` | `set_pid_8_administrativeSex("M")` |
-| complex, single | `set_[seg]_[N]_name(record)` | `set_msh_9_messageType({ messageCode_1: "BAR" })` |
-| complex, repeating | `set_[seg]_[N]_name(records[])` | `set_pid_3_patientIdentifierList([{ idNumber_1: "123" }])` |
-| complex, repeating | `add_[seg]_[N]_name(record)` | `add_pid_3_patientIdentifierList({ idNumber_1: "456" })` |
-
-### Getters
-
-| Schema | Method | Return Type |
-|--------|--------|-------------|
-| primitive | `get_[seg]_[N]_name()` | `string \| undefined` |
-| complex, single | `get_[seg]_[N]_name()` | `DataType \| undefined` |
-| complex, repeating | `get_[seg]_[N]_name()` | `DataType[] \| undefined` |
-
-Examples:
-
-```ts
-const pid = new PIDBuilder()
-  .set_pid_3_patientIdentifierList([{ idNumber_1: "12345" }])
-  .set_pid_5_patientName([{ familyName_1: { surname_1: "Smith" } }])
-  .set_pid_8_administrativeSex("M");
-
-// Primitive field
-pid.get_pid_8_administrativeSex();  // "M"
-
-// Complex repeating field
-pid.get_pid_3_patientIdentifierList();  // [{ idNumber_1: "12345" }]
-
-// Complex repeating field
-pid.get_pid_5_patientName();  // [{ familyName_1: { surname_1: "Smith" } }]
 ```
 
 ---
 
 ## Nullable Fields
 
-All fields in record objects are optional. Undefined/null values are ignored:
+All fields are optional. Undefined/null values are ignored during conversion:
 
 ```ts
-pid.set_pid_5_patientName([{
-  familyName_1: {
-    surname_1: patient.name?.family  // undefined if missing
-  },
-  givenName_2: patient.name?.given?.[0]
-}])
+const pid: PID = {
+  set_5_name: [{
+    set_1_family: {
+      set_1_surname: patient.name?.family  // undefined if missing
+    },
+    set_2_given: patient.name?.given?.[0]
+  }]
+};
 ```
 
 ---
 
 ## Message Builders
 
-Type-safe builders enforce message structure from schema:
+Type-safe builders enforce message structure from schema. Segments are passed as object literals:
 
 ```ts
-import { BAR_P01Builder } from "./hl7v2/messages";
+import { ADT_A01Builder } from "./messages";
 
-const message = new BAR_P01Builder()
-  .msh(msh => msh
-    .set_msh_3_sendingApplication({ namespaceId_1: "FHIR_APP" })
-    .set_msh_9_messageType({
-      messageCode_1: "BAR",
-      triggerEvent_2: "P01",
-      messageStructure_3: "BAR_P01"
-    })
-    .set_msh_10_messageControlId("MSG001"))
-  .evn(evn => evn
-    .set_evn_1_eventTypeCode("P01")
-    .set_evn_2_recordedDateTime("20231201120000"))
-  .pid(pid => pid
-    .set_pid_3_patientIdentifierList([{
-      idNumber_1: "12345",
-      identifierTypeCode_5: "MR"
-    }])
-    .set_pid_5_patientName([{
-      familyName_1: { surname_1: "Smith" },
-      givenName_2: "John"
-    }]))
-  .addVISIT(visit => visit
-    .pv1(pv1 => pv1.set_pv1_2_patientClass("I"))
-    .addDG1(dg1 => dg1
-      .set_dg1_3_diagnosisCodeDg1({
-        identifier_1: "J20.9",
-        nameOfCodingSystem_3: "ICD10"
-      }))
-    .addINSURANCE(ins => ins
-      .in1(in1 => in1.set_in1_1_setIdIn1("1"))))
+const message = new ADT_A01Builder()
+  .msh({
+    set_3_sendingApplication: { set_1_namespace: "FHIR_APP" },
+    set_9_messageType: {
+      set_1_code: "ADT",
+      set_2_event: "A01",
+      set_3_structure: "ADT_A01"
+    },
+    set_10_messageControlId: "MSG001"
+  })
+  .evn({
+    set_1_eventTypeCode: "A01",
+    set_2_recordedDateTime: "20231201120000"
+  })
+  .pid({
+    set_3_identifier: [{
+      set_1_value: "12345",
+      set_5_type: "MR"
+    }],
+    set_5_name: [{
+      set_1_family: { set_1_surname: "Smith" },
+      set_2_given: "John"
+    }]
+  })
+  .pv1({
+    set_2_class: PatientClass.Inpatient
+  })
+  .addDG1({
+    set_1_setIdDg1: "1",
+    set_3_diagnosisCode: {
+      set_1_code: "J20.9",
+      set_3_system: "ICD10"
+    }
+  })
+  .addINSURANCE(ins => ins
+    .in1({
+      set_1_setIdIn1: "1",
+      set_2_insurancePlanId: { set_1_code: "BCBS" }
+    }))
   .build();
 ```
 
@@ -405,33 +403,34 @@ const message = parseMessage(wireFormat);
 From FHIR input to HL7v2 wire format:
 
 ```ts
-const buildPID = (input: BarMessageInput) => (pid: PIDBuilder) => {
+function buildPID(input: PatientInput): PID {
   const name = input.patient.name?.[0];
   const address = input.patient.address?.[0];
 
-  return pid
-    .set_pid_3_patientIdentifierList([{
-      idNumber_1: input.patient.identifier?.[0]?.value,
-      identifierTypeCode_5: "MR"
-    }])
-    .set_pid_5_patientName([{
-      familyName_1: { surname_1: name?.family },
-      givenName_2: name?.given?.[0]
-    }])
-    .set_pid_11_patientAddress([{
-      streetAddress_1: { streetOrMailingAddress_1: address?.line?.[0] },
-      city_3: address?.city,
-      stateOrProvince_4: address?.state,
-      zipOrPostalCode_5: address?.postalCode
-    }]);
-};
+  return {
+    set_3_identifier: [{
+      set_1_value: input.patient.identifier?.[0]?.value,
+      set_5_type: "MR"
+    }],
+    set_5_name: [{
+      set_1_family: { set_1_surname: name?.family },
+      set_2_given: name?.given?.[0]
+    }],
+    set_11_address: [{
+      set_1_street: { set_1_line: address?.line?.[0] },
+      set_3_city: address?.city,
+      set_4_state: address?.state,
+      set_5_postalCode: address?.postalCode
+    }]
+  };
+}
 
-export function generateBarMessage(input: BarMessageInput): HL7v2Message {
-  return new BAR_P01Builder()
+export function generateMessage(input: PatientInput): HL7v2Message {
+  return new ADT_A01Builder()
     .msh(buildMSH(input))
     .evn(buildEVN(input))
     .pid(buildPID(input))
-    .addVISIT(buildVisit(input))
+    .pv1(buildPV1(input))
     .build();
 }
 ```
@@ -470,17 +469,24 @@ export const PatientClass = {
 export type PatientClass = typeof PatientClass[keyof typeof PatientClass];
 ```
 
-### Usage in Setters
+### Usage
 
-When a field references a table that exists in `schema/tables/`, the setter accepts both the enum and raw strings:
+When a field references a table that exists in `schema/tables/`, the property accepts both the enum and raw strings:
 
 ```ts
 // With enum - IDE shows all valid options
-.set_pid_8_gender(AdministrativeSex.Male)
-.set_pv1_2_class(PatientClass.Inpatient)
+const pid: PID = {
+  set_8_gender: AdministrativeSex.Male
+};
+
+const pv1: PV1 = {
+  set_2_class: PatientClass.Inpatient
+};
 
 // Raw string still works for edge cases
-.set_pid_8_gender("M")
+const pid2: PID = {
+  set_8_gender: "M"
+};
 ```
 
 ### Schema Reference
@@ -525,7 +531,9 @@ bun scripts/check-tables.ts --list    # Missing table numbers only
 
 - **1:1 mapping to wire format** — serialization is trivial
 - **Schema-driven** — fields validated against `schema/`
-- **IDE autocomplete** — type `set_pid` to see all PID field methods
+- **HL7-native autocomplete** — type `set_8` to find PID.8 (gender), `set_1` to find XPN.1 (family)
+- **Consistent pattern** — segments and datatypes both use `set_N_name` object literals
 - **Table enums** — coded fields show valid options with descriptions
 - **Compile-time safety** — message builders catch missing required segments
+- **Composable** — plain objects can be spread, merged, constructed dynamically
 - **Auto-generated** — regenerate when schema updates

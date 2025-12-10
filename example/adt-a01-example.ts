@@ -14,174 +14,174 @@ import { AdministrativeSex, PatientClass, AdmissionType } from "./tables";
 // Build an ADT^A01 message for patient admission
 const message = new ADT_A01Builder()
   // MSH - Message Header (required)
-  .msh(msh => msh
-    .set_msh_3_sendingApplication({ namespace_1: "HOSPITAL_APP" })
-    .set_msh_4_sendingFacility({ namespace_1: "HOSPITAL_FAC" })
-    .set_msh_5_receivingApplication({ namespace_1: "ADT_RECEIVER" })
-    .set_msh_6_receivingFacility({ namespace_1: "RECV_FAC" })
-    .set_msh_7_messageDateTime("20251210120000")
-    .set_msh_9_messageType({
-      code_1: "ADT",
-      event_2: "A01",
-      structure_3: "ADT_A01"
-    })
-    .set_msh_10_messageControlId("MSG00001")
-    .set_msh_11_processingId({ processingId_1: "P" })
-    .set_msh_12_version({ version_1: "2.5.1" })
-  )
+  .msh({
+    set_3_sendingApplication: { set_1_namespace: "HOSPITAL_APP" },
+    set_4_sendingFacility: { set_1_namespace: "HOSPITAL_FAC" },
+    set_5_receivingApplication: { set_1_namespace: "ADT_RECEIVER" },
+    set_6_receivingFacility: { set_1_namespace: "RECV_FAC" },
+    set_7_messageDateTime: "20251210120000",
+    set_9_messageType: {
+      set_1_code: "ADT",
+      set_2_event: "A01",
+      set_3_structure: "ADT_A01"
+    },
+    set_10_messageControlId: "MSG00001",
+    set_11_processingId: { set_1_processingId: "P" },
+    set_12_version: { set_1_version: "2.5.1" }
+  })
 
   // EVN - Event Type (required)
-  .evn(evn => evn
-    .set_evn_1_eventTypeCode("A01")
-    .set_evn_2_recordedDateTime("20251210115500")
-    .set_evn_6_eventOccurred("20251210115000")
-  )
+  .evn({
+    set_1_eventTypeCode: "A01",
+    set_2_recordedDateTime: "20251210115500",
+    set_6_eventOccurred: "20251210115000"
+  })
 
   // PID - Patient Identification (required)
-  .pid(pid => pid
-    .set_pid_1_setIdPid("1")
-    .set_pid_3_identifier([
+  .pid({
+    set_1_setIdPid: "1",
+    set_3_identifier: [
       {
-        value_1: "12345678",
-        system_4: { namespace_1: "HOSP" },
-        type_5: "MR"
+        set_1_value: "12345678",
+        set_4_system: { set_1_namespace: "HOSP" },
+        set_5_type: "MR"
       },
       {
-        value_1: "987-65-4321",
-        system_4: { namespace_1: "SSA" },
-        type_5: "SS"
+        set_1_value: "987-65-4321",
+        set_4_system: { set_1_namespace: "SSA" },
+        set_5_type: "SS"
       }
-    ])
-    .set_pid_5_name([{
-      family_1: { family_1: "Smith" },
-      given_2: "John",
-      additionalGiven_3: "Robert",
-      suffix_4: "Jr",
-    }])
-    .set_pid_7_birthDate("19800515")
-    .set_pid_8_gender(AdministrativeSex.Male)  // Using table enum
-    .set_pid_11_address([{
-      line1_1: { line_1: "123 Main Street" },
-      line2_2: "Apt 4B",
-      city_3: "Boston",
-      state_4: "MA",
-      postalCode_5: "02101",
-      country_6: "USA"
-    }])
-    .set_pid_13_homePhone([{
-      value_1: "617-555-1234",
-      use_2: "PRN"
-    }])
-    .set_pid_14_businessPhone([{
-      value_1: "617-555-5678",
-      use_2: "WPN"
-    }])
-  )
+    ],
+    set_5_name: [{
+      set_1_family: { set_1_family: "Smith" },
+      set_2_given: "John",
+      set_3_additionalGiven: "Robert",
+      set_4_suffix: "Jr"
+    }],
+    set_7_birthDate: "19800515",
+    set_8_gender: AdministrativeSex.Male,
+    set_11_address: [{
+      set_1_line1: { set_1_line: "123 Main Street" },
+      set_2_line2: "Apt 4B",
+      set_3_city: "Boston",
+      set_4_state: "MA",
+      set_5_postalCode: "02101",
+      set_6_country: "USA"
+    }],
+    set_13_homePhone: [{
+      set_1_value: "617-555-1234",
+      set_2_use: "PRN"
+    }],
+    set_14_businessPhone: [{
+      set_1_value: "617-555-5678",
+      set_2_use: "WPN"
+    }]
+  })
 
   // PV1 - Patient Visit (required)
-  .pv1(pv1 => pv1
-    .set_pv1_1_setIdPv1("1")
-    .set_pv1_2_class(PatientClass.Inpatient)  // Using table enum
-    .set_pv1_3_assignedPatientLocation({
-      careSite_1: "WARD-A",
-      room_2: "101",
-      bed_3: "1",
-      facility_4: { namespace_1: "HOSP" }
-    })
-    .set_pv1_4_admissionType(AdmissionType.Emergency)  // Using table enum
-    .set_pv1_7_attendingDoctor([{
-      value_1: "DOC001",
-      family_2: { family_1: "Johnson" },
-      given_3: "Mary",
-      system_9: { namespace_1: "HOSP" }
-    }])
-    .set_pv1_10_hospitalService("MED")
-    .set_pv1_14_admitSource("7")  // 7 = Emergency Room
-    .set_pv1_17_admittingDoctor([{
-      value_1: "DOC002",
-      family_2: { family_1: "Williams" },
-      given_3: "James"
-    }])
-    .set_pv1_19_visitNumber({
-      value_1: "V12345",
-      system_4: { namespace_1: "HOSP" }
-    })
-    .set_pv1_44_admission("20251210115000")
-  )
+  .pv1({
+    set_1_setIdPv1: "1",
+    set_2_class: PatientClass.Inpatient,
+    set_3_assignedPatientLocation: {
+      set_1_careSite: "WARD-A",
+      set_2_room: "101",
+      set_3_bed: "1",
+      set_4_facility: { set_1_namespace: "HOSP" }
+    },
+    set_4_admissionType: AdmissionType.Emergency,
+    set_7_attendingDoctor: [{
+      set_1_value: "DOC001",
+      set_2_family: { set_1_family: "Johnson" },
+      set_3_given: "Mary",
+      set_9_system: { set_1_namespace: "HOSP" }
+    }],
+    set_10_hospitalService: "MED",
+    set_14_admitSource: "7",
+    set_17_admittingDoctor: [{
+      set_1_value: "DOC002",
+      set_2_family: { set_1_family: "Williams" },
+      set_3_given: "James"
+    }],
+    set_19_visitNumber: {
+      set_1_value: "V12345",
+      set_4_system: { set_1_namespace: "HOSP" }
+    },
+    set_44_admission: "20251210115000"
+  })
 
   // NK1 - Next of Kin (optional, repeating)
-  .addNK1(nk1 => nk1
-    .set_nk1_1_setIdNk1("1")
-    .set_nk1_2_name([{
-      family_1: { family_1: "Smith" },
-      given_2: "Jane"
-    }])
-    .set_nk1_3_relationship({
-      code_1: "SPO",
-      text_2: "Spouse"
-    })
-    .set_nk1_5_phone([{
-      value_1: "617-555-9999"
-    }])
-  )
+  .addNK1({
+    set_1_setIdNk1: "1",
+    set_2_name: [{
+      set_1_family: { set_1_family: "Smith" },
+      set_2_given: "Jane"
+    }],
+    set_3_relationship: {
+      set_1_code: "SPO",
+      set_2_text: "Spouse"
+    },
+    set_5_phone: [{
+      set_1_value: "617-555-9999"
+    }]
+  })
 
   // DG1 - Diagnosis (optional, repeating)
-  .addDG1(dg1 => dg1
-    .set_dg1_1_setIdDg1("1")
-    .set_dg1_3_diagnosisCodeDg1({
-      code_1: "J18.9",
-      text_2: "Pneumonia, unspecified organism",
-      system_3: "ICD10"
-    })
-    .set_dg1_6_diagnosisType("A")  // A = Admitting
-    .set_dg1_15_diagnosisPriority("1")
-  )
-  .addDG1(dg1 => dg1
-    .set_dg1_1_setIdDg1("2")
-    .set_dg1_3_diagnosisCodeDg1({
-      code_1: "I10",
-      text_2: "Essential hypertension",
-      system_3: "ICD10"
-    })
-    .set_dg1_6_diagnosisType("F")  // F = Final
-    .set_dg1_15_diagnosisPriority("2")
-  )
+  .addDG1({
+    set_1_setIdDg1: "1",
+    set_3_diagnosisCodeDg1: {
+      set_1_code: "J18.9",
+      set_2_text: "Pneumonia, unspecified organism",
+      set_3_system: "ICD10"
+    },
+    set_6_diagnosisType: "A",
+    set_15_diagnosisPriority: "1"
+  })
+  .addDG1({
+    set_1_setIdDg1: "2",
+    set_3_diagnosisCodeDg1: {
+      set_1_code: "I10",
+      set_2_text: "Essential hypertension",
+      set_3_system: "ICD10"
+    },
+    set_6_diagnosisType: "F",
+    set_15_diagnosisPriority: "2"
+  })
 
   // AL1 - Allergy (optional, repeating)
-  .addAL1(al1 => al1
-    .set_al1_1_setIdAl1("1")
-    .set_al1_2_allergenTypeCode({
-      code_1: "DA",
-      text_2: "Drug Allergy"
-    })
-    .set_al1_3_allergenCodeMnemonicDescription({
-      code_1: "PENICILLIN",
-      text_2: "Penicillin"
-    })
-    .set_al1_4_allergySeverityCode({
-      code_1: "SV",
-      text_2: "Severe"
-    })
-  )
+  .addAL1({
+    set_1_setIdAl1: "1",
+    set_2_allergenTypeCode: {
+      set_1_code: "DA",
+      set_2_text: "Drug Allergy"
+    },
+    set_3_allergenCodeMnemonicDescription: {
+      set_1_code: "PENICILLIN",
+      set_2_text: "Penicillin"
+    },
+    set_4_allergySeverityCode: {
+      set_1_code: "SV",
+      set_2_text: "Severe"
+    }
+  })
 
   // INSURANCE group (optional, repeating)
   .addINSURANCE(ins => ins
-    .in1(in1 => in1
-      .set_in1_1_setIdIn1("1")
-      .set_in1_2_insurancePlanId({
-        code_1: "BCBS001",
-        text_2: "Blue Cross Blue Shield"
-      })
-      .set_in1_3_insuranceCompanyId([{
-        value_1: "INS123",
-        system_4: { namespace_1: "BCBS" }
-      }])
-      .set_in1_4_insuranceCompanyName([{
-        name_1: "Blue Cross Blue Shield of MA"
-      }])
-      .set_in1_8_groupNumber("GRP12345")
-      .set_in1_36_policyNumber("POL987654")
-    )
+    .in1({
+      set_1_setIdIn1: "1",
+      set_2_insurancePlanId: {
+        set_1_code: "BCBS001",
+        set_2_text: "Blue Cross Blue Shield"
+      },
+      set_3_insuranceCompanyId: [{
+        set_1_value: "INS123",
+        set_4_system: { set_1_namespace: "BCBS" }
+      }],
+      set_4_insuranceCompanyName: [{
+        set_1_name: "Blue Cross Blue Shield of MA"
+      }],
+      set_8_groupNumber: "GRP12345",
+      set_36_policyNumber: "POL987654"
+    })
   )
 
   .build();

@@ -3,29 +3,30 @@
 
 import type { HL7v2Segment, HL7v2Message } from "./types";
 import {
-  ACCBuilder,
-  AL1Builder,
-  DB1Builder,
-  DG1Builder,
-  DRGBuilder,
-  EVNBuilder,
-  GT1Builder,
-  IN1Builder,
-  IN2Builder,
-  IN3Builder,
-  MSHBuilder,
-  NK1Builder,
-  OBXBuilder,
-  PD1Builder,
-  PDABuilder,
-  PIDBuilder,
-  PR1Builder,
-  PV1Builder,
-  PV2Builder,
-  ROLBuilder,
-  SFTBuilder,
-  UB1Builder,
-  UB2Builder,
+  toSegment,
+  type ACC,
+  type AL1,
+  type DB1,
+  type DG1,
+  type DRG,
+  type EVN,
+  type GT1,
+  type IN1,
+  type IN2,
+  type IN3,
+  type MSH,
+  type NK1,
+  type OBX,
+  type PD1,
+  type PDA,
+  type PID,
+  type PR1,
+  type PV1,
+  type PV2,
+  type ROL,
+  type SFT,
+  type UB1,
+  type UB2,
 } from "./fields";
 
 export interface ADT_A01_PROCEDURE {
@@ -36,20 +37,14 @@ export interface ADT_A01_PROCEDURE {
 export class ADT_A01_PROCEDUREBuilder {
   private group: Partial<ADT_A01_PROCEDURE> = {};
 
-  pr1(segment: HL7v2Segment | PR1Builder | ((builder: PR1Builder) => PR1Builder)): this {
-    if (typeof segment === "function") this.group.pr1 = segment(new PR1Builder()).build();
-    else if (segment instanceof PR1Builder) this.group.pr1 = segment.build();
-    else this.group.pr1 = segment;
+  pr1(segment: PR1): this {
+    this.group.pr1 = toSegment("PR1", segment);
     return this;
   }
 
-  addROL(segment: HL7v2Segment | ROLBuilder | ((builder: ROLBuilder) => ROLBuilder)): this {
-    let seg: HL7v2Segment;
-    if (typeof segment === "function") seg = segment(new ROLBuilder()).build();
-    else if (segment instanceof ROLBuilder) seg = segment.build();
-    else seg = segment;
+  addROL(segment: ROL): this {
     if (!this.group.rol) this.group.rol = [];
-    this.group.rol.push(seg);
+    this.group.rol.push(toSegment("ROL", segment));
     return this;
   }
 
@@ -68,37 +63,25 @@ export interface ADT_A01_INSURANCE {
 export class ADT_A01_INSURANCEBuilder {
   private group: Partial<ADT_A01_INSURANCE> = {};
 
-  in1(segment: HL7v2Segment | IN1Builder | ((builder: IN1Builder) => IN1Builder)): this {
-    if (typeof segment === "function") this.group.in1 = segment(new IN1Builder()).build();
-    else if (segment instanceof IN1Builder) this.group.in1 = segment.build();
-    else this.group.in1 = segment;
+  in1(segment: IN1): this {
+    this.group.in1 = toSegment("IN1", segment);
     return this;
   }
 
-  in2(segment: HL7v2Segment | IN2Builder | ((builder: IN2Builder) => IN2Builder)): this {
-    if (typeof segment === "function") this.group.in2 = segment(new IN2Builder()).build();
-    else if (segment instanceof IN2Builder) this.group.in2 = segment.build();
-    else this.group.in2 = segment;
+  in2(segment: IN2): this {
+    this.group.in2 = toSegment("IN2", segment);
     return this;
   }
 
-  addIN3(segment: HL7v2Segment | IN3Builder | ((builder: IN3Builder) => IN3Builder)): this {
-    let seg: HL7v2Segment;
-    if (typeof segment === "function") seg = segment(new IN3Builder()).build();
-    else if (segment instanceof IN3Builder) seg = segment.build();
-    else seg = segment;
+  addIN3(segment: IN3): this {
     if (!this.group.in3) this.group.in3 = [];
-    this.group.in3.push(seg);
+    this.group.in3.push(toSegment("IN3", segment));
     return this;
   }
 
-  addROL(segment: HL7v2Segment | ROLBuilder | ((builder: ROLBuilder) => ROLBuilder)): this {
-    let seg: HL7v2Segment;
-    if (typeof segment === "function") seg = segment(new ROLBuilder()).build();
-    else if (segment instanceof ROLBuilder) seg = segment.build();
-    else seg = segment;
+  addROL(segment: ROL): this {
     if (!this.group.rol) this.group.rol = [];
-    this.group.rol.push(seg);
+    this.group.rol.push(toSegment("ROL", segment));
     return this;
   }
 
@@ -141,190 +124,130 @@ export interface ADT_A01_Message {
 export class ADT_A01Builder {
   private msg: Partial<ADT_A01_Message> = {};
 
-  msh(segment: HL7v2Segment | MSHBuilder | ((builder: MSHBuilder) => MSHBuilder)): this {
-    if (typeof segment === "function") this.msg.msh = segment(new MSHBuilder()).build();
-    else if (segment instanceof MSHBuilder) this.msg.msh = segment.build();
-    else this.msg.msh = segment;
+  msh(segment: MSH): this {
+    this.msg.msh = toSegment("MSH", segment);
     return this;
   }
 
-  addSFT(segment: HL7v2Segment | SFTBuilder | ((builder: SFTBuilder) => SFTBuilder)): this {
-    let seg: HL7v2Segment;
-    if (typeof segment === "function") seg = segment(new SFTBuilder()).build();
-    else if (segment instanceof SFTBuilder) seg = segment.build();
-    else seg = segment;
+  addSFT(segment: SFT): this {
     if (!this.msg.sft) this.msg.sft = [];
-    this.msg.sft.push(seg);
+    this.msg.sft.push(toSegment("SFT", segment));
     return this;
   }
 
-  evn(segment: HL7v2Segment | EVNBuilder | ((builder: EVNBuilder) => EVNBuilder)): this {
-    if (typeof segment === "function") this.msg.evn = segment(new EVNBuilder()).build();
-    else if (segment instanceof EVNBuilder) this.msg.evn = segment.build();
-    else this.msg.evn = segment;
+  evn(segment: EVN): this {
+    this.msg.evn = toSegment("EVN", segment);
     return this;
   }
 
-  pid(segment: HL7v2Segment | PIDBuilder | ((builder: PIDBuilder) => PIDBuilder)): this {
-    if (typeof segment === "function") this.msg.pid = segment(new PIDBuilder()).build();
-    else if (segment instanceof PIDBuilder) this.msg.pid = segment.build();
-    else this.msg.pid = segment;
+  pid(segment: PID): this {
+    this.msg.pid = toSegment("PID", segment);
     return this;
   }
 
-  pd1(segment: HL7v2Segment | PD1Builder | ((builder: PD1Builder) => PD1Builder)): this {
-    if (typeof segment === "function") this.msg.pd1 = segment(new PD1Builder()).build();
-    else if (segment instanceof PD1Builder) this.msg.pd1 = segment.build();
-    else this.msg.pd1 = segment;
+  pd1(segment: PD1): this {
+    this.msg.pd1 = toSegment("PD1", segment);
     return this;
   }
 
-  addROL_1(segment: HL7v2Segment | ROLBuilder | ((builder: ROLBuilder) => ROLBuilder)): this {
-    let seg: HL7v2Segment;
-    if (typeof segment === "function") seg = segment(new ROLBuilder()).build();
-    else if (segment instanceof ROLBuilder) seg = segment.build();
-    else seg = segment;
+  addROL_1(segment: ROL): this {
     if (!this.msg.rol_1) this.msg.rol_1 = [];
-    this.msg.rol_1.push(seg);
+    this.msg.rol_1.push(toSegment("ROL", segment));
     return this;
   }
 
-  addNK1(segment: HL7v2Segment | NK1Builder | ((builder: NK1Builder) => NK1Builder)): this {
-    let seg: HL7v2Segment;
-    if (typeof segment === "function") seg = segment(new NK1Builder()).build();
-    else if (segment instanceof NK1Builder) seg = segment.build();
-    else seg = segment;
+  addNK1(segment: NK1): this {
     if (!this.msg.nk1) this.msg.nk1 = [];
-    this.msg.nk1.push(seg);
+    this.msg.nk1.push(toSegment("NK1", segment));
     return this;
   }
 
-  pv1(segment: HL7v2Segment | PV1Builder | ((builder: PV1Builder) => PV1Builder)): this {
-    if (typeof segment === "function") this.msg.pv1 = segment(new PV1Builder()).build();
-    else if (segment instanceof PV1Builder) this.msg.pv1 = segment.build();
-    else this.msg.pv1 = segment;
+  pv1(segment: PV1): this {
+    this.msg.pv1 = toSegment("PV1", segment);
     return this;
   }
 
-  pv2(segment: HL7v2Segment | PV2Builder | ((builder: PV2Builder) => PV2Builder)): this {
-    if (typeof segment === "function") this.msg.pv2 = segment(new PV2Builder()).build();
-    else if (segment instanceof PV2Builder) this.msg.pv2 = segment.build();
-    else this.msg.pv2 = segment;
+  pv2(segment: PV2): this {
+    this.msg.pv2 = toSegment("PV2", segment);
     return this;
   }
 
-  addROL_2(segment: HL7v2Segment | ROLBuilder | ((builder: ROLBuilder) => ROLBuilder)): this {
-    let seg: HL7v2Segment;
-    if (typeof segment === "function") seg = segment(new ROLBuilder()).build();
-    else if (segment instanceof ROLBuilder) seg = segment.build();
-    else seg = segment;
+  addROL_2(segment: ROL): this {
     if (!this.msg.rol_2) this.msg.rol_2 = [];
-    this.msg.rol_2.push(seg);
+    this.msg.rol_2.push(toSegment("ROL", segment));
     return this;
   }
 
-  addDB1(segment: HL7v2Segment | DB1Builder | ((builder: DB1Builder) => DB1Builder)): this {
-    let seg: HL7v2Segment;
-    if (typeof segment === "function") seg = segment(new DB1Builder()).build();
-    else if (segment instanceof DB1Builder) seg = segment.build();
-    else seg = segment;
+  addDB1(segment: DB1): this {
     if (!this.msg.db1) this.msg.db1 = [];
-    this.msg.db1.push(seg);
+    this.msg.db1.push(toSegment("DB1", segment));
     return this;
   }
 
-  addOBX(segment: HL7v2Segment | OBXBuilder | ((builder: OBXBuilder) => OBXBuilder)): this {
-    let seg: HL7v2Segment;
-    if (typeof segment === "function") seg = segment(new OBXBuilder()).build();
-    else if (segment instanceof OBXBuilder) seg = segment.build();
-    else seg = segment;
+  addOBX(segment: OBX): this {
     if (!this.msg.obx) this.msg.obx = [];
-    this.msg.obx.push(seg);
+    this.msg.obx.push(toSegment("OBX", segment));
     return this;
   }
 
-  addAL1(segment: HL7v2Segment | AL1Builder | ((builder: AL1Builder) => AL1Builder)): this {
-    let seg: HL7v2Segment;
-    if (typeof segment === "function") seg = segment(new AL1Builder()).build();
-    else if (segment instanceof AL1Builder) seg = segment.build();
-    else seg = segment;
+  addAL1(segment: AL1): this {
     if (!this.msg.al1) this.msg.al1 = [];
-    this.msg.al1.push(seg);
+    this.msg.al1.push(toSegment("AL1", segment));
     return this;
   }
 
-  addDG1(segment: HL7v2Segment | DG1Builder | ((builder: DG1Builder) => DG1Builder)): this {
-    let seg: HL7v2Segment;
-    if (typeof segment === "function") seg = segment(new DG1Builder()).build();
-    else if (segment instanceof DG1Builder) seg = segment.build();
-    else seg = segment;
+  addDG1(segment: DG1): this {
     if (!this.msg.dg1) this.msg.dg1 = [];
-    this.msg.dg1.push(seg);
+    this.msg.dg1.push(toSegment("DG1", segment));
     return this;
   }
 
-  drg(segment: HL7v2Segment | DRGBuilder | ((builder: DRGBuilder) => DRGBuilder)): this {
-    if (typeof segment === "function") this.msg.drg = segment(new DRGBuilder()).build();
-    else if (segment instanceof DRGBuilder) this.msg.drg = segment.build();
-    else this.msg.drg = segment;
+  drg(segment: DRG): this {
+    this.msg.drg = toSegment("DRG", segment);
     return this;
   }
 
-  addPROCEDURE(group: ADT_A01_PROCEDURE | ADT_A01_PROCEDUREBuilder | ((builder: ADT_A01_PROCEDUREBuilder) => ADT_A01_PROCEDUREBuilder)): this {
+  addPROCEDURE(group: ADT_A01_PROCEDURE | ((builder: ADT_A01_PROCEDUREBuilder) => ADT_A01_PROCEDUREBuilder)): this {
     let g: ADT_A01_PROCEDURE;
     if (typeof group === "function") g = group(new ADT_A01_PROCEDUREBuilder()).build();
-    else if (group instanceof ADT_A01_PROCEDUREBuilder) g = group.build();
     else g = group;
     if (!this.msg.procedure) this.msg.procedure = [];
     this.msg.procedure.push(g);
     return this;
   }
 
-  addGT1(segment: HL7v2Segment | GT1Builder | ((builder: GT1Builder) => GT1Builder)): this {
-    let seg: HL7v2Segment;
-    if (typeof segment === "function") seg = segment(new GT1Builder()).build();
-    else if (segment instanceof GT1Builder) seg = segment.build();
-    else seg = segment;
+  addGT1(segment: GT1): this {
     if (!this.msg.gt1) this.msg.gt1 = [];
-    this.msg.gt1.push(seg);
+    this.msg.gt1.push(toSegment("GT1", segment));
     return this;
   }
 
-  addINSURANCE(group: ADT_A01_INSURANCE | ADT_A01_INSURANCEBuilder | ((builder: ADT_A01_INSURANCEBuilder) => ADT_A01_INSURANCEBuilder)): this {
+  addINSURANCE(group: ADT_A01_INSURANCE | ((builder: ADT_A01_INSURANCEBuilder) => ADT_A01_INSURANCEBuilder)): this {
     let g: ADT_A01_INSURANCE;
     if (typeof group === "function") g = group(new ADT_A01_INSURANCEBuilder()).build();
-    else if (group instanceof ADT_A01_INSURANCEBuilder) g = group.build();
     else g = group;
     if (!this.msg.insurance) this.msg.insurance = [];
     this.msg.insurance.push(g);
     return this;
   }
 
-  acc(segment: HL7v2Segment | ACCBuilder | ((builder: ACCBuilder) => ACCBuilder)): this {
-    if (typeof segment === "function") this.msg.acc = segment(new ACCBuilder()).build();
-    else if (segment instanceof ACCBuilder) this.msg.acc = segment.build();
-    else this.msg.acc = segment;
+  acc(segment: ACC): this {
+    this.msg.acc = toSegment("ACC", segment);
     return this;
   }
 
-  ub1(segment: HL7v2Segment | UB1Builder | ((builder: UB1Builder) => UB1Builder)): this {
-    if (typeof segment === "function") this.msg.ub1 = segment(new UB1Builder()).build();
-    else if (segment instanceof UB1Builder) this.msg.ub1 = segment.build();
-    else this.msg.ub1 = segment;
+  ub1(segment: UB1): this {
+    this.msg.ub1 = toSegment("UB1", segment);
     return this;
   }
 
-  ub2(segment: HL7v2Segment | UB2Builder | ((builder: UB2Builder) => UB2Builder)): this {
-    if (typeof segment === "function") this.msg.ub2 = segment(new UB2Builder()).build();
-    else if (segment instanceof UB2Builder) this.msg.ub2 = segment.build();
-    else this.msg.ub2 = segment;
+  ub2(segment: UB2): this {
+    this.msg.ub2 = toSegment("UB2", segment);
     return this;
   }
 
-  pda(segment: HL7v2Segment | PDABuilder | ((builder: PDABuilder) => PDABuilder)): this {
-    if (typeof segment === "function") this.msg.pda = segment(new PDABuilder()).build();
-    else if (segment instanceof PDABuilder) this.msg.pda = segment.build();
-    else this.msg.pda = segment;
+  pda(segment: PDA): this {
+    this.msg.pda = toSegment("PDA", segment);
     return this;
   }
 
