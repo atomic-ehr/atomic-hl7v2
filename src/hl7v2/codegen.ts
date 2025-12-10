@@ -408,6 +408,17 @@ class HL7v2CodeGen {
       this.generateMessageBuilder(output, msgType, msgDef);
     }
 
+    // Generate typed input interfaces and toMessage functions
+    output.push(`// ====== Typed Input Interfaces ======`);
+    output.push(``);
+    for (const msgType of this.messageTypes) {
+      const msgDef = this.messageDefs.get(msgType);
+      if (!msgDef) continue;
+
+      this.generateMessageInputTypes(output, msgType, msgDef);
+      this.generateToMessageFunction(output, msgType, msgDef);
+    }
+
     await Bun.write(join(this.outputFolder, "messages.ts"), output.join("\n"));
   }
 
@@ -1054,6 +1065,149 @@ class HL7v2CodeGen {
         }
       }
     }
+  }
+
+  // ====== Typed Input Interfaces ======
+
+  private generateMessageInputTypes(output: string[], msgType: string, msgDef: MessageDef): void {
+    const rootDef = msgDef[msgType];
+    if (!rootDef) return;
+
+    // Generate group input interfaces first
+    for (const [groupName, groupDef] of Object.entries(msgDef)) {
+      if (groupName === msgType) continue;
+      this.generateGroupInputInterface(output, msgType, groupName, groupDef);
+    }
+
+    // Generate main message input interface
+    output.push(`/**`);
+    output.push(` * ${msgType} Input - typed segment data`);
+    output.push(` */`);
+    output.push(`export interface ${msgType}_Input {`);
+    output.push(`  type: "${msgType}";`);
+
+    for (const el of rootDef.elements) {
+      const isRequired = el.minOccurs !== "0";
+      const isRepeating = el.maxOccurs === "unbounded" || parseInt(el.maxOccurs) > 1;
+      const optionalMark = isRequired ? "" : "?";
+      const fieldName = this.getInputFieldName(el);
+
+      if (el.segment) {
+        const segType = el.segment;
+        if (isRepeating) {
+          output.push(`  ${fieldName}${optionalMark}: ${segType}[];`);
+        } else {
+          output.push(`  ${fieldName}${optionalMark}: ${segType};`);
+        }
+      } else if (el.group) {
+        const typeName = `${msgType}_${el.group}_Input`;
+        if (isRepeating) {
+          output.push(`  ${fieldName}${optionalMark}: ${typeName}[];`);
+        } else {
+          output.push(`  ${fieldName}${optionalMark}: ${typeName};`);
+        }
+      }
+    }
+
+    output.push(`}`);
+    output.push(``);
+  }
+
+  private generateGroupInputInterface(
+    output: string[],
+    msgType: string,
+    groupName: string,
+    groupDef: { elements: MessageElement[] }
+  ): void {
+    output.push(`export interface ${msgType}_${groupName}_Input {`);
+
+    for (const el of groupDef.elements) {
+      const isRequired = el.minOccurs !== "0";
+      const isRepeating = el.maxOccurs === "unbounded" || parseInt(el.maxOccurs) > 1;
+      const optionalMark = isRequired ? "" : "?";
+      const fieldName = this.getInputFieldName(el);
+
+      if (el.segment) {
+        const segType = el.segment;
+        if (isRepeating) {
+          output.push(`  ${fieldName}${optionalMark}: ${segType}[];`);
+        } else {
+          output.push(`  ${fieldName}${optionalMark}: ${segType};`);
+        }
+      } else if (el.group) {
+        const typeName = `${msgType}_${el.group}_Input`;
+        if (isRepeating) {
+          output.push(`  ${fieldName}${optionalMark}: ${typeName}[];`);
+        } else {
+          output.push(`  ${fieldName}${optionalMark}: ${typeName};`);
+        }
+      }
+    }
+
+    output.push(`}`);
+    output.push(``);
+  }
+
+  private generateToMessageFunction(output: string[], msgType: string, msgDef: MessageDef): void {
+    const rootDef = msgDef[msgType];
+    if (!rootDef) return;
+
+    output.push(`/**`);
+    output.push(` * Convert ${msgType}_Input to HL7v2Message`);
+    output.push(` */`);
+    output.push(`export function to${msgType}(input: ${msgType}_Input): HL7v2Message {`);
+    output.push(`  const segments: HL7v2Message = [];`);
+
+    this.generateToMessageConversionCode(output, rootDef.elements, msgDef, "input", "  ");
+
+    output.push(`  return segments;`);
+    output.push(`}`);
+    output.push(``);
+  }
+
+  private generateToMessageConversionCode(
+    output: string[],
+    elements: MessageElement[],
+    msgDef: MessageDef,
+    prefix: string,
+    indent: string
+  ): void {
+    for (const el of elements) {
+      const isRepeating = el.maxOccurs === "unbounded" || parseInt(el.maxOccurs) > 1;
+      const fieldName = this.getInputFieldName(el);
+      const fieldPath = `${prefix}.${fieldName}`;
+
+      if (el.segment) {
+        if (isRepeating) {
+          output.push(`${indent}if (${fieldPath}) for (const seg of ${fieldPath}) segments.push(toSegment("${el.segment}", seg));`);
+        } else {
+          output.push(`${indent}if (${fieldPath}) segments.push(toSegment("${el.segment}", ${fieldPath}));`);
+        }
+      } else if (el.group) {
+        const groupDef = msgDef[el.group];
+
+        if (groupDef) {
+          if (isRepeating) {
+            output.push(`${indent}if (${fieldPath}) for (const group of ${fieldPath}) {`);
+            this.generateToMessageConversionCode(output, groupDef.elements, msgDef, "group", indent + "  ");
+            output.push(`${indent}}`);
+          } else {
+            output.push(`${indent}if (${fieldPath}) {`);
+            output.push(`${indent}  const group = ${fieldPath};`);
+            this.generateToMessageConversionCode(output, groupDef.elements, msgDef, "group", indent + "  ");
+            output.push(`${indent}}`);
+          }
+        }
+      }
+    }
+  }
+
+  private getInputFieldName(el: MessageElement): string {
+    // Use UPPERCASE for input interface (MSH, PID, PROCEDURE)
+    if (el.jsonKey) return el.jsonKey;
+    if (el.segment) return el.segment;
+    if (el.group) return el.group;
+    return "";
   }
 }
 

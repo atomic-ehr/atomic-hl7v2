@@ -290,3 +290,84 @@ export class ADT_A01Builder {
     return segments;
   }
 }
+
+// ====== Typed Input Interfaces ======
+
+export interface ADT_A01_PROCEDURE_Input {
+  PR1: PR1;
+  ROL?: ROL[];
+}
+
+export interface ADT_A01_INSURANCE_Input {
+  IN1: IN1;
+  IN2?: IN2;
+  IN3?: IN3[];
+  ROL?: ROL[];
+}
+
+/**
+ * ADT_A01 Input - typed segment data
+ */
+export interface ADT_A01_Input {
+  type: "ADT_A01";
+  MSH: MSH;
+  SFT?: SFT[];
+  EVN: EVN;
+  PID: PID;
+  PD1?: PD1;
+  ROL_1?: ROL[];
+  NK1?: NK1[];
+  PV1: PV1;
+  PV2?: PV2;
+  ROL_2?: ROL[];
+  DB1?: DB1[];
+  OBX?: OBX[];
+  AL1?: AL1[];
+  DG1?: DG1[];
+  DRG?: DRG;
+  PROCEDURE?: ADT_A01_PROCEDURE_Input[];
+  GT1?: GT1[];
+  INSURANCE?: ADT_A01_INSURANCE_Input[];
+  ACC?: ACC;
+  UB1?: UB1;
+  UB2?: UB2;
+  PDA?: PDA;
+}
+
+/**
+ * Convert ADT_A01_Input to HL7v2Message
+ */
+export function toADT_A01(input: ADT_A01_Input): HL7v2Message {
+  const segments: HL7v2Message = [];
+  if (input.MSH) segments.push(toSegment("MSH", input.MSH));
+  if (input.SFT) for (const seg of input.SFT) segments.push(toSegment("SFT", seg));
+  if (input.EVN) segments.push(toSegment("EVN", input.EVN));
+  if (input.PID) segments.push(toSegment("PID", input.PID));
+  if (input.PD1) segments.push(toSegment("PD1", input.PD1));
+  if (input.ROL_1) for (const seg of input.ROL_1) segments.push(toSegment("ROL", seg));
+  if (input.NK1) for (const seg of input.NK1) segments.push(toSegment("NK1", seg));
+  if (input.PV1) segments.push(toSegment("PV1", input.PV1));
+  if (input.PV2) segments.push(toSegment("PV2", input.PV2));
+  if (input.ROL_2) for (const seg of input.ROL_2) segments.push(toSegment("ROL", seg));
+  if (input.DB1) for (const seg of input.DB1) segments.push(toSegment("DB1", seg));
+  if (input.OBX) for (const seg of input.OBX) segments.push(toSegment("OBX", seg));
+  if (input.AL1) for (const seg of input.AL1) segments.push(toSegment("AL1", seg));
+  if (input.DG1) for (const seg of input.DG1) segments.push(toSegment("DG1", seg));
+  if (input.DRG) segments.push(toSegment("DRG", input.DRG));
+  if (input.PROCEDURE) for (const group of input.PROCEDURE) {
+    if (group.PR1) segments.push(toSegment("PR1", group.PR1));
+    if (group.ROL) for (const seg of group.ROL) segments.push(toSegment("ROL", seg));
+  }
+  if (input.GT1) for (const seg of input.GT1) segments.push(toSegment("GT1", seg));
+  if (input.INSURANCE) for (const group of input.INSURANCE) {
+    if (group.IN1) segments.push(toSegment("IN1", group.IN1));
+    if (group.IN2) segments.push(toSegment("IN2", group.IN2));
+    if (group.IN3) for (const seg of group.IN3) segments.push(toSegment("IN3", seg));
+    if (group.ROL) for (const seg of group.ROL) segments.push(toSegment("ROL", seg));
+  }
+  if (input.ACC) segments.push(toSegment("ACC", input.ACC));
+  if (input.UB1) segments.push(toSegment("UB1", input.UB1));
+  if (input.UB2) segments.push(toSegment("UB2", input.UB2));
+  if (input.PDA) segments.push(toSegment("PDA", input.PDA));
+  return segments;
+}
