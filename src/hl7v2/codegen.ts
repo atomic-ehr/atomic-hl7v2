@@ -374,8 +374,8 @@ class HL7v2CodeGen {
       output.push(`function from${dtName}(fv: FieldValue | undefined): ${dtName} | undefined {`);
       output.push(`  if (fv === undefined) return undefined;`);
 
-      if (firstFieldName) {
-        const firstNestedDt = firstCompDef ? this.dataTypeDefs.get(firstCompDef.dataType) : undefined;
+      if (firstFieldName && firstCompDef) {
+        const firstNestedDt = this.dataTypeDefs.get(firstCompDef.dataType);
         if (firstNestedDt) {
           output.push(`  if (typeof fv === "string") return { ${firstFieldName}_1: from${firstCompDef.dataType}(fv) };`);
         } else {

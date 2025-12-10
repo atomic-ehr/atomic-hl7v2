@@ -9,6 +9,7 @@
 
 import { parseMessage } from "../src/hl7v2/parse";
 import { PIDBuilder } from "./fields";
+import type { CX, XPN, XAD } from "./fields";
 import type { HL7v2Segment } from "./types";
 
 // FHIR R4 Patient resource type (simplified)
@@ -55,8 +56,8 @@ DG1|1||J18.9^Pneumonia^ICD10|||A`;
  */
 function extractPatientFromPID(pidSegment: HL7v2Segment): FHIRPatient {
   // Create a builder instance from the parsed segment to use getters
-  const pid = Object.assign(new PIDBuilder(), { seg: pidSegment }) as PIDBuilder & { seg: HL7v2Segment };
-  // Access the internal segment directly for getters
+  const pid = new PIDBuilder();
+  // Access the internal segment directly for getters (cast to any to bypass private access)
   (pid as any).seg = pidSegment;
 
   const patient: FHIRPatient = {
@@ -68,7 +69,7 @@ function extractPatientFromPID(pidSegment: HL7v2Segment): FHIRPatient {
   // HD uses: namespace_1
   const identifiers = pid.get_pid_3_identifier();
   if (identifiers && identifiers.length > 0) {
-    patient.identifier = identifiers.map(id => ({
+    patient.identifier = identifiers.map((id: CX) => ({
       value: id.value_1,
       system: id.system_4?.namespace_1
         ? `urn:oid:${id.system_4.namespace_1}`
@@ -84,7 +85,7 @@ function extractPatientFromPID(pidSegment: HL7v2Segment): FHIRPatient {
   // FN uses: family_1 (surname)
   const names = pid.get_pid_5_name();
   if (names && names.length > 0) {
-    patient.name = names.map(name => {
+    patient.name = names.map((name: XPN) => {
       const result: NonNullable<FHIRPatient["name"]>[0] = {};
 
       if (name.family_1?.family_1) {
@@ -129,7 +130,7 @@ function extractPatientFromPID(pidSegment: HL7v2Segment): FHIRPatient {
   // SAD uses: line_1 (street address)
   const addresses = pid.get_pid_11_address();
   if (addresses && addresses.length > 0) {
-    patient.address = addresses.map(addr => {
+    patient.address = addresses.map((addr: XAD) => {
       const result: NonNullable<FHIRPatient["address"]>[0] = {};
 
       const lines: string[] = [];
