@@ -615,6 +615,86 @@ class HL7v2CodeGen {
     output.push(`  return { segment: segmentName, fields };`);
     output.push(`}`);
     output.push(``);
+
+    // Generate fromSegment converters for each segment
+    this.generateFromSegmentFunctions(output);
+  }
+
+  private generateFromSegmentFunctions(output: string[]): void {
+    const segments = [...this.usedSegments].sort();
+
+    output.push(`// ====== FromSegment Converters ======`);
+    output.push(``);
+
+    for (const segName of segments) {
+      const segDef = this.segmentDefs.get(segName);
+      if (!segDef) continue;
+
+      output.push(`/** Convert HL7v2Segment to ${segName} */`);
+      output.push(`export function from${segName}(segment: HL7v2Segment): ${segName} {`);
+      output.push(`  const result: ${segName} = {} as ${segName};`);
+
+      for (const field of segDef.fields) {
+        const fieldDef = this.fieldDefs.get(field.field);
+        if (!fieldDef) continue;
+
+        const fieldNumStr = field.field.split(".")[1];
+        if (!fieldNumStr) continue;
+        const fieldNum = parseInt(fieldNumStr, 10);
+        const fieldName = this.getCodeName(fieldDef);
+        const isRepeating = field.maxOccurs === "unbounded" || parseInt(field.maxOccurs) > 1;
+        const dtDef = this.dataTypeDefs.get(fieldDef.dataType);
+        const isPrimitive = PRIMITIVE_TYPES.has(fieldDef.dataType);
+
+        const propName = `$${fieldNum}_${fieldName}`;
+
+        if (isPrimitive) {
+          if (isRepeating) {
+            output.push(`  if (segment.fields[${fieldNum}] !== undefined) {`);
+            output.push(`    const fv = segment.fields[${fieldNum}];`);
+            output.push(`    if (Array.isArray(fv)) {`);
+            output.push(`      result.${propName} = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);`);
+            output.push(`    } else if (typeof fv === "string") {`);
+            output.push(`      result.${propName} = [fv];`);
+            output.push(`    }`);
+            output.push(`  }`);
+          } else {
+            output.push(`  if (segment.fields[${fieldNum}] !== undefined) {`);
+            output.push(`    const v = getComponent(segment.fields[${fieldNum}]);`);
+            output.push(`    if (v !== undefined) result.${propName} = v;`);
+            output.push(`  }`);
+          }
+        } else if (dtDef) {
+          const fromFn = `from${fieldDef.dataType}`;
+          if (isRepeating) {
+            output.push(`  if (segment.fields[${fieldNum}] !== undefined) {`);
+            output.push(`    const fv = segment.fields[${fieldNum}];`);
+            output.push(`    if (Array.isArray(fv)) {`);
+            output.push(`      result.${propName} = fv.map(v => ${fromFn}(v)).filter((v): v is ${fieldDef.dataType} => v !== undefined);`);
+            output.push(`    } else {`);
+            output.push(`      const converted = ${fromFn}(fv);`);
+            output.push(`      if (converted) result.${propName} = [converted];`);
+            output.push(`    }`);
+            output.push(`  }`);
+          } else {
+            output.push(`  if (segment.fields[${fieldNum}] !== undefined) {`);
+            output.push(`    const converted = ${fromFn}(segment.fields[${fieldNum}]);`);
+            output.push(`    if (converted) result.${propName} = converted;`);
+            output.push(`  }`);
+          }
+        } else {
+          // Unknown type, treat as string
+          output.push(`  if (segment.fields[${fieldNum}] !== undefined) {`);
+          output.push(`    const v = getComponent(segment.fields[${fieldNum}]);`);
+          output.push(`    if (v !== undefined) result.${propName} = v;`);
+          output.push(`  }`);
+        }
+      }
+
+      output.push(`  return result;`);
+      output.push(`}`);
+      output.push(``);
+    }
   }
 
   private getCodeName(def: FieldDef): string {

@@ -1,7 +1,9 @@
 import { test, expect, describe } from "bun:test";
 import { ADT_A01Builder } from "../../example/messages";
+import { fromPID, fromMSH, fromPV1 } from "../../example/fields";
 import { AdministrativeSex, PatientClass } from "../../example/tables";
 import { formatMessage } from "../../src/hl7v2/format";
+import { parseMessage } from "../../src/hl7v2/parse";
 
 // Helper to create minimal valid MSH
 const minMSH = (overrides = {}) => ({
@@ -169,5 +171,84 @@ describe("ADT_A01Builder", () => {
     // Missing PV1
 
     expect(() => builder.build()).toThrow("pv1 is required");
+  });
+});
+
+describe("fromSegment converters", () => {
+  test("parses PID segment to typed interface", () => {
+    const wireFormat = `MSH|^~\\&|APP|FAC|||20251210120000||ADT^A01|MSG001|P|2.5.1
+PID|1||12345^^^MRN^MR~999-99-9999^^^SSN^SS||Smith^John^Robert||19800515|M`;
+
+    const message = parseMessage(wireFormat);
+    const pidSeg = message.find(s => s.segment === "PID");
+    expect(pidSeg).toBeDefined();
+
+    const pid = fromPID(pidSeg!);
+
+    expect(pid.$1_setIdPid).toBe("1");
+    expect(pid.$3_identifier).toHaveLength(2);
+    expect(pid.$3_identifier?.[0]?.$1_value).toBe("12345");
+    expect(pid.$3_identifier?.[0]?.$4_system?.$1_namespace).toBe("MRN");
+    expect(pid.$3_identifier?.[0]?.$5_type).toBe("MR");
+    expect(pid.$3_identifier?.[1]?.$1_value).toBe("999-99-9999");
+    expect(pid.$5_name?.[0]?.$1_family?.$1_family).toBe("Smith");
+    expect(pid.$5_name?.[0]?.$2_given).toBe("John");
+    expect(pid.$5_name?.[0]?.$3_additionalGiven).toBe("Robert");
+    expect(pid.$7_birthDate).toBe("19800515");
+    expect(pid.$8_gender).toBe("M");
+  });
+
+  test("parses MSH segment to typed interface", () => {
+    const wireFormat = `MSH|^~\\&|SENDER|SEND_FAC|RECEIVER|RECV_FAC|20251210120000||ADT^A01^ADT_A01|MSG001|P|2.5.1`;
+
+    const message = parseMessage(wireFormat);
+    const mshSeg = message.find(s => s.segment === "MSH");
+    expect(mshSeg).toBeDefined();
+
+    const msh = fromMSH(mshSeg!);
+
+    expect(msh.$3_sendingApplication?.$1_namespace).toBe("SENDER");
+    expect(msh.$4_sendingFacility?.$1_namespace).toBe("SEND_FAC");
+    expect(msh.$5_receivingApplication?.$1_namespace).toBe("RECEIVER");
+    expect(msh.$9_messageType?.$1_code).toBe("ADT");
+    expect(msh.$9_messageType?.$2_event).toBe("A01");
+    expect(msh.$10_messageControlId).toBe("MSG001");
+  });
+
+  test("round-trip: build → format → parse → fromSegment", () => {
+    // Build message
+    const original = new ADT_A01Builder()
+      .msh(minMSH({
+        $3_sendingApplication: { $1_namespace: "SENDER" },
+        $5_receivingApplication: { $1_namespace: "RECEIVER" }
+      }))
+      .evn(minEVN())
+      .pid(minPID({
+        $3_identifier: [{ $1_value: "PAT123", $5_type: "MR" }],
+        $5_name: [{ $1_family: { $1_family: "Doe" }, $2_given: "Jane" }],
+        $8_gender: AdministrativeSex.Female
+      }))
+      .pv1(minPV1({ $2_class: PatientClass.Outpatient }))
+      .build();
+
+    // Format to wire
+    const wire = formatMessage(original);
+
+    // Parse back
+    const parsed = parseMessage(wire);
+
+    // Convert to typed
+    const pidSeg = parsed.find(s => s.segment === "PID");
+    const pid = fromPID(pidSeg!);
+
+    expect(pid.$3_identifier?.[0]?.$1_value).toBe("PAT123");
+    expect(pid.$3_identifier?.[0]?.$5_type).toBe("MR");
+    expect(pid.$5_name?.[0]?.$1_family?.$1_family).toBe("Doe");
+    expect(pid.$5_name?.[0]?.$2_given).toBe("Jane");
+    expect(pid.$8_gender).toBe("F");
+
+    const pv1Seg = parsed.find(s => s.segment === "PV1");
+    const pv1 = fromPV1(pv1Seg!);
+    expect(pv1.$2_class).toBe("O");
   });
 });

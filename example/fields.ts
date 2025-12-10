@@ -3006,3 +3006,3326 @@ export function toSegment<T extends object>(segmentName: string, data: T): HL7v2
   }
   return { segment: segmentName, fields };
 }
+
+// ====== FromSegment Converters ======
+
+/** Convert HL7v2Segment to ACC */
+export function fromACC(segment: HL7v2Segment): ACC {
+  const result: ACC = {} as ACC;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_accidentDateTime = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const converted = fromCE(segment.fields[2]);
+    if (converted) result.$2_accidentCode = converted;
+  }
+  if (segment.fields[3] !== undefined) {
+    const v = getComponent(segment.fields[3]);
+    if (v !== undefined) result.$3_accidentLocation = v;
+  }
+  if (segment.fields[4] !== undefined) {
+    const converted = fromCE(segment.fields[4]);
+    if (converted) result.$4_autoAccidentState = converted;
+  }
+  if (segment.fields[5] !== undefined) {
+    const v = getComponent(segment.fields[5]);
+    if (v !== undefined) result.$5_accidentJobRelatedIndicator = v;
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_accidentDeathIndicator = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const converted = fromXCN(segment.fields[7]);
+    if (converted) result.$7_enteredBy = converted;
+  }
+  if (segment.fields[8] !== undefined) {
+    const v = getComponent(segment.fields[8]);
+    if (v !== undefined) result.$8_accidentDescription = v;
+  }
+  if (segment.fields[9] !== undefined) {
+    const v = getComponent(segment.fields[9]);
+    if (v !== undefined) result.$9_broughtInBy = v;
+  }
+  if (segment.fields[10] !== undefined) {
+    const v = getComponent(segment.fields[10]);
+    if (v !== undefined) result.$10_policeNotifiedIndicator = v;
+  }
+  if (segment.fields[11] !== undefined) {
+    const converted = fromXAD(segment.fields[11]);
+    if (converted) result.$11_accidentAddress = converted;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to AL1 */
+export function fromAL1(segment: HL7v2Segment): AL1 {
+  const result: AL1 = {} as AL1;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdAl1 = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const converted = fromCE(segment.fields[2]);
+    if (converted) result.$2_allergenTypeCode = converted;
+  }
+  if (segment.fields[3] !== undefined) {
+    const converted = fromCE(segment.fields[3]);
+    if (converted) result.$3_allergenCodeMnemonicDescription = converted;
+  }
+  if (segment.fields[4] !== undefined) {
+    const converted = fromCE(segment.fields[4]);
+    if (converted) result.$4_allergySeverityCode = converted;
+  }
+  if (segment.fields[5] !== undefined) {
+    const fv = segment.fields[5];
+    if (Array.isArray(fv)) {
+      result.$5_allergyReactionCode = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$5_allergyReactionCode = [fv];
+    }
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_identificationDate = v;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to DB1 */
+export function fromDB1(segment: HL7v2Segment): DB1 {
+  const result: DB1 = {} as DB1;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdDb1 = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_disabledPersonCode = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const fv = segment.fields[3];
+    if (Array.isArray(fv)) {
+      result.$3_disabledPersonIdentifier = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$3_disabledPersonIdentifier = [converted];
+    }
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_disabledIndicator = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const v = getComponent(segment.fields[5]);
+    if (v !== undefined) result.$5_disabilityStartDate = v;
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_disabilityEndDate = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const v = getComponent(segment.fields[7]);
+    if (v !== undefined) result.$7_disabilityReturnToWorkDate = v;
+  }
+  if (segment.fields[8] !== undefined) {
+    const v = getComponent(segment.fields[8]);
+    if (v !== undefined) result.$8_disabilityUnableToWorkDate = v;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to DG1 */
+export function fromDG1(segment: HL7v2Segment): DG1 {
+  const result: DG1 = {} as DG1;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdDg1 = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_diagnosisCodingMethod = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const converted = fromCE(segment.fields[3]);
+    if (converted) result.$3_diagnosisCodeDg1 = converted;
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_diagnosisDescription = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const v = getComponent(segment.fields[5]);
+    if (v !== undefined) result.$5_diagnosisDateTime = v;
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_diagnosisType = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const converted = fromCE(segment.fields[7]);
+    if (converted) result.$7_majorDiagnosticCategory = converted;
+  }
+  if (segment.fields[8] !== undefined) {
+    const converted = fromCE(segment.fields[8]);
+    if (converted) result.$8_diagnosticRelatedGroup = converted;
+  }
+  if (segment.fields[9] !== undefined) {
+    const v = getComponent(segment.fields[9]);
+    if (v !== undefined) result.$9_drgApproval = v;
+  }
+  if (segment.fields[10] !== undefined) {
+    const v = getComponent(segment.fields[10]);
+    if (v !== undefined) result.$10_drgGrouperReviewCode = v;
+  }
+  if (segment.fields[11] !== undefined) {
+    const converted = fromCE(segment.fields[11]);
+    if (converted) result.$11_outlierType = converted;
+  }
+  if (segment.fields[12] !== undefined) {
+    const v = getComponent(segment.fields[12]);
+    if (v !== undefined) result.$12_outlierDays = v;
+  }
+  if (segment.fields[13] !== undefined) {
+    const converted = fromCP(segment.fields[13]);
+    if (converted) result.$13_outlierCost = converted;
+  }
+  if (segment.fields[14] !== undefined) {
+    const v = getComponent(segment.fields[14]);
+    if (v !== undefined) result.$14_grouperVersionAndType = v;
+  }
+  if (segment.fields[15] !== undefined) {
+    const v = getComponent(segment.fields[15]);
+    if (v !== undefined) result.$15_diagnosisPriority = v;
+  }
+  if (segment.fields[16] !== undefined) {
+    const fv = segment.fields[16];
+    if (Array.isArray(fv)) {
+      result.$16_diagnosingClinician = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$16_diagnosingClinician = [converted];
+    }
+  }
+  if (segment.fields[17] !== undefined) {
+    const v = getComponent(segment.fields[17]);
+    if (v !== undefined) result.$17_diagnosisClassification = v;
+  }
+  if (segment.fields[18] !== undefined) {
+    const v = getComponent(segment.fields[18]);
+    if (v !== undefined) result.$18_confidentialIndicator = v;
+  }
+  if (segment.fields[19] !== undefined) {
+    const v = getComponent(segment.fields[19]);
+    if (v !== undefined) result.$19_attestationDateTime = v;
+  }
+  if (segment.fields[20] !== undefined) {
+    const converted = fromEI(segment.fields[20]);
+    if (converted) result.$20_diagnosisIdentifier = converted;
+  }
+  if (segment.fields[21] !== undefined) {
+    const v = getComponent(segment.fields[21]);
+    if (v !== undefined) result.$21_diagnosisActionCode = v;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to DRG */
+export function fromDRG(segment: HL7v2Segment): DRG {
+  const result: DRG = {} as DRG;
+  if (segment.fields[1] !== undefined) {
+    const converted = fromCE(segment.fields[1]);
+    if (converted) result.$1_diagnosticRelatedGroup = converted;
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_drgAssignedDateTime = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const v = getComponent(segment.fields[3]);
+    if (v !== undefined) result.$3_drgApproval = v;
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_drgGrouperReviewCode = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const converted = fromCE(segment.fields[5]);
+    if (converted) result.$5_outlierType = converted;
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_outlierDays = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const converted = fromCP(segment.fields[7]);
+    if (converted) result.$7_outlierCost = converted;
+  }
+  if (segment.fields[8] !== undefined) {
+    const v = getComponent(segment.fields[8]);
+    if (v !== undefined) result.$8_drgPayor = v;
+  }
+  if (segment.fields[9] !== undefined) {
+    const converted = fromCP(segment.fields[9]);
+    if (converted) result.$9_outlierReimbursement = converted;
+  }
+  if (segment.fields[10] !== undefined) {
+    const v = getComponent(segment.fields[10]);
+    if (v !== undefined) result.$10_confidentialIndicator = v;
+  }
+  if (segment.fields[11] !== undefined) {
+    const v = getComponent(segment.fields[11]);
+    if (v !== undefined) result.$11_drgTransferType = v;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to EVN */
+export function fromEVN(segment: HL7v2Segment): EVN {
+  const result: EVN = {} as EVN;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_eventTypeCode = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_recordedDateTime = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const v = getComponent(segment.fields[3]);
+    if (v !== undefined) result.$3_plannedEventDateTime = v;
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_eventReasonCode = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const fv = segment.fields[5];
+    if (Array.isArray(fv)) {
+      result.$5_operatorId = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$5_operatorId = [converted];
+    }
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_eventOccurred = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const converted = fromHD(segment.fields[7]);
+    if (converted) result.$7_eventFacility = converted;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to GT1 */
+export function fromGT1(segment: HL7v2Segment): GT1 {
+  const result: GT1 = {} as GT1;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdGt1 = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const fv = segment.fields[2];
+    if (Array.isArray(fv)) {
+      result.$2_guarantorNumber = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$2_guarantorNumber = [converted];
+    }
+  }
+  if (segment.fields[3] !== undefined) {
+    const fv = segment.fields[3];
+    if (Array.isArray(fv)) {
+      result.$3_guarantorName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$3_guarantorName = [converted];
+    }
+  }
+  if (segment.fields[4] !== undefined) {
+    const fv = segment.fields[4];
+    if (Array.isArray(fv)) {
+      result.$4_guarantorSpouseName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$4_guarantorSpouseName = [converted];
+    }
+  }
+  if (segment.fields[5] !== undefined) {
+    const fv = segment.fields[5];
+    if (Array.isArray(fv)) {
+      result.$5_guarantorAddress = fv.map(v => fromXAD(v)).filter((v): v is XAD => v !== undefined);
+    } else {
+      const converted = fromXAD(fv);
+      if (converted) result.$5_guarantorAddress = [converted];
+    }
+  }
+  if (segment.fields[6] !== undefined) {
+    const fv = segment.fields[6];
+    if (Array.isArray(fv)) {
+      result.$6_guarantorPhNumHome = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$6_guarantorPhNumHome = [converted];
+    }
+  }
+  if (segment.fields[7] !== undefined) {
+    const fv = segment.fields[7];
+    if (Array.isArray(fv)) {
+      result.$7_guarantorPhNumBusiness = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$7_guarantorPhNumBusiness = [converted];
+    }
+  }
+  if (segment.fields[8] !== undefined) {
+    const v = getComponent(segment.fields[8]);
+    if (v !== undefined) result.$8_birthDate = v;
+  }
+  if (segment.fields[9] !== undefined) {
+    const v = getComponent(segment.fields[9]);
+    if (v !== undefined) result.$9_guarantorAdministrativeGender = v;
+  }
+  if (segment.fields[10] !== undefined) {
+    const v = getComponent(segment.fields[10]);
+    if (v !== undefined) result.$10_guarantorType = v;
+  }
+  if (segment.fields[11] !== undefined) {
+    const converted = fromCE(segment.fields[11]);
+    if (converted) result.$11_guarantorRelationship = converted;
+  }
+  if (segment.fields[12] !== undefined) {
+    const v = getComponent(segment.fields[12]);
+    if (v !== undefined) result.$12_guarantorSsn = v;
+  }
+  if (segment.fields[13] !== undefined) {
+    const v = getComponent(segment.fields[13]);
+    if (v !== undefined) result.$13_guarantorDateBegin = v;
+  }
+  if (segment.fields[14] !== undefined) {
+    const v = getComponent(segment.fields[14]);
+    if (v !== undefined) result.$14_guarantorDateEnd = v;
+  }
+  if (segment.fields[15] !== undefined) {
+    const v = getComponent(segment.fields[15]);
+    if (v !== undefined) result.$15_guarantorPriority = v;
+  }
+  if (segment.fields[16] !== undefined) {
+    const fv = segment.fields[16];
+    if (Array.isArray(fv)) {
+      result.$16_guarantorEmployerName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$16_guarantorEmployerName = [converted];
+    }
+  }
+  if (segment.fields[17] !== undefined) {
+    const fv = segment.fields[17];
+    if (Array.isArray(fv)) {
+      result.$17_guarantorEmployerAddress = fv.map(v => fromXAD(v)).filter((v): v is XAD => v !== undefined);
+    } else {
+      const converted = fromXAD(fv);
+      if (converted) result.$17_guarantorEmployerAddress = [converted];
+    }
+  }
+  if (segment.fields[18] !== undefined) {
+    const fv = segment.fields[18];
+    if (Array.isArray(fv)) {
+      result.$18_guarantorEmployerPhoneNumber = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$18_guarantorEmployerPhoneNumber = [converted];
+    }
+  }
+  if (segment.fields[19] !== undefined) {
+    const fv = segment.fields[19];
+    if (Array.isArray(fv)) {
+      result.$19_guarantorEmployeeIdNumber = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$19_guarantorEmployeeIdNumber = [converted];
+    }
+  }
+  if (segment.fields[20] !== undefined) {
+    const v = getComponent(segment.fields[20]);
+    if (v !== undefined) result.$20_guarantorEmploymentStatus = v;
+  }
+  if (segment.fields[21] !== undefined) {
+    const fv = segment.fields[21];
+    if (Array.isArray(fv)) {
+      result.$21_guarantorOrganizationName = fv.map(v => fromXON(v)).filter((v): v is XON => v !== undefined);
+    } else {
+      const converted = fromXON(fv);
+      if (converted) result.$21_guarantorOrganizationName = [converted];
+    }
+  }
+  if (segment.fields[22] !== undefined) {
+    const v = getComponent(segment.fields[22]);
+    if (v !== undefined) result.$22_guarantorBillingHoldFlag = v;
+  }
+  if (segment.fields[23] !== undefined) {
+    const converted = fromCE(segment.fields[23]);
+    if (converted) result.$23_guarantorCreditRatingCode = converted;
+  }
+  if (segment.fields[24] !== undefined) {
+    const v = getComponent(segment.fields[24]);
+    if (v !== undefined) result.$24_guarantorDeathDateAndTime = v;
+  }
+  if (segment.fields[25] !== undefined) {
+    const v = getComponent(segment.fields[25]);
+    if (v !== undefined) result.$25_guarantorDeathFlag = v;
+  }
+  if (segment.fields[26] !== undefined) {
+    const converted = fromCE(segment.fields[26]);
+    if (converted) result.$26_guarantorChargeAdjustmentCode = converted;
+  }
+  if (segment.fields[27] !== undefined) {
+    const converted = fromCP(segment.fields[27]);
+    if (converted) result.$27_guarantorHouseholdAnnualIncome = converted;
+  }
+  if (segment.fields[28] !== undefined) {
+    const v = getComponent(segment.fields[28]);
+    if (v !== undefined) result.$28_guarantorHouseholdSize = v;
+  }
+  if (segment.fields[29] !== undefined) {
+    const fv = segment.fields[29];
+    if (Array.isArray(fv)) {
+      result.$29_guarantorEmployerIdNumber = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$29_guarantorEmployerIdNumber = [converted];
+    }
+  }
+  if (segment.fields[30] !== undefined) {
+    const converted = fromCE(segment.fields[30]);
+    if (converted) result.$30_guarantorMaritalStatusCode = converted;
+  }
+  if (segment.fields[31] !== undefined) {
+    const v = getComponent(segment.fields[31]);
+    if (v !== undefined) result.$31_guarantorHireEffectiveDate = v;
+  }
+  if (segment.fields[32] !== undefined) {
+    const v = getComponent(segment.fields[32]);
+    if (v !== undefined) result.$32_employmentEnd = v;
+  }
+  if (segment.fields[33] !== undefined) {
+    const v = getComponent(segment.fields[33]);
+    if (v !== undefined) result.$33_livingDependency = v;
+  }
+  if (segment.fields[34] !== undefined) {
+    const fv = segment.fields[34];
+    if (Array.isArray(fv)) {
+      result.$34_ambulatoryStatus = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$34_ambulatoryStatus = [fv];
+    }
+  }
+  if (segment.fields[35] !== undefined) {
+    const fv = segment.fields[35];
+    if (Array.isArray(fv)) {
+      result.$35_citizenship = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$35_citizenship = [converted];
+    }
+  }
+  if (segment.fields[36] !== undefined) {
+    const converted = fromCE(segment.fields[36]);
+    if (converted) result.$36_language = converted;
+  }
+  if (segment.fields[37] !== undefined) {
+    const v = getComponent(segment.fields[37]);
+    if (v !== undefined) result.$37_livingArrangement = v;
+  }
+  if (segment.fields[38] !== undefined) {
+    const converted = fromCE(segment.fields[38]);
+    if (converted) result.$38_publicityCode = converted;
+  }
+  if (segment.fields[39] !== undefined) {
+    const v = getComponent(segment.fields[39]);
+    if (v !== undefined) result.$39_protectionIndicator = v;
+  }
+  if (segment.fields[40] !== undefined) {
+    const v = getComponent(segment.fields[40]);
+    if (v !== undefined) result.$40_student = v;
+  }
+  if (segment.fields[41] !== undefined) {
+    const converted = fromCE(segment.fields[41]);
+    if (converted) result.$41_religion = converted;
+  }
+  if (segment.fields[42] !== undefined) {
+    const fv = segment.fields[42];
+    if (Array.isArray(fv)) {
+      result.$42_mothersMaidenName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$42_mothersMaidenName = [converted];
+    }
+  }
+  if (segment.fields[43] !== undefined) {
+    const converted = fromCE(segment.fields[43]);
+    if (converted) result.$43_nationality = converted;
+  }
+  if (segment.fields[44] !== undefined) {
+    const fv = segment.fields[44];
+    if (Array.isArray(fv)) {
+      result.$44_ethnicity = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$44_ethnicity = [converted];
+    }
+  }
+  if (segment.fields[45] !== undefined) {
+    const fv = segment.fields[45];
+    if (Array.isArray(fv)) {
+      result.$45_contactPersonsName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$45_contactPersonsName = [converted];
+    }
+  }
+  if (segment.fields[46] !== undefined) {
+    const fv = segment.fields[46];
+    if (Array.isArray(fv)) {
+      result.$46_contactPhone = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$46_contactPhone = [converted];
+    }
+  }
+  if (segment.fields[47] !== undefined) {
+    const converted = fromCE(segment.fields[47]);
+    if (converted) result.$47_contactReason = converted;
+  }
+  if (segment.fields[48] !== undefined) {
+    const v = getComponent(segment.fields[48]);
+    if (v !== undefined) result.$48_contactRelationship = v;
+  }
+  if (segment.fields[49] !== undefined) {
+    const v = getComponent(segment.fields[49]);
+    if (v !== undefined) result.$49_jobTitle = v;
+  }
+  if (segment.fields[50] !== undefined) {
+    const converted = fromJCC(segment.fields[50]);
+    if (converted) result.$50_jobCodeClass = converted;
+  }
+  if (segment.fields[51] !== undefined) {
+    const fv = segment.fields[51];
+    if (Array.isArray(fv)) {
+      result.$51_guarantorEmployersOrganizationName = fv.map(v => fromXON(v)).filter((v): v is XON => v !== undefined);
+    } else {
+      const converted = fromXON(fv);
+      if (converted) result.$51_guarantorEmployersOrganizationName = [converted];
+    }
+  }
+  if (segment.fields[52] !== undefined) {
+    const v = getComponent(segment.fields[52]);
+    if (v !== undefined) result.$52_disability = v;
+  }
+  if (segment.fields[53] !== undefined) {
+    const v = getComponent(segment.fields[53]);
+    if (v !== undefined) result.$53_jobStatus = v;
+  }
+  if (segment.fields[54] !== undefined) {
+    const converted = fromFC(segment.fields[54]);
+    if (converted) result.$54_guarantorFinancialClass = converted;
+  }
+  if (segment.fields[55] !== undefined) {
+    const fv = segment.fields[55];
+    if (Array.isArray(fv)) {
+      result.$55_guarantorRace = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$55_guarantorRace = [converted];
+    }
+  }
+  if (segment.fields[56] !== undefined) {
+    const v = getComponent(segment.fields[56]);
+    if (v !== undefined) result.$56_guarantorBirthPlace = v;
+  }
+  if (segment.fields[57] !== undefined) {
+    const v = getComponent(segment.fields[57]);
+    if (v !== undefined) result.$57_vip = v;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to IN1 */
+export function fromIN1(segment: HL7v2Segment): IN1 {
+  const result: IN1 = {} as IN1;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdIn1 = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const converted = fromCE(segment.fields[2]);
+    if (converted) result.$2_insurancePlanId = converted;
+  }
+  if (segment.fields[3] !== undefined) {
+    const fv = segment.fields[3];
+    if (Array.isArray(fv)) {
+      result.$3_insuranceCompanyId = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$3_insuranceCompanyId = [converted];
+    }
+  }
+  if (segment.fields[4] !== undefined) {
+    const fv = segment.fields[4];
+    if (Array.isArray(fv)) {
+      result.$4_insuranceCompanyName = fv.map(v => fromXON(v)).filter((v): v is XON => v !== undefined);
+    } else {
+      const converted = fromXON(fv);
+      if (converted) result.$4_insuranceCompanyName = [converted];
+    }
+  }
+  if (segment.fields[5] !== undefined) {
+    const fv = segment.fields[5];
+    if (Array.isArray(fv)) {
+      result.$5_insuranceCompanyAddress = fv.map(v => fromXAD(v)).filter((v): v is XAD => v !== undefined);
+    } else {
+      const converted = fromXAD(fv);
+      if (converted) result.$5_insuranceCompanyAddress = [converted];
+    }
+  }
+  if (segment.fields[6] !== undefined) {
+    const fv = segment.fields[6];
+    if (Array.isArray(fv)) {
+      result.$6_insuranceCoContactPerson = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$6_insuranceCoContactPerson = [converted];
+    }
+  }
+  if (segment.fields[7] !== undefined) {
+    const fv = segment.fields[7];
+    if (Array.isArray(fv)) {
+      result.$7_insurancePhone = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$7_insurancePhone = [converted];
+    }
+  }
+  if (segment.fields[8] !== undefined) {
+    const v = getComponent(segment.fields[8]);
+    if (v !== undefined) result.$8_groupNumber = v;
+  }
+  if (segment.fields[9] !== undefined) {
+    const fv = segment.fields[9];
+    if (Array.isArray(fv)) {
+      result.$9_groupName = fv.map(v => fromXON(v)).filter((v): v is XON => v !== undefined);
+    } else {
+      const converted = fromXON(fv);
+      if (converted) result.$9_groupName = [converted];
+    }
+  }
+  if (segment.fields[10] !== undefined) {
+    const fv = segment.fields[10];
+    if (Array.isArray(fv)) {
+      result.$10_insuredsGroupEmpId = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$10_insuredsGroupEmpId = [converted];
+    }
+  }
+  if (segment.fields[11] !== undefined) {
+    const fv = segment.fields[11];
+    if (Array.isArray(fv)) {
+      result.$11_insuredsGroupEmpName = fv.map(v => fromXON(v)).filter((v): v is XON => v !== undefined);
+    } else {
+      const converted = fromXON(fv);
+      if (converted) result.$11_insuredsGroupEmpName = [converted];
+    }
+  }
+  if (segment.fields[12] !== undefined) {
+    const v = getComponent(segment.fields[12]);
+    if (v !== undefined) result.$12_planEffectiveDate = v;
+  }
+  if (segment.fields[13] !== undefined) {
+    const v = getComponent(segment.fields[13]);
+    if (v !== undefined) result.$13_planExpirationDate = v;
+  }
+  if (segment.fields[14] !== undefined) {
+    const converted = fromAUI(segment.fields[14]);
+    if (converted) result.$14_authorizationInformation = converted;
+  }
+  if (segment.fields[15] !== undefined) {
+    const v = getComponent(segment.fields[15]);
+    if (v !== undefined) result.$15_planType = v;
+  }
+  if (segment.fields[16] !== undefined) {
+    const fv = segment.fields[16];
+    if (Array.isArray(fv)) {
+      result.$16_nameOfInsured = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$16_nameOfInsured = [converted];
+    }
+  }
+  if (segment.fields[17] !== undefined) {
+    const converted = fromCE(segment.fields[17]);
+    if (converted) result.$17_insuredsRelationshipToPatient = converted;
+  }
+  if (segment.fields[18] !== undefined) {
+    const v = getComponent(segment.fields[18]);
+    if (v !== undefined) result.$18_insuredsDateOfBirth = v;
+  }
+  if (segment.fields[19] !== undefined) {
+    const fv = segment.fields[19];
+    if (Array.isArray(fv)) {
+      result.$19_insuredsAddress = fv.map(v => fromXAD(v)).filter((v): v is XAD => v !== undefined);
+    } else {
+      const converted = fromXAD(fv);
+      if (converted) result.$19_insuredsAddress = [converted];
+    }
+  }
+  if (segment.fields[20] !== undefined) {
+    const v = getComponent(segment.fields[20]);
+    if (v !== undefined) result.$20_assignmentOfBenefits = v;
+  }
+  if (segment.fields[21] !== undefined) {
+    const v = getComponent(segment.fields[21]);
+    if (v !== undefined) result.$21_coordinationOfBenefits = v;
+  }
+  if (segment.fields[22] !== undefined) {
+    const v = getComponent(segment.fields[22]);
+    if (v !== undefined) result.$22_coordOfBenPriority = v;
+  }
+  if (segment.fields[23] !== undefined) {
+    const v = getComponent(segment.fields[23]);
+    if (v !== undefined) result.$23_noticeOfAdmissionFlag = v;
+  }
+  if (segment.fields[24] !== undefined) {
+    const v = getComponent(segment.fields[24]);
+    if (v !== undefined) result.$24_noticeOfAdmissionDate = v;
+  }
+  if (segment.fields[25] !== undefined) {
+    const v = getComponent(segment.fields[25]);
+    if (v !== undefined) result.$25_reportOfEligibilityFlag = v;
+  }
+  if (segment.fields[26] !== undefined) {
+    const v = getComponent(segment.fields[26]);
+    if (v !== undefined) result.$26_reportOfEligibilityDate = v;
+  }
+  if (segment.fields[27] !== undefined) {
+    const v = getComponent(segment.fields[27]);
+    if (v !== undefined) result.$27_releaseInformationCode = v;
+  }
+  if (segment.fields[28] !== undefined) {
+    const v = getComponent(segment.fields[28]);
+    if (v !== undefined) result.$28_preAdmitCert = v;
+  }
+  if (segment.fields[29] !== undefined) {
+    const v = getComponent(segment.fields[29]);
+    if (v !== undefined) result.$29_verificationDateTime = v;
+  }
+  if (segment.fields[30] !== undefined) {
+    const fv = segment.fields[30];
+    if (Array.isArray(fv)) {
+      result.$30_verificationBy = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$30_verificationBy = [converted];
+    }
+  }
+  if (segment.fields[31] !== undefined) {
+    const v = getComponent(segment.fields[31]);
+    if (v !== undefined) result.$31_typeOfAgreementCode = v;
+  }
+  if (segment.fields[32] !== undefined) {
+    const v = getComponent(segment.fields[32]);
+    if (v !== undefined) result.$32_billingStatus = v;
+  }
+  if (segment.fields[33] !== undefined) {
+    const v = getComponent(segment.fields[33]);
+    if (v !== undefined) result.$33_lifetimeReserveDays = v;
+  }
+  if (segment.fields[34] !== undefined) {
+    const v = getComponent(segment.fields[34]);
+    if (v !== undefined) result.$34_delayBeforeLRDay = v;
+  }
+  if (segment.fields[35] !== undefined) {
+    const v = getComponent(segment.fields[35]);
+    if (v !== undefined) result.$35_companyPlanCode = v;
+  }
+  if (segment.fields[36] !== undefined) {
+    const v = getComponent(segment.fields[36]);
+    if (v !== undefined) result.$36_policyNumber = v;
+  }
+  if (segment.fields[37] !== undefined) {
+    const converted = fromCP(segment.fields[37]);
+    if (converted) result.$37_policyDeductible = converted;
+  }
+  if (segment.fields[38] !== undefined) {
+    const converted = fromCP(segment.fields[38]);
+    if (converted) result.$38_policyLimitAmount = converted;
+  }
+  if (segment.fields[39] !== undefined) {
+    const v = getComponent(segment.fields[39]);
+    if (v !== undefined) result.$39_policyLimitDays = v;
+  }
+  if (segment.fields[40] !== undefined) {
+    const converted = fromCP(segment.fields[40]);
+    if (converted) result.$40_roomRateSemiPrivate = converted;
+  }
+  if (segment.fields[41] !== undefined) {
+    const converted = fromCP(segment.fields[41]);
+    if (converted) result.$41_roomRatePrivate = converted;
+  }
+  if (segment.fields[42] !== undefined) {
+    const converted = fromCE(segment.fields[42]);
+    if (converted) result.$42_insuredsEmploymentStatus = converted;
+  }
+  if (segment.fields[43] !== undefined) {
+    const v = getComponent(segment.fields[43]);
+    if (v !== undefined) result.$43_insuredsAdministrativeGender = v;
+  }
+  if (segment.fields[44] !== undefined) {
+    const fv = segment.fields[44];
+    if (Array.isArray(fv)) {
+      result.$44_insuredsEmployersAddress = fv.map(v => fromXAD(v)).filter((v): v is XAD => v !== undefined);
+    } else {
+      const converted = fromXAD(fv);
+      if (converted) result.$44_insuredsEmployersAddress = [converted];
+    }
+  }
+  if (segment.fields[45] !== undefined) {
+    const v = getComponent(segment.fields[45]);
+    if (v !== undefined) result.$45_verificationStatus = v;
+  }
+  if (segment.fields[46] !== undefined) {
+    const v = getComponent(segment.fields[46]);
+    if (v !== undefined) result.$46_priorInsurancePlanId = v;
+  }
+  if (segment.fields[47] !== undefined) {
+    const v = getComponent(segment.fields[47]);
+    if (v !== undefined) result.$47_coverageType = v;
+  }
+  if (segment.fields[48] !== undefined) {
+    const v = getComponent(segment.fields[48]);
+    if (v !== undefined) result.$48_disability = v;
+  }
+  if (segment.fields[49] !== undefined) {
+    const fv = segment.fields[49];
+    if (Array.isArray(fv)) {
+      result.$49_insuredsIdNumber = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$49_insuredsIdNumber = [converted];
+    }
+  }
+  if (segment.fields[50] !== undefined) {
+    const v = getComponent(segment.fields[50]);
+    if (v !== undefined) result.$50_signatureCode = v;
+  }
+  if (segment.fields[51] !== undefined) {
+    const v = getComponent(segment.fields[51]);
+    if (v !== undefined) result.$51_signatureCodeDate = v;
+  }
+  if (segment.fields[52] !== undefined) {
+    const v = getComponent(segment.fields[52]);
+    if (v !== undefined) result.$52_insuredsBirthPlace = v;
+  }
+  if (segment.fields[53] !== undefined) {
+    const v = getComponent(segment.fields[53]);
+    if (v !== undefined) result.$53_vip = v;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to IN2 */
+export function fromIN2(segment: HL7v2Segment): IN2 {
+  const result: IN2 = {} as IN2;
+  if (segment.fields[1] !== undefined) {
+    const fv = segment.fields[1];
+    if (Array.isArray(fv)) {
+      result.$1_insuredsEmployeeId = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$1_insuredsEmployeeId = [converted];
+    }
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_insuredsSocialSecurityNumber = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const fv = segment.fields[3];
+    if (Array.isArray(fv)) {
+      result.$3_insuredsEmployersNameAndId = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$3_insuredsEmployersNameAndId = [converted];
+    }
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_employerInformationData = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const fv = segment.fields[5];
+    if (Array.isArray(fv)) {
+      result.$5_mailClaimParty = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$5_mailClaimParty = [fv];
+    }
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_medicareHealthInsCardNumber = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const fv = segment.fields[7];
+    if (Array.isArray(fv)) {
+      result.$7_medicaidCaseName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$7_medicaidCaseName = [converted];
+    }
+  }
+  if (segment.fields[8] !== undefined) {
+    const v = getComponent(segment.fields[8]);
+    if (v !== undefined) result.$8_medicaidCaseNumber = v;
+  }
+  if (segment.fields[9] !== undefined) {
+    const fv = segment.fields[9];
+    if (Array.isArray(fv)) {
+      result.$9_militarySponsorName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$9_militarySponsorName = [converted];
+    }
+  }
+  if (segment.fields[10] !== undefined) {
+    const v = getComponent(segment.fields[10]);
+    if (v !== undefined) result.$10_militaryIdNumber = v;
+  }
+  if (segment.fields[11] !== undefined) {
+    const converted = fromCE(segment.fields[11]);
+    if (converted) result.$11_dependentOfMilitaryRecipient = converted;
+  }
+  if (segment.fields[12] !== undefined) {
+    const v = getComponent(segment.fields[12]);
+    if (v !== undefined) result.$12_militaryOrganization = v;
+  }
+  if (segment.fields[13] !== undefined) {
+    const v = getComponent(segment.fields[13]);
+    if (v !== undefined) result.$13_militaryStation = v;
+  }
+  if (segment.fields[14] !== undefined) {
+    const v = getComponent(segment.fields[14]);
+    if (v !== undefined) result.$14_militaryService = v;
+  }
+  if (segment.fields[15] !== undefined) {
+    const v = getComponent(segment.fields[15]);
+    if (v !== undefined) result.$15_militaryRankGrade = v;
+  }
+  if (segment.fields[16] !== undefined) {
+    const v = getComponent(segment.fields[16]);
+    if (v !== undefined) result.$16_militaryStatus = v;
+  }
+  if (segment.fields[17] !== undefined) {
+    const v = getComponent(segment.fields[17]);
+    if (v !== undefined) result.$17_militaryRetireDate = v;
+  }
+  if (segment.fields[18] !== undefined) {
+    const v = getComponent(segment.fields[18]);
+    if (v !== undefined) result.$18_militaryNonAvailCertOnFile = v;
+  }
+  if (segment.fields[19] !== undefined) {
+    const v = getComponent(segment.fields[19]);
+    if (v !== undefined) result.$19_babyCoverage = v;
+  }
+  if (segment.fields[20] !== undefined) {
+    const v = getComponent(segment.fields[20]);
+    if (v !== undefined) result.$20_combineBabyBill = v;
+  }
+  if (segment.fields[21] !== undefined) {
+    const v = getComponent(segment.fields[21]);
+    if (v !== undefined) result.$21_bloodDeductible = v;
+  }
+  if (segment.fields[22] !== undefined) {
+    const fv = segment.fields[22];
+    if (Array.isArray(fv)) {
+      result.$22_specialCoverageApprovalName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$22_specialCoverageApprovalName = [converted];
+    }
+  }
+  if (segment.fields[23] !== undefined) {
+    const v = getComponent(segment.fields[23]);
+    if (v !== undefined) result.$23_specialCoverageApprovalTitle = v;
+  }
+  if (segment.fields[24] !== undefined) {
+    const fv = segment.fields[24];
+    if (Array.isArray(fv)) {
+      result.$24_nonCoveredInsuranceCode = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$24_nonCoveredInsuranceCode = [fv];
+    }
+  }
+  if (segment.fields[25] !== undefined) {
+    const fv = segment.fields[25];
+    if (Array.isArray(fv)) {
+      result.$25_payorId = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$25_payorId = [converted];
+    }
+  }
+  if (segment.fields[26] !== undefined) {
+    const fv = segment.fields[26];
+    if (Array.isArray(fv)) {
+      result.$26_payorSubscriberId = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$26_payorSubscriberId = [converted];
+    }
+  }
+  if (segment.fields[27] !== undefined) {
+    const v = getComponent(segment.fields[27]);
+    if (v !== undefined) result.$27_eligibilitySource = v;
+  }
+  if (segment.fields[28] !== undefined) {
+    const fv = segment.fields[28];
+    if (Array.isArray(fv)) {
+      result.$28_roomCoverageTypeAmount = fv.map(v => fromRMC(v)).filter((v): v is RMC => v !== undefined);
+    } else {
+      const converted = fromRMC(fv);
+      if (converted) result.$28_roomCoverageTypeAmount = [converted];
+    }
+  }
+  if (segment.fields[29] !== undefined) {
+    const fv = segment.fields[29];
+    if (Array.isArray(fv)) {
+      result.$29_policyTypeAmount = fv.map(v => fromPTA(v)).filter((v): v is PTA => v !== undefined);
+    } else {
+      const converted = fromPTA(fv);
+      if (converted) result.$29_policyTypeAmount = [converted];
+    }
+  }
+  if (segment.fields[30] !== undefined) {
+    const converted = fromDDI(segment.fields[30]);
+    if (converted) result.$30_dailyDeductible = converted;
+  }
+  if (segment.fields[31] !== undefined) {
+    const v = getComponent(segment.fields[31]);
+    if (v !== undefined) result.$31_livingDependency = v;
+  }
+  if (segment.fields[32] !== undefined) {
+    const fv = segment.fields[32];
+    if (Array.isArray(fv)) {
+      result.$32_ambulatoryStatus = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$32_ambulatoryStatus = [fv];
+    }
+  }
+  if (segment.fields[33] !== undefined) {
+    const fv = segment.fields[33];
+    if (Array.isArray(fv)) {
+      result.$33_citizenship = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$33_citizenship = [converted];
+    }
+  }
+  if (segment.fields[34] !== undefined) {
+    const converted = fromCE(segment.fields[34]);
+    if (converted) result.$34_language = converted;
+  }
+  if (segment.fields[35] !== undefined) {
+    const v = getComponent(segment.fields[35]);
+    if (v !== undefined) result.$35_livingArrangement = v;
+  }
+  if (segment.fields[36] !== undefined) {
+    const converted = fromCE(segment.fields[36]);
+    if (converted) result.$36_publicityCode = converted;
+  }
+  if (segment.fields[37] !== undefined) {
+    const v = getComponent(segment.fields[37]);
+    if (v !== undefined) result.$37_protectionIndicator = v;
+  }
+  if (segment.fields[38] !== undefined) {
+    const v = getComponent(segment.fields[38]);
+    if (v !== undefined) result.$38_student = v;
+  }
+  if (segment.fields[39] !== undefined) {
+    const converted = fromCE(segment.fields[39]);
+    if (converted) result.$39_religion = converted;
+  }
+  if (segment.fields[40] !== undefined) {
+    const fv = segment.fields[40];
+    if (Array.isArray(fv)) {
+      result.$40_mothersMaidenName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$40_mothersMaidenName = [converted];
+    }
+  }
+  if (segment.fields[41] !== undefined) {
+    const converted = fromCE(segment.fields[41]);
+    if (converted) result.$41_nationality = converted;
+  }
+  if (segment.fields[42] !== undefined) {
+    const fv = segment.fields[42];
+    if (Array.isArray(fv)) {
+      result.$42_ethnicity = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$42_ethnicity = [converted];
+    }
+  }
+  if (segment.fields[43] !== undefined) {
+    const fv = segment.fields[43];
+    if (Array.isArray(fv)) {
+      result.$43_maritalStatus = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$43_maritalStatus = [converted];
+    }
+  }
+  if (segment.fields[44] !== undefined) {
+    const v = getComponent(segment.fields[44]);
+    if (v !== undefined) result.$44_insuredsEmploymentStartDate = v;
+  }
+  if (segment.fields[45] !== undefined) {
+    const v = getComponent(segment.fields[45]);
+    if (v !== undefined) result.$45_employmentEnd = v;
+  }
+  if (segment.fields[46] !== undefined) {
+    const v = getComponent(segment.fields[46]);
+    if (v !== undefined) result.$46_jobTitle = v;
+  }
+  if (segment.fields[47] !== undefined) {
+    const converted = fromJCC(segment.fields[47]);
+    if (converted) result.$47_jobCodeClass = converted;
+  }
+  if (segment.fields[48] !== undefined) {
+    const v = getComponent(segment.fields[48]);
+    if (v !== undefined) result.$48_jobStatus = v;
+  }
+  if (segment.fields[49] !== undefined) {
+    const fv = segment.fields[49];
+    if (Array.isArray(fv)) {
+      result.$49_employerContactPersonName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$49_employerContactPersonName = [converted];
+    }
+  }
+  if (segment.fields[50] !== undefined) {
+    const fv = segment.fields[50];
+    if (Array.isArray(fv)) {
+      result.$50_employerContactPhone = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$50_employerContactPhone = [converted];
+    }
+  }
+  if (segment.fields[51] !== undefined) {
+    const v = getComponent(segment.fields[51]);
+    if (v !== undefined) result.$51_employerContactReason = v;
+  }
+  if (segment.fields[52] !== undefined) {
+    const fv = segment.fields[52];
+    if (Array.isArray(fv)) {
+      result.$52_insuredsContactPersonsName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$52_insuredsContactPersonsName = [converted];
+    }
+  }
+  if (segment.fields[53] !== undefined) {
+    const fv = segment.fields[53];
+    if (Array.isArray(fv)) {
+      result.$53_insuredContactPhone = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$53_insuredContactPhone = [converted];
+    }
+  }
+  if (segment.fields[54] !== undefined) {
+    const fv = segment.fields[54];
+    if (Array.isArray(fv)) {
+      result.$54_insuredsContactPersonReason = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$54_insuredsContactPersonReason = [fv];
+    }
+  }
+  if (segment.fields[55] !== undefined) {
+    const v = getComponent(segment.fields[55]);
+    if (v !== undefined) result.$55_relationshipToThePatientStartDate = v;
+  }
+  if (segment.fields[56] !== undefined) {
+    const fv = segment.fields[56];
+    if (Array.isArray(fv)) {
+      result.$56_relationshipToThePatientStopDate = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$56_relationshipToThePatientStopDate = [fv];
+    }
+  }
+  if (segment.fields[57] !== undefined) {
+    const v = getComponent(segment.fields[57]);
+    if (v !== undefined) result.$57_insuranceCoContactReason = v;
+  }
+  if (segment.fields[58] !== undefined) {
+    const converted = fromXTN(segment.fields[58]);
+    if (converted) result.$58_insuranceContactPhone = converted;
+  }
+  if (segment.fields[59] !== undefined) {
+    const v = getComponent(segment.fields[59]);
+    if (v !== undefined) result.$59_policyScope = v;
+  }
+  if (segment.fields[60] !== undefined) {
+    const v = getComponent(segment.fields[60]);
+    if (v !== undefined) result.$60_policySource = v;
+  }
+  if (segment.fields[61] !== undefined) {
+    const converted = fromCX(segment.fields[61]);
+    if (converted) result.$61_memberNumber = converted;
+  }
+  if (segment.fields[62] !== undefined) {
+    const converted = fromCE(segment.fields[62]);
+    if (converted) result.$62_guarantorsRelationshipToInsured = converted;
+  }
+  if (segment.fields[63] !== undefined) {
+    const fv = segment.fields[63];
+    if (Array.isArray(fv)) {
+      result.$63_insuredHomePhone = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$63_insuredHomePhone = [converted];
+    }
+  }
+  if (segment.fields[64] !== undefined) {
+    const fv = segment.fields[64];
+    if (Array.isArray(fv)) {
+      result.$64_insuredEmployerPhone = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$64_insuredEmployerPhone = [converted];
+    }
+  }
+  if (segment.fields[65] !== undefined) {
+    const converted = fromCE(segment.fields[65]);
+    if (converted) result.$65_militaryHandicappedProgram = converted;
+  }
+  if (segment.fields[66] !== undefined) {
+    const v = getComponent(segment.fields[66]);
+    if (v !== undefined) result.$66_suspendFlag = v;
+  }
+  if (segment.fields[67] !== undefined) {
+    const v = getComponent(segment.fields[67]);
+    if (v !== undefined) result.$67_copayLimitFlag = v;
+  }
+  if (segment.fields[68] !== undefined) {
+    const v = getComponent(segment.fields[68]);
+    if (v !== undefined) result.$68_stoplossLimitFlag = v;
+  }
+  if (segment.fields[69] !== undefined) {
+    const fv = segment.fields[69];
+    if (Array.isArray(fv)) {
+      result.$69_insuredOrganizationNameAndId = fv.map(v => fromXON(v)).filter((v): v is XON => v !== undefined);
+    } else {
+      const converted = fromXON(fv);
+      if (converted) result.$69_insuredOrganizationNameAndId = [converted];
+    }
+  }
+  if (segment.fields[70] !== undefined) {
+    const fv = segment.fields[70];
+    if (Array.isArray(fv)) {
+      result.$70_insuredEmployerOrganizationNameAndId = fv.map(v => fromXON(v)).filter((v): v is XON => v !== undefined);
+    } else {
+      const converted = fromXON(fv);
+      if (converted) result.$70_insuredEmployerOrganizationNameAndId = [converted];
+    }
+  }
+  if (segment.fields[71] !== undefined) {
+    const fv = segment.fields[71];
+    if (Array.isArray(fv)) {
+      result.$71_race = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$71_race = [converted];
+    }
+  }
+  if (segment.fields[72] !== undefined) {
+    const converted = fromCE(segment.fields[72]);
+    if (converted) result.$72_cmsPatientsRelationshipToInsured = converted;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to IN3 */
+export function fromIN3(segment: HL7v2Segment): IN3 {
+  const result: IN3 = {} as IN3;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdIn3 = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const converted = fromCX(segment.fields[2]);
+    if (converted) result.$2_certificationNumber = converted;
+  }
+  if (segment.fields[3] !== undefined) {
+    const fv = segment.fields[3];
+    if (Array.isArray(fv)) {
+      result.$3_certifiedBy = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$3_certifiedBy = [converted];
+    }
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_required = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const converted = fromMOP(segment.fields[5]);
+    if (converted) result.$5_penalty = converted;
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_certificationDateTime = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const v = getComponent(segment.fields[7]);
+    if (v !== undefined) result.$7_certificationModifyDateTime = v;
+  }
+  if (segment.fields[8] !== undefined) {
+    const fv = segment.fields[8];
+    if (Array.isArray(fv)) {
+      result.$8_operator = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$8_operator = [converted];
+    }
+  }
+  if (segment.fields[9] !== undefined) {
+    const v = getComponent(segment.fields[9]);
+    if (v !== undefined) result.$9_certificationBeginDate = v;
+  }
+  if (segment.fields[10] !== undefined) {
+    const v = getComponent(segment.fields[10]);
+    if (v !== undefined) result.$10_certificationEndDate = v;
+  }
+  if (segment.fields[11] !== undefined) {
+    const converted = fromDTN(segment.fields[11]);
+    if (converted) result.$11_days = converted;
+  }
+  if (segment.fields[12] !== undefined) {
+    const converted = fromCE(segment.fields[12]);
+    if (converted) result.$12_nonConcurCodeDescription = converted;
+  }
+  if (segment.fields[13] !== undefined) {
+    const v = getComponent(segment.fields[13]);
+    if (v !== undefined) result.$13_nonConcurEffectiveDateTime = v;
+  }
+  if (segment.fields[14] !== undefined) {
+    const fv = segment.fields[14];
+    if (Array.isArray(fv)) {
+      result.$14_physicianReviewer = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$14_physicianReviewer = [converted];
+    }
+  }
+  if (segment.fields[15] !== undefined) {
+    const v = getComponent(segment.fields[15]);
+    if (v !== undefined) result.$15_certificationContact = v;
+  }
+  if (segment.fields[16] !== undefined) {
+    const fv = segment.fields[16];
+    if (Array.isArray(fv)) {
+      result.$16_certificationContactPhoneNumber = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$16_certificationContactPhoneNumber = [converted];
+    }
+  }
+  if (segment.fields[17] !== undefined) {
+    const converted = fromCE(segment.fields[17]);
+    if (converted) result.$17_appealReason = converted;
+  }
+  if (segment.fields[18] !== undefined) {
+    const converted = fromCE(segment.fields[18]);
+    if (converted) result.$18_certificationAgency = converted;
+  }
+  if (segment.fields[19] !== undefined) {
+    const fv = segment.fields[19];
+    if (Array.isArray(fv)) {
+      result.$19_certificationAgencyPhoneNumber = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$19_certificationAgencyPhoneNumber = [converted];
+    }
+  }
+  if (segment.fields[20] !== undefined) {
+    const fv = segment.fields[20];
+    if (Array.isArray(fv)) {
+      result.$20_preCertificationRequirement = fv.map(v => fromICD(v)).filter((v): v is ICD => v !== undefined);
+    } else {
+      const converted = fromICD(fv);
+      if (converted) result.$20_preCertificationRequirement = [converted];
+    }
+  }
+  if (segment.fields[21] !== undefined) {
+    const v = getComponent(segment.fields[21]);
+    if (v !== undefined) result.$21_caseManager = v;
+  }
+  if (segment.fields[22] !== undefined) {
+    const v = getComponent(segment.fields[22]);
+    if (v !== undefined) result.$22_secondOpinionDate = v;
+  }
+  if (segment.fields[23] !== undefined) {
+    const v = getComponent(segment.fields[23]);
+    if (v !== undefined) result.$23_secondOpinionStatus = v;
+  }
+  if (segment.fields[24] !== undefined) {
+    const fv = segment.fields[24];
+    if (Array.isArray(fv)) {
+      result.$24_secondOpinionDocumentationReceived = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$24_secondOpinionDocumentationReceived = [fv];
+    }
+  }
+  if (segment.fields[25] !== undefined) {
+    const fv = segment.fields[25];
+    if (Array.isArray(fv)) {
+      result.$25_secondOpinionPhysician = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$25_secondOpinionPhysician = [converted];
+    }
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to MSH */
+export function fromMSH(segment: HL7v2Segment): MSH {
+  const result: MSH = {} as MSH;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_fieldSeparator = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_encodingCharacters = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const converted = fromHD(segment.fields[3]);
+    if (converted) result.$3_sendingApplication = converted;
+  }
+  if (segment.fields[4] !== undefined) {
+    const converted = fromHD(segment.fields[4]);
+    if (converted) result.$4_sendingFacility = converted;
+  }
+  if (segment.fields[5] !== undefined) {
+    const converted = fromHD(segment.fields[5]);
+    if (converted) result.$5_receivingApplication = converted;
+  }
+  if (segment.fields[6] !== undefined) {
+    const converted = fromHD(segment.fields[6]);
+    if (converted) result.$6_receivingFacility = converted;
+  }
+  if (segment.fields[7] !== undefined) {
+    const v = getComponent(segment.fields[7]);
+    if (v !== undefined) result.$7_messageDateTime = v;
+  }
+  if (segment.fields[8] !== undefined) {
+    const v = getComponent(segment.fields[8]);
+    if (v !== undefined) result.$8_security = v;
+  }
+  if (segment.fields[9] !== undefined) {
+    const converted = fromMSG(segment.fields[9]);
+    if (converted) result.$9_messageType = converted;
+  }
+  if (segment.fields[10] !== undefined) {
+    const v = getComponent(segment.fields[10]);
+    if (v !== undefined) result.$10_messageControlId = v;
+  }
+  if (segment.fields[11] !== undefined) {
+    const converted = fromPT(segment.fields[11]);
+    if (converted) result.$11_processingId = converted;
+  }
+  if (segment.fields[12] !== undefined) {
+    const converted = fromVID(segment.fields[12]);
+    if (converted) result.$12_version = converted;
+  }
+  if (segment.fields[13] !== undefined) {
+    const v = getComponent(segment.fields[13]);
+    if (v !== undefined) result.$13_sequenceNumber = v;
+  }
+  if (segment.fields[14] !== undefined) {
+    const v = getComponent(segment.fields[14]);
+    if (v !== undefined) result.$14_continuationPointer = v;
+  }
+  if (segment.fields[15] !== undefined) {
+    const v = getComponent(segment.fields[15]);
+    if (v !== undefined) result.$15_acceptAcknowledgmentType = v;
+  }
+  if (segment.fields[16] !== undefined) {
+    const v = getComponent(segment.fields[16]);
+    if (v !== undefined) result.$16_applicationAcknowledgmentType = v;
+  }
+  if (segment.fields[17] !== undefined) {
+    const v = getComponent(segment.fields[17]);
+    if (v !== undefined) result.$17_countryCode = v;
+  }
+  if (segment.fields[18] !== undefined) {
+    const fv = segment.fields[18];
+    if (Array.isArray(fv)) {
+      result.$18_characterSet = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$18_characterSet = [fv];
+    }
+  }
+  if (segment.fields[19] !== undefined) {
+    const converted = fromCE(segment.fields[19]);
+    if (converted) result.$19_principalLanguageOfMessage = converted;
+  }
+  if (segment.fields[20] !== undefined) {
+    const v = getComponent(segment.fields[20]);
+    if (v !== undefined) result.$20_alternateCharacterSetHandlingScheme = v;
+  }
+  if (segment.fields[21] !== undefined) {
+    const fv = segment.fields[21];
+    if (Array.isArray(fv)) {
+      result.$21_messageProfileIdentifier = fv.map(v => fromEI(v)).filter((v): v is EI => v !== undefined);
+    } else {
+      const converted = fromEI(fv);
+      if (converted) result.$21_messageProfileIdentifier = [converted];
+    }
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to NK1 */
+export function fromNK1(segment: HL7v2Segment): NK1 {
+  const result: NK1 = {} as NK1;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdNk1 = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const fv = segment.fields[2];
+    if (Array.isArray(fv)) {
+      result.$2_name = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$2_name = [converted];
+    }
+  }
+  if (segment.fields[3] !== undefined) {
+    const converted = fromCE(segment.fields[3]);
+    if (converted) result.$3_relationship = converted;
+  }
+  if (segment.fields[4] !== undefined) {
+    const fv = segment.fields[4];
+    if (Array.isArray(fv)) {
+      result.$4_text = fv.map(v => fromXAD(v)).filter((v): v is XAD => v !== undefined);
+    } else {
+      const converted = fromXAD(fv);
+      if (converted) result.$4_text = [converted];
+    }
+  }
+  if (segment.fields[5] !== undefined) {
+    const fv = segment.fields[5];
+    if (Array.isArray(fv)) {
+      result.$5_phone = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$5_phone = [converted];
+    }
+  }
+  if (segment.fields[6] !== undefined) {
+    const fv = segment.fields[6];
+    if (Array.isArray(fv)) {
+      result.$6_businessPhone = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$6_businessPhone = [converted];
+    }
+  }
+  if (segment.fields[7] !== undefined) {
+    const converted = fromCE(segment.fields[7]);
+    if (converted) result.$7_contactRole = converted;
+  }
+  if (segment.fields[8] !== undefined) {
+    const v = getComponent(segment.fields[8]);
+    if (v !== undefined) result.$8_startDate = v;
+  }
+  if (segment.fields[9] !== undefined) {
+    const v = getComponent(segment.fields[9]);
+    if (v !== undefined) result.$9_endDate = v;
+  }
+  if (segment.fields[10] !== undefined) {
+    const v = getComponent(segment.fields[10]);
+    if (v !== undefined) result.$10_nextOfKinAssociatedPartiesJobTitle = v;
+  }
+  if (segment.fields[11] !== undefined) {
+    const converted = fromJCC(segment.fields[11]);
+    if (converted) result.$11_nextOfKinAssociatedPartiesJobCodeClass = converted;
+  }
+  if (segment.fields[12] !== undefined) {
+    const converted = fromCX(segment.fields[12]);
+    if (converted) result.$12_nextOfKinAssociatedPartiesEmployeeNumber = converted;
+  }
+  if (segment.fields[13] !== undefined) {
+    const fv = segment.fields[13];
+    if (Array.isArray(fv)) {
+      result.$13_organizationNameNk1 = fv.map(v => fromXON(v)).filter((v): v is XON => v !== undefined);
+    } else {
+      const converted = fromXON(fv);
+      if (converted) result.$13_organizationNameNk1 = [converted];
+    }
+  }
+  if (segment.fields[14] !== undefined) {
+    const converted = fromCE(segment.fields[14]);
+    if (converted) result.$14_maritalStatus = converted;
+  }
+  if (segment.fields[15] !== undefined) {
+    const v = getComponent(segment.fields[15]);
+    if (v !== undefined) result.$15_gender = v;
+  }
+  if (segment.fields[16] !== undefined) {
+    const v = getComponent(segment.fields[16]);
+    if (v !== undefined) result.$16_birthDate = v;
+  }
+  if (segment.fields[17] !== undefined) {
+    const fv = segment.fields[17];
+    if (Array.isArray(fv)) {
+      result.$17_livingDependency = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$17_livingDependency = [fv];
+    }
+  }
+  if (segment.fields[18] !== undefined) {
+    const fv = segment.fields[18];
+    if (Array.isArray(fv)) {
+      result.$18_ambulatoryStatus = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$18_ambulatoryStatus = [fv];
+    }
+  }
+  if (segment.fields[19] !== undefined) {
+    const fv = segment.fields[19];
+    if (Array.isArray(fv)) {
+      result.$19_citizenship = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$19_citizenship = [converted];
+    }
+  }
+  if (segment.fields[20] !== undefined) {
+    const converted = fromCE(segment.fields[20]);
+    if (converted) result.$20_language = converted;
+  }
+  if (segment.fields[21] !== undefined) {
+    const v = getComponent(segment.fields[21]);
+    if (v !== undefined) result.$21_livingArrangement = v;
+  }
+  if (segment.fields[22] !== undefined) {
+    const converted = fromCE(segment.fields[22]);
+    if (converted) result.$22_publicityCode = converted;
+  }
+  if (segment.fields[23] !== undefined) {
+    const v = getComponent(segment.fields[23]);
+    if (v !== undefined) result.$23_protectionIndicator = v;
+  }
+  if (segment.fields[24] !== undefined) {
+    const v = getComponent(segment.fields[24]);
+    if (v !== undefined) result.$24_student = v;
+  }
+  if (segment.fields[25] !== undefined) {
+    const converted = fromCE(segment.fields[25]);
+    if (converted) result.$25_religion = converted;
+  }
+  if (segment.fields[26] !== undefined) {
+    const fv = segment.fields[26];
+    if (Array.isArray(fv)) {
+      result.$26_mothersMaidenName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$26_mothersMaidenName = [converted];
+    }
+  }
+  if (segment.fields[27] !== undefined) {
+    const converted = fromCE(segment.fields[27]);
+    if (converted) result.$27_nationality = converted;
+  }
+  if (segment.fields[28] !== undefined) {
+    const fv = segment.fields[28];
+    if (Array.isArray(fv)) {
+      result.$28_ethnicity = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$28_ethnicity = [converted];
+    }
+  }
+  if (segment.fields[29] !== undefined) {
+    const fv = segment.fields[29];
+    if (Array.isArray(fv)) {
+      result.$29_contactReason = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$29_contactReason = [converted];
+    }
+  }
+  if (segment.fields[30] !== undefined) {
+    const fv = segment.fields[30];
+    if (Array.isArray(fv)) {
+      result.$30_contactPersonsName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$30_contactPersonsName = [converted];
+    }
+  }
+  if (segment.fields[31] !== undefined) {
+    const fv = segment.fields[31];
+    if (Array.isArray(fv)) {
+      result.$31_contactPhone = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$31_contactPhone = [converted];
+    }
+  }
+  if (segment.fields[32] !== undefined) {
+    const fv = segment.fields[32];
+    if (Array.isArray(fv)) {
+      result.$32_contactPersonsAddress = fv.map(v => fromXAD(v)).filter((v): v is XAD => v !== undefined);
+    } else {
+      const converted = fromXAD(fv);
+      if (converted) result.$32_contactPersonsAddress = [converted];
+    }
+  }
+  if (segment.fields[33] !== undefined) {
+    const fv = segment.fields[33];
+    if (Array.isArray(fv)) {
+      result.$33_nextOfKinAssociatedPartysIdentifiers = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$33_nextOfKinAssociatedPartysIdentifiers = [converted];
+    }
+  }
+  if (segment.fields[34] !== undefined) {
+    const v = getComponent(segment.fields[34]);
+    if (v !== undefined) result.$34_jobStatus = v;
+  }
+  if (segment.fields[35] !== undefined) {
+    const fv = segment.fields[35];
+    if (Array.isArray(fv)) {
+      result.$35_race = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$35_race = [converted];
+    }
+  }
+  if (segment.fields[36] !== undefined) {
+    const v = getComponent(segment.fields[36]);
+    if (v !== undefined) result.$36_disability = v;
+  }
+  if (segment.fields[37] !== undefined) {
+    const v = getComponent(segment.fields[37]);
+    if (v !== undefined) result.$37_contactPersonSocialSecurityNumber = v;
+  }
+  if (segment.fields[38] !== undefined) {
+    const v = getComponent(segment.fields[38]);
+    if (v !== undefined) result.$38_nextOfKinBirthPlace = v;
+  }
+  if (segment.fields[39] !== undefined) {
+    const v = getComponent(segment.fields[39]);
+    if (v !== undefined) result.$39_vip = v;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to OBX */
+export function fromOBX(segment: HL7v2Segment): OBX {
+  const result: OBX = {} as OBX;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdObx = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_valueType = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const converted = fromCE(segment.fields[3]);
+    if (converted) result.$3_observationIdentifier = converted;
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_observationSubId = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const fv = segment.fields[5];
+    if (Array.isArray(fv)) {
+      result.$5_observationValue = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$5_observationValue = [fv];
+    }
+  }
+  if (segment.fields[6] !== undefined) {
+    const converted = fromCE(segment.fields[6]);
+    if (converted) result.$6_unit = converted;
+  }
+  if (segment.fields[7] !== undefined) {
+    const v = getComponent(segment.fields[7]);
+    if (v !== undefined) result.$7_referencesRange = v;
+  }
+  if (segment.fields[8] !== undefined) {
+    const fv = segment.fields[8];
+    if (Array.isArray(fv)) {
+      result.$8_abnormalFlags = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$8_abnormalFlags = [fv];
+    }
+  }
+  if (segment.fields[9] !== undefined) {
+    const v = getComponent(segment.fields[9]);
+    if (v !== undefined) result.$9_probability = v;
+  }
+  if (segment.fields[10] !== undefined) {
+    const fv = segment.fields[10];
+    if (Array.isArray(fv)) {
+      result.$10_natureOfAbnormalTest = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$10_natureOfAbnormalTest = [fv];
+    }
+  }
+  if (segment.fields[11] !== undefined) {
+    const v = getComponent(segment.fields[11]);
+    if (v !== undefined) result.$11_observationResultStatus = v;
+  }
+  if (segment.fields[12] !== undefined) {
+    const v = getComponent(segment.fields[12]);
+    if (v !== undefined) result.$12_effectiveDateOfReferenceRangeValues = v;
+  }
+  if (segment.fields[13] !== undefined) {
+    const v = getComponent(segment.fields[13]);
+    if (v !== undefined) result.$13_userDefinedAccessChecks = v;
+  }
+  if (segment.fields[14] !== undefined) {
+    const v = getComponent(segment.fields[14]);
+    if (v !== undefined) result.$14_observationDateTime = v;
+  }
+  if (segment.fields[15] !== undefined) {
+    const converted = fromCE(segment.fields[15]);
+    if (converted) result.$15_producersReference = converted;
+  }
+  if (segment.fields[16] !== undefined) {
+    const fv = segment.fields[16];
+    if (Array.isArray(fv)) {
+      result.$16_responsibleObserver = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$16_responsibleObserver = [converted];
+    }
+  }
+  if (segment.fields[17] !== undefined) {
+    const fv = segment.fields[17];
+    if (Array.isArray(fv)) {
+      result.$17_observationMethod = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$17_observationMethod = [converted];
+    }
+  }
+  if (segment.fields[18] !== undefined) {
+    const fv = segment.fields[18];
+    if (Array.isArray(fv)) {
+      result.$18_equipmentInstanceIdentifier = fv.map(v => fromEI(v)).filter((v): v is EI => v !== undefined);
+    } else {
+      const converted = fromEI(fv);
+      if (converted) result.$18_equipmentInstanceIdentifier = [converted];
+    }
+  }
+  if (segment.fields[19] !== undefined) {
+    const v = getComponent(segment.fields[19]);
+    if (v !== undefined) result.$19_analysisDateTime = v;
+  }
+  if (segment.fields[20] !== undefined) {
+    const fv = segment.fields[20];
+    if (Array.isArray(fv)) {
+      result.$20_observationSite = fv.map(v => fromCWE(v)).filter((v): v is CWE => v !== undefined);
+    } else {
+      const converted = fromCWE(fv);
+      if (converted) result.$20_observationSite = [converted];
+    }
+  }
+  if (segment.fields[21] !== undefined) {
+    const converted = fromEI(segment.fields[21]);
+    if (converted) result.$21_observationInstanceIdentifier = converted;
+  }
+  if (segment.fields[22] !== undefined) {
+    const converted = fromCNE(segment.fields[22]);
+    if (converted) result.$22_moodIdentifier = converted;
+  }
+  if (segment.fields[23] !== undefined) {
+    const converted = fromXON(segment.fields[23]);
+    if (converted) result.$23_performingOrganizationName = converted;
+  }
+  if (segment.fields[24] !== undefined) {
+    const converted = fromXAD(segment.fields[24]);
+    if (converted) result.$24_performingOrganizationAddress = converted;
+  }
+  if (segment.fields[25] !== undefined) {
+    const converted = fromXCN(segment.fields[25]);
+    if (converted) result.$25_performingOrganizationMedicalDirector = converted;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to PD1 */
+export function fromPD1(segment: HL7v2Segment): PD1 {
+  const result: PD1 = {} as PD1;
+  if (segment.fields[1] !== undefined) {
+    const fv = segment.fields[1];
+    if (Array.isArray(fv)) {
+      result.$1_livingDependency = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$1_livingDependency = [fv];
+    }
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_livingArrangement = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const fv = segment.fields[3];
+    if (Array.isArray(fv)) {
+      result.$3_primaryFacility = fv.map(v => fromXON(v)).filter((v): v is XON => v !== undefined);
+    } else {
+      const converted = fromXON(fv);
+      if (converted) result.$3_primaryFacility = [converted];
+    }
+  }
+  if (segment.fields[4] !== undefined) {
+    const fv = segment.fields[4];
+    if (Array.isArray(fv)) {
+      result.$4_primaryCareProvider = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$4_primaryCareProvider = [converted];
+    }
+  }
+  if (segment.fields[5] !== undefined) {
+    const v = getComponent(segment.fields[5]);
+    if (v !== undefined) result.$5_student = v;
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_disability = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const v = getComponent(segment.fields[7]);
+    if (v !== undefined) result.$7_livingWill = v;
+  }
+  if (segment.fields[8] !== undefined) {
+    const v = getComponent(segment.fields[8]);
+    if (v !== undefined) result.$8_organDonorCode = v;
+  }
+  if (segment.fields[9] !== undefined) {
+    const v = getComponent(segment.fields[9]);
+    if (v !== undefined) result.$9_separateBill = v;
+  }
+  if (segment.fields[10] !== undefined) {
+    const fv = segment.fields[10];
+    if (Array.isArray(fv)) {
+      result.$10_duplicatePatient = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$10_duplicatePatient = [converted];
+    }
+  }
+  if (segment.fields[11] !== undefined) {
+    const converted = fromCE(segment.fields[11]);
+    if (converted) result.$11_publicityCode = converted;
+  }
+  if (segment.fields[12] !== undefined) {
+    const v = getComponent(segment.fields[12]);
+    if (v !== undefined) result.$12_protectionIndicator = v;
+  }
+  if (segment.fields[13] !== undefined) {
+    const v = getComponent(segment.fields[13]);
+    if (v !== undefined) result.$13_protectionIndicatorEffectiveDate = v;
+  }
+  if (segment.fields[14] !== undefined) {
+    const fv = segment.fields[14];
+    if (Array.isArray(fv)) {
+      result.$14_placeOfWorship = fv.map(v => fromXON(v)).filter((v): v is XON => v !== undefined);
+    } else {
+      const converted = fromXON(fv);
+      if (converted) result.$14_placeOfWorship = [converted];
+    }
+  }
+  if (segment.fields[15] !== undefined) {
+    const fv = segment.fields[15];
+    if (Array.isArray(fv)) {
+      result.$15_advanceDirectiveCode = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$15_advanceDirectiveCode = [converted];
+    }
+  }
+  if (segment.fields[16] !== undefined) {
+    const v = getComponent(segment.fields[16]);
+    if (v !== undefined) result.$16_immunizationRegistryStatus = v;
+  }
+  if (segment.fields[17] !== undefined) {
+    const v = getComponent(segment.fields[17]);
+    if (v !== undefined) result.$17_immunizationRegistryStatusEffectiveDate = v;
+  }
+  if (segment.fields[18] !== undefined) {
+    const v = getComponent(segment.fields[18]);
+    if (v !== undefined) result.$18_publicityCodeEffectiveDate = v;
+  }
+  if (segment.fields[19] !== undefined) {
+    const v = getComponent(segment.fields[19]);
+    if (v !== undefined) result.$19_militaryBranch = v;
+  }
+  if (segment.fields[20] !== undefined) {
+    const v = getComponent(segment.fields[20]);
+    if (v !== undefined) result.$20_militaryRankGrade = v;
+  }
+  if (segment.fields[21] !== undefined) {
+    const v = getComponent(segment.fields[21]);
+    if (v !== undefined) result.$21_militaryStatus = v;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to PDA */
+export function fromPDA(segment: HL7v2Segment): PDA {
+  const result: PDA = {} as PDA;
+  if (segment.fields[1] !== undefined) {
+    const fv = segment.fields[1];
+    if (Array.isArray(fv)) {
+      result.$1_deathCauseCode = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$1_deathCauseCode = [converted];
+    }
+  }
+  if (segment.fields[2] !== undefined) {
+    const converted = fromPL(segment.fields[2]);
+    if (converted) result.$2_deathLocation = converted;
+  }
+  if (segment.fields[3] !== undefined) {
+    const v = getComponent(segment.fields[3]);
+    if (v !== undefined) result.$3_deathCertifiedIndicator = v;
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_deathCertificateSignedDateTime = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const converted = fromXCN(segment.fields[5]);
+    if (converted) result.$5_deathCertifiedBy = converted;
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_autopsyIndicator = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const converted = fromDR(segment.fields[7]);
+    if (converted) result.$7_autopsyStartAndEndDateTime = converted;
+  }
+  if (segment.fields[8] !== undefined) {
+    const converted = fromXCN(segment.fields[8]);
+    if (converted) result.$8_autopsyPerformedBy = converted;
+  }
+  if (segment.fields[9] !== undefined) {
+    const v = getComponent(segment.fields[9]);
+    if (v !== undefined) result.$9_coronerIndicator = v;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to PID */
+export function fromPID(segment: HL7v2Segment): PID {
+  const result: PID = {} as PID;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdPid = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const converted = fromCX(segment.fields[2]);
+    if (converted) result.$2_patientId = converted;
+  }
+  if (segment.fields[3] !== undefined) {
+    const fv = segment.fields[3];
+    if (Array.isArray(fv)) {
+      result.$3_identifier = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$3_identifier = [converted];
+    }
+  }
+  if (segment.fields[4] !== undefined) {
+    const fv = segment.fields[4];
+    if (Array.isArray(fv)) {
+      result.$4_alternatePatientIdPid = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$4_alternatePatientIdPid = [converted];
+    }
+  }
+  if (segment.fields[5] !== undefined) {
+    const fv = segment.fields[5];
+    if (Array.isArray(fv)) {
+      result.$5_name = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$5_name = [converted];
+    }
+  }
+  if (segment.fields[6] !== undefined) {
+    const fv = segment.fields[6];
+    if (Array.isArray(fv)) {
+      result.$6_mothersMaidenName = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$6_mothersMaidenName = [converted];
+    }
+  }
+  if (segment.fields[7] !== undefined) {
+    const v = getComponent(segment.fields[7]);
+    if (v !== undefined) result.$7_birthDate = v;
+  }
+  if (segment.fields[8] !== undefined) {
+    const v = getComponent(segment.fields[8]);
+    if (v !== undefined) result.$8_gender = v;
+  }
+  if (segment.fields[9] !== undefined) {
+    const fv = segment.fields[9];
+    if (Array.isArray(fv)) {
+      result.$9_alias = fv.map(v => fromXPN(v)).filter((v): v is XPN => v !== undefined);
+    } else {
+      const converted = fromXPN(fv);
+      if (converted) result.$9_alias = [converted];
+    }
+  }
+  if (segment.fields[10] !== undefined) {
+    const fv = segment.fields[10];
+    if (Array.isArray(fv)) {
+      result.$10_race = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$10_race = [converted];
+    }
+  }
+  if (segment.fields[11] !== undefined) {
+    const fv = segment.fields[11];
+    if (Array.isArray(fv)) {
+      result.$11_address = fv.map(v => fromXAD(v)).filter((v): v is XAD => v !== undefined);
+    } else {
+      const converted = fromXAD(fv);
+      if (converted) result.$11_address = [converted];
+    }
+  }
+  if (segment.fields[12] !== undefined) {
+    const v = getComponent(segment.fields[12]);
+    if (v !== undefined) result.$12_countyCode = v;
+  }
+  if (segment.fields[13] !== undefined) {
+    const fv = segment.fields[13];
+    if (Array.isArray(fv)) {
+      result.$13_homePhone = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$13_homePhone = [converted];
+    }
+  }
+  if (segment.fields[14] !== undefined) {
+    const fv = segment.fields[14];
+    if (Array.isArray(fv)) {
+      result.$14_businessPhone = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$14_businessPhone = [converted];
+    }
+  }
+  if (segment.fields[15] !== undefined) {
+    const converted = fromCE(segment.fields[15]);
+    if (converted) result.$15_language = converted;
+  }
+  if (segment.fields[16] !== undefined) {
+    const converted = fromCE(segment.fields[16]);
+    if (converted) result.$16_maritalStatus = converted;
+  }
+  if (segment.fields[17] !== undefined) {
+    const converted = fromCE(segment.fields[17]);
+    if (converted) result.$17_religion = converted;
+  }
+  if (segment.fields[18] !== undefined) {
+    const converted = fromCX(segment.fields[18]);
+    if (converted) result.$18_accountNumber = converted;
+  }
+  if (segment.fields[19] !== undefined) {
+    const v = getComponent(segment.fields[19]);
+    if (v !== undefined) result.$19_ssnNumberPatient = v;
+  }
+  if (segment.fields[20] !== undefined) {
+    const converted = fromDLN(segment.fields[20]);
+    if (converted) result.$20_driversLicenseNumberPatient = converted;
+  }
+  if (segment.fields[21] !== undefined) {
+    const fv = segment.fields[21];
+    if (Array.isArray(fv)) {
+      result.$21_mothersIdentifier = fv.map(v => fromCX(v)).filter((v): v is CX => v !== undefined);
+    } else {
+      const converted = fromCX(fv);
+      if (converted) result.$21_mothersIdentifier = [converted];
+    }
+  }
+  if (segment.fields[22] !== undefined) {
+    const fv = segment.fields[22];
+    if (Array.isArray(fv)) {
+      result.$22_ethnicity = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$22_ethnicity = [converted];
+    }
+  }
+  if (segment.fields[23] !== undefined) {
+    const v = getComponent(segment.fields[23]);
+    if (v !== undefined) result.$23_birthPlace = v;
+  }
+  if (segment.fields[24] !== undefined) {
+    const v = getComponent(segment.fields[24]);
+    if (v !== undefined) result.$24_multipleBirthIndicator = v;
+  }
+  if (segment.fields[25] !== undefined) {
+    const v = getComponent(segment.fields[25]);
+    if (v !== undefined) result.$25_birthOrder = v;
+  }
+  if (segment.fields[26] !== undefined) {
+    const fv = segment.fields[26];
+    if (Array.isArray(fv)) {
+      result.$26_citizenship = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$26_citizenship = [converted];
+    }
+  }
+  if (segment.fields[27] !== undefined) {
+    const converted = fromCE(segment.fields[27]);
+    if (converted) result.$27_veteransMilitaryStatus = converted;
+  }
+  if (segment.fields[28] !== undefined) {
+    const converted = fromCE(segment.fields[28]);
+    if (converted) result.$28_nationality = converted;
+  }
+  if (segment.fields[29] !== undefined) {
+    const v = getComponent(segment.fields[29]);
+    if (v !== undefined) result.$29_deceasedDateTime = v;
+  }
+  if (segment.fields[30] !== undefined) {
+    const v = getComponent(segment.fields[30]);
+    if (v !== undefined) result.$30_deceased = v;
+  }
+  if (segment.fields[31] !== undefined) {
+    const v = getComponent(segment.fields[31]);
+    if (v !== undefined) result.$31_identityUnknownIndicator = v;
+  }
+  if (segment.fields[32] !== undefined) {
+    const fv = segment.fields[32];
+    if (Array.isArray(fv)) {
+      result.$32_identityReliabilityCode = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$32_identityReliabilityCode = [fv];
+    }
+  }
+  if (segment.fields[33] !== undefined) {
+    const v = getComponent(segment.fields[33]);
+    if (v !== undefined) result.$33_lastUpdateDateTime = v;
+  }
+  if (segment.fields[34] !== undefined) {
+    const converted = fromHD(segment.fields[34]);
+    if (converted) result.$34_lastUpdateFacility = converted;
+  }
+  if (segment.fields[35] !== undefined) {
+    const converted = fromCE(segment.fields[35]);
+    if (converted) result.$35_speciesCode = converted;
+  }
+  if (segment.fields[36] !== undefined) {
+    const converted = fromCE(segment.fields[36]);
+    if (converted) result.$36_breedCode = converted;
+  }
+  if (segment.fields[37] !== undefined) {
+    const v = getComponent(segment.fields[37]);
+    if (v !== undefined) result.$37_strain = v;
+  }
+  if (segment.fields[38] !== undefined) {
+    const converted = fromCE(segment.fields[38]);
+    if (converted) result.$38_productionClassCode = converted;
+  }
+  if (segment.fields[39] !== undefined) {
+    const fv = segment.fields[39];
+    if (Array.isArray(fv)) {
+      result.$39_tribalCitizenship = fv.map(v => fromCWE(v)).filter((v): v is CWE => v !== undefined);
+    } else {
+      const converted = fromCWE(fv);
+      if (converted) result.$39_tribalCitizenship = [converted];
+    }
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to PR1 */
+export function fromPR1(segment: HL7v2Segment): PR1 {
+  const result: PR1 = {} as PR1;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdPr1 = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_procedureCodingMethod = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const converted = fromCE(segment.fields[3]);
+    if (converted) result.$3_procedureCode = converted;
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_procedureDescription = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const v = getComponent(segment.fields[5]);
+    if (v !== undefined) result.$5_procedureDateTime = v;
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_procedureFunctionalType = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const v = getComponent(segment.fields[7]);
+    if (v !== undefined) result.$7_procedureMinutes = v;
+  }
+  if (segment.fields[8] !== undefined) {
+    const fv = segment.fields[8];
+    if (Array.isArray(fv)) {
+      result.$8_anesthesiologist = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$8_anesthesiologist = [converted];
+    }
+  }
+  if (segment.fields[9] !== undefined) {
+    const v = getComponent(segment.fields[9]);
+    if (v !== undefined) result.$9_anesthesiaCode = v;
+  }
+  if (segment.fields[10] !== undefined) {
+    const v = getComponent(segment.fields[10]);
+    if (v !== undefined) result.$10_anesthesiaMinutes = v;
+  }
+  if (segment.fields[11] !== undefined) {
+    const fv = segment.fields[11];
+    if (Array.isArray(fv)) {
+      result.$11_surgeon = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$11_surgeon = [converted];
+    }
+  }
+  if (segment.fields[12] !== undefined) {
+    const fv = segment.fields[12];
+    if (Array.isArray(fv)) {
+      result.$12_procedurePractitioner = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$12_procedurePractitioner = [converted];
+    }
+  }
+  if (segment.fields[13] !== undefined) {
+    const converted = fromCE(segment.fields[13]);
+    if (converted) result.$13_consentCode = converted;
+  }
+  if (segment.fields[14] !== undefined) {
+    const v = getComponent(segment.fields[14]);
+    if (v !== undefined) result.$14_procedurePriority = v;
+  }
+  if (segment.fields[15] !== undefined) {
+    const converted = fromCE(segment.fields[15]);
+    if (converted) result.$15_associatedDiagnosisCode = converted;
+  }
+  if (segment.fields[16] !== undefined) {
+    const fv = segment.fields[16];
+    if (Array.isArray(fv)) {
+      result.$16_procedureCodeModifier = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$16_procedureCodeModifier = [converted];
+    }
+  }
+  if (segment.fields[17] !== undefined) {
+    const v = getComponent(segment.fields[17]);
+    if (v !== undefined) result.$17_procedureDrgType = v;
+  }
+  if (segment.fields[18] !== undefined) {
+    const fv = segment.fields[18];
+    if (Array.isArray(fv)) {
+      result.$18_tissueTypeCode = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$18_tissueTypeCode = [converted];
+    }
+  }
+  if (segment.fields[19] !== undefined) {
+    const converted = fromEI(segment.fields[19]);
+    if (converted) result.$19_procedureIdentifier = converted;
+  }
+  if (segment.fields[20] !== undefined) {
+    const v = getComponent(segment.fields[20]);
+    if (v !== undefined) result.$20_procedureActionCode = v;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to PV1 */
+export function fromPV1(segment: HL7v2Segment): PV1 {
+  const result: PV1 = {} as PV1;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdPv1 = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_class = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const converted = fromPL(segment.fields[3]);
+    if (converted) result.$3_assignedPatientLocation = converted;
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_admissionType = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const converted = fromCX(segment.fields[5]);
+    if (converted) result.$5_preadmitNumber = converted;
+  }
+  if (segment.fields[6] !== undefined) {
+    const converted = fromPL(segment.fields[6]);
+    if (converted) result.$6_priorPatientLocation = converted;
+  }
+  if (segment.fields[7] !== undefined) {
+    const fv = segment.fields[7];
+    if (Array.isArray(fv)) {
+      result.$7_attendingDoctor = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$7_attendingDoctor = [converted];
+    }
+  }
+  if (segment.fields[8] !== undefined) {
+    const fv = segment.fields[8];
+    if (Array.isArray(fv)) {
+      result.$8_referringDoctor = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$8_referringDoctor = [converted];
+    }
+  }
+  if (segment.fields[9] !== undefined) {
+    const fv = segment.fields[9];
+    if (Array.isArray(fv)) {
+      result.$9_consultingDoctor = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$9_consultingDoctor = [converted];
+    }
+  }
+  if (segment.fields[10] !== undefined) {
+    const v = getComponent(segment.fields[10]);
+    if (v !== undefined) result.$10_hospitalService = v;
+  }
+  if (segment.fields[11] !== undefined) {
+    const converted = fromPL(segment.fields[11]);
+    if (converted) result.$11_temporaryLocation = converted;
+  }
+  if (segment.fields[12] !== undefined) {
+    const v = getComponent(segment.fields[12]);
+    if (v !== undefined) result.$12_preadmitTestIndicator = v;
+  }
+  if (segment.fields[13] !== undefined) {
+    const v = getComponent(segment.fields[13]);
+    if (v !== undefined) result.$13_reAdmissionIndicator = v;
+  }
+  if (segment.fields[14] !== undefined) {
+    const v = getComponent(segment.fields[14]);
+    if (v !== undefined) result.$14_admitSource = v;
+  }
+  if (segment.fields[15] !== undefined) {
+    const fv = segment.fields[15];
+    if (Array.isArray(fv)) {
+      result.$15_ambulatoryStatus = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$15_ambulatoryStatus = [fv];
+    }
+  }
+  if (segment.fields[16] !== undefined) {
+    const v = getComponent(segment.fields[16]);
+    if (v !== undefined) result.$16_vip = v;
+  }
+  if (segment.fields[17] !== undefined) {
+    const fv = segment.fields[17];
+    if (Array.isArray(fv)) {
+      result.$17_admittingDoctor = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$17_admittingDoctor = [converted];
+    }
+  }
+  if (segment.fields[18] !== undefined) {
+    const v = getComponent(segment.fields[18]);
+    if (v !== undefined) result.$18_type = v;
+  }
+  if (segment.fields[19] !== undefined) {
+    const converted = fromCX(segment.fields[19]);
+    if (converted) result.$19_visitNumber = converted;
+  }
+  if (segment.fields[20] !== undefined) {
+    const fv = segment.fields[20];
+    if (Array.isArray(fv)) {
+      result.$20_financialClass = fv.map(v => fromFC(v)).filter((v): v is FC => v !== undefined);
+    } else {
+      const converted = fromFC(fv);
+      if (converted) result.$20_financialClass = [converted];
+    }
+  }
+  if (segment.fields[21] !== undefined) {
+    const v = getComponent(segment.fields[21]);
+    if (v !== undefined) result.$21_chargePriceIndicator = v;
+  }
+  if (segment.fields[22] !== undefined) {
+    const v = getComponent(segment.fields[22]);
+    if (v !== undefined) result.$22_courtesyCode = v;
+  }
+  if (segment.fields[23] !== undefined) {
+    const v = getComponent(segment.fields[23]);
+    if (v !== undefined) result.$23_creditRating = v;
+  }
+  if (segment.fields[24] !== undefined) {
+    const fv = segment.fields[24];
+    if (Array.isArray(fv)) {
+      result.$24_contractCode = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$24_contractCode = [fv];
+    }
+  }
+  if (segment.fields[25] !== undefined) {
+    const fv = segment.fields[25];
+    if (Array.isArray(fv)) {
+      result.$25_contractEffectiveDate = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$25_contractEffectiveDate = [fv];
+    }
+  }
+  if (segment.fields[26] !== undefined) {
+    const fv = segment.fields[26];
+    if (Array.isArray(fv)) {
+      result.$26_contractAmount = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$26_contractAmount = [fv];
+    }
+  }
+  if (segment.fields[27] !== undefined) {
+    const fv = segment.fields[27];
+    if (Array.isArray(fv)) {
+      result.$27_contractPeriod = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$27_contractPeriod = [fv];
+    }
+  }
+  if (segment.fields[28] !== undefined) {
+    const v = getComponent(segment.fields[28]);
+    if (v !== undefined) result.$28_interestCode = v;
+  }
+  if (segment.fields[29] !== undefined) {
+    const v = getComponent(segment.fields[29]);
+    if (v !== undefined) result.$29_transferToBadDebtCode = v;
+  }
+  if (segment.fields[30] !== undefined) {
+    const v = getComponent(segment.fields[30]);
+    if (v !== undefined) result.$30_transferToBadDebtDate = v;
+  }
+  if (segment.fields[31] !== undefined) {
+    const v = getComponent(segment.fields[31]);
+    if (v !== undefined) result.$31_badDebtAgencyCode = v;
+  }
+  if (segment.fields[32] !== undefined) {
+    const v = getComponent(segment.fields[32]);
+    if (v !== undefined) result.$32_badDebtTransferAmount = v;
+  }
+  if (segment.fields[33] !== undefined) {
+    const v = getComponent(segment.fields[33]);
+    if (v !== undefined) result.$33_badDebtRecoveryAmount = v;
+  }
+  if (segment.fields[34] !== undefined) {
+    const v = getComponent(segment.fields[34]);
+    if (v !== undefined) result.$34_deleteAccountIndicator = v;
+  }
+  if (segment.fields[35] !== undefined) {
+    const v = getComponent(segment.fields[35]);
+    if (v !== undefined) result.$35_deleteAccountDate = v;
+  }
+  if (segment.fields[36] !== undefined) {
+    const v = getComponent(segment.fields[36]);
+    if (v !== undefined) result.$36_dischargeDisposition = v;
+  }
+  if (segment.fields[37] !== undefined) {
+    const converted = fromDLD(segment.fields[37]);
+    if (converted) result.$37_dischargedToLocation = converted;
+  }
+  if (segment.fields[38] !== undefined) {
+    const converted = fromCE(segment.fields[38]);
+    if (converted) result.$38_dietType = converted;
+  }
+  if (segment.fields[39] !== undefined) {
+    const v = getComponent(segment.fields[39]);
+    if (v !== undefined) result.$39_servicingFacility = v;
+  }
+  if (segment.fields[40] !== undefined) {
+    const v = getComponent(segment.fields[40]);
+    if (v !== undefined) result.$40_bedStatus = v;
+  }
+  if (segment.fields[41] !== undefined) {
+    const v = getComponent(segment.fields[41]);
+    if (v !== undefined) result.$41_accountStatus = v;
+  }
+  if (segment.fields[42] !== undefined) {
+    const converted = fromPL(segment.fields[42]);
+    if (converted) result.$42_pendingLocation = converted;
+  }
+  if (segment.fields[43] !== undefined) {
+    const converted = fromPL(segment.fields[43]);
+    if (converted) result.$43_priorTemporaryLocation = converted;
+  }
+  if (segment.fields[44] !== undefined) {
+    const v = getComponent(segment.fields[44]);
+    if (v !== undefined) result.$44_admission = v;
+  }
+  if (segment.fields[45] !== undefined) {
+    const fv = segment.fields[45];
+    if (Array.isArray(fv)) {
+      result.$45_discharge = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$45_discharge = [fv];
+    }
+  }
+  if (segment.fields[46] !== undefined) {
+    const v = getComponent(segment.fields[46]);
+    if (v !== undefined) result.$46_currentPatientBalance = v;
+  }
+  if (segment.fields[47] !== undefined) {
+    const v = getComponent(segment.fields[47]);
+    if (v !== undefined) result.$47_totalCharges = v;
+  }
+  if (segment.fields[48] !== undefined) {
+    const v = getComponent(segment.fields[48]);
+    if (v !== undefined) result.$48_totalAdjustments = v;
+  }
+  if (segment.fields[49] !== undefined) {
+    const v = getComponent(segment.fields[49]);
+    if (v !== undefined) result.$49_totalPayments = v;
+  }
+  if (segment.fields[50] !== undefined) {
+    const converted = fromCX(segment.fields[50]);
+    if (converted) result.$50_alternateVisitId = converted;
+  }
+  if (segment.fields[51] !== undefined) {
+    const v = getComponent(segment.fields[51]);
+    if (v !== undefined) result.$51_visitIndicator = v;
+  }
+  if (segment.fields[52] !== undefined) {
+    const fv = segment.fields[52];
+    if (Array.isArray(fv)) {
+      result.$52_otherHealthcareProvider = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$52_otherHealthcareProvider = [converted];
+    }
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to PV2 */
+export function fromPV2(segment: HL7v2Segment): PV2 {
+  const result: PV2 = {} as PV2;
+  if (segment.fields[1] !== undefined) {
+    const converted = fromPL(segment.fields[1]);
+    if (converted) result.$1_priorPendingLocation = converted;
+  }
+  if (segment.fields[2] !== undefined) {
+    const converted = fromCE(segment.fields[2]);
+    if (converted) result.$2_accommodationCode = converted;
+  }
+  if (segment.fields[3] !== undefined) {
+    const converted = fromCE(segment.fields[3]);
+    if (converted) result.$3_admitReason = converted;
+  }
+  if (segment.fields[4] !== undefined) {
+    const converted = fromCE(segment.fields[4]);
+    if (converted) result.$4_transferReason = converted;
+  }
+  if (segment.fields[5] !== undefined) {
+    const fv = segment.fields[5];
+    if (Array.isArray(fv)) {
+      result.$5_valuables = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$5_valuables = [fv];
+    }
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_valuablesLocation = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const fv = segment.fields[7];
+    if (Array.isArray(fv)) {
+      result.$7_visitUserCode = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$7_visitUserCode = [fv];
+    }
+  }
+  if (segment.fields[8] !== undefined) {
+    const v = getComponent(segment.fields[8]);
+    if (v !== undefined) result.$8_expectedAdmission = v;
+  }
+  if (segment.fields[9] !== undefined) {
+    const v = getComponent(segment.fields[9]);
+    if (v !== undefined) result.$9_expectedDischarge = v;
+  }
+  if (segment.fields[10] !== undefined) {
+    const v = getComponent(segment.fields[10]);
+    if (v !== undefined) result.$10_estimatedLengthOfInpatientStay = v;
+  }
+  if (segment.fields[11] !== undefined) {
+    const v = getComponent(segment.fields[11]);
+    if (v !== undefined) result.$11_actualLengthOfInpatientStay = v;
+  }
+  if (segment.fields[12] !== undefined) {
+    const v = getComponent(segment.fields[12]);
+    if (v !== undefined) result.$12_visitDescription = v;
+  }
+  if (segment.fields[13] !== undefined) {
+    const fv = segment.fields[13];
+    if (Array.isArray(fv)) {
+      result.$13_referralSourceCode = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$13_referralSourceCode = [converted];
+    }
+  }
+  if (segment.fields[14] !== undefined) {
+    const v = getComponent(segment.fields[14]);
+    if (v !== undefined) result.$14_previousServiceDate = v;
+  }
+  if (segment.fields[15] !== undefined) {
+    const v = getComponent(segment.fields[15]);
+    if (v !== undefined) result.$15_employmentIllnessRelatedIndicator = v;
+  }
+  if (segment.fields[16] !== undefined) {
+    const v = getComponent(segment.fields[16]);
+    if (v !== undefined) result.$16_purgeStatusCode = v;
+  }
+  if (segment.fields[17] !== undefined) {
+    const v = getComponent(segment.fields[17]);
+    if (v !== undefined) result.$17_purgeStatusDate = v;
+  }
+  if (segment.fields[18] !== undefined) {
+    const v = getComponent(segment.fields[18]);
+    if (v !== undefined) result.$18_specialProgramCode = v;
+  }
+  if (segment.fields[19] !== undefined) {
+    const v = getComponent(segment.fields[19]);
+    if (v !== undefined) result.$19_retentionIndicator = v;
+  }
+  if (segment.fields[20] !== undefined) {
+    const v = getComponent(segment.fields[20]);
+    if (v !== undefined) result.$20_expectedNumberOfInsurancePlans = v;
+  }
+  if (segment.fields[21] !== undefined) {
+    const v = getComponent(segment.fields[21]);
+    if (v !== undefined) result.$21_visitPublicityCode = v;
+  }
+  if (segment.fields[22] !== undefined) {
+    const v = getComponent(segment.fields[22]);
+    if (v !== undefined) result.$22_visitProtectionIndicator = v;
+  }
+  if (segment.fields[23] !== undefined) {
+    const fv = segment.fields[23];
+    if (Array.isArray(fv)) {
+      result.$23_clinicOrganizationName = fv.map(v => fromXON(v)).filter((v): v is XON => v !== undefined);
+    } else {
+      const converted = fromXON(fv);
+      if (converted) result.$23_clinicOrganizationName = [converted];
+    }
+  }
+  if (segment.fields[24] !== undefined) {
+    const v = getComponent(segment.fields[24]);
+    if (v !== undefined) result.$24_status = v;
+  }
+  if (segment.fields[25] !== undefined) {
+    const v = getComponent(segment.fields[25]);
+    if (v !== undefined) result.$25_visitPriorityCode = v;
+  }
+  if (segment.fields[26] !== undefined) {
+    const v = getComponent(segment.fields[26]);
+    if (v !== undefined) result.$26_previousTreatmentDate = v;
+  }
+  if (segment.fields[27] !== undefined) {
+    const v = getComponent(segment.fields[27]);
+    if (v !== undefined) result.$27_expectedDischargeDisposition = v;
+  }
+  if (segment.fields[28] !== undefined) {
+    const v = getComponent(segment.fields[28]);
+    if (v !== undefined) result.$28_signatureOnFileDate = v;
+  }
+  if (segment.fields[29] !== undefined) {
+    const v = getComponent(segment.fields[29]);
+    if (v !== undefined) result.$29_firstSimilarIllnessDate = v;
+  }
+  if (segment.fields[30] !== undefined) {
+    const converted = fromCE(segment.fields[30]);
+    if (converted) result.$30_chargeAdjustmentCode = converted;
+  }
+  if (segment.fields[31] !== undefined) {
+    const v = getComponent(segment.fields[31]);
+    if (v !== undefined) result.$31_recurringServiceCode = v;
+  }
+  if (segment.fields[32] !== undefined) {
+    const v = getComponent(segment.fields[32]);
+    if (v !== undefined) result.$32_billingMediaCode = v;
+  }
+  if (segment.fields[33] !== undefined) {
+    const v = getComponent(segment.fields[33]);
+    if (v !== undefined) result.$33_expectedSurgeryDateAndTime = v;
+  }
+  if (segment.fields[34] !== undefined) {
+    const v = getComponent(segment.fields[34]);
+    if (v !== undefined) result.$34_militaryPartnershipCode = v;
+  }
+  if (segment.fields[35] !== undefined) {
+    const v = getComponent(segment.fields[35]);
+    if (v !== undefined) result.$35_militaryNonAvailabilityCode = v;
+  }
+  if (segment.fields[36] !== undefined) {
+    const v = getComponent(segment.fields[36]);
+    if (v !== undefined) result.$36_newbornBabyIndicator = v;
+  }
+  if (segment.fields[37] !== undefined) {
+    const v = getComponent(segment.fields[37]);
+    if (v !== undefined) result.$37_babyDetainedIndicator = v;
+  }
+  if (segment.fields[38] !== undefined) {
+    const converted = fromCE(segment.fields[38]);
+    if (converted) result.$38_modeOfArrivalCode = converted;
+  }
+  if (segment.fields[39] !== undefined) {
+    const fv = segment.fields[39];
+    if (Array.isArray(fv)) {
+      result.$39_recreationalDrugUseCode = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$39_recreationalDrugUseCode = [converted];
+    }
+  }
+  if (segment.fields[40] !== undefined) {
+    const converted = fromCE(segment.fields[40]);
+    if (converted) result.$40_admissionLevelOfCareCode = converted;
+  }
+  if (segment.fields[41] !== undefined) {
+    const fv = segment.fields[41];
+    if (Array.isArray(fv)) {
+      result.$41_precautionCode = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$41_precautionCode = [converted];
+    }
+  }
+  if (segment.fields[42] !== undefined) {
+    const converted = fromCE(segment.fields[42]);
+    if (converted) result.$42_conditionCode = converted;
+  }
+  if (segment.fields[43] !== undefined) {
+    const v = getComponent(segment.fields[43]);
+    if (v !== undefined) result.$43_livingWill = v;
+  }
+  if (segment.fields[44] !== undefined) {
+    const v = getComponent(segment.fields[44]);
+    if (v !== undefined) result.$44_organDonorCode = v;
+  }
+  if (segment.fields[45] !== undefined) {
+    const fv = segment.fields[45];
+    if (Array.isArray(fv)) {
+      result.$45_advanceDirectiveCode = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$45_advanceDirectiveCode = [converted];
+    }
+  }
+  if (segment.fields[46] !== undefined) {
+    const v = getComponent(segment.fields[46]);
+    if (v !== undefined) result.$46_statusStart = v;
+  }
+  if (segment.fields[47] !== undefined) {
+    const v = getComponent(segment.fields[47]);
+    if (v !== undefined) result.$47_expectedLoaReturnDateTime = v;
+  }
+  if (segment.fields[48] !== undefined) {
+    const v = getComponent(segment.fields[48]);
+    if (v !== undefined) result.$48_expectedPreAdmissionTestingDateTime = v;
+  }
+  if (segment.fields[49] !== undefined) {
+    const fv = segment.fields[49];
+    if (Array.isArray(fv)) {
+      result.$49_notifyClergyCode = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$49_notifyClergyCode = [fv];
+    }
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to ROL */
+export function fromROL(segment: HL7v2Segment): ROL {
+  const result: ROL = {} as ROL;
+  if (segment.fields[1] !== undefined) {
+    const converted = fromEI(segment.fields[1]);
+    if (converted) result.$1_roleInstanceId = converted;
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_actionCode = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const converted = fromCE(segment.fields[3]);
+    if (converted) result.$3_roleRol = converted;
+  }
+  if (segment.fields[4] !== undefined) {
+    const fv = segment.fields[4];
+    if (Array.isArray(fv)) {
+      result.$4_rolePerson = fv.map(v => fromXCN(v)).filter((v): v is XCN => v !== undefined);
+    } else {
+      const converted = fromXCN(fv);
+      if (converted) result.$4_rolePerson = [converted];
+    }
+  }
+  if (segment.fields[5] !== undefined) {
+    const v = getComponent(segment.fields[5]);
+    if (v !== undefined) result.$5_roleBeginDateTime = v;
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_roleEndDateTime = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const converted = fromCE(segment.fields[7]);
+    if (converted) result.$7_roleDuration = converted;
+  }
+  if (segment.fields[8] !== undefined) {
+    const converted = fromCE(segment.fields[8]);
+    if (converted) result.$8_roleActionReason = converted;
+  }
+  if (segment.fields[9] !== undefined) {
+    const fv = segment.fields[9];
+    if (Array.isArray(fv)) {
+      result.$9_providerType = fv.map(v => fromCE(v)).filter((v): v is CE => v !== undefined);
+    } else {
+      const converted = fromCE(fv);
+      if (converted) result.$9_providerType = [converted];
+    }
+  }
+  if (segment.fields[10] !== undefined) {
+    const converted = fromCE(segment.fields[10]);
+    if (converted) result.$10_organizationUnitType = converted;
+  }
+  if (segment.fields[11] !== undefined) {
+    const fv = segment.fields[11];
+    if (Array.isArray(fv)) {
+      result.$11_address = fv.map(v => fromXAD(v)).filter((v): v is XAD => v !== undefined);
+    } else {
+      const converted = fromXAD(fv);
+      if (converted) result.$11_address = [converted];
+    }
+  }
+  if (segment.fields[12] !== undefined) {
+    const fv = segment.fields[12];
+    if (Array.isArray(fv)) {
+      result.$12_phone = fv.map(v => fromXTN(v)).filter((v): v is XTN => v !== undefined);
+    } else {
+      const converted = fromXTN(fv);
+      if (converted) result.$12_phone = [converted];
+    }
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to SFT */
+export function fromSFT(segment: HL7v2Segment): SFT {
+  const result: SFT = {} as SFT;
+  if (segment.fields[1] !== undefined) {
+    const converted = fromXON(segment.fields[1]);
+    if (converted) result.$1_softwareVendorOrganization = converted;
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_softwareCertifiedVersionOrReleaseNumber = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const v = getComponent(segment.fields[3]);
+    if (v !== undefined) result.$3_softwareProductName = v;
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_softwareBinaryId = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const v = getComponent(segment.fields[5]);
+    if (v !== undefined) result.$5_softwareProductInformation = v;
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_softwareInstallDate = v;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to UB1 */
+export function fromUB1(segment: HL7v2Segment): UB1 {
+  const result: UB1 = {} as UB1;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdUb1 = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_bloodDeductible = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const v = getComponent(segment.fields[3]);
+    if (v !== undefined) result.$3_bloodFurnishedPintsOf = v;
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_bloodReplacedPints = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const v = getComponent(segment.fields[5]);
+    if (v !== undefined) result.$5_bloodNotReplacedPints = v;
+  }
+  if (segment.fields[6] !== undefined) {
+    const v = getComponent(segment.fields[6]);
+    if (v !== undefined) result.$6_coInsuranceDays = v;
+  }
+  if (segment.fields[7] !== undefined) {
+    const fv = segment.fields[7];
+    if (Array.isArray(fv)) {
+      result.$7_conditionCode = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$7_conditionCode = [fv];
+    }
+  }
+  if (segment.fields[8] !== undefined) {
+    const v = getComponent(segment.fields[8]);
+    if (v !== undefined) result.$8_coveredDays = v;
+  }
+  if (segment.fields[9] !== undefined) {
+    const v = getComponent(segment.fields[9]);
+    if (v !== undefined) result.$9_nonCoveredDays = v;
+  }
+  if (segment.fields[10] !== undefined) {
+    const fv = segment.fields[10];
+    if (Array.isArray(fv)) {
+      result.$10_valueAmountAndCode = fv.map(v => fromUVC(v)).filter((v): v is UVC => v !== undefined);
+    } else {
+      const converted = fromUVC(fv);
+      if (converted) result.$10_valueAmountAndCode = [converted];
+    }
+  }
+  if (segment.fields[11] !== undefined) {
+    const v = getComponent(segment.fields[11]);
+    if (v !== undefined) result.$11_numberOfGraceDays = v;
+  }
+  if (segment.fields[12] !== undefined) {
+    const converted = fromCE(segment.fields[12]);
+    if (converted) result.$12_specialProgramIndicator = converted;
+  }
+  if (segment.fields[13] !== undefined) {
+    const converted = fromCE(segment.fields[13]);
+    if (converted) result.$13_psroUrApprovalIndicator = converted;
+  }
+  if (segment.fields[14] !== undefined) {
+    const v = getComponent(segment.fields[14]);
+    if (v !== undefined) result.$14_psroUrApprovedStayFm = v;
+  }
+  if (segment.fields[15] !== undefined) {
+    const v = getComponent(segment.fields[15]);
+    if (v !== undefined) result.$15_psroUrApprovedStayTo = v;
+  }
+  if (segment.fields[16] !== undefined) {
+    const fv = segment.fields[16];
+    if (Array.isArray(fv)) {
+      result.$16_occurrence = fv.map(v => fromOCD(v)).filter((v): v is OCD => v !== undefined);
+    } else {
+      const converted = fromOCD(fv);
+      if (converted) result.$16_occurrence = [converted];
+    }
+  }
+  if (segment.fields[17] !== undefined) {
+    const converted = fromCE(segment.fields[17]);
+    if (converted) result.$17_occurrenceSpan = converted;
+  }
+  if (segment.fields[18] !== undefined) {
+    const v = getComponent(segment.fields[18]);
+    if (v !== undefined) result.$18_occurSpanStartDate = v;
+  }
+  if (segment.fields[19] !== undefined) {
+    const v = getComponent(segment.fields[19]);
+    if (v !== undefined) result.$19_occurSpanEndDate = v;
+  }
+  if (segment.fields[20] !== undefined) {
+    const v = getComponent(segment.fields[20]);
+    if (v !== undefined) result.$20_ub82Locator2 = v;
+  }
+  if (segment.fields[21] !== undefined) {
+    const v = getComponent(segment.fields[21]);
+    if (v !== undefined) result.$21_ub82Locator9 = v;
+  }
+  if (segment.fields[22] !== undefined) {
+    const v = getComponent(segment.fields[22]);
+    if (v !== undefined) result.$22_ub82Locator27 = v;
+  }
+  if (segment.fields[23] !== undefined) {
+    const v = getComponent(segment.fields[23]);
+    if (v !== undefined) result.$23_ub82Locator45 = v;
+  }
+  return result;
+}
+
+/** Convert HL7v2Segment to UB2 */
+export function fromUB2(segment: HL7v2Segment): UB2 {
+  const result: UB2 = {} as UB2;
+  if (segment.fields[1] !== undefined) {
+    const v = getComponent(segment.fields[1]);
+    if (v !== undefined) result.$1_setIdUb2 = v;
+  }
+  if (segment.fields[2] !== undefined) {
+    const v = getComponent(segment.fields[2]);
+    if (v !== undefined) result.$2_coInsuranceDays = v;
+  }
+  if (segment.fields[3] !== undefined) {
+    const fv = segment.fields[3];
+    if (Array.isArray(fv)) {
+      result.$3_conditionCode = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$3_conditionCode = [fv];
+    }
+  }
+  if (segment.fields[4] !== undefined) {
+    const v = getComponent(segment.fields[4]);
+    if (v !== undefined) result.$4_coveredDays = v;
+  }
+  if (segment.fields[5] !== undefined) {
+    const v = getComponent(segment.fields[5]);
+    if (v !== undefined) result.$5_nonCoveredDays = v;
+  }
+  if (segment.fields[6] !== undefined) {
+    const fv = segment.fields[6];
+    if (Array.isArray(fv)) {
+      result.$6_valueAmountAndCode = fv.map(v => fromUVC(v)).filter((v): v is UVC => v !== undefined);
+    } else {
+      const converted = fromUVC(fv);
+      if (converted) result.$6_valueAmountAndCode = [converted];
+    }
+  }
+  if (segment.fields[7] !== undefined) {
+    const fv = segment.fields[7];
+    if (Array.isArray(fv)) {
+      result.$7_occurrenceCodeAndDate = fv.map(v => fromOCD(v)).filter((v): v is OCD => v !== undefined);
+    } else {
+      const converted = fromOCD(fv);
+      if (converted) result.$7_occurrenceCodeAndDate = [converted];
+    }
+  }
+  if (segment.fields[8] !== undefined) {
+    const fv = segment.fields[8];
+    if (Array.isArray(fv)) {
+      result.$8_occurrenceSpanCodeDates = fv.map(v => fromOSP(v)).filter((v): v is OSP => v !== undefined);
+    } else {
+      const converted = fromOSP(fv);
+      if (converted) result.$8_occurrenceSpanCodeDates = [converted];
+    }
+  }
+  if (segment.fields[9] !== undefined) {
+    const fv = segment.fields[9];
+    if (Array.isArray(fv)) {
+      result.$9_ub92Locator2 = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$9_ub92Locator2 = [fv];
+    }
+  }
+  if (segment.fields[10] !== undefined) {
+    const fv = segment.fields[10];
+    if (Array.isArray(fv)) {
+      result.$10_ub92Locator11 = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$10_ub92Locator11 = [fv];
+    }
+  }
+  if (segment.fields[11] !== undefined) {
+    const v = getComponent(segment.fields[11]);
+    if (v !== undefined) result.$11_ub92Locator31 = v;
+  }
+  if (segment.fields[12] !== undefined) {
+    const fv = segment.fields[12];
+    if (Array.isArray(fv)) {
+      result.$12_documentControlNumber = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$12_documentControlNumber = [fv];
+    }
+  }
+  if (segment.fields[13] !== undefined) {
+    const fv = segment.fields[13];
+    if (Array.isArray(fv)) {
+      result.$13_ub92Locator49 = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$13_ub92Locator49 = [fv];
+    }
+  }
+  if (segment.fields[14] !== undefined) {
+    const fv = segment.fields[14];
+    if (Array.isArray(fv)) {
+      result.$14_ub92Locator56 = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$14_ub92Locator56 = [fv];
+    }
+  }
+  if (segment.fields[15] !== undefined) {
+    const v = getComponent(segment.fields[15]);
+    if (v !== undefined) result.$15_ub92Locator57 = v;
+  }
+  if (segment.fields[16] !== undefined) {
+    const fv = segment.fields[16];
+    if (Array.isArray(fv)) {
+      result.$16_ub92Locator78 = fv.map(v => typeof v === "string" ? v : getComponent(v)).filter((v): v is string => v !== undefined);
+    } else if (typeof fv === "string") {
+      result.$16_ub92Locator78 = [fv];
+    }
+  }
+  if (segment.fields[17] !== undefined) {
+    const v = getComponent(segment.fields[17]);
+    if (v !== undefined) result.$17_specialVisitCount = v;
+  }
+  return result;
+}
