@@ -92,6 +92,7 @@ class HL7v2CodeGen {
     this.generateHeader();
     this.generateDataTypeInterfaces();
     this.generateConversionFunction();
+    this.generateFromFieldValueFunctions();
     this.generateSegmentBuilders();
 
     return this.output.join("\n");
@@ -219,7 +220,7 @@ class HL7v2CodeGen {
         const typeName = nestedDtDef ? compDef.dataType : "string";
 
         this.output.push(`  /** ${comp.dataType} - ${compDef.longName} */`);
-        this.output.push(`  ${fieldName}__${compNum}?: ${typeName};`);
+        this.output.push(`  ${fieldName}_${compNum}?: ${typeName};`);
       }
 
       this.output.push(`}`);
@@ -236,7 +237,7 @@ class HL7v2CodeGen {
     this.output.push(`  const result: { [key: number]: FieldValue } = {};`);
     this.output.push(`  for (const [key, value] of Object.entries(obj)) {`);
     this.output.push(`    if (value == null) continue;`);
-    this.output.push(`    const match = key.match(/__(\\\d+)$/);`);
+    this.output.push(`    const match = key.match(/_(\\\d+)$/);`);
     this.output.push(`    if (!match || !match[1]) continue;`);
     this.output.push(`    const idx = parseInt(match[1], 10);`);
     this.output.push(`    if (typeof value === "string") {`);
@@ -249,6 +250,67 @@ class HL7v2CodeGen {
     this.output.push(`  return Object.keys(result).length > 0 ? result : undefined;`);
     this.output.push(`}`);
     this.output.push(``);
+
+  }
+
+  private generateFromFieldValueFunctions(): void {
+    this.output.push(`// ====== FromFieldValue Converters ======`);
+    this.output.push(``);
+
+    const sortedTypes = [...this.dataTypeDefs.keys()].sort();
+
+    for (const dtName of sortedTypes) {
+      const dtDef = this.dataTypeDefs.get(dtName);
+      if (!dtDef?.components) continue;
+
+      // Find the first component to use for string-to-object conversion
+      const firstComp = dtDef.components[0];
+      const firstCompDef = firstComp ? this.fieldDefs.get(firstComp.dataType) : undefined;
+      const firstFieldName = firstCompDef ? this.getCodeName(firstCompDef) : undefined;
+
+      this.output.push(`/** Convert FieldValue to ${dtName} */`);
+      this.output.push(`function from${dtName}(fv: FieldValue | undefined): ${dtName} | undefined {`);
+      this.output.push(`  if (fv === undefined) return undefined;`);
+      // Handle simple string case - treat as first component
+      if (firstFieldName) {
+        const firstNestedDt = firstCompDef ? this.dataTypeDefs.get(firstCompDef.dataType) : undefined;
+        if (firstNestedDt) {
+          this.output.push(`  if (typeof fv === "string") return { ${firstFieldName}_1: from${firstCompDef.dataType}(fv) };`);
+        } else {
+          this.output.push(`  if (typeof fv === "string") return { ${firstFieldName}_1: fv };`);
+        }
+      } else {
+        this.output.push(`  if (typeof fv === "string") return undefined;`);
+      }
+      this.output.push(`  if (Array.isArray(fv)) return from${dtName}(fv[0]);`);
+      this.output.push(`  const result: ${dtName} = {};`);
+
+      for (let i = 0; i < dtDef.components.length; i++) {
+        const comp = dtDef.components[i]!;
+        const compNum = i + 1;
+        const compDef = this.fieldDefs.get(comp.dataType);
+        if (!compDef) continue;
+
+        const fieldName = this.getCodeName(compDef);
+        const nestedDtDef = this.dataTypeDefs.get(compDef.dataType);
+
+        if (nestedDtDef) {
+          // Complex component - use converter which handles strings
+          this.output.push(`  if (fv[${compNum}] !== undefined) result.${fieldName}_${compNum} = from${compDef.dataType}(fv[${compNum}]);`);
+        } else {
+          // Primitive component - accept string or extract from object if needed
+          this.output.push(`  if (fv[${compNum}] !== undefined) {`);
+          this.output.push(`    const v${compNum} = fv[${compNum}];`);
+          this.output.push(`    if (typeof v${compNum} === "string") result.${fieldName}_${compNum} = v${compNum};`);
+          this.output.push(`    else if (typeof v${compNum} === "object" && !Array.isArray(v${compNum}) && typeof (v${compNum} as any)[1] === "string") result.${fieldName}_${compNum} = (v${compNum} as any)[1];`);
+          this.output.push(`  }`);
+        }
+      }
+
+      this.output.push(`  return result;`);
+      this.output.push(`}`);
+      this.output.push(``);
+    }
   }
 
   private generateSegmentBuilders(): void {
@@ -284,11 +346,21 @@ class HL7v2CodeGen {
         const segLower = segName.toLowerCase();
 
         if (isPrimitive) {
-          // Primitive field - direct string value
+          // Primitive field - direct string value setter
           this.output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
-          this.output.push(`  set_${segLower}${fieldNum}_${fieldName}(value: string | null | undefined): this {`);
+          this.output.push(`  set_${segLower}_${fieldNum}_${fieldName}(value: string | null | undefined): this {`);
           this.output.push(`    if (value != null) this.seg.fields[${fieldNum}] = value;`);
           this.output.push(`    return this;`);
+          this.output.push(`  }`);
+          this.output.push(``);
+
+          // Primitive field getter
+          this.output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
+          this.output.push(`  get_${segLower}_${fieldNum}_${fieldName}(): string | undefined {`);
+          this.output.push(`    const val = this.seg.fields[${fieldNum}];`);
+          this.output.push(`    if (typeof val === "string") return val;`);
+          this.output.push(`    if (Array.isArray(val) && typeof val[0] === "string") return val[0];`);
+          this.output.push(`    return undefined;`);
           this.output.push(`  }`);
           this.output.push(``);
         } else if (dtDef) {
@@ -298,7 +370,7 @@ class HL7v2CodeGen {
           if (isRepeating) {
             // Repeating field: set accepts array, add adds single item
             this.output.push(`  /** ${field.field} - ${fieldDef.longName} (set all values) */`);
-            this.output.push(`  set_${segLower}${fieldNum}_${fieldName}(values: ${typeName}[] | null | undefined): this {`);
+            this.output.push(`  set_${segLower}_${fieldNum}_${fieldName}(values: ${typeName}[] | null | undefined): this {`);
             this.output.push(`    if (values == null) return this;`);
             this.output.push(`    const arr: FieldValue[] = [];`);
             this.output.push(`    for (const v of values) {`);
@@ -311,7 +383,7 @@ class HL7v2CodeGen {
             this.output.push(``);
 
             this.output.push(`  /** ${field.field} - ${fieldDef.longName} (add single value) */`);
-            this.output.push(`  add_${segLower}${fieldNum}_${fieldName}(value: ${typeName} | null | undefined): this {`);
+            this.output.push(`  add_${segLower}_${fieldNum}_${fieldName}(value: ${typeName} | null | undefined): this {`);
             this.output.push(`    if (value == null) return this;`);
             this.output.push(`    const fv = toFieldValue(value as Record<string, unknown>);`);
             this.output.push(`    if (fv !== undefined) {`);
@@ -325,13 +397,31 @@ class HL7v2CodeGen {
             this.output.push(`    return this;`);
             this.output.push(`  }`);
             this.output.push(``);
-          } else {
-            // Non-repeating complex field
+
+            // Getter for repeating complex field
             this.output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
-            this.output.push(`  set_${segLower}${fieldNum}_${fieldName}(value: ${typeName} | null | undefined): this {`);
+            this.output.push(`  get_${segLower}_${fieldNum}_${fieldName}(): ${typeName}[] | undefined {`);
+            this.output.push(`    const val = this.seg.fields[${fieldNum}];`);
+            this.output.push(`    if (val === undefined) return undefined;`);
+            this.output.push(`    // Handle both array (repeating) and single value (parsed without repetition)`);
+            this.output.push(`    const arr = Array.isArray(val) ? val : [val];`);
+            this.output.push(`    return arr.map(v => from${typeName}(v)).filter((v): v is ${typeName} => v !== undefined);`);
+            this.output.push(`  }`);
+            this.output.push(``);
+          } else {
+            // Non-repeating complex field setter
+            this.output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
+            this.output.push(`  set_${segLower}_${fieldNum}_${fieldName}(value: ${typeName} | null | undefined): this {`);
             this.output.push(`    const fv = toFieldValue(value as Record<string, unknown>);`);
             this.output.push(`    if (fv !== undefined) this.seg.fields[${fieldNum}] = fv;`);
             this.output.push(`    return this;`);
+            this.output.push(`  }`);
+            this.output.push(``);
+
+            // Getter for non-repeating complex field
+            this.output.push(`  /** ${field.field} - ${fieldDef.longName} */`);
+            this.output.push(`  get_${segLower}_${fieldNum}_${fieldName}(): ${typeName} | undefined {`);
+            this.output.push(`    return from${typeName}(this.seg.fields[${fieldNum}]);`);
             this.output.push(`  }`);
             this.output.push(``);
           }
@@ -412,7 +502,6 @@ class HL7v2CodeGen {
       const isNestedPrimitive = PRIMITIVE_TYPES.has(compDef.dataType);
 
       // Build function name: SEGMENT_FIELD_COMP1_COMP2_..._name
-      const fieldSnake = toSnakeCase(fieldName);
       const compSnake = toSnakeCase(compDef.codeName || compDef.longName);
       const pathStr = compPath.join("_");
       const fnName = `${segName}_${fieldNum}_${pathStr}_${compSnake}`;
@@ -579,15 +668,14 @@ class HL7v2CodeGen {
     output.push(`}`);
     output.push(``);
 
-    this.generateGroupBuilder(output, msgType, groupName, groupDef, msgDef);
+    this.generateGroupBuilder(output, msgType, groupName, groupDef);
   }
 
   private generateGroupBuilder(
     output: string[],
     msgType: string,
     groupName: string,
-    groupDef: { elements: MessageElement[] },
-    msgDef: MessageDef
+    groupDef: { elements: MessageElement[] }
   ): void {
     const builderName = `${msgType}_${groupName}Builder`;
     const typeName = `${msgType}_${groupName}`;

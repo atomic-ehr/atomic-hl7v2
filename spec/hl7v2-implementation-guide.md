@@ -139,6 +139,17 @@ Note: Multiple trigger events can share the same structure (e.g., ADT A01/A04/A0
 { "dataType": "XPN", "longName": "Patient Name" }
 ```
 
+### Data Type Components (`dataTypes/*.N.json`)
+
+Component metadata with optional `codeName` for cleaner generated names:
+
+```json
+{ "dataType": "FN", "longName": "Family Name", "codeName": "familyName" }
+```
+
+- `codeName` — optional override for generated property name
+- If omitted, `longName` is converted to camelCase
+
 ### Data Types (`dataTypes/*.json`)
 
 ```json
