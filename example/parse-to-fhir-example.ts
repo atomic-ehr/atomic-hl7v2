@@ -8,8 +8,8 @@
  */
 
 import { parseMessage } from "../src/hl7v2/parse";
-import { PIDBuilder } from "./adt-a01-fields";
-import type { HL7v2Segment } from "../src/hl7v2/types";
+import { PIDBuilder } from "./fields";
+import type { HL7v2Segment } from "./types";
 
 // FHIR R4 Patient resource type (simplified)
 interface FHIRPatient {

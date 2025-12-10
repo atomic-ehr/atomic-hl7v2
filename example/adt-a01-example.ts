@@ -7,7 +7,7 @@
  * Run: bun example/adt-a01-example.ts
  */
 
-import { ADT_A01Builder } from "./adt-a01-messages";
+import { ADT_A01Builder } from "./messages";
 import { formatMessage } from "../src/hl7v2/format";
 
 // Build an ADT^A01 message for patient admission

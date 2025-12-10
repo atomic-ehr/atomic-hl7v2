@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atomic-ehr/hl7v2.git"
+    "url": "git+https://github.com/atomic-ehr/atomic-hl7v2.git"
   },
   "keywords": [
     "hl7",

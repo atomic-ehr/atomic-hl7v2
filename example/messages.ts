@@ -1,8 +1,7 @@
-// AUTO-GENERATED from hl7v2/schema - do not edit manually
-// Message builders for: ADT_A01
-// Run: bun src/hl7v2/codegen.ts ADT_A01 --messages
+// AUTO-GENERATED - HL7v2 Message Builders
+// Generated for: ADT_A01
 
-import type { HL7v2Segment, HL7v2Message } from "../src/hl7v2/types";
+import type { HL7v2Segment, HL7v2Message } from "./types";
 import {
   ACCBuilder,
   AL1Builder,
@@ -26,8 +25,8 @@ import {
   ROLBuilder,
   SFTBuilder,
   UB1Builder,
-  UB2Builder
-} from "./adt-a01-fields";
+  UB2Builder,
+} from "./fields";
 
 export interface ADT_A01_PROCEDURE {
   pr1: HL7v2Segment;
@@ -54,7 +53,9 @@ export class ADT_A01_PROCEDUREBuilder {
     return this;
   }
 
-  build(): ADT_A01_PROCEDURE { return this.group as ADT_A01_PROCEDURE; }
+  build(): ADT_A01_PROCEDURE {
+    return this.group as ADT_A01_PROCEDURE;
+  }
 }
 
 export interface ADT_A01_INSURANCE {
@@ -101,7 +102,9 @@ export class ADT_A01_INSURANCEBuilder {
     return this;
   }
 
-  build(): ADT_A01_INSURANCE { return this.group as ADT_A01_INSURANCE; }
+  build(): ADT_A01_INSURANCE {
+    return this.group as ADT_A01_INSURANCE;
+  }
 }
 
 /**
@@ -113,11 +116,11 @@ export interface ADT_A01_Message {
   evn: HL7v2Segment;
   pid: HL7v2Segment;
   pd1?: HL7v2Segment;
-  rol?: HL7v2Segment[];
+  rol_1?: HL7v2Segment[];
   nk1?: HL7v2Segment[];
   pv1: HL7v2Segment;
   pv2?: HL7v2Segment;
-  rol?: HL7v2Segment[];
+  rol_2?: HL7v2Segment[];
   db1?: HL7v2Segment[];
   obx?: HL7v2Segment[];
   al1?: HL7v2Segment[];
@@ -132,6 +135,9 @@ export interface ADT_A01_Message {
   pda?: HL7v2Segment;
 }
 
+/**
+ * Builder for ADT_A01 messages
+ */
 export class ADT_A01Builder {
   private msg: Partial<ADT_A01_Message> = {};
 
@@ -173,13 +179,13 @@ export class ADT_A01Builder {
     return this;
   }
 
-  addROL(segment: HL7v2Segment | ROLBuilder | ((builder: ROLBuilder) => ROLBuilder)): this {
+  addROL_1(segment: HL7v2Segment | ROLBuilder | ((builder: ROLBuilder) => ROLBuilder)): this {
     let seg: HL7v2Segment;
     if (typeof segment === "function") seg = segment(new ROLBuilder()).build();
     else if (segment instanceof ROLBuilder) seg = segment.build();
     else seg = segment;
-    if (!this.msg.rol) this.msg.rol = [];
-    this.msg.rol.push(seg);
+    if (!this.msg.rol_1) this.msg.rol_1 = [];
+    this.msg.rol_1.push(seg);
     return this;
   }
 
@@ -207,13 +213,13 @@ export class ADT_A01Builder {
     return this;
   }
 
-  addROL(segment: HL7v2Segment | ROLBuilder | ((builder: ROLBuilder) => ROLBuilder)): this {
+  addROL_2(segment: HL7v2Segment | ROLBuilder | ((builder: ROLBuilder) => ROLBuilder)): this {
     let seg: HL7v2Segment;
     if (typeof segment === "function") seg = segment(new ROLBuilder()).build();
     else if (segment instanceof ROLBuilder) seg = segment.build();
     else seg = segment;
-    if (!this.msg.rol) this.msg.rol = [];
-    this.msg.rol.push(seg);
+    if (!this.msg.rol_2) this.msg.rol_2 = [];
+    this.msg.rol_2.push(seg);
     return this;
   }
 
@@ -333,11 +339,11 @@ export class ADT_A01Builder {
     if (this.msg.evn) segments.push(this.msg.evn);
     if (this.msg.pid) segments.push(this.msg.pid);
     if (this.msg.pd1) segments.push(this.msg.pd1);
-    if (this.msg.rol) for (const seg of this.msg.rol) segments.push(seg);
+    if (this.msg.rol_1) for (const seg of this.msg.rol_1) segments.push(seg);
     if (this.msg.nk1) for (const seg of this.msg.nk1) segments.push(seg);
     if (this.msg.pv1) segments.push(this.msg.pv1);
     if (this.msg.pv2) segments.push(this.msg.pv2);
-    if (this.msg.rol) for (const seg of this.msg.rol) segments.push(seg);
+    if (this.msg.rol_2) for (const seg of this.msg.rol_2) segments.push(seg);
     if (this.msg.db1) for (const seg of this.msg.db1) segments.push(seg);
     if (this.msg.obx) for (const seg of this.msg.obx) segments.push(seg);
     if (this.msg.al1) for (const seg of this.msg.al1) segments.push(seg);
@@ -361,4 +367,3 @@ export class ADT_A01Builder {
     return segments;
   }
 }
-

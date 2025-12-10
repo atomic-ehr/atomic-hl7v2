@@ -751,15 +751,16 @@ class HL7v2CodeGen {
     for (const el of rootDef.elements) {
       const isRequired = el.minOccurs !== "0";
       const isRepeating = el.maxOccurs === "unbounded" || parseInt(el.maxOccurs) > 1;
+      const fieldName = this.getElementFieldName(el);
+      const methodName = this.getElementMethodName(el);
 
       if (el.segment) {
-        const fieldName = el.segment.toLowerCase();
         const segBuilderName = `${el.segment}Builder`;
 
         if (isRequired) requiredFields.push(fieldName);
 
         if (isRepeating) {
-          output.push(`  add${el.segment}(segment: HL7v2Segment | ${segBuilderName} | ((builder: ${segBuilderName}) => ${segBuilderName})): this {`);
+          output.push(`  add${methodName}(segment: HL7v2Segment | ${segBuilderName} | ((builder: ${segBuilderName}) => ${segBuilderName})): this {`);
           output.push(`    let seg: HL7v2Segment;`);
           output.push(`    if (typeof segment === "function") seg = segment(new ${segBuilderName}()).build();`);
           output.push(`    else if (segment instanceof ${segBuilderName}) seg = segment.build();`);
@@ -778,14 +779,13 @@ class HL7v2CodeGen {
         }
         output.push(``);
       } else if (el.group) {
-        const fieldName = el.group.toLowerCase();
         const groupBuilderName = `${msgType}_${el.group}Builder`;
         const groupTypeName = `${msgType}_${el.group}`;
 
         if (isRequired) requiredFields.push(fieldName);
 
         if (isRepeating) {
-          output.push(`  add${el.group}(group: ${groupTypeName} | ${groupBuilderName} | ((builder: ${groupBuilderName}) => ${groupBuilderName})): this {`);
+          output.push(`  add${methodName}(group: ${groupTypeName} | ${groupBuilderName} | ((builder: ${groupBuilderName}) => ${groupBuilderName})): this {`);
           output.push(`    let g: ${groupTypeName};`);
           output.push(`    if (typeof group === "function") g = group(new ${groupBuilderName}()).build();`);
           output.push(`    else if (group instanceof ${groupBuilderName}) g = group.build();`);
@@ -828,19 +828,16 @@ class HL7v2CodeGen {
   ): void {
     for (const el of elements) {
       const isRepeating = el.maxOccurs === "unbounded" || parseInt(el.maxOccurs) > 1;
+      const fieldName = this.getElementFieldName(el);
+      const fieldPath = `${prefix}.${fieldName}`;
 
       if (el.segment) {
-        const fieldName = el.segment.toLowerCase();
-        const fieldPath = `${prefix}.${fieldName}`;
-
         if (isRepeating) {
           output.push(`    if (${fieldPath}) for (const seg of ${fieldPath}) segments.push(seg);`);
         } else {
           output.push(`    if (${fieldPath}) segments.push(${fieldPath});`);
         }
       } else if (el.group) {
-        const fieldName = el.group.toLowerCase();
-        const fieldPath = `${prefix}.${fieldName}`;
         const groupDef = msgDef[el.group];
 
         if (groupDef) {
@@ -868,19 +865,16 @@ class HL7v2CodeGen {
   ): void {
     for (const el of elements) {
       const isRepeating = el.maxOccurs === "unbounded" || parseInt(el.maxOccurs) > 1;
+      const fieldName = this.getElementFieldName(el);
+      const fieldPath = `${prefix}.${fieldName}`;
 
       if (el.segment) {
-        const fieldName = el.segment.toLowerCase();
-        const fieldPath = `${prefix}.${fieldName}`;
-
         if (isRepeating) {
           output.push(`${indent}if (${fieldPath}) for (const seg of ${fieldPath}) segments.push(seg);`);
         } else {
           output.push(`${indent}if (${fieldPath}) segments.push(${fieldPath});`);
         }
       } else if (el.group) {
-        const fieldName = el.group.toLowerCase();
-        const fieldPath = `${prefix}.${fieldName}`;
         const groupDef = msgDef[el.group];
 
         if (groupDef) {
