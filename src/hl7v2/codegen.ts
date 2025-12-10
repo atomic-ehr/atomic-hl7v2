@@ -296,13 +296,20 @@ class HL7v2CodeGen {
 
     for (const [tableNum, tableDef] of sortedTables) {
       const typeName = tableDef.name;
+      const usedKeys = new Set<string>();
 
       output.push(`/** Table ${tableNum} - ${typeName} */`);
       output.push(`export const ${typeName} = {`);
 
       for (const concept of tableDef.concepts) {
         // Convert display to valid identifier (PascalCase)
-        const key = this.displayToIdentifier(concept.display);
+        let key = this.displayToIdentifier(concept.display);
+        // Handle duplicate keys by appending sanitized code
+        if (usedKeys.has(key)) {
+          const safeCode = concept.code.replace(/[^a-zA-Z0-9]/g, "");
+          key = `${key}_${safeCode}`;
+        }
+        usedKeys.add(key);
         const comment = concept.definition ? ` // ${concept.definition.slice(0, 60)}${concept.definition.length > 60 ? '...' : ''}` : '';
         output.push(`  ${key}: "${concept.code}",${comment}`);
       }
@@ -542,7 +549,9 @@ class HL7v2CodeGen {
         const fieldNum = parseInt(fieldNumStr, 10);
         const fieldName = this.getCodeName(fieldDef);
         const isRepeating = field.maxOccurs === "unbounded" || parseInt(field.maxOccurs) > 1;
-        const isRequired = field.minOccurs !== "0";
+        // MSH.1 and MSH.2 are always optional (delimiters auto-added by formatter)
+        const isMshDelimiter = field.field === "MSH.1" || field.field === "MSH.2";
+        const isRequired = !isMshDelimiter && field.minOccurs !== "0";
         const dtDef = this.dataTypeDefs.get(fieldDef.dataType);
         const isPrimitive = PRIMITIVE_TYPES.has(fieldDef.dataType);
 
@@ -578,7 +587,7 @@ class HL7v2CodeGen {
     output.push(`// ====== Segment Conversion ======`);
     output.push(``);
     output.push(`/** Convert typed segment object to HL7v2Segment */`);
-    output.push(`export function toSegment(segmentName: string, data: Record<string, unknown>): HL7v2Segment {`);
+    output.push(`export function toSegment<T extends object>(segmentName: string, data: T): HL7v2Segment {`);
     output.push(`  const fields: Record<number, FieldValue> = {};`);
     output.push(`  for (const [key, value] of Object.entries(data)) {`);
     output.push(`    if (value == null) continue;`);

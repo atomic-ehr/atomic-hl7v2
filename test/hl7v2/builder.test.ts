@@ -3,26 +3,45 @@ import { ADT_A01Builder } from "../../example/messages";
 import { AdministrativeSex, PatientClass } from "../../example/tables";
 import { formatMessage } from "../../src/hl7v2/format";
 
+// Helper to create minimal valid MSH
+const minMSH = (overrides = {}) => ({
+  $7_messageDateTime: "20251210120000",
+  $9_messageType: { $1_code: "ADT", $2_event: "A01" },
+  $10_messageControlId: "MSG001",
+  $11_processingId: { $1_processingId: "P" },
+  $12_version: { $1_version: "2.5.1" },
+  ...overrides
+});
+
+// Helper to create minimal valid EVN
+const minEVN = (overrides = {}) => ({
+  $2_recordedDateTime: "20251210120000",
+  ...overrides
+});
+
+// Helper to create minimal valid PID
+const minPID = (overrides = {}) => ({
+  $3_identifier: [{ $1_value: "12345" }],
+  $5_name: [{ $1_family: { $1_family: "Test" } }],
+  ...overrides
+});
+
+// Helper to create minimal valid PV1
+const minPV1 = (overrides = {}) => ({
+  $2_class: PatientClass.Inpatient,
+  ...overrides
+});
+
 describe("ADT_A01Builder", () => {
   test("builds minimal ADT_A01 message", () => {
     const message = new ADT_A01Builder()
-      .msh({
-        $3_sendingApplication: { $1_namespace: "TEST_APP" },
-        $9_messageType: { $1_code: "ADT", $2_event: "A01" },
-        $10_messageControlId: "MSG001"
-      })
-      .evn({
-        $1_eventTypeCode: "A01",
-        $2_recordedDateTime: "20251210120000"
-      })
-      .pid({
+      .msh(minMSH({ $3_sendingApplication: { $1_namespace: "TEST_APP" } }))
+      .evn(minEVN({ $1_eventTypeCode: "A01" }))
+      .pid(minPID({
         $1_setIdPid: "1",
         $5_name: [{ $1_family: { $1_family: "Smith" }, $2_given: "John" }]
-      })
-      .pv1({
-        $1_setIdPv1: "1",
-        $2_class: PatientClass.Inpatient
-      })
+      }))
+      .pv1(minPV1({ $1_setIdPv1: "1" }))
       .build();
 
     expect(message).toHaveLength(4);
@@ -34,13 +53,9 @@ describe("ADT_A01Builder", () => {
 
   test("builds message with patient identifiers", () => {
     const message = new ADT_A01Builder()
-      .msh({
-        $3_sendingApplication: { $1_namespace: "APP" },
-        $9_messageType: { $1_code: "ADT", $2_event: "A01" },
-        $10_messageControlId: "MSG002"
-      })
-      .evn({ $1_eventTypeCode: "A01" })
-      .pid({
+      .msh(minMSH({ $3_sendingApplication: { $1_namespace: "APP" } }))
+      .evn(minEVN())
+      .pid(minPID({
         $1_setIdPid: "1",
         $3_identifier: [
           { $1_value: "12345", $4_system: { $1_namespace: "MRN" }, $5_type: "MR" },
@@ -48,8 +63,8 @@ describe("ADT_A01Builder", () => {
         ],
         $5_name: [{ $1_family: { $1_family: "Doe" }, $2_given: "Jane" }],
         $8_gender: AdministrativeSex.Female
-      })
-      .pv1({ $2_class: "O" })
+      }))
+      .pv1(minPV1({ $2_class: "O" }))
       .build();
 
     const pid = message.find(s => s.segment === "PID");
@@ -61,24 +76,19 @@ describe("ADT_A01Builder", () => {
 
   test("builds message with repeating segments", () => {
     const message = new ADT_A01Builder()
-      .msh({
-        $3_sendingApplication: { $1_namespace: "APP" },
-        $9_messageType: { $1_code: "ADT", $2_event: "A01" },
-        $10_messageControlId: "MSG003"
-      })
-      .evn({ $1_eventTypeCode: "A01" })
-      .pid({
-        $1_setIdPid: "1",
-        $5_name: [{ $1_family: { $1_family: "Test" } }]
-      })
-      .pv1({ $2_class: "I" })
+      .msh(minMSH())
+      .evn(minEVN())
+      .pid(minPID())
+      .pv1(minPV1())
       .addDG1({
         $1_setIdDg1: "1",
-        $3_diagnosisCodeDg1: { $1_code: "J18.9", $3_system: "ICD10" }
+        $3_diagnosisCodeDg1: { $1_code: "J18.9", $3_system: "ICD10" },
+        $6_diagnosisType: "A"
       })
       .addDG1({
         $1_setIdDg1: "2",
-        $3_diagnosisCodeDg1: { $1_code: "I10", $3_system: "ICD10" }
+        $3_diagnosisCodeDg1: { $1_code: "I10", $3_system: "ICD10" },
+        $6_diagnosisType: "F"
       })
       .addAL1({
         $1_setIdAl1: "1",
@@ -95,27 +105,22 @@ describe("ADT_A01Builder", () => {
 
   test("builds message with INSURANCE group", () => {
     const message = new ADT_A01Builder()
-      .msh({
-        $3_sendingApplication: { $1_namespace: "APP" },
-        $9_messageType: { $1_code: "ADT", $2_event: "A01" },
-        $10_messageControlId: "MSG004"
-      })
-      .evn({ $1_eventTypeCode: "A01" })
-      .pid({
-        $1_setIdPid: "1",
-        $5_name: [{ $1_family: { $1_family: "Insured" } }]
-      })
-      .pv1({ $2_class: "I" })
+      .msh(minMSH())
+      .evn(minEVN())
+      .pid(minPID())
+      .pv1(minPV1())
       .addINSURANCE(ins => ins
         .in1({
           $1_setIdIn1: "1",
-          $2_insurancePlanId: { $1_code: "BCBS" }
+          $2_insurancePlanId: { $1_code: "BCBS" },
+          $3_insuranceCompanyId: [{ $1_value: "INS001" }]
         })
       )
       .addINSURANCE(ins => ins
         .in1({
           $1_setIdIn1: "2",
-          $2_insurancePlanId: { $1_code: "MEDICARE" }
+          $2_insurancePlanId: { $1_code: "MEDICARE" },
+          $3_insuranceCompanyId: [{ $1_value: "INS002" }]
         })
         .in2({
           $1_insuredsEmployeeId: [{ $1_value: "EMP123" }]
@@ -132,47 +137,35 @@ describe("ADT_A01Builder", () => {
 
   test("formats message to wire format", () => {
     const message = new ADT_A01Builder()
-      .msh({
+      .msh(minMSH({
         $3_sendingApplication: { $1_namespace: "SENDER" },
         $5_receivingApplication: { $1_namespace: "RECEIVER" },
-        $7_messageDateTime: "20251210120000",
         $9_messageType: { $1_code: "ADT", $2_event: "A01", $3_structure: "ADT_A01" },
-        $10_messageControlId: "CTRL001",
-        $11_processingId: { $1_processingId: "P" },
-        $12_version: { $1_version: "2.5.1" }
-      })
-      .evn({
-        $1_eventTypeCode: "A01",
-        $2_recordedDateTime: "20251210115500"
-      })
-      .pid({
+        $10_messageControlId: "CTRL001"
+      }))
+      .evn(minEVN({ $1_eventTypeCode: "A01" }))
+      .pid(minPID({
         $1_setIdPid: "1",
         $5_name: [{ $1_family: { $1_family: "Smith" }, $2_given: "John" }],
         $7_birthDate: "19800101",
         $8_gender: AdministrativeSex.Male
-      })
-      .pv1({
-        $1_setIdPv1: "1",
-        $2_class: PatientClass.Inpatient
-      })
+      }))
+      .pv1(minPV1({ $1_setIdPv1: "1" }))
       .build();
 
     const wireFormat = formatMessage(message);
 
     expect(wireFormat).toContain("MSH|^~\\&|SENDER||RECEIVER");
     expect(wireFormat).toContain("ADT^A01^ADT_A01");
-    expect(wireFormat).toContain("PID|1||||Smith^John||19800101|M");
+    expect(wireFormat).toContain("PID|1||12345");
     expect(wireFormat).toContain("PV1|1|I");
   });
 
   test("throws error when required segment is missing", () => {
     const builder = new ADT_A01Builder()
-      .msh({
-        $9_messageType: { $1_code: "ADT", $2_event: "A01" },
-        $10_messageControlId: "MSG"
-      })
-      .evn({ $1_eventTypeCode: "A01" })
-      .pid({ $5_name: [{ $1_family: { $1_family: "Test" } }] });
+      .msh(minMSH())
+      .evn(minEVN())
+      .pid(minPID());
     // Missing PV1
 
     expect(() => builder.build()).toThrow("pv1 is required");

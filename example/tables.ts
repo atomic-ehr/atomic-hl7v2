@@ -412,12 +412,12 @@ export const Event = {
   TcrAckAutomatedEquipmentTestCodeSettingsRequest: "U11",
   LsuAckAutomatedEquipmentLogServiceUpdate: "U12",
   LsrAckAutomatedEquipmentLogServiceRequest: "U13",
-  InrAckAutomatedEquipmentInventoryRequest: "U14",
+  InrAckAutomatedEquipmentInventoryRequest_U14: "U14",
   VxqQueryForVaccinationRecord: "V01",
   VxxResponseToVaccinationQueryReturningMultiplePidMatches: "V02",
   VxrVaccinationRecordResponse: "V03",
   VxuUnsolicitedVaccinationRecordUpdate: "V04",
-  MfqMfrMasterFilesQueryUseEventSameAsAskingForEGM05Location: "Varies",
+  MfqMfrMasterFilesQueryUseEventSameAsAskingForEGM05Location_Varies: "Varies",
   OruWaveformResultUnsolicitedTransmissionOfRequestedInformation: "W01",
   QrfWaveformResultResponseToQuery: "W02",
 } as const;
@@ -459,7 +459,7 @@ export const Religion2 = {
   Hindu: "N",
   Protestant: "P",
   Agnostic: "AGN",
-  Atheist: "ATH",
+  Atheist_ATH: "ATH",
   BahaI: "BAH",
   Brethren: "BRE",
   Buddhist: "BUD",
@@ -503,7 +503,7 @@ export const Religion2 = {
   ChristianPresbyterian: "PRE",
   ChristianProtestant: "PRO",
   ChristianOtherProtestant: "PRC",
-  ChristianFriends: "QUA",
+  ChristianFriends_QUA: "QUA",
   ChristianReformedChurch: "REC",
   ChristianReorganizedChurchOfJesusChristLds: "REO",
   ChristianRomanCatholic: "CAT",
@@ -520,7 +520,7 @@ export const Religion2 = {
   Confucian: "CNF",
   DisciplesOfChrist: "DOC",
   EthnicReligionist: "ERL",
-  Hindu: "HIN",
+  Hindu_HIN: "HIN",
   HinduShaivites: "HSH",
   HinduVaishnavites: "HVA",
   HinduOther: "HOT",
@@ -917,7 +917,7 @@ export const IdentifierType = {
   LaboratoryAccessionId: "LACSN", // A laboratory accession id is used in the laboratory domain.
   LifelongPhysicianNumber: "LANR",
   LaborAndIndustriesNumber: "LI",
-  LaborAndIndustriesNumber: "L&I", // Labor and industries number.  Note that this was introduced ...
+  LaborAndIndustriesNumber_LI: "L&I", // Labor and industries number.  Note that this was introduced ...
   LicenseNumber: "LN",
   LocalRegistryId: "LR",
   PatientMedicaidNumber: "MA",
@@ -1103,7 +1103,7 @@ export type LivingArrangement = typeof LivingArrangement[keyof typeof LivingArra
 /** Table 0223 - LivingDependency2 */
 export const LivingDependency2 = {
   SpouseDependent: "D",
-  SpouseDependent: "S",
+  SpouseDependent_S: "S",
   MedicalSupervisionRequired: "M",
   SmallChildrenDependent: "C",
   WalkUp: "WU",
@@ -1257,7 +1257,7 @@ export const DiagnosisPriority = {
   NotIncludedInDiagnosisRanking: "0",
   ThePrimaryDiagnosis: "1",
   ForRankedSecondaryDiagnoses: "2 and higher",
-  ForRankedSecondaryDiagnoses: "2 ...",
+  ForRankedSecondaryDiagnoses_2: "2 ...",
   ForSecondaryDiagnosis: "2",
   NoSuggestedValuesDefined: "...",
   ForTertiaryDiagnosis: "3",

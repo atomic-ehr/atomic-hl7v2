@@ -2261,9 +2261,9 @@ export interface IN3 {
 /** MSH Segment */
 export interface MSH {
   /** MSH.1 - Field Separator */
-  $1_fieldSeparator: string;
+  $1_fieldSeparator?: string;
   /** MSH.2 - Encoding Characters */
-  $2_encodingCharacters: string;
+  $2_encodingCharacters?: string;
   /** MSH.3 - Sending Application */
   $3_sendingApplication?: HD;
   /** MSH.4 - Sending Facility */
@@ -2979,7 +2979,7 @@ export interface UB2 {
 // ====== Segment Conversion ======
 
 /** Convert typed segment object to HL7v2Segment */
-export function toSegment(segmentName: string, data: Record<string, unknown>): HL7v2Segment {
+export function toSegment<T extends object>(segmentName: string, data: T): HL7v2Segment {
   const fields: Record<number, FieldValue> = {};
   for (const [key, value] of Object.entries(data)) {
     if (value == null) continue;
