@@ -5,10 +5,7 @@
  * field names, data types, and other metadata from the HL7v2 schema.
  */
 
-// Import schema data
-const segments = require("../../schema/segments");
-const fields = require("../../schema/fields");
-const dataTypes = require("../../schema/dataTypes");
+import { schema } from "./schema";
 
 interface FieldMeta {
   fieldId: string;
@@ -28,8 +25,8 @@ interface ComponentMeta {
  */
 function getFieldMeta(segmentName: string, fieldIndex: number): FieldMeta | null {
   const fieldId = `${segmentName}.${fieldIndex}`;
-  const fieldDef = fields[fieldId];
-  const segmentDef = segments[segmentName];
+  const fieldDef = schema.getField(fieldId);
+  const segmentDef = schema.getSegment(segmentName);
 
   if (!fieldDef) return null;
 
@@ -37,7 +34,7 @@ function getFieldMeta(segmentName: string, fieldIndex: number): FieldMeta | null
   let required = false;
   if (segmentDef?.fields) {
     const fieldSpec = segmentDef.fields.find(
-      (f: { field: string; minOccurs: string }) => f.field === fieldId
+      (f) => f.field === fieldId
     );
     required = fieldSpec?.minOccurs === "1";
   }
@@ -55,7 +52,7 @@ function getFieldMeta(segmentName: string, fieldIndex: number): FieldMeta | null
  */
 function getComponentMeta(dataTypeName: string, componentIndex: number): ComponentMeta | null {
   const componentId = `${dataTypeName}.${componentIndex}`;
-  const componentDef = dataTypes[componentId];
+  const componentDef = schema.getDataType(componentId);
 
   if (!componentDef) return null;
 
@@ -71,7 +68,7 @@ function getComponentMeta(dataTypeName: string, componentIndex: number): Compone
  */
 function getSubcomponentMeta(dataTypeName: string, subIndex: number): ComponentMeta | null {
   const subId = `${dataTypeName}.${subIndex}`;
-  const subDef = dataTypes[subId];
+  const subDef = schema.getDataType(subId);
 
   if (!subDef) return null;
 
@@ -116,7 +113,7 @@ function highlightSubcomponents(
   parentDataType: string
 ): string {
   // Look up the parent data type to see if it has subcomponents
-  const parentDef = dataTypes[parentDataType];
+  const parentDef = schema.getDataType(parentDataType);
   if (!parentDef?.components) {
     return escapeHtml(value);
   }
@@ -152,7 +149,7 @@ function highlightComponents(
   fieldIndex: number
 ): string {
   // Look up the field data type to see if it has components
-  const typeDef = dataTypes[fieldDataType];
+  const typeDef = schema.getDataType(fieldDataType);
   if (!typeDef?.components) {
     // Primitive type, just return escaped value
     return escapeHtml(value);
@@ -171,7 +168,7 @@ function highlightComponents(
     const compMeta = getComponentMeta(fieldDataType, i + 1);
     if (compMeta) {
       // Check if this component has subcomponents
-      const compTypeDef = dataTypes[compMeta.dataType];
+      const compTypeDef = schema.getDataType(compMeta.dataType);
       if (compTypeDef?.components && compValue.includes("&")) {
         parts.push(highlightSubcomponents(compValue, compMeta.dataType));
       } else {
@@ -207,7 +204,7 @@ function highlightRepetitions(
       parts.push(highlightComponents(rep, fieldDataType, segmentName, fieldIndex));
     } else {
       // Single value, check for subcomponents
-      const typeDef = dataTypes[fieldDataType];
+      const typeDef = schema.getDataType(fieldDataType);
       if (typeDef?.components) {
         const compMeta = getComponentMeta(fieldDataType, 1);
         if (compMeta) {

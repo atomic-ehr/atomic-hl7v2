@@ -7,25 +7,7 @@
 
 import type { HL7v2Message, HL7v2Segment } from "./types";
 import { fromSegment } from "./schema-parser";
-
-// Load message schemas
-const messages = require("../../schema/messages");
-
-interface ElementDef {
-  segment?: string;
-  group?: string;
-  minOccurs: string;
-  maxOccurs: string;
-  jsonKey?: string;
-}
-
-interface GroupDef {
-  elements: ElementDef[];
-}
-
-interface MessageSchema {
-  [key: string]: GroupDef;
-}
+import { schema, type MessageSchema } from "./schema";
 
 /**
  * Get message type from MSH-9 (e.g., "ADT_A01")
@@ -150,14 +132,14 @@ export function parseMessageStructure(message: HL7v2Message): Record<string, any
     return flatParse(message);
   }
 
-  const schema = messages[messageType] as MessageSchema | undefined;
-  if (!schema || !schema[messageType]) {
+  const msgSchema = schema.getMessage(messageType);
+  if (!msgSchema || !msgSchema[messageType]) {
     // Schema not found - return flat structure
     return flatParse(message);
   }
 
   const ctx: ParseContext = { segments: message, index: 0 };
-  const result = parseGroup(ctx, schema, messageType);
+  const result = parseGroup(ctx, msgSchema, messageType);
 
   // Handle any remaining segments not matched by schema
   if (ctx.index < message.length) {

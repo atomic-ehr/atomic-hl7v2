@@ -7,11 +7,7 @@
 
 import type { HL7v2Segment, HL7v2Message, FieldValue } from "./types";
 import { getComponent } from "./types";
-
-// Load schema data
-const segments = require("../../schema/segments");
-const fields = require("../../schema/fields");
-const dataTypes = require("../../schema/dataTypes");
+import { schema } from "./schema";
 
 // Primitive types that don't have components
 const PRIMITIVE_TYPES = new Set([
@@ -19,41 +15,12 @@ const PRIMITIVE_TYPES = new Set([
   "NUL", "GTS", "SNM", "varies"
 ]);
 
-interface FieldDef {
-  dataType: string;
-  longName: string;
-  codeName: string;
-  hl7Table?: string;
-}
-
-interface SegmentDef {
-  fields: Array<{
-    field: string;
-    minOccurs: string;
-    maxOccurs: string;
-  }>;
-}
-
-interface DataTypeDef {
-  components?: Array<{
-    dataType: string;
-    minOccurs: string;
-    maxOccurs: string;
-  }>;
-}
-
-interface ComponentDef {
-  dataType: string;
-  longName: string;
-  codeName: string;
-}
-
 /**
  * Check if a data type is primitive (no subcomponents)
  */
 function isPrimitive(dataType: string): boolean {
   if (PRIMITIVE_TYPES.has(dataType)) return true;
-  const typeDef = dataTypes[dataType] as DataTypeDef | undefined;
+  const typeDef = schema.getDataType(dataType);
   return !typeDef?.components;
 }
 
@@ -64,7 +31,7 @@ function convertValue(value: FieldValue, dataTypeName: string): any {
   if (value === undefined || value === null) return undefined;
 
   // Check if this type has components (is complex)
-  const typeDef = dataTypes[dataTypeName] as DataTypeDef | undefined;
+  const typeDef = schema.getDataType(dataTypeName);
   const isComplex = typeDef?.components && typeDef.components.length > 0;
 
   // Handle string values
@@ -74,9 +41,9 @@ function convertValue(value: FieldValue, dataTypeName: string): any {
     // If the type is complex but we got a simple string, wrap it as first component
     if (isComplex && typeDef?.components) {
       const firstComp = typeDef.components[0];
-      const compDef = dataTypes[firstComp.dataType] as ComponentDef | undefined;
+      const compDef = schema.getDataType(firstComp.dataType);
       if (compDef) {
-        const nestedType = compDef.dataType;
+        const nestedType = compDef.dataType!;
         const key = `$1_${compDef.codeName}`;
         if (isPrimitive(nestedType)) {
           return { [key]: value };
@@ -112,11 +79,11 @@ function convertValue(value: FieldValue, dataTypeName: string): any {
       if (compValue === undefined) continue;
 
       // Get component definition for codeName and nested dataType
-      const compDef = dataTypes[compSpec.dataType] as ComponentDef | undefined;
+      const compDef = schema.getDataType(compSpec.dataType);
       if (!compDef) continue;
 
-      const codeName = compDef.codeName;
-      const nestedType = compDef.dataType;
+      const codeName = compDef.codeName!;
+      const nestedType = compDef.dataType!;
       const key = `$${compNum}_${codeName}`;
 
       if (isPrimitive(nestedType)) {
@@ -141,7 +108,7 @@ function convertValue(value: FieldValue, dataTypeName: string): any {
  */
 export function fromSegment(segment: HL7v2Segment): Record<string, any> {
   const segmentName = segment.segment;
-  const segDef = segments[segmentName] as SegmentDef | undefined;
+  const segDef = schema.getSegment(segmentName);
 
   const result: Record<string, any> = {
     _segment: segmentName
@@ -163,7 +130,7 @@ export function fromSegment(segment: HL7v2Segment): Record<string, any> {
     if (fieldValue === undefined) continue;
 
     // Get field definition for codeName and dataType
-    const fieldDef = fields[fieldSpec.field] as FieldDef | undefined;
+    const fieldDef = schema.getField(fieldSpec.field);
     if (!fieldDef) {
       // Unknown field - store raw
       result[`$${fieldNum}`] = fieldValue;
