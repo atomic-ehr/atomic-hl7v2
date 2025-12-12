@@ -242,7 +242,7 @@ function highlightSegment(line: string): string {
   const parts: string[] = [];
 
   // First part is segment name
-  parts.push(`<span class="hl7-segment">${escapeHtml(fieldValues[0])}</span>`);
+  parts.push(`<span class="hl7-segment">${escapeHtml(fieldValues[0] ?? "")}</span>`);
 
   // Process each field
   for (let i = 1; i < fieldValues.length; i++) {
@@ -296,7 +296,7 @@ function highlightMSH(line: string): string {
   parts.push(`<span class="hl7-segment">MSH</span>`);
 
   // MSH.1 - Field Separator
-  const fieldSep = line[3];
+  const fieldSep = line[3] ?? "|";
   const msh1Meta = getFieldMeta("MSH", 1);
   if (msh1Meta) {
     const title = `${msh1Meta.fieldId}: ${msh1Meta.longName}`;
@@ -314,9 +314,9 @@ function highlightMSH(line: string): string {
     const msh2Meta = getFieldMeta("MSH", 2);
     if (msh2Meta) {
       const title = `${msh2Meta.fieldId}: ${msh2Meta.longName}`;
-      parts.push(`<span class="hl7-encoding" title="${escapeHtml(title)}">${escapeHtml(fieldValues[0])}</span>`);
+      parts.push(`<span class="hl7-encoding" title="${escapeHtml(title)}">${escapeHtml(fieldValues[0] ?? "")}</span>`);
     } else {
-      parts.push(`<span class="hl7-encoding">${escapeHtml(fieldValues[0])}</span>`);
+      parts.push(`<span class="hl7-encoding">${escapeHtml(fieldValues[0] ?? "")}</span>`);
     }
   }
 

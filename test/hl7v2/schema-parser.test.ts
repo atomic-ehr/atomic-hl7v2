@@ -143,10 +143,10 @@ describe("parseMessageToNamed", () => {
     const result = parseMessageToNamed(message);
 
     expect(result).toHaveLength(3);
-    expect(result[0]._segment).toBe("MSH");
-    expect(result[1]._segment).toBe("EVN");
-    expect(result[2]._segment).toBe("PID");
-    expect(result[2].$5_name[0].$1_family.$1_family).toBe("Smith");
+    expect(result[0]!._segment).toBe("MSH");
+    expect(result[1]!._segment).toBe("EVN");
+    expect(result[2]!._segment).toBe("PID");
+    expect(result[2]!.$5_name[0].$1_family.$1_family).toBe("Smith");
   });
 });
 
@@ -157,8 +157,8 @@ describe("parseToNamed", () => {
     const result = parseToNamed(wire);
 
     expect(result).toHaveLength(2);
-    expect(result[0].$3_sendingApplication.$1_namespace).toBe("APP");
-    expect(result[1].$5_name[0].$1_family.$1_family).toBe("Doe");
-    expect(result[1].$5_name[0].$2_given).toBe("Jane");
+    expect(result[0]!.$3_sendingApplication.$1_namespace).toBe("APP");
+    expect(result[1]!.$5_name[0].$1_family.$1_family).toBe("Doe");
+    expect(result[1]!.$5_name[0].$2_given).toBe("Jane");
   });
 });

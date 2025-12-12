@@ -145,14 +145,14 @@ describe("Schema", () => {
       const adt = schema.getMessage("ADT_A01");
       expect(adt).not.toBeNull();
       expect(adt!["ADT_A01"]).toBeDefined();
-      expect(adt!["ADT_A01"].elements).toBeArray();
+      expect(adt!["ADT_A01"]!.elements).toBeArray();
       expect(adt!["PROCEDURE"]).toBeDefined();
       expect(adt!["INSURANCE"]).toBeDefined();
     });
 
     test("message elements have correct structure", () => {
       const adt = schema.getMessage("ADT_A01");
-      const mshElement = adt!["ADT_A01"].elements[0];
+      const mshElement = adt!["ADT_A01"]!.elements[0];
       expect(mshElement).toEqual({
         minOccurs: "1",
         maxOccurs: "1",

@@ -40,7 +40,7 @@ function convertValue(value: FieldValue, dataTypeName: string): any {
 
     // If the type is complex but we got a simple string, wrap it as first component
     if (isComplex && typeDef?.components) {
-      const firstComp = typeDef.components[0];
+      const firstComp = typeDef.components[0]!;
       const compDef = schema.getDataType(firstComp.dataType);
       if (compDef) {
         const nestedType = compDef.dataType!;
@@ -73,7 +73,7 @@ function convertValue(value: FieldValue, dataTypeName: string): any {
 
     for (const compSpec of typeDef!.components!) {
       // compSpec.dataType is like "CX.1", "CX.2", etc.
-      const compNum = parseInt(compSpec.dataType.split(".")[1], 10);
+      const compNum = parseInt(compSpec.dataType.split(".")[1] ?? "0", 10);
       const compValue = value[compNum];
 
       if (compValue === undefined) continue;
@@ -124,7 +124,7 @@ export function fromSegment(segment: HL7v2Segment): Record<string, any> {
 
   for (const fieldSpec of segDef.fields) {
     // fieldSpec.field is like "PID.3"
-    const fieldNum = parseInt(fieldSpec.field.split(".")[1], 10);
+    const fieldNum = parseInt(fieldSpec.field.split(".")[1] ?? "0", 10);
     const fieldValue = segment.fields[fieldNum];
 
     if (fieldValue === undefined) continue;

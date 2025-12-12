@@ -62,7 +62,7 @@ function parseGroup(
       if (isRepeating) {
         const items: any[] = [];
         while (ctx.index < ctx.segments.length) {
-          const seg = ctx.segments[ctx.index];
+          const seg = ctx.segments[ctx.index]!;
           if (seg.segment === element.segment) {
             items.push(fromSegment(seg));
             ctx.index++;
@@ -77,7 +77,7 @@ function parseGroup(
       } else {
         // Single occurrence
         if (ctx.index < ctx.segments.length) {
-          const seg = ctx.segments[ctx.index];
+          const seg = ctx.segments[ctx.index]!;
           if (seg.segment === element.segment) {
             result[key] = fromSegment(seg);
             ctx.index++;
@@ -145,7 +145,7 @@ export function parseMessageStructure(message: HL7v2Message): Record<string, any
   if (ctx.index < message.length) {
     const remaining: any[] = [];
     while (ctx.index < message.length) {
-      remaining.push(fromSegment(message[ctx.index]));
+      remaining.push(fromSegment(message[ctx.index]!));
       ctx.index++;
     }
     if (remaining.length > 0 && result) {
