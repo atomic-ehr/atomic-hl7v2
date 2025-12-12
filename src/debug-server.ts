@@ -6,7 +6,7 @@
  */
 
 import { highlightHL7Message, getHighlightStyles } from "./hl7v2/highlight";
-import { parseToNamed } from "./hl7v2/schema-parser";
+import { parseToStructure } from "./hl7v2/message-parser";
 
 const SAMPLE_MESSAGE = `MSH|^~\\&|HOSPITAL_APP|HOSPITAL_FAC|REC_APP|REC_FAC|20231201120000||ADT^A01^ADT_A01|MSG00001|P|2.5.1
 EVN|A01|20231201120000
@@ -99,7 +99,7 @@ function renderResult(message: string): string {
   }
 
   try {
-    const parsedMessage = parseToNamed(message);
+    const parsedMessage = parseToStructure(message);
     parsed = JSON.stringify(parsedMessage, null, 2);
   } catch (e) {
     error = e instanceof Error ? e.message : String(e);
@@ -118,10 +118,10 @@ function renderResult(message: string): string {
 
       <!-- Parsed JSON -->
       <div>
-        <h3 class="text-sm font-medium text-gray-600 mb-2">Parsed Structure (JSON)</h3>
+        <h3 class="text-sm font-medium text-gray-600 mb-2">Message Structure (JSON)</h3>
         ${error
           ? `<div class="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">${error}</div>`
-          : `<pre class="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto text-xs">${escapeHtml(parsed)}</pre>`
+          : `<pre class="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto text-xs max-h-96 overflow-y-auto">${escapeHtml(parsed)}</pre>`
         }
       </div>
     </div>
