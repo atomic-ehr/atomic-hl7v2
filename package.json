@@ -5,6 +5,9 @@
   "module": "src/index.ts",
   "main": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "debug": "bun --hot src/debug-server.ts"
+  },
   "files": [
     "src",
     "schema"
