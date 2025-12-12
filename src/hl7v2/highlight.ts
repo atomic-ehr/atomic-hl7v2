@@ -6,9 +6,9 @@
  */
 
 // Import schema data
-const segments = require("../../hl7v2/schema/segments");
-const fields = require("../../hl7v2/schema/fields");
-const dataTypes = require("../../hl7v2/schema/dataTypes");
+const segments = require("../../schema/segments");
+const fields = require("../../schema/fields");
+const dataTypes = require("../../schema/dataTypes");
 
 interface FieldMeta {
   fieldId: string;
