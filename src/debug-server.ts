@@ -6,7 +6,7 @@
  */
 
 import { highlightHL7Message, getHighlightStyles } from "./hl7v2/highlight";
-import { parseMessage } from "./hl7v2/parse";
+import { parseToNamed } from "./hl7v2/schema-parser";
 
 const SAMPLE_MESSAGE = `MSH|^~\\&|HOSPITAL_APP|HOSPITAL_FAC|REC_APP|REC_FAC|20231201120000||ADT^A01^ADT_A01|MSG00001|P|2.5.1
 EVN|A01|20231201120000
@@ -40,7 +40,7 @@ function renderPage(): string {
     <h1 class="text-3xl font-bold text-gray-800 mb-2">HL7v2 Debug Tool</h1>
     <p class="text-gray-600 mb-6">Parse and highlight HL7v2 messages with field metadata tooltips</p>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div class="space-y-6">
       <!-- Input Panel -->
       <div class="bg-white rounded-lg shadow-md p-6">
         <div class="flex justify-between items-center mb-4">
@@ -57,7 +57,7 @@ function renderPage(): string {
           <textarea
             id="message"
             name="message"
-            class="w-full h-64 p-3 border border-gray-300 rounded-lg font-mono text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            class="w-full h-48 p-3 border border-gray-300 rounded-lg font-mono text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             placeholder="Paste your HL7v2 message here..."
           ></textarea>
           <button
@@ -70,11 +70,8 @@ function renderPage(): string {
       </div>
 
       <!-- Output Panel -->
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <h2 class="text-lg font-semibold text-gray-700 mb-4">Output</h2>
-        <div id="result" class="text-gray-500">
-          Enter an HL7v2 message and click "Parse & Highlight" to see the result.
-        </div>
+      <div id="result" class="text-gray-500 bg-white rounded-lg shadow-md p-6">
+        Enter an HL7v2 message and click "Parse & Highlight" to see the result.
       </div>
     </div>
 
@@ -102,7 +99,7 @@ function renderResult(message: string): string {
   }
 
   try {
-    const parsedMessage = parseMessage(message);
+    const parsedMessage = parseToNamed(message);
     parsed = JSON.stringify(parsedMessage, null, 2);
   } catch (e) {
     error = e instanceof Error ? e.message : String(e);

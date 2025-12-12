@@ -305,6 +305,21 @@ bun example/input-example.ts     # Build with input object
 bun example/parse-example.ts     # Parse and extract
 ```
 
+## Debug Server
+
+Interactive web tool for parsing and highlighting HL7v2 messages:
+
+```bash
+bun run debug
+```
+
+Then open http://localhost:3333
+
+Features:
+- Syntax highlighting with hover tooltips showing field metadata
+- Schema-based parsing to named fields (e.g., `$3_identifier`, `$5_name`)
+- Sample message for quick testing
+
 ## Testing
 
 ```bash

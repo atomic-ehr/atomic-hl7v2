@@ -15,3 +15,6 @@ export {
   DEFAULT_SEGMENT_SEP,
 } from "./hl7v2/format";
 export type { FormatOptions } from "./hl7v2/format";
+
+// Schema-based parsing
+export { fromSegment, parseMessageToNamed, parseToNamed } from "./hl7v2/schema-parser";
