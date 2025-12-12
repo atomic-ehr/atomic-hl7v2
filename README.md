@@ -89,18 +89,113 @@ formatMessage()    toADT_A01()    ← Writing
 ## Installation
 
 ```bash
-bun install
+bun add @atomic-ehr/hl7v2
+```
+
+## Using in External Projects
+
+To use this library in your own project, you need to:
+1. Install the package
+2. Run the code generator to create typed interfaces for your message types
+3. Import the generated code and runtime functions
+
+### Step 1: Install
+
+```bash
+bun add @atomic-ehr/hl7v2
+```
+
+### Step 2: Generate Code
+
+Run the generator specifying output directory and message types you need:
+
+```bash
+bunx @atomic-ehr/hl7v2/src/hl7v2/codegen.ts ./src/hl7v2-generated ADT_A01 ORU_R01
+```
+
+This creates four files in `./src/hl7v2-generated/`:
+- `types.ts` - Core types
+- `tables.ts` - HL7 table constants
+- `fields.ts` - Segment and datatype interfaces
+- `messages.ts` - Message builders and converters
+
+### Step 3: Use Generated Code
+
+**Building messages:**
+
+```typescript
+import { formatMessage } from "@atomic-ehr/hl7v2";
+import { toADT_A01, type ADT_A01_Input } from "./src/hl7v2-generated/messages";
+
+const input: ADT_A01_Input = {
+  type: "ADT_A01",
+  MSH: {
+    $3_sendingApplication: { $1_namespace: "MY_APP" },
+    $7_messageDateTime: "20251210120000",
+    $9_messageType: { $1_code: "ADT", $2_event: "A01" },
+    $10_messageControlId: "MSG001",
+    $11_processingId: { $1_processingId: "P" },
+    $12_version: { $1_version: "2.5.1" }
+  },
+  PID: {
+    $3_identifier: [{ $1_value: "12345" }],
+    $5_name: [{ $1_family: { $1_family: "Smith" }, $2_given: "John" }]
+  },
+  PV1: { $2_class: "I" }
+};
+
+const message = toADT_A01(input);
+const wireFormat = formatMessage(message);
+```
+
+**Parsing messages:**
+
+```typescript
+import { parseMessage } from "@atomic-ehr/hl7v2";
+import { fromPID, fromMSH } from "./src/hl7v2-generated/fields";
+
+const wire = `MSH|^~\\&|SENDER|||20231201||ADT^A01|MSG001|P|2.5.1
+PID|1||12345^^^HOSP||Smith^John||19800515|M`;
+
+const message = parseMessage(wire);
+const pid = fromPID(message.find(s => s.segment === "PID")!);
+
+console.log(pid.$3_identifier?.[0]?.$1_value); // "12345"
+console.log(pid.$5_name?.[0]?.$2_given);       // "John"
+```
+
+### Available Message Types
+
+Common message types you can generate:
+
+| Type | Description |
+|------|-------------|
+| `ADT_A01` | Patient admission |
+| `ADT_A04` | Patient registration |
+| `ADT_A08` | Patient information update |
+| `ORU_R01` | Lab results |
+| `ORM_O01` | General order |
+| `BAR_P01` | Billing account |
+| `SIU_S12` | Scheduling notification |
+| `MDM_T02` | Document notification |
+
+Generate multiple types at once:
+
+```bash
+bunx @atomic-ehr/hl7v2/src/hl7v2/codegen.ts ./generated ADT_A01 ADT_A04 ADT_A08 ORU_R01
 ```
 
 ## Usage
+
+The examples below assume you're working within this repository. For external projects, see [Using in External Projects](#using-in-external-projects).
 
 ### Building Messages
 
 **Option 1: Input Object** (simplest)
 
 ```typescript
-import { toADT_A01, type ADT_A01_Input } from "./messages";
-import { formatMessage } from "../src/hl7v2/format";
+import { toADT_A01, type ADT_A01_Input } from "./example/messages";
+import { formatMessage } from "./src/hl7v2/format";
 
 const input: ADT_A01_Input = {
   type: "ADT_A01",
@@ -129,7 +224,7 @@ const wire = formatMessage(message);
 **Option 2: Fluent Builder** (for incremental construction)
 
 ```typescript
-import { ADT_A01Builder } from "./messages";
+import { ADT_A01Builder } from "./example/messages";
 
 const message = new ADT_A01Builder()
   .msh({ $7_messageDateTime: "20251210120000", /* ... */ })
@@ -143,8 +238,8 @@ const message = new ADT_A01Builder()
 ### Parsing Messages
 
 ```typescript
-import { parseMessage } from "../src/hl7v2/parse";
-import { fromPID, fromMSH } from "./fields";
+import { parseMessage } from "./src/hl7v2/parse";
+import { fromPID, fromMSH } from "./example/fields";
 
 const wire = `MSH|^~\\&|HOSPITAL|FAC|||20231201||ADT^A01|MSG001|P|2.5.1
 PID|1||12345^^^HOSP^MR||Smith^John||19800515|M`;
