@@ -24,6 +24,9 @@ function renderPage(): string {
   <title>HL7v2 Debug Tool</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/json.min.js"></script>
   <style>
     ${getHighlightStyles()}
     .hl7-output {
@@ -79,6 +82,13 @@ function renderPage(): string {
       Hover over fields to see metadata (field name, data type, required status)
     </div>
   </div>
+  <script>
+    document.body.addEventListener('htmx:afterSwap', function() {
+      document.querySelectorAll('pre code').forEach((el) => {
+        hljs.highlightElement(el);
+      });
+    });
+  </script>
 </body>
 </html>`;
 }
@@ -121,7 +131,7 @@ function renderResult(message: string): string {
         <h3 class="text-sm font-medium text-gray-600 mb-2">Message Structure (JSON)</h3>
         ${error
           ? `<div class="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">${error}</div>`
-          : `<pre class="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto text-xs max-h-96 overflow-y-auto">${escapeHtml(parsed)}</pre>`
+          : `<pre class="rounded-lg overflow-x-auto text-xs"><code class="language-json">${escapeHtml(parsed)}</code></pre>`
         }
       </div>
     </div>
